@@ -1,0 +1,54 @@
+/*--
+    17. Contact Css
+----------------------*/
+.contact-title {
+    & h4 {
+        color: $theme-color;
+        font-weight: 500;
+        font-size: 26px;
+        margin-bottom: 10px;
+        & span {
+            display: block;
+            font-weight: 600;
+            font-size: 30px;
+            margin-top: 6px;
+        }
+    }
+    & p {
+        max-width: 490px;
+    }
+}
+.contact-info {
+    & li {
+        &:last-child { 
+            & .contact-text {
+                border-bottom: none;
+            }
+        }
+    }
+}
+.contact-us-wrap {
+    & h4 {
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    & .contact-text {
+        margin-bottom: 15px;
+        border-bottom: 1px solid #73716f;
+        padding-bottom: 20px;
+        max-width: 270px;
+        
+        & i {
+            font-size: 18px;
+        }
+        & a {
+            display: block;
+        }
+        & p {
+            margin-left: 20px;
+            & span {
+                display: flex;
+            }
+        }
+    }
+}

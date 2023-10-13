@@ -1,0 +1,75 @@
+/*--    
+    11. Work Proces Css
+-------------------*/
+.single-proces {
+    padding-right: 50px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.1);
+    & .image {
+        margin-bottom: 40px;
+        @media #{$large-mobile,$desktop-device}{
+            margin-bottom: 25px
+        }
+    }
+    & .content {
+        & h4 {
+            font-weight: 700;
+            margin-bottom: 15px;
+            @media #{$small-mobile}{
+                font-size: 18px;
+            }
+        }
+    }
+    @media #{$small-mobile} {
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-bottom: 30px;
+    }
+}
+.work-proces-active {
+    & .first-elem {
+        & .single-proces {
+            
+        }
+    }
+    & .slick-center {
+        & .single-proces {
+            padding-right: 50px;
+            padding-left: 40px;
+            padding-bottom: 40px;
+            box-shadow: 0 15px 20px 0px rgba(0, 0, 0, 0.1);
+            @media #{$small-mobile,$desktop-device} {
+                padding-right: 30px;
+                padding-left: 30px;
+                padding-bottom: 30px;
+            }
+            & .content {
+                h4 {
+                    position: relative;
+                    &::after {
+                        top: 50%;
+                        border-color: transparent transparent  transparent  $theme-color;
+                        border-width: 10px;
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        right: 0px;
+                        margin-top: -12px;
+                        width: 0;
+                        height: 0;
+                        z-index: 30;
+                        border-style: solid;
+                        @media #{$small-mobile}{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .last-elem {
+        & .single-proces {
+        }
+    }
+}

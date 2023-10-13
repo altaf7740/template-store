@@ -1,0 +1,981 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Cart || Crazy Fashion</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+		<!-- google fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700' rel='stylesheet' type='text/css'>
+		<!-- all css here -->
+		<!-- bootstrap v3.3.6 css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- animate css -->
+        <link rel="stylesheet" href="css/animate.css">
+		<!-- pe-icon-7-stroke -->
+		<link rel="stylesheet" href="css/pe-icon-7-stroke.min.css">
+		<!-- pe-icon-7-stroke -->
+		<link rel="stylesheet" href="css/jquery.simpleLens.css">
+		<!-- jquery-ui.min css -->
+        <link rel="stylesheet" href="css/jquery-ui.min.css">
+		<!-- meanmenu css -->
+        <link rel="stylesheet" href="css/meanmenu.min.css">
+		<!-- nivo.slider css -->
+        <link rel="stylesheet" href="css/nivo-slider.css">
+		<!-- owl.carousel css -->
+        <link rel="stylesheet" href="css/owl.carousel.css">
+		<!-- font-awesome css -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- style css -->
+		<link rel="stylesheet" href="style.css">
+		<!-- responsive css -->
+        <link rel="stylesheet" href="css/responsive.css">
+		<!-- modernizr js -->
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- header section start -->
+		<header class="pages-header">
+			<div class="header-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="left-header clearfix">
+								<ul>
+									<li><p><i class="pe-7s-call"></i>(+880) 1910 000251</p></li>
+									<li><p><i class="pe-7s-clock"></i>Mon-fri : 9:00-19:00</p></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="right-header">
+								<ul>
+									<li><i class="pe-7s-search"></i>
+										<form method="get" id="searchform" action="#">
+											<input type="text" value="" name="s" id="ws" placeholder="Search product..." />
+											<button type="submit"><i class="pe-7s-search"></i></button>
+										</form>
+									</li>
+									<li><a href="#"><i class="pe-7s-settings"></i></a>
+										<ul class="drop-setting">
+											<li><a href="my-account.html"><i class="fa fa-user"></i>My account</a></li>
+											<li><a href="cart.html"><i class="fa fa-shopping-cart"></i>My cart</a></li>
+											<li><a href="wishlist.html"><i class="fa fa-heart"></i>My wishlist</a></li>
+											<li><a href="checkout.html"><i class="fa fa-usd"></i>Creck out</a></li>
+											<li><a href="login.html"><i class="fa fa-lock"></i>Login</a></li>
+										</ul>
+									</li>
+									<li><a href="cart.html"><i class="pe-7s-cart"></i><span>2</span></a>
+										<ul class="drop-cart">
+											<li>
+												<a href="cart.html"><img src="img/cart/1.png" alt="" /></a>
+												<div class="add-cart-text">
+													<p><a href="#">White Shirt</a></p>
+													<p>$50.00</p>
+													<span>Color : Blue</span>
+													<span>Size   : SL</span>
+												</div>
+												<div class="pro-close">
+													<i class="pe-7s-close"></i>
+												</div>
+											</li>
+											<li>
+												<a href="cart.html"><img src="img/cart/2.png" alt="" /></a>
+												<div class="add-cart-text">
+													<p><a href="#">White Shirt</a></p>
+													<p>$50.00 x 2</p>
+													<span>Color : Blue</span>
+													<span>Size   : SL</span>
+												</div>
+												<div class="pro-close">
+													<i class="pe-7s-close"></i>
+												</div>
+											</li>
+											<li class="total-amount clearfix">
+												<span class="floatleft">total</span>
+												<span class="floatright"><strong>= $150.00</strong></span>
+											</li>
+											<li>
+												<div class="goto text-center">
+													<a href="cart.html"><strong>go to cart &nbsp;<i class="pe-7s-angle-right"></i></strong></a>
+												</div>
+											</li>
+											<li class="checkout-btn text-center">
+												<a href="checkout.html">Check out</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-bottom" id="sticky-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-2 col-md-2">
+							<div class="logo">
+								<a href="index.html"><img src="img/logo2.png" alt="Crazy Fashion" /></a>
+							</div>
+						</div>
+						<div class="col-sm-10 col-md-10">
+							<div class="mainmenu clearfix">
+								<nav>
+									<ul>
+										<li><a href="index.html">Home</a>
+											<ul>
+												<li><a href="index.html">Home Version One</a></li>
+												<li><a href="index-2.html">Home Version Two</a></li>
+											</ul>
+										</li>
+										<li><a href="product-grid-left.html">Shop</a>
+											<div class="magamenu">
+												<ul>
+													<li class="right-mega colmd8 active"><a href="#">all products</a>
+														<ul>
+															<li class="single-menu colmd4">
+																<span>men’s wear</span>
+																<a href="#">shirts & top</a>
+																<a href="#">shoes</a>
+																<a href="#">dresses</a>
+																<a href="#">shwmwear</a>
+																<a href="#">jeans</a>
+																<a href="#">sweaters</a>
+																<a href="#">jacket</a>
+															</li>
+															<li class="single-menu colmd4">
+																<span>women’s wear</span>
+																<a href="#">shirts & tops</a>
+																<a href="#">shoes</a>
+																<a href="#">dresses</a>
+																<a href="#">shwmwear</a>
+																<a href="#">jeans</a>
+																<a href="#">sweaters</a>
+																<a href="#">jacket</a>
+															</li>
+															<li class="single-menu colmd4">
+																<span>accessories</span>
+																<a href="#">sunglasses</a>
+																<a href="#">leather</a>
+																<a href="#">belts</a>
+																<a href="#">rings</a>
+																<a href="#">sweaters</a>
+																<a href="#">persess</a>
+																<a href="#">bags</a>
+															</li>
+															<li class="maga-banner clear">
+																<a href="#"><img src="img/maga-banner.png" alt="" /></a>
+															</li>
+														</ul>
+													</li>
+													<li class="right-mega colmd8"><a href="#">New products</a>
+														<ul>
+															<li class="single-menu colmd4">
+																<span>men’s wear</span>
+																<a href="#">shirts & top</a>
+																<a href="#">shoes</a>
+																<a href="#">jeans</a>
+																<a href="#">jacket</a>
+															</li>
+															<li class="single-menu colmd4">
+																<span>women’s wear</span>
+																<a href="#">shirts & tops</a>
+																<a href="#">shoes</a>
+																<a href="#">dresses</a>
+																<a href="#">shwmwear</a>
+																<a href="#">jeans</a>
+																<a href="#">sweaters</a>
+																<a href="#">jacket</a>
+															</li>
+															<li class="single-menu colmd4">
+																<span>accessories</span>
+																<a href="#">sunglasses</a>
+																<a href="#">leather</a>
+																<a href="#">belts</a>
+																<a href="#">sweaters</a>
+																<a href="#">persess</a>
+																<a href="#">bags</a>
+															</li>
+															<li class="maga-banner clear">
+																<a href="#"><img src="img/maga-banner.png" alt="" /></a>
+															</li>
+														</ul>
+													</li>
+													<li class="right-mega colmd8"><a href="#">best sell</a>
+														<ul>
+															<li class="single-menu colmd4">
+																<span>men’s wear</span>
+																<a href="#">shirts & top</a>
+																<a href="#">shoes</a>
+																<a href="#">dresses</a>
+																<a href="#">shwmwear</a>
+																<a href="#">jeans</a>
+																<a href="#">sweaters</a>
+																<a href="#">jacket</a>
+															</li>
+															<li class="single-menu colmd4">
+																<span>accessories</span>
+																<a href="#">sunglasses</a>
+																<a href="#">leather</a>
+																<a href="#">belts</a>
+																<a href="#">rings</a>
+																<a href="#">sweaters</a>
+																<a href="#">persess</a>
+																<a href="#">bags</a>
+															</li>
+															<li class="maga-banner clear">
+																<a href="#"><img src="img/maga-banner.png" alt="" /></a>
+															</li>
+														</ul>
+													</li>
+													<li class="right-mega colmd8"><a href="#">features products</a>
+														<ul>
+															<li class="single-menu colmd4">
+																<span>men’s wear</span>
+																<a href="#">shirts & top</a>
+																<a href="#">shoes</a>
+																<a href="#">sweaters</a>
+																<a href="#">jacket</a>
+															</li>
+															<li class="single-menu colmd4">
+																<span>women’s wear</span>
+																<a href="#">shirts & tops</a>
+																<a href="#">shoes</a>
+																<a href="#">dresses</a>
+																<a href="#">jacket</a>
+															</li>
+															<li class="single-menu colmd4">
+																<span>accessories</span>
+																<a href="#">sunglasses</a>
+																<a href="#">leather</a>
+																<a href="#">belts</a>
+																<a href="#">rings</a>
+																<a href="#">sweaters</a>
+																<a href="#">persess</a>
+																<a href="#">bags</a>
+															</li>
+															<li class="maga-banner clear">
+																<a href="#"><img src="img/maga-banner.png" alt="" /></a>
+															</li>
+														</ul>
+													</li>
+													<li class="right-mega colmd8"><a href="#">popular products</a>
+														<ul>
+															<li class="single-menu colmd4">
+																<span>men’s wear</span>
+																<a href="#">shirts & top</a>
+																<a href="#">shoes</a>
+																<a href="#">dresses</a>
+																<a href="#">jeans</a>
+																<a href="#">sweaters</a>
+																<a href="#">jacket</a>
+															</li>
+															<li class="single-menu colmd4">
+																<span>women’s wear</span>
+																<a href="#">shirts & tops</a>
+																<a href="#">shoes</a>
+																<a href="#">dresses</a>
+															</li>
+															<li class="single-menu colmd4">
+																<span>accessories</span>
+																<a href="#">sunglasses</a>
+																<a href="#">leather</a>
+																<a href="#">belts</a>
+																<a href="#">rings</a>
+																<a href="#">sweaters</a>
+																<a href="#">persess</a>
+																<a href="#">bags</a>
+															</li>
+															<li class="maga-banner clear">
+																<a href="#"><img src="img/maga-banner.png" alt="" /></a>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li><a href="shop-style-1.html">Lookbook</a></li>
+										<li><a href="blog-style-1.html">Blog</a>
+											<ul>
+												<li><a href="single-blog.html">Single Blog</a></li>
+												<li><a href="blog-style-1.html">Blog Style One</a></li>
+												<li><a href="blog-style-2.html">Blog Style Two</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Pages</a>
+											<ul>
+												<li><a href="cart.html">Cart</a></li>
+												<li><a href="wishlist.html">Wishlist</a></li>
+												<li><a href="checkout.html">Checkout</a></li>
+												<li><a href="my-account.html">My Account</a></li>
+												<li><a href="error-404.html">Error 404</a></li>
+												<li><a href="shop-style-1.html">Shop Style One</a></li>
+												<li><a href="shop-style-2.html">Shop Style Two</a></li>
+												<li><a href="product-grid-left.html">Product Grid Left</a></li>
+												<li><a href="product-grid-right.html">Product Grid Right</a></li>
+												<li><a href="product-list-left.html">Product List Left</a></li>
+												<li><a href="product-list-right.html">Product List Right</a></li>
+												<li><a href="product-detail.html">Product-Detail</a></li>
+												<li><a href="order-complete.html">Order Completed</a></li>
+											</ul>
+										</li>
+										<li><a href="about.html">About</a></li>
+										<li><a href="contact.html">Contact</a></li>
+									</ul>
+								</nav>
+							</div>
+							<!-- mobile menu start -->
+							<div class="mobile-menu-area">
+								<div class="mobile-menu">
+									<nav id="dropdown">
+										<ul>
+											<li><a href="index.html">Home</a>
+												<ul>
+													<li><a href="index.html">Home Version One</a></li>
+													<li><a href="index-2.html">Home Version Two</a></li>
+												</ul>
+											</li>
+											<li><a href="product-grid-left.html">Shop</a>
+												<ul>
+													<li><a href="#">all products</a>
+														<ul>
+															<li>
+																<span>men’s wear</span>
+																<a href="#">shirts & top</a>
+																<a href="#">shoes</a>
+																<a href="#">dresses</a>
+																<a href="#">shwmwear</a>
+																<a href="#">jeans</a>
+																<a href="#">sweaters</a>
+																<a href="#">jacket</a>
+															</li>
+															<li>
+																<span>women’s wear</span>
+																<a href="#">shirts & tops</a>
+																<a href="#">shoes</a>
+																<a href="#">dresses</a>
+																<a href="#">shwmwear</a>
+																<a href="#">jeans</a>
+																<a href="#">sweaters</a>
+																<a href="#">jacket</a>
+															</li>
+															<li>
+																<span>accessories</span>
+																<a href="#">sunglasses</a>
+																<a href="#">leather</a>
+																<a href="#">belts</a>
+																<a href="#">rings</a>
+																<a href="#">sweaters</a>
+																<a href="#">persess</a>
+																<a href="#">bags</a>
+															</li>
+														</ul>
+													</li>
+													<li><a href="#">New products</a>
+														<ul>
+															<li>
+																<span>men’s wear</span>
+																<a href="#">shirts & top</a>
+																<a href="#">shoes</a>
+																<a href="#">jeans</a>
+																<a href="#">jacket</a>
+															</li>
+															<li>
+																<span>women’s wear</span>
+																<a href="#">shirts & tops</a>
+																<a href="#">shoes</a>
+																<a href="#">dresses</a>
+																<a href="#">shwmwear</a>
+																<a href="#">jeans</a>
+																<a href="#">sweaters</a>
+																<a href="#">jacket</a>
+															</li>
+															<li>
+																<span>accessories</span>
+																<a href="#">sunglasses</a>
+																<a href="#">leather</a>
+																<a href="#">belts</a>
+																<a href="#">sweaters</a>
+																<a href="#">persess</a>
+																<a href="#">bags</a>
+															</li>
+														</ul>
+													</li>
+													<li><a href="#">best sell</a>
+														<ul>
+															<li>
+																<span>men’s wear</span>
+																<a href="#">shirts & top</a>
+																<a href="#">shoes</a>
+																<a href="#">dresses</a>
+																<a href="#">shwmwear</a>
+																<a href="#">jeans</a>
+																<a href="#">sweaters</a>
+																<a href="#">jacket</a>
+															</li>
+															<li>
+																<span>accessories</span>
+																<a href="#">sunglasses</a>
+																<a href="#">leather</a>
+																<a href="#">belts</a>
+																<a href="#">rings</a>
+																<a href="#">sweaters</a>
+																<a href="#">persess</a>
+																<a href="#">bags</a>
+															</li>
+														</ul>
+													</li>
+													<li><a href="#">features products</a>
+														<ul>
+															<li>
+																<span>men’s wear</span>
+																<a href="#">shirts & top</a>
+																<a href="#">shoes</a>
+																<a href="#">sweaters</a>
+																<a href="#">jacket</a>
+															</li>
+															<li>
+																<span>women’s wear</span>
+																<a href="#">shirts & tops</a>
+																<a href="#">shoes</a>
+																<a href="#">dresses</a>
+																<a href="#">jacket</a>
+															</li>
+															<li>
+																<span>accessories</span>
+																<a href="#">sunglasses</a>
+																<a href="#">leather</a>
+																<a href="#">belts</a>
+																<a href="#">rings</a>
+																<a href="#">sweaters</a>
+																<a href="#">persess</a>
+																<a href="#">bags</a>
+															</li>
+														</ul>
+													</li>
+													<li><a href="#">popular products</a>
+														<ul>
+															<li>
+																<span>men’s wear</span>
+																<a href="#">shirts & top</a>
+																<a href="#">shoes</a>
+																<a href="#">dresses</a>
+																<a href="#">jeans</a>
+																<a href="#">sweaters</a>
+																<a href="#">jacket</a>
+															</li>
+															<li>
+																<span>women’s wear</span>
+																<a href="#">shirts & tops</a>
+																<a href="#">shoes</a>
+																<a href="#">dresses</a>
+															</li>
+															<li>
+																<span>accessories</span>
+																<a href="#">sunglasses</a>
+																<a href="#">leather</a>
+																<a href="#">belts</a>
+																<a href="#">rings</a>
+																<a href="#">sweaters</a>
+																<a href="#">persess</a>
+																<a href="#">bags</a>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li><a href="shop-style-1.html">Lookbook</a></li>
+											<li><a href="blog-style-1.html">Blog</a>
+												<ul>
+													<li><a href="single-blog.html">Single Blog</a></li>
+													<li><a href="blog-style-1.html">Blog Style One</a></li>
+													<li><a href="blog-style-2.html">Blog Style Two</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Pages</a>
+												<ul>
+													<li><a href="cart.html">Cart</a></li>
+													<li><a href="wishlist.html">Wishlist</a></li>
+													<li><a href="checkout.html">Checkout</a></li>
+													<li><a href="my-account.html">My Account</a></li>
+													<li><a href="error-404.html">Error 404</a></li>
+													<li><a href="shop-style-1.html">Shop Style One</a></li>
+													<li><a href="shop-style-2.html">Shop Style Two</a></li>
+													<li><a href="product-grid-left.html">Product Grid Left</a></li>
+													<li><a href="product-grid-right.html">Product Grid Right</a></li>
+													<li><a href="product-list-left.html">Product List Left</a></li>
+													<li><a href="product-list-right.html">Product List Right</a></li>
+													<li><a href="product-detail.html">Product-Detail</a></li>
+													<li><a href="order-complete.html">Order Completed</a></li>
+												</ul>
+											</li>
+											<li><a href="about.html">About</a></li>
+											<li><a href="contact.html">Contact</a></li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+							<!-- mobile menu end -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+        <!-- header section end -->
+        <!-- pages-title-start -->
+		<div class="pages-title section-padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 text-center">
+						<div class="pages-title-text">
+							<h3>Cart</h3>
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><span>/</span>Cart</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- pages-title-end -->
+		<!-- cart content section start -->
+		<section class="pages cart-page section-padding-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="table-responsive">
+							<table class="cart-table text-center">
+								<thead>
+									<tr>
+										<th>Items</th>
+										<th>Price</th>
+										<th>Quantity</th>
+										<th>Total Price</th>
+										<th>Remove</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="td-img text-left">
+											<a href="#"><img src="img/cart/3.png" alt="Add Product" /></a>
+											<div class="items-dsc">
+												<h5><a href="#">Product Title demo</a></h5>
+												<p class="itemcolor">Color : <span>Blue</span></p>
+												<p class="itemcolor">Size   : <span>SL</span></p>
+											</div>
+										</td>
+										<td>$52.00</td>
+										<td>
+											<form action="#" method="POST">
+												<div class="plus-minus">
+													<a class="dec qtybutton">-</a>
+													<input type="text" value="02" name="qtybutton" class="plus-minus-box">
+													<a class="inc qtybutton">+</a>
+												</div>
+											</form>
+										</td>
+										<td>
+											<div class="total-price">
+												$104.00
+											</div>
+										</td>
+										<td><i class="pe-7s-close" title="Remove this product"></i></td>
+									</tr>
+									<tr>
+										<td class="td-img text-left">
+											<a href="#"><img src="img/cart/4.png" alt="Add Product" /></a>
+											<div class="items-dsc">
+												<h5><a href="#">Product Title</a></h5>
+												<p class="itemcolor">Color : <span>Blue</span></p>
+												<p class="itemcolor">Size   : <span>SL</span></p>
+											</div>
+										</td>
+										<td>$52.00</td>
+										<td>
+											<form action="#" method="POST">
+												<div class="plus-minus">
+													<a class="dec qtybutton">-</a>
+													<input type="text" value="02" name="qtybutton" class="plus-minus-box">
+													<a class="inc qtybutton">+</a>
+												</div>
+											</form>
+										</td>
+										<td>
+											<div class="total-price">
+												$104.00
+											</div>
+										</td>
+										<td><i class="pe-7s-close" title="Remove this product"></i></td>
+									</tr>
+									<tr>
+										<td class="td-img text-left">
+											<a href="#"><img src="img/cart/5.png" alt="Add Product" /></a>
+											<div class="items-dsc">
+												<h5><a href="#">Product Title demo</a></h5>
+												<p class="itemcolor">Color : <span>Blue</span></p>
+												<p class="itemcolor">Size   : <span>SL</span></p>
+											</div>
+										</td>
+										<td>$52.00</td>
+										<td>
+											<form action="#" method="POST">
+												<div class="plus-minus">
+													<a class="dec qtybutton">-</a>
+													<input type="text" value="02" name="qtybutton" class="plus-minus-box">
+													<a class="inc qtybutton">+</a>
+												</div>
+											</form>
+										</td>
+										<td>
+											<div class="total-price">
+												$104.00
+											</div>
+										</td>
+										<td><i class="pe-7s-close" title="Remove this product"></i></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="row margin-top">
+					<div class="col-sm-4">
+						<div class="single-cart-form">
+							<div class="cart-form-title">
+								<h4>calculate shipping</h4>
+							</div>
+							<div class="cart-form-text custom-input">
+								<p>Enter your coupon code if you have one!</p>
+								<form action="mail.php" method="post">
+									<div class="custom-select">
+										<select class="form-control">
+											<option> Country</option>
+											<option> Bangladesh </option>
+											<option> United States </option>
+											<option> United Kingdom </option>
+											<option> Canada </option>
+											<option> Malaysia </option>
+											<option> United Arab Emirates </option>
+										</select>
+									</div>
+									<div class="custom-select">
+										<select class="form-control">
+											<option> Region / State</option>
+											<option> Aberdeen </option>
+											<option> Bedfordshire </option>
+											<option> Caerphilly </option>
+											<option> Denbighshire </option>
+											<option> East Ayrshire </option>
+											<option> Falkirk </option>
+										</select>
+									</div>
+									<input type="text" name="subject" placeholder="Post Code" />
+									<div class="submit-text">
+										<button type="submit" >get a quote</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="single-cart-form">
+							<div class="cart-form-title">
+								<h4>coupon discount</h4>
+							</div>
+							<div class="cart-form-text custom-input">
+								<p>Enter your coupon code if you have one!</p>
+								<form action="mail.php" method="post">
+									<input type="text" name="subject" placeholder="Enter your code here..." />
+									<div class="submit-text coupon">
+										<button type="submit">apply coupon </button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="single-cart-form">
+							<div class="cart-form-title">
+								<h4>payment details</h4>
+							</div>
+							<div class="cart-form-text">
+								<table>
+									<tbody>
+										<tr>
+											<th>subtotal</th>
+											<td>$360.00</td>
+										</tr>
+										<tr>
+											<th>shipping</th>
+											<td>$10.00</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<th class="tfoot-padd">grand total</th>
+											<td class="tfoot-padd">$370.00</td>
+										</tr>
+									</tfoot>
+								</table>
+								<div class="submit-text">
+									<a href="checkout.html">procced to checkout</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- cart content section end -->
+        <!-- footer section start -->
+		<footer class="section-padding-top">
+			<!-- brand logo area start -->
+			<div class="brand-logo">
+				<div class="barnd-bg">
+					<div class="container">
+						<div class="row text-center">
+							<div id="brand-logo" class="owl-carousel product-slider owl-theme">
+								<div class="col-xs-12">
+									<div class="single-brand">
+										<a href="#"><img src="img/brand/1.png" alt="" /></a>
+									</div>
+								</div>
+								<div class="col-xs-12">
+									<div class="single-brand">
+										<a href="#"><img src="img/brand/2.png" alt="" /></a>
+									</div>
+								</div>
+								<div class="col-xs-12">
+									<div class="single-brand">
+										<a href="#"><img src="img/brand/3.png" alt="" /></a>
+									</div>
+								</div>
+								<div class="col-xs-12">
+									<div class="single-brand">
+										<a href="#"><img src="img/brand/4.png" alt="" /></a>
+									</div>
+								</div>
+								<div class="col-xs-12">
+									<div class="single-brand">
+										<a href="#"><img src="img/brand/5.png" alt="" /></a>
+									</div>
+								</div>
+								<div class="col-xs-12">
+									<div class="single-brand">
+										<a href="#"><img src="img/brand/6.png" alt="" /></a>
+									</div>
+								</div>
+								<div class="col-xs-12">
+									<div class="single-brand">
+										<a href="#"><img src="img/brand/1.png" alt="" /></a>
+									</div>
+								</div>
+								<div class="col-xs-12">
+									<div class="single-brand">
+										<a href="#"><img src="img/brand/2.png" alt="" /></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- brand logo section end -->
+			<!-- service section start -->
+			<div class="service section-padding">
+				<div class="container">
+					<div class="row text-center">
+						<div class="col-xs-12 col-sm-4">
+							<div class="single-service">
+								<i class="pe-7s-plane"></i>
+								<h4>Free Shipping</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-4">
+							<div class="single-service">
+								<i class="pe-7s-headphones"></i>
+								<h4>Customer Support</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-4">
+							<div class="single-service">
+								<i class="pe-7s-refresh"></i>
+								<h4>15 days money back</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- service section end -->
+			<!-- footer-top area start -->
+			<div class="footer-top section-padding-top">
+				<div class="footer-dsc">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<div class="single-text">
+									<div class="footer-title">
+										<h4>Contact us</h4>
+										<hr class="dubble-border"/>
+									</div>
+									<div class="footer-text">
+										<ul>
+											<li>
+												<i class="pe-7s-map-marker"></i>
+												<p>My Company, 45 Puffin Street 1245</p>
+												<p>Poffinville France.</p>
+											</li>
+											<li>
+												<i class="pe-7s-call"></i>
+												<p>+201 (987) 6641 053</p>
+												<p>+202 (987) 6641 056</p>
+											</li>
+											<li>
+												<i class="pe-7s-mail-open"></i>
+												<p>info@domainname.com</p>
+												<p>company@outlook.com</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<div class="single-text">
+									<div class="footer-title">
+										<h4>my account</h4>
+										<hr class="dubble-border"/>
+									</div>
+									<div class="footer-menu">
+										<ul>
+											<li><a href="login.html">My Account</a></li>
+											<li><a href="wishlist.html">My Wishlist</a></li>
+											<li><a href="order-complete">My Orders</a></li>
+											<li><a href="#">My Credit slips</a></li>
+											<li><a href="#">My Addresses</a></li>
+											<li><a href="#">My Personal info</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-3 margin-top">
+								<div class="single-text">
+									<div class="footer-title">
+										<h4>customer service</h4>
+										<hr class="dubble-border"/>
+									</div>
+									<div class="footer-menu">
+										<ul>
+											<li><a href="contact.html">Contact Us</a></li>
+											<li><a href="#">Returns</a></li>
+											<li><a href="#">Brands</a></li>
+											<li><a href="#">Site Map</a></li>
+											<li><a href="#">Gift Vouchers</a></li>
+											<li><a href="wishlist.html">Wish List</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-3 margin-top">
+								<div class="single-text">
+									<div class="footer-title">
+										<h4>NEWSLETTER</h4>
+										<hr class="dubble-border"/>
+									</div>
+									<div class="footer-text">
+										<p>Lorem ipsum dolor sit amet, consectetures do adipisicing elit, sed do eiusmod tempores incididunt ut labore</p>
+										<form action="mail.php" method="post">
+											<input type="text" name="email" placeholder="Enter your mail" />
+											<input type="submit" value="submit" />
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr class="dubble-border"/>
+				</div>
+				<div class="social-media">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 col-sm-6">
+								<div class="paypal social-icon">
+									<ul>
+										<li><a href="#"><i class="fa fa-cc-visa"></i></a></li>
+										<li><a href="#"><i class="fa fa-cc-mastercard"></i></a></li>
+										<li><a href="#"><i class="fa fa-cc-paypal"></i></a></li>
+										<li><a href="#"><i class="fa fa-cc-discover"></i></a></li>
+										<li><a href="#"><i class="fa fa-cc-stripe"></i></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<div class="social-icon">
+									<ul class="floatright">
+										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+										<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+										<li><a href="#"><i class="fa fa-soundcloud"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- footer-top area end -->
+			<!-- footer-bottom area start -->
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 text-center">
+							<p>&copy; 2016 Crazy Fashion. All Rights Reserved. Developer by <a href="http://www.codecarnival.net">Codecarnival</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- footer-bottom area end -->
+		</footer>
+        <!-- footer section end -->
+        
+		<!-- all js here -->
+		<!-- jquery latest version -->
+        <script src="js/vendor/jquery-1.12.0.min.js"></script>
+		<!-- bootstrap js -->
+        <script src="js/bootstrap.min.js"></script>
+		<!-- owl.carousel js -->
+        <script src="js/owl.carousel.min.js"></script>
+		<!-- meanmenu js -->
+        <script src="js/jquery.meanmenu.js"></script>
+		<!-- countdown JS -->
+        <script src="js/countdown.js"></script>
+		<!-- nivo.slider JS -->
+        <script src="js/jquery.nivo.slider.pack.js"></script>
+		<!-- simpleLens JS -->
+        <script src="js/jquery.simpleLens.min.js"></script>
+		<!-- jquery-ui js -->
+        <script src="js/jquery-ui.min.js"></script>
+		<!-- sticky js -->
+        <script src="js/sticky.js"></script>
+		<!-- plugins js -->
+        <script src="js/plugins.js"></script>
+		<!-- main js -->
+        <script src="js/main.js"></script>
+    </body>
+</html>

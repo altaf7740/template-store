@@ -1,0 +1,62 @@
+/*--
+    05. About Css
+--------------------------*/
+.about-bg {
+    background: url(../images/bg/about-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-area {
+    & .title {
+        & p {
+            font-size: 16px;
+            margin-bottom: 0;
+            font-style: italic;
+        }
+        & h2 {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+    }
+    & .content {
+        & p {
+            font-size: 16px;
+        }
+        @media #{$large-mobile,$tablet-device}{
+            margin-bottom: 30px;
+        }
+    }
+}
+.counterup-bg {
+    background: url(../images/bg/counter-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.funfact {
+    & .fact-icon {
+        display: flex;
+        align-items: center;
+        & i {
+            font-size: 36px;
+            color: $white;
+        }
+        & span {
+            font-size: 36px;
+            font-weight: 700;
+            margin-left: 10px;
+            color: $white;
+        }
+    }
+    & .content {
+        & .fact-title {
+            margin-top: 10px;
+            color: $white;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 0;
+            @media #{$tablet-device}{
+                font-size: 12px;
+            }
+        }
+    }
+}

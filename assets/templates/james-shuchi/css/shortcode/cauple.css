@@ -1,0 +1,65 @@
+/* -----------------------------------
+Template:  Theme Name
+
+NOTE: This is cauple style file. All cauple related style included in this file.
+
+--------------------------------------*/
+.section-title h2 {
+  color: #000000;
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-family: 'Kaushan Script', cursive;
+}
+.single-cauple h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color:#000;
+}
+.single-cauple p {
+  line-height: 24px;
+  margin-bottom: 0;
+}
+.single-cauple-bottom {
+  background: #f1f1f1 none repeat scroll 0 0;
+  padding: 20px;
+}
+h3.caple-title {
+  color: #333333;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  position: relative;
+}
+h3.caple-title::before {
+  background: #ff6666 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  position: absolute;
+  right: 0;
+  width:50px;
+}
+.caple-icon a {
+  background: #ffffff none repeat scroll 0 0;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 12px;
+  text-align: center;
+  width: 40px;
+  color:#666;
+  font-size:20px;
+}
+.caple-icon a:hover {
+  background: #ff6666;
+  color: #fff;
+}
+.caple-icon.cople-iconright a {
+  margin-left: 0;
+  margin-right: 12px;
+}
+.caple-icon a.active{
+	color:#ff6666;
+} 
+h3.caple-title.caple-title-left::before {
+  left: 0;
+}

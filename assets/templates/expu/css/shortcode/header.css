@@ -1,0 +1,221 @@
+.logo  {
+    display: inline-block;
+    text-align: left;
+    padding: 28px 0;
+}
+.menu-area {
+    display: inline-block;
+    float: right;
+}
+.main-menu {
+    display: inline-block;
+}
+.menu-item {
+    float: left;
+}
+.main-menu ul{}
+.main-menu ul li {
+  display: inline-block;
+  position: relative;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.main-menu ul li a {
+    color: #fff;
+    display: block;
+    padding: 44px 15px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+.two .main-menu ul li:hover > a {
+    color: #4FC2C7;
+}
+/* submenu */
+.main-menu ul li ul.submenu {
+    background-color: #ffffff;
+    left: 0;
+    list-style: outside none none;
+    min-width: 255px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    padding: 15px 10px;
+    position: absolute;
+    top: 100%;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    visibility: hidden;
+    z-index: 1000;
+    box-shadow: 0px 0px 4px 0px #999;
+}
+.header-position {
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: 999;
+}
+.header-sub-padding{padding:0px 25px}
+.header-bg{
+    background: #49BABF none repeat scroll 0 0;
+    border: 1px solid #47adb2;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+.header-area.stick .header-bg {
+   margin-top: 0px;
+}
+.two .header-bg{
+    background: #365a73 none repeat scroll 0 0;
+    border: 1px solid #365a73 ;
+}
+.main-menu ul li:hover ul.submenu{
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	visibility: visible;
+}
+.main-menu ul li ul.submenu li{display:block}
+.main-menu ul li ul.submenu li a {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #000000;
+    font-family: 'montserratlight';
+    font-size: 14px;
+    padding: 12px 15px;
+    text-transform: capitalize;
+}
+.main-menu ul > li > ul.submenu > li:hover > a{color: #4FC2C7}
+.main-menu ul li:hover a {
+    color: #3B6F71;
+}
+.main-menu ul li ul.submenu.megamenu ul li:hover > a{
+    background: #4fc2c7;
+    color:#fff;
+    border-radius: 2px;
+}
+/* megamenu */
+.main-menu ul li ul.submenu.megamenu {
+    white-space: nowrap;
+    width: auto;
+    padding: 15px 20px;
+    right: 0;
+    left: auto;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.main-menu ul li ul.submenu.megamenu > li{
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+    width: 185px;
+}
+.main-menu ul li ul.submenu.megamenu.two > li{
+    width: 130px;
+}
+.main-menu ul li ul.submenu.megamenu > li > a{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.main-menu ul li ul.submenu.megamenu > li:hover > a{
+    margin-left: 0px;
+    color: #000;
+}
+.search-btn {
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    margin-left: 15px;
+    position: relative;
+    padding: 28px 0;
+}
+.search {
+    background: #ffffff none repeat scroll 0 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    margin-top: 10px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    position: absolute;
+    right: 0;
+    top: 100%;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    visibility: hidden;
+    width: 228px;
+    z-index: 9999;
+}
+.open .search {
+  display: block;
+  margin-top: 0;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  visibility: visible;
+  z-index: 99;
+}
+.header-right-wrapper{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+#search-form > input {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 0 none;
+	height: 38px;
+    font-family: 'Montserrat', sans-serif;
+}
+#search-form > button {
+    font-size: 15px;
+    height: 100%;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    width: 43px;
+	top: 0;
+    background: #4FC2C7;
+}
+.padding-small .search {top: 92px;}
+.search-btn ul li i{
+    font-size: 20px;
+    color: #fff;
+    line-height: 45px;
+}
+.header-right {position: relative}
+.add-property-btn.button {
+	bottom: -35px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+	color: #fefefe;
+	font-family: "montserratsemi_bold";
+	font-size: 12px;
+	height: 35px;
+	line-height: 35px;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	width: 125px;
+	background: #95c41f none repeat scroll 0 0
+}
+.add-property-btn:hover {background: #1F223E}
+.header-area.stick {
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+            animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;      
+}
+.as-mainwrapper.wrapper-boxed .header-area.stick {width: 1200px;}
+.stick .main-menu ul li a {padding: 32px 15px}
+.stick .logo{padding: 15px 0}
+.stick .search-btn {padding: 17px 0}
+#particles-js{position: relative}
+#particles-js .banner-content{
+    position: absolute;
+}
+#particles-js {
+    width: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+#particles-js.bg-1 {
+    background-image: url('../../images/slider/1.jpg'); 
+}
+.search-menu-wrapper{float: right}

@@ -1,0 +1,180 @@
+/*--
+    07. Team Style Css
+----------------------------*/
+
+.team {
+    ul {
+        &.social-network {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .thumb {
+        position: relative;
+        overflow: hidden;
+        & a {
+            display: block;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
+
+
+
+.team-3{
+    .thumb{
+        padding-bottom: 80px;
+        position: relative;
+        a{
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .plus_click{
+        position: absolute;
+        left: 50%;
+        top: -14px;
+        transform: translateX(-50%);
+        &::before{
+            content:  "\f067";
+            font-family: Fontawesome;
+            display: block;
+            width:  25px;
+            height:  25px;
+            border:  1px solid #fff;
+            color:  #fff;
+            background:  #555555;
+            border-radius:  100%;
+            text-align:  center;
+            font-size: 12px;
+            z-index: 2;
+            cursor: pointer;
+            transition: 0.5s;
+            line-height: 27px;
+        }
+        &.team-minus{
+            &::before{
+                content: "\f068";
+                background:  #18012c;
+            }
+        }
+    }
+    .team-click-action {
+        background:  #343434;
+        text-align:  center;
+        border-radius: 50px 50px 0 0;
+        padding-top:  28px;
+        padding-bottom: 20px;
+        transition: 0.5s;
+        width: 100%;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        margin-bottom: -58px;
+        &.visible{
+            margin-bottom: 0px;
+            background:  $theme-color;
+        }
+
+        h4 {
+            font-size:  16px;
+            font-weight:  600;
+            margin-bottom: 2px;
+            a{
+                color: #ffffff;
+            }
+        }
+        span{
+            display:  block;
+            color:  #ffffff;
+            font-size: 14px;
+            margin-bottom: 14px;
+        }
+
+        .social-network{
+            margin-bottom: 9px;
+        }
+        &.visible{
+            
+        }
+    }
+
+
+    &.medical-team{
+        .plus_click{
+            &.team-minus{
+                &::before{
+                    background:  $theme-color;
+                }
+            }
+        }
+        .team-click-action {
+            &.visible{
+                background: $theme-color;
+            }
+        }
+    }
+
+    &.by-team{
+        .plus_click{
+            &.team-minus{
+                &::before{
+                    background:  #fb5b21;
+                }
+            }
+        }
+        .team-click-action {
+            &.visible{
+                background: #fb5b21;
+            }
+        }
+    }
+}
+
+
+.social-net-4 {
+    margin-bottom: 8px;
+    li {
+        margin: 0 10px;
+        a {
+            color: #fff;
+            font-size: 14px;
+            display: block;
+            background: transparent;
+            height: 28px;
+            width: 28px;
+            text-align: center;
+            line-height: 26px;
+            border-radius: 100%;
+            border: 1px solid #ffffff;
+
+            &.facebook:hover {
+                color: #fff;
+                border: 1px solid $theme-color;
+            }
+
+            &.twitter:hover {
+                color: #fff;
+                border: 1px solid $theme-color;
+            }
+            &.google-plus:hover {
+                color: #fff;
+                border: 1px solid $theme-color;
+            }
+            &.vimeo:hover {
+                color: #fff;
+                border: 1px solid $theme-color;
+            }
+            &.dribbble:hover {
+                color: #ffffff;
+                border: 1px solid $theme-color;
+            }
+        }
+    }
+}

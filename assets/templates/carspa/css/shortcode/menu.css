@@ -1,0 +1,114 @@
+/* =======================================
+	
+	Template: Carspa
+	Css Name: Menu
+	Version: 1
+	Design and Developed by:HasTech
+	NOTE: This is Footer style file. All footer related style included in this file
+
+========================================== */
+.mobile-menu-area {
+  display: none;
+}
+.header-bottom {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.main-menu {
+  margin-left: 25%;
+  margin-top:1px;
+}
+.main-menu nav ul {
+  
+}
+.main-menu nav ul li {
+  display: inline-block;
+}
+.main-menu nav ul li a {
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 22px 12px;
+  position: relative;
+  text-transform: uppercase;
+  transition: all 0.4s ease 0s;
+}
+.main-menu nav ul li a::after {
+  background: #fff none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  width: 75%;
+  opacity:0;
+  transition: all 0.4s ease 0s;
+}
+.main-menu nav ul li.active a::after,.main-menu nav ul li a:hover::after {
+  opacity: 1;
+}
+.header-bottom .logo {
+  display: block;
+  position: absolute;
+  top: 0;
+  transition: all 0.3s ease 0s;
+  z-index: 9999999;
+}
+.main-menu nav ul li > ul {
+  background: #ffffff none repeat scroll 0 0;
+  box-shadow: 0 3px 18px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  opacity: 0;
+  padding: 10px;
+  position: absolute;
+  text-align: left;
+  top: 110px;
+  transform-origin: 0 0 0;
+  transition: all 0.5s ease 0s;
+  visibility: hidden;
+  width: 200px;
+  z-index: -9999;
+}
+.main-menu ul li ul li {
+  display: block;
+  overflow: hidden;
+}
+.main-menu ul li ul > li > a {
+  color: #555555;
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 12px;
+  overflow: hidden;
+  padding: 10px;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+}
+.main-menu ul li ul > li > a:hover{color:#d42f38;margin-left:4px;}
+.main-menu ul li ul > li > a i{margin-right:10px;}
+.main-menu ul li:hover ul {
+  opacity: 1;
+  top: 120px;
+  visibility: visible;
+  z-index: 999;
+}
+ /*Sticky Menu*/
+.sticky {
+  animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+  background: #d42f38 none repeat scroll 0 0;
+  left: 0;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.sticky .header-bottom .logo {
+  width: 190px;
+}
+.sticky .main-menu ul li:hover ul {
+  top: 65px;
+}

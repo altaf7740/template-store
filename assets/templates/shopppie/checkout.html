@@ -1,0 +1,770 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Checkout || Shopppie</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+		<!-- favicon
+		============================================ -->		
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+		
+		<!-- Google Fonts
+		============================================ -->		
+        <link href='https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	   
+		<!-- Bootstrap CSS
+		============================================ -->		
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        
+        <!-- Nivo slider CSS
+		============================================ -->
+		<link rel="stylesheet" type="text/css" href="lib/custom-slider/css/nivo-slider.css" media="screen" />	
+		<link rel="stylesheet" type="text/css" href="lib/custom-slider/css/preview.css" media="screen" />
+		
+		<!-- Fontawsome CSS
+		============================================ -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        
+		<!-- owl.carousel CSS
+		============================================ -->
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        
+		<!-- jquery-ui CSS
+		============================================ -->
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        
+		<!-- meanmenu CSS
+		============================================ -->
+        <link rel="stylesheet" href="css/meanmenu.min.css">
+        
+		<!-- animate CSS
+		============================================ -->
+        <link rel="stylesheet" href="css/animate.css">
+        
+		<!-- style CSS
+		============================================ -->
+        <link rel="stylesheet" href="style.css">
+        
+		<!-- responsive CSS
+		============================================ -->
+        <link rel="stylesheet" href="css/responsive.css">
+        
+		<!-- modernizr JS
+		============================================ -->		
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- header start -->
+        <header class="header-area">
+            <div class="header-top-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 hidden-xs">
+                            <div class="header-top-left">
+                                <div class="language-usd">
+                                    <ul>
+                                        <li><a href="#">eng</a>
+                                            <ul class="submenu-mainmenu">
+                                                <li><a href="#">Bengali</a></li>
+                                                <li><a href="#">English</a></li>
+                                                <li><a href="#">French</a></li>
+                                                <li><a href="#">German</a></li>
+                                                <li><a href="#">Spanish</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">usd</a>
+                                            <ul class="submenu-mainmenu">
+                                                <li><a href="#">usd</a></li>
+                                                <li><a href="#">uero</a></li>
+                                                <li><a href="#">taka</a></li>
+                                                <li><a href="#">pound</a></li>
+                                                <li><a href="#">rupi</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="header-top-right">
+                                <div class="account-cart">
+                                    <ul>
+                                        <li class="account"><a href="#">my account</a>
+                                            <ul class="submenu-mainmenu">
+                                                <li><a href="cart.html">my bag</a></li>
+                                                <li><a href="checkout.html">checkout</a></li>
+                                                <li><a href="wishlist.html">wishlist</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="login"><a href="#">login</a>
+                                            <ul class="submenu-mainmenu">
+                                                <li><a href="#">login or register</a></li>
+                                                <li class="login-button"><a href="#">login</a></li>
+                                                <li><a href="#">or</a></li>
+                                                <li class="creat-button"><a href="#">creat account</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="cart"><a href="cart.html"><img src="img/icon/cart.png" alt="cart"><p>2</p></a>
+                                            <ul class="submenu-mainmenu">
+                                                <li class="single-cart-item clearfix">
+                                                    <span class="cart-img">
+                                                        <a href="#"><img src="img/menu/3.jpg" alt=""></a>
+                                                    </span>
+                                                    <span class="cart-info">
+                                                        <a href="#">Lorem Ipsam...</a>
+                                                        <span>1 x $104.99</span>
+                                                        <a class="trash" href="#"><i class="fa fa-trash"></i></a>
+                                                    </span>  
+                                                </li>
+                                                <li class="single-cart-item clearfix">
+                                                    <span class="cart-img">
+                                                        <a href="#"><img src="img/menu/4.jpg" alt=""></a>
+                                                    </span>
+                                                    <span class="cart-info">
+                                                        <a href="#">Lorem Ipsam...</a>
+                                                        <span>2 x $104.99</span>
+                                                        <a class="trash" href="#"><i class="fa fa-trash"></i></a>
+                                                    </span>   
+                                                </li>
+                                                <li>
+                                                    <span class="sub-total-cart text-center">
+                                                        SubTotal <span>$620</span>
+                                                        <a href="checkout.html" class="view-cart">Checkout</a>
+                                                    </span>
+                                                </li>    
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-header-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                            <div class="logo">
+                                <a href="index.html"><img src="img/logo/logo.png" alt="SHOPPPIE"></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-8 col-sm-6">
+                            <div class="mainmenu">
+                                <nav>
+                                    <ul>
+                                        <li><a href="index.html">Home</a>
+                                            <ul class="submenu-mainmenu">
+                                                <li><a href="index.html">Home Version 1</a></li>
+                                                <li><a href="index-2.html">Home Version 2</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="shop-full-grid.html">Women</a>
+                                            <div class="mega-menu">
+                                                <span>
+                                                    <a href="shop-grid-left-sidebar.html" class="title">men</a>
+                                                    <a href="#">blazers</a>
+                                                    <a href="#">jackets</a>
+                                                    <a href="#">Colletions</a>
+                                                    <a href="#">T-shirts</a>
+                                                    <a href="#">Jeens pant's</a>
+                                                    <a href="#">Sport shoes</a>
+                                                </span>
+                                                <span>
+                                                    <a href="shop-grid-left-sidebar.html" class="title">women</a>
+                                                    <a href="#">cocktail</a>
+                                                    <a href="#">sunglass</a>
+                                                    <a href="#">evening</a>
+                                                    <a href="#">footwear</a>
+                                                    <a href="#">bootees bags</a>
+                                                    <a href="#">furniture</a>
+                                                </span>
+                                                <span>
+                                                    <a href="shop-grid-left-sidebar.html" class="title">accessories</a>
+                                                    <a href="#">gagets</a>
+                                                    <a href="#">laptop</a>
+                                                    <a href="#">mobile</a>
+                                                    <a href="#">lifestyle</a>
+                                                    <a href="#">Jeens pant's</a>
+                                                    <a href="#">Sport items</a>
+                                                </span>
+                                                <span>
+                                                    <img src="img/menu/1.jpg" alt="">
+                                                    <img src="img/menu/2.jpg" alt="">
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li><a href="shop-full-grid.html">Accessories</a></li>
+                                        <li><a href="blog-full-view.html">Blog</a>
+                                            <ul class="submenu-mainmenu">
+                                                <li><a href="blog-full-view.html">Blog Full View</a></li>
+                                                <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+                                                <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+                                                <li><a href="blog-details.html">Blog Details</a></li>
+                                            </ul>    
+                                        </li>
+                                        <li><a href="shop-full-grid.html">Shop</a>
+                                            <ul class="submenu-mainmenu">
+                                                <li><a href="shop-list-left-sidebar.html">Shop List Left Sidebar</a></li>
+                                                <li><a href="shop-list-right-sidebar.html">Shop List Right Sidebar</a></li>
+                                                <li><a href="shop-grid-left-sidebar.html">Shop Grid Left Sidebar</a></li>
+                                                <li><a href="shop-grid-right-sidebar.html">Shop Grid Right Sidebar</a></li>
+                                                <li><a href="shop-full-grid.html">Shop None Sidebar</a></li>
+                                                <li><a href="product-details-fullwidth.html">Product Details Fullwidth</a></li>
+                                                <li><a href="product-details-left-sidebar.html">Product Details Left Sidebar</a></li>
+                                                <li><a href="product-details-right-sidebar.html">Product Details Right Sidebar</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="about-us.html">Pages</a>
+                                            <ul class="submenu-mainmenu">
+                                                <li><a href="about-us.html">About Us</a></li>
+                                                <li><a href="cart.html">Cart</a></li>
+                                                <li><a href="checkout.html">Checkout</a></li>
+                                                <li><a href="wishlist.html">Wishlist</a></li>
+                                                <li><a href="404.html">404 Page</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-2 col-sm-6 col-xs-12">
+                            <div class="search-box">
+                                <form action="#">
+                                    <input type="text" placeholder="Search">
+                                    <button type="submit"><i class="fa fa-search"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <!-- Mobile Menu Area start -->
+            <div class="mobile-menu-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="mobile-menu">
+                                <nav id="dropdown">
+                                    <ul>
+                                        <li><a href="index.html">HOME</a>
+                                            <ul>
+                                                <li><a href="index.html">Home Version 1</a></li>
+                                                <li><a href="index-2.html">Home Version 2</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="shop-full-grid.html">Women</a></li>
+                                        <li><a href="shop-full-grid.html">Accessories</a></li>
+                                        <li><a href="blog-full-view.html">Blog</a>
+                                            <ul>
+                                                <li><a href="blog-full-view.html">Blog Full View</a></li>
+                                                <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+                                                <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+                                                <li><a href="blog-details.html">Blog Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="shop-full-grid.html">Shop</a>
+                                            <ul>
+                                                <li><a href="shop-grid-left-sidebar.html">Shop Grid Left Sidebar</a></li>
+                                                <li><a href="shop-grid-right-sidebar.html">Shop Grid Right Sidebar</a></li>
+                                                <li><a href="shop-list-left-sidebar.html">Shop List Left Sidebar</a></li>
+                                                <li><a href="shop-list-right-sidebar.html">Shop List Right Sidebar</a></li>
+                                                <li><a href="shop-full-grid.html">Shop None Sidebar</a></li>
+                                                <li><a href="product-details-fullwidth.html">Product Details Fullwidth</a></li>
+                                                <li><a href="product-details-left-sidebar.html">Product Details Left Sidebar</a></li>
+                                                <li><a href="product-details-right-sidebar.html">Product Details Right Sidebar</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="about-us.html">Pages</a>
+                                            <ul>
+                                                <li><a href="about-us.html">About Us</a></li>
+                                                <li><a href="cart.html">Cart</a></li>
+                                                <li><a href="checkout.html">Checkout</a></li>
+                                                <li><a href="wishlist.html">Wishlist</a></li>
+                                                <li><a href="404.html">404 Page</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>					
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Menu Area end -->		   
+        </header>
+        <!-- header end -->
+        <!-- breadcrumb start -->
+        <div class="breadcrumb-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-left">
+                        <ul class="breadcrumb">
+                            <li><a href="index.html">Home</a><span> - </span></li>
+                            <li class="active">checkout</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- breadcrumb end -->
+        <!--Checkout Area Start-->
+        <div class="checkout-area area-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#checkout">
+                                            1. CHECKOUT METHOD
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="checkout" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                        <div class="row">   
+                                            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                                                <div class="single-checkout">
+                                                    <h3 class="login-title">Check as a guest or register</h3>
+                                                    <p class="heading-p">Register with us for future convenience</p>
+                                                    <form action="#">
+                                                        <label>
+                                                            <input type="radio" name="check" value="guest">
+                                                            <span>Checkout as Guest</span>
+                                                        </label>
+                                                         <label>
+                                                            <input type="radio" name="check" value="user" checked="checked">
+                                                            <span>Register</span>
+                                                        </label>
+                                                    </form>
+                                                </div>
+                                                <div class="single-checkout">
+                                                    <p class="heading-p">Register and save time !</p>
+                                                    <p class="heading-p">Register with us for future convenience</p>
+                                                    <p class="fast-check">Fast and easy checkout</p>
+                                                    <p class="fast-check">Easy access  to your order history and status</p>
+                                                    <a href="#" class="c-btn">Continue</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                                                <div class="single-checkout right">
+                                                    <h3 class="login-title">Login</h3>
+                                                    <h4>Already Registered?</h4>
+                                                    <p>Please log in below :</p>
+                                                    <div class="login-form">
+                                                        <form action="#">
+                                                            <input type="email" required placeholder="Email Address">
+                                                            <input type="password" required placeholder="Password">
+                                                            <a href="#" class="login-btn">Login</a>
+                                                        </form>
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#billing">
+                                            2. BILLING INFORMATION
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="billing" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        <div class="login-form">
+                                            <form action="#" method="post">
+                                                <div class="city-country">
+                                                    <div class="city">
+                                                        <p>Select a billing address from your address book or enter a new address.</p>
+                                                        <select class="country">
+                                                            <option>Bootexperts, Banasree D-Block, Dhaka 1219, Bangladesh</option>		
+                                                            <option>Bootexperts, Banasree D-Block, Dhaka 1219, Bangladesh</option>		
+                                                            <option>Bootexperts, Banasree D-Block, Dhaka 1219, Bangladesh</option>		
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="ship-wrap">
+                                                    <div class="ship-address">
+                                                        <label>
+                                                            <input type="radio" name="shipping_address" value="old-address" checked="checked">Ship to this address
+                                                        </label>    
+                                                    </div>
+                                                     <div  class="ship-address">
+                                                       <label>
+                                                            <input type="radio" id="add-new-address" name="shipping_address" value="new-address">Ship to different address
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div id="add-new-address-info" class="ship-new-address-info">
+                                                    <div class="customer-name">
+                                                        <div class="first-name">
+                                                            <p>First Name<span>*</span></p>
+                                                            <input type="text" required>
+                                                        </div>
+                                                        <div class="last-name">
+                                                            <p>Last Name<span>*</span></p>
+                                                            <input type="text" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="customer-info">
+                                                        <div class="company-name">
+                                                            <p>Company</p>
+                                                            <input type="text">
+                                                        </div>
+                                                        <div class="email-address">
+                                                            <p>Email Adress<span>*</span></p>
+                                                            <input type="email" required>
+                                                        </div>
+                                                    </div>
+                                                    <p>Address<span>*</span></p>
+                                                    <input type="text" required>
+                                                    <div class="city-country">
+                                                        <div class="city">
+                                                            <p>City<span>*</span></p>
+                                                            <input type="text" required>
+                                                        </div>
+                                                        <div class="state">
+                                                            <p>State/Province</p>
+                                                            <select class="country">
+                                                                <option value="state">Please select region, state or province</option>
+                                                                <option value="indo">Bahasa Indonesia</option>
+                                                                <option value="melyu">Bahasa Melayu</option>		
+                                                                <option value="deutsch">Deutsch (Deutschland)</option>		
+                                                                <option value="austra">English (Australia)</option>		
+                                                                <option value="canada">English (Canada)</option>		
+                                                                <option value="india">English (India)</option>		
+                                                                <option value="ireland">English (Ireland)</option>		
+                                                                <option value="maktoob">English (Maktoob)</option>		
+                                                                <option value="malaysia">English (Malaysia)</option>		
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="city-country">
+                                                        <div class="city">
+                                                            <p>Zip/Postal Code<span>*</span></p>
+                                                            <input type="text" required>
+                                                        </div>
+                                                        <div class="state">
+                                                            <p>Country<span>*</span></p>
+                                                            <select class="country">
+                                                                <option value="AF">Afghanistan</option>
+                                                                <option value="AU">Australia</option>		
+                                                                <option value="BH">Bahrain</option>		
+                                                                <option value="BD">Bangladesh</option>		
+                                                                <option value="CA">Canada</option>		
+                                                                <option value="DK">Denmark</option>		
+                                                                <option value="EG">Egypt</option>		
+                                                                <option value="FR">France</option>		
+                                                                <option value="GB">United Kingdom</option>		
+                                                                <option selected="selected" value="US">United States</option>		
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="customer-info">
+                                                        <div class="TELEPHONE">
+                                                            <p>TELEPHONE<span>*</span></p>
+                                                            <input type="text" required>
+                                                        </div>
+                                                        <div class="fax">
+                                                            <p>Fax</p>
+                                                            <input type="text">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="buttons-set">
+                                                    <button class="button" type="button"><span>Continue</span></button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingFour">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#shipping-method">
+                                            3. SHIPPING Method
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="shipping-method" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                    <div class="panel-body">
+                                        <div class="ship-method">
+                                            <p>Flat rate</p>
+                                            <p class="fixed-bold">Fixed $10.00</p>
+                                            <div class="buttons-set">
+                                                <button type="button" class="button"><span>Continue</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingFive">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#payment-info">
+                                            4. PAYMENT INFORMATION
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="payment-info" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                    <div class="panel-body">
+                                        <div class="ship-method payment">
+                                            <div class="ship-wrap">
+                                                <div class="ship-address">
+                                                    <input type="radio" name="check" value="check">
+                                                    <span>Check / Money order </span>
+                                                </div>
+                                                 <div class="ship-address">
+                                                    <input type="radio" name="check" value="credit">
+                                                    <span>Credit Card (saved) </span>
+                                                </div>
+                                                <div class="single-pay-info">
+                                                    <p>Name on Card <span>*</span></p>
+                                                    <input type="text">
+                                                </div>
+                                                <div class="single-pay-info">
+                                                    <p>Credit Card Type</p>
+                                                    <select name="payment">
+                                                        <option>please select</option>
+                                                        <option>visa Card</option>
+                                                        <option>Master Card</option>
+                                                        <option>paypall</option>
+                                                        <option>Americal Express</option>
+                                                    </select>
+                                                </div>
+                                                <div class="single-pay-info">
+                                                    <p>Credit Card Number <span>*</span></p>
+                                                    <input type="text">
+                                                </div>
+                                                <div class="single-pay-info">
+                                                    <p>Expiration date <span>*</span></p>
+                                                    <select name="month" id="month">
+                                                        <option>Month</option>
+                                                        <option>January</option>
+                                                        <option value="">February</option>
+                                                        <option value="">March</option>
+                                                        <option value="">April</option>
+                                                        <option value="">May</option>
+                                                        <option value="">June</option>
+                                                        <option value="">July</option>
+                                                        <option value="">August</option>
+                                                        <option value="">September</option>
+                                                        <option value="">October</option>
+                                                        <option value="">November</option>
+                                                        <option value="">December</option>
+                                                    </select>
+                                                    <select name="year" id="year">
+                                                        <option value="">2016</option>
+                                                        <option value="">2017</option>
+                                                        <option value="">2018</option>
+                                                        <option value="">2019</option>
+                                                        <option value="">2020</option>
+                                                        <option value="">2021</option>
+                                                        <option value="">2022</option>
+                                                    </select>
+                                                </div>
+                                                <div class="single-pay-info">
+                                                    <p>Card Varification Number<span>*</span></p>
+                                                    <input type="text">
+                                                    <a class="what">What is it?</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="panel-title">
+                            <a href="#">
+                                ORDER REVIEW
+                            </a>
+                        </h4>
+                        <div class="panel-body checkout">
+                            <form action="#" method="post">
+                                <div class="checkout-table table-responsive">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th class="p-name">Product</th>
+                                                <th class="p-total">Total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="p-name">Lorem ipsum dolor sit amet X 1</td>
+                                                <td class="p-total">$156.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p-name">Lorem ipsum dolor sit amet X 1</td>
+                                                <td class="p-total">$156.17</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p-name-subtotal">cart subtotal</td>
+                                                <td class="p-total">$312.17</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p-name-shipping">shipping</td>
+                                                <td class="p-total">
+                                                    <label>
+                                                        <input type="radio" name="check" value="guest">
+                                                        <span>Flat rate $8.00</span>
+                                                    </label>
+                                                     <label>
+                                                        <input type="radio" name="check" value="user" checked="checked">
+                                                        <span>Free Shipping</span>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td class="p-name-total">order total</td>
+                                                <td>$160.17</td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                    <button type="button" class="button floatright"><span>Place Order</span></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <!--End of Checkout Area--> 
+        <!-- footer start -->
+        <footer class="footer-area">
+            <div class="footer-middle-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-5 col-xs-12">
+                            <div class="footer-widget">
+                                <div class="footer-logo">
+                                    <img src="img/logo/footer-logo.png" alt="">
+                                </div>
+                                <div class="footer-address">
+                                    <p>28 Green Tower, Street Name New<br> York City, USA</p>
+
+                                    <p>TELEPHONE- +88017 222 333<br>
+                                    Email- admin@bootexperts.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-2 col-sm-3 col-xs-12">
+                            <div class="footer-widget">
+                                <h5>Services</h5>
+                                <ul>
+                                    <li><a href="about.html">About us</a></li>
+                                    <li><a href="about.html">Return Policy</a></li>
+                                    <li><a href="blog.html">Our Blog</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                    <li class="hidden-sm"><a href="#">Terms &amp; Condition</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-2 hidden-sm col-xs-12">
+                            <div class="footer-widget">
+                                <h5>Account</h5>
+                                <ul>
+                                    <li><a href="#">Your Account</a></li>
+                                    <li><a href="checkout.html">Checkout</a></li>
+                                    <li><a href="#">Login</a></li>
+                                    <li><a href="#">Register</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                            <div class="footer-widget">
+                                <h5>Get Social</h5>
+                                <p>Connected with our social media and<br>
+get update protidin</p>
+                                <ul class="social-icon">
+                                    <li><a href="www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="www.google-plus.com"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="www.instagram.com"><i class="fa fa-instagram"></i></a></li>
+                                    <li class="hidden-sm"><a href="www.pinterest.com"><i class="fa fa-pinterest"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="copyright">  
+                                <p>2016 ® All Rights Reserved <span><a href="http://bootexperts.com/">BootExperts</a></span>.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="payment text-right">
+                                <img src="img/payment/1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer end -->
+        
+    
+		<!-- jquery
+		============================================ -->		
+        <script src="js/vendor/jquery-1.12.3.min.js"></script>
+		<!-- bootstrap JS
+		============================================ -->		
+        <script src="js/bootstrap.min.js"></script>		
+		<!-- meanmenu JS
+		============================================ -->		
+        <script src="js/jquery.meanmenu.js"></script>
+		<!-- wow JS
+		============================================ -->		
+        <script src="js/wow.min.js"></script>
+		<!-- owl.carousel JS
+		============================================ -->		
+        <script src="js/owl.carousel.min.js"></script>
+		<!-- countdown JS
+		============================================ -->		
+        <script src="js/jquery.countdown.min.js"></script>
+		<!-- price-slider JS
+		============================================ -->		
+        <script src="js/jquery-price-slider.js"></script>
+        <!-- Elevate Zoom js
+		============================================ -->         
+        <script src="js/jquery.elevatezoom.js"></script> 
+		<!-- scrollUp JS
+		============================================ -->		
+        <script src="js/jquery.scrollUp.min.js"></script>
+		<!-- plugins JS
+		============================================ -->		
+        <script src="js/plugins.js"></script>
+   		<!-- Nevo Slider js
+		============================================ -->         
+		<script type="text/javascript" src="lib/custom-slider/js/jquery.nivo.slider.js"></script>
+        <script type="text/javascript" src="lib/custom-slider/home.js"></script> 
+        
+        <!-- main JS
+		============================================ -->		
+        <script src="js/main.js"></script>
+    </body>
+</html>

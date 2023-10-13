@@ -1,0 +1,39 @@
+/*----------------------------------------*/
+/*  12. Client
+/*----------------------------------------*/
+.ht-client-one-wrap {
+    justify-content: space-between;
+    @media #{$large-mobile}{
+        justify-content: space-around;
+    }
+}
+/*-- Client Image --*/
+.ht-client-image-one {
+    position: relative;
+    align-self: center;
+    @media #{$tablet-device}{
+        width: 80px;
+    }
+    @media #{$large-mobile}{
+        width: 80px;
+        margin: 0 20px 30px;
+    }
+    & img {
+        max-width: 100%;
+        &.hover-image {
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            z-index: 9;
+        }
+    }
+    &:hover {
+        & img {
+            opacity: 0;
+            &.hover-image {
+                opacity: 1;
+            }
+        }
+    }
+}

@@ -1,0 +1,101 @@
+/*---
+   06. Contact Css 
+----------------------------------------*/
+.bg_image--9 {
+    background-image: url(../images/bg/bg-image-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.contact_form_container {
+    background: rgba(239, 201, 52,0.5);
+    padding: 30px;
+    .section-title-2{
+    }
+}
+
+
+
+.form-style-6{
+    form{
+        input {
+            margin-top: 30px;
+            border:  1px solid #ffffff;
+            height: 50px;
+            line-height:  50px;
+            color:  #333;
+            font-weight: 300;
+            font-family: $heading-font;
+            width: 100%;
+            padding: 10px;
+            &:focus{
+                border: 1px solid $theme-color;
+            }
+
+            &[type="submit"] {
+                background:  #fff;
+                height: 55px;
+                line-height: 56px;
+                border:  0 none;
+                padding: 0 30px;
+                color:  $theme-color;
+                font-weight: 600;
+                width:  auto;
+                transition: 0.5s;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+        }
+        textarea {
+            width: 100%;
+            margin-top:  30px;
+            min-height:  145px;
+            border:  1px solid #fff;
+            padding:  20px;
+            font-weight:  300;
+            color:  #333;
+            font-family: $heading-font;
+            &:focus{
+                border: 1px solid $theme-color;
+            }
+        }
+    }
+}
+.form-style-6 form input::-webkit-input-placeholder {
+    color: #333;
+}
+
+.form-style-6 form input::-moz-placeholder {
+    color: #333;
+}
+
+.form-style-6 form input:-ms-input-placeholder {
+    color: #333;
+}
+
+.form-style-6 form input:-moz-placeholder {
+    color: #333;
+}
+
+
+.form-style-6 form textarea::-webkit-input-placeholder {
+    color: #333;
+}
+
+.form-style-6 form textarea::-moz-placeholder {
+    color: #333;
+}
+
+.form-style-6 form textarea:-ms-input-placeholder {
+    color: #333;
+}
+
+.form-style-6 form textarea:-moz-placeholder {
+    color: #3333;
+}
+
+
+

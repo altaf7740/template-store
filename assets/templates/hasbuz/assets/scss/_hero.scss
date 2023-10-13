@@ -1,0 +1,172 @@
+/*---------------------------------------
+    03. Hero
+-----------------------------------------*/
+.ht-hero-slider {
+    float: left;
+    width: 100%;
+}
+/*-- Hero Three --*/
+.ht-hero-slider-three {
+    overflow: hidden;
+    & .ht-single-slide {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 1;
+        position: relative;
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            content: "";
+            background-color: $black;
+            opacity: 0.5;
+        }
+        @media #{$tablet-device}{
+            height: auto;
+            padding: 250px 0 200px;
+        }
+        @media #{$large-mobile}{
+            height: auto;
+            padding: 120px 0 60px;
+        }
+    }
+    
+    // Arrow
+    .slick-arrow {
+        position: absolute;
+        top: 50%;
+        height: 100px;
+        width: 100px;
+        z-index: 999;
+        color: $white;
+        border: none;
+        border-radius: 50px;
+        background-color: rgba($black, 0.2);
+        margin-top: -50px;
+        @media #{$large-mobile}{
+            display: none !important;
+        }
+        & i {
+            line-height: 100px;
+            font-size: 30px;
+            display: block;
+        }
+        &.slick-prev {
+            left: -50px;
+            padding-left: 50px;
+            padding-right: 10px;
+        }
+        &.slick-next {
+            right: -50px;
+            padding-right: 50px;
+            padding-left: 10px;
+        }
+    }
+    
+    // Dots
+    .slick-dots {
+        display: none !important;
+    }
+}
+
+
+/*-- Hero Content One --*/
+.ht-hero-content-four {
+    padding-top: 100px;
+    margin: auto;
+    text-align: center;
+    z-index: 9;
+    position: relative;
+    @media #{$large-mobile}{
+        padding-top: 0;
+    }
+    & h1 {
+        font-size: 110px;
+        line-height: 1;
+        font-weight: 900;
+        color: $white;
+        margin-bottom: 20px;
+        opacity: 0;
+        transition: all 0s ease 0.5s;
+        visibility: hidden;
+        @media #{$desktop-device}{
+            font-size: 80px;
+        }
+        @media #{$tablet-device}{
+            font-size: 60px;
+        }
+        @media #{$large-mobile}{
+            font-size: 36px;
+        }
+        @media #{$small-mobile}{
+            font-size: 24px;
+        }
+    }
+    & p {
+        max-width: 850px;
+        color: $white;
+        font-family: $poppins;
+        font-size: 19px;
+        line-height: 30px;
+        margin-bottom: 44px;
+        margin-left: auto;
+        margin-right: auto;
+        @media #{$desktop-device}{
+            max-width: 750px;
+        }
+        @media #{$tablet-device}{
+            max-width: 650px;
+            font-size: 16px;
+            line-height: 26px;
+        }
+        @media #{$large-mobile}{
+            font-size: 14px;
+            line-height: 24px;
+            margin-bottom: 20px;
+        }
+        @media #{$large-mobile}{
+            font-size: 12px;
+            line-height: 20px;
+            margin-bottom: 15px;
+        }
+        animation-duration: 1s;
+        animation-fill-mode: both;
+    }
+    & .btn {
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        &:hover {
+            transform: translateY(0) !important;
+        }
+    }
+}
+
+.slick-current {
+    /*-- Hero Content One --*/
+    & .ht-hero-content-four {
+        & h1 {
+            opacity: 1;
+            visibility: visible;
+            animation-duration: 0.5s;
+            & span {
+                animation-duration: 0.5s;
+            }
+        }
+        & p {
+            animation-name: fadeInBottom;
+            animation-delay: 1.2s;
+            animation-duration: 0.5s;
+        }
+        & .btn {
+            animation-name: fadeInBottom;
+            animation-delay: 2s;
+            animation-duration: 0.5s;
+        }
+    }
+}

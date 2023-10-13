@@ -1,0 +1,525 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Driveon - Driving School HTML Template
+    Template URI: http://hastech.company/
+    Description: Bootstrap HTML Template
+    Author: Hastech
+    Author URI: http://hastech.company/
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+	
+    1.   Page Banner Title Area
+    2.   Feature Area
+	3.   Course Area
+	4.   Video Area
+	5.   Instructor Area
+	6.   FAQ Area
+	7.   Call To Action Area
+	8.   Contact Area
+	9.   Dark Version Style
+	
+	
+-----------------------------------------------------------------------------------*/
+/*-------------------------- 
+	1. Page Banner Title Area
+--------------------------*/
+.page-banner-area {
+  background-image: url("img/section-bg/page-banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover ;
+  background-size: cover ;
+  padding: 270px 0 150px;
+}
+.page-banner{}
+.page-banner h1 {
+  color: #fff;
+  display: block;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 30px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.page-banner.text-left h1 {
+  float: left;
+}
+.page-banner.text-right h1 {
+  float: right;
+}
+.page-banner ul {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10px;
+}
+.page-banner.text-left ul {
+  float: right;
+}
+.page-banner.text-right ul {
+  float: left;
+}
+.page-banner ul li {
+  display: block;
+  float: left;
+  padding: 0 6px;
+  position: relative;
+}
+.page-banner ul li:first-child {
+  padding-left: 0;
+}
+.page-banner ul li:last-child {
+  padding-right: 0;
+}
+.page-banner ul li + li::before {
+  color: #fff;
+  content: "/";
+  display: block;
+  left: -3px;
+  line-height: 9px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+}
+.page-banner ul li a, .page-banner ul li span {
+  color: #fff;
+  display: block;
+  font-size: 12px;
+  line-height: 9px;
+  text-transform: uppercase;
+}
+.page-banner ul li a:hover {
+  color: #dec839;
+}
+/*-------------------------- 
+	2. Feature Area
+--------------------------*/
+.feature-wrapper {}
+.feature-left{}
+.feature-right{}
+/* Feature Image */
+.feature-image {
+  z-index: 9;
+}
+/* Single Feature */
+.single-feature {
+  position: relative;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  z-index: 1;
+}
+.single-feature:nth-child(1) {
+  padding: 16px 0 15px;
+}
+.single-feature:nth-child(2) {
+  padding: 38px 0;
+}
+.single-feature:nth-child(3) {
+  padding: 16px 0 15px;
+}
+/* Single Feature Hover */
+.single-feature:hover {
+  background-color: #fff;
+}
+.single-feature::before {
+  background-color: #fff;
+  bottom: 0;
+  content: "";
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  width: 50%;
+  z-index: -1;
+}
+.single-feature:hover::before {
+  opacity: 1;
+}
+.feature-left .single-feature::before {
+  left: 100%;
+}
+.feature-right .single-feature::before {
+  Right: 100%;
+}
+/* Left Single Feature */
+.feature-left .single-feature {
+  margin-right: -7px;
+}
+.feature-left .single-feature:nth-child(2) {
+  margin-left: -15px;
+  padding-right: 24px;
+}
+/* Right Single Feature */
+.feature-right .single-feature {
+  margin-left: -7px;
+}
+.feature-right .single-feature:nth-child(2) {
+  margin-right: -15px;
+  padding-left: 24px;
+}
+/* Featue Icon */
+.single-feature .icon {
+  display: block;
+  margin-top: 19px;
+  min-width: 36px;
+}
+.feature-left .icon {
+  float: right;
+  margin-left: 29px;
+  text-align: left;
+}
+.feature-right .icon {
+  float: left;
+  margin-right: 29px;
+  text-align: right;
+}
+.single-feature .icon i {
+  color: #dec839;
+  font-size: 36px;
+  display: block;
+}
+/* Feature Text */
+.single-feature .text{}
+.single-feature .text h4 {
+  margin-bottom: 9px;
+}
+.single-feature .text p{}
+/*-------------------------- 
+	3. Course Area
+--------------------------*/
+.course-wrapper{}
+.course-item {
+  background: rgba(0, 0, 0, 0) url("img/shape/course/course-white.png") no-repeat scroll center center ;
+  -webkit-background-size: cover ;
+  background-size: cover ;
+  overflow: hidden;
+  padding: 34px 25px 40px;
+  position: relative;
+  transition: all 1s ease 0s;
+  z-index: 1;
+}
+.course-item i {
+  color: #dec839;
+  display: inline-block;
+  font-size: 48px;
+  margin-bottom: 18px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.course-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 19px;
+  padding-bottom: 19px;
+  position: relative;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.course-item h4::before {
+  background-color: #dec839;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 50%;
+  margin-left: -25px;
+  position: absolute;
+  width: 50px;
+}
+.course-item p {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+/* Course Hover */
+.course-item:hover {
+  background-image: url("img/shape/course/course-color.png");
+  transform: rotate(360deg);
+}
+.course-item:hover i {
+  color: #fff;
+}
+.course-item:hover h4 {
+  color: #fff;
+}
+.course-item:hover h4::before {
+  background-color: #fff;
+}
+.course-item:hover p {
+  color: #fff;
+}
+/*--------------------------
+	4. Video Area
+--------------------------*/
+.video-area {
+  background: rgba(0, 0, 0, 0) url("img/section-bg/video.jpg") repeat scroll 0 0;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding: 195px 0;
+}
+.video-content {}
+.video-content a {
+  color: #ffffff;
+  display: inline-block;
+}
+.video-content a:hover {
+  color: #dec839;
+}
+.video-content a i {
+  display: block;
+  font-size: 60px;
+}
+.video-content h3 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 18px;
+  margin: 30px 0 0;
+  text-transform: uppercase;
+}
+/*--------------------------
+	5. Instructor Area
+--------------------------*/
+.instructor-details{}
+.instructor-name {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.instructor-title {
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.instructor-details p {
+  margin-bottom: 17px;
+}
+.instructor-social{}
+.instructor-social a {
+  border: 1px solid #aaaaaa;
+  color: #aaaaaa;
+  display: block;
+  float: left;
+  height: 35px;
+  margin-right: 15px;
+  text-align: center;
+  width: 35px;
+}
+.instructor-social a i {
+  display: block;
+  font-size: 18px;
+  line-height: 33px;
+}
+.instructor-social a:hover {
+  background-color: #dec839;
+  border-color: #dec839;
+  color: #fff;
+}
+.instructor-image {
+  margin-top: 74px;
+}
+.instructor-image img {
+  width: 100%;
+}
+/* Instructor Tab List */
+.instructor-tab-list {
+  float: left;
+  margin-top: -127px;
+}
+.instructor-tab-list li {
+  display: block;
+  float: left;
+  margin-right: 30px;
+  padding-bottom: 12px;
+  width: 115px;
+}
+.instructor-tab-list li:last-child {
+  margin-right: 0;
+}
+.instructor-tab-list li a {
+  display: block;
+  position: relative;
+}
+.instructor-tab-list li a::before {
+  background-color: #000;
+  bottom: 0;
+  content: "";
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.instructor-tab-list li a:hover::before, .instructor-tab-list li.active a::before {
+  opacity: 0.5;
+}
+.instructor-tab-list li a::after {
+  background-color: #dddddd;
+  border-radius: 50%;
+  bottom: -12px;
+  content: "";
+  height: 2px;
+  left: 10px;
+  opacity: 0;
+  position: absolute;
+  right: 10px;
+}
+.instructor-tab-list li a:hover::after, .instructor-tab-list li.active a::after {
+  opacity: 1;
+}
+.instructor-tab-list li a img {
+  width: 100%;
+}
+/*--------------------------
+	6. FAQ Area
+--------------------------*/
+.faq-image {
+  margin-top: 75px;
+}
+.faq-image img {
+  width: 100%;
+}
+/*--------------------------
+	7. Call To Action Area
+--------------------------*/
+.cta-area {
+  background-color: #dec839;
+}
+.call-to-action{}
+.call-to-action h3 {
+  color: #fff;
+  display: block;
+  float: left;
+  font-weight: 600;
+  line-height: 36px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.call-to-action a {
+  float: right;
+}
+/*--------------------------
+	8. Contact Area
+--------------------------*/
+#contact-map {
+  height: 530px;
+}
+.contact-info{}
+.contact-info .single-info{}
+.contact-info .single-info + .single-info {
+  margin-top: 45px;
+}
+.contact-info .single-info .icon {
+  background-color: #dec839;
+  border-radius: 2px;
+  color: #fff;
+  display: block;
+  float: left;
+  height: 44px;
+  margin-left: 10px;
+  margin-right: 40px;
+  margin-top: 10px;
+  text-align: center;
+  transform: rotate(45deg);
+  width: 44px;
+}
+.contact-info .single-info .icon i {
+  display: block;
+  font-size: 24px;
+  line-height: 44px;
+  transform: rotate(-45deg);
+}
+.contact-info .single-info .content{}
+.contact-info .single-info .content h5 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 11px;
+  text-transform: uppercase;
+}
+.contact-info .single-info .content p{}
+.contact-info .single-info .content p a {
+  display: block;
+}
+.contact-info .single-info .content p a:hover {
+  color: #dec839;
+}
+/*--------------------------
+	9. Dark Version Style
+--------------------------*/
+.dark-wrapper .bg-white, .dark-wrapper.bg-white {
+  background-color: #1e2127;
+}
+.dark-wrapper .bg-gray, .dark-wrapper.bg-gray {
+  background-color: #252830;
+}
+.dark-wrapper .overlay-white::before, .dark-wrapper.overlay-white::before {
+  background-color: #000;
+}
+.dark-wrapper p, .dark-wrapper span {
+  color: #d0d0d0;
+}
+.dark-wrapper h1, .dark-wrapper h2, .dark-wrapper h3, .dark-wrapper h4,  .dark-wrapper h5, .dark-wrapper h6, .dark-wrapper a {
+  color: #fff;
+}
+.dark-wrapper .section-title::before, .dark-wrapper .section-title::after {
+  background-color: #444;
+}
+/* Course Form */
+.dark-wrapper .find-course-form h5 span {
+  color: #555555;
+}
+/* Feature */
+.dark-wrapper .single-feature:hover {
+  background-color: #1e2127;
+}
+.dark-wrapper .single-feature::before {
+  background-color: #1e2127;
+}
+/* Funfact */
+.dark-wrapper .single-facts i {
+  color: #d0d0d0;
+}
+.dark-wrapper .single-facts h1::before {
+  background-color: #d0d0d0;
+}
+/* Course */
+.dark-wrapper .course-item {
+  background-image: url("img/shape/course/course-dark.png");
+}
+/* Gallery */
+.dark-wrapper .gallery-filter button::before, .dark-wrapper .gallery-filter button::after {
+  background-color: #d0d0d0;
+}
+.dark-wrapper .gallery-filter button {
+  color: #d0d0d0;
+}
+/* Testimonial */
+.dark-wrapper .ts-arrows {
+  color: #fff;
+}
+/* FAQ */
+.dark-wrapper .panel-group .panel {
+  background-color: #252830;
+}
+/* Blog */
+.dark-wrapper .blog-item .meta p {
+  color: #d0d0d0;
+}
+.dark-wrapper .blog-item .title a {
+  color: #fff;
+}
+.dark-wrapper .category-sidebar ul li a {
+  color: #fff;
+}
+/* Contact */
+.dark-wrapper .form .input input[type="text"], .dark-wrapper .form .input input[type="email"], .dark-wrapper .form .input input[type="tel"], .dark-wrapper .form .input input[type="password"], .dark-wrapper .form .input input[type="search"], .dark-wrapper .form .input input[type="url"], .dark-wrapper .form .input textarea {
+  color: #fff;
+}
+/* Other */
+.dark-wrapper .pagination ul li a {
+  color: #fff;
+}

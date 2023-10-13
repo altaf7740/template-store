@@ -1,0 +1,130 @@
+/*--
+    03. Hero
+-----------------------------------------*/
+.hero-section {
+    position: relative;
+}
+
+/*-- Hero Slider --*/
+.hero-slider-one {
+    /*-- Arrow --*/
+    & .slick-arrow {
+        display: none !important;
+    }
+    /*-- Dots --*/
+    & .slick-dots {
+        display: none !important;
+    }
+}
+
+/*-- Hero Content --*/
+.hero-content {
+    @media #{$large-mobile}{
+        order: 2;
+        margin-top: 30px;
+    }
+    
+    // All Element Selector
+    & > * {
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-name: fadeOutUp;
+    }
+    
+    & h5 {
+        color: $theme-color;
+    }
+    & h1 {
+        font-size: 72px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: $white;
+        
+        // Responsive
+        @media #{$desktop-device}{
+            font-size: 46px;
+        }
+        @media #{$tablet-device}{
+            font-size: 46px;
+        }
+        @media #{$large-mobile}{
+            font-size: 32px;
+            line-height: 40px;
+            & br {
+                display: none;
+            }
+        }
+        @media #{$small-mobile}{
+        }
+    }
+    & p {
+        max-width: 570px;
+        color: $white;
+    }
+    
+    & a {
+        height: 48px;
+        line-height: 26px;
+        padding: 10px 40px;
+        border: 1px solid $theme-color;
+        background-color: $theme-color;
+        color: $white;
+        border-radius: 50px;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 25px;
+        
+        &:hover {
+            background-color: $heading-color;
+            border-color:$heading-color;
+            color: $white;
+        }
+        
+        // Responsive
+        @media #{$large-mobile}{
+            margin-top: 10px;
+            padding: 8px 25px;
+            line-height: 22px;
+            height: 40px;
+        }
+        @media #{$small-mobile}{
+            
+        }
+    }
+}
+
+/*-- Slide Content In Animation --*/
+.slick-active {
+    /*-- Hero Content --*/
+    & .hero-content {
+
+        // All Element Selector
+        & > * {
+            animation-name: fadeInUp;
+            
+            // Child Selector
+            &:nth-child(1) {
+                animation-delay: 0.5s;
+            }
+            &:nth-child(2) {
+                animation-delay: 1s;
+            }
+            &:nth-child(3) {
+                animation-delay: 1.5s;
+            }
+            &:nth-child(4) {
+                animation-delay: 2s;
+            }
+            &:nth-child(5) {
+                animation-delay: 2.5s;
+            }
+            &:nth-child(6) {
+                animation-delay: 3s;
+            }
+            
+        }
+    }
+    
+}

@@ -1,0 +1,80 @@
+/*----------------------------------------*/
+/*  4.  ABout Area
+/*----------------------------------------*/
+.about-area {}
+/*-- About Image --*/
+.about-image {
+    & img {
+        width: 100%;
+    }
+}
+/*-- About Content --*/
+.about-content {
+    margin-top: 45px;
+    @media #{$desktop-device}{
+        margin-top: 10px;
+    }
+    & img {
+        margin-bottom: 29px;
+    }
+    & h4 {
+        color: #999999;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 13px;
+        text-transform: uppercase;
+    }
+    & h2 {
+        font-size: 30px;
+        font-weight: 700;
+        padding-bottom: 22px;
+        margin-bottom: 13px;
+        position: relative;
+        @media #{$desktop-device}{
+            font-size: 26px;
+        }
+        @media #{$large-mobile}{
+            font-size: 24px;
+        }
+        &::before, &::after {
+            background-color: #7c7c7c;
+            bottom: 0;
+            content: "";
+            height: 2px;
+            left: 0;
+            position: absolute;
+            width: 70px;
+        }
+        &::after {
+            bottom: 5px;
+            width: 40px;
+        }
+    }
+    & p {
+        margin-bottom: 27px;
+    }
+    & a {
+        background-color: transparent;
+        border: 1px solid #cccccc;
+        border-radius: 0;
+        color: #444444;
+        display: inline-block;
+        font-size: 16px;
+        height: 40px;
+        line-height: 24px;
+        padding: 7px 29px;
+        text-transform: uppercase;
+        &:hover {
+            background-color: $theme-color;
+            border-color: $theme-color;
+            color: $color-white;
+        }
+        & i {
+            font-size: 21px;
+            line-height: 18px;
+            margin-left: 8px;
+            position: relative;
+            top: 2px;
+        }
+    }
+}

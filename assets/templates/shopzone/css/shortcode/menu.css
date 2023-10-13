@@ -1,0 +1,78 @@
+/* =======================================
+	
+	Template: Shopzone
+	Css Name: Menu
+	Version: 1
+	Design and Developed by:Shopzone Theme
+	NOTE: This is Footer style file. All footer related style included in this file.
+
+========================================== */
+
+/*menu style */
+.mobile-menu-area {
+  display: none;
+}
+.menu-area {
+  display: block;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+}
+.main-menu {
+  padding-left: 35px;
+  padding-right: 50px;
+  width: 100%;
+}
+.main-menu ul > li > a {
+  color: #fff;
+  display: block;
+  font-family: "Open Sans",sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 30px 15px;
+  position: relative;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+}
+.main-menu ul li:hover a{color:#000;}
+.main-menu ul li >  ul {
+  background: #ffffff none repeat scroll 0 0;
+  box-shadow: 2px 0 7px 0 rgba(0, 0, 0, 0.13);
+  margin: 0;
+  opacity: 0;
+  padding: 15px;
+  position: absolute;
+  text-align: left;
+  top: 100px;
+  transform-origin: 0 0 0;
+  transition: all 0.5s ease 0s;
+  visibility: hidden;
+  width: 200px;
+  z-index: -9999;
+  -webkit-box-shadow: 2px 1px 5px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 1px 5px -1px rgba(0,0,0,0.75);
+  box-shadow: 2px 1px 5px -1px rgba(0,0,0,0.75);
+  border-top: 2px solid #8bc34a;
+}
+.main-menu ul li ul li {
+  display: block;
+  overflow: hidden;
+}
+.main-menu ul li ul > li > a {
+  color: #303030;
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 12px;
+  overflow: hidden;
+  padding: 10px;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+}
+.main-menu ul li ul li a:hover{color:#8bc34a;padding-left: 14px;}
+.main-menu ul li:hover ul {
+  opacity: 1;
+  top: 80px;
+  visibility: visible;
+  z-index: 999;
+}

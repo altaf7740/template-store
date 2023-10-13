@@ -1,0 +1,1193 @@
+/*============================================
+
+    Template: Carspa
+	Css Name: Main Css
+	Version: 1
+	Design and Developed by: HasTech
+
+==============================================
+    
+    CSS INDEX
+    ===================
+	
+    1. Theme Default CSS (body, link color, section etc)
+	2. Section Titel Css
+	3. Choose Us Area
+	4. Service Area
+	5. Funfact
+	6. Pricing Table
+	7. Testimonial Area
+	8. Team Area
+	9. Single Portfolio
+	10. Latest News
+	11. Breadcamp Css
+	12. About Us Page
+	13. Service Page
+	14. Contact Page
+	15. Service Details Page
+	16. News Details Page
+	17. Error 404 Page
+	18. ScrollUp
+	
+===========================================================*/
+
+
+/* ============= 1.  Theme default CSS ============= */
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+
+
+/* ============= 2. Section Titel Css ============= */
+.section-titel > h1,.section-titel > h2 {
+  display: block;
+  margin: 0px;
+  padding-bottom: 47px;
+  position: relative;
+  width: 100%;
+}
+.section-titel > h1::before,.section-titel > h2::before {
+  background: rgba(0, 0, 0, 0) url("img/icon/sec-i.png") no-repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  left: 50%;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 43px;
+}
+.section-titel > h2 {
+  padding-bottom: 45px;
+}
+.section-titel > h2::before {
+  top: 35px;
+  left: 49%;
+}
+.section-titel > p {
+  margin: 0 auto;
+  text-align: center;
+  width: 45%;
+}
+
+
+
+/* ============= 3. Choose Us Area ============= */
+.chs-top {
+  display: block;
+  overflow: hidden;
+}
+.chs-img {
+  background: #444444 none repeat scroll 0 0;
+  border-radius: 100%;
+  display: block;
+  float: left;
+  height: 45px;
+  line-height: 42px;
+  position: relative;
+  text-align: center;
+  width: 45px;
+}
+
+/* choose box style */
+.choose-img {
+  left: 30px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: -135px;
+}
+.choose-box {
+  padding-left: 20px;
+}
+.choose-box-desc p{
+  margin-bottom: 0;
+}
+.choose-box span,.choose-box span img{
+  display: inline-block;
+}
+.choose-box span,.choose-box .semi-title{
+  display: inline-block;
+}
+.choose-box .choose-box-top {
+  margin-bottom: 10px;
+}
+.choose-box span {
+  font-size: 18px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 14px;
+  text-align: center;
+  width: 40px;
+}
+.choose-box span {
+  background-color: #555555;
+  border: 1px solid #555555;
+  border-radius: 50%;
+  color: #fff;
+  height: 45px;
+  line-height: 38px;
+  position: relative;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  width: 45px;
+  z-index: 99;
+}
+.choose-box span:before,
+.choose-box span:after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  z-index: -1;
+}
+.choose-box span:after{
+  width: 100%;
+  left: 0px;
+}
+.choose-box:hover span{
+  background-color: #d42f38;
+  color: #fff;
+  border-color: transparent;
+  cursor: pointer;
+  position: relative;
+  -webkit-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.choose-box span:after{
+  -webkit-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  transform: translateY(5px);
+  border-bottom: 1px solid #555555;
+}
+.choose-box:hover span:after{
+  border-bottom: 1px solid #d42f38;
+}
+.choose-box:hover span:before{
+  border-bottom: 2px solid #fff;
+  -webkit-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+  transform: translateY(2px);
+}
+
+
+
+/* ============= 4. Service Area ============= */
+.procces-content > h2 {
+  margin: 0 0 55px;
+  text-align: center;
+  font-size:30px
+}
+.service-tab-list {
+  background-image: url("img/bg/shape-bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 20px 0;
+  float: left;
+  width: 100%; }
+.service-tab-list li {
+  display: inline-block;
+  float: left;
+  width: 25%;
+}
+.service-tab-list li:first-child {
+  margin-left: 35px;
+  text-align: left;
+}
+.service-tab-list li:nth-child(2) {
+  margin-left: 45px;
+  text-align: right;
+}
+.service-tab-list li:nth-child(3){margin-right: -50px;}
+.service-tab-list li:last-child {
+  position: absolute;
+  text-align: right;
+  width: 10%;
+}
+.service-tab-list li span {
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  display: block;
+  height: 102px;
+  line-height: 102px;
+  text-align: center;
+  width: 102px;
+}
+.procces-content {
+  display: block;
+  overflow: hidden;
+}
+.process-titel > ul {
+  display: block;
+  margin-top: 32px;
+}
+.process-titel li {
+  color: #555555;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  width: 23%;
+}
+.process-titel li:first-child {
+  margin-left: 35px;
+  text-align: left;
+}
+.process-titel li:last-child {
+  margin-left: 45px;
+  text-align: right;
+}
+.service-single {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.service-titel h6 {
+  background: #f6f6f6 none repeat scroll 0 0;
+  display: block;
+  line-height: 40px;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  overflow: hidden;
+}
+.service-titel h6 span {
+  background: #555555 none repeat scroll 0 0;
+  color: #fff;
+  float: right;
+  font-size: 24px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  width: 40px;
+}
+.service-hover {
+  background: #d42f38 none repeat scroll 0 0;
+  height: 100%;
+  position: absolute;
+  top: -100%;
+  width: 100%;
+  padding:30px;
+  opacity:0;
+  visibility:hidden;
+  transition:.3s;
+}
+.service-single:hover .service-hover{opacity:1;visibility:visible;top:0;}
+.service-hover h6 {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 12px;
+  margin-top: 18px;
+}
+.service-hover p {
+  color: #fff;
+  line-height: 25px;
+  margin: 0 0 20px;
+}
+.service-hover a {
+  border: 1px solid #fff;
+  border-radius: 20px;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 8px 40px;
+  transition:.4s;
+}
+.service-hover a:hover {
+  background: #fff none repeat scroll 0 0;
+  border-color: #fff;
+  color: #d42f38;
+}
+
+
+
+/* ============= 5. Funfact ============= */
+.funfact-img {
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+}
+.funfact-count {
+  display: block;
+  overflow: hidden;
+  padding-top: 14px;
+}
+.funfact-count h3 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 3px;
+}
+.funfact-count h3 span {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+
+/* ============= 6. Pricing Table ============= */
+.pricing-single {
+  box-shadow: 0 3px 18px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 3px 18px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 3px 18px rgba(0, 0, 0, 0.1);
+  padding: 55px 0 50px;
+  transition: all 0.3s ease 0s;
+}
+.active.pricing-single{background:#d42f38}
+.pricing-category h2 {
+  display: block;
+  margin: 0 0 25px;
+  padding-bottom: 15px;
+  position: relative;
+}
+.active.pricing-single .pricing-category h2,.active.pricing-single .pricing-category > span,
+.active.pricing-single .pricing-list > ul li a,.active.pricing-single .order-button > a{color:#fff;}
+.pricing-category h2::after {
+  background: #555555 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  width: 105px;
+}
+.pricing-category h2::before {
+  background: #555555 none repeat scroll 0 0;
+  bottom: -12px;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  width: 60px;
+}
+.active.pricing-single .pricing-category h2::after,.active.pricing-single .pricing-category h2::before{background:#fff;}
+.pricing-category > span {
+  color: #555555;
+  font-size: 24px;
+  font-weight: 700;
+}
+.pricing-list > ul {
+  padding-bottom: 38px;
+  padding-top: 28px;
+}
+.pricing-list li:last-child {
+  padding: 0;
+}
+.pricing-list > ul li {
+  display: block;
+  padding: 0 0 16px;
+}
+.pricing-list > ul li a {
+  color: #555555;
+  cursor: unset;
+  font-size: 16px;
+  font-weight: 400;
+}
+.order-button > a {
+  border: 1px solid #555555;
+  border-radius: 15px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 10px 35px;
+  text-transform: uppercase;
+  transition:.3s;
+}
+.active.pricing-single .order-button > a{border-color:#fff;}
+.active.pricing-single .order-button > a:hover{background:#fff;color:#d42f38;}
+.order-button > a:hover{background:#555555;color:#fff;}
+
+
+
+/* ============= 7. Testimonial Area ============= */
+.testimonial-single {
+  display: block;
+  overflow: hidden;
+  padding: 0 270px;
+}
+.tstimonial-img {
+  float: left;
+  margin-right: 30px;
+}
+.testimonial-info {
+  display: block;
+  overflow: hidden;
+}
+.testimonial-info > p {
+  color: #fff;
+}
+.testi-persn > h6 {
+  color: #fff;
+  font-family: open sans;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 0 5px;
+}
+.testi-persn > p {
+  color: #fff;
+  font-weight: 300;
+  margin: 0;
+}
+.testi-persn {
+  display: block;
+  overflow: hidden;
+  padding-left: 70px;
+  position: relative;
+}
+.testi-persn::after {
+  background: #fff none repeat scroll 0 0;
+  content: "";
+  height: 1px;
+  left: -5px;
+  position: absolute;
+  top: 7px;
+  width: 60px;
+}
+.indicator-style .owl-theme .owl-dots .owl-dot span {
+  backface-visibility: visible;
+  background: #d42f38 none repeat scroll 0 0;
+  border-radius: 20px;
+  color: transparent;
+  border: 0 none;
+  display: block;
+  height: 10px;
+  margin: 0 5px;
+  transition: opacity 0.2s ease 0s;
+  width: 20px;
+  height: 10px;
+  line-height: 0;
+  padding: 5px;
+}
+.indicator-style .owl-theme .owl-dots .owl-dot.active span {
+  background: #fff none repeat scroll 0 0;
+  width: 30px;
+}
+.indicator-style .owl-theme .owl-dots .owl-dot:hover span {
+  background: #fff none repeat scroll 0 0;
+}
+.indicator-style .owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 30px;
+}
+
+
+
+/* ============= 8. Team Area ============= */
+.team-single {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.team-deatils {
+  background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+  height: 100%;
+  left: 0;
+  padding-top: 42%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  opacity:0;
+  visibility:hidden;
+  transition:.4s;
+}
+.team-single:hover .team-deatils{opacity:1;visibility:visible;}
+.team-deatils h5 {
+  color: #fff;
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+.team-deatils span {
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.team-single:hover ul.team-social {
+  bottom: 114px;
+}
+ul.team-social {
+  bottom: 80px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transition: all 0.4s ease 0s;
+}
+.team-info {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 80px;
+  width: 100%;
+  transition: all 0.4s ease 0s;
+}
+.team-single:hover .team-info  {
+  top: 114px;
+}
+ul.team-social li a,.contact-social ul li a {
+  border: 1px solid #fff;
+  border-radius: 20px;
+  color: #fff;
+  display: block;
+  height: 30px;
+  line-height: 28px;
+  margin-right: 15px;
+  text-align: center;
+  width: 30px;
+  transition:.3s;
+}
+ul.team-social li a:hover,.contact-social ul li a:hover{color:#d42f38;background:#fff;}
+ul.team-social li:last-child a,.contact-social ul li:last-child a {
+  margin-right: 0;
+}
+
+
+
+/* ============= 9. Single Portfolio ============= */
+.portfolio-box .grid-item {
+  float: left;
+  padding: 0 10px;
+  width: 25%;
+  margin-bottom:20px;
+}
+.ourproject-area {
+  display: block;
+  overflow: hidden;
+}
+.ourproject-area .container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.portfolio-menu li {
+  color: #555555;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 0 12px;
+}
+.portfolio-menu li.active {
+  background: #e03927 none repeat scroll 0 0;
+  border-radius: 6px;
+  color: #fff;
+  padding: 5px 15px;
+}
+/* Image Box Effect */
+.image-box {
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+.image-box::before, .image-box::after {
+  background: #000 none repeat scroll 0 0;
+  content: "";
+  height: 200%;
+  left: 0;
+  opacity: 0.4;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transition: all 0.6s ease 0s;
+  width: 200%;
+}
+.image-box::after {
+  transform: skew(45deg) translateX(-100%);
+}
+.image-box::before {
+  transform: skew(36deg) translateX(100%);
+  z-index: 9;
+}
+.single-portfolio:hover .image-box::before,.single-portfolio:hover .image-box::after {
+  cursor: pointer;
+  transform: skew(36deg) translateX(0px);
+}
+.image-box > a {
+  color: #fff;
+  font-size: 48px;
+  left: 0;
+  margin: 0 auto;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  z-index: 999;
+}
+.single-portfolio:hover .image-box a {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+/* ============= 10. Latest News ============= */
+.latest-content {
+  padding: 0 20px;
+}
+.ltst-single {
+  background: #fff none repeat scroll 0 0;
+  margin-top: -48px;
+  padding: 25px 15px 0;
+  position: relative;
+  z-index: 99;
+}
+.ltst-post {
+  padding-bottom: 10px;
+  padding-top: 3px;
+}
+.ltst-post span {
+  color: #777;
+  font-size: 12px;
+}
+.ltst-post span::after {
+  content: "|";
+  margin-left: 5px;
+}
+.ltst-post span:last-child::after {
+  content: "";
+  margin-left: 0;
+}
+.lastest-btn > a {
+  border: 1px solid #555555;
+  border-radius: 15px;
+  color: #555555;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 10px;
+  padding: 8px 30px;
+  transition: all 0.4s ease 0s;
+}
+.lastest-btn > a:hover{background:#d42f38;border-color:#d42f38;color:#fff;}
+
+
+/* ============= 11. Breadcamp Css ============= */
+.bradcamb-content h1 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+}
+.bradcamb-content ul li a,.top-titel ul li a{
+  color: #fff;
+  font-size: 12px;
+}
+.bradcamb-content ul li i,.top-titel ul li span {
+  display: inline-block;
+  padding: 0 6px 0 8px;
+}
+.top-titel ul li a,.top-titel ul li,.top-titel ul li span{
+  color: #555555;
+  font-weight:600;
+  font-size:12px;
+}
+
+
+/* ============= 12. About Us Page ============= */
+.aboutus-content > h2{
+  color: #555555;
+  margin: 0 0 30px;
+}
+.aboutus-content > a {
+  background: #d42f38 none repeat scroll 0 0;
+  border-radius: 20px;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 25px;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  transition: all 0.4s ease 0s;
+}
+.aboutus-content > a:hover{background-color:#555555;}
+/* Wash From Area  */
+.ws-from h2{
+  color: #555555;
+  margin: 0 0 60px;
+}
+.form-group,.form-single {
+  margin-bottom: 25px;
+}
+.form-control {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #c1c1c1;
+  border-radius: 0px;
+  box-shadow: none;
+  color: #555555;
+  height: 40px;
+  transition: all 0.3s ease 0s;
+  font-size:12px;
+}
+.form-group select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: rgba(0, 0, 0, 0) url("img/icon/from.png") no-repeat scroll 95% center;
+  border: 1px solid #c1c1c1;
+  box-shadow: none;
+  color: #555555;
+  font-size: 12px;
+  height: 40px;
+  padding-left: 10px;
+  position: relative;
+  width: 100%;
+}
+.btn-contact-bg {
+  background: #d42f38 none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 20px;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  height: 35px;
+  margin-top: 36px;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+  width: 130px;
+}
+.btn-contact-bg:hover,.form-button .contact-submit:hover{background:#555555;}
+
+
+
+/* ============= 13. Service Page ============= */
+.service-hover img {
+  height: auto;
+  margin: auto;
+  width: auto !important;
+}
+.indicator-style-2 .owl-theme .owl-nav [class*="owl-"] {
+  background: #555555 none repeat scroll 0 0;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0;
+  width: 50px;
+  padding:0;
+}
+.indicator-style-2 .owl-theme .owl-nav [class*="owl-"]:hover {
+  background: #d42f38 none repeat scroll 0 0;
+}
+.indicator-style-2 .owl-theme .owl-nav {
+  margin-top: 20px;
+}
+
+
+/* ============= 14. Contact Page ============= */
+#map {
+	height: 100% !important;
+	width: 100%;
+}
+.map-area {
+	position: relative;
+	overflow: hidden;
+	height: 520px;
+	width: 100%;
+}
+.contact-address {
+  display: block;
+}
+.contact-address ul li {
+  float: left;
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 12px;
+  width: 33.33%;
+}
+.contact-address ul li i {
+  color: #555555;
+  float: left;
+  font-size: 24px;
+  line-height: 35px;
+  margin-right: 10px;
+}
+.contact-address p {
+  color: #555555;
+  display: block;
+  font-size: 12px;
+  margin: -5px 0 0;
+  overflow: hidden;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+textarea:focus {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #d42f38;
+  outline: medium none;
+}
+/* Form Area */
+.form-control:focus {
+  border-color: #d42f38;
+}
+.form-button .contact-submit {
+  background: #d42f38 none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 20px;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  height: 35px;
+  margin-top: 40px;
+  width: 130px;
+}
+p.form-messege {
+  font-size: 20px;
+  margin: 0;
+}
+.deatils-titel h5,.rltd-titel h4 {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 35px;
+  overflow: hidden;
+  padding-bottom: 10px;
+  position: relative;
+  text-transform:uppercase;
+}
+.deatils-titel h5::after,.rltd-titel h4::after {
+  background: #555555 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  width: 36%;
+}
+.p-content > p:first-child {
+  margin: 0 0 28px;
+}
+.p-content > p:last-child {
+  margin: 0px;
+}
+.service-info ul li {
+  color: #555555;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.service-info ul li span {
+  font-weight: 300;
+}
+
+
+/* ============= 15. Service Details Page ============= */
+ul.service-tab li{
+  display: block;
+  width: 100%;
+}
+ul.service-tab li:hover a{background:#d42f38;}
+ul.service-tab li:last-child a{margin:0;}
+ul.service-tab li a {
+  color: #555555;
+  display: inline-block;
+  width: 100%;
+  background: #f6f6f6 none repeat scroll 0 0;
+  display: block;
+  font-size: 14px;
+  margin-bottom: 22px;
+  padding: 15px 0 15px 15px;
+  transition:.4s;
+}
+ul.service-tab li a:hover{color:#fff;}
+ul.service-tab li.active a {
+  color: #fff;
+}
+ul.service-tab li.active a{background:#d42f38;}
+ul.service-tab li.active a i{transform: rotate(180deg);}
+ul.service-tab li a:hover i{transform: rotate(180deg);}
+ul.service-tab li a i {
+  margin-right: 10px;
+  transition:.4s;
+}
+.opening-hour ul li {
+  border-bottom: 1px solid #555555;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+.opening-hour ul li span {
+  float: right;
+}
+.opening-hour ul li:last-child {
+  border-bottom: medium none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+/* Quick Contact */
+.quick-contact {
+  background: #d42f38 none repeat scroll 0 0;
+  padding: 40px 0;
+}
+.quick-contact h4 {
+  color: #fff;
+  margin: 0 0 20px;
+}
+.quick-contact h6{color:#fff;margin-bottom:0;}
+.quick-contact h6 i{margin-right:8px;}
+.rltd-titel h4 {
+  margin-bottom: 40px;
+}
+.rltd-titel h4::after {
+  content: "";
+  height: 1px;
+  left: 0;
+  margin: 0 auto;
+  right: 0;
+  width: 14%;
+}
+.servdetls-img h2 {
+  background: red none repeat scroll 0 0;
+  color: #fff;
+  display: block;
+  height: 70px;
+  left: 35px;
+  line-height: 25px;
+  margin: 0;
+  padding-top: 12px;
+  position: absolute;
+  text-align: center;
+  top: 20px;
+  width: 70px;
+}
+.servdetls-img h2 span {
+  color: #fff;
+  display: block;
+  font-size: 12px;
+}
+
+/* ============= 16. News Details Page ============= */
+.news-content blockquote {
+  border-left: 0 none;
+  margin: 0 0 15px 73px;
+}
+.news-content blockquote i {
+  color: #d42f38;
+  display: inline-block;
+  font-size: 24px;
+  margin-right: 15px;
+  padding-top: 5px;
+  transform: rotate(180deg);
+  float:left;
+}
+.news-content blockquote p{overflow:hidden;}
+.tag-line {
+  border-bottom: 1px solid #d42f38;
+  display: block;
+  overflow: hidden;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.tag-line > span {
+  color: #555555;
+  float: left;
+  font-size: 12px;
+  font-weight:600;
+}
+.tag-social {
+  float: right;
+}
+.tag-social ul li a {
+  color: #555555;
+  font-size: 14px;
+  padding-left: 20px;
+}
+.tag-social ul li a:hover{color:#d42f38;}
+/* Comment Style */
+.comment-pic {
+  display: inline-block;
+  float: left;
+  margin-right: 25px;
+  overflow: hidden;
+}
+.comment-author {
+  display: block;
+  margin-bottom: 9px;
+  overflow: hidden;
+}
+.comment-author h3 {
+  float: left;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  text-transform: uppercase;
+}
+.comment-author > ul {
+  float: right;
+}
+.comment-author li {
+  font-size: 12px;
+}
+.comment-author ul li a {
+  color: #555555;
+  font-size: 14px;
+  font-weight: 600;
+}
+.comment-author ul li a:hover {
+  color: #d42f38;
+}
+.comment-author ul li span {
+  display: inline-block;
+  padding: 0 6px 0 8px;
+}
+.comment-dis {
+  display: block;
+  margin: 0 0 20px;
+  overflow: hidden;
+}
+.comment-box .deatils-titel h5::after {
+  width: 19%;
+}
+.leave-reply-box .deatils-titel h5::after {
+  width: 17%;
+}
+.comment-single-box.two {
+  margin-left: 100px;
+}
+/* Search News */
+.search-news input {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #dcd9d9;
+  box-shadow: none;
+  color: #555555;
+  font-size: 14px;
+  height: 45px;
+  padding-left: 10px;
+  width: 100%;
+  position:relative;
+}
+.search-button {
+  background: #d42f38 none repeat scroll 0 0;
+  border: medium none;
+  color: #fff;
+  font-size: 18px;
+  height: 45px;
+  position: absolute;
+  right: 16px;
+  width: 70px;
+  top:0px
+}
+/* Category List */
+.category-list .deatils-titel h5::after {
+  width: 25%;
+}
+.category-list ul li {
+  border-bottom: 1px solid #dcd9d9;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  width: 100%;
+  color:#555555;
+}
+.category-list ul li i {
+  margin-right: 8px;
+}
+.category-list ul li:last-child {
+  border-bottom: medium none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.category-list ul li span {
+  float: right;
+}
+/* Latest Post */
+.ltst-pst-img {
+  float: left;
+  margin-right: 15px;
+}
+.ltst-pst-cntnt {
+  display: block;
+  overflow: hidden;
+}
+.ltst-pst-cntnt > p {
+  margin: 0;
+}
+.ltst-pst-cntnt .ltst-post {
+  padding-bottom: 0;
+  padding-top: 5px;
+}
+/* Tag List */
+.tag-list .deatils-titel h5::after {
+  width: 12%;
+}
+.tag-list ul li a {
+  border: 1px solid #dcd9d9;
+  display: block;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  padding: 8px 19px;
+}
+.tag-list ul li:nth-child(3) a,.tag-list ul li:nth-child(6) a {
+  margin-right: 0;
+}
+
+
+
+/* ============= 17. Error 404 Page ============= */
+.notfound-content h1 {
+  font-size: 180px;
+  font-weight: 600;
+}
+.notfound-content h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  margin-top: 50px;
+}
+.notfound-content h4 {
+  font-size: 30px;
+  margin: 0 0 10px;
+}
+.notfound_content p {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 48px;
+  padding: 0 30%;
+}
+.notfound-content a.back-to {
+  background: #d42f38 none repeat scroll 0 0;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 25px;
+  text-transform: uppercase;
+  transition: all 0.5s ease 0s;
+}
+.notfound-content a.back-to:hover {
+  background: #555555 none repeat scroll 0 0;
+}
+
+/* ============= 18. ScrollUp ============= */
+#scrollUp {
+  background: #d42f38 none repeat scroll 0 0;
+  border-radius: 0px;
+  bottom: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  color: #fff;
+  font-size: 28px;
+  height: 40px;
+  line-height: 35px;
+  position: fixed;
+  right: 15px;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  width: 40px;
+  z-index: 200;
+}
+#scrollUp:hover{background:#555555;}

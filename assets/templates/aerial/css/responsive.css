@@ -1,0 +1,123 @@
+/* Large desktop :1920px. */
+@media (min-width: 1920px) {
+    .container{width: 1230px}  
+    .video-text {padding-right: 205px; padding-top: 114px;} 
+    .single-photography img {width: 100%;}
+}
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1169px) {
+    .container{width: 970px}
+    .banner-content h1 {font-size: 59px;}
+    .abt-text > h1 {line-height: 44px; margin-bottom: 10px;}
+    .abt-text {padding-top: 7px;}
+    .video-text-container {height: 410px;}
+    .video-text {padding: 50px 15px 0 35px;}
+    .video-text > p {font-size: 17px;}
+}
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container{width:750px} 
+    .banner-content h1 {font-size: 59px;}
+    .slider-area .owl-dots {right: 50px} 
+    .pt-120 {padding-top: 70px;}    
+    .ptb-120 {padding: 70px 0;}
+    .pb-110 {padding-bottom: 60px;}
+    .abt-text > p {margin: 0;}
+    .pb-120 {padding-bottom: 70px;}
+    .section-title {margin: 0 20px 30px;}
+    .section-title > h1 {margin-bottom: 14px;}
+    .gallery-area .section-title {margin: 0 0 20px;}
+    .pt-110 {padding-top: 60px;}
+    .pb-60 {padding-bottom: 10px;}
+    .ptb-120 {padding: 70px 0;}
+    .video-text-container {height: 410px;}
+    .video-text {padding: 37px 37px 52px; width: 100%;}
+    .video-wrapper {width: 100%;}
+    .video-text > p {font-size: 16px;}
+    .video-about-area .section-title {margin-bottom: 50px;}
+    .pb-50 {padding-bottom: 0;}
+    .ptb-110 {padding: 60px 0;}
+    .pb-90 {padding-bottom: 40px;}
+    .contact-address-info {padding: 0 10px;}
+    .pt-100 {padding-top: 50px;}
+    .header-sticky.sticky {position: inherit;}
+    .single-table {margin-bottom: 30px;}
+    .col-md-4:last-child .single-table {margin: 0;}
+}
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+    .container {width:300px}
+    .video-about-area .section-title {margin-bottom: 20px;}
+    .video-wrapper {float: none; height: 300px; width: 100%;}
+    .video-text {
+        float: none;
+        margin: auto;
+        overflow: hidden;
+        padding: 30px 15px;
+        width: 300px;
+    }
+    .video-text-container {height: auto;}
+    .video-text-container.fix {height: auto;}
+    .video-text > h1 {font-size: 33px; margin-bottom: 12px;}
+    .video-text > p {font-size: 16px; line-height: 29px;}  
+    .banner-content h1 {
+        font-size: 38px;
+        line-height: 42px;
+        margin-bottom: 15px;
+        padding-top: 40px
+    }
+    .cd-words-wrapper {text-align: center;}
+    .banner-content h2 {display: none}
+    .slider-area .owl-dots {right: 10px;}
+    .slider-area {height: 420px;}
+    .pt-120 {padding-top: 60px;}
+    .abt-img > img {width: 100%;}
+    .abt-text > h1 {
+        font-size: 25px;
+        line-height: 33px;
+        margin-bottom: 10px;
+    }
+    .abt-text {padding-top: 25px;}
+    .abt-text > p {margin: 0;}
+    .pb-110 {padding-bottom: 60px;}
+    .section-title > h1 {
+        font-size: 39px;
+        line-height: 44px;
+        margin-bottom: 17px;
+    }
+    .section-title {margin: 0 0 54px;}
+    .section-title {margin: 0 0 30px;}
+    .photo-btn {padding-top: 10px;}
+    .gallery-area .section-title {margin: 0 0 15px;}
+    .pb-120 {padding-bottom: 60px;}
+    .single-photography img {width: 100%;}
+    .pt-110 {padding-top: 50px;}
+    .pb-60 {padding-bottom: 0px;}
+    .ptb-120 {padding: 60px 0;}
+    .single-service {margin-bottom: 30px;}
+    .service-area {padding-bottom: 25px;}
+    .single-table {margin-bottom: 30px;}
+    .col-md-4:last-child .single-table {margin: 0;}
+    .single-team {margin-bottom: 30px;}
+    .col-md-4:last-child .single-team {margin: 0;}
+    .header-sticky.sticky {position: inherit;}
+    .breadcrumb-area {padding: 175px 0 110px;}
+    .single-slide {background-position: 70% top;}  
+    .ptb-110 {padding: 50px 0;}
+    .pb-90 {padding-bottom: 30px;}  
+    .pt-100 {padding-top: 40px;}
+    .single-contact-adrs {padding: 20px 0 12px; width: 100%;}
+    .contact-address-info {margin-top: 50px; padding: 15px;}
+    .video-banner, .fixed-bg-1 {height: 400px;}
+    .fixed-bg-1 {background-position: 60% top}
+}
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {width:450px}
+    .video-text {width: 450px;}
+    .container-fluid.custom .col-xs-12 {width: 50%;}
+}

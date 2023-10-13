@@ -1,0 +1,44 @@
+/*---------------------------------------
+    10. CTA
+-----------------------------------------*/
+
+/*-- CTA One --*/
+.ht-cta-content {
+    & h1 {
+        font-size: 36px;
+        text-transform: capitalize;
+        font-weight: 700;
+        color: $heading-color;
+        line-height: 1;
+        margin-bottom: 20px;
+        @media #{$large-mobile}{
+            font-size: 30px;
+        }
+        @media #{$small-mobile}{
+            font-size: 24px;
+        }
+    }
+    & p {
+        font-size: 16px;
+        line-height: 26px;
+        font-family: $poppins;
+        max-width: 750px;
+        margin: auto;
+        color: $heading-color-light;
+        margin-bottom: 24px;
+        @media #{$small-mobile}{
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+    & .btn {}
+    
+    &.text-white {
+        & h1 {
+            color: $white;
+        }
+        & p {
+            color: #e8e8e8;
+        }
+    }
+}

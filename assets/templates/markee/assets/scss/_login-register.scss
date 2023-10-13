@@ -1,0 +1,49 @@
+/*----------------------------------------*/
+/*  13. Login Register CSS
+/*----------------------------------------*/
+
+.form-login-title > h2, .form-register-title > h2 {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 26px;
+  color: #444;
+}
+
+.login-form, .register-form {
+  padding: 20px;
+  border: 1px solid #d3ced2;
+  margin: 30px 0;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.form-fild, .login-submit, .lost-password, .register-submit {
+  margin-bottom: 10px;
+}
+
+.form-fild {
+    & p{
+        margin: 0;
+      & span.required {
+        color: #f23838;
+      }
+    }
+    & input{
+        width: 100%;
+        padding: 0 15px;
+        height: 45px;
+        border: 1px solid #dddddd;
+        color: $body-color;
+        border-radius: 5px;
+    }
+}
+
+.lost-password {
+    & > a{
+      color: #a43d21;
+      &:hover {
+        color: $theme-color;
+      }
+    }
+}

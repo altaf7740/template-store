@@ -1,0 +1,212 @@
+/*---------------------------------------
+    17. Footer
+-----------------------------------------*/
+
+/*-- Footer Widget --*/
+.ht-footer-widget-one {
+    
+    /*-- Widget Title --*/
+    & .widget-title {
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        position: relative;
+        line-height: 12px;
+        color: $white;
+        padding-bottom: 28px;
+        margin-bottom: 30px;
+        
+        &::before, &::after {
+            position: absolute;
+            content: "";
+            left: 0;
+            height: 1px;
+            background-color: $white;
+        }
+        &::before {
+            width: 60px;
+            bottom: 6px;
+        }
+        &::after {
+            bottom: 0;
+            width: 30px;
+        }
+    }
+    
+    /*-- Logo --*/
+    & .logo {
+        margin-bottom: 30px;
+    }
+    & p {
+        color: #dddddd;
+        margin-bottom: 23px;
+        font-family: $poppins;
+        font-weight: 300;
+    }
+    
+    /*-- Social --*/
+    .ht-footer-social-one {
+        & a {
+            color: #dddddd;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            border: 1px solid transparent;
+            text-align: center;
+            margin-right: 5px;
+            float: left;
+            &:last-child {
+                margin-right: 0;
+            }
+            &:hover {
+                border-color: $blue;
+                color: $blue;
+            }
+            & i {
+                font-size: 13px;
+                line-height: 24px;
+                display: block;
+            }
+        }
+    }
+    
+    /*-- Link List --*/
+    & ul {
+        & li {
+            margin-bottom: 9px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            & a {
+                color: #dddddd;
+                line-height: 24px;
+                padding-left: 19px;
+                position: relative;
+                font-family: $poppins;
+                &::before {
+                    font-family: 'Fontawesome';
+                    content: "\f0da";
+                    position: absolute;
+                    left: 0;
+                    line-height: 24px;
+                    top: 0;
+                }
+                
+                &:hover {
+                    color: $blue;
+                    margin-left: 5px;
+                }
+                
+            }
+        }
+    }
+    
+    /*-- Blog --*/
+    & .ht-footer-blog {
+        border-bottom: 1px solid #383838;
+        margin-bottom: 20px;
+        &:last-child {
+            margin-bottom: 0;
+            border-bottom: none;
+            & .meta {
+                margin-bottom: 0;
+            }
+        }
+        & .title {
+            font-family: $poppins;
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 9px;
+            & a {
+                color: #d5d5d5;
+                &:hover {
+                    color: $blue;
+                }
+            }
+        }
+        & .meta {
+            overflow: hidden;
+            margin-bottom: 18px;
+            & .meta-item {
+                font-size: 12px;
+                font-family: $montserrat;
+                font-weight: 300;
+                line-height: 16px;
+                margin-right: 20px;
+                color: #dddddd;
+                float: left;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+            & a {
+                &:hover {
+                    color: $blue;
+                }
+            }
+        }
+    }
+    
+    /*-- Subscribe --*/
+    & .ht-footer-subscribe-form-one {
+        padding-right: 40px;
+        position: relative;
+        max-width: 300px;
+        & input {
+            width: 100%;
+            height: 40px;
+            background-color: #29353e;
+            border: none;
+            color: #dddddd;
+            font-family: $montserrat;
+            font-size: 12px;
+            line-height: 24px;
+            font-weight: 300;
+            padding: 8px 16px;
+        }
+        & button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 40px;
+            width: 40px;
+            background-color: $blue;
+            border: none;
+            text-align: center;
+            color: $white;
+            &:hover {
+                background-color: darken($blue, 5);
+            }
+            & i {
+                display: block;
+                font-size: 14px;
+                line-height: 40px;
+            }
+        }
+    }
+    
+}
+
+/*-- Footer Bottom --*/
+.ht-footer-bottom-section-one {
+    background-color: #22303b;
+    padding: 13px 0;
+}
+
+/*-- Footer Copyright --*/
+.ht-footer-copyright-one {
+    text-align: center;
+    & p {
+        font-size: 12px;
+        font-family: $montserrat;
+        font-weight: 300;
+        line-height: 24px;
+        color: #dddddd;
+        & a {
+            color: $blue;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

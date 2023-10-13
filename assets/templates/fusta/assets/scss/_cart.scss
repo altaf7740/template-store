@@ -1,0 +1,175 @@
+/*--
+    17. Cart Page Css
+-----------------------------*/
+.table-content {
+    & table {
+        background: #ffffff none repeat scroll 0 0;
+        border-color: #ebebeb;
+        border-radius: 0;
+        border-style: solid;
+        border-width: 1px 0 0 1px;
+        margin-bottom: 0;
+        text-align: center;
+        width: 100%;
+        text-align: center;
+        & td {
+            border-top: medium none;
+            font-size: 16px;
+            padding: 20px 10px;
+            vertical-align: middle;
+            min-width:140px;
+        }
+    }
+    & th,
+    & td {
+        border-bottom: 1px solid #ebebeb;
+        border-right: 1px solid #ebebeb;
+    }
+    
+}
+.plantmore-product-quantity{
+    & > input {
+        text-align: center;
+        width: 48px;
+    }
+} 
+
+.cart-table {
+    .coupon-all {/*
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;*/
+        margin-top: 50px;
+        & .coupon {
+            & h3 {
+                color: $black;
+                font-size: 18px;
+                font-weight: 600;
+                text-transform: uppercase;
+                margin-top: -8px;
+            }
+            & input {
+                border: 1px solid #999999;
+                font-size: 14px;
+                margin-right: 10px;
+                padding: 4px 10px;
+                width: 130px;
+                &.button {
+                    background: $black;
+                    border: 0 none;
+                    color: $white;
+                    cursor: pointer;
+                    display: inline-block;
+                    font-size: 12px;
+                    font-weight: 600;
+                    height: 36px;
+                    letter-spacing: 1px;
+                    line-height: 36px;
+                    padding: 0 14px;
+                    text-transform: uppercase;
+                    @include transition (.3s);
+                    width: inherit;
+                    &:hover {
+                        background: $theme-color;
+                    }
+                }
+                @media #{$small-mobile}{
+                    width: 125px;
+                } 
+            }
+        }
+        & .coupon2 {
+            margin-bottom: 40px;
+            & input {
+                margin-right: 8px;
+                &.submit {
+                    padding: 8px 15px; 
+                    background: $black;
+                    &:hover{background: $theme-color;}
+                }
+            }
+            & .continue-btn {
+                padding: 8px 15px;
+                background: $black;
+                &:hover{background: $theme-color;}
+            }
+        }
+    }
+}
+
+.cart-page-total {
+    margin-top: 40px;
+    & h2 {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 16px;
+        text-transform: capitalize;
+    }
+    & ul {
+      border: 1px solid #dddddd;
+        & li {
+            border-bottom: 1px solid #ebebeb;
+            color: #252525;
+            font-family: "Montserrat",sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            list-style: outside none none;
+            padding: 10px 30px;
+            &:last-child{border: none;}
+            & span {
+                float: right;
+            }    
+        }
+    }
+    & .proceed-checkout-btn {
+        background: $black;
+        color: #ffffff;
+        display: inline-block;
+        margin-top: 30px;
+        padding: 8px 16px;
+        text-transform: capitalize;
+        @include transition(0.4s);
+        &:hover {
+            background: $theme-color;
+        }
+    }
+}
+
+.plantmore-product-add-cart {
+    & > a {
+        background: $black;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 6px 30px;
+        text-transform: capitalize;
+        @include transform(.4s); 
+        &:hover {
+            background: $theme-color;
+        }
+    }
+}
+.in-stock{
+    color: #30b878;
+}
+
+.out-stock {
+    color: #A80135;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

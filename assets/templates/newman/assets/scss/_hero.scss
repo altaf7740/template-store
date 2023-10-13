@@ -1,0 +1,128 @@
+/*--
+    03. Hero
+-----------------------------------------*/
+.hero-section {
+    position: relative;
+}
+
+/*-- Hero Slider --*/
+.hero-slider-one {
+    
+    /*-- Arrow --*/
+    & .slick-arrow {
+        display: none !important;
+    }
+    /*-- Dots --*/
+    & .slick-dots {
+        display: none !important;
+    }
+}
+
+/*-- Hero Content --*/
+.hero-content {
+    // All Element Selector
+    & > * {
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-name: fadeOutUp;
+    }
+    @media #{$large-mobile}{
+        margin-top: 0px;
+    }
+    
+    & h4 {
+        color: $white;
+    }
+    & h1 {
+        font-size: 70px;
+        font-weight: 800;
+        margin-bottom: 10px;
+        color: $white;
+        
+        // Responsive
+        @media #{$laptop-device}{
+            font-size: 50px;
+        }
+        @media #{$desktop-device}{
+            font-size: 54px;
+        }
+        @media #{$tablet-device}{
+            font-size: 45px;
+        }
+        @media #{$large-mobile}{
+            font-size: 30px;
+            line-height: 40px;
+            & br {
+                display: none;
+            }
+        }
+    }
+    & p {
+        max-width: 630px;
+        color: $white;
+        margin: 15px auto;
+        font-size: 16px;
+        @media #{$small-mobile}{
+            font-size: 14px;
+        }
+    }
+    
+    & a {
+        background-color: $theme-color;
+        color: $white;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 20px;
+        font-family: $heading-font;
+        
+        &:hover {
+            background-color: $heading-color;
+            border-color:$heading-color;
+            color: $white;
+        }
+        
+        // Responsive
+        @media #{$large-mobile}{
+        margin-top: 10px;
+        }
+        @media #{$small-mobile}{
+        }
+    }
+}
+
+
+/*-- Slide Content In Animation --*/
+.slick-active {
+    /*-- Hero Content --*/
+    & .hero-content {
+
+        // All Element Selector
+        & > * {
+            animation-name: fadeInUp;
+            
+            // Child Selector
+            &:nth-child(1) {
+                animation-delay: 0.5s;
+            }
+            &:nth-child(2) {
+                animation-delay: 1s;
+            }
+            &:nth-child(3) {
+                animation-delay: 1.5s;
+            }
+            &:nth-child(4) {
+                animation-delay: 2s;
+            }
+            &:nth-child(5) {
+                animation-delay: 2.5s;
+            }
+            &:nth-child(6) {
+                animation-delay: 3s;
+            }
+            
+        }
+    }
+    
+}

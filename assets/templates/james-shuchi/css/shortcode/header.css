@@ -1,0 +1,53 @@
+/* -----------------------------------
+Template:  Theme Name
+
+NOTE: This is Header style file. All Header related style included in this file.
+
+--------------------------------------*/
+.header-top-left span {
+  color: #ffffff;
+  font-size: 13px;
+}
+.header-bottom-area{}
+.mainmenu{}
+.mainmenu ul{}
+.mainmenu ul li{
+	display:inline-block;
+	position:relative;
+}
+.mainmenu ul li a {
+  display: block;
+  font-weight: 700;
+  padding: 21px 13px;
+  text-transform: capitalize;
+  color:#666;
+}
+.mainmenu ul li:hover > a, .mainmenu ul li.active a{
+	color:#FF6666;
+}
+.header-top-right.text-right > a:hover {
+  color: #333;
+}
+.header-btn {
+  background: #ffffff none repeat scroll 0 0;
+  border: 1px solid #ff6666;
+  border-radius: 4px;
+  color: #ff6666;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-top: 12px;
+  padding: 8px 30px;
+}
+.header-btn:hover{
+	background:#ff6666;
+	color:#fff;
+}
+.header-top-right > a {
+  color: #fff;
+  margin-left: 25px;
+}
+.header-top-right > a:hover{
+	color:#fff
+} 
+

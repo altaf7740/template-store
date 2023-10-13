@@ -1,0 +1,670 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Coffee Hutt - Coffee Shop HTMP Template
+    Template URI: https://devitems.com/html/coffee-preview/
+    Description: This is html5 template
+    Author: HasTech
+    Author URI: https://devitems.com/
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+	
+    1. Welcome Area
+    2. Service Area
+    3. Purchase Area
+    4. Table Area
+    5. Test Area
+    6. Book Area
+    7. Event Area
+    8. Client Area
+    9. Order Area
+    10. Blog Area
+    11. Newsletter Area
+    12. Contact Area
+
+-----------------------------------------------------------------------------------*/
+
+/*----------------------------------------*/
+/*  1. Welcome Area
+/*----------------------------------------*/
+.welcome-content {
+  padding: 12px 0 0 10px;
+}
+.section-title h2{
+    color: #d4a762;
+    font-size: 34px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+.section-title h4{
+    font-size: 20px;
+    color: #303030;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-bottom: 40px;
+    text-transform: capitalize;   
+}
+.welcome-content .section-title h4{
+    margin-bottom: 20px;  
+}
+.table-area .section-title h2{margin-bottom: 8px;}
+/*----------------------------------------*/
+/*  2. Service Area
+/*----------------------------------------*/
+.service-left, .service-middle, .service-right{
+    float: left;
+    width: 30%;
+    display: inline-block;
+}
+.service-middle {
+  float: left;
+  margin-top: 0;
+  position: relative;
+  width: 40%;
+  z-index: 9;
+    margin-top:22px; 
+}
+.service-middle::before {
+  background: #ffffff none repeat scroll 0 0;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 5px #e7e7e7;
+  content: "";
+  height: 400px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: -22px;
+  width: 420px;
+  z-index: -1;
+}
+.service-right{float: right}
+.service-content{
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+} 
+.service-content h3{
+    font-size: 24px;
+    color: #d4a762;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.single-service{position: relative}
+.service-icon {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 50%;
+  content: "";
+  height: 74px;
+  position: absolute;
+  right: -100px;
+  top: 0px;
+  width: 74px;
+  z-index: 91;
+  cursor: pointer;
+  display: inline-block;
+}
+.service-right .service-icon{
+    left: -100px;
+    right: auto;
+}
+.service-icon a {
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #d4a762;
+  color: #d4a762;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0;
+  height: 70px;
+  position: relative;
+  text-align: center;
+  transition: color 0.3s ease 0s;
+  width: 70px;
+  z-index: 1;
+}
+.service-icon img{
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.service-icon a::after {
+  background: #d4a762 none repeat scroll 0 0;
+  left: -2px;
+  padding: 2px;
+  top: -2px;
+  transition: transform 0.2s ease 0s, opacity 0.2s ease 0s;
+  z-index: -1;
+  border-radius: 50%;
+  box-sizing: content-box;
+  content: "";
+  height: 100%;
+  pointer-events: none;
+  position: absolute;
+    width: 100%;
+}
+.single-service:hover .service-icon a:after {
+  transform: scale(0.85);
+}
+/*----------------------------------------*/
+/*  3. Purchase Area
+/*----------------------------------------*/
+.purchase-area, .order-area, .book-area, .newsletter-area{
+    background: url(img/purchase/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+}
+.purchase-area:after, .order-area:after, .book-area:after, .newsletter-area:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.49);
+    content: "";
+}
+.purchase-content, .order-content, .book-content, .newsletter-content{
+    z-index: 9;
+    position: relative;
+}
+.purchase-content h1, .order-content h1{
+    color: #d4a762;
+    font-size: 38px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.purchase-content h2, .order-content h2{
+    color: #c3c3c3;
+    font-size: 28px;
+    font-family: 'Playball', cursive;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.purchase-content h3{
+    color: #d4a762;
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+/*----------------------------------------*/
+/*  4. Table Area
+/*----------------------------------------*/
+.single-table{
+    padding: 22px 0 5px 0;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.single-table:hover, .single-table.active {
+    background: #D4A762;
+    box-shadow: 0 0 12px 3px #ddd;
+}
+.single-table:hover .section-title h4, .single-table:hover .section-title h3, .single-table:hover .table-body ul li, .single-table:hover .table-head h3, .single-table.active .section-title h4, .single-table.active .section-title h3, .single-table.active .table-body ul li, .single-table.active .table-head h3{color: #fff}
+.table-area .section-title{margin-bottom: 40px}
+.section-title h5{
+    color: #303030;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-family: 'Playball', cursive;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.table-head h3{
+    color: #303030;
+    font-size: 24px;
+    font-family: 'Playball', cursive;
+    text-transform: capitalize;
+    margin-bottom: 18px;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.table-body ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.table-body ul li{
+    display: block;
+    font-size: 20px;
+    color: #606060;
+    font-family: 'Playball', cursive;
+    padding: 13px 0;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.table-body ul li:hover, .table-body ul li.active{
+    background: #fff;
+    color: #606060 !important;
+}
+/*----------------------------------------*/
+/*  5. Test Area
+/*----------------------------------------*/
+.test-area .section-title h3{margin-bottom: 25px}
+.test-content{margin-right: 90px}
+.test-img{margin-right: 40px}
+.img-main{
+    position: relative;
+}
+.img-main:before{
+    position: absolute;
+    bottom: 15px;
+    width: 105px;
+    height: 86px;
+    content:"";
+    background: url(img/test/2.png);
+    opacity: 0;
+    -webkit-animation: mymove 1s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 1s infinite;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {left: -45px;}
+    to {left: 0px;}
+}
+@keyframes mymove {
+    from {left: -45px;}
+    to {left: 0px;}
+}
+.test-img:hover .img-main:before{opacity: 1; }
+/*----------------------------------------*/
+/*  6. Book Area
+/*----------------------------------------*/
+.book-area{
+    background: url(img/book/1.jpg);
+    background-attachment: fixed;
+    z-index: 1;
+}
+.book-area:after, .newsletter-area:after{
+    background: rgba(0, 0, 0, 0.62);
+}
+.book-content h2{
+    color: #fff;
+    font-size: 34px;
+    font-family: 'Playfair Display', serif;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+.book-content h3{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Playball', cursive;
+    text-transform: capitalize;
+    margin-bottom: 55px;
+}
+.booking-form form input {
+    color: #e3e1e1;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    z-index: 9;
+    position: relative;
+    margin-bottom: 42px;
+    height: 35px;
+}
+.booking-form form p {
+    color: #e3e1e1;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    z-index: 9;
+    position: relative;
+    text-transform: capitalize;
+}
+/*----------------------------------------*/
+/*  7. Event Area
+/*----------------------------------------*/
+.event-area, .blog-area{
+    background: #FAFAFA;
+    position: relative;
+}
+.event-area:before, .event-area:after, .blog-area:before, .blog-area:after{
+    position: absolute;
+    left: 0;
+    top: -40px;
+    width: 288px;
+    height: 179px;
+    background: url(img/event/1.png);
+    content: "";   
+}
+.event-area .section-title{margin-bottom: 55px;}
+.event-area:after, .blog-area:after{
+    right: 0;
+    left: auto;
+    background: url(img/event/2.png);  
+}
+.event-area .section-title h4 {
+  margin-bottom: 20px;
+}
+.event-area .section-title h2 {
+  line-height: 25px;
+}
+.event-owl .owl-dots > div {
+  background: #e0e0e0 none repeat scroll 0 0;
+  display: inline-block;
+  height: 8px;
+  margin-right: 10px;
+  width: 8px;
+}
+.event-owl .owl-dots .active{
+  background: #D4A762;
+}
+.event-owl .owl-controls {
+  bottom: 25px;
+  position: absolute;
+}
+/*----------------------------------------*/
+/*  8. Client Area
+/*----------------------------------------*/
+.client-area{background: #FAFAFA;}
+.testimonial-image-slider {margin-top: 5px}
+.slick-list {margin: 0 5px}
+.sin-opacity{
+    cursor: pointer;
+    display: inline-block;
+    height: 60px;
+    margin-top: 48px;
+    outline: 0 none;
+    overflow: hidden;
+    position: relative;
+    width: 60px;
+    border: 2px solid #EBEBEB;
+    z-index: 99;
+    border-radius: 50%;
+    position: relative;
+}
+.sin-opacity::after {
+  background: rgba(255, 255, 255, 0.65) none repeat scroll 0 0;
+  border-radius: 50%;
+  content: "";
+  height: 65px;
+  left: -4px;
+  position: absolute;
+  top: -2px;
+  width: 65px;
+}
+.slick-active.slick-center .sin-opacity::after{
+    content: none;
+}
+.slick-list {
+  z-index: 99;
+}
+.sin-opacity img {width: 100%; height: 100%}
+.sin-testiImage {
+    display: inline-block;
+    margin-bottom: 0px;
+    outline: medium none;
+}
+.sin-testiImage.slick-current .sin-opacity {
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #ebebeb;
+    height: 85px;
+    margin-top: 0;
+    opacity: 1;
+    width: 85px;
+}
+.sin-testiImage.slick-current {
+  height: 85px;
+  margin-top: 37px;
+  opacity: 1;
+  width: 85px;
+}
+.testimonial-text-slider h2 {
+  color: #303030;
+  display: block;
+  font-family: "Open Sans",sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  margin-top: 18px;
+  text-transform: capitalize;
+    font-family: 'Playball', cursive;
+}
+.testimonial-text-slider h5 {
+    display: block;
+    font-size: 12px;
+    color :#606060;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+.testimonial-text-slider {
+    margin: auto;
+    padding: 0px 55px 4px;
+    position: relative;
+    width: 71%;
+    z-index: 9;
+}
+.sin-testiText{outline: none}
+.sin-testiText p {
+    color: #444444;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    padding: 0 20px;
+}
+.client-rating {margin-bottom: 5px}
+.client-rating i {
+    color: #7d7d7d;
+    font-size: 18px;
+}
+.slick-prev, .slick-next {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    height: 25px;
+    outline: medium none;
+    padding: 0;
+    position: absolute;
+    top: 38%;
+    width: 16px;
+}
+.slick-list {
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+ul.slick-dots > li {
+  display: inline-block;
+  margin: 0 5px;
+}
+ul.slick-dots li button {
+  background: #e0e0e0 none repeat scroll 0 0;
+  font-size: 0;
+  height: 12px;
+  line-height: 0;
+  width: 8px;
+}
+ul.slick-dots li.slick-active button {
+  background: #D4A762 none repeat scroll 0 0;
+}
+/*----------------------------------------*/
+/*  9. Order Area
+/*----------------------------------------*/
+.order-area{
+    background: url(img/order/1.jpg);
+    background-attachment: fixed;
+    z-index: 1;
+}
+.order-area:after{
+    background: rgba(0, 0, 0, 0.55);
+}
+.order-content h1{margin-bottom: 15px}
+.order-content h3, .order-content h4{
+    color: #d4a762;
+    font-size: 42px;
+    font-family: 'Playball', cursive;
+    font-weight: 700;
+}
+.order-content h4{font-size: 32px; margin-bottom: 20px;}
+/*----------------------------------------*/
+/*  10. Blog Area
+/*----------------------------------------*/
+.blog-area .section-title {
+  margin-bottom: 60px;
+}
+.blog-right {display: table}
+.blog-left{
+    background: #D4A762;
+    color: #fafafa;
+    font-size: 24px;
+    font-family: 'Playball', cursive;
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+    padding: 8px 15px;
+    line-height: 22px;
+}
+.blog-left span{
+    font-size: 18px;
+    display: block;
+}
+.blog-right h3{
+    margin-bottom: 10px;
+}
+.blog-right h3 a{
+    font-size: 24px;
+    color: #d4a762;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.blog-right h3 a:hover {
+    color: #281B1A;
+}
+.blog-img img {
+  width: 100%;
+}
+.blog-right h5{
+    font-size: 12px;
+    color: #919191;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.blog-title{margin-bottom: 30px; display: block}
+.blog-img{position: relative;}
+.blog-img:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    content: "";
+    opacity: 0;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.single-blog:hover .blog-img:after{
+    opacity: 1;   
+}
+.single-blog:hover .hover{
+    opacity: 1;
+    transition-delay: 0.3s
+}
+.hover {
+    content: "";
+    height: auto;
+    left: 0;
+    margin-top: -10px;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    transition: all 0.8s ease 0s;
+    width: 100%;
+    z-index: 9;
+}
+.hover i{
+    font-size: 20px;
+    color: #fff;
+}
+/*----------------------------------------*/
+/*  11. Newsletter Area
+/*----------------------------------------*/
+.newsletter-area{
+    background: url(img/newsletter/1.jpg);
+    background-attachment: fixed;
+    z-index: 1;
+}
+.newsletter-content h5{color: #fff}
+/*----------------------------------------*/
+/*  12. Contact Area
+/*----------------------------------------*/
+.single-contact{
+    padding: 45px 0;
+}
+.contact-area .col-md-4:first-child .single-contact{
+    background: #0148BC;
+}
+.contact-area .col-md-4 .single-contact{
+    background: #1C9DEC;
+}
+.contact-area .col-md-4:last-child .single-contact{
+    background: #EA4335;
+}
+.single-contact i{
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+.contact-info h5 {
+    color: #fff;
+    font-size:14px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.contact-info p{
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

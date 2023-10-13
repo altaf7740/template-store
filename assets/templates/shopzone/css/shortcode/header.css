@@ -1,0 +1,125 @@
+/* ======================================
+	
+	Template: Shopzone
+	Css Name: Header
+	Version: 1
+	Design and Developed by:Shopzone Theme
+	NOTE: This is Footer style file. All footer related style included in this file.
+
+========================================= */
+
+.main-menu {
+  float: left;
+}
+.main-menu.lemon-bg ul {
+  float: left;
+}
+.menu-right-area {
+  float: right;
+  margin-top: 28px;
+  position: relative;
+}
+.menu-right-area a i {
+  color: #ffffff;
+  display: block;
+  font-size: 20pt;
+}
+.mini-cart-icon > span {
+  background: #fff none repeat scroll 0 0;
+  color: #8bc34a;
+  font-family: "Exo 2",sans-serif;
+  font-size: 10pt;
+  height: 15px;
+  line-height: 14px;
+  position: absolute;
+  right: -14px;
+  text-align: center;
+  top: -14px;
+  width: 15px;
+}
+.top-cart-content {
+  background: #fff none repeat scroll 0 0;
+  border-top: 2px solid #8bc34a;
+  color: #000;
+  display: block;
+  opacity: 0;
+  padding: 15px;
+  position: absolute;
+  right: 0;
+  text-align: left;
+  top: 52px;
+  transform: scaleY(0);
+  transform-origin: 0 0 0;
+  transition: all 0.5s ease 0s;
+  visibility: hidden;
+  width: 280px;
+  z-index: 99;
+  -webkit-box-shadow: 2px 1px 5px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 1px 5px -1px rgba(0,0,0,0.75);
+  box-shadow: 2px 1px 5px -1px rgba(0,0,0,0.75);
+}
+.menu-right-area:hover .top-cart-content {
+  opacity: 1;
+  transform: scaleY(1);
+  visibility: visible;
+}
+.media:first-child {
+  margin-top: 0;
+}
+.header-middle-checkout {
+  border-color:#eee;
+  border-image: none;
+  border-style: none none solid;
+  border-width: medium medium 1px;
+  padding: 0 0 10px !important;
+}
+.media-left.check-img {
+  display: block;
+  float: left;
+}
+.header-middle-checkout .media-heading {
+  margin-bottom: 5px;
+  margin-top: 0;
+  position: relative;
+}
+.header-middle-checkout .checkout-content h4.media-heading a {
+  color: #303030;
+  font-size: 13px;
+  font-weight: 600;
+  margin-right: 16px;
+}
+.header-middle-checkout .checkout-content h4.media-heading a:hover{color:#8bc34a;}
+.media-heading > a, .media-left.check-img > a {
+  padding: 0;
+}
+.header-middle-checkout .checkout-content .checkout-remove {
+  color: #ff0000;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0 0 5px;
+}
+.top-cart-content .actions {
+  background: transparent none repeat scroll 0 0;
+  border: 0 none;
+  cursor: pointer;
+  margin: 10px 0 0;
+  overflow: visible;
+  padding: 0;
+  width: auto;
+}
+.top-cart-content .actions button.Checkout-botton {
+  background: #8bc34a none repeat scroll 0 0;
+  border: medium none;
+  color: #fff;
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 89px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 1s ease 0s;
+  white-space: nowrap;
+}
+.top-cart-content .actions button.Checkout-botton:hover{background:#444444;}

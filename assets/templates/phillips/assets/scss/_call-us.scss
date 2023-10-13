@@ -1,0 +1,38 @@
+/*--
+   11. Call Us Css
+-------------------------------*/
+.bg_image {
+    background: url(../images/bg/call-us-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.call-us-box {
+    & .title {
+        margin-left: 60px;
+        & h4 {
+            font-weight: 600;
+            color: $white;
+        }
+        & p{
+            color: $white;
+        }
+        
+        @media #{$large-mobile}{
+            margin-left: 40px;
+            & h4 {
+                line-height: 30px;
+            }
+        }
+        @media #{$small-mobile}{
+            margin-left: 0;
+            margin-top: 15px;
+            & h4 {
+                line-height: 30px;
+            }
+        }
+    }
+    @media #{$small-mobile}{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,110 @@
+/*--
+    05. About Css
+--------------------------*/
+.reapir-about-area {
+    position: relative;
+    z-index: 2;
+    .shape {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: -1;
+    }
+    .thumb {
+        position: relative;
+        text-align: center;
+        .rp-player {
+            position: absolute;
+            top: 50%;
+            z-index: 3;
+            width: 100px;
+            height: 100px;
+            background: #43c3ea;
+            left: 4px;
+            color: #fff;
+            border-radius: 100%;
+            text-align: center;
+            line-height: 100px;
+            font-size: 36px;
+            transition: 0.4s ease-in-out;
+            transform: translateY(-50%) scale(1);
+
+            &:hover {
+                opacity: 0.8;
+                transform: translateY(-50%) scale(0.9);
+            }
+            a {
+                display: block;
+            }
+        }
+    }
+    .content{
+        p {
+            color: #3a3a3a;
+            font-size: 16px;
+            line-height: 30px;
+            margin-top: 9px;
+        }
+        .address {
+            display: flex;
+            margin-top: 40px;
+            p {
+                color: #3d3d3d;
+                font-size: 18px;
+                margin: 0;
+                font-family: $heading-font;
+
+                i {
+                    background: #152545;
+                    color: #fff;
+                    width: 42px;
+                    height: 42px;
+                    text-align: center;
+                    line-height: 42px;
+                    border-radius: 100%;
+                    margin-right: 15px;
+                    transition: 0.4s ease-in-out;
+                }
+                &:hover i{
+                    background: $theme-color;
+                }
+                
+                & + p{
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+}
+.bg_image--02 {
+    background-image: url(../images/bg/bg-image-02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.call-to-action-default .content p {
+    color: #fff;
+}
+.call-to-action-default .content h2 {
+    color: #152545;
+    font-size: 72px;
+    font-weight: 700;
+    margin-bottom: 27px;
+    @media #{$large-mobile}{
+        font-size: 30px;
+    }
+}
+.call-to-action-default .content a.call_btn {
+    background: #152545;
+    height: 47px;
+    padding: 0 38px;
+    display: inline-block;
+    line-height: 47px;
+    border-radius: 25px;
+    color: #ffffff;
+    font-size: 14px;
+    transition: 0.4s ease-in-out;
+    
+}

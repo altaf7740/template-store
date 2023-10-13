@@ -1,0 +1,77 @@
+/*--
+    - Button Style
+------------------------------------------*/
+.default-btn {
+    border: 1px solid $theme-color;
+    padding: 12px 30px;
+    color: $white;
+    background: $theme-color;
+    font-size: 14px;
+    font-weight: 600;
+    &:hover {
+        border: 1px solid #333;
+        background: #333;
+        color: $white;
+    }
+}
+.primary-btn {
+    border: 1px solid $white;
+    padding: 12px 30px;
+    color: $white;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    &:hover {
+        border: 1px solid $theme-color;
+        background: $theme-color;
+        color: $white;
+    }
+}
+
+.border-radius {
+    border-radius: 30px;
+}
+
+.btn {
+    background: $theme-color;
+    color: $white;
+    border-radius: 0;
+    font-family: $opensans;
+    font-weight: 600;
+    font-size: 14px;
+    @include transition(.3s);
+    position: relative;
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    @media #{$small-mobile}{
+        padding: 1px 20px;
+        font-size: 12px;
+    }
+    & span {
+        display: inline-block;
+        line-height: inherit;
+        transition: none;
+    }
+    & i {
+        display: inline-block;
+        line-height: inherit;
+        transition: none;
+    }
+    &.left {
+        & i {
+            margin-right: 10px;
+        }
+    }
+    &.right {
+        & i {
+            margin-left: 10px;
+        }
+    }
+    &:hover , &:active {
+        background: $black;
+        color: $white;
+    }
+    
+}

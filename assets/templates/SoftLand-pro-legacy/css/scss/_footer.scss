@@ -1,0 +1,52 @@
+// main: ../style.scss
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+.footer {
+	padding: 5rem 0 2.5rem 0;
+	h3 {
+		font-size: 18px;
+		margin-bottom: 30px;
+	}
+	ul {
+		li {
+			margin-bottom: 10px;
+		}
+  }
+  a {
+		color: #000;
+  }
+  .copyright {
+    margin-bottom: 0px;
+  }
+  .copyright, .credits {
+    font-size: 14px;
+  }
+}
+
+.social {
+	a {
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background: $default-light;
+		position: relative;
+		text-align: center;
+		transition: .3s background ease;
+		color: $default-dark;
+		span {
+			display: inline-block;
+			left: 50%;
+			position: absolute;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+		&:hover {
+			color: $white;
+			background: $primary;
+		}
+	}
+}

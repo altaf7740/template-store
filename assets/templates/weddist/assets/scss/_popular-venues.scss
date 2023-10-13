@@ -1,0 +1,65 @@
+/*--
+    13. Populer Venues
+------------------------*/
+.single-venues {
+    & a {
+        & img {
+            width: 100%;
+        }
+    }
+    &:hover {
+        & a {
+            & img {
+                transform: scale(1.06) rotate(-2deg);
+            }
+        }
+    }
+}
+.venues-image a {
+    display: block;
+    overflow: hidden;
+        & img {
+            transform: scale(1.0);
+        }
+    }
+.venues-info-box {
+    margin-top: 10px;
+    & h5 {
+        font-weight: 600;
+    }
+}
+.reting {
+    color: $theme-color;
+}
+.venues-info-box-3 {
+    padding: 0 30px;
+    margin-top: 10px;
+    & h5 {
+        font-weight: 600;
+    }
+}
+.venues-info-3 {
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.popular-places-list{
+    margin-bottom: 40px;
+    & li {
+        & a {
+            padding: 4px 25px;
+            border-radius: 5px;
+            margin: 0 0 8px 0;
+            margin-left: 8px;
+            font-size: 14px;
+            &.active,&:hover {
+                color: #ffffff;
+                background: $theme-color; 
+            }
+            
+            @media #{$large-mobile}{
+                padding: 4px 15px;
+            }
+        }
+    }
+}

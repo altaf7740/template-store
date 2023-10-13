@@ -1,0 +1,172 @@
+/*-- Page Banner Area --*/
+.page-banner-area {
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-image: url(img/bg/video.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    margin-top: 170px;
+    &::before {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        content: "";
+        background-color: $color-black;
+        opacity: 0.6;
+    }
+    @media #{$tablet-device}{
+        margin-top: 244px;
+    }
+    @media #{$small-mobile}{
+        margin-top: 146px;
+    }
+    @media #{$large-mobile}{
+        padding-bottom: 70px;
+        padding-top: 70px;
+    }
+    @media #{$small-mobile}{
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+    & .page-banner-wrapper {
+        & h1 {
+            font-size: 36px;
+            color: $color-white;
+            text-transform: uppercase;
+            line-height: 26px;
+            margin: 0 0 10px;
+            @media #{$large-mobile}{
+                font-size: 30px;
+                line-height: 24px;
+            }
+            @media #{$small-mobile}{
+                font-size: 20px;
+                line-height: 16px;
+            }
+        }
+    }
+}
+/*-- Page Breadcrumb --*/
+.page-breadcrumb {
+    & li {
+        display: inline-block;
+        margin: 0 10px;
+        &::after {
+            color: $color-white;
+            content: "/";
+            position: relative;
+            right: -11px;
+        }
+        &:last-child::after {
+            display: none;
+        }
+        & a {
+            display: inline-block;
+            color: $color-white;
+            text-transform: uppercase;
+            font-weight: 400;
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+}
+
+/*-- Pagination --*/
+.pagination {
+    display: block;
+    width: 100%;
+    margin: 30px 0 0;
+    float: left;
+    & li {
+        display: inline-block;
+        margin: 0 3px;
+        vertical-align: top;
+        & a {
+            background-color: #ddd;
+            color: #444;
+            display: block;
+            border-radius: 0 !important;
+            border: 0px solid transparent;
+            text-align: center;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            padding: 0;
+            font-weight: 500;
+            margin: 0;
+            & i {
+                display: block;
+                line-height: 30px;
+                font-size: 20px;
+            }
+        }
+        &:hover a {
+            background: $theme-color;
+            color: $color-white;
+        }
+        &.active a {
+            background: $theme-color;
+            color: $color-white;
+        }
+        &.active:hover a {
+            background: $theme-color;
+            color: $color-white;
+        }
+    }
+}
+
+/*-- Section Title --*/
+.section-title {
+    z-index: 1;
+    & h4 {
+        color: #777777;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 13px;
+        margin-bottom: 14px;
+        text-transform: uppercase;
+        @media #{$small-mobile}{
+            font-size: 16px;
+        }
+    }
+    & h2 {
+        color: #555555;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 22px;
+        margin: 0;
+        text-transform: uppercase;
+        @media #{$small-mobile}{
+            font-size: 20px;
+            line-height: 16px;
+        }
+    }
+}
+/*-- Section Title 2 --*/
+.section-title-2 {
+    z-index: 1;
+    & h1 {
+        font-size: 36px;
+        background: rgba(0, 0, 0, 0) url("img/title-shape-light.png") no-repeat scroll center bottom;
+        color: $color-white;
+        text-transform: uppercase;
+        line-height: 26px;
+        padding-bottom: 35px;
+        font-weight: 600;
+        margin: 0;
+        @media #{$large-mobile}{
+            font-size: 30px;
+            line-height: 24px;
+        }
+        @media #{$small-mobile}{
+            font-size: 20px;
+            line-height: 16px;
+        }
+    }
+}

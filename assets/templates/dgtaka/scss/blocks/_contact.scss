@@ -1,0 +1,180 @@
+/*-------------------
+    Contact Styles
+--------------------*/
+
+.contact__title {
+    text-align: center;
+    h2 {
+        color: #1752b4;
+        font-size: 36px;
+        margin-top: 48px;
+    }
+    p {
+        padding: 0 20%;
+    }
+}
+
+.conact__area {
+    .container-fluid {
+        background: #fafafa none repeat scroll 0 0;
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-top: 120px;
+    }
+}
+
+.single-contact-form {
+    margin-bottom: 22px;
+    span {
+        color: #03193d;
+        display: block;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    input {
+        border: 1px solid #97b4e5;
+        border-radius: 5px;
+        height: 45px;
+        padding: 0 20px;
+        width: 450px;
+        outline: medium none;
+    }
+    textarea {
+        border: 1px solid #97b4e5;
+        border-radius: 5px;
+        min-height: 115px;
+        padding: 10px;
+        width: 450px;
+        outline: medium none;
+    }
+}
+
+.contact-btn {
+    margin-top: 30px;
+    button {
+        background: #1752b4 none repeat scroll 0 0;
+        border: 0 none;
+        border-radius: 5px;
+        color: #fff;
+        height: 40px;
+        padding: 0 40px;
+        text-transform: uppercase;
+        transition: 0.5s;
+        &:hover{
+            background: #f7a901 none repeat scroll 0 0;
+        }
+    }
+}
+
+.dg__contact__wrapper {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+#googleMap {
+    height: 750px;
+    width: 100%;
+}
+
+/* Responsive Css*/
+
+@media #{$lg-layout} {
+    .contact__title p {
+        padding: 0 13%;
+    }
+    .dg__contact__wrapper {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media #{$md-layout} {
+    .dg__contact__wrapper {
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+    .contact__title img {
+        width: 100%;
+    }
+    .google__map {
+        margin-right: -15px;
+    }
+    .google__map {
+        margin-right: -30px;
+    }
+    .contact__title p {
+        padding: 0 8%;
+    }
+    .google__map {
+        margin-right: 0;
+    }
+    .single-contact-form input {
+        width: 100%;
+    }
+    .single-contact-form textarea {
+        width: 100%;
+    }
+    .conact__area .container-fluid {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .conact__area .container-fluid {
+        margin-top: 44px;
+    }
+}
+
+@media #{$sm-layout} {
+    .contact__title img {
+        width: 100%;
+    }
+    .contact__title p {
+        padding: 0;
+    }
+    .google__map {
+        margin-right: -15px;
+    }
+    .dg__contact__wrapper {
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+    .dg__contact__wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .google__map {
+        margin-right: 0;
+    }
+    .single-contact-form input {
+        width: 100%;
+    }
+    .single-contact-form textarea {
+        width: 100%;
+    }
+    .conact__area .container-fluid {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .conact__area .container-fluid {
+        margin-top: 44px;
+    }
+    .conact__area {
+        padding-top: 60px;
+    }
+    #googleMap {
+        height: 400px;
+    }
+    .contact__title h2 {
+        font-size: 24px;
+        margin-bottom: 19px;
+    }
+
+
+    
+
+
+}
+
+@media #{$xs-layout} {}
+
+@media #{$xxs-layout} {}

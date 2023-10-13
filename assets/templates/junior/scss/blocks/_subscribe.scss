@@ -1,0 +1,322 @@
+@import "../variables";
+@import "../mixins";
+
+
+/*========================
+	Subscribe Area
+===========================*/
+
+.subscribe__inner{
+	padding: 30px 0 40px;
+    text-align: center;
+	h2{
+		color: #fff;
+	    font-size: 36px;
+	    margin-bottom: 27px;
+	    text-transform: capitalize;
+        font-family: $heading-font;
+
+	}
+	.newsletter__form{
+
+	}
+}
+
+.news__input input {
+    background: #fff none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 5px;
+    color: #666666;
+    height: 53px;
+    padding: 0 30px;
+    width: 100%;
+}
+.htc__news__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 240px;
+}
+.news__input {
+    flex-basis: 80%;
+}
+.subscribe__btn input.bst__btn {
+    background: #fff none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 5px;
+    color: #666666;
+    font-size: 16px;
+    font-weight: 700;
+    height: 53px;
+    padding: 0 27px;
+    text-transform: capitalize;
+    transition: all 0.3s ease 0s;
+}
+.subscribe__btn {
+    flex-basis: 20%;
+    text-align: right;
+}
+.subscribe__btn input.bst__btn:hover {
+    background: #89d700 none repeat scroll 0 0;
+    color: #fff;
+}
+.bcare__subscribe {
+    margin-top: -103px;
+    position: relative;
+    transform: translateY(103px);
+    z-index: 1;
+}
+
+.bcare__subscribe.subscribe--1 .container {
+  box-shadow: 0 23px 57px 21px rgba(114, 111, 111, 0.25);
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+// Subscrive Style Two
+
+
+.bcare__subscribe.subscrive--2 {
+  margin-top: 0;
+  transform: translateY(0px);
+}
+.subscrive--2 .subscribe__inner {
+  padding: 70px 0 80px;
+}
+.subscrive--2 .subscribe__inner h2 {
+  margin-bottom: 20px;
+}
+.subscrive--2 .news__input input {
+  height: 50px;
+}
+.subscrive--2 .subscribe__btn input.bst__btn {
+  height: 50px;
+  padding: 0 50px;
+  color: #666666;
+}
+.subscrive--2 .subscribe__btn {
+  margin-left: 5px;
+}
+.subscrive--2 .subscribe__btn input.bst__btn:hover{
+  color: #fff;
+}
+
+
+// Subscrive Style Three
+
+.subscribe--3 .subscribe__inner h2 {
+  color: #444444;
+}
+.subscribe--3 .news__input input {
+  background: #89d700 none repeat scroll 0 0;
+  color: #fff;
+  outline: none;
+}
+.subscribe--3 .subscribe__btn input.bst__btn {
+  background: #89d700 none repeat scroll 0 0;
+  color: #fff;
+}
+.subscribe__position {
+  position: relative;
+}
+
+.bcare__subscribe.subscribe--3 {
+  left: 50%;
+  margin-top: 0;
+  position: absolute;
+  top: 37%;
+  transform: translateY(0px) translateX(-50%);
+  width: 100%;
+  outline: none;
+}
+
+
+.subscribe--3 .news__input input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff;
+  opacity: 1;
+}
+.subscribe--3 .news__input input::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+  opacity: 1;
+}
+.subscribe--3 .news__input input:-ms-input-placeholder { /* IE 10+ */
+  color: #fff;
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.subscribe--3 .subscribe__btn input.bst__btn:hover {
+  background: #ff5020 none repeat scroll 0 0;
+  color: #fff;
+}
+
+
+
+
+
+// Subscribe Style 4
+
+
+
+
+
+.subscribe__style--5{
+    .subscribe__inner{
+        background: #f6f6f6 none repeat scroll 0 0;
+        margin-left: -15px;
+        margin-right: -15px;
+        padding: 166px 0;
+        text-align: center;
+        box-shadow: 0 1px 35px rgba(181, 181, 181, 0.11);
+        h2{
+            color: #666666;
+        }
+        .subscribe__btn{
+            margin-left: 3px;
+        }
+        .htc__news__inner{
+            padding: 0 160px;
+        }
+    }
+}
+
+
+// Responsive Css
+
+
+
+@media #{$lg-layout}{
+
+  .htc__news__inner {
+    padding: 0 119px;
+  }
+  .subscribe--3 .htc__news__inner {
+    padding: 0 89px;
+  }
+  .subscribe__style--5 .subscribe__inner .htc__news__inner {
+    padding: 0 44px;
+  }
+  .testimonial__slide--4 .owl-nav div.owl-next {
+    left: 58%;
+  }
+
+
+}
+
+@media #{$md-layout}{
+
+  .bcare__subscribe.subscribe--3 {
+    top: 29%;
+  }
+
+}
+
+@media #{$sm-layout}{
+
+  .bcare__subscribe.subscribe--3 {
+    top: 40%;
+  }
+  .subscribe__style--5 .subscribe__inner .htc__news__inner {
+    padding: 0 38px;
+  }
+
+
+}
+
+@media #{$xs-layout}{
+
+  .bcare__subscribe.subscribe--3 {
+    top: 30%;
+  }
+
+}
+
+@media #{$xxs-layout}{
+
+  .bcare__subscribe.subscribe--3 {
+    top: 37%;
+  }
+
+}
+
+
+@media #{$md-layout}{
+  
+  .htc__news__inner {
+    padding: 0 100px;
+  }
+  .subscribe__btn {
+    margin-left: 10px;
+  }
+
+}
+
+@media #{$sm-layout}{
+   
+  .htc__news__inner {
+    padding: 0;
+  }
+  .subscribe__btn {
+    margin-left: 20px;
+  }
+  .news__input input {
+    height: 40px;
+  }
+  .subscribe__btn input.bst__btn {
+    height: 40px;
+  }
+  .subscribe__inner {
+    padding: 40px 20px;
+  }
+
+
+
+}
+
+
+@media #{$xs-layout}{
+    
+  .subscribe__inner h2 {
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+
+
+}
+
+@media #{$xxs-layout}{
+
+  .htc__news__inner {
+    display: block;
+    padding: 0;
+  }
+  .subscribe__btn {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+
+}
+

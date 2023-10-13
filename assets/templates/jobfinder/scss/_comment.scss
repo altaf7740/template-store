@@ -1,0 +1,134 @@
+/*-- Comment Wrapper --*/
+.comment-wrapper {
+    margin-top: 70px;
+    padding-right: 25px;
+    & h3 {
+        font-size: 22px;
+        color: #686868;
+        font-weight: 500;
+        line-height: 18px;
+        margin-bottom: 55px;
+        @media #{$large-mobile}{
+            font-size: 18px;
+            line-height: 14px;
+        }
+    }
+}
+/*-- Comment List --*/
+.comment-list {
+    & li {
+        display: block;
+        & .comment-child {
+            margin-left: 100px;
+            @media #{$large-mobile}{
+                margin: 0;
+            }
+        }
+    }
+}
+/*-- Single Comment --*/
+.comment {
+    padding: 20px 20px 20px 15px;
+    border: 1px solid #ededed;
+    margin-bottom: 20px;
+    & .image {
+        width: 68px;
+        height: 68px;
+        margin-right: 15px;
+        border-radius: 50%;
+        border: 1px solid #e7e7e7;
+        overflow: hidden;
+        @media #{$small-mobile}{
+            float: none;
+            margin-bottom: 15px;
+        }
+        & img {
+            width: 100%;
+        }
+    }
+    & .content {
+        & h4 {
+            font-size: 18px;
+            font-weight: 400;
+            color: #6b6b6b;
+            text-transform: capitalize;
+            line-height: 14px;
+            float: left;
+            margin-top: 6px;
+            margin-bottom: 11px;
+        }
+        & .replay {
+            font-size: 14px;
+            line-height: 14px;
+            float: right;
+            color: $theme-color;
+            margin-top: 6px;
+            margin-bottom: 11px;
+            &:hover {
+                color: #6b6b6b;
+            }
+        }
+        & p {
+            clear: both;
+            float: left;
+            width: 100%;
+        }
+    }
+}
+/*-- Comment Form --*/
+.comment-form {
+    & form {
+        margin-left: -15px;
+        margin-right: -15px;
+        & .input-box {
+            float: left;
+            width: 100%;
+            padding: 0 15px;
+            margin-bottom: 40px;
+            &:last-child {
+                margin-bottom: 0;
+                margin-top: -10px;
+            }
+            &.input-2 {
+                width: 50%;
+                @media #{$large-mobile}{
+                    width: 100%;
+                }
+            }
+            & input {
+                width: 100%;
+                border-width: 0 0 1px;
+                border-style: solid;
+                border-color: #e0e0e0;
+                padding: 0 0 6px;
+                font-size: 13px;
+                font-weight: 300;
+                color: #969696;
+                &[type="submit"] {
+                    width: auto;
+                    padding: 8px 50px;
+                    border: none;
+                    background-color: $theme-color;
+                    color: $color-white;
+                    font-size: 13px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    &:hover {
+                        background-color: lighten($theme-color, 5);
+                    }
+                }
+            }
+            & textarea {
+                width: 100%;
+                border-width: 0 0 1px;
+                border-style: solid;
+                border-color: #e0e0e0;
+                padding: 0 0 6px;
+                font-size: 13px;
+                font-weight: 300;
+                color: #969696;
+                height: 80px;
+            }
+        }
+    }
+}

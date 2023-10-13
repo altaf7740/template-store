@@ -1,0 +1,106 @@
+@import "../variables";
+@import "../mixins";
+
+
+/*=====================
+	Banner Styles
+========================*/
+
+
+
+.bcare__banner{
+	position: relative;
+	.banner__inner{
+		left: 0;
+	    padding: 34px;
+	    position: absolute;
+	    top: 50%;
+	    transform: translateY(-50%);
+	    &.banner__content--bottom{
+	    	bottom: 0;
+		    text-align: center;
+		    top: auto;
+		    transform: translateY(0px);
+		    width: 100%;
+	    }
+	    &.banner__content--right{
+	    	left: auto;
+		    right: 32px;
+		    text-align: right;
+		    h4{
+		    	color: #c23060;
+		    	font-family: $body-font;
+		    }
+		    h2{
+		    	font-size: 36px;
+    			line-height: 36px;
+		    }
+	    }
+	    h4{
+			color: #072b3d;
+		    font-size: 24px;
+		    line-height: 30px;
+		    font-family: $body-font;
+	    }
+		h2{
+			color: #444444;
+		    font-size: 48px;
+		    line-height: 66px;
+		    font-family: $body-font;
+		}
+	}
+	.banner__offer{
+		position: absolute;
+	    right: 29%;
+	    top: 78px;
+		span{
+			background: #fe5629 none repeat scroll 0 0;
+		    border-radius: 5px;
+		    color: #fff;
+		    display: inline-block;
+		    font-family: $body-font;
+		    font-size: 18px;
+		    font-weight: 700;
+		    height: 35px;
+		    line-height: 33px;
+		    padding: 0 12px;
+		    text-transform: capitalize;
+		}
+	}
+}
+
+
+
+
+
+
+
+@media #{$md-layout}{
+
+	.bcare__banner .banner__inner.banner__content--right h2 {
+	  font-size: 26px;
+	  line-height: 29px;
+	}
+	.bcare__banner .banner__inner h2 {
+	  font-size: 26px;
+	  line-height: 39px;
+	}
+
+
+}
+
+
+@media #{$sm-layout}{
+
+	.bcare__banner .banner__inner.banner__content--right h2 {
+	  font-size: 26px;
+	  line-height: 29px;
+	}
+	.bcare__banner .banner__inner h2 {
+	  font-size: 26px;
+	  line-height: 39px;
+	}
+
+
+
+}

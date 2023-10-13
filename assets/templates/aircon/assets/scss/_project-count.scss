@@ -1,0 +1,210 @@
+/*--
+    09. Project Count Css
+----------------------------------*/
+
+.counter-bg {
+    background: url(../images/bg/fun-bg.png);
+    background-size: cover;
+}
+.counter {
+    margin-top: 30px;
+    & h3 {
+        font-size: 48px;
+        font-weight: 700;
+    }
+    & p {
+        color: $theme-color;
+        margin-top: 25px;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: 0;
+    }
+    @media #{$tablet-device} {
+        & h3 {
+            font-size: 34px;
+            margin-top: -5px;
+        }
+        & p {
+            font-size: 18px;
+            margin-top: 15px;
+            line-height: 16px;
+        }
+    }
+    @media #{$large-mobile} {
+        & h3 {
+            font-size: 34px;
+            margin-bottom: 0;
+            margin-top: -5px;
+        }
+        & p {
+            font-size: 16px;
+            margin-top: 10px;
+            line-height: 16px;
+        }
+    }
+}
+.cont-two  {
+    .counter {
+        & p {
+            margin-bottom: 15px;
+        }
+        @media #{$tablet-device} {
+            & p {
+                font-size: 18px;
+                margin-top: 0px;
+                margin-bottom: 15px;
+            }
+        }
+        @media #{$large-mobile} {
+            margin-top: 25px;
+            & p {
+                font-size: 16px;
+                margin-top: 0px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+.counter-title {
+    margin-top: 30px;
+    & h4 {
+        font-size: 22px;
+        color: $white;
+        font-weight: 600;
+        @media #{$large-mobile} {
+            margin-bottom: 0px; 
+            margin-top: -5px;
+        }
+    }
+    & h2 {
+        font-size: 48px;
+        line-height: 50px;
+        font-weight: 700;
+        color: $white;
+        margin-bottom: 0;
+    }
+    @media #{$small-mobile} {
+        margin-top: 30px;
+    }
+    @media #{$large-mobile,$tablet-device} {
+        text-align: center;
+        & h4 {
+            font-size: 18px;
+        }
+        & h2 {
+            font-size: 34px;
+            line-height: 34px;
+        }
+    }
+    @media #{$desktop-device} {
+        & h4 {
+            font-size: 24px;
+        }
+        & h2 {
+            font-size: 48px;
+            line-height: 48px;
+        }
+    }
+}
+
+.project-count-area {
+    & .counter {
+        & h3 {
+            color: $white;
+        }
+        & p {
+            color: $white;
+            text-transform: uppercase;
+        }
+    }
+    @media #{$large-mobile,$tablet-device} {
+        &.pb--90 {
+            padding-bottom: 60px;
+        }
+        
+    }
+}
+/*--
+    10. FAQ Css
+--------------------------------*/
+.single-faq {
+    margin-top: 30px;
+    padding: 45px 25px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    @include transition (0.4s);
+    & .title-content {
+        & h4 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        & i {
+            color: $white;
+            background: $theme-color;
+            font-size: 22px;
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+            border-radius: 50%;
+            display: inline-block;
+            text-align: center;
+        }
+    }
+    & p {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    &:hover {
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+    }
+}
+/*--
+    11. Something New Css
+------------------------------*/
+.something-new-bg {
+    background: url(../images/bg/02.jpg);
+    background-size: cover;
+    &.overly-bg-black {
+       &::before {
+            background: rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+.something-new-inner {
+    & h2 {
+        font-size: 48px;
+        font-weight: 600;
+        color: $white;
+        margin-bottom: 25px;
+        @media #{$tablet-device}{
+            font-size: 40px;
+        }
+        @media #{$large-mobile}{
+            font-size: 30px;
+        }
+    }
+    & p {
+        width: 45%;
+        margin: 0 auto;
+        @media #{$large-mobile , $tablet-device}{
+            width: 80%;
+        }
+    }
+}
+.contact-us-button {
+    margin-top: 40px;
+    & a {
+        margin: 0 10px;
+        
+    }
+    @media #{$small-mobile}{
+        & a {
+            margin: 15px 0 0 0;
+        }   
+    }
+    margin-top: 30px;
+}

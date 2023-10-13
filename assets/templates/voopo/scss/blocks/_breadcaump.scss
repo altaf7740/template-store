@@ -1,0 +1,81 @@
+/*------------------
+    Breadcaump Styles 
+---------------------*/
+
+.pr__bradcaump__area {
+    align-items: center;
+    display: flex;
+    height: 360px;
+    padding-top: 100px;
+    .bradcaump-title {
+        color: #fefefe;
+        font-size: 50px;
+        line-height: 70px;
+        margin: 0;
+    }
+}
+
+.breadcrumb--2.pr__bradcaump__area .bradcaump-title {
+    color: #010f54;
+    font-size: 36px;
+    line-height: 47px;
+    margin: 0 0 8px;
+}
+
+.breadcrumb--2.pr__bradcaump__area {
+    height: 360px;
+}
+
+.breadcrumb--2 .bradcaump-content .breadcrumb_item {
+    color: #010f54;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.breadcrumb--2 .bradcaump-content .breadcrumb_item:hover {
+    color: $hover-color;
+}
+
+.breadcrumb--2 .bradcaump-content .brd-separetor {
+    margin: 0 8px;
+}
+
+// Responsive Css
+@media #{$xx-layout} {}
+
+@media #{$xlg-layout} {}
+
+@media #{$lg-layout} {}
+
+@media #{$md-layout} {}
+
+@media #{$sm-layout} {}
+
+@media #{$xs-layout} {
+    .pr__bradcaump__area {
+        height: 400px;
+        padding-top: 87px;
+    }
+    .pr__bradcaump__area .bradcaump-title {
+        font-size: 50px;
+    }
+    .pr__bradcaump__area .bradcaump-title {
+        font-size: 30px;
+    }
+    .breadcrumb--2.pr__bradcaump__area .bradcaump-title {
+        font-size: 28px;
+        line-height: 45px;
+    }
+
+
+
+
+    
+}
+
+@media #{$xxs-layout} {
+    .pr__bradcaump__area {
+        height: 300px;
+        padding-top: 82px;
+    }
+}

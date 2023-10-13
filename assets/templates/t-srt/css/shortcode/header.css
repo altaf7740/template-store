@@ -1,0 +1,326 @@
+/*-----------------------------------------------------------------------------------
+
+  Template Name: T-Srt HTML Template.
+  Template URI: #
+  Description: T-Srt is a unique website template designed in HTML with a simple & beautiful look. There is an excellent solution for creating clean, wonderful and trending material design corporate, corporate any other purposes websites.
+  Author: HasTech
+  Author URI: https://themeforest.net/user/hastech/portfolio
+  Version: 1.0
+-----------------------------------------------------------------------------------*/
+/*
+    font-family: 'Poppins', sans-serif;
+
+    font-family: 'Montserrat', sans-serif;
+*/
+
+/*----------------------------------------
+  Menu basic style
+------------------------------------------*/
+
+.header-area{
+  z-index: 10;
+  position: relative;
+}
+ul.main-menu {
+  display: flex;
+  justify-content: center;
+}
+.main-menu > li > a {
+  color: #666666;
+  display: block;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 700;
+  height: 80px;
+  letter-spacing: 0.3px;
+  line-height: 80px;
+  padding: 0 15px;
+  position: relative;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+}
+.main-menu li {
+  position: relative;
+}
+.main-menu > li:hover > a, 
+.main-menu > li:focus > a, 
+.main-menu > li:active > a, 
+.main-menu > li.current > a{
+  color: #95afe9;
+}
+.logo {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.logo a{
+  display: block;
+}
+.menu-btn {
+  align-items: center;
+  display: flex;
+  height: 80px;
+  justify-content: flex-end;
+}
+.our-header {
+  left: 0;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  z-index: 99999;
+}
+.our-header-wrap {
+  margin: 0 15px;
+}
+
+/*New Code*/
+.main-menu > li > a::before {
+  background: #95afe9 none repeat scroll 0 0;
+  content: "";
+  height: 0;
+  left: 50%;
+  position: absolute;
+  top: calc(100% - 25px);
+  transform: translateX(-50%);
+  transition: all 0.3s ease 0s;
+  width: 2px;
+  z-index: 999999999;
+}
+.main-menu > li:hover > a::before, 
+.main-menu > li.current > a::before, 
+.main-menu > li:focus > a::before, 
+.main-menu > li:active > a::before {
+    height: 10px;
+}
+
+
+
+
+.our-header-wrap {
+    display: -webkit-box; 
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex; 
+    display: flex;
+    flex-flow: row wrap;
+    height: 80px;
+}
+.our-header-wrap {
+    background: red none repeat scroll 0 0;
+}
+.our-header-wrap div[class*="col-"] {
+    display: -webkit-box; 
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex; 
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+}
+.our-header-wrap .menu-center {
+  justify-content: center;
+}
+.menu-buynow-btn-wrap {
+    justify-content: flex-end;
+}
+
+
+/*-----------------------------------------
+        Sticky  For  Header
+-------------------------------------------*/
+.ml-header-top.header-one.scroll-header {
+  background: rgba(255, 255, 255, 1) none repeat scroll 0 0 !important;
+}
+.header-style-4 .ml-header-top.scroll-header {
+  animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+  background: rgba(255, 255, 255, 1) none repeat scroll 0 0;
+  box-shadow: 0 1px 3px rgba(50, 50, 50, 0.4);
+  left: 0;
+  margin: 0 auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+}
+.fluid-container.mobile-menu-container {
+  position: relative;
+}
+.mobile-logo {
+  align-items: center;
+  display: flex;
+  height: 52px;
+  left: 0;
+  padding-left: 15px;
+  position: absolute;
+  top: 0;
+  z-index: 2147483647;
+}
+.mobile-logo img {
+  max-height: 25px;
+}
+.header-sticky-topbar.scroll-header {
+  animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+  background: rgba(255, 255, 255, 1) none repeat scroll 0 0;
+  box-shadow: 0 1px 3px rgba(50, 50, 50, 0.4);
+  left: 0;
+  margin: 0 auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 99999999;
+}
+.head-style-1.transparent-header .scroll-header .header-content {
+  border-bottom: 0px solid transparent;
+  margin: 0;
+}
+.head-style-1.transparent-header .scroll-header .header-content .main-menu > li > a::before {
+  position: inherit;
+}
+
+
+/*-------------------------------------------------------------
+  Dropdown Menu
+----------------------------------------------------*/
+.main-menu li.drop{
+    position: relative;
+}
+.main-menu li.drop ul.dropdown {
+  background: #ffffff none repeat scroll 0 0;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+  left: 0;
+  margin: 0;
+  opacity: 0;
+  padding: 0;
+  position: absolute;
+  top: 120%;
+  transition: all 0.2s ease-in-out 0s;
+  visibility: hidden;
+  width: 220px;
+  z-index: 999;
+}
+.scroll-header .main-menu li.drop ul.dropdown {
+  top: 120%;
+}
+.main-menu li.drop:hover ul.dropdown {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+.main-menu li.drop:hover ul.dropdown {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+.main-menu ul.dropdown li {
+    border-bottom: 1px solid #f4f4f4;
+    display: block;
+}
+
+.main-menu ul.dropdown li a {
+  background: #ffffff none repeat scroll 0 0;
+  color: #999999;
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out 0s;
+  padding: 12px 20px 12px 25px;
+  transition: 0.3s;
+}
+
+.main-menu li.drop ul.dropdown li:hover > a {
+    background: #fafafa none repeat scroll 0 0;
+    color: #222222;
+}
+/*sub menu*/
+.main-menu li.drop ul.dropdown li.drop::after {
+  color: #999;
+  content: "";
+  font-family: "Material-Design-Iconic-Font";
+  font-size: 13px;
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  transition: all 0.2s ease-in-out 0s;
+}
+.main-menu li.drop ul.dropdown li.drop{
+  position: relative;
+}
+.main-menu li.drop ul.dropdown li.drop ul.dropdown.smright {
+  border: medium none;
+  right: 100%;
+  top: 0;
+  transition: all 0.3s ease 0s;
+}
+.main-menu li.drop ul.dropdown li.drop ul.dropdown.level2 {
+  border: medium none;
+  left: 100%;
+  top: 20%;
+  transition: all 0.3s ease 0s;
+}
+.main-menu li.drop ul.dropdown li.drop ul.dropdown.level2 {
+    opacity: 0;
+    visibility: hidden;
+}
+.main-menu li.drop ul.dropdown li.drop:hover ul.dropdown.level2 {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+}
+.main-menu li.drop ul.dropdown li.drop ul.dropdown.smright {
+    opacity: 0;
+    visibility: hidden;
+}
+.main-menu li.drop ul.dropdown li.drop ul.dropdown.smright {
+  background: #ffffff none repeat scroll 0 0;
+  left: -100%;
+  margin: 0;
+  opacity: 0;
+  padding: 0;
+  position: absolute;
+  top: 20%;
+  transition: all 0.3s ease-in-out 0s;
+  visibility: hidden;
+  width: 220px;
+  z-index: 999;
+}
+.main-menu li.drop ul.dropdown li.drop:hover ul.dropdown.smright {
+  left: -100%;
+  opacity: 1;
+  visibility: visible;
+  top: 0;
+}
+.theme-color .cd-words-wrapper {
+  padding: 0px !important;
+}
+
+.main-menu li ul li {
+    margin: 0;
+}
+.main-menu li ul li:first-child {
+    margin: 0;
+}
+
+
+
+
+
+
+ 
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+}
+
+
+
+
+
+

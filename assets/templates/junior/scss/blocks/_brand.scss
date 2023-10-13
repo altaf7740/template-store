@@ -1,0 +1,49 @@
+
+@import "../variables";
+@import "../mixins";
+
+
+/*========================
+	Brand Area
+===========================*/
+
+
+
+.brand__list{
+	li{
+		text-align: center;
+		a{
+			background: transparent none repeat scroll 0 0;
+		    border: 1px solid #dddddd;
+		    display: block;
+		    height: 112px;
+		    line-height: 108px;
+		    padding: 0 20px;
+		    transition: all 0.3s ease 0s;
+		    &:hover{
+		    	background: #ddd none repeat scroll 0 0;
+    			border: 1px solid #ddd;
+		    }
+		}
+	}
+}
+
+
+
+
+
+@media #{$md-layout}{
+
+	.brand__list li {
+	  flex-basis: 33.33%;
+	}
+
+}
+@media #{$sm-layout}{
+
+	.brand__list li {
+	  flex-basis: 50%;
+	}
+
+}
+

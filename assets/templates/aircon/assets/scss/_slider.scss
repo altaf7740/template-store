@@ -1,0 +1,157 @@
+/*--
+    05. Hero Css
+--------------------------------*/
+.hero-slider-1 {
+    & .single-slide {
+        height: 750px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        @media #{$laptop-device}{
+            height: 650px;
+        }
+        @media #{$desktop-device}{
+            height: 600px
+        }
+        @media #{$tablet-device}{
+            height: 500px
+        }
+        @media #{$large-mobile}{
+            height: 480px;
+        }
+        @media #{$small-mobile}{
+            height: 420px;
+        }
+    }
+    & .slider-text-info {
+        & h1 {
+            font-size: 60px;
+            color: $white;
+            line-height: 72px;
+            margin-top: -15px;
+            @media #{$desktop-device}{
+                font-size: 50px;
+                line-height: 60px;
+            }
+            @media #{$tablet-device}{
+                font-size: 40px;
+                line-height: 50px;
+            }
+            @media #{$large-mobile}{
+                font-size: 30px;
+                line-height: 35px;
+            }
+        }
+        & p {
+            margin-top: 15px;
+            font-size: 22px;
+            font-weight: 600;
+            color: $white;
+            @media #{$tablet-device}{
+                font-size: 20px;
+            }
+            @media #{$large-mobile}{
+                font-size: 14px;
+            }
+        }
+        & .slider-button {
+            margin-top: 50px;
+            & .default-btn {
+                font-weight: 600;
+            }
+            @media #{$tablet-device}{
+                margin-top: 35px;
+            }
+            @media #{$large-mobile}{
+                margin-top: 20px;
+                & .default-btn {
+                    padding: 8px 18px;
+                }
+            }
+        }
+    }
+}
+
+.hero-slider-2 {
+    & .single-slide {
+        height: 800px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        @media #{$laptop-device}{
+            height: 650px
+        }
+        @media #{$desktop-device}{
+            height: 600px
+        }
+        @media #{$tablet-device}{
+            height: 500px
+        }
+        @media #{$large-mobile}{
+            height: 480px;
+        }
+        @media #{$small-mobile}{
+            height: 420px;
+        }
+    }
+    & .slider-text-info {
+        & h1 {
+            font-size: 72px;
+            color: $white;
+            line-height: 80px;
+            @media #{$laptop-device}{
+                font-size: 64px;
+            }
+            @media #{$desktop-device}{
+                font-size: 60px;
+                line-height: 70px;
+            }
+            @media #{$tablet-device}{
+                font-size: 50px;
+                line-height: 60px;
+            }
+            @media #{$large-mobile}{
+                font-size: 38px;
+                line-height: 40px;
+            }
+            @media #{$small-mobile}{
+                font-size: 36px;
+                line-height: 40px;
+            }
+        }
+        & p {
+            font-size: 24px;
+            font-weight: 600;
+            color: $white;
+            @media #{$tablet-device,$desktop-device}{
+                font-size: 24px;
+            }
+            @media #{$large-mobile}{
+                font-size: 16px;
+            }
+            @media #{$small-mobile}{
+                font-size: 14px;
+            }
+        }
+        & .slider-button {
+            margin-top: 40px;
+            & .default-btn {
+                font-size: 16px;
+            }
+            @media #{$tablet-device}{
+                margin-top: 30px;
+            }
+            @media #{$large-mobile}{
+                margin-top: 30px;
+                & .default-btn {
+                    font-size: 16px;
+                    padding: 8px 18px;
+                }
+            }
+        }
+    }
+}

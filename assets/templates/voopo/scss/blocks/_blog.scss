@@ -1,0 +1,219 @@
+/*--------------------------
+    Blog Styles 
+-------------------------------*/
+
+// Start Banner Area
+.banner {
+    position: relative;
+    .hover__action {
+        bottom: 0;
+        padding: 20px;
+        position: absolute;
+        .banner__content {
+            span {
+                color: #ffffff;
+                font-size: 18px;
+                font-weight: 500;
+            }
+            h3 {
+                margin-bottom: 18px;
+                margin-top: 8px;
+                a {
+                    color: #ffffff;
+                    font-size: 24px;
+                    font-weight: 500;
+                    padding-right: 35%;
+                    transition: all 0.3s ease 0s;
+                    display: inline-block;
+                    &:hover {
+                        color: $theme-color;
+                    }
+                }
+            }
+            .banner__btn {
+                a {
+                    &.voopo__btn {
+                        border-radius: 4px;
+                        height: 40px;
+                        line-height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.banner.b11 .hover__action .banner__content h3 a {
+    padding-right: 6%;
+}
+
+.banner .thumb img {
+    width: 100%;
+}
+.banner .hover__action .banner__content .banner__btn a.voopo__btn::before {
+    border-radius: 4px;
+}
+// Blog Style
+.blog {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+    margin-top: 30px;
+    .thumb {
+        overflow: hidden;
+        a {
+            img {
+                transition: all 0.5s ease 0s;
+                width: 100%;        
+            }
+        }
+    }
+    &:hover .thumb a img {
+        transform: scale(1.1);
+    }
+    .content {
+        border-bottom: 1px solid #e5eff4;
+        padding: 30px;
+        span {
+            color: #035f91;
+            font-size: 12px;
+            a {
+                color: #035f91;
+                transition: all 0.3s ease 0s;
+                &:hover {
+                    color: $hover-color;
+                }
+            }
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 38px;
+            margin-bottom: 12px;
+            a {
+                color: #010f54;
+                transition: 0.3s;
+                &:hover {
+                    color: $hover-color;
+                }
+            }
+        }
+        p {
+            margin: 0;
+            padding-right: 10%;
+        }
+    }
+    a {
+        &.readmore__btn {
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 700;
+            height: 52px;
+            line-height: 52px;
+            padding: 0 30px;
+            transition: all 0.5s ease 0s;
+            background: -webkit-linear-gradient(#e05a42, #ef998a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            &:hover {
+                background: -webkit-linear-gradient(#035f91, #035f91);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+}
+.space--left {
+    padding-left: 85px;
+}
+
+
+
+
+// Responsive Css
+@media #{$xx-layout} {}
+
+@media #{$xlg-layout} {}
+
+@media #{$lg-layout} {
+    .banner .hover__action {
+        padding: 20px 15px;
+    }
+    .banner .hover__action .banner__content h3 a {
+        font-size: 19px;
+    }
+    .banner.b11 .hover__action .banner__content h3 a {
+        padding-right: 0;
+    }
+    .space--left {
+        padding-left: 30px;
+    }
+
+
+
+}
+
+@media #{$md-layout} {
+    .banner.b11 .hover__action .banner__content h3 a {
+        padding-right: 0;
+        font-size: 22px;
+    }
+    .space--left {
+        padding-left: 15px;
+    }
+    .blog__list .content h2 a {
+        font-size: 20px;
+        line-height: 22px;
+    }
+}
+
+@media #{$sm-layout} {
+    .blog .content {
+        border-bottom: 1px solid #e5eff4;
+        padding: 30px 20px;
+    }
+    .blog .content h2 {
+        font-size: 18px;
+        line-height: 35px;
+    }
+    .blog .content p {
+        padding-right: 0;
+    }
+    
+
+    .banner.b11 .hover__action .banner__content h3 a {
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .space--left {
+        padding-left: 15px;
+    }
+    .banner .hover__action {
+        bottom: 50%;
+        padding: 20px;
+        transform: translateY(50%);
+    }
+    .banner .hover__action .banner__content h3 {
+        margin-bottom: 15px;
+        margin-top: 9px;
+    }
+    .banner .hover__action .banner__content h3 a {
+        padding-right: 0;
+    }
+
+
+
+}
+
+@media #{$xs-layout} {
+
+
+
+
+    .blog__list .content h2 a {
+        font-size: 19px;
+        line-height: 25px;
+    }
+}
+
+@media #{$xxs-layout} {}

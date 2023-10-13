@@ -1,0 +1,88 @@
+/*--
+    - Breadcrumb Style
+------------------------------------------*/
+
+/*---- Breadcrumb One ----*/
+.ht-breadcrumb-one {
+    display: block;
+    float: left;
+    position: relative;
+    padding-left: 0;
+    list-style: none;
+    z-index: 1;
+    margin-bottom: 0;
+    & li {
+        float: left;
+        font-family: $poppins;
+        font-size: 22px;
+        color: $dark;
+        text-transform: capitalize;
+        line-height: 1;
+        @media #{$desktop-device}{
+            font-size: 18px;
+        }
+        @media #{$tablet-device}{
+            font-size: 18px;
+        }
+        @media #{$large-mobile}{
+            font-size: 14px;
+        }
+        &::after {
+            content: "-";
+            margin: 0 5px 0 8px;
+        }
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+        & a {
+            &:hover {
+                color: inherit;
+            }
+        }
+    }
+}
+
+/*---- Breadcrumb Two ----*/
+.ht-breadcrumb-two {
+    display: flex;
+    margin: auto;
+    position: relative;
+    padding-left: 0;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    z-index: 1;
+    margin-top: 30px;
+    @media #{$large-mobile}{
+        margin-top: 20px;
+    }
+    & li {
+        font-family: $montserrat;
+        font-size: 16px;
+        font-weight: 500;
+        color: $white;
+        text-transform: capitalize;
+        line-height: 1;
+        @media #{$large-mobile}{
+            font-size: 14px;
+        }
+        &::after {
+            content: "\f105";
+            font-family: 'Fontawesome';
+            margin: 0 5px 0 8px;
+        }
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+        & a {
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+}
+

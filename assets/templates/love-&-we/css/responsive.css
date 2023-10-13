@@ -1,0 +1,494 @@
+/* Large desktop :1920px. */
+@media (min-width: 1501px) and (max-width: 2300px) {
+    .main-menu ul li a {
+      padding: 36px 11px;
+    }
+}
+
+/* Normal desktop :1200px. */
+@media (min-width: 1201px) and (max-width: 1500px) {
+/*    .container, .wrapper.boxed-layout, .wrapper.boxed-layout .sticky, .wrapper.box-layout, .wrapper.box-layout .sticky {width: 1170px}*/
+    ul.navigation-menu li a i {
+      display: none;
+    }
+    .portfolio-hover {
+        left: 25px;
+        top: 25px;
+    }
+}
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .container, .wrapper.boxed-layout, .wrapper.boxed-layout .sticky, .wrapper.box-layout, .wrapper.box-layout .sticky {width: 970px}
+    .slide-content h1, .banner-content h1, .banner-image-wrap.fixed-background .banner-content h1 {font-size: 60px}
+    .mobile-menu-area {display: block}
+    .touch-area form input:first-child, .touch-area form input:nth-child(2) {width: 46.5%}
+    .timer-grid > div {
+        margin-right: 30px;
+    }
+     ul.navigation-menu li a i {
+      display: none;
+    }
+    .about-content h2 {
+      margin-left: 47%;
+    }
+    .about-content p, .footer-social.bride {
+      margin-left: 53%;
+    }
+    .about-content .about-box {
+      padding: 25px 15px;
+    }
+    .about-content.groom p {
+      margin-right: 53%;
+    }
+    .blog-details-contents h2 {
+      font-size: 22px;
+    }
+    .child-img ul li:last-child{display: none}
+	.child-img {
+      left: 0;
+      top: 20px;
+      right: 0;
+      text-align: center;
+    }
+    blockquote {
+      font-size: 20px;
+    }
+    .attending-form.blog input {
+      width: 47.5%;
+    }
+    .bride-img {
+      margin-left: 78px;
+    }
+    .bride-img.groom {
+      margin-right: 78px;
+    }
+    .menu-logo-area.three .main-menu ul li ul.submenu.megamenu {
+      left: -290px;
+    }
+}
+ 
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container, .wrapper.boxed-layout, .wrapper.box-layout {width:750px}
+    .mobile-menu-area {display: block}
+    .wrapper.boxed-layout .sticky, .wrapper.box-layout .sticky {width: 750px;}
+    .sticky {position: inherit;}  
+     ul.navigation-menu li a i {
+      display: none;
+    }
+    .smasu {padding: 60px 20px}
+    .slide-content.text-center > img, .banner-content.text-center > img {
+      display: none;
+    }
+    .main-menu ul li a {
+      padding: 36px 10px;
+    }
+    .stick .main-menu ul li a {
+      padding: 25px 11px;
+    }
+    .main-menu ul li ul.submenu.megamenu {
+      left: -150px;
+    }
+    .slide-content h1, .banner-content h1, .banner-image-wrap.fixed-background .banner-content h1, .banner-image-wrap .banner-content h1{
+      font-size: 50px;
+    }
+    .slide-content h5, .banner-content > h5 {
+      margin-top: 115px;
+    }
+    .stick.two .logo {
+      padding-top: 8px;
+    }
+    .menu-logo-area.three .main-menu ul li ul.submenu.megamenu {
+      left: -290px;
+    }
+    .comming-area.text-center.mtb-100.pt-95.pb-100 {
+      padding: 50px 0;
+      margin: 60px 0;
+    }
+    .timer-grid > div {
+        height: 100px;
+        margin-right: 25px;
+        width: 115px;
+        padding-top: 0px;
+    }
+    .story-area.pt-95.pb-100 {
+      padding-top: 0;
+    }
+    .single-event {
+      padding: 30px 20px;
+    }
+    .attending-area {
+        background-image: none;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .blog-area .col-md-6:first-child .single-blog{margin-bottom: 50px}
+    .blog-wrapper {
+      padding: 30px 80px 28px 30px;
+    }
+    .main-menu ul li a {
+      padding: 25px 10px;
+    }
+    .about-content h2, .about-content p, .footer-social.bride {
+      margin-left: 0%;
+    }
+    .about-img, .about-img.groom {
+      bottom: 0;
+      left: 0;
+      position: inherit;
+      width: 100%;
+    }
+    .about-img > img{width: 100%}
+    .about-img.groom img{padding-bottom: 40px;}
+    .about-content.groom h2, .about-content.groom p, .footer-social.groom {
+      margin-right: 0;
+    }
+    .blog-details-contents h2, .blog-details-contents h2 span {
+      font-size: 15px;
+    }
+    .child-img{display: none}
+    blockquote {
+      font-size: 20px;
+    }
+    .attending-form.blog input {
+      width: 46%;
+    }
+    #banner-container {
+      padding: 200px 0 130px;
+    }
+    .bride-img {
+      margin-left: 58px;
+    }
+    .photo-title {
+      left: 30px;
+    }
+    .bride-img.groom {
+      margin-right: 58px;
+    }
+    .menu-logo-area.three .logo {
+      margin: 20px 0;
+    }
+    .two .main-menu ul li a {
+      padding: 20px 25px 20px 0;
+    }
+    .photo-hover {
+      bottom: -1px;
+    }
+	
+}
+    
+/* small mobile :320px. */
+@media (max-width: 767px) {
+    .container, .wrapper.boxed-layout, .wrapper.box-layout {width:300px}
+    .mobile-menu-area {display: block;}
+    #sticky-header, .wrapper.boxed-layout #sticky-header, .wrapper.box-layout #sticky-header, #sticky-header.fixed {position: inherit;}
+#sticky-header, #contact-form > input, #contact-form > textarea {width: 100%}
+    .header-position {
+      background: #2a2a2a none repeat scroll 0 0;
+      display: block;
+      overflow: hidden;
+      position: inherit;
+    }
+    .header-area, .stick .header-area {
+      padding: 0 0 38px;
+    }
+    .menu-item {
+      float: right;
+      position: relative;
+      top: 63px;
+    }
+    .navbar-toggle {
+      border: 1px solid #fff;
+      border-radius: 0px;
+      margin-right: 0px;
+      margin-top: 0px;
+      padding: 15px 16px;
+    }
+    .logo {
+      top: 0px;
+    }
+    .logo.text-center img {
+      float: left;
+      padding-top: 16px;
+      width: 50px;
+    }
+    .stick .logo.text-center img {
+      padding-top: 8px;
+    }
+    .sticky .logo img {width: auto;}
+    .navigation {
+        background-color: #000;
+        border-bottom: 1px solid #e7e7e7;
+        border-top: 1px solid #e7e7e7;
+        display: none;
+        height: auto;
+        left: 0;
+        overflow: auto;
+        top: 68px;
+        width: 100%;
+        position: relative;
+    }
+    #topnav .navigation-menu {float: none; max-height: 400px;    }
+    .menu-area {
+        float: none;
+        position: relative;
+        top: -42px;
+        display: inherit;
+    }
+    .main-menu ul li a, .two .main-menu ul li a {
+      padding: 15px 15px;
+    }
+    .main-menu ul > li ul.submenu {
+        display: none;
+        list-style: outside none none;
+        margin: 0;
+        padding-left: 20px;
+        position: inherit;
+        width: 100%;
+    }
+    .main-menu ul > li ul.submenu.open {display: block; opacity: 1; visibility: visible}
+    .main-menu ul li {display: block; margin-bottom: 1px}
+    .main-menu ul li ul.submenu.megamenu > li {width: 100%}
+    .main-menu ul li ul.submenu.megamenu {white-space: inherit}
+    .main-menu ul li a i {float: right}
+    .main-menu ul li ul.submenu.open {background-color: #000; top: 0px}
+    .main-menu ul li:hover a, .main-menu ul li ul.submenu li a, .main-menu ul li ul.submenu li:hover > a, .main-menu ul li ul.submenu.megamenu > li:hover > a{color: #fff}
+    #topnav .navbar-toggle {
+        border: 0 none;
+        cursor: pointer;
+        height: 40px;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        width: 40px;
+    }
+    #topnav .navbar-toggle .lines {
+        display: block;
+        height: 15px;
+        margin: 13px auto;
+        position: relative;
+        width: 25px;
+    }
+    #topnav .navbar-toggle span {
+        background-color: #fff;
+        display: block;
+        height: 1px;
+        margin-bottom: 5px;
+        transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+        width: 100%;
+    }
+    #topnav .navbar-toggle.black span {
+      background-color: #000;
+    }
+    #topnav .navbar-toggle.two span {
+        background-color: #000;
+    }
+    #topnav .navbar-toggle.open span {position: absolute}
+    #topnav .navbar-toggle span:last-child {
+        margin-bottom: 0;
+        width: 75%;
+    }
+    #topnav .navbar-toggle.open span:nth-child(2) {visibility: hidden}
+    #topnav .navbar-toggle.open span:last-child {top: 6px; transform: rotate(-45deg); width: 100%}
+    #topnav .navbar-toggle.open span:first-child {top: 6px; transform: rotate(45deg)}
+    .slide-content h4, .slide-content.text-center > img,  .banner-content img,  .banner-content h4{
+      display: none;
+    }
+    .slide-content h5, .banner-content h5 {
+      font-size: 20px;
+      margin-top: 20px; 
+      margin-bottom: 5px;
+    }
+    .slide-content h1, .banner-content h1, .banner-image-wrap.fixed-background .banner-content h1, .banner-image-wrap .banner-content h1 {
+      font-size: 35px;
+    }
+    .comming-area.text-center.mtb-100.pt-95.pb-100 {
+      padding: 50px 0;
+      margin: 60px 0;
+    }
+    .timer-grid > div {
+        height: 130px;
+        margin-bottom: 25px;
+        width: 140px;
+        padding-top: 0px;
+        margin-right: 0;
+    }
+    .attending-area {
+        background-image: none;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .section-title h2 {
+      line-height: 45px;
+    }
+    .story-area {padding-top: 0}
+    .event-content {
+      left: 0;
+      position: inherit;
+    }
+    .single-event {
+      padding: 40px 5px;
+      background: none;
+    }
+    .single-event h2, .section-title h2 {
+      font-size: 25px;;
+    }
+    .portfolio-menu button {
+      font-size: 13px;
+      padding: 0 12px;
+    }
+    .testimonial-content {
+      box-shadow: none;
+      left: 0;
+      margin-right: 0px;
+      padding: 20px;
+      position: inherit;
+      top:  2%;
+    }
+    .blog-image {
+      float: inherit;
+      margin-bottom: 30px;
+      margin-right: 0;
+    }
+    .blog-wid ul li {
+      margin-right: 6px;
+    }
+    .blog-content > h3 {
+      padding-left: 28px;
+    }
+    .single-gift, .single-gift img{
+        margin: 0 auto;
+    }
+    .logo {
+      right: auto;
+      top: 0;
+    }
+    .menu-left.pull-left {
+      float: right !important;
+        width: 100%;
+    }
+    .photos-area .section-title > img {
+      width: auto;
+    }
+    .about-content h2, .about-content p, .footer-social.bride {
+      margin-left: 0%;
+    }
+    .about-img, .about-img.groom {
+      bottom: 0;
+      left: 0;
+      position: inherit;
+      width: 100%;
+    }
+    .about-img > img, .comment-img, .comment-img img, .blog-image, .blog-image img{width: 100%}
+    .about-img.groom img{padding-bottom: 40px;}
+    .about-content.groom h2, .about-content.groom p, .footer-social.groom {
+      margin-right: 0;
+    }
+    .banner-content-area h1 {
+      margin-top: 0;
+    }
+    .blog-details-contents span, .child-img{display: none}
+    .blog-details-contents h2 {
+      padding: 20px 0 20px 20px;
+        line-height: 30px;
+        font-size: 20px;
+    }
+    .banner-bottom-area.pl-60.pr-60.fix {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .comment-content.ml-60.mr-60 {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .com-name.pull-left > h3 {
+      font-size: 15px;
+    }
+    .wid-share.pt-15.pb-30.pl-60.pr-60, .blog-para, blockquote, .attending-form.blog {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .blog-share{display: none}
+    .comment-con-wrapper {
+      overflow: inherit;
+    }
+    .single-comment.ml-60.mb-45 {
+      margin-left: 20px;
+    }
+    #banner-container {
+      padding: 100px 0 130px;
+    }
+    .header-area.stick {
+      padding: 0 0 38px;
+    }
+    .bride-img.groom {
+      margin-right: 50px;
+    }
+    .bride-img i {
+      font-size: 20px;
+      padding: 18px 0;
+      width: 45px;
+    }
+    .photo-title {
+      left: 30px;
+    }
+    .bride-img {
+      margin-left: 45px;
+    }
+    .video-wrapper, .video-banner {
+      height: 300px;
+    }
+    .testimonial-owl .owl-controls {
+      display: none
+    }
+    .testimonial-content p {
+      padding-right: 0px;
+    }
+    .menu-logo-area.three .logo {
+      margin: 20px 0;
+      position: absolute;
+    }
+    .menu-logo-area.three .logo.text-center img {
+      padding-top: 10px;
+      width: 100px;
+    }
+    .menu-logo-area.three .main-menu ul li a {
+      color: #fff;
+    }
+    .single-port > img {
+      width: 100%;
+    }
+    .header-area.two .main-menu ul li > a {
+      color: #fff;
+    }
+    .header-position.three {
+      background: #fff none repeat scroll 0 0;
+    }
+    .main-menu ul li ul.submenu.megamenu.two > li{
+        width: 100%;
+    }
+    .banner-content-area .banner-content.short > h1 {
+      margin-top: 40px;
+    }
+    .banner-content-area.four h1 {
+      margin-top: 30px;
+    }
+    .photo-title.groom {
+      right: -200px;
+    }
+    .smasu {padding: 60px 20px}
+}
+ 
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {width:450px}
+    .wrapper.boxed-layout, .wrapper.box-layout {width:450px}
+    .photos-area img, .blog-image, .blog-image img{
+      width: 100%;
+    }
+    .timer-grid > div {
+        margin-right: 20px
+    }
+   
+}

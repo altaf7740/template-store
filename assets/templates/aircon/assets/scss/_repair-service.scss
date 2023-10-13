@@ -1,0 +1,62 @@
+/*--
+    08. Repair Service Css
+------------------------------*/
+.repair-service-inner {
+    @media #{$large-mobile}{
+        margin-top: 60px;
+    }
+    &.service-ph-inner {
+        @media #{$large-mobile}{
+            margin-top: 0px;
+            margin-bottom: 30px;
+        } 
+    }
+    & h3 {
+        font-size: 22px;
+        font-weight: 500;
+        color: $theme-color;
+        margin-top: -5px;
+        @media #{$tablet-device , $large-mobile}{
+            font-size: 18px;
+        }
+    }
+    & h2 {
+        font-size: 48px;
+        font-weight: 600;
+        margin-top: 15px;
+        @media #{$tablet-device , $large-mobile}{
+            font-size: 30px;
+            margin-top: 5px;
+        }
+    }
+    & p {
+        font-size: 16px;
+        margin-top: 25px;
+        @media #{$tablet-device , $large-mobile}{
+            margin-top: 15px;
+            font-size: 14px;
+        }
+    }
+    & .make-apoinment-button {
+        margin-top: 45px;
+        @media #{$tablet-device}{
+            margin-top: 15px;
+            & .default-btn {
+                padding: 8px 20px;
+            }
+        }
+        @media #{$desktop-device}{
+            margin-top: 30px;
+        }
+        @media #{$tablet-device , $large-mobile}{
+            margin-top: 25px;
+        }
+    }
+}
+.repair-image {
+    @media #{$large-mobile,$tablet-device}{
+        &.pt--30 {
+            padding-top: 60px;
+        } 
+    }
+}

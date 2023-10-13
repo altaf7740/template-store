@@ -1,0 +1,231 @@
+/* Navigation Styles*/
+
+.header--absolute {
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 60px;
+  z-index: 999;
+}
+
+.logo {
+  padding: 0;
+  text-align: left;
+}
+
+.mainmenu {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+  li {
+    line-height: 42px;
+    margin: 0 21px;
+    a {
+      color: #fff;
+      font-family: Source Sans Pro;
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.dg__header {
+  .accounts {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    li {
+      a {
+        color: #ffffff;
+        font-family: Source Sans Pro;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      &.active {
+        a {
+          border: 1px solid #ffffff;
+          border-radius: 4px;
+          display: inline-block;
+          height: 50px;
+          line-height: 47px;
+          padding: 0 42px;
+          transition: all 0.5s ease 0s;
+          &:hover {
+            background: #fff none repeat scroll 0 0;
+            color: #f7a901;
+          }
+        }
+      }
+      &+li {
+        margin-left: 30px;
+      }
+    }
+  }
+}
+
+.dg__header.space-right-left {
+  padding: 0 217px;
+}
+
+.mainmenu {
+  li {
+    &.drop {
+      position: relative;
+      ul {
+        &.dropdown {
+          background: #fff none repeat scroll 0 0;
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+          left: 0;
+          opacity: 0;
+          padding: 12px 0;
+          position: absolute;
+          top: 107%;
+          transition: all 0.5s ease 0s;
+          visibility: hidden;
+          width: 205px;
+          li {
+            line-height: 29px;
+            margin: 0;
+            padding: 0 14px;
+            a {
+              color: #444;
+              font-weight: 600;
+              line-height: 29px;
+              text-transform: capitalize;
+              transition: all 0.3s ease 0s;
+              &:hover {
+                color: #1752b4;
+                padding-left: 3px;
+              }
+            }
+          }
+        }
+      }
+      &:hover ul.dropdown {
+        opacity: 1;
+        top: 100%;
+        visibility: visible;
+      }
+    }
+  }
+}
+
+/* Responsive Css*/
+
+@media #{$lg-layout} {
+  .dg__header.space-right-left {
+    padding: 0 10px;
+  }
+  .mainmenu li {
+    margin: 0 14px;
+  }
+  .logo a img {
+    width: 100%;
+  }
+  .dg__header .accounts li+li {
+    margin-left: 11px;
+  }
+  .dg__header .accounts li.active a {
+    padding: 0 14px;
+  }
+}
+
+@media #{$md-layout} {
+  .dg__header.space-right-left {
+    padding: 0 58px 0 30px;
+  }
+  .header--absolute .container-fluid {
+    position: relative;
+    z-index: 99;
+  }
+  .mean-container {
+    position: absolute;
+    right: 24px;
+    top: -9px;
+    width: 93%;
+  }
+  .mean-container a.meanmenu-reveal {
+    padding: 0;
+  }
+}
+
+@media #{$sm-layout} {
+  .dg__header.space-right-left {
+    padding: 0 58px 0 30px;
+  }
+  .header--absolute .container-fluid {
+    position: relative;
+    z-index: 99;
+  }
+  .mean-container {
+    position: absolute;
+    right: 24px;
+    top: -9px;
+    width: 93%;
+  }
+  .mean-container a.meanmenu-reveal {
+    padding: 0;
+  }
+}
+
+@media #{$xs-layout} {
+  .dg__header .accounts li.active a {
+    padding: 0 36px;
+  }
+  .mean-container {
+    top: 48px;
+    width: 81%;
+  }
+  .logo {
+    margin-bottom: 27px;
+  }
+  .dg__header .accounts {
+    justify-content: flex-start;
+  }
+  .dg__header .accounts li.active a {
+    height: 41px;
+    line-height: 37px;
+  }
+}
+
+@media #{$xxs-layout} {
+  .dg__header .accounts li.active a {
+    padding: 0 36px;
+  }
+  .mean-container {
+    top: 48px;
+    width: 81%;
+  }
+  .logo {
+    margin-bottom: 27px;
+  }
+  .dg__header .accounts {
+    justify-content: flex-start;
+  }
+}
+
+@media #{$xlg-layout} {
+  .dg__header.space-right-left {
+    padding: 0 14px;
+  }
+  .dg__header .accounts li.active a {
+    padding: 0 24px;
+  }
+  .dg__header .accounts li+li {
+    margin-left: 18px;
+  }
+}
+
+@media #{$xx-layout} {
+  .dg__header.space-right-left {
+    padding: 0 80px;
+  }
+}

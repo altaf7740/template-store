@@ -1,0 +1,73 @@
+/*--
+    12. Populer Categories
+--------------------*/
+.single-categories {
+    display: block;
+    position: relative;
+    & .image {
+        overflow: hidden;
+        & a {
+            display: block;
+            & img {
+                width: 100%;
+            }
+        }
+    }
+    &:hover {
+        & a {
+            & img {
+                transform: scale(1.06);
+            }
+        }
+    }
+}
+.contents-info {
+    position: absolute;
+    padding: 20px;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    & h4 {
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 0;
+    }
+    & p {
+        color: $white;
+    }
+}
+.contents-info-2 {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    & .content {
+        position: relative;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.8);
+        display: flex;
+        justify-content: space-between;
+        border-radius: 0 0 5px 5px;
+        &::before {
+            background: $theme-color;
+            position: absolute;
+            content: '';
+            left: 50%;
+            top: 50%;
+            height: 22px;
+            width: 2px;
+            transform: translate(-50%,-50%);
+        }
+    }
+    & h4 {
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 0;
+    }
+    & .location {
+        color: $white;
+        margin-top: 4px;
+        & i {
+            font-size: 16px;
+        }
+    }
+}

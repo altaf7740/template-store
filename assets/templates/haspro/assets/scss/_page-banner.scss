@@ -1,0 +1,113 @@
+/*--
+    - Page Banner
+------------------------------------------*/
+
+.ht-page-banner-section-two {
+    background-repeat: no-repeat;
+    background-position: right top;
+    position: relative;
+    background-size: contain;
+    &::before {
+        position: absolute;
+        left: -17px;
+        top: 65px;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background-color: $red;
+        content: "";
+        display: block;
+    }
+}
+.ht-page-banner-content-two {
+    padding: 310px 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    @media #{$tablet-device}{
+        padding: 200px 0;
+    }
+    @media #{$large-mobile}{
+        padding: 150px 0;
+        background-size: contain;
+    }
+    & .ht-page-banner-title {
+        position: relative;
+        z-index: 1;
+        &::before {
+            position: absolute;
+            width: 290px;
+            height: 290px;
+            content: "";
+            background-color: $red;
+            left: -65px;
+            top: 50%;
+            border-radius: 50%;
+            margin-top: -145px;
+            @media #{$large-mobile}{
+                width: 200px;
+                height: 200px;
+                margin-top: -100px;
+            }
+            @media #{$small-mobile}{
+                width: 150px;
+                height: 150px;
+                margin-top: -75px;
+            }
+        }
+        & h1 {
+            font-size: 64px;
+            font-weight: 800;
+            color: $dark-grey;
+            text-transform: capitalize;
+            line-height: 70px;
+            margin: 0 0 5px;
+            z-index: 1;
+            position: relative;
+            @media #{$desktop-device}{
+                font-size: 50px;
+                line-height: 60px;
+            }
+            @media #{$large-mobile}{
+                font-size: 36px;
+                line-height: 44px;
+            }
+            @media #{$small-mobile}{
+                font-size: 30px;
+                line-height: 36px;
+            }
+            & span {
+                color: $red;
+            }
+        }
+    }
+    & .ht-page-banner-desc {
+        padding-left: 55px;
+        z-index: 1;
+        @media #{$tablet-device}{
+            padding-left: 15px;
+            margin-top: 20px;
+        }
+        @media #{$large-mobile}{
+            padding-left: 15px;
+            margin-top: 10px;
+        }
+        & p {
+            line-height: $poppins;
+            font-size: 16px;
+            line-height: 30px;
+            margin: 0;
+            @media #{$desktop-device}{
+                font-size: 14px;
+                line-height: 24px;
+            }
+            @media #{$tablet-device}{
+                color: $dark-grey;
+            }
+            @media #{$large-mobile}{
+                color: $dark-grey;
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+    }
+}

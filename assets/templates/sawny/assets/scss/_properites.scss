@@ -1,0 +1,363 @@
+/*---
+    10. Property Css
+-------------------------*/
+.single-property {
+    position: relative;
+    &:hover {
+        & .property-img-2 a{
+            &::before {
+                opacity: 1;
+                visibility: visible;
+            }
+            & .product-details {
+                top: 50%;
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+        & .property-img {
+            & img {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+.property-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+    & a {
+        display: block;
+        border-radius: 10px 10px 0 0;
+        & img {
+            width: 100%;
+        }
+    }
+}
+.property-img-2 {
+    position: relative;
+    & a {
+        display: block;
+        position: relative;
+        border-radius: 10px 10px 0 0;
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            content: "";
+            background: rgba(192,191,254,0.5);
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            visibility: hidden;
+            border-radius: 10px 10px 0 0;
+            transition: all 0.3s ease-in-out;
+        }
+        & img {
+            width: 100%;
+        }
+    }
+    & .product-details {
+        display: inline-block;
+        position: absolute;
+        top: 70%;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        background: $theme-color;
+        padding: 10px 30px;
+        border-radius: 30px;
+        visibility: hidden;
+        opacity: 0;
+        font-weight: 600;
+        color: $white;
+        font-size: 16px;
+        &:hover {
+           background: $theme-color-2;
+        }
+        
+    }
+}
+.level-stryker, .level-stryker-2 {
+    position: absolute;
+    top: 20px;
+    left: -10px;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 4px 20px;
+    background: $theme-color-2;
+    color: $white;
+
+}
+.level-stryker-2 {
+    background: $theme-color;
+}
+.property-desc {
+    background: #f1f1ff;
+    padding: 20px 20px;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    & h4 {
+        font-weight: 700;
+        position: relative;
+        padding-bottom: 12px;
+        display: block;
+        margin-bottom: 12px;
+        &::after {
+            background: #ddd;
+            position: absolute;
+            content: '';
+            height: 1px;
+            width: 190px;
+            left: 50%;
+            bottom: 0;
+            text-align: center;
+            transform: translateX(-50%);
+        }
+        
+    }
+    
+    & p {
+        font-weight: 300;
+    }
+    & .price-box {
+        & p {
+            color: $theme-color;
+            font-weight: 600;
+            font-size: 16px;
+            position: relative;
+            padding-top: 12px;
+            display: block;
+            margin-top: 12px;
+            &::after {
+                background: #ddd;
+                position: absolute;
+                content: '';
+                height: 1px;
+                width: 190px;
+                left: 50%;
+                top: 0;
+                text-align: center;
+                transform: translateX(-50%);
+            }
+        } 
+    }
+    
+}
+.properties-list {
+    margin-bottom: 10px;
+    & li {
+        & a {
+            font-weight: 600;
+            padding: 10px 25px;
+            border: 1px solid $theme-color;
+            border-radius: 50px;
+            margin: 0 8px;
+            &.active,
+            &:hover {
+                color: $white;
+                background: $theme-color;
+            }
+            @media #{$large-mobile}{
+                padding: 6px 14px;
+                margin: 0 5px 8px 0;
+            }
+        }
+        &:first-child {
+            & a {
+                margin-left: 0;
+            }
+        }
+    }
+}
+.single-propertiy {
+    & a {
+        display: block;
+        & img {
+            width: 100%;
+        }
+    }
+    & .propertiy-det-box {
+        background: #f1f1ff;
+        padding: 22px;
+        border-radius: 0 0 10px 10px;
+        text-align: center;
+        & h4 {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        & p {
+            color: $theme-color;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        
+        
+    }
+}
+.propertice-details {
+    border-top: 1px solid #d1d1d1;
+    margin-top: 30px;
+    max-width: 685px;
+    & .single-info {
+        margin-bottom: 10px;
+        & strong {
+            font-size: 16px;
+        }
+    }
+    .single-property-price {
+        color: $theme-color;
+        & strong {
+            font-size: 16px;
+        }
+    }
+}
+.properties-details-title {
+    & h4 {
+        font-weight: 600;
+        position: relative;
+        display: inline-block;
+        &::after {
+            position: absolute;
+            background: #666;
+            left: 0;
+            bottom: 0;
+            content: '';
+            height: 1px;
+            width: 100%;
+        }
+    }
+}
+.image-property {
+    position: relative;
+    & img {
+       width: 100%;
+    }
+    &::before {
+        position: absolute;
+        content: "";
+        background: rgba(0, 0, 0, 0.4);
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    & .video-box {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        
+        & a {
+            font-size: 30px;
+            color: $white;
+        }
+    }
+}
+
+.step-title {
+    & h3 {
+        color: $theme-color;
+        font-weight: 600;
+        line-height: 28px;
+        margin: 0;
+        padding-bottom: 7px;
+        position: relative;
+        display: inline-block;
+        &::before {
+            background: $theme-color;
+            bottom: 0;
+            content: "";
+            height: 1px;
+            position: absolute;
+            width: 100%;
+        }
+    }
+}
+.information-title {
+    & h4 {
+        font-weight: 600;
+    }
+}
+
+.input-file,.information-text,.details-information-box {
+    & label {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }   
+}
+
+.image-upload-box, .video-upload-box {
+    border: 1px solid $theme-color;
+    display: block;
+    padding: 25px 0;
+    text-align: center;
+    border-radius: 50px;
+}
+.image-upload-box .custom-file-upload, .video-upload-box .custom-video-upload {
+    background: $theme-color;
+    border-radius: 50px;
+    color: #ffffff;
+    height: 45px;
+    line-height: 43px;
+    margin: 0;
+    width: 187px;
+    cursor: pointer;
+}
+
+.custom-file-upload > input[type="file"], .custom-video-upload > input[type="file"] {
+    display: none;
+}
+
+.feature-check {
+    padding-bottom: 30px;
+}
+.feature-check input[type="checkbox"] {
+    float: left;
+    height: 0;
+    position: absolute;
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    visibility: hidden;
+    width: 0;
+    cursor: pointer;
+}
+.feature-check input[type="checkbox"] + label {
+    display: inline-block;
+    margin: 0;
+    padding-left: 23px;
+    position: relative;
+    color: #333;
+    font-weight: 300;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.feature-check input[type="checkbox"] + label::before {
+
+    content: "\f096 ";
+    font-family: FontAwesome;
+    font-size: 18px;
+    left: 0;
+    position: absolute;
+}
+
+.feature-check input[type="checkbox"]:checked + label::before {
+    content: "\f046";
+}
+.add-property-submit {
+    float: right;
+    & button {
+        background: $theme-color;
+        color: $white;
+        border: 1px solid $theme-color;
+        padding: 10px 25px;
+        border-radius: 50px;
+        &:hover {
+            background: #fff;
+            color: $theme-color;
+        }
+    }
+}

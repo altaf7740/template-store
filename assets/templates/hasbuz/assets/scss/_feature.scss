@@ -1,0 +1,102 @@
+/*---------------------------------------
+    05. Feature
+-----------------------------------------*/
+
+/*-- Feature One --*/
+.ht-feature-one {
+    
+    /*-- Icon --*/
+    & .icon {
+        margin-bottom: 19px;
+        & i {
+            display: block;
+            font-size: 40px;
+            line-height: 1;
+            color: $body-color;
+        }
+    }
+    
+    /*-- Content --*/
+    & .content {
+        overflow: hidden;
+        & h4 {
+            font-size: 18px;
+            font-family: $poppins;
+            font-weight: 300;
+            text-transform: capitalize;
+            margin-bottom: 17px;
+        }
+        & p {
+            font-family: $poppins;
+            color: $body-color-light;
+            font-weight: 300;
+            max-width: 295px;
+            padding: 0 10px;
+            margin: auto
+        }
+    }
+    
+    &.white {
+    
+        /*-- Icon --*/
+        & .icon {
+            & i {
+                color: $white;
+            }
+        }
+
+        /*-- Content --*/
+        & .content {
+            & h4 {
+                color: $white;
+            }
+            & p {
+                color: #dddddd;
+            }
+        }
+        
+    }
+    
+}
+
+/*-- Theme Feature Image --*/
+.ht-theme-feature-image {
+    & img {
+        @media #{$tablet-device}{
+            width: 100%;
+        }
+        @media #{$large-mobile}{
+            width: 100%;
+        }
+    }
+}
+
+/*-- Theme Feature Content --*/
+.ht-theme-feature-content {
+    & h1 {
+        font-size: 36px;
+        line-height: 42px;
+        font-weight: 900;
+        margin-bottom: 23px;
+        @media #{$small-mobile}{
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+    & p {
+        font-family: $poppins;
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+    & ul {
+        margin-bottom: 30px;
+        & li {
+            line-height: 28px;
+            font-size: 14px;
+            list-style-type: decimal-leading-zero;
+            list-style-position: inside;
+        }
+    }
+    & .btn {}
+}

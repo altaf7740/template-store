@@ -1,0 +1,81 @@
+/* -----------------------------------
+Template:  Theme Name
+
+NOTE: This is event about file. All about related style included in this file.
+
+--------------------------------------*/
+.sent-your-wish-left > h4 {
+  font-size: 23px;
+  margin-bottom:20px;
+}
+.sent-your-wish-left {
+	position:relative;
+}
+.wish-search form input {
+  background: #ffffff none repeat scroll 0 0;
+  border: 1px solid #666666;
+  border-radius: 4px;
+}
+.wish-search textarea {
+  background: #ffffff none repeat scroll 0 0;
+  border: 1px solid #666666;
+  border-radius: 4px;
+  height: 100px;
+}
+
+.wish-search form input:focus{
+  border: 1px solid #FF6666;	
+}
+.wish-search form textarea:focus{
+  border: 1px solid #FF6666;	
+}
+.wish-search p {
+  display: inline-block;
+  line-height: 0;
+  margin-top: 9px;
+}
+.wish-search p input {
+  border-radius: 3px !important;
+  height: 10px;
+  line-height: 0;
+  margin-left: 4px;
+  margin-right: 9px;
+  width: 10px;
+}
+.theme-button {
+  border-color: #ff6666 !important;
+  display: inline-block;
+  float: right;
+  font-size: 16px;
+  font-weight: 500;
+  height: 40px;
+  transition: all 0.3s ease 0s;
+  width: 120px;
+  color: #333;
+}
+.theme-button:hover{
+	background:#ff6666;
+	color:#fff;
+}
+.friends-wishes-img {
+  width: 35%;
+  float:left;
+}
+.friends-wishes h4 {
+    position: relative;
+}
+.friends-wishes-info {
+  background: #fafafa none repeat scroll 0 0;
+  overflow: hidden;
+  padding: 16px;
+  width:65%;
+  float:left;
+}
+.friends-wishes h4::before {
+    background: #ff6666 none repeat scroll 0 0;
+    bottom: -10px;
+    content: "";
+    height: 2px;
+    position: absolute;
+    width: 50px;
+}

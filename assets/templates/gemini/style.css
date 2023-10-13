@@ -1,0 +1,1114 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Gemini
+    Template URI: https://devitems.com/html/lira-preview/
+    Description: This is html5 template
+    Author: BootExperts
+    Author URI: https://devitems.com/
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+	
+    1. Google Font Import
+	2. Banner Category
+	3. Blog Single Post
+	4. About Me
+	5. Subcribe Newsletter
+	6. Categories List
+	7. Tag List
+	8. Popular Post
+	9. Latest Tweet
+	10. Page Pagination
+	11. Instgram Gallery
+	12. Footer Top
+	13. Footer Bottom
+	14. Home Two
+	15. Home Page Three
+	16. Image Post Page
+	17. Video Post Page
+	18. Audio Post Page
+	19. Video Post Page
+	20. Slide Post Page
+	21. About Me Page
+	22. Contact Page
+	23. Error 404 Page
+	24. ScrollUp
+
+-----------------------------------------------------------------------------------*/
+
+/*-------------- 1. Google Font Import --------------*/
+	@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700|Open+Sans:300,400,600,700,800');
+
+/*-------------- 2. Banner Category --------------*/
+
+.coategory-in,.category-single {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.catgry-titel {
+  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+  bottom: 0px;
+  position: absolute;
+  width: 100%;
+  transition:.3s;
+}
+.category-single:hover .catgry-titel{opacity:0;visibility:hidden;bottom: -75px;}
+.coategory-in img {
+  filter: grayscale(100%);
+  transition: opacity 1s ease 0s, transform 1s ease 0s;
+}
+.category-single:hover .coategory-in img{filter: grayscale(0%);}
+.category-single:hover .coategory-in img{transform: scale3d(1.1, 1.1, 1);}
+.catgry-titel h6, .ctgry-hvr-cntnt h6 {
+  color: #fff;
+  font-weight: 700;
+  margin: 0 0 5px;
+  text-transform: uppercase;
+}
+.catgry-titel h5,.ctgry-hvr-cntnt h5 {
+  margin: 0;
+  color:#fff;
+}
+.category-hover {
+  background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+  bottom: 10px;
+  left: 10px;
+  opacity: 0;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  transform: scale(0);
+  transition: all 0.4s ease 0s;
+  visibility: hidden;
+}
+.category-single:hover .category-hover{opacity:1;visibility:visible;transform:scale(1);}
+.ctgry-hvr-cntnt a {
+  border: 1px solid #fff;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 35px;
+  margin-top: 40px;
+  padding: 8px 10px;
+  text-transform: uppercase;
+  transition:.4s;
+}
+.ctgry-hvr-cntnt a:hover,.blog-content a:hover {
+  background: #000 none repeat scroll 0 0;
+  border: 1px solid #000;
+  color: #fff;
+}
+.category-hover p {
+  color: #cccccc;
+  font-family: open sans;
+  font-size: 13px;
+  margin: 0;
+  padding: 0 20px;
+}
+.category-hover p a{color:#cccccc;}
+.category-hover p span {
+  float: right;
+  cursor:pointer;
+}
+.category-hover p a:hover,.category-hover p span:hover{color:#fff;}
+
+/*-------------- 3. Blog Single Post --------------*/
+
+.single-titel h3 a {
+  color: #252525;
+  font-weight: 700;
+}
+.blog-content p {
+  font-size: 16px;
+  margin: 0;
+}
+.blog-content a {
+  border: 1px solid #444444;
+  color: #444444;
+  display: inline-block;
+  margin-top: 25px;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  transition: all 0.4s ease 0s;
+}
+.blog-social {
+  border-top: 1px solid #f2f2f2;
+  display: block;
+  overflow: hidden;
+}
+.blog-athr > a,.blog-cmnt > a {
+  color: #909090;
+  font-size: 13px;
+}
+.blog-athr > a:hover,.blog-cmnt > a:hover,.social-icon-blog ul li a:hover,.social-icon-left ul li a:hover{color:#252525;}
+.blog-athr {
+  width: 25%;
+}
+.social-icon-blog {
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  width: 50%;
+  float:left;
+}
+.social-icon-blog ul li a,.social-icon-left ul li a {
+  color: #909090;
+  font-size: 16px;
+  padding: 0 8px;
+}
+
+/*-------------- 4. About Me --------------*/
+
+.left-titel > h5 {
+  line-height: 16px;
+  margin: 0;
+}
+.aboutme-content > h5 {
+  line-height: 18px;
+  margin: 30px 0 22px;
+}
+.aboutme-content p {
+  color: #444444;
+  margin: 0 0 20px;
+}
+.aboutme-content p a {
+  color: #000;
+  text-decoration: underline;
+}
+.aboutme-content p a:hover{text-decoration: none;color:#444;}
+
+/*-------------- 5. Subcribe Newsletter --------------*/
+
+.subcribe-newsletter > h6 {
+  color: #252525;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+.subcribe-newsletter input {
+  background: #f6f6f6 none repeat scroll 0 0;
+  border: 0 solid #eceff8;
+  box-shadow: none;
+  color: #909090;
+  font-size: 14px;
+  font-weight: 700;
+  height: 45px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  width: 100%;
+}
+.subcribe-newsletter button {
+  background: #000 none repeat scroll 0 0;
+  border: medium none;
+  color: #fff;
+  font-weight: 700;
+  height: 45px;
+  text-transform: uppercase;
+  width: 100%;
+}
+.subcribe-newsletter button:hover{background:#252525;}
+/* Mail Chimp */
+.mailchimp-alerts {
+  padding: 10px 0;
+}
+.mailchimp-submitting{color:#31708f}
+.mailchimp-success{color:#3c763d;}
+.mailchimp-error{color:#a94442;}
+
+/*-------------- 6. Categories List --------------*/
+
+.category-list li {
+  display: block;
+}
+.category-list ul li a {
+  color: #333333;
+  display: block;
+  padding: 0 0 18px;
+}
+.category-list ul li a span {
+  float: right;
+}
+.category-list ul li:last-child a {
+  padding: 0;
+}
+
+/*-------------- 7. Tag List --------------*/
+
+.tag-list ul li a {
+  border: 1px solid #ebebeb;
+  color: #333333;
+  display: block;
+  font-family: open sans;
+  margin-bottom: 10px;
+  margin-right: 4px;
+  padding: 5px 15px;
+}
+.tag-list ul li a:hover{background:#ebebeb;}
+
+/*-------------- 8. Popular Post --------------*/
+
+.single-post {
+  display: block;
+  overflow: hidden;
+}
+.post-img {
+  float: left;
+  margin-right: 15px;
+}
+.post-info {
+  color: #252525;
+  display: block;
+  overflow: hidden;
+}
+.post-img > img,.add-banner > img,.single-project > img,
+.image-box > img,.slides > img,.blog-img > img,.more-post-single > img,
+.slide-box > img,.aboutme-left > img {
+  filter: grayscale(60%);
+}
+
+/*-------------- 9. Latest Tweet --------------*/
+
+.tweet-info i {
+  background: #f2f2f2 none repeat scroll 0 0;
+  display: block;
+  font-size: 24px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 40px;
+}
+.tweet-info > span {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 14px;
+}
+.tweet-content > p {
+  font-family: open sans;
+  font-size: 14px;
+  margin: 0;
+}
+.tweet-content > p a {
+  color: #000000;
+  display: block;
+  font-family: crimson text;
+  font-size: 16px;
+}
+
+.project-details h5 {
+  color: #444444;
+  margin: 0 0 8px;
+}
+.project-details h6 {
+  color: #000000;
+  font-weight: 600;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+/*-------------- 10. Page Pagination --------------*/
+
+.pagination-count ul li a {
+  border: 1px solid #ebebeb;
+  color: #252525;
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  height: 35px;
+  line-height: 32px;
+  margin-right: 10px;
+  text-align: center;
+  width: 35px;
+}
+.pagination-count ul li a i {
+  font-size: 14px;
+  font-weight: 700;
+}
+.pagination-count ul li a:hover {
+  background: #ebebeb none repeat scroll 0 0;
+  border-color: #ebebeb;
+}
+
+/*-------------- 11. Instgram Gallery --------------*/
+
+.image-box {
+  cursor: pointer;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+.image-box::after {
+  background: #000 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0px;
+  transform: rotate(90deg);
+  transition: all 0.4s ease 0s;
+}
+.image-box > a {
+  color: #fff;
+  font-size: 60px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  z-index: 1;
+}
+.image-box > a:hover{color: #fff;}
+.image-box:hover:after{opacity: 0.4;transform:rotate(0deg)}
+.image-box:hover a{visibility: visible;opacity: 1;}
+
+/*-------------- 12. Footer Top --------------*/
+
+.footer-cntct i {
+  border: 1px solid #b1b1b1;
+  color: #606060;
+  float: left;
+  font-size: 24px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+  text-align: center;
+  width: 40px;
+  transition:.3s;
+}
+.footer-cntct > p {
+  color: #333333;
+  font-family: open sans;
+  font-size: 14px;
+  line-height: 40px;
+  margin: 0;
+}
+.footer-cntct.right i{margin-left: 10px;margin-right: 0px;}
+.footer-cntct.right p{float: left;}
+
+/*-------------- 13. Footer Bottom --------------*/
+
+.footer-bottom-left > p {
+  color: #333333;
+  font-size: 16px;
+  margin: 0;
+  line-height: 30px;
+}
+.footer-bottom-right ul li a {
+  border: 1px solid #b1b1b1;
+  color: #909090;
+  display: block;
+  font-size: 16px;
+  height: 30px;
+  line-height: 26px;
+  margin-left: 10px;
+  text-align: center;
+  width: 30px;
+  transition:.3s;
+}
+.footer-bottom-right ul li a:hover,.footer-cntct i:hover{background: #ebebeb none repeat scroll 0 0;border-color: #ebebeb;}
+
+/*-------------- 14. Home Two --------------*/
+
+.style-two .main-menu ul > li > a::before,.style-two .main-menu ul > li > a::after {
+  background: #fff none repeat scroll 0 0;
+}
+.style-two .main-menu ul > li > a,.style-two .social-icon ul li a{color:#cccccc;}
+.style-two .search-icn button::before{border-left:1px solid #cccccc;}
+.style-two .main-menu ul li ul > li > a{color:#cccccc !important;}
+.style-two .main-menu ul li ul > li > a:hover{color:#999 !important;}
+.style-two .social-icon ul li a:hover{color:#999}
+.style-two .main-menu ul li > ul,.style-two .main-menu ul#nav li .mega-menu {
+  background: #000 none repeat scroll 0 0;
+}
+.search-form {
+  display: inline-block;
+  position: relative;
+}
+.search-form input {
+  background: #373737 none repeat scroll 0 0;
+  border: medium none;
+  color: #eeeeee;
+  height: 35px;
+  padding-left: 20px;
+  position: relative;
+  width: 268px;
+}
+.search-form .search-field-button {
+  background: transparent none repeat scroll 0 0;
+  border: medium none;
+  color: #fff;
+  font-size: 22px;
+  padding: 2px 20px 2px 0;
+  position: absolute;
+  right: 0;
+}
+.btn-full > a {
+  background: #f7f7f7 none repeat scroll 0 0;
+  color: #111111;
+  display: block;
+  margin-bottom: 30px;
+  padding: 8px 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.btn-full > a i {
+  color: #111111;
+  font-size: 18px;
+  margin-left: 10px;
+}
+.btn-full.two > a.two {
+  background: transparent none repeat scroll 0 0;
+  margin: 0;
+  padding:0;
+}
+
+/* Slider Home Two */
+
+.slider-owl-area .slider-single {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.slider-owl-area .slider-content-two {
+  left: 0;
+  margin: 202px auto 201px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+}
+.slider-owl-area .slider-content-two .slide-text {
+  left: 0;
+  margin: 0 auto;
+  right: 0;
+  width: 550px;
+}
+.slider-owl-area .slider-content-two .slide-text h1 {
+  margin: 25px 0 30px;
+}
+.slider-owl-area .slider-content-two .slide-text > a {
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  display:inline-block;
+}
+.slider-owl-area .slider-content-two .slide-text > a:hover {
+  background: #fff none repeat scroll 0 0;
+  color: #000;
+}
+.slider-owl-area .owl-theme .owl-dots,.slider-owl-area .owl-theme .owl-nav {
+  position: absolute;
+  right: 25px;
+  text-align: center;
+  top: 50%;
+  margin:0;
+}
+.slider-owl-area .owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 0;
+}
+.slider-owl-area .owl-theme .owl-dots .owl-dot {
+  display: inline;
+}
+.slider-owl-area .owl-theme .owl-dots .owl-dot span::after {
+  border: 1px solid #fff;
+  border-radius: 100%;
+  content: "";
+  display: block;
+  height: 16px;
+  left: 5px;
+  margin-top: -2px;
+  position: absolute;
+  width: 16px;
+  opacity:0;
+}
+.slider-owl-area .owl-theme .owl-dots .owl-dot span {
+  backface-visibility: visible;
+  background: #fff none repeat scroll 0 0;
+  border-radius: 30px;
+  display: block;
+  height: 12px;
+  margin: 5px 7px;
+  transition: opacity 0.2s ease 0s;
+  width: 12px;
+}
+.slider-owl-area .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #fff none repeat scroll 0 0;
+}
+.slider-owl-area .owl-theme .owl-dots .owl-dot.active span::after{opacity:1;}
+.title-grid {
+  background: #fff none repeat scroll 0 0;
+  bottom: 20px;
+  left: 20px;
+  margin: 0 auto;
+  opacity: 0.8;
+  position: absolute;
+  right: 20px;
+  text-align: center;
+  top: 20px;
+  display:none;
+}
+.owl-item.center .title-grid{display:block;}
+
+/*-------------- 15. Home Page Three  --------------*/
+
+.sl-text-three {
+  animation: 1500ms ease-in-out 0s normal none 1 running flipInX;
+  display: block;
+  left: 0;
+  margin: 170px auto;
+  padding: 30px 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 570px;
+}
+.sl-text-three::after {
+  background: #252525 none repeat scroll 0 0;
+  content: "";
+  height: 1px;
+  left: 0px;
+  position: absolute;
+  top: 0;
+  width: 277px;
+}
+.sl-text-three::before {
+  background: #252525 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  position: absolute;
+  right: 0px;
+  width: 277px;
+}
+.slide-btn-three {
+  left: 0;
+  margin: 0 auto;
+  padding-top: 60px;
+  position: absolute;
+  right: 0;
+}
+.slide-btn-three > a {
+  border: 1px solid #252525;
+  color: #252525;
+  display: inline-block;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 8px 20px;
+  text-transform: uppercase;
+}
+.slide-btn-three > a:hover{background:#252525;color:#fff;}
+.slider-content-three h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+.slider-content-three h1 {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin: 15px 0;
+}
+.slider-content-three h4 {
+  font-family: crimson text;
+  font-size: 16px;
+  margin: 0;
+  font-weight: 600;
+}
+.slider-area-three .owl-theme .owl-dots, .slider-area-three .owl-theme .owl-nav {
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 45%;
+}
+.slider-area-three .owl-theme .owl-nav .owl-prev,.slider-area-three .owl-theme .owl-nav .owl-next {
+  background: transparent none repeat scroll 0 0;
+  border-radius: 0px;
+  color: #252525;
+  font-size: 60px;
+  padding: 4px 7px;
+  margin:0;
+}
+.slider-area-three .owl-theme .owl-nav .owl-prev {
+  left: 428px;
+  position: absolute;
+}
+.slider-area-three .owl-theme .owl-nav .owl-next {
+  right: 428px;
+  position: absolute;
+}
+.header-bottom-area {
+  box-shadow: 4px 4px 6px #ddd;
+}
+.blog-sngl-leftcntnt {
+  display: block;
+  overflow: hidden;
+}
+.left-contnt {
+  display: block;
+  overflow: hidden;
+}
+.blog-sngl-leftcntnt .btn-full > a {
+  background: transparent none repeat scroll 0 0;
+  color: #111111;
+  display: block;
+  margin-bottom: 0px;
+  padding: 0px;
+  text-align: left;
+  transition:.4s;
+}
+.blog-sngl-leftcntnt .btn-full > a:hover{padding-left:5px;}
+.single-titel h4 {
+  margin: 0 0 15px;
+}
+.single-titel h3 {
+  margin: 0 0 13px;
+}
+.style-two .category-hover,.style-two .catgry-titel {
+  background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+}
+.style-two .catgry-titel h6,.style-two .ctgry-hvr-cntnt h6,.style-two .category-hover p span,
+.style-two .ctgry-hvr-cntnt a,.style-two .catgry-titel h5,.style-two .ctgry-hvr-cntnt h5,
+.style-two .category-hover p,.style-two .category-hover p a {
+  color: #000;
+}
+.style-two .ctgry-hvr-cntnt a {
+  border: 1px solid #000;
+}
+.style-two .ctgry-hvr-cntnt a:hover{color:#fff;}
+/*-------------- 16. Image Post Page  --------------*/
+
+.post-content-area {
+  padding: 0 30px;
+}
+.post-content-text {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 4px 4px 8px #ddd;
+  margin-top: -48px;
+  padding: 50px 40px;
+  position: relative;
+  z-index: 99;
+}
+.post-top {
+  display: block;
+  overflow: hidden;
+}
+.pst-athr {
+  margin-right: 25px;
+}
+.pst-athr a {
+  color: #606060;
+  font-size: 13px;
+}
+.pst-athr a i{margin-right:4px;}
+.post-dtls-social ul li {
+  color: #909090;
+  font-size: 13px;
+}
+.post-dtls-social ul li:last-child{margin:0px;}
+.post-dtls-social ul li a {
+  color: #909090;
+  font-size: 12px;
+  padding: 10px;
+}
+.post-dtls-social ul li a:hover{color: #252525;}
+.post-dummy .titel h3 {
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+.post-dummy blockquote {
+  border-left: medium none;
+  display: block;
+  font-size: 17.5px;
+  left: 0;
+  margin: 30px auto;
+  overflow: hidden;
+  padding: 0;
+  right: 0;
+  width: 775px;
+}
+.post-dummy blockquote p i {
+  margin-right: 10px;
+}
+.post-dummy blockquote p:last-child i {
+  margin-left: 10px;
+}
+.comment-pic {
+  display: inline-block;
+  float: left;
+  margin-right: 25px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+.comment-author {
+  display: block;
+  overflow: hidden;
+}
+.comment-author h3 {
+  color: #252525;
+  float: left;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 0;
+  text-transform: capitalize;
+}
+.comment-author span {
+  color: #333333;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 8px;
+}
+.comment-author > a {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  color: #606060;
+  float: right;
+  font-size: 16px;
+  height: 30px;
+  line-height: 26px;
+  margin-bottom: 5px;
+  text-align: center;
+  width: 30px;
+}
+.comment-dis {
+  display: block;
+  margin: 0 0 10px;
+  overflow: hidden;
+}
+
+.comment-single-box.two {
+  margin-left: 65px;
+}
+.comment-single-box.three {
+  margin-left: 130px;
+}
+
+/* leave Comment From */
+
+.leave-comment h5 {
+  margin: 0 0 28px;
+}
+.form-single input {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #ddd;
+  border-radius: 0;
+  box-shadow: none;
+  float: left;
+  height: 40px;
+  margin-bottom: 30px;
+}
+.form-textarea {
+  clear: both;
+}
+.form-textarea textarea {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #ddd;
+  border-radius: 0;
+  box-shadow: none;
+  margin-bottom: 30px;
+}
+.form-button button {
+  background: #444444 none repeat scroll 0 0;
+  border: medium none;
+  box-shadow: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  overflow: hidden;
+  padding: 12px 25px;
+  text-transform: uppercase;
+}
+.form-button button:hover {
+  background: #000 none repeat scroll 0 0;
+}
+p.form-messege {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 0;
+  margin: 0;
+}
+p.success {
+  color: green;
+}
+p.error {
+  color: red;
+}
+
+/*-------------- 17. Video Post Page  --------------*/
+
+.more-post-area h3 {
+  color: #252525;
+  font-weight: 600;
+}
+.more-post-single iframe{height:242px;width:100%;}
+.more-post-area .owl-theme .owl-dots .owl-dot span {
+  backface-visibility: visible;
+  background: #aaaaaa none repeat scroll 0 0;
+  border-radius: 30px;
+  display: block;
+  height: 12px;
+  margin: 0 5px;
+  transition: opacity 0.2s ease 0s;
+  width: 12px;
+  position:relative;
+  transition:.3s;
+}
+.more-post-area .owl-theme .owl-dots .owl-dot span::after {
+  border: 1px solid #000;
+  border-radius: 100%;
+  content: "";
+  height: 16px;
+  left: -2px;
+  position: absolute;
+  top: -2px;
+  width: 16px;
+  display:none;
+  transition:.3s;
+}
+.more-post-area .owl-theme .owl-dots .owl-dot.active span{background:#000;}
+.more-post-area .owl-theme .owl-dots .owl-dot.active span::after,.more-post-area .owl-theme .owl-dots .owl-dot:hover span::after {
+  display:block;
+}
+.more-post-area .owl-theme .owl-dots .owl-dot:hover span {
+  background: #000 none repeat scroll 0 0;
+}
+.more-post-area .owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 45px;
+}
+
+/*-------------- 18. Audio Post Page  --------------*/
+
+.left-side .post-content-text {
+  margin-top: 0px;
+}
+.left-side .post-content-area {
+  padding: 0px;
+}
+.left-side .post-dummy blockquote {
+  width: 480px;
+}
+.left-side.audio .post-content-area{padding-left:100px;padding-right:100px;}
+.audio-about {
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 45px;
+  overflow: hidden;
+}
+.audio-about img {
+  float: left;
+  margin-left: 20px;
+  margin-right: 30px;
+}
+.ado-abt-cotnt {
+  display: block;
+  overflow: hidden;
+}
+.ado-abt-cotnt > h4 {
+  color: #252525;
+  font-family: open sans;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.left-side.audio.plr-0 .post-content-area{padding-left:0;padding-right:0;}
+/*-------------- 19. Video Post Page  --------------*/
+
+.video.img-post-area .post-content-area {
+  padding: 0;
+}
+.video.img-post-area .post-content-text {
+  box-shadow: none;
+  margin-top: 0;
+  padding: 40px 0 0;
+}
+.video.img-post-area .post-dummy blockquote {
+  width: 775px;
+}
+.video.img-post-area .post-dtls-social {
+  display: inline-block;
+}
+.video.img-post-area .blog-social a i {
+  margin-right: 5px;
+}
+.video .blog-cmnt a {
+  margin-left: 10px;
+}
+.video.img-post-area .comment-box h5 {
+  text-align: center;
+}
+.video.img-post-area .audio-about {
+  margin-bottom: 15px;
+}
+.video.img-post-area .post-dummy blockquote.side {
+  width: 480px;
+}
+.blog-social.border-bottom div a {
+  color: #909090;
+}
+/*-------------- 20. Slide Post Page  --------------*/
+
+.img-post-content .owl-theme .owl-nav .owl-prev,.img-post-content .owl-theme .owl-nav .owl-next {
+  background: transparent none repeat scroll 0 0;
+  border-radius: 0px;
+  color: #020202;
+  font-size: 48px;
+  padding: 4px 7px;
+  margin:0;
+}
+.img-post-content .owl-theme .owl-dots, .owl-theme .owl-nav {
+  left: 0;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 45%;
+}
+.img-post-content .owl-theme .owl-nav .owl-prev {
+  left: 20px;
+  position: absolute;
+}
+.img-post-content .owl-theme .owl-nav .owl-next {
+  position: absolute;
+  right: 20px;
+}
+
+/*-------------- 21. About Me Page  --------------*/
+
+.about-me-area,.aboutme-right {
+  display: block;
+  overflow: hidden;
+}
+.about-me-area h3,.contactus-top h3{
+  color: #252525;
+  font-weight: 600;
+  margin: 0 0 47px;
+  text-align: center;
+}
+.aboutme-left {
+  float: left;
+  margin-right: 25px;
+}
+.aboutme-right > ul {
+  font-family: crimson text;
+  font-size: 16px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-top: 5px;
+}
+
+/*-------------- 22. Contact Page  --------------*/
+
+.cntct-bottom-content {
+  position: relative;
+  margin-top: -90px;
+}
+.cntct-left-side {
+  float: left;
+  width: 66%;
+}
+.cntct-right-side {
+  float: right;
+  width: 34%;
+  background: #fff;
+  box-shadow: 2px 2px 6px #ddd;
+  padding: 30px 28px;
+  padding-top: 85px;
+  padding-bottom: 85px;
+  padding-right: 90px;
+  padding-left: 30px;
+}
+.cntct-right-side .contact-submit {
+  background: transparent;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+  background: ;
+  background: #444444;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+.cntct-right-side .contact-submit:hover{background:#000;}
+.cntct-right-side .form-single input,.right-side .form-textarea textarea {
+  margin-bottom: 20px;
+}
+.cntct-right-side .form-group {
+  margin-bottom: 0;
+}
+.cntct-right-side > h5 {
+  color: #252525;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 0 25px;
+}
+
+/*-------------- 23. Error 404 Page  --------------*/
+
+.four-zero-content h3 {
+  font-weight: 700;
+  margin: 0 0 28px;
+}
+.four-zero-content a {
+  border: 1px solid #333333;
+  color: #333333;
+  display: inline-block;
+  font-family: open sans;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 15px;
+  text-transform: uppercase;
+}
+.error-search {
+  display: block;
+  margin: 30px auto auto;
+  overflow: hidden;
+  position: relative;
+  width: 305px;
+}
+.error-search input {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #000;
+  color: #000;
+}
+.error-search > button {
+  background: #333 none repeat scroll 0 0;
+  border: medium none;
+  color: #aaaaaa;
+  font-size: 18px;
+  line-height: 15px;
+  padding: 13px 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/*---------- 24. ScrollUp ----------*/
+
+#scrollUp {
+  background: #303030 none repeat scroll 0 0;
+  border-radius: 0px;
+  bottom: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  color: #fff;
+  font-size: 28px;
+  height: 40px;
+  line-height: 35px;
+  position: fixed;
+  right: 15px;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  width: 40px;
+  z-index: 200;
+}
+#scrollUp:hover{background:#212121;}

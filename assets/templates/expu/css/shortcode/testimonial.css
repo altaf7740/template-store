@@ -1,0 +1,98 @@
+/* -----------------------------------
+Template:  Expu
+
+NOTE: This is Testimonial style file. All Header related style included in this file.
+
+--------------------------------------*/
+.single-client{}
+.client-img{
+    margin-right: 25px
+}
+.client-img img{
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    border: 2px solid #4EBEC4;
+}
+.client-info{
+   display: inline-block;
+}
+.client-info h4{
+    font-size: 26px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+.client-info p{
+    font-size: 14px;
+    color: #fff;
+    font-family: 'montserratlight';
+    text-transform: capitalize;
+}
+.testimonial-owl .owl-controls {
+    display: inherit;
+    float: right;
+    bottom: 45px;
+    position: absolute;
+    right: 0;
+}
+.testimonial-owl .owl-controls .owl-nav div {
+    background: #365A73;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    box-shadow: 0 1px 3px #1a2c38;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    top: -80px;
+}
+.testimonial-owl .owl-controls .owl-nav div:hover {
+    background: #4FC2C7;
+}
+.testimonial-owl .owl-controls .owl-nav .owl-prev {
+    margin-right: 10px;
+}
+.testimonial-owl .owl-controls .owl-nav i {
+    line-height: 35px;
+}
+
+#box
+{
+	background: #365A73;
+	box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.3);
+	border-radius: 10px; 
+}
+#box-inner
+{
+	background: #365A73;
+	margin-top: -50px;
+	border-radius: 20px; 
+    color: #ffffff;
+    font-family: "Poppins",sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 0;
+    padding: 45px 40px;
+	/* transform z-index hack */
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+#box:before
+{
+	content: '';
+	position: relative;
+	margin-left: 55px;
+	bottom: -122px;
+	background: #365A73;
+	display: block;
+	width: 50px;
+	height: 50px;
+	box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.3);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+#box{margin: 50px auto}
+.single-testimonial {padding: 0 10px}

@@ -1,0 +1,179 @@
+@import "../variables";
+@import "../mixins";
+/*------------------------
+    Footer Styles
+-------------------------*/
+
+.blog__cat {
+    display: flex;
+    list-style: outside none none;
+    margin: 0;
+    padding: 26px 0;
+    flex-wrap: wrap;
+    li {
+        margin-right: 40px;
+        a {
+            color: #141414;
+            font-family: Raleway;
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: 0.3s;
+            &:hover{
+                color: $theme-color;
+            }
+        }
+    }
+}
+
+.pn-sociable-default {
+    align-items: center;
+    display: flex;
+    list-style: outside none none;
+    margin: 0;
+    padding: 24px 0;
+    li {
+        align-items: center;
+        display: flex;
+        margin-right: 40px;
+        .icon {
+            a {
+                i {
+                    background: #252525 none repeat scroll 0 0;
+                    border-radius: 100%;
+                    color: #fff;
+                    font-size: 11px;
+                    height: 33px;
+                    line-height: 33px;
+                    margin-right: 11px;
+                    text-align: center;
+                    width: 33px;
+                    transition: 0.3s;
+                }
+            }
+        }
+        .content {
+            h6 {
+                font-size: 11px;
+                font-weight: 500;
+                letter-spacing: 2px;
+                margin-bottom: 0;
+                text-transform: uppercase;
+                a {
+                    color: #001414;
+                }
+            }
+            span {
+                color: #777;
+                display: block;
+                font-size: 11px;
+            }
+        }
+    }
+}
+
+.pn-sociable-default li:hover .icon a i {
+    background: $theme-color none repeat scroll 0 0;
+}
+
+.instagram__list {
+    margin: 0;
+    padding: 0;
+    list-style: outside none none;
+}
+
+.panora__instagram {
+    position: relative;
+}
+
+.instagram__title {
+    background: #ffffff none repeat scroll 0 0;
+    left: 50%;
+    padding: 45px 74px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 9;
+    h2 {
+        color: #444444;
+        font-family: Lato;
+        font-size: 24px;
+        font-weight: 400;
+        margin: 0;
+        text-transform: capitalize;
+    }
+}
+
+/* Copyright Area*/
+
+.copyright__area {
+    padding: 30px 0;
+    .ft__right {
+        p {
+            color: #404040;
+            font-size: 12px;
+            margin: 0;
+            text-align: right;
+        }
+    }
+    .ft__left {
+        p {
+            color: #404040;
+            font-size: 13px;
+            margin: 0;
+            text-align: left;
+        }
+    }
+}
+
+/* Responsive Css*/
+
+@media #{$xx-layout} {}
+
+@media #{$xlg-layout} {}
+
+@media #{$lg-layout} {}
+
+@media #{$md-layout} {
+    .pn-sociable-default {
+        flex-wrap: wrap;
+    }
+    .pn-sociable-default li {
+        flex-basis: 33.33%;
+        margin-bottom: 24px;
+        margin-right: 0;
+        padding-right: 40px;
+    }
+}
+
+@media #{$sm-layout} {
+    .pn-sociable-default {
+        flex-wrap: wrap;
+    }
+    .pn-sociable-default li {
+        flex-basis: 33.33%;
+        margin-bottom: 24px;
+        margin-right: 0;
+    }
+    .instagram__title {
+        padding: 45px 21px;
+    }
+    .instagram__title h2 {
+        font-size: 22px;
+    }
+}
+
+@media #{$xs-layout} {
+    .copyright__area .ft__right p {
+        margin: 7px 0 0;
+        text-align: left;
+    }
+}
+
+@media #{$xxs-layout} {
+    .instagram__title h2 {
+        font-size: 20px;
+        line-height: 31px;
+    }
+}

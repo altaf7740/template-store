@@ -1,0 +1,106 @@
+/*--
+    06. About Css
+-------------------------*/
+.about-us-wrap {
+    margin-top: 30px;
+    @media #{$desktop-device}{
+        margin-top: 0px;
+    }
+}
+.about-us-content {
+    margin-top: -8px;
+    & ul {
+        & li {
+            padding-left: 40px;
+            position: relative;
+            margin-bottom: 8px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &::after {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                content: "";
+                background: $theme-color;
+                width: 25px;
+                height: 1px;
+            }
+        }
+    }
+}
+.perfect-start-aera {
+    padding: 60px 0;
+    @media #{$large-mobile}{
+        padding: 40px 0 60px;
+    }
+    & .perfect-start-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media #{$large-mobile}{
+            flex-direction: column;
+        }
+        & p {
+            font-size: 30px;
+            margin-top: 14px;
+            letter-spacing: 1px;
+            color: $theme-color;
+            font-family: $lato;
+            @media #{$large-mobile}{
+                font-size: 20px;
+                margin-bottom: 30px;
+                margin-top: 10px;
+                text-align: center;
+            }
+            @media #{$tablet-device}{
+                font-size: 24px;
+            }
+            @media #{$desktop-device}{
+                font-size: 26px;
+            }
+        }
+    }
+    & .get-started-button {
+        & .start-btn {
+            background: $theme-color;
+            border: 2px solid $theme-color;
+            color: #fff;
+            padding: 12px 35px;
+            display: inline-block;
+            border-radius: 50px;
+            font-size: 18px;
+            &:hover {
+                background: $white;
+                border: 2px solid $theme-color;  
+                color: $theme-color;
+            }
+        }
+    }
+}
+
+/*--
+    - Project Count Css
+--------------------------*/
+
+.project-count-inner {
+    background: $theme-color;
+}
+.counter {
+    .count-icon {
+        color: #fff;
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    & h3 {
+        font-size: 36px;
+        font-weight: 600;
+        color: #fff;
+        font-family: $lato;
+    }
+    & p {
+        color: #fff;
+        font-weight: 600;
+        font-size: 15px;
+    }
+}

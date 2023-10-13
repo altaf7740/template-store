@@ -1,0 +1,67 @@
+/*----------------------------------------*/
+/*  13.  Contact Area
+/*----------------------------------------*/
+.contact-area {}
+/*Single Contact Info*/
+.sin-contact {
+    & i {
+        border: 1px solid #ddd;
+        border-radius: 50%;
+        color: #999;
+        display: inline-block;
+        font-size: 30px;
+        height: 70px;
+        line-height: 68px;
+        margin-bottom: 15px;
+        width: 70px;
+    }
+    & p {
+        line-height: 22px;
+        margin: 0;
+    }
+}
+
+/*Contact Map*/
+#contact-map {
+    height: 335px;
+    width: 100%;
+}
+
+/*Contact Form*/
+.contact-form {
+    & form {
+        & .row {
+            margin-left: -10px;
+            margin-right: -10px;
+            & [class*="col"] {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+        & input {
+            border: 1px solid #eee;
+            height: 40px;
+            padding: 8px 15px;
+            width: 100%;
+            &[type="submit"] {
+                background-color: $theme-color;
+                border-color: $theme-color;
+                color: $color-white;
+                font-weight: 500;
+                padding: 6px 50px 8px;
+                text-transform: uppercase;
+                width: auto;
+                &:hover {
+                    background-color: transparent;
+                    color: $theme-color;
+                }
+            }
+        }
+        & textarea {
+            border: 1px solid #eee;
+            height: 150px;
+            padding: 8px 15px;
+            width: 100%;
+        }
+    }
+}

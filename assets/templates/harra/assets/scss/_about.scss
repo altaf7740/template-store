@@ -1,0 +1,86 @@
+
+/*=======================
+    Counterup Style 
+=========================*/
+
+.bg_image--02 {
+    background-image: url(../images/bg/bg-image-02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.funfact{
+    &.counter-style--4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .fact-icon{
+            padding-right: 25px;
+            i{
+                font-size: 48px;
+                color: #383838;
+            }
+        }
+        .content{
+            text-align: center;
+            span{
+                color: #585858;
+                font-size: 24px;
+                font-weight: 600;
+                margin-top: 13px;
+                display: inline-block;
+                font-family: $heading-font;
+                position: relative;
+                padding: 0 20px;
+                margin-right: 12px;
+                &::after{
+                    position: absolute;
+                    content: "+";
+                    right: 0;
+                    color: #383838;
+                    font-size: 26px;
+                }
+            }
+            h2{
+                color: #585858;
+                font-weight: 600;
+                font-size: 24px;
+                margin: 0;
+                position: relative;
+                display: block;
+                padding-bottom: 14px;
+
+                &::before{
+                    position: absolute;
+                    content: "";
+                    bottom: 0;
+                    background: #ed552d;
+                    width: 70px;
+                    height: 2px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+        
+        &.white-text{
+            .content{
+                span{
+                    color: #ffffff;
+                    &::after{
+                        color: #ffffff;
+                    }
+                }
+                h2{
+                    color: #ffffff;
+                    &::before{
+                        background: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,43 @@
+/*--
+    - Breadcrumb Style
+------------------------------------------*/
+.ht-breadcrumb-one {
+    display: block;
+    float: left;
+    position: relative;
+    padding-left: 0;
+    list-style: none;
+    z-index: 1;
+    margin-bottom: 0;
+    & li {
+        float: left;
+        font-family: $poppins;
+        font-size: 22px;
+        color: $dark;
+        text-transform: capitalize;
+        line-height: 1;
+        @media #{$desktop-device}{
+            font-size: 18px;
+        }
+        @media #{$tablet-device}{
+            font-size: 18px;
+        }
+        @media #{$large-mobile}{
+            font-size: 14px;
+        }
+        &::after {
+            content: "-";
+            margin: 0 5px 0 8px;
+        }
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+        & a {
+            &:hover {
+                color: inherit;
+            }
+        }
+    }
+}

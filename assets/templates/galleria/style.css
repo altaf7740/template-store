@@ -1,0 +1,4664 @@
+/*-----------------------------------------------------------------------------------
+
+    [Master Stylesheet]
+
+    Template Name: Galleria - eCommerce Responsive HTML5 Template
+    Template URI: http://bootexperts.com    
+    Description: Description Will be here    
+    Author: BootExperts    
+    Author URI: http://bootexperts.com    
+    Version: 1.0
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+    1. Base CSS
+    2. Header Area
+        2.1 Header Top Area 
+        2.1 Header Main Area 
+    3. Main Menu Area 
+        3.1 Dropdown 
+        3.2 Mega Menu 
+    4. Slider Area 
+    5. Product Area
+        5.1 Product Top Area
+        5.2 Product Top Carousel Area
+    6. Product Banner Area 
+    7. Product Bottom Carousel Area 
+    8. Blog Brand Area
+        8.1 Blog Area
+        8.2 Brand Area
+    9. Service Area 
+    10. Social Area 
+    11. Footer Widget Area
+    12. Footer Area  
+    13. Homepage Two Start
+        13.1 Homepage Two Left Sidebar
+        13.2 Homepage Two Mainmenu 
+        13.3 Homepage Two Slider 
+        13.4 Homepage Two Rightside Banner
+        13.5 Homepage Two Service
+        13.6 Homepage Two Product Carousel
+        13.7 Homepage Two Product Banner
+        13.8 Homepage Two Hot Product
+        13.9 Homepage Two Blog and Brand
+    14. Homepage Three Start
+        14.1 Homepage Three mainmenu
+        14.2 Homepage Three Left Sidebar
+        14.3 Homepage Three Middle services-all
+        14.4 Homepage Three Product Carousel
+        14.5 Homepage Three Feature Carousel
+        14.6 Homepage Three Brand
+        14.7 Homepage Three Right Sidebar
+        14.8 Homepage Three Newsletter
+    15. Shop Page Start
+    16. Shop Left Sidebar Page Start 
+    17. Shop Right Sidebar Page Start 
+    18. Cart Page Start
+    19. Checkout Page Start 
+    20. Product Details Page Start 
+    21. About Us Page Start 
+    22. Blog Main Page Start 
+    23. Blog Left Sidebar Page Start 
+    24. Blog Details Page Start
+    25. 404 Error Page Start
+    26. Comming Soon Page Start 
+    27. Contact Page Start 
+    28. Login Register Page Start
+    29. Mobile Menu Area
+    30. Scroll To Top
+
+========================================*/
+/*--------------------
+ 1.0 Base Css
+----------------------*/
+@font-face {
+    font-family: 'montserratblack';
+    src: url('fonts/montserrat-black.eot');
+    src: url('fonts/montserrat-black.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montserrat-black.woff2') format('woff2'),
+         url('fonts/montserrat-black.woff') format('woff'),
+         url('fonts/montserrat-black.ttf') format('truetype'),
+         url('fonts/montserrat-black.svg#montserratblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserratbold';
+    src: url('fonts/montserrat-bold.eot');
+    src: url('fonts/montserrat-bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montserrat-bold.woff2') format('woff2'),
+         url('fonts/montserrat-bold.woff') format('woff'),
+         url('fonts/montserrat-bold.ttf') format('truetype'),
+         url('fonts/montserrat-bold.svg#montserratbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserratextra_bold';
+    src: url('fonts/montserrat-extrabold.eot');
+    src: url('fonts/montserrat-extrabold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montserrat-extrabold.woff2') format('woff2'),
+         url('fonts/montserrat-extrabold.woff') format('woff'),
+         url('fonts/montserrat-extrabold.ttf') format('truetype'),
+         url('fonts/montserrat-extrabold.svg#montserratextra_bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserrathairline';
+    src: url('fonts/montserrat-hairline.eot');
+    src: url('fonts/montserrat-hairline.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montserrat-hairline.woff2') format('woff2'),
+         url('fonts/montserrat-hairline.woff') format('woff'),
+         url('fonts/montserrat-hairline.ttf') format('truetype'),
+         url('fonts/montserrat-hairline.svg#montserrathairline') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserratlight';
+    src: url('fonts/montserrat-light.eot');
+    src: url('fonts/montserrat-light.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montserrat-light.woff2') format('woff2'),
+         url('fonts/montserrat-light.woff') format('woff'),
+         url('fonts/montserrat-light.ttf') format('truetype'),
+         url('fonts/montserrat-light.svg#montserratlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserratregular';
+    src: url('fonts/montserrat-regular.eot');
+    src: url('fonts/montserrat-regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montserrat-regular.woff2') format('woff2'),
+         url('fonts/montserrat-regular.woff') format('woff'),
+         url('fonts/montserrat-regular.ttf') format('truetype'),
+         url('fonts/montserrat-regular.svg#montserratregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserratsemi_bold';
+    src: url('fonts/montserrat-semibold.eot');
+    src: url('fonts/montserrat-semibold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montserrat-semibold.woff2') format('woff2'),
+         url('fonts/montserrat-semibold.woff') format('woff'),
+         url('fonts/montserrat-semibold.ttf') format('truetype'),
+         url('fonts/montserrat-semibold.svg#montserratsemi_bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserratultra_light';
+    src: url('fonts/montserrat-ultralight.eot');
+    src: url('fonts/montserrat-ultralight.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montserrat-ultralight.woff2') format('woff2'),
+         url('fonts/montserrat-ultralight.woff') format('woff'),
+         url('fonts/montserrat-ultralight.ttf') format('truetype'),
+         url('fonts/montserrat-ultralight.svg#montserratultra_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus {
+    outline: 0 solid 
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.fix {
+    overflow: hidden 
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    font-family: 'montserratsemi_bold'
+}
+p { margin: 0}
+html,
+body { height: 100%;
+}
+body {
+    position: relative;
+    font-size: 14px;
+    font-family: 'montserratregular';
+    color: #6e6e6e
+}
+a {
+    text-decoration: none
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+a:hover, a.active {
+    text-decoration: none 
+}
+li {
+    list-style: none;
+    text-decoration: none
+}
+.section-padding {
+    padding: 92px 0;
+}
+.page-title {
+  color: hsl(0, 0%, 0%);
+  font-family: "Oswald";
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 22px;
+  text-transform: uppercase;
+}
+.page-title h1 {
+    position: relative;
+    padding-bottom: 58px;
+    display: inline-block
+}
+.page-title h1:after {
+  background: url(img/divider.png)no-repeat;
+  bottom: 0;
+  content: "";
+  height: 6px;
+  left: 50%;
+  position: absolute;
+  width: 31px;
+    margin-left: -15.5px
+}
+.section-gray {
+    background: #F9F9F9
+}
+.section-dark {
+    background: #363636
+}
+/*--------------------
+2. Header Area
+---------------------*/
+/*--------------------
+    2.1 Header Top Area
+---------------------*/
+header {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500
+}
+.header-top-area {
+    background: #ffffff none repeat scroll 0 0;
+    border-bottom: 1px solid #D2D2D2
+}
+.header-top-left-menu ul, .header-top-right-menu ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+.header-top-left-menu ul li, .header-top-right-menu li {
+    display: inline-block;
+    padding: 15px 0;
+}
+.header-top-left-menu li a {
+    color: #6e6e6e;
+    display: block;
+    margin-right: 34px;
+}
+.header-top-left-menu li a:hover {
+    color: #6e6e6e
+}
+.header-top-left-menu li a i {
+    color: #ff5555;
+    font-size: 18px;
+    margin-right: 6px;
+    position: relative;
+    top: 2px;
+}
+.header-top-right-menu ul {
+    text-align: right;
+}
+.header-top-right-menu li ul.dropdown-menu li {
+    padding: 0;
+}
+.header-top-right-menu li a {
+    display: block;
+    margin-right: 34px;
+    padding-bottom: 0;
+    color: #6e6e6e
+}
+.header-top-left-menu li a {
+    color: #6e6e6e;
+    display: block;
+    margin-right: 34px;
+}
+.header-top-left-menu ul li a:hover {
+    color: #EF5656;
+}
+.header-top-right-menu li a i {
+    color: #ff5555;
+    font-size: 16px;
+    margin-left: 8px;
+}
+.header-top-right-menu img {
+    padding-right: 8px;
+}
+.header-top-right-menu li:last-child a {
+    margin-right: 0;
+}
+.open > .dropdown-menu {
+    background: rgba(49, 49, 49, 0.97) none repeat scroll 0 0;
+    border-radius: 0;
+    display: block;
+    left: -53px;
+    padding: 16px 0;
+    position: absolute;
+    text-align: center !important;
+    z-index: 99
+}
+.open > .dropdown-menu.lang {
+    left: -26px
+}
+.dropdown-menu a {
+    color: #fff !important;
+    font-size: 13px !important;
+    font-weight: 300 !important;
+    margin-right: 0 !important;
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;
+    text-transform: capitalize !important;
+}
+.header-top-right-menu .dropdown-menu a:hover {
+    color: #ff5555 !important;
+    background: transparent !important;
+}
+.dropdown-menu > li {
+    display: block;
+}
+/*----------------------
+    2.2 Header Main Area
+-----------------------*/
+.header-top-right-menu li:last-child a {
+    margin-right: 0;
+}
+.contact-icon i {
+    color: #ff5555;
+    font-size: 30px;
+    margin-right: 12px;
+}
+.contact-icon {
+    display: inline-block;
+    float: left;
+    padding-top: 5px;
+    transform: rotate(10deg);
+}
+.contact-info-header {
+    display: inline-block;
+    font-family: "montserratlight";
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 45px;
+}
+.header-main-area {
+    border-bottom: 1px solid #d2d2d2;
+}
+.contact-text h4 {
+    color: #303030;
+    font-family: 'montserratsemi_bold';
+    font-size: 18px;
+    margin-bottom: 2px;
+    font-weight: 400;
+}
+.contact-text {
+    display: inline-block;
+    float: left;
+    font-family: "montserratlight";
+}
+.logo > a {
+    display: inline-block;
+}
+.logo {
+    padding-bottom: 26px;
+    padding-top: 24px;
+    text-align: center;
+}
+.register > ul {
+    display: inline-block;
+    font-family: "montserratregular";
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.register > ul li {
+    display: inline-block;
+    padding: 10px 0;
+}
+.register li > a {
+    color: #6e6e6e;
+    display: block;
+    margin-right: 35px;
+    padding: 15px 0;
+}
+.register li:hover a {
+    color: #EF5656
+}
+.register li a i {
+    color: #ef5656;
+    font-size: 19px;
+    margin-right: 8px;
+    position: relative;
+    top: 3px;
+}
+.register {
+    display: block;
+    padding-left: 85px;
+}
+.register a.cart {
+    margin-right: 6px;
+}
+.register > a {
+    color: #6e6e6e;
+    font-family: "montserratregular";
+    margin-right: 40px;
+}
+.header-main-right {
+    float: right;
+    position: relative;
+    display: block;
+}
+a.cart {
+    margin-left: 17px;
+    padding-right: 6px;
+    position: relative;
+}
+li a.cart i.fa-shopping-cart {
+    color: #4d4d4d;
+    font-size: 17px;
+}
+.cart > span {
+    background: #ef5656 none repeat scroll 0 0;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    font-size: 13px;
+    height: 21px;
+    left: 9px;
+    position: absolute;
+    text-align: center;
+    top: 2px;
+    width: 21px;
+    padding-top: 3px
+}
+ul.header-main-right .mini-cart-content {
+    background: #ffffff none repeat scroll 0 0;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    padding: 10px 0 0;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    transform-origin: 0 0 0;
+    transition: all 0.5s ease 0s;
+    width: 280px;
+    z-index: -99;
+}
+ul.header-main-right li:hover .mini-cart-content {
+    opacity: 1;
+    z-index: 9999999;
+}
+.mini-top-sec {
+    border-bottom: 0 none;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding: 12px 12px 0;
+    position: relative;
+}
+.cart-image {
+    float: left;
+    margin-right: 10px;
+    width: 50px;
+}
+.cart-info, .cart-info p.cart-price {
+  float: left;
+  font-family: "montserratlight";
+  font-size: 13px;
+}
+.cart-price {
+  font-weight: 700;
+}
+.cart-info a p {
+  color: #252525;
+  font-family: "montserratlight";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  margin: 0 0 5px;
+  text-align: left;
+  transition: all 0.3s ease 0s;
+  width: 190px;
+}
+.cart-info a p:hover {
+    color: #ff5555
+}
+ul.header-main-right li .mini-cart-content .cart-img-details .cart-img-contaent span {
+    color: #6f6f6f;
+    font-weight: 600;
+    text-align: left;
+}
+.product-cancel {
+    display: inline-block;
+    float: right;
+    position: absolute;
+    right: 6px;
+    top: 13px;
+}
+.register li a i {
+    font-size: 19px;
+    margin-right: 8px;
+    color: #ef5656;
+}
+.register li:hover a i {
+    color: #ff5555
+}
+span.quantity {
+    background: #ff5555 none repeat scroll 0 0;
+    border-radius: 50%;
+    color: #fff;
+    height: 20px;
+    left: 5px;
+    position: absolute;
+    text-align: center;
+    top: 5px;
+    width: 20px;
+}
+.cart-image > a {
+    display: block;
+}
+p.total-amount {
+    border: medium none;
+    color: #6f6f6f;
+    float: left;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 8px 0 0;
+    text-align: left;
+    text-transform: uppercase;
+    width: 100%;
+}
+p.total-amount span {
+    float: right;
+    font-size: 18px;
+    font-weight: 700;
+}
+.mini-bottom-sec {
+    padding: 0 12px;
+}
+.mini-cart-content .button a {
+    background: #303030 none repeat scroll 0 0;
+    border: 1px solid #e5e5e5;
+    color: #fff !important;
+    display: inline-block;
+    float: right;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 15px 0;
+    padding: 10px 35px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.mini-cart-content .button a:hover {
+    background-color: #ec4445;
+    color: #fff
+}
+.search-form > form {
+    position: relative;
+    overflow: hidden;
+}
+.search-form input {
+    border: 1px solid #d2d2d2;
+    font-size: 12px;
+    height: 33px;
+    padding-left: 10px;
+    width: 86%;
+}
+.search-form button {
+    background-color: #ef5656;
+    border: medium none;
+    color: #fffdfd;
+    font-size: 17px;
+    height: 37px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 49px;
+}
+#search-form > button:hover {
+    background: #303030;
+}
+/*--------------------
+ 3. Main Menu Area
+----------------------*/
+.mainmenu ul#nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-family: 'montserratsemi_bold';
+}
+.mainmenu ul#nav li {
+    display: inline-block;
+    margin: 0 17.5px;
+    padding: 0;
+    font-weight: 500;
+    position: relative
+}
+.mainmenu ul#nav li a {
+    display: block;
+    color: #303030;
+    font-size: 15px;
+    padding: 21.5px 0;
+    position: relative;
+    text-transform: uppercase;
+}
+ul#nav > li:focus a, ul#nav > li:hover a {
+    color: #ef5656;
+    text-decoration: none;
+}
+/*--------------------
+    3.1 Dropdown
+---------------------*/
+ul.sub-menu {
+    position: absolute;
+    top: 115%;
+    left: 0;
+    width: 250px;
+    background: rgba(49, 49, 49, 0.95) none repeat scroll 0 0;
+    text-align: left;
+    opacity: 0;
+    z-index: -9;
+    visibility: hidden;
+    transition: 0.3s;
+    margin: 0;
+    padding: 25px 0px 25px 33px;
+    font-family: 'montserratregular';
+}
+ul.sub-menu:after, .mainmenu ul#nav li .megamenu:after {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: transparent transparent #313131;
+    border-style: solid;
+    border-width: 8px;
+    top: -16px;
+    content: "";
+    left: 20px;
+    position: absolute;
+    opacity: .95
+}
+.mainmenu ul#nav li ul.sub-menu > li  {
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.mainmenu ul#nav li ul.sub-menu > li a {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 10px 0;
+    text-transform: capitalize
+}
+.mainmenu ul#nav li ul.sub-menu > li:hover:after {
+    position: absolute;
+    right: 0;
+    width: 2px;
+    background: #ff5555;
+    height: 100%;
+    content: "";
+    bottom: 0 
+}
+.mainmenu > nav > ul#nav > li:hover ul.sub-menu{
+    visibility: visible;
+    z-index: 999;
+    opacity: 1;
+    top: 100%
+}
+.mainmenu ul#nav li ul.sub-menu > li {
+    padding: 0;
+}
+.mainmenu ul#nav li ul.sub-menu > li a:hover {
+    color: #ff5555
+}
+/*--------------------
+    3.2 Mega Menu
+---------------------*/
+.mainmenu ul#nav li .megamenu {
+    background: rgba(49, 49, 49, 0.95) none repeat scroll 0 0;
+    font-family: "montserratregular";
+    opacity: 0;
+    position: absolute;
+    top: 115%;
+    transition: all 0.3s ease 0s;
+    visibility: hidden;
+    width: 571px;
+    z-index: -99;
+}
+.mainmenu ul#nav li:hover .megamenu {
+    margin-top: 0;
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+    z-index: 999;
+}
+.mainmenu ul#nav li .megamenu {
+    left: 0;
+    right: auto;
+}
+.mainmenu ul#nav li.right-megamenu .megamenu {
+    left: auto;
+    right: 0;
+}
+.mainmenu ul#nav li.right-megamenu .megamenu:after {
+    border-color: transparent transparent #313131 transparent  ;
+    right: 20px;
+}
+.mainmenu ul#nav li.right-megamenu .megamenu::after {
+    left: inherit;
+}
+.mega-title {
+    color: #fff !important;
+    position: relative;
+    text-transform: uppercase !important;
+}
+.mega-title::after {
+    background: #fff none repeat scroll 0 0;
+    content: "";
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    width: 78%;
+}
+.mainmenu ul#nav li .megamenu span {
+    float: left;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    width: 33.3333%;
+}
+.mainmenu ul#nav li .megamenu span:last-child {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color;
+    border-image: none;
+    border-style: none;
+    border-width: medium medium 0;
+}
+.mainmenu ul#nav li .megamenu span a:last-child {
+    border-bottom: 0 none;
+}
+.mainmenu ul#nav li .megamenu span > a {
+    color: #fff;
+    display: block;
+    font-size: 12.9px;
+    font-weight: 400;
+    margin: 0 35px;
+    padding: 7px 0;
+    text-align: left;
+    text-transform: inherit;
+}
+.mainmenu ul#nav li .megamenu span > a:hover {
+    color: #ff5555;
+}
+/*--------------------
+ 4. Slider Area
+----------------------*/
+.slider-area {
+    text-transform: uppercase;
+    position: relative
+}
+.slider {
+    font-family: 'montserratsemi_bold';
+}
+.tp-bullets.simplebullets {
+    margin-bottom: 9px;
+}
+.tp-bullets.simplebullets .bullet {
+    cursor: pointer;
+    position: relative !important;
+    background:transparent !important;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    width: 27px !important;
+    height: 7px !important;
+    border: 1px solid #FF5555 !important;
+    display: inline-block;
+    margin: 0 9px !important;
+    -webkit-transition: background-color 0.2s, border-color 0.2s;
+    -moz-transition: background-color 0.2s, border-color 0.2s;
+    -o-transition: background-color 0.2s, border-color 0.2s;
+    -ms-transition: background-color 0.2s, border-color 0.2s;
+    transition: background-color 0.2s, border-color 0.2s;
+    float:none !important;
+    transition: all 0.2s ease-in 0s;
+}
+.tp-bullets.simplebullets .bullet.last {
+    margin-right: 0px
+}
+.tp-bullets.simplebullets .bullet:hover,
+.tp-bullets.simplebullets .bullet.selected {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background: #FF5555 !important;
+    width: 27px !important;
+    height: 7px !important;
+    border: 1px solid #FF5555 !important;
+    transition: all 0.2s ease-in 0s;
+}
+a.button-text {
+    font-size: 18px;
+    display: inline-block;
+    color: #fff;
+    padding: 17px 18px;
+    background: #EF5656;
+    font-family: 'montserratregular';
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.3s
+}
+a.button-text:hover {
+    background: #313131;
+    color: #fff
+}
+.tp-splitted {
+    font-weight: 700;
+}
+.tp-bannertimer {
+    display: none;
+}
+/*--------------------
+ 5. Product Area
+----------------------*/
+.product-area {
+    padding-bottom: 118px;
+}
+/*--------------------
+ 5.1 Product Top Area
+----------------------*/
+.product-top-area {
+    padding-top: 30px;
+}
+.product-text {
+    background: #FF5555 none repeat scroll 0 0;
+    bottom: 31px;
+    color: #fff;
+    height: 68px;
+    left: -11px;
+    opacity: 0.82;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    transform: rotate(-12deg);
+    width: 284px;
+    z-index: 9;
+}
+.single-product > a {
+    display: block;
+}
+.single-product, .blog-image, .product-left-banner, .product-center-top-banner, .product-center-bottom-banner, .product-right-banner, .r-sidebar-banner, .left-p-banner-image {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.single-product img, .blog-image img, .product-left-banner img, .r-sidebar-banner a img, .left-p-banner-image a img {
+    transition: all 0.3s ease 0s;
+}
+.single-product:before, .blog-image a::before, .product-left-banner a:before, .product-center-top-banner a:before, .product-center-bottom-banner a:before, .product-right-banner a:before, .r-sidebar-banner a:before, .left-p-banner-image a:before {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 100%;
+    bottom: 0;
+    color: #6f6f6f;
+    content: "";
+    font-family: FontAwesome;
+    display: inline-block;
+    font-size: 20px;
+    height: 50px;
+    left: 0;
+    line-height: 50px;
+    margin: auto;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    transform: scale(0.2);
+    transition: all 400ms cubic-bezier(1, -0.6, 0.57, -0.15) 0s;
+    visibility: hidden;
+    width: 50px;
+    z-index: 11;
+}
+.single-product:after, .blog-image a:after, .product-left-banner a:after, .product-center-top-banner a:after, .product-center-bottom-banner a:after, .product-right-banner a:after, .r-sidebar-banner a:after, .left-p-banner-image a:after {
+    background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotate(180deg) scale(0);
+    transition: all 0.3s ease 0s;
+}
+.single-product a:hover img, .blog-image a img:hover, .product-left-banner a img:hover, .product-center-top-banner img:hover, .product-center-bottom-banner img:hover, .product-right-banner img:hover,  .r-sidebar-banner img:hover, .left-p-banner-image img:hover {
+    transform: scale(1.1);
+}
+.single-product:hover::before, .blog-image a:hover:before, .product-left-banner a:hover:before, .product-center-top-banner a:hover:before, .product-center-bottom-banner a:hover:before, .product-right-banner a:hover:before, .r-sidebar-banner a:hover:before, .left-p-banner-image a:hover:before {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+}
+.single-product:hover::after, .blog-image a:hover:after, .product-left-banner a:hover:after, .product-center-top-banner a:hover:after, .product-center-bottom-banner a:hover:after, .product-right-banner a:hover:after, .r-sidebar-banner a:hover:after, .left-p-banner-image a:hover:after {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+.product-text > h4 {
+    font-size: 20px;
+    margin-bottom: 2px;
+    margin-top: 10px;
+}
+.product-text h5 {
+    font-size: 16px;
+}
+/*--------------------
+ 5.2 Product Top Carousel Area
+----------------------*/
+.product-carousel-area .col-md-4.single-product-items {
+    width: 100%;
+}
+.features-menu {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin: 56px 0 25px
+}
+.features-menu li {
+    border: 1px solid #ff5555;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 12.5px;
+    padding: 12px 13px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in 0s;
+    line-height: 16px;
+}
+.features-menu li a {
+    color: #303030;
+}
+.features-menu li:hover, .features-menu li.active {
+    background: #FF5555;
+    border: 1px solid #FF5555;
+}
+.features-menu li a:hover, .features-menu li a.active {
+    color: #fff !important;
+    text-decoration: none
+}
+.features-menu li.active > a {
+    color: #fff ;
+    text-decoration: none
+}
+.single-p-slide.owl-carousel.owl-loaded {
+    display: none;
+}
+.single-p-slide.owl-carousel.owl-loaded.active {
+    display: block;
+}
+.single-product-items {
+    position: relative;
+    overflow: hidden
+}
+.single-items { 
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ccc
+}
+.single-items a img, .p-right-image a img {
+    transition: all 0.5s ease-out 0s;
+    width: 100%;
+}
+.single-items a img.secondary-img, .p-right-image a img.secondary-img {
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.single-items:hover a img.secondary-img, .p-right-image:hover a img.secondary-img {
+    opacity: 1;
+}
+.single-items > a::before, .p-right-image > a::before {
+    background-color: transparent;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transition: all 0.4s ease-out 0s
+}
+.single-items:hover > a::before, .p-right-image:hover > a::before {
+    opacity: 1;
+    z-index: 9;
+}
+.product-hover {
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden
+}
+.product-links {
+    height: 100%;
+    padding: 72px 0;
+    position: absolute;
+    right: -52px;
+    top: 0;
+    transition: all 0.3s ease 0s;
+    z-index: 9999;
+}
+.product-links  a {
+    background: #FF5555; 
+    color: #fff; 
+    height: 35px; 
+    width: 35px; 
+    text-align: center; 
+    border-radius: 50%;
+    font-size: 14px;
+    transition: all 0.3s ease 0s;
+    display: table;
+    margin-bottom: 14px;
+    border: 1px solid transparent
+}
+.product-links  a:last-child {
+    margin-bottom: 0px;
+}
+.product-links  a  i {
+    display: table-cell;
+    vertical-align: middle;
+}
+.single-items:hover .product-links {
+    right: 12px; 
+}
+.product-hover a:hover {
+    background: #fff;
+    color: #FF5555;
+    transition: all 0.3s ease 0s
+}
+.p-bottom-cart {
+    position: absolute;
+    bottom: -100%;
+    left: 50%;
+    margin-left: -41px;
+    width: 82px;
+    height: 55px;
+    margin-left: -41px;
+    padding-top: 13px;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    z-index: 9999;
+    transition: all 0.3s ease 0s;
+}
+.p-bottom-cart a {
+    color: #fff; 
+}
+.p-bottom-cart:hover a {
+    color: #ff5555 !important;
+}
+a.hover-cart::before {
+    background: #ff5555 none repeat scroll 0 0;
+    border-radius: 100px 100px 36px 36px;
+    content: "";
+    height: 58px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 82px;
+    z-index: -1;
+}
+.p-bottom-cart:hover a.hover-cart::before {
+    background: #fff !important
+}
+.single-items:hover .p-bottom-cart {
+  bottom: 0;
+}
+.product-hover a.hover-cart:hover {
+    background: transparent;
+    color: #fff;
+}
+.product-info > h4 {
+    color: #303030;
+    font-family: "montserratregular";
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    margin-top: 16px;
+    text-align: center;
+}
+.product-info > h4 a {
+    color: #303030;
+}
+.product-info span {
+    font-size: 15px;
+    font-weight: 600;
+}
+.product-info span {
+    font-size: 15px;
+    font-family: 'montserratsemi_bold';
+    font-weight: 400
+}
+h4 span.line {
+    color: #6e6e6e;
+    font-family: "montserratregular";
+    font-size: 14px;
+    padding-left: 3%;
+    padding-right: 5%;
+    text-decoration: line-through;
+}
+.product-info a:hover {
+    color: #ff5555;
+}
+.product-rating {
+    font-size: 14px;
+    text-align: center;
+}
+.product-area .product-rating {
+    display: block;
+}
+.color {
+    color: #FF5555
+}
+.single-p-slide .owl-controls {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    transition: all 200ms ease 0s;
+    margin-top: 28px
+}
+.single-p-slide.owl-theme .owl-controls .owl-buttons div {
+    background: #ffffff none repeat scroll 0 0;
+    border: 1px solid #ff5555;
+    border-radius: 50%;
+    color: #ff5555;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 9.5px;
+    text-align: center;
+    opacity: 1;
+    width: 25px !important;
+    height: 25px !important;
+    padding: 0;
+}
+.single-p-slide.owl-theme .owl-controls .owl-buttons div:hover {
+    background: #ff5555;
+    color: #fff
+}
+/*--------------------
+ 6. Product Banner Area
+----------------------*/
+.product-left-banner .banner-left-text, .home-two .banner-center-top-text, .home-two .banner-center-bottom-text, .home-two .banner-right-text {
+    color: #ffffff;
+    height: 100%;
+    left: 0;
+    padding: 8.5% 8.5% 0 0;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+    width: 100%;
+}
+.product-left-banner > a {
+    display: block
+}
+.banner-left-text h2 {
+    color: #ff5555;
+    font-family: "montserratsemi_bold";
+    font-size: 45px;
+    text-align: right;
+    z-index: 9999;
+    letter-spacing: 3px;
+}
+.banner-left-text span {
+    display: block;
+    font-family: 'montserratbold'
+}
+h2 span.padding {
+    padding-right: 40px;
+}
+.product-left-banner.right {
+}
+.product-left-banner.right h2 {
+  text-align: left;
+}
+.product-left-banner.right .banner-left-text {
+  padding: 20px 0 0 24px;
+}
+/*------------------------------
+ 7. Product Bottom Carousel Area
+--------------------------------*/
+.product-bottom-carousel-area {
+    padding-bottom: 56px;
+    padding-top: 65px;
+}
+.b-c-heading {
+    text-align: center;
+}
+.b-c-heading h1 {
+    background: #ff5555 none repeat scroll 0 0;
+    border: 1px solid #ff5555;
+    color: #ffffff;
+    display: inline-block;
+    font-family: "montserratregular";
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 26px;
+    padding: 11px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 18px;
+}
+.product-bottom-carousel-area .product-rating {
+    display: block;
+}
+/*------------------------------
+ 8. Blog Brand Area
+--------------------------------*/
+.blog-brand-area {
+  padding-top: 63px;
+}
+/*--------------------
+    8.1 Blog Area
+----------------------*/
+.blog-title h2, .brand-title h2, .about-text h2, .social-text h2, .news-text h2, .hot-p-title h2 {
+    background: #ff5555 none repeat scroll 0 0;
+    border: 1px solid #ff5555;
+    color: #ffffff;
+    display: inline-block;
+    font-family: "montserratregular";
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    padding: 12px 22px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 18px;
+}
+.blog-image img {
+    display: block;
+    position: relative;
+}
+.blog-image {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    display: block
+}
+.blog-image .date {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 100%;
+    color: #ff5555;
+    display: inline-table;
+    font-weight: 500;
+    height: 65px;
+    position: absolute;
+    right: 7px;
+    text-align: center;
+    top: 10px;
+    width: 65px;
+}
+.date > h2 {
+    display: table-cell;
+    font-size: 14px;
+    margin: 0;
+    vertical-align: middle;
+    font-family: 'montserratsemi_bold'
+}
+.date span {
+    display: block;
+    font-size: 30px;
+}
+.blog-text {
+    font-family: "montserratlight";
+    line-height: 24px;
+}
+.blog-text h3 {
+    font-family: "montserratregular";
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    margin-top: 5px;
+    transition: all 0.3s ease 0s;
+}
+.blog-text h3 a{
+    color: #ff5555;
+    text-decoration: none
+}
+.blog-text h3 a:hover {
+    color: #303030;
+}
+.post_info {
+    padding: 8px 0 10px 0;
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    margin-top: 12px;
+}
+.post_info p {
+    display: inline-block;
+    font-size: 12px;
+}
+.post_info i {
+    font-size: 16px;
+    padding: 0 5px;
+}
+.post_info p:first-child i {
+    padding-left: 0;
+}
+.post_info a {
+    color: #6e6e6e;
+}
+.post_info a:hover {
+    color: #303030;
+}
+/*--------------------
+    8.2 Brand Area
+----------------------*/
+.brand-items .col-md-4:nth-child(7) .single-brand, .brand-items .col-md-4:nth-child(8) .single-brand, .brand-items .col-md-4:nth-child(9) .single-brand {
+    margin-bottom: 0;
+}
+.single-brand {
+    border: 1px solid #cccccc;
+    display: inline-table;
+    height: 70px;
+    margin-bottom: 19.4px;
+    overflow: hidden;
+    padding: 9px 18px !important;
+    text-align: center;
+    width: 100%;
+}
+.single-brand a {
+    display: table-cell;
+    vertical-align: middle;
+}
+.single-brand img {
+    width: 100%; 
+}
+/*--------------------
+ 9. Service Area
+----------------------*/
+.service-area {
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 65px;
+    padding-top: 52px;
+}
+.single-service {
+    float: left;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    text-align: center;
+    width: 20%;
+    padding: 0 15px;
+    font-family: 'montserratlight';
+}
+.service-icon {
+    display: table;
+    height: 35px;
+    margin: 0 auto;
+    width: 47px;
+    margin-bottom: 18px;
+}
+.service-tablecell {
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+.single-service > h4 {
+    color: #303030;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+/*------------------------------
+ 10. Social Area
+--------------------------------*/
+.social-area {
+    padding: 36px 0;
+    border-bottom: 1px solid #CCCCCC
+}
+.about-text {
+    font-family: 'montserratlight';
+}
+.social-icons > a {
+    border: 1px solid #8a8a8a;
+    color: #6e6e6e;
+    display: inline-table;
+    font-size: 18px;
+    height: 40px;
+    margin-right: 15px;
+    text-align: center;
+    width: 40px;
+    transition: 0.3s
+}
+.social-icons > a:hover {
+    background: #ff5555;
+    color: #fff;
+    border: 1px solid #ff5555;
+}
+.social-icons a i {
+    display: table-cell;
+    vertical-align: middle;
+}
+.news-form > form {
+    position: relative;
+}
+.news-form input {
+    border: 1px solid #8a8a8a;
+    font-size: 12px;
+    height: 40px;
+    padding-left: 10px;
+    width: 100%;
+}
+.news-form button {
+    background-color: #ef5656;
+    border: medium none;
+    color: #fffdfd;
+    font-size: 17px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    padding: 0 8px;
+    transition: 0.3s;
+    top: 0
+}
+.news-form button:hover {
+    background-color: #303030
+}
+/*------------------------------
+ 11. Footer Widget Area
+--------------------------------*/
+.footer-widget-area {
+    border-bottom: 1px solid #CCCCCC;
+    padding: 40px 0;
+}
+.contact-info {
+    display: inline-block;
+    font-family: "montserratlight";
+    font-size: 13px;
+    line-height: 22px;
+    margin-top: 26px;
+}
+.bottom-logo {
+    padding-bottom: 4px;
+}
+.contact-info > h4 {
+    color: #303030;
+    font-family: "montserratregular";
+    font-size: 16px;
+    margin-bottom: 8px
+}
+.single-footer > h4 {
+    color: #303030;
+    font-family: "montserratregular";
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 19px;
+    text-transform: uppercase
+}
+ul.s-f-widget {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.s-f-widget li a, .single-footer.right .s-f-widget li {
+    border-bottom: 1px solid #cfcfcf;
+    color: #6e6e6e;
+    display: block;
+    padding-bottom: 17px;
+    padding-top: 17px;
+    line-height: 16px
+}
+.s-f-widget li:first-child a, .single-footer.right .s-f-widget li:first-child {
+    padding-top: 0;
+}
+.s-f-widget li:last-child a {
+    border-bottom: none;
+    padding-bottom: 0
+}
+.s-f-widget > li span {
+    float: right;
+}
+.single-footer.right ul.s-f-widget li:last-child {
+    border: 0 none;
+}
+.payment-image {
+    float: right;
+    padding-top: 53px;
+}
+.payment-image img {
+    width: 100%
+}
+ul.s-f-widget li a:hover {
+    color: #ef5656;
+}
+/*-----------------------
+ 12. Footer Area
+-------------------------*/
+.footer-area {
+    color: #303030;
+    font-family: "raleway";
+    font-size: 13px;
+    font-weight: 400;
+    padding: 25px 0;
+}
+.footer-left a {
+    color: #ff5555;
+    padding-left: 5px;
+}
+.footer-right ul#footer-menu {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+.footer-right ul#footer-menu li {
+    display: inline-block;
+}
+.footer-right ul#footer-menu li a {
+    display: block;
+    color: #303030;
+    border-right: 1px solid #303030;
+    margin-right: 12px;
+    padding-right: 12px;
+}
+.footer-right ul#footer-menu li a:hover {
+    color: #ff5555
+}
+.footer-right ul#footer-menu li:last-child a {
+    border-right: none;
+    margin-right: 0;
+    padding-right: 0;
+}
+/*----------------------------------------------
+ 13. Homepage Two Start
+------------------------------------------------*/
+.home-two .header-main-area, .home-three .header-main-area  {
+    border-bottom: 0px;
+}
+/*--------------------------
+ 13.1 Homepage Two Left Sidebar
+----------------------------*/
+.home-two .col-md-3.left-sidebar {
+    margin-top: -49px;
+}
+.home-two .left-sidebar.col-md-3 {
+    padding-right: 0;
+    position: relative;
+}
+.home-two ul.l-sidebar {
+    background: #ffffff none repeat scroll 0 0;
+    left: 15px;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: calc(100% - 15px);
+    z-index: 999;
+}
+ul.l-sidebar > li {
+    display: block;
+    font-family: "montserratregular";
+    font-size: 14px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.main-slider-area .l-sidebar li:first-child {
+    border: 0;
+}
+ul.l-sidebar > li > a {
+    display: block;
+    color: #6e6e6e;
+    padding: 13.4px 16px;
+    display: block;
+    border-bottom: 1px solid #ccc
+}
+.show-submenu.submenu-active, ul.l-sidebar > li:hover > a {
+    color: #ff5555;
+}
+.left-sidebar-title {
+    background-color: #303030 !important;
+    border: 0 none !important;
+    color: #ffffff !important;
+    font-family: "montserratsemi_bold" !important;
+    font-size: 16px;
+    padding: 13px 16px 13px !important;
+    text-transform: uppercase;
+}
+.left-sidebar-title img {
+    float: right;
+}
+.left-sidebar-title i {
+    padding-right: 9px !important;
+}
+ul.l-sidebar li a i.fa-caret-right {
+    color: #6E6E6E;
+    font-size: 22px;
+    display: inline-block;
+    float: right;
+    padding-right: 5px;
+}
+.rotate {
+    transition: 0.3s;
+}
+ul.l-sidebar > li > a.submenu-active {
+    display: block;
+    position: relative;
+}
+ul.l-sidebar > li > a.submenu-active i.rotate {
+    transform: rotate(90deg)
+}
+ul.l-sidebar li a.submenu-active:after {
+    background: #FF5555 none repeat scroll 0 0;
+    content: "";
+    height: 4px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+.submenu {
+    overflow:hidden;
+    max-height: 0;
+    transition: max-height 0.25s ease-out;
+}
+.submenu-active {
+    display:block;
+    color:#FFFFFF;
+    max-height: 600px !important;
+    transition: max-height 0.75s ease-in;
+}
+ul.submenu {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+ul.submenu li {
+    display: block;
+}
+ul.submenu li a {
+    color: #6a6a6a;
+    display: block;
+    padding: 12px 0 12px 30px !important;
+}
+ul.submenu li:first-child a {
+    padding-top: 18px;
+}
+ul.submenu li:last-child a {
+    margin-bottom: 18px
+}
+.left-sub-navbar.submenu.submenu-active {
+    border-bottom: 1px solid #ccc;
+}
+/*-------------------------
+ 13.2 Homepage Two Mainmenu
+--------------------------*/
+.home-two .mainmenu ul#nav {
+    position: relative;
+    z-index: 99996;
+    background-color: #505050;
+    text-align: inherit    
+}
+.mainmenu-area .col-md-9.col-md-offset-3 {
+    padding-left: 0;
+}
+.home-two .mainmenu ul#nav li {
+    margin: 0;
+}
+.home-two .mainmenu ul#nav li a {
+    color: #ffffff;
+    padding: 14px;
+    position: relative;
+    transform: translateZ(0px);
+}
+.home-two .mainmenu ul#nav li ul.sub-menu li a, .home-two .mainmenu ul#nav li .megamenu span a {
+    background: none !important
+}
+.home-two .mainmenu ul#nav li a::before {
+    background: rgba(49, 49, 49, 1) none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scaleY(0);
+    transform-origin: 50% 50% 0;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+    z-index: -1;
+}
+.home-two .mainmenu ul#nav li a ul.sub-menu li a, .home-two .mainmenu ul#nav li .megamenu span a {
+    background: none !important;
+}
+.home-two .mainmenu ul#nav li ul.sub-menu li a:before, .home-two .mainmenu ul#nav li .megamenu span a:before {
+    background: transparent !important;
+}
+.home-two ul.sub-menu:after, .home-two ul#nav li .megamenu:after, .home-three ul.sub-menu:after, .home-three ul#nav li .megamenu:after {
+    border: none !important;
+}
+.home-two .mainmenu ul#nav li a:hover::before, .home-two .mainmenu ul#nav li a:focus::before, .home-two .mainmenu ul#nav li a:active::before, .home-two .mainmenu ul#nav > li:hover > a::before, .home-three .mainmenu ul#nav > li:hover > a::before {
+    transform: scaleY(1);
+}
+.home-two ul.sub-menu, .home-two .megamenu, .home-three ul.sub-menu, .home-three .megamenu {
+    background: rgba(49, 49, 49, 1) none repeat scroll 0 0 !important;
+}
+.home-two .mainmenu ul#nav li ul.sub-menu > li:hover:after, .home-two .mainmenu ul#nav li .megamenu span:hover:after {
+    background: #f7f7f7
+}
+.home-two .mainmenu ul#nav li ul.sub-menu > li a:hover, .home-two .megamenu span a:hover {
+    color: #f7f7f7 !important;
+    padding-left: 3px !important;
+}
+.home-two .mega-title::after {
+    background: none
+}
+.home-two .mainmenu ul#nav li .megamenu {
+    width: 385px;
+}
+.home-two .mainmenu ul#nav li.right-megamenu .megamenu {
+  width: 485px;
+}
+.mainmenu ul#nav li .megamenu span > a {
+    margin: 0 16px;
+}
+/*------------------------
+ 13.3 Homepage Two Slider
+--------------------------*/
+.home-two .main-slider-area .col-md-6 {
+    padding-right: 0;
+}
+.home-two .slider-area {
+    padding-left: 15px;
+    padding-top: 42px;
+}
+.home-two .tparrows, .home-three .tparrows  {
+    height: 48px !important;
+    width: 25px !important;
+}
+.home-two .tp-leftarrow, .home-three .tp-leftarrow  {
+    background: #5C5B5B url("img/left-arrow.png") no-repeat scroll center center !important;
+}
+.home-two .tp-leftarrow:hover, .home-three .tp-leftarrow:hover {
+    background: #000 url("img/left-arrow.png") no-repeat scroll center center !important;
+}
+.home-two .tp-rightarrow, .home-three .tp-rightarrow {
+    background: #5C5B5B url("img/right-arrow.png") no-repeat scroll center center !important;
+}
+.home-two .tp-rightarrow:hover, .home-three .tp-rightarrow:hover {
+    background: #000 url("img/right-arrow.png") no-repeat scroll center center !important;
+}
+.home-two a.button-text, .home-three a.button-text {
+    padding: 12px 18px;
+}
+/*-------------------------------
+ 13.4 Homepage Two Rightside Banner
+---------------------------------*/
+.home-two .right-side-banner {
+    padding-top: 42px;
+}
+.home-two .right-single-banner:last-child {
+    margin-bottom: 0;
+}
+.home-two .right-single-banner {
+    margin-bottom: 10px;
+}
+.right-single-banner {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.right-single-banner a:before {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 100%;
+    bottom: 0;
+    color: #6f6f6f;
+    content: "";
+    font-family: FontAwesome;
+    display: inline-block;
+    font-size: 20px;
+    height: 50px;
+    left: 0;
+    line-height: 50px;
+    margin: auto;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    transform: scale(0.2);
+    transition: all 400ms cubic-bezier(1, -0.6, 0.57, -0.15) 0s;
+    visibility: hidden;
+    width: 50px;
+    z-index: 11;
+}
+.right-single-banner a:after {
+    background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotate(180deg) scale(0);
+    transition: all 0.3s ease 0s;
+}
+.right-single-banner a:hover:before {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+}
+.right-single-banner a:hover:after {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+/*---------------------------
+ 13.5 Homepage Two Service
+-----------------------------*/
+.home-two .service-area {
+    border-bottom: medium none;
+    padding: 54px 0 50px 0;
+}
+/*-------------------------------
+ 13.6 Homepage Two Product Carousel
+--------------------------------*/
+.home-two .product-area {
+    padding-bottom: 44px;
+}
+.home-two .p-carousel-title {
+    display: inline-block;
+    float: left;
+}
+.home-two .p-carousel-title > h2 {
+    color: #303030;
+    font-family: "montserratregular";
+    font-size: 20px;
+    margin-bottom: 0;
+    padding: 10px 15px;
+    position: relative;
+}
+.home-two .p-carousel-title > h2:after {
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    width: 100%;
+    height: 5px;
+    background: #ff5555;
+    content: "";
+}
+.home-two .features-menu {
+    display: block;
+    float: right;
+    list-style: outside none none;
+    margin: 0 100px 0 0;
+    padding: 0;
+    text-align: right;
+    border-left: 1px solid #ccc
+}
+.home-two .features-menu li {
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in 0s;
+    position: relative;
+}
+.home-two .features-menu li.active::before, .home-two .features-menu li.hover::before {
+    background: #ff5555;
+    content: "";
+    height: 1px;
+    left: 0px;
+    position: absolute;
+    top: -1px;
+    width: 100%;
+}
+.home-two .features-menu li.active::after, .home-two .features-menu li.hover::after {
+    background: #ff5555;
+    content: "";
+    height: 1px;
+    left: 0px;
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+}
+.home-two .features-menu li a {
+    border-right: 1px solid #cccccc;
+    color: #303030;
+    display: block;
+    padding: 13px 21px;
+    position: relative;
+}
+.home-two .features-menu li.active a::before, .home-two .features-menu li.hover a::before {
+    background: #ff5555 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: -1px;
+    width: 1px;
+}
+.home-two .features-menu li.active a::after, .home-two .features-menu li.hover a::after {
+    background: #ff5555 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 100%;
+    position: absolute;
+    left: -1px;
+    width: 1px;
+}
+.home-two .features-menu li:hover, .features-menu li.active {
+    background: #FF5555;
+}
+.home-two .features-menu li a:hover, .features-menu li a.active {
+    color: #fff !important;
+    text-decoration: none
+}
+.home-two .features-menu li.active > a {
+    color: #fff ;
+    text-decoration: none
+}
+.single-p-slide-homepage-two.owl-carousel.owl-loaded {
+    display: none;
+}
+.single-p-slide-homepage-two.owl-carousel.owl-loaded.active {
+    display: block;
+}
+.single-p-slide-homepage-two .owl-controls {
+    color: #fff;
+    height: 26px;
+    margin: 0;
+    position: absolute;
+    right: 24px;
+    top: -70px;
+    transition: all 200ms ease 0s;
+}
+.single-p-slide-homepage-two.owl-theme .owl-controls .owl-buttons div {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ff5555;
+    border-radius: 50%;
+    color: #ff5555;
+    display: inline-block;
+    font-size: 16px;
+    height: 25px !important;
+    margin: 0 8px;
+    text-align: center;
+    width: 25px !important;
+    opacity: 1;
+    padding: 0;
+}
+.single-p-slide-homepage-two.owl-theme .owl-controls .owl-buttons div:hover {
+    color: #fff;
+    background: #ff5555
+}
+/*-------------------------------
+ 13.7 Homepage Two Product Banner
+--------------------------------*/
+.home-two .product-left-banner {
+    height: auto
+}
+.home-two .product-banner-area {
+    padding-bottom: 50px;
+}
+.home-two .product-center-bottom-banner {
+    margin-top: 15px;
+}
+.product-center-top-banner > a, .product-center-bottom-banner > a, .product-left-banner > a, .product-right-banner > a   {
+    display: block;
+}
+.home-two .product-left-banner img, .home-two .product-center-top-banner img, .home-two .product-center-bottom-banner img, .home-two .product-right-banner img {
+    transition: 0.3s;
+}
+.home-two .product-left-banner .banner-left-text, .home-two .banner-center-top-text, .home-two .banner-center-bottom-text, .home-two .banner-right-text {
+    padding: 0;
+}
+.product-left-banner:hover img, .home-two .product-center-top-banner:hover img, .home-two .product-center-bottom-banner:hover img, .home-two .product-right-banner:hover img {
+    transform: scale(1.05);
+}
+.home-two .banner-left-text > h2 {
+    font-size: 26px;
+    font-weight: 400;
+    padding-top: 26px;
+    padding-right: 24px;
+    z-index: 99;
+}
+.home-two .banner-center-top-text > h2 {
+    font-size: 26px;
+    color: #303030;
+    padding-top: 28px;
+    padding-left: 24px;
+    font-weight: 400;
+    z-index: 99;
+}
+.home-two .banner-center-top-text > h2 span, .home-two .banner-center-bottom-text span, .home-two .banner-right-text > h2 span  {
+    display: block;
+}
+.banner-center-bottom-text h2 {
+    text-align: right;
+    padding-top: 24px;
+    padding-right: 14px;
+    z-index: 999;
+    position: relative;
+    transition: 0.3s
+}
+.banner-right-text h2 {
+    color: #303030;
+    font-size: 26px;
+    font-weight: 400;
+    padding-left: 30px;
+    padding-top: 42px;
+    z-index: 99;
+}
+.banner-right-text > h2 span.l-text {
+    color: #ff5555;
+    padding-right: 25px;
+    text-align: right;
+    transition: 0.3s
+}
+.home-two h2 span.l-text {
+    font-size: 36px;
+}
+.product-opacity {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    opacity: .7;
+    z-index: 9;
+    border: 5px solid #fff
+}
+/*-------------------------------
+ 13.8 Homepage Two Hot Product
+---------------------------------*/
+.home-two .hot-p-items .col-md-4 {
+  width: 100%;
+}
+.hot-image {
+    float: left;
+    padding-right: 17px;
+}
+.sigle-hot-p {
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+.sigle-hot-p:last-child {
+    padding-bottom: 0;
+}
+.hot-text h4 a {
+    color: #303030;
+    font-family: "montserratregular";
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.hot-text h4 {
+    margin-bottom: 10px
+}
+.hot-text h4 span {
+    display: block;
+}
+.hot-text {
+    color: #6e6e6e;
+    font-family: "montserratlight";
+    font-size: 13px;
+}
+a.hot-button {
+    background: #ff5555 none repeat scroll 0 0;
+    color: #ffffff;
+    display: inline-block;
+    font-family: "montserratsemi_bold";
+    font-size: 11px;
+    line-height: 12px;
+    margin-top: 11px;
+    padding: 12px 10px;
+    transition: all 0.3s ease 0s;
+}
+a.hot-button:hover {
+    background: #303030;
+}
+.hot-text h4 a:hover {
+    color: #ff5555;
+}
+/*-------------------------------
+ 13.9 Homepage Two Blog and Brand
+---------------------------------*/
+.home-two .blog-items .col-md-6 {
+  width: 100%;
+}
+.home-two .blog-title, .home-two .brand-title, .hot-p-title, .p-feature-title-menu {
+    border: 1px solid #ccc;
+    margin-bottom: 35px;
+}
+.home-two .blog-title h2, .home-two .brand-title h2, .home-two .hot-p-title h2 {
+    background: transparent none repeat scroll 0 0;
+    border: 0 none;
+    color: #303030;
+    margin-bottom: 0;
+    position: relative;
+}
+.home-two .blog-title > h2::after, .home-two .brand-title > h2::after, .home-two .hot-p-title > h2:after {
+    background: #ff5555 none repeat scroll 0 0;
+    content: "";
+    height: 4px;
+    left: -1px;
+    position: absolute;
+    top: -1px;
+    width: 100%;
+}
+.home-two .blog-items .owl-controls, .home-two .brand-items .owl-controls, .home-two .hot-p-items .owl-controls {
+    margin: 0;
+    position: absolute;
+    right: 26px;
+    top: -71px;
+}
+.home-two .brand-items .owl-controls {
+    top: -71px;
+    position: absolute;
+    margin: 0;
+    right: 11px !important;
+}
+.home-two .blog-items.owl-theme .owl-controls .owl-buttons div, .home-two .brand-items.owl-theme .owl-controls .owl-buttons div, .home-two .hot-p-items.owl-theme .owl-controls .owl-buttons div {
+    border: 1px solid #ff5555;
+    border-radius: 50%;
+    color: #ff5555;
+    display: inline-table;
+    font-size: 15px;
+    height: 22px !important;
+    margin: 3px 9px;
+    opacity: 1;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    width: 22px !important;
+    background: #ffffff none repeat scroll 0 0;
+    padding: 0;
+}
+.home-two .blog-items.owl-theme .owl-controls .owl-buttons div i, .home-two .brand-items.owl-theme .owl-controls .owl-buttons div i, .home-two .hot-p-items.owl-theme .owl-controls .owl-buttons div i {
+    display: table-cell;
+    vertical-align: middle
+}
+.home-two .blog-items.owl-theme .owl-controls .owl-buttons div:hover, .home-two .brand-items.owl-theme .owl-controls .owl-buttons div:hover, .home-two .hot-p-items.owl-theme .owl-controls .owl-buttons div:hover {
+    background: #ff5555;
+    transition: all 200ms ease 0s;
+    border: 1px solid transparent;
+    color: #fff
+}
+.home-two .blog-brand-area {
+    padding-bottom: 50px;
+}
+.home-two .single-brand {
+    margin-bottom: 26px;
+    padding: 6px 17px !important;
+    width: 100%;
+}
+.home-two .social-area {
+    border-top: 1px solid #ccc;
+}
+/*---------------------------------------------
+ 14. Homepage Three Start
+-----------------------------------------------*/
+/*-----------------------------
+ 14.1 Homepage Three mainmenu
+-------------------------------*/
+.home-three .mainmenu-area {
+    padding-bottom: 33px;
+}
+.home-three .mainmenu ul#nav {
+    background: #303030 none repeat scroll 0 0;
+    text-align: left;
+    padding-bottom: 1px
+}
+.home-three .mainmenu ul#nav li {
+    padding: 0;
+    margin: 0
+}
+.home-three .mainmenu ul#nav li a {
+    color: #ffffff;
+    padding: 13.5px 23px;
+    backface-visibility: hidden;
+    display: inline-block;
+    position: relative;
+    transform: translateZ(0px);
+    transition-duration: 0.3s;
+    transition-property: color;
+    vertical-align: middle;
+}
+.home-three .mainmenu ul#nav li a:before {
+    background: #ff5555;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scaleY(0);
+    transform-origin: 50% 0 0;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+    z-index: -1;
+}
+.home-three .mainmenu ul#nav li a:hover:before, .home-three ul.sub-menu:hover .mainmenu ul#nav li a:active:before {
+    transform: scaleY(1);
+}
+.home-three .mainmenu ul#nav li a:hover {
+    color: #fff
+}
+.home-three .mainmenu ul#nav li ul.sub-menu li a:before, .home-three .mainmenu ul#nav li .megamenu span a:before {
+    background: none
+}
+/*------------------------------
+ 14.2 Homepage Three Left Sidebar
+-------------------------------*/
+.home-three ul.l-sidebar, .blog-main ul.l-sidebar {
+    background: #fff none repeat scroll 0 0;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.home-three .left-sidebar-title, .blog-main .left-sidebar-title {
+    background-color: #303030 !important;
+    font-family: "montserratsemi_bold" !important;
+    padding: 13px 15px !important;
+    text-transform: uppercase;
+}
+.home-three .left-sidebar-title a i, .blog-main .left-sidebar-title a i {
+    padding-right: 13px !important;
+}
+.home-three ul.l-sidebar > li, .blog-main ul.l-sidebar > li {
+    border: 0
+}
+.home-three ul.l-sidebar > li > a, .blog-main ul.l-sidebar > li > a {
+    border-bottom: 1px solid #E1E1E1;
+    color: #565656;
+    padding: 12.8px 0 12.8px 50px;
+    text-transform: uppercase;
+    font-family: 'montserratlight';
+    position: relative
+}
+.home-three ul.l-sidebar i.fa.fa-plus, .blog-main ul.l-sidebar i.fa.fa-plus {
+    color: #828282;
+    left: 24px;
+    position: absolute;
+    top: 16px;
+}
+.home-three .left-sub-navbar a, .blog-main .left-sub-navbar a {
+    font-family: 'montserratlight';
+    padding-left: 45px !important;
+}
+.home-three ul.l-sidebar {
+    background: #ededed none repeat scroll 0 0;
+    left: 15px;
+    position: absolute;
+    top: 0;
+    width: calc(100% - 30px);
+    z-index: 9;
+}
+/*-------------------------------------
+ 14.3 Homepage Three Middle services-all
+--------------------------------------*/
+.home-three .single-service-middlde > h4 {
+    color: #303030;
+    font-family: "montserratsemi_bold";
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+.home-three .single-service-middlde {
+    background: #dbdbdb none repeat scroll 0 0;
+    color: #565656;
+    font-family: "montserratultra_light";
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 6px;
+    padding: 19.1px 0;
+    text-align: center;
+}
+.home-three .single-service-middlde > img {
+    padding-bottom: 14px;
+}
+.home-three .single-service-middlde:last-child {
+    margin-bottom: 0;
+}
+/*-------------------------------------
+ 14.4 Homepage Three Product Carousel
+--------------------------------------*/
+.home-three .product-carousel-rightsidebar-area {
+    padding-top: 46px
+}
+.single-p-slide-homepage-three .col-md-4 {
+    width: 100%;
+}
+.home-three .single-product-items {
+    border: 1px solid #cccccc;
+    padding-bottom: 18px;
+    margin-bottom: 46px;
+}
+.home-three .single-items {
+    border-bottom: 1px solid #cccccc;
+    border-right: 0 !important;
+    border-left: 0 !important;
+    border-top: 0 !important;
+}
+.home-three .p-carousel-title > h2, .home-three .brand-title-home-three h2 {
+    color: #ef5656;
+    font-family: "montserratregular";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 30px;
+    text-transform: uppercase
+}
+.home-three .timer h4 span.counting {
+    font-size: 18px;
+    font-family: 'montserratbold';
+    font-weight: 400
+} 
+.home-three .product-rating {
+    text-align: center;
+    display: block;
+}
+.home-three .timer h4 {
+    margin: 0 6.5%;
+    display: inline-block;
+    float: left;
+    text-align: center;
+}
+.home-three .timer {
+    position: relative;
+    padding-top: 26px;
+    margin-top: 18px
+}
+.home-three .timer:after {
+    background: #ccc;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 86%;
+    content: "";
+    height: 1px;
+    left: 7%;
+}
+.home-three .timer h4 span {
+    font-family: 'montserratlight';
+    color: #303030;
+    display: block;
+    font-size: 14px
+}
+.single-p-slide-homepage-three .owl-controls, .home-three .home-three-brand-area .owl-controls, .fearure-carousel-home-three .owl-controls, .blog-items-three .owl-controls {
+    margin: 0;
+    position: absolute;
+    right: 9px;
+    top: -47px;
+}
+.single-p-slide-homepage-three.owl-theme .owl-controls .owl-buttons div, .home-three .home-three-brand-area .owl-controls .owl-buttons div, .fearure-carousel-home-three.owl-theme .owl-controls .owl-buttons div, .blog-items-three.owl-theme .owl-controls .owl-buttons div {
+    background: #303030 none repeat scroll 0 0;
+    color: #ffffff;
+    display: inline-table;
+    font-size: 15px;
+    height: 20px !important;
+    margin-left: 21px;
+    opacity: 1;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    width: 28px;
+    border-radius: 0;
+}
+.single-p-slide-homepage-three.owl-theme .owl-controls .owl-buttons div i, .home-three .home-three-brand-area.owl-theme .owl-controls .owl-buttons div i, .fearure-carousel-home-three.owl-theme .owl-controls .owl-buttons div i, .blog-items-three.owl-theme .owl-controls .owl-buttons div i {
+    display: table-cell;
+    vertical-align: middle;
+}
+.single-p-slide-homepage-three.owl-theme .owl-controls .owl-buttons div:hover, .home-three .home-three-brand-area.owl-theme .owl-controls .owl-buttons div:hover, .fearure-carousel-home-three.owl-theme .owl-controls .owl-buttons div:hover, .blog-items-three.owl-theme .owl-controls .owl-buttons div:hover {
+    background: #EF5656
+}
+.home-three .product-info span {
+    font-weight: 400
+}
+.home-three .product-info > h4 {
+    text-align: center;
+    margin-bottom: 9px
+}
+.home-three h4 span.line {
+    padding-left: 30px;
+    padding-right: 12px;
+}
+/*-------------------------------------
+ 14.5 Homepage Three Feature Carousel
+--------------------------------------*/
+.home-three .mainmenu ul#nav li a {
+    font-size: 16px;
+}
+.fearure-carousel-home-three .col-md-4 {
+    width: 100%;
+}
+.feature-carousel-text > h4 a {
+    color: #303030;
+    font-family: "montserratregular";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+.feature-carousel-text > h4 a:hover {
+    color: #ff5555;   
+}
+.feature-carousel-image {
+    display: inline-block;
+    float: left;
+    padding-right: 20px;
+}
+.feature-carousel-image > a {
+    display: block;
+}
+.single-feature-carousel {
+    background: #ededed none repeat scroll 0 0;
+    display: block;
+    font-size: 18px;
+    overflow: hidden;
+    padding: 9px 12px;
+}
+.feature-carousel-text span {
+    color: #ff5555;
+    display: block;
+    font-family: "montserratregular";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+.f-rating {
+    font-size: 14px;
+}
+.single-feature-carousel:first-child {
+    margin-bottom: 35px;
+}
+span.l-through {
+    color: #6e6e6e !important;
+    display: inline-block;
+    font-size: 15px;
+    padding-right: 20px;
+    text-decoration: line-through;
+    float: left;
+}
+/*-------------------------------------
+ 14.6 Homepage Three Brand
+--------------------------------------*/
+.home-three .brand-home-three .col-md-4, .brand-home-three .col-md-4 {
+    width: 100%;
+}
+.home-three-brand-area {
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 45px;
+    padding-top: 50px;
+}
+.home-three .single-brand, .shop-main .single-brand {
+    margin: 0;
+    padding: 11px 22px !important;
+}
+/*-------------------------------------
+ 14.7 Homepage Three Right Sidebar
+--------------------------------------*/
+.right-sidebar-title > h2 {
+    background: #ef5656 none repeat scroll 0 0;
+    color: #ffffff;
+    font-family: "montserratregular";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 21px;
+    padding: 14px 0;
+    text-align: center;
+}
+.single-p-r-sidebar {
+    display: block;
+    margin-top: 22px;
+    overflow: hidden;
+}
+.p-right-image {
+    border: 1px solid #cccccc;
+    display: inline-block;
+    float: left;
+    margin-right: 13px;
+    position: relative
+}
+.p-right-image > a {
+    display: block;
+}
+.home-three ul.l-sidebar > li > a:hover, .blog-main ul.l-sidebar > li > a:hover {
+    color: #ff5555;
+}
+.p-right-text a {
+    color: #303030;
+    font-family: "montserratregular";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.p-right-text a:hover {
+    color: #EF5656;
+}
+.p-right-text a span {
+    display: block;
+    font-family: "montserratregular";
+}
+.p-right-text {
+    font-family: "montserratlight";
+    font-size: 13px;
+    line-height: 21px;
+}
+.p-right-text h4 {
+    margin-bottom: 6px;
+}
+.c-price {
+    color: #ef5656;
+    font-family: "montserratsemi_bold";
+    font-size: 18px;
+}
+.p-price {
+    padding-right: 11px;
+    padding-top: 10px;
+    text-decoration: line-through;
+}
+.p-right-text > p.price {
+    display: block;
+    padding-top: 6px;
+}
+.r-sidebar-banner {
+    display: block;
+    margin: 32px 0;
+    overflow: hidden;
+    position: relative;
+}
+.r-sidebar-banner > a {
+    display: block;
+}
+.r-sidebar-banner h2 {
+    color: #303030;
+    font-family: "montserratsemi_bold";
+    font-size: 40px;
+    height: auto;
+    left: 25px;
+    position: absolute;
+    top: 25px;
+    width: 100%;
+}
+.r-sidebar-banner h2 span {
+    display: block
+}
+.home-three .service-area {
+    padding-bottom: 28px;
+    padding-top: 23px;
+}
+.home-three .single-service, .blog-main .single-service {
+    padding: 0 15px;
+}
+
+.home-three .single-blog {
+    margin-top: 10px;
+}
+.right-sidebar-title.left > h2 {
+    text-align: left;
+    padding-left: 14px;
+}
+.blog-items-three .owl-controls {
+    right: 6px;
+    top: -54.5px;
+}
+.blog-items-three .owl-nav div {
+    margin-left: 9px !important;
+}
+/*----------------------------------------------
+ 14.8 Homepage Three Newsletter
+------------------------------------------------*/
+.newsletter-area {
+    background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+}
+.newsletter-image-text {
+    background: #faf8f9 url("img/newsletter.jpg") no-repeat scroll right top;
+    height: 633px;
+    left: 50%;
+    margin-left: -575px;
+    margin-top: -316.5px;
+    padding: 45px 58px 80px 82px;
+    position: absolute;
+    top: 50%;
+    width: 1150px;
+    z-index: 999;
+}
+.newsletter-image-text > h3 {
+    color: #252525;
+    font-family: "montserratsemi_bold";
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 29px;
+    margin-bottom: 24px;
+    margin-top: 83px;
+}
+.newsletter-image-text > h5 {
+    color: #4d4d4d;
+    font-family: "montserratregular";
+    font-size: 21px;
+    margin-bottom: 46px;
+}
+form .email input {
+    background: #fcfafb none repeat scroll 0 0;
+    border: 1px solid #cccccc;
+    color: #6e6e6e;
+    font-family: "montserratlight";
+    height: 54px;
+    padding: 10px 19px;
+    width: 432px;
+}
+form .send-mail input {
+    background: #ff5555 none repeat scroll 0 0;
+    border: medium none;
+    color: #ffffff;
+    font-family: "montserratregular";
+    font-size: 18px;
+    line-height: 17px;
+    margin-top: 24px;
+    padding: 12px 24px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+form .send-mail input:hover {
+    background: #303030 none repeat scroll 0 0;
+}
+.newsletter-image-text > h2 {
+    color: #ff5555;
+    font-family: "montserratsemi_bold";
+    font-size: 46px;
+    line-height: 38px;
+    margin-top: 48px;
+}
+.dont-show-text > p {
+    color: #6e6e6e;
+    display: inline-block;
+    font-family: "montserratlight";
+    font-size: 18px;
+    padding-left: 6px;
+}
+.newsletter-image-text > span {
+    background: #ff5555 none repeat scroll 0 0;
+    border: 3px solid #e1e1e1;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-table;
+    float: right;
+    height: 34px;
+    text-align: center;
+    width: 34px;
+}
+.newsletter-image-text span i {
+    color: #ffffff;
+    font-size: 16px;
+    display: table-cell;
+    vertical-align: middle
+}
+.hide {
+    display: none
+}
+.newsletter-open {
+    overflow: hidden
+}
+/*----------------------------------------------
+ 15. Shop Page Start
+------------------------------------------------*/
+.shop-main .single-product-items {
+    float: left;
+    width: 20%;
+    padding: 0 15px;
+    margin-top: 47px
+}
+.shop-main .shop-main-area {
+    padding-top: 11px;
+}
+.shop-main .single-items {
+    position: relative;
+}
+.shop-main .single-items .image-text {
+    color: #ffffff;
+    display: inline-block;
+    font-family: "montserratsemi_bold";
+    font-size: 12px;
+    left: 3px;
+    position: absolute;
+    top: 9px;
+    transform: rotate(-45deg);
+    z-index: 2;
+}
+.shop-main .single-items .image-text-bg {
+    border-right: 55px solid rgba(0, 0, 0, 0);
+    border-top: 55px solid #EF5656;
+    content: "";
+    display: block;
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 0;
+    z-index: 1;
+}
+/*----------------------------------------------
+ 16. Shop Left Sidebar Page Start
+------------------------------------------------*/
+.shop-left-sidebar-area {
+    padding-top: 68px;
+}
+.shop-main ul.l-sidebar.blog > li > a {
+    padding: 7px 0;
+    border: 0;
+    color: #303030 !important;
+    font-size: 14px !important;
+    font-family: 'montserratregular';
+    text-transform: uppercase
+}
+.shop-main ul.l-sidebar.blog > li > a.left-sidebar-title {
+    font-size: 16px !important;
+}
+.fa-minus.minus {
+    display: none
+}
+.submenu-active .fa-minus.minus {
+    display: block
+}
+.submenu-active .fa-plus.plus {
+    display: none
+}
+.shop-main .shop-left-sidebar-area .left-sidebar-title {
+    background-color: rgba(0, 0, 0, 0) !important;
+    margin-bottom: 5px;
+    padding: 0 0 14px !important;
+}
+.shop-main .left-sidebar-title a {
+    font-size: 16px;
+    color: #303030 !important;
+    line-height: 0px !important;
+}
+.shop-main ul.l-sidebar.blog {
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 32px;
+    margin-top: 2px;
+    padding-bottom: 10px;
+}
+.shop-main ul.l-sidebar > li {
+    border: 0
+}
+.shop-main ul.submenu li a {
+    color: #6e6e6e;
+    display: block;
+    padding: 6px !important;
+    font-size: 13px;
+    font-family: 'montserratlight'
+}
+.shop-main .left-sub-navbar li a i {
+    color: #6e6e6e;
+    font-size: 9px;
+    padding-right: 6px;
+}
+.shop-main ul.l-sidebar li a.submenu-active::after {
+    display: none
+}
+.shop-main .left-sub-navbar.submenu.submenu-active {
+    border-bottom: 0 none;
+}
+.shop-main ul.submenu li:last-child a {
+    margin-bottom: 0;
+}
+.shop-main .left-sidebar-title {
+    border-bottom: 1px solid #ccc
+}
+.widget-price h3 {
+    color: #303030;
+    font-family: "montserratregular";
+    font-size: 14px;
+    padding-top: 7px;
+    text-transform: uppercase;
+}
+.widget-price {
+    margin-bottom: 30px;
+}
+.price_filter {
+    padding-top: 22px;
+}
+.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all {
+    background: #dddddd none repeat scroll 0 0;
+    border: 1px solid rgba(0, 0, 0, 0);
+    height: 3px;
+}
+.price_filter .ui-slider-handle.ui-state-default.ui-corner-all {
+    background: #303030 none repeat scroll 0 0;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    border: none
+}
+.ui-slider-range.ui-widget-header.ui-corner-all {
+    background: #303030 none repeat scroll 0 0;
+    height: 3px;
+}
+.price_slider_amount > input {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color -moz-use-text-color #cccccc;
+    border-image: none;
+    border-style: none none solid;
+    border-width: 0 0 1px;
+    color: #6e6e6e;
+    display: block;
+    letter-spacing: 1px;
+    padding-bottom: 12px;
+    padding-top: 19px;
+    width: 100%;
+    word-spacing: 4px;
+}
+.colors span {
+    border: 1px solid #ffffff;
+    display: inline-block;
+    height: 15px;
+    margin: 14px 43px 0 0;
+    position: relative;
+    width: 15px;
+}
+.colors span:last-child {
+    margin-right: 0;
+}
+.colors span:before {
+    background: #d7d7d7 none repeat scroll 0 0;
+    content: "";
+    height: 17px;
+    left: -2px;
+    position: absolute;
+    top: -2px;
+    width: 17px;
+    z-index: -1;
+}
+.colors span:hover::after {
+    background: #d7d7d7 none repeat scroll 0 0;
+    content: "";
+    height: 21px;
+    left: -4px;
+    position: absolute;
+    top: -4px;
+    width: 21px;
+    z-index: -1;
+    transition: 0.3s
+}
+span.red {
+    background: #ff0000 none repeat scroll 0 0;
+}
+span.burgendy {
+    background: #9E0B0F none repeat scroll 0 0;
+}
+span.purple {
+    background: #92278F none repeat scroll 0 0;
+}
+span.pink {
+    background: #EC008C none repeat scroll 0 0;
+}
+span.blue {
+    background: #00AEEF none repeat scroll 0 0;
+}
+.widget-color, .widget-size {
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 28px;
+    padding-bottom: 16px;
+}
+.widget-size span {
+    border: 1px solid #b7b7b7;
+    border-radius: 2px;
+    display: inline-block;
+    height: 25px;
+    margin: 14px 30px 5px 0;
+    position: relative;
+    text-align: center;
+    width: 25px;
+    z-index: 1;
+}
+.size > span:last-child {
+    margin-right: 0;
+}
+.widget-size .size a {
+    color: #525151;
+    font-family: "montserratsemi_bold";
+    font-size: 12px;
+    text-align: center;
+}
+.widget-size span:hover:after {
+    border: 1px solid #B7B7B7;
+    content: "";
+    height: 27px;
+    left: -2px;
+    position: absolute;
+    top: -2px;
+    width: 27px;
+    z-index: -1;
+    border-radius: 2px;
+}
+.brand-list {
+    list-style: outside none none;
+    margin-top: 15px;
+    padding: 0;
+}
+.brand-list > li a {
+    color: #6e6e6e;
+    display: block;
+    font-family: "montserratlight";
+    font-size: 15px;
+    padding: 6px 0 6px 20px;
+    position: relative;
+}
+.brand-list > li a:hover {
+    color: #303030
+}
+.brand-list li a i.fa-circle {
+    color: #6e6e6e;
+    font-size: 9px;
+    left: 0;
+    position: absolute;
+    top: 11px;
+}
+.shop-item-filter {
+    display: block;
+    overflow: hidden;
+    padding-bottom: 28px;
+}
+.filter-text {
+    display: inline-block;
+    float: left;
+    padding-left: 15px;
+}
+.filter-by {
+    display: inline-block;
+    float: left;
+    padding-left: 76px;
+}
+.filter-by > form {
+    float: right;
+}
+.filter-by select {
+    border: 1px solid rgba(0, 0, 0, 0);
+    color: #303030;
+    font-family: "montserratsemi_bold";
+    font-size: 14px;
+    height: 19px;
+    text-transform: uppercase;
+}
+.filter-by > h4, .shop-view h4 {
+    float: left;
+    font-family: "montserratlight";
+    font-size: 14px;
+    line-height: 20px;
+    padding-right: 7px;
+    text-transform: uppercase;
+    margin-bottom: 0
+}
+.shop-view {
+    float: right;
+    padding-right: 16px;
+}
+.shop-view > h4 {
+    padding-right: 12px;
+}
+.shop-view a {
+    color: #6e6e6e;
+    padding-left: 3px
+}
+.shop-view a.active, .shop-view a:hover {
+    color: #303030;
+}
+.shop-left-sidebar-area .single-product-items {
+    margin-bottom: 47px;
+    margin-top: 0;
+}
+.right-side-p .single-product-items {
+    width: 25%;
+}
+.right-side-p .single-product-items {
+    padding: 0 15px
+}
+.right-side-p h4 span.line {
+    color: #6e6e6e;
+    font-family: "montserratregular";
+    font-size: 14px;
+    padding-left: 1px;
+    padding-right: 2px;
+    text-decoration: line-through;
+}
+.right-side-p .product-rating {
+    display: block;
+}
+/*----------------------------------------------
+ 17. Shop Right Sidebar Page Start 
+------------------------------------------------*/
+.blog-left-sidebar.shop-right ul li a i.fa-plus {
+    margin-right: 0 !important;
+}
+/*----------------------------------------------
+ 18. Cart Page Start 
+------------------------------------------------*/
+.cart-table {
+    padding-top: 56px;
+}
+.cart-table table {
+    background: #ffffff none repeat scroll 0 0;
+    margin: 0 0 22px;
+    width: 100%;
+}
+.cart-table table td {
+    border-top: medium none;
+    font-size: 13px;
+    padding: 20px 10px;
+    vertical-align: middle;
+}
+.cart-table table th {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 8px 0;
+    color: #303030;
+    font-family: "montserratsemi_bold";
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.cart-table table td.p-image {
+    width: 220px
+}
+.p-image > a {
+    display: block;
+}
+.cart-table table td.p-name {
+    width: 285px
+}
+.cart-table table td.p-amount, .cart-table table td.p-quantity, .cart-table table td.p-total {
+    width: 187px;
+    color: #303030;
+    font-family: 'montserratregular' !important
+}
+.cart-table table td {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 18px 0;
+}
+.cart-table .p-name > a {
+    color: #303030;
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 11px;
+}
+.cart-table .p-name > a:hover {
+    color: #ff5555
+}
+.cart-table table td.p-name p span {
+    display: block;
+}
+.cart-table table .c-p-size {
+    display: block;
+    font-family: "montserratregular";
+    font-size: 14px;
+    margin-top: 6px;
+}
+.cart-table table .c-p-size span {
+    color: #303030;
+    display: inline-block !important
+}
+.cart-table .p-quantity input {
+    height: 28px;
+    text-align: center;
+    width: 52px;
+}
+.cart-table .p-action > a {
+    border: 1px solid #cccccc;
+    display: inline-table;
+    height: 28px;
+    margin-left: 13px;
+    text-align: center;
+    width: 28px;
+    text-decoration: none
+}
+.cart-table .p-action a i:hover {
+    color: #ff5555
+}
+.cart-table td.p-action i {
+    color: #303030;
+    font-size: 15px;
+    display: table-cell;
+    vertical-align: middle
+}
+.cart-coupn-leftside .continue-s, .cart-coupon-rightside .continue-s {
+    border: 1px solid #cccccc;
+    color: #303030;
+    display: inline-block;
+    font-size: 14px;
+    padding: 5px 8px;
+    text-transform: uppercase;
+
+}
+.cart-coupn-leftside .continue-s:hover, .cart-coupon-rightside .continue-s:hover, .cart-coupn-leftside input.c-submit:hover {
+    background: #ff5555;
+    font-family: 'montserratregular';
+    color: #fff;
+    border: 1px solid #ff5555;
+    text-decoration: none
+}
+.cart-coupn-leftside > h4 {
+    color: #303030;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    margin-top: 54px;
+    text-transform: uppercase;
+}
+form .dis-coupn-code input {
+    border: 1px solid #cccccc;
+    color: #6e6e6e;
+    font-size: 12px;
+    height: 32px;
+    padding: 4px 12px;
+    width: 272px;
+    display: block
+}
+.cart-coupn-leftside input.c-submit {
+    border: 1px solid #cccccc;
+    color: #303030;
+    display: inline-block;
+    font-size: 14px;
+    padding: 5px 8px;
+    text-transform: uppercase;
+    background: #fff;
+    width: auto;
+}
+form .dis-coupn-code input {
+    border: 1px solid #cccccc;
+    color: #6e6e6e;
+    display: block;
+    font-size: 12px;
+    height: 32px;
+    margin-bottom: 19px;
+    padding: 4px 12px;
+    width: 272px;
+}
+.cart-coupn-leftside > p {
+    font-family: "montserratlight";
+    margin-bottom: 62px;
+    margin-top: 3px;
+}
+.cart-coupn-leftside > p span {
+    font-family: 'montserratbold';
+    color: #303030;
+    text-transform: uppercase;
+    font-weight: 400
+}
+.r-c-btn {
+    display: block;
+    float: right;
+    overflow: hidden;
+}
+.r-c-btn .continue-s {
+    margin-left: 28px;
+}
+.continue-s:first-child {
+    margin-left: 0;
+}
+.cart-coupon-rightside .checkout {
+    background: #252525 none repeat scroll 0 0;
+    color: #fefefe;
+    float: right;
+    font-family: "montserratlight";
+    padding: 9px 20px;
+    text-transform: uppercase;
+    text-decoration: none
+}
+.cart-coupon-rightside .checkout:hover {
+    background: #ff5555
+}
+
+.amount-table {
+    display: block;
+    float: right;
+    margin-bottom: 44px;
+    margin-top: 78px;
+    overflow: hidden;
+    text-align: right;
+    width: 100%;
+}
+.amount-table table {
+    background: #ffffff none repeat scroll 0 0;
+    width: 100%;
+}
+.amount-table table td {
+    border-top: medium none;
+    font-size: 14px;
+    padding: 5px 10px;
+    vertical-align: middle;
+}
+.amount-table table th {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 8px 0;
+    color: #303030;
+    font-family: "montserratsemi_bold";
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.g-total td {
+    color: #303030;
+    font-family: "montserratsemi_bold";
+    font-size: 18px !important;
+}
+.g-total > td span {
+    color: #ff5555;
+}
+/*----------------------------------------------
+ 19. Checkout Page Start 
+------------------------------------------------*/
+.checkout-area .panel-group {
+    margin: 0;
+    padding-bottom: 58px;
+    padding-top: 28px;
+}
+.checkout-area {
+    font-family: "montserratlight";
+}
+.checkout-area .panel-title > a {
+    font-family: 'montserratregular';
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #ff5555;
+    text-decoration: none
+}
+#accordion .collapsed {
+    color: #303030 !important;
+}
+.checkout-area .panel-heading {
+    background: #ffffff none repeat scroll 0 0;
+    border-bottom: 1px solid #cccccc;
+    padding: 31px 0 12px 0;
+}
+.checkout-area .panel.panel-default {
+    border: 0 none !important;
+}
+.checkout-area .panel {
+    box-shadow: none;
+}
+.checkout-area .panel-title > a:hover, .checkout-area .panel-title > a:active {
+    color: #ff5555;
+    text-decoration: none;
+}
+.checkout-area .panel-group {
+    padding-top: 28px;
+}
+.single-checkout > h2, .panel-body p {
+    color: #303030;
+    font-family: "montserratregular";
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 13px;
+    padding-top: 13px;
+}
+.single-checkout p.heading-p {
+    font-size: 13px;
+    padding-bottom: 12px;
+}
+.single-checkout label {
+    color: #303030;
+    display: block;
+    font-family: "montserratlight";
+    padding-left: 8px;
+    text-transform: uppercase;
+}
+.single-checkout span {
+    padding-left: 7px;
+}
+.single-checkout {
+    padding-bottom: 7px;
+}
+.single-checkout > form {
+    padding: 7px 0;
+}
+.r-with-us {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.r-with-us i {
+    padding-left: 11px;
+    padding-right: 9px;
+}
+.r-with-us a {
+    color: #6e6e6e;
+    font-family: "montserratlight";
+    font-size: 14px;
+}
+.r-with-us a:hover {
+    color: #ff5555
+}
+.checkout-area .c-btn, .login-btn, .login-reister-area .c-btn {
+    border: 1px solid #cccccc;
+    color: #303030;
+    display: inline-block;
+    font-family: "montserratsemi_bold";
+    margin-top: 32px;
+    padding: 6px 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.checkout-area .c-btn:hover, .login-btn:hover, .login-reister-area .c-btn:hover {
+    background: #ff5555;
+    color: #fefefe;
+    border: 1px solid #ff5555
+} 
+.panel-body {
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 26px;
+    padding-top: 15px;
+}
+.login-form input {
+    border: 1px solid #cccccc;
+    height: 37px;
+    margin-bottom: 24px;
+    padding: 0 10px;
+    width: 100%;
+}
+.login-form input:focus {
+    border-color: #6e6e6e;
+    box-shadow: 0 0 3px #ff5555;
+}
+.login-form p {
+    font-size: 12px;
+    padding-bottom: 7px;
+}
+.login-form p span {
+    color: #ff5555;
+}
+.forgot-pass {
+    color: #ff5555;
+    display: block;
+    font-family: "montserratregular";
+    font-size: 13px;
+    margin-top: 1px;
+    text-decoration: none;
+}
+.forgot-pass:hover {
+    color: #303030
+}
+.login-btn, .login-reister-area .c-btn {
+    display: block;
+    float: right;
+    padding: 6px 25px !important;
+}
+/*----------------------------------------------
+ 20. Product Details Page Start  
+------------------------------------------------*/
+.product-details-area {
+    padding-top: 70px;
+}
+.product-small ul.nav {
+    border: 0 none !important;
+}
+.product-large {
+    border: 1px solid #cccccc;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.product-small .nav.nav-tabs > li a {
+    border-radius: 0;
+    display: inline-block;
+    margin-right: 3.5px;
+    padding: 0;
+    position: relative;
+    border: 1px solid #ccc
+}
+.product-small .nav.nav-tabs > li a::after {
+    background: #000000 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.product-large img {
+    width: 100%;
+}
+.product-large  a {
+    display: block
+}
+.product-small .nav.nav-tabs > li:last-child a {
+    margin-right: 0;
+}
+.product-small .nav.nav-tabs > li.active a::after {
+    opacity: 0;
+}
+.product-s-l {
+    padding-bottom: 68px;
+}
+.blog-header-area.prdoduct-details .b-header-text {
+    padding: 92px 0 92px 66px;
+}
+.blog-header-area.prdoduct-details h3 {
+    color: #ff5555;
+    font-family: "montserratlight";
+    font-size: 24px;
+    margin-bottom: 0;
+}
+.product-right-details {
+    font-family: "montserratlight";
+}
+.product-right-details > h2 {
+    color: #303030;
+    font-family: "montserratregular";
+    font-size: 24px;
+    margin-bottom: 9px;
+}
+.product-rating {
+    display: inline-block;
+}
+.product-right-details .review {
+    display: inline-block;
+    font-size: 15px;
+}
+.product-right-details .review a {
+    color: #303030;
+    padding-left: 16px;
+}
+.product-right-details .review > a:hover {
+    color: #ff5555;
+}
+.p-d-price {
+    color: #303030;
+    font-family: "montserratregular";
+    font-size: 22px;
+    margin-bottom: 9px;
+    margin-top: 17px;
+}
+.p-d-price span {
+    color: #6e6e6e;
+    font-family: "montserratlight";
+    font-size: 15px;
+    padding-left: 26px;
+    text-decoration: line-through;
+}
+.middle-border {
+    border-bottom: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+    line-height: 27px;
+    margin-top: 17px;
+    padding: 25px 0;
+}
+.p-d-info {
+    border-bottom: 1px solid #cccccc;
+    display: block;
+    overflow: hidden;
+}
+.product-details-area .filter-by {
+    margin-right: 50px;
+    overflow: hidden;
+    padding-bottom: 43px;
+    padding-left: 0;
+    padding-top: 43px;
+}
+.product-details-area .filter-by > h4, a.p-d-btn {
+    background: #303030 none repeat scroll 0 0;
+    color: #ffffff;
+    display: inline-block;
+    padding: 9px 20px;
+}
+.product-details-area .filter-by select {
+    border: 1px solid #cccccc;
+    border-radius: 0;
+    font-family: "montserratregular";
+    font-size: 15px;
+    height: 38px;
+    padding: 0 4px 0 17px;
+}
+.select-filter.number select {
+    padding: 0 18px 0 20px;
+}
+.product-details-area .filter-by select option {
+    text-align: center;
+}
+.p-d-cart {
+    border-bottom: 1px solid #cccccc;
+    padding: 43px 0;
+}
+a.p-d-btn:hover {
+    background: #ff5555
+}
+.p-d-fav, .p-d-search {
+    border: 1px solid #cccccc;
+    color: #303030;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 38px;
+    padding: 7px 21px;
+}
+.p-d-fav:hover, .p-d-search:hover {
+    border: 1px solid #ff5555;
+    color: #ff5555
+}
+.product-details-area .share-post {
+    border: 0 none;
+    padding-top: 30px;
+}
+
+.p-details-tab .nav.nav-tabs {
+    border-bottom: 2px solid #cccccc;
+}
+.p-details-tab .nav.nav-tabs a {
+    border: 0 none;
+    color: #6e6e6e;
+    font-size: 18px;
+    margin: 0;
+    padding: 0 68px 12px 0;
+    text-transform: uppercase;
+}
+.p-details-tab .nav.nav-tabs a:hover {
+    background: transparent
+}
+.p-details-tab .nav.nav-tabs li.active > a {
+    background: transparent !important;
+    border: 0 none;
+    color: #ff5555;
+}
+.p-details-tab .tab-content {
+    font-family: 'montserratlight';
+    line-height: 27px;
+    padding: 20px 0;   
+}
+.shop-main .shop-main-area.details {
+    padding-bottom: 70px;
+    padding-top: 35px;
+}
+.shop-main-area.details h2 {
+    color: #303030;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+.shop-main-area.details .single-product-items {
+    margin-top: 26px;
+}
+.shop-main-area.details .product-rating {
+    text-align: center;
+    display: block;
+}
+/*----------------------------------------------
+ 21. About Us Page Start  
+------------------------------------------------*/
+.b-header-text span {
+    font-family: "montserratlight";
+}
+.about-heading {
+    font-family: "montserratlight";
+    padding-top: 38px;
+}
+.about-main-area h3 {
+    color: #303030;
+    font-family: "montserratregular";
+    margin-bottom: 17px;
+    text-transform: uppercase;
+}
+.purchase-text {
+    background: rgba(0, 0, 0, 0) url("img/team/about-bg.jpg") no-repeat scroll center center / cover ;
+    color: #ffffff;
+    font-family: "montserratsemi_bold";
+    margin-top: 42px;
+    padding: 63px 0;
+    text-align: center;
+}
+.purchase-text > h1 {
+    line-height: 29px;
+    margin-bottom: 16px;
+}
+.purchase-text > h2 {
+    font-family: "montserratlight";
+    font-size: 36px;
+    line-height: 29px;
+    margin-bottom: 34px;
+    margin-top: 0;
+}
+.purchase-btn {
+    background: #ef5656 none repeat scroll 0 0;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 18px;
+    padding: 11px 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.purchase-btn:hover {
+    background: #303030 none repeat scroll 0 0;
+    color: #fff;
+}
+.our-views {
+    margin-top: 57px;
+}
+.about-main-area .number {
+    color: #6e6e6e;
+    font-family: "montserratsemi_bold";
+    font-size: 16px;
+}
+.about-main-area h4 {
+    color: #303030;
+    font-family: "montserratregular";
+    font-size: 18px;
+    margin-bottom: 13px;
+    margin-top: 6px;
+    text-transform: uppercase;
+}
+.about-main-area p {
+    font-family: "montserratlight";
+}
+.our-team > h3 {
+    margin-bottom: 35px;
+    margin-top: 53px;
+}
+.single-team-item { 
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto
+}
+.single-team-item img {
+    max-width: 100%;
+    height: auto; 
+    transition: all 0.9s ease 0s;
+}
+.team-hover {
+    position: absolute;
+    left: 0; top: 0; 
+    width: 100%; 
+    height: 100%; o
+    verflow: hidden
+}
+.team-hover:before {
+    background: #303030; 
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    content: ""; 
+    opacity: .6; 
+    transform: scale(0); 
+    transition: all 0.9s ease 0s
+}
+.single-team-item:hover .team-hover:before {
+    transform: scale(1)
+}
+.team-links {
+    height: 100%;
+    left: -52px;
+    padding: 54px 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.3s ease 0s;
+    z-index: 2;
+}
+.team-links  a {
+    background: #303030; 
+    color: #fff; 
+    height: 32px; 
+    width: 32px; 
+    text-align: center; 
+    border-radius: 50%;
+    font-size: 16px;
+    transition: all 0.3s ease 0s;
+    display: table;
+    margin-bottom: 15px;
+}
+.team-links  a:last-child {
+    margin-bottom: 0px;
+}
+.team-links  a  i {
+    display: table-cell;
+    vertical-align: middle;
+}
+.single-team-item:hover .team-links {
+    left: 10px; 
+}
+
+.team-hover a:hover {
+    background : #EF5656;
+    transition: all 0.3s ease 0s
+}
+.team-hover i.fa.fa-plus {
+    color: #ffffff;
+    font-size: 42px;
+    height: 39px;
+    left: 50%;
+    margin-left: -18.5px;
+    margin-top: -19.5px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 37px;
+    opacity: 0
+}
+.single-team-item:hover .team-hover i.fa.fa-plus {
+    opacity: 1
+}
+.team-text > h2 {
+    font-family: "montserratregular";
+    font-size: 17px;
+    margin-bottom: 9px;
+    margin-top: 12px;
+}
+.team-text > h2 a {
+    color: #303030;    
+}
+.team-text > h2 a:hover {
+    color: #ff5555
+}
+.team-text > h3 {
+    color: #6e6e6e;
+    font-family: "montserratlight";
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.team-text {
+    margin-bottom: 68px;
+}
+/*----------------------------------------------
+ 22. Blog Main Page Start  
+------------------------------------------------*/
+.b-header-text, .s-header-text {
+    background: #cccccc url("img/blog/blog-main-1.jpg") repeat scroll center center / cover ;
+}
+.b-header-text h1, .s-header-text h1 {
+    color: #ff5555;
+    font-size: 46px;
+    line-height: 41px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.b-header-text, .s-header-text h1 {
+    padding: 105px 0 105px 66px;   
+}
+.blog-main .blog-text a {
+    font-size: 24px;
+    font-weight: 400;
+}
+.blog-main .single-blog {
+    padding-top: 55px;
+}
+.blog-main .blog-text h3 {
+    margin-bottom: 18px;
+    margin-top: 19px;
+}
+.blog-main .blog-text .post_info {
+    margin-top: 23px;
+    overflow: hidden;
+    padding: 6px 0;
+}
+.blog-main .blog-text .post_info p a {
+    font-size: 12px;
+}
+.blog-main .blog-text .post_info p a:hover {
+    color: #ff5555
+}
+.blog-main .blog-text .post_info p {
+    display: block;
+    overflow: hidden;
+    float: left
+}
+.blog-main .post_info p span {
+    padding-right: 72px;
+}
+.blog-main .blog-image .date {
+    background: #ffffff none repeat scroll 0 0;
+    border-radius: 100%;
+    color: #ef5756;
+    display: inline-table;
+    height: 99px;
+    position: absolute;
+    right: 47px;
+    text-align: center;
+    top: 58px;
+    width: 99px;
+}
+.blog-main .date > h2 {
+    font-size: 18px;
+    font-family: 'montserratsemi_bold'
+}
+.blog-main .date > h2 span {
+    font-size: 46px;
+}
+.pagination > ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.pagination {
+    margin-bottom: 57px;
+    margin-top: 49px;
+    text-align: center;
+    width: 100%;
+}
+.pagination ul li > a {
+    border: 1px solid #ff5555;
+    border-radius: 50%;
+    color: #ff5555;
+    display: inline-block;
+    font-family: "montserratsemi_bold";
+    font-size: 12px;
+    height: 25px;
+    padding-top: 4px;
+    text-align: center;
+    width: 25px;
+}
+.pagination ul li {
+    display: inline-block;
+    margin: 0 5.5px;
+}
+.pagination ul li.active a, .pagination ul li:hover a {
+    background: #ff5555 none repeat scroll 0 0;
+    border: 1px solid #ff5555;
+    color: #fff
+}
+.pagination p {
+    color: #ff5555;
+    display: inline-block;
+    font-size: 23px;
+    letter-spacing: 3px;
+}
+.pagination i {
+    font-size: 15px;
+}
+.blog-main .home-three-brand-area, .shop-main .home-three-brand-area{
+    border: 0;
+    padding: 0
+}
+.blog-main .home-three-brand-area .owl-controls, .shop-main .home-three-brand-area .owl-controls {
+    display: none
+}
+.blog-main .service-area {
+    padding-bottom: 62px;
+    padding-top: 62px;
+}
+.blog-main .single-brand {
+    margin-bottom: 0;
+    padding: 11px 22px !important;
+}
+/*----------------------------------------------
+ 23. Blog Left sidebar Page Start  
+------------------------------------------------*/
+.blog-main ul.l-sidebar.blog .left-sidebar-title {
+    font-size: 18px !important;
+    color: #303030 !important;
+    line-height: 0px !important;
+}
+.blog-main ul.l-sidebar.blog .left-sidebar-title, .shop-main ul.l-sidebar.blog .left-sidebar-title {
+    background: #ffffff none repeat scroll 0 0 !important;
+    border-bottom: 1px solid #cccccc !important;
+    padding: 0 0 15px !important;
+}
+.blog-main .l-sidebar.blog, .shop-main .l-sidebar.blog, .shop-main .l-sidebar.blog, .shop-main .l-sidebar.blog {
+    background: #ffffff none repeat scroll 0 0;
+    margin-top: 55px;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 5px
+}
+.blog-main ul.l-sidebar.blog > li > a {
+    padding: 12.8px 0;
+    border: 0;
+    color: #212121 !important;
+    font-size: 12px !important;
+    font-family: 'montserratregular';
+    font-weight: 400 !important
+}
+.blog-main .l-sidebar.blog li:nth-child(2) a {
+    padding-top: 20px;
+}
+.blog-main ul.l-sidebar.blog i.fa.fa-plus, .shop-main ul.l-sidebar.blog i.fa.fa-plus, .shop-main ul.l-sidebar.blog i.fa-minus.minus {
+    color: #212121;
+    float: right;
+    font-size: 13px !important;
+    margin-right: 12px;
+    padding-top: 1.9px;
+    position: inherit;
+    left: inherit;
+    top: inherit
+}
+.blog-main .post_info.left-sidebar p span {
+    padding-right: 48px;
+}
+.blog-main ul.l-sidebar.blog > li .left-sub-navbar.submenu.submenu-active {
+    border-bottom: 0
+}
+.blog-main ul.l-sidebar.blog > li .left-sub-navbar.submenu li a {
+    color: #212121;
+    padding-left: 18px !important;
+}
+.blog-main ul.l-sidebar.blog li a.submenu-active::after {
+    display: none
+}
+.l-sidebar.blog {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.blog-main .left-sidebar-title-heading a {
+    border-bottom: 1px solid #cccccc;
+    color: #303030;
+    display: block;
+    font-family: "montserratsemi_bold";
+    margin-top: 20px;
+    padding: 0 0 15px !important;
+    text-transform: uppercase;
+}
+.blog-main .single-recent-post {
+    margin-top: 20px;
+    overflow: hidden;
+    padding-right: 25px
+}
+.blog-main .recent-p-image {
+    float: left;
+    padding-right: 18px;
+}
+.recent-p-image > a {
+    display: block;
+}
+.blog-main .recent-p-text h4 a {
+    color: #ff5555;
+    font-family: "montserratregular";
+    font-size: 14px;
+    font-weight: 400
+}
+.blog-main .recent-p-text h4 a:hover {
+    color: #3e3f3f
+}
+.recent-p-text > h4 {
+    line-height: 15px;
+    margin-bottom: 8px;
+}
+.blog-main .recent-p-text {
+    color: #3e3f3f;
+    font-family: "montserratlight";
+    font-size: 10px;
+}
+.recent-p-text p.days {
+    font-size: 11px;
+    margin-bottom: 12px;
+}
+.recent-p-text p.days i {
+    padding-right: 7px;
+}
+.blog-main .recent-from-blog {
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 20px;
+}
+.left-p-banner-image {
+    margin: 28px 0
+}
+.left-p-banner-image a img {
+    width: 100%;
+}
+h4.discount-text {
+    color: #ff5555;
+    font-size: 40px;
+    left: 17px;
+    position: absolute;
+    top: 20px;
+}
+h4.discount-text span {
+    display: block
+}
+.single-twitter-post {
+    font-family: "montserratlight";
+    font-size: 11px;
+    padding: 23px 37px 0 0;
+}
+.twt-img-text {
+    display: block;
+    overflow: hidden;
+    padding-bottom: 7px
+}
+.single-twitter-post p.author > a {
+    color: #3e3f3f;
+    font-size: 11px;
+}
+.single-twitter-post p.author > a:hover {
+    color: #ff5555;
+}
+.single-twitter-post p.author-tag {
+    padding-top: 5px
+}
+.single-twitter-post p.author-tag > a {
+    color: #ff5555;
+    font-size: 11px;
+    font-family: 'montserratregular'
+}
+.single-twitter-post p.author-tag > a:hover {
+    color: #3e3f3f;
+}
+/*----------------------------------------------
+ 24. Blog Details Page Start  
+------------------------------------------------*/
+.blog-details-area .date {
+    right: 52px !important;
+    top: 33px !important;
+}
+.blog-text.details .post_info {
+    border-top: 0 none;
+    margin-bottom: 24px;
+    margin-top: 9px;
+    padding: 15px 0;
+}
+.blog-text.details .post_info p a, .blog-text.details .post_info p span {
+    color: #303030;
+}
+.blog-text.details p.dark {
+    color: #303030;
+    margin-bottom: 24px;
+}
+.blog-text.details > ul {
+    list-style: outside none none;
+    margin-top: 22px;
+    padding: 0;
+}
+#blog-detail > li {
+    padding-bottom: 17px;
+    padding-left: 50px;
+    position: relative;
+}
+#blog-detail > li::after {
+    background: #6e6e6e none repeat scroll 0 0;
+    border-radius: 50%;
+    content: "";
+    height: 8px;
+    left: 30px;
+    position: absolute;
+    top: 8px;
+    width: 8px;
+}
+.blog-quotes {
+    background: #ebebeb none repeat scroll 0 0;
+    font-style: italic;
+    margin-bottom: 43px;
+    margin-top: 36px;
+    padding: 61px 87px;
+    position: relative;
+}
+.blog-quotes::before {
+    background: #ff5555 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 7px;
+}
+.blog-quotes::after {
+    background: rgba(0, 0, 0, 0) url("img/blog-icon.png") no-repeat scroll 0 0;
+    bottom: 32px;
+    content: "";
+    height: 35px;
+    position: absolute;
+    right: 42px;
+    width: 50px;
+}
+.share-post h3, .users-comments > h4, .leave-comments h4 {
+    color: #303030;
+    display: inline-block;
+    font-family: "montserratsemi_bold";
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase
+}
+.leave-comments > h4 {
+  margin-bottom: 37px;
+}
+.share-post > a i {
+    color: #6e6e6e;
+    font-size: 16px;
+    margin: 0 10px;
+    transition: 0.3s
+}
+.share-post > a i:hover {
+    color: #ff5555;
+}
+.share-post {
+    border-bottom: 1px solid #cccccc;
+}
+.single-comments {
+    margin-bottom: 62px;
+}
+.users-comments h4 {
+    color: #3e3f3f;
+    margin-bottom: 26px;
+    margin-top: 43px;
+}
+.single-user-image {
+    display: inline-block;
+    float: left;
+    padding-right: 12px;
+}
+.single-user-image img {
+    border: 2px solid #cccccc;
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+}
+.single-user-comment a {
+    color: #303030;
+    font-family: "montserratregular";
+    font-size: 17px !important;
+}
+.single-comments p.time {
+    color: #ff5555;
+    font-size: 13px;
+    margin-bottom: 16px;
+}
+.single-comments .time i {
+    color: #8b8989;
+    font-size: 14px;
+    margin-right: 5px
+}
+.single-user-comment > h4 {
+    margin-bottom: 2px;
+    margin-top: 8px
+}
+.single-user-comment {
+    overflow: hidden;
+}
+.reply-btn {
+    background: #303030 none repeat scroll 0 0;
+    color: #ffffff !important;
+    display: inline-block;
+    font-size: 13px !important;
+    margin-top: 15px;
+    padding: 4px 25px;
+}
+.reply-btn:hover {
+    background: #ff5555
+}
+.leave-comments form p {
+    color: #8b8989;
+    font-size: 14px;
+}
+.leave-comments form .user-name input, .leave-comments form .user-email input, .leave-comments form .user-message input, .leave-comments form textarea {
+    border: 1px solid #cccccc;
+    height: 41px;
+    margin-bottom: 22px;
+    padding-left: 14px;
+    width: 100%;
+}
+.user-message textarea {
+    height: 190px !important;
+    padding-top: 8px;
+}
+.leave-comments form input:focus, .user-message textarea:focus {
+    border-color: #6e6e6e;
+    box-shadow: 0 0 3px #6e6e6e;
+}
+.submit-btn input {
+    background: #212121 none repeat scroll 0 0;
+    color: #ffffff;
+    font-family: 'Raleway';
+    font-weight: 700;
+    display: inline-block;
+    padding: 12px 16px;
+    text-align: center;
+    text-decoration: none !important;
+    transition: all 0.3s ease-in-out 0s;
+    margin-bottom: 66px;
+    border: 0
+}
+.submit-btn input:hover {
+    background: #ff5555
+}
+/*----------------------------------------------
+ 25. 404 Error Page Start  
+------------------------------------------------*/
+.error-text-area {
+    text-align: center;
+    padding: 143px 0;
+    background:url("img/not-found-bg.jpg") no-repeat fixed center center / cover ;
+    position: relative;
+}
+.error-text-area:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #E6E6E6;
+    content: "";
+    opacity: .8;
+}
+.error-text-area h1 {
+    color: #ef5656;
+    font-family: "montserratsemi_bold";
+    font-size: 32px;
+    margin-bottom: 28px;
+    margin-top: 33px;
+}
+.error-text {
+    z-index: 9;
+    position: relative
+}
+.error-text-area h3 {
+    color: #6e6e6e;
+    font-family: "montserratregular";
+    font-size: 24px;
+    letter-spacing: 6px;
+    margin-bottom: 6px;
+}
+.error-text-area > p {
+    color: #6e6e6e;
+    font-family: "montserratlight";
+    font-size: 18px;
+}
+.error-text > a {
+    background: #ef5656 none repeat scroll 0 0;
+    color: #fefefe;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 36px;
+    padding: 14px 18px;
+    text-transform: uppercase;
+}
+.error-text > a:hover {
+    background: #303030 none repeat scroll 0 0;
+}
+/*----------------------------------------------
+ 26. Comming Soon Page Start  
+------------------------------------------------*/
+.c-soon {
+    background: #cccccc url("img/c-soon.jpg") no-repeat scroll center center / cover ;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+.c-soon:after {
+    background: #000000 none repeat scroll 0 0;
+    height: 100%;
+    left: 0;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    content: ""
+}
+.c-soon-image-text {
+    padding: 0 124px;
+}
+.c-soon-image-text .logo {
+    padding-top: 0;
+    padding-bottom: 95px;
+}
+.ClassyCountdown-wrapper > div {
+    background: rgba(48, 48, 48, 0.7) none repeat scroll 0 0;
+    border-radius: 50%;
+    display: inline-block;
+    height: 191px !important;
+    margin-right: 29px !important;
+    position: relative;
+    width: 191px !important;
+}
+.ClassyCountdown-wrapper > div:last-child {
+    margin-right: 0 !important;
+}
+.ClassyCountdown-wrapper .ClassyCountdown-value {
+    width: 100%;
+    line-height: 1em;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    left: 0;
+    display: block;
+}
+.ClassyCountdown-days canvas, .ClassyCountdown-hours canvas, .ClassyCountdown-minutes canvas, .ClassyCountdown-seconds canvas {
+    height: 191px !important;
+    width: 191px !important;
+}
+.ClassyCountdown-value {
+    color: #ef5656 !important;
+    font-family: "montserratsemi_bold" !important;
+    font-size: 23px !important;
+    text-transform: uppercase;
+}
+.ClassyCountdown-value > div {
+    font-size: 65px !important;
+    margin-bottom: 15px !important;
+    margin-top: 26px !important;
+}
+.c-soon-image-text {
+    position: relative;
+    text-align: center;
+    z-index: 999;
+}
+.comming-soon-area h2 {
+    color: #fefefe;
+    font-size: 55px;
+    margin-bottom: 20px;
+    margin-top: 67px;
+}
+.comming-soon-area p {
+    color: #c0bfbf;
+    font-family: "montserratlight";
+    font-size: 18px;
+}
+.comming-soon-area h4 {
+    color: #fefefe;
+    font-size: 35px;
+    margin-top: 56px;
+    margin-bottom: 21px
+}
+.c-social-icon > a {
+    border: 1px solid #bfbebe;
+    border-radius: 50%;
+    display: inline-table;
+    height: 45px;
+    margin: 0 12.5px;
+    text-align: center;
+    width: 45px;
+}
+.c-social-icon > a i {
+    color: #fefefe;
+    display: table-cell;
+    font-size: 20px;
+    vertical-align: middle;
+}
+.c-social-icon > a:hover {
+    border: 1px solid #EF5656
+}
+.c-social-icon > a:hover i {
+    color: #EF5656
+}
+/*----------------------------------------------
+ 27. Contact Page Start  
+------------------------------------------------*/
+.address-main-area {
+    padding: 60px 0;
+    text-align: center;
+}
+.s-c-icon {
+    display: inline-table;
+    height: 28px;
+    margin-bottom: 19px;
+    width: 28px;
+}
+.single-c-item {
+    font-family: "montserratlight";
+}
+.map-main-area {
+    margin-bottom: 105px;
+}
+.contact-left-form {
+    margin-top: 65px;
+    font-family: 'montserratlight';
+    font-size: 13px;
+}
+p.msg {
+    font-family: 'montserratlight';
+    font-size: 13px;
+    margin-bottom: 1px;
+}
+.contact-left-form > p {
+    margin-top: 22px;
+    margin-bottom: 1px;
+}
+.contact-left-form > input {
+    border: 1px solid #cccccc;
+    height: 32px;
+    width: 100%;
+    padding: 0 10px;
+}
+.contact-form-area h3 {
+    color: #303030;
+    font-size: 19px;
+    font-weight: 400;
+    margin-bottom: 42px;
+    text-transform: uppercase
+}
+.contact-form-area textarea {
+    border: 1px solid #cccccc;
+    height: 192px;
+    padding: 10px;
+    width: 100%;
+}
+.contact-form-area input[type="submit"] {
+    background: #ff5555;
+    border: 0;
+    padding: 10px 34px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 23px;
+    float: right;
+    transition: 0.3s
+}
+.contact-left-form > input:focus, .contact-form-area textarea:focus {
+    border-color: #6e6e6e;
+    box-shadow: 0 0 3px #6e6e6e;
+}
+.contact-form-area input[type="submit"]:hover, .contact-form-area input[type="submit"]:focus {
+    background: #303030
+}
+/*----------------------------------------------
+ 28. Login Register Page Start
+------------------------------------------------*/
+.login-reister-area {
+    font-family: "montserratlight";
+    padding-top: 60px;
+}
+.login-reister-area form {
+    border-bottom: 1px solid #ccc;
+    display: block;
+    overflow: hidden;
+    padding-bottom: 41px
+}
+.login-register-form {
+    font-size: 13px;
+    line-height: 21px;
+}
+.login-register-form > h2 {
+    border-bottom: 1px solid #cccccc;
+    color: #303030;
+    font-family: "montserratregular";
+    font-size: 18px;
+    padding-bottom: 9px;
+    margin-bottom: 0;
+}
+.login-reister-area .col-md-6.register-left {
+    padding-right: 0;
+}
+.login-reister-area .col-md-6.register-right {
+    padding-left: 0;
+}
+.login-register {
+    padding-left: 30px;
+}
+.l-r-p {
+    padding: 30px 0;
+    line-height: 26px;
+}
+.l-r-p.left {
+    padding: 35px 0
+}
+.login-register > input {
+    border: 1px solid #c2c2c2;
+    color: #000000;
+    height: 38px;
+    margin-bottom: 20px;
+    padding-left: 17px;
+    width: 306px;
+    display: block
+}
+.login-register-form .forgot-pass {
+    display: inline-block;
+    padding-left: 14px;
+}
+.login-register-form .c-btn {
+    float: left;
+    display: block;
+    overflow: hidden
+}
+.register-right input {
+    border: 1px solid #c2c2c2;
+    color: #000000;
+    height: 38px;
+    margin-bottom: 20px;
+    width: 100%;
+    padding-left: 20px
+}
+.login-register-form input:focus {
+    border-color: #6e6e6e;
+    box-shadow: 0 0 3px #ff5c5c;   
+}
+.reg-c-btn {
+    background: #ff5c5c none repeat scroll 0 0;
+    color: #ffffff;
+    display: inline-block;
+    font-family: "montserratsemi_bold";
+    font-size: 13px;
+    font-weight: 400;
+    padding: 8px 25px;
+    text-transform: uppercase;
+}
+.reg-c-btn:hover {
+    background: #303030;
+    color: #fff
+}
+.register-left {
+    position: relative
+}
+.register-left::after {
+    background: #d7d7d7 none repeat scroll 0 0;
+    content: "";
+    height: 86%;
+    position: absolute;
+    right: 77px;
+    top: 68px;
+    width: 1px;
+}
+/*----------------------------------------------
+ 29. Mobile Menu Area
+------------------------------------------------*/
+.mobile-menu-area {
+    display: none;
+    background: #EF5656 none repeat scroll 0 0;
+}
+.mean-container .mean-bar::after {
+    display: none;
+}
+.mean-container .mean-nav ul li a:hover {
+    color: #EF5656;
+    background: none;
+}
+.mean-container a.meanmenu-reveal span {
+    background: #fff;
+}
+.mean-container .mean-nav ul li a {
+    background: #fff;
+    color: #303030;
+    display: block;
+}
+.mean-container .mean-nav ul li a.mean-expand {
+    background: none;
+    top: -4px;
+}
+.mean-container .mean-nav ul li a.mean-expand:hover {
+    background: none;
+}
+.mean-container .mean-nav ul li {
+    background: #fff;
+}
+.mean-container .mean-nav ul li li a {
+    color: #303030;
+    opacity: .90;
+    border-top: 0;
+}
+.mean-container a.meanmenu-reveal {
+    color: #444;
+}
+.meanmenu-reveal.meanclose:hover {
+    color: #303030 !important;
+}
+.mean-container a.meanmenu-reveal:hover span {
+    background: #303030;
+}
+.mobile-menu-area .mean-nav {
+    background: #ef5656 none repeat scroll 0 0;
+}
+.mean-last {
+    margin-bottom: 20px;
+}
+.mobile-menu {
+    position: relative;
+}
+.mean-container .mean-bar::before {
+    color: #ffffff;
+    content: "MENU";
+    font-size: 18px;
+    font-weight: 700;
+    left: 10px;
+    position: absolute;
+    top: 10px;
+}
+/*----------------------------------------------
+ 30. Scroll To Top
+------------------------------------------------*/
+#scrollUp {
+    background: #ff5555 none repeat scroll 0 0;
+    bottom: 20px;
+    color: #ffffff;
+    display: inline-table;
+    font-size: 27px;
+    font-weight: 700;
+    height: 40px;
+    right: 28px;
+    text-align: center;
+    width: 40px;
+    text-decoration: none
+}
+#scrollUp i {
+    display: table-cell;
+    vertical-align: middle;
+    font-family: "FontAwesome";
+    font-weight: 700;
+}
+#scrollUp:hover {
+    background:#303030;
+    color:#fff
+}
+/*css for wishlist*/
+.wishlist-area .product-add-to-cart > a {
+background: #000 none repeat scroll 0 0;
+color: #fff;
+display: inline-block;
+padding: 10px 14px;
+text-align: center;
+text-transform: capitalize;
+width: auto;
+}
+.wishlist-area .product-add-to-cart > a:hover{background: #FF5555 none repeat scroll 0 0;}
+.wishlist-area {
+  margin-bottom: 30px;
+}
+.wishlist-area .product-add-to-cart {
+  width: 187px;
+}

@@ -1,0 +1,199 @@
+/*--
+    03. Hero Css
+-------------------------*/
+.hero-content-one {
+    & .slider-text-info {
+        margin-bottom: 160px;
+        
+        & h4 {
+            letter-spacing: 6px;
+            @media #{$large-mobile}{
+                letter-spacing: 2px;
+                font-size: 14px;
+            }
+        }
+        @media #{$large-mobile}{
+            margin-bottom: 0;
+        }
+    }
+    & .slider-text-info-2 {
+        margin-bottom: 300px;
+        
+        & h4 {
+            letter-spacing: 6px;
+            @media #{$large-mobile}{
+                letter-spacing: 2px;
+                font-size: 14px;
+            }
+        }
+        
+        @media #{$large-mobile}{
+            margin-bottom: 0;
+        }
+    }
+    @media #{$laptop-device}{
+        & h1 {
+            font-size: 56px;
+            line-height: 66px;
+        }
+         & .slider-text-info-2 {
+            margin-bottom: 220px;
+        }
+    }
+    @media #{$desktop-device}{
+        & h1 {
+            font-size: 46px;
+            line-height: 56px;
+        }
+        & .slider-text-info-2 {
+            margin-bottom: 220px;
+        }
+    }
+    @media #{$tablet-device}{
+        & h1 {
+            font-size: 46px;
+            line-height: 56px;
+        }
+         & .slider-text-info-2 {
+            margin-bottom: 220px;
+        }
+    }
+    
+}
+.hero-slider-one {
+    
+    @media #{$large-mobile}{
+        & .single-slide-one {
+            &.align-items-end {
+                align-items: center !important;
+            }
+        }
+    }
+}
+
+.search-area-two {
+    position: absolute;
+    bottom: 100px;
+    margin: auto;
+    width: 100%;
+    & .search-area {
+        position: inherit;
+    }
+    @media #{$laptop-device}{
+        bottom: 50px;
+    }
+    @media #{$desktop-device}{
+        bottom: 50px;
+    }
+    @media #{$tablet-device}{
+        bottom: 50px;
+    }
+    @media #{$large-mobile}{
+        position: inherit;
+        bottom: 0;
+        margin-top: 60px;
+    }
+}
+.container-ext-1370 {
+    max-width: 1370px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+/*-- Hero Content --*/
+.slider-text-info {
+    // All Element Selector
+    & > * {
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-name: fadeOutUp;
+    }
+}
+/*-- Slide Content In Animation --*/
+.slick-active {
+    /*-- Hero Content --*/
+    & .slider-text-info {
+
+        // All Element Selector
+        & > * {
+            animation-name: fadeInUp;
+            
+            // Child Selector
+            &:nth-child(1) {
+                animation-delay: 0.5s;
+            }
+            &:nth-child(2) {
+                animation-delay: 1s;
+            }
+            &:nth-child(3) {
+                animation-delay: 1.5s;
+            }
+            &:nth-child(4) {
+                animation-delay: 2s;
+            }
+            &:nth-child(5) {
+                animation-delay: 2.5s;
+            }
+            &:nth-child(6) {
+                animation-delay: 3s;
+            }
+            
+        }
+    }
+    
+}
+#gmap {
+    width: 100%;
+    height: 400px;
+}
+.property-inner {
+    display: flex;
+    & .image {
+        max-width: 150px;
+        & a {
+            display: block;
+        }
+    }
+    .content {
+        padding-left: 15px;
+        max-width: 200px;
+        & h4 {
+            font-weight: 600;
+            color: $theme-color;
+            font-size: 18px;
+            line-height: 22px;
+            @media #{$large-mobile}{
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+        & .location {
+            font-size: 16px;
+            font-weight: 500
+        }
+        & .type-wrap {
+            font-size: 16px;
+            margin-top: 10px;
+            
+            & .type {
+                margin-left: 10px;
+            }
+        }
+    }
+    
+    @media #{$large-mobile}{
+        flex-direction: column;
+        & .image {
+            max-width: 100%;
+            margin-bottom: 10px;
+            & a {
+                display: block;
+            }
+        }
+    }
+    
+}
+.gm-style img {
+    max-width: 100% !important;
+}

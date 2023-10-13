@@ -1,0 +1,122 @@
+/* -----------------------------------
+Template: Expu
+
+NOTE: This is Footer style file. All footer related style included in this file.
+
+--------------------------------------*/
+.footer-area{
+    background-color: #2B2B2B;
+}
+.footer-widget a.logo{
+    margin-bottom: 0px;
+    display: block;
+    padding: 0;
+}
+.footer-bottom > p.pull-left > a {
+    color: #4fc2c7;
+}
+.footer-bottom > p.pull-left > a:hover {
+  text-decoration: underline;
+}
+.footer-widget p{margin-bottom: 12px}
+.footer-widget p, .footer-widget ul li{
+    font-size: 14px;
+    color: #e1e1e1;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    line-height: 26px;
+}
+.footer-widget ul li{
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.footer-widget ul li:hover{
+    color: #4fc2c7;
+}
+.footer-widget h3{
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.footer-widget img{
+    margin-bottom: 20px;
+}
+.footer-widget h3 span{
+    color: #4FC2C7;
+}
+.footer-widget input{
+    background: transparent;
+    border: 1px solid #ddd;
+    position: relative;
+    height: 32px;
+    font-family: 'Montserrat', sans-serif;
+}
+#mc-submit{
+    background: #4FC2C7;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 32px;
+    display: table;
+    padding: 0 16px;
+}
+#mc-submit i {
+    display: table-cell;
+    vertical-align: middle;
+}
+.footer-widget form{
+    position: relative;
+}
+.footer-widget input[type="submit"]{
+    background-color: #4FC2C7;
+    border: 1px solid #ddd;
+    position: absolute;
+    width: 40px;
+    right: 0;
+    top: 0;
+    content: "\f1d8";
+    height: 100%;
+}
+.footer-icons ul{
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+}
+.footer-icons ul li{
+    display: inline-block;
+    margin: 0 6px;
+}
+.footer-icons ul li i{
+    color: #fff;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.footer-icons ul li:hover i, .footer-icons ul li.active i{
+    color: #fff;
+    background: #4FC2C7;
+}
+.footer-bottom{
+    background-color: #212121;
+}
+.footer-bottom p{
+    margin: 0;
+    color: #fff;
+    font-size: 12px;
+    font-family: 'montserratlight';
+    text-transform: capitalize;
+}
+.footer-area.two a.logo{text-align: center}
+.footer-bottom p a:hover{text-decoration: underline}

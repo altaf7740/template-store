@@ -1,0 +1,83 @@
+@import "../variables";
+@import "../mixins";
+
+
+/*========================
+	Call To Action
+===========================*/
+
+
+
+.jnr__call__action__wrap{
+	padding: 70px 0;
+	.callto__action__inner{
+		h2{
+			color: #ffffff;
+			font-family: $heading-font;
+			font-size: 44px;
+			font-weight: 700;
+			line-height: 46px;
+			margin-bottom: 4px;
+
+		}
+		p{
+			color: #ffffff;
+		    font-size: 16px;
+		    font-weight: 400;
+		    margin-top: 9px;
+		}
+	}
+	.callto__action__btn{
+		a{
+			&.dcare__btn{
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+
+.call__to__action--2 .jnr__call__action__wrap {
+  padding: 99px 0;
+}
+
+
+// Responsive Css
+
+@media #{$md-layout}{
+
+	.callto__action__inner {
+	  flex-basis: 74%;
+	}
+
+	.jnr__call__action__wrap .callto__action__inner h2 {
+	  font-size: 35px;
+	}
+	.callto__action__btn {
+	  flex-basis: 26%;
+	  text-align: right;
+	}
+	.jnr__call__action__wrap .callto__action__inner p {
+	  padding-right: 10%;
+	}
+    
+}
+@media #{$sm-layout}{
+	  
+	.jnr__call__action__wrap .callto__action__inner h2 {
+		font-size: 39px;
+	}
+	.jnr__call__action__wrap .callto__action__inner p {
+	  margin-bottom: 23px;
+	}
+}
+
+@media #{$xs-layout}{
+
+	.jnr__call__action__wrap .callto__action__inner h2 {
+		font-size: 30px;
+	} 
+
+    
+}
+

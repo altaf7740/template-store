@@ -1,0 +1,258 @@
+/*----------------------------------------*/
+/*  16.  Pricing
+/*----------------------------------------*/
+
+/*--
+    Pricing One
+--------------------------------*/
+
+/*-- Pricing One Wrapper --*/
+.pricing-one-wrapper {
+    padding: 0 85px;
+    & .row {
+        margin-left: -25px;
+        margin-right: -25px;
+        & [class*="col-"] {
+            padding-left: 25px;
+            padding-right: 25px;
+        } 
+    }
+    @media #{$desktop-device}{
+        padding: 0;
+        & .row {
+            margin-left: -15px;
+            margin-right: -15px;
+            & [class*="col-"] {
+                padding-left: 15px;
+                padding-right: 15px;
+            } 
+        }
+    }
+    @media #{$tablet-device}{
+        padding: 0;
+        & .row {
+            margin-left: -25px;
+            margin-right: -25px;
+            & [class*="col-"] {
+                padding-left: 25px;
+                padding-right: 25px;
+            } 
+        }
+    }
+    @media #{$large-mobile}{
+        padding: 0 50px;
+        & .row {
+            margin-left: -25px;
+            margin-right: -25px;
+            & [class*="col-"] {
+                padding-left: 25px;
+                padding-right: 25px;
+            } 
+        }
+    }
+    @media #{$small-mobile}{
+        padding: 0;
+        & .row {
+            margin-left: -15px;
+            margin-right: -15px;
+            & [class*="col-"] {
+                padding-left: 15px;
+                padding-right: 15px;
+            } 
+        }
+    }
+}
+
+/*-- Single Pricing One --*/
+.single-pricing-one {
+    background-color: $bg-light-gray;
+    margin-left: 30px;
+    padding-bottom: 60px;
+    & .price-head {
+        padding: 40px 43px 30px;
+        & h4 {
+            text-transform: capitalize;
+            letter-spacing: 2px;
+            color: #848484;
+            margin-bottom: 5px;
+        }
+        & h1 {
+            font-weight: 500;
+            color: $blue;
+            margin-bottom: 0;
+        }
+    }
+    & .price-details {
+        background-color: #e3ecff;
+        border-radius: 6px;
+        padding: 50px 50px 45px;
+        position: relative;
+        left: -30px;
+        @media #{$small-mobile}{
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        & ul {
+            & li {
+                font-size: 14px;
+                font-family: $montserrat;
+                line-height: 24px;
+                color: $heading-color;
+                letter-spacing: 1px;
+                padding: 0;
+                margin: 0;
+                & + li {
+                    margin-top: 22px;
+                }
+                &.off {
+                    text-decoration: line-through;
+                }
+            }
+        }
+        & .btn {
+            margin-bottom: -110px;
+        }
+    }
+}
+
+
+/*--
+    Pricing Two
+--------------------------------*/
+
+/*-- Single Pricing Two --*/
+.single-pricing-two {
+    background-color: #f8f8f8;
+    padding: 45px 60px;
+    margin: 20px 0;
+    transition: all 0.3s ease 0s;
+    position: relative;
+    @media #{$desktop-device}{
+        padding: 45px 30px;
+    }
+    @media #{$large-mobile}{
+        margin: 0;
+    }
+    @media #{$small-mobile}{
+        padding: 40px 30px;
+    }
+    & .price-title {
+        margin-top: 40px;
+        margin-bottom: 34px;
+        & h4 {
+            font-weight: 500;
+            color: $black;
+            text-transform: capitalize;
+            position: relative;
+            padding-bottom: 26px;
+            margin: 0;
+            &::before {
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                content: "";
+                background-color: #e1e1e1;
+                height: 2px;
+                width: 60px;
+                margin-left: -30px;
+            }
+        }
+    }
+    & .pricing-price {
+        margin-bottom: 50px;
+        & h1 {
+            font-size: 48px;
+            font-weight: 600;
+            padding-left: 19px;
+            position: relative;
+            display: inline-block;
+            margin: 0;
+            @media #{$small-mobile}{
+                font-size: 36px;
+            }
+            & span {
+                font-size: 20px;
+                vertical-align: top;
+                position: absolute;
+                left: 0;
+                top: -2px;
+                line-height: 1;
+                @media #{$small-mobile}{
+                    font-size: 18px;
+                    top: 3px;
+                }
+            }
+        }
+    }
+    & .price-details {
+        margin-bottom: 45px;
+        padding: 0 10px;
+        &  p {
+            font-size: 14px;
+            line-height: 35px;
+            color: $black;
+            margin: 0;
+            font-family: $montserrat;
+            position: relative;
+            padding-bottom: 19px;
+            &::before {
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                content: "";
+                background-color: #e1e1e1;
+                height: 2px;
+                width: 60px;
+                margin-left: -30px;
+            }
+        }
+    }
+    & .button {
+        height: 0px;
+        overflow: hidden;
+        transition: all 0.3s ease 0s;
+        @media #{$large-mobile}{
+            height: 41px;
+        }
+        & .btn {}
+    }
+    
+    &.active {
+        background-color: $blue;
+        margin: 0;
+        &::before {
+            content: url("img/icons/pricing-ribon.png");
+            left: 30px;
+            position: absolute;
+            top: -15px;
+        }
+        & .price-title {
+            & h4 {
+                color: $white;
+                &::before {
+                    background-color: $white;
+                }
+            }
+        }
+        & .pricing-price {
+            & h1 {
+                color: $white;
+            }
+        }
+        & .price-details {
+            &  p {
+                color: $white;
+            }
+        }
+        & .button {
+            height: 41px;
+        }
+    }
+    
+    &:hover {
+        margin: 0;
+        & .button {
+            height: 41px;
+        }
+    }
+}

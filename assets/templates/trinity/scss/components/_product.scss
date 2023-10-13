@@ -1,0 +1,1027 @@
+/*****************************
+29 - Components - Product
+*****************************/
+
+/*-- 29.00 - Global Proudct --*/
+
+.product{
+	&-image{
+		@extend %posrelative;
+		@extend %overflowHidden;
+		a{
+			@extend %displayBlock;
+		}
+		img{
+			@extend %width100;
+		}
+	}
+	&-action{
+		@extend %posrelative;
+		@extend %width100;
+		@extend %height100;
+		.add_to_cart_btn{
+			@extend %posabsolute;
+			@extend %absCenter;
+		}
+		.action-btn-group{
+			@extend %posabsolute;
+			@extend %flexbox;
+			right: 25px;
+			bottom: 25px;
+			a{
+				@extend %cursorPointer;
+				color: $color-gray;
+				&:not(:last-child){
+					padding-right: 20px;
+				}
+			} 
+		}
+	}
+	&-action-form{
+		margin-bottom: 45px;
+		@include breakpoint(xlarge){
+			margin-bottom: 40px;
+		}
+		@include breakpoint(medium){
+			margin-bottom: 35px;
+		}
+	}
+	&-badge-group{
+		@extend %posabsolute;
+		@extend %width100;
+		top: 25px;
+		padding: 0 25px;
+		@extend %flexbox;
+		@extend %justify-start;
+	}
+	&-badge{
+		@extend %fontSize18;
+		@extend %fontWeight700;
+		@extend %textUpper;
+		&.sale, &.hot{
+			color: $color-red;
+		}
+		&:last-child, &:only-child{
+			margin-left: auto;
+		}
+	}
+	&-info{
+		padding-top: 18px;
+		padding-bottom: 24px;
+		background: $color-zircon;
+	}
+	&-title{
+		font-size: 24px;
+		line-height: 1.3;
+		@include breakpoint(large){
+			font-size: 20px;
+		}
+	}
+	&-short-desc{
+		p{
+			font-family: $font-2;
+		}
+	}
+	&-description{
+		p{
+			font-family: $font-2;
+  			line-height: 1.667;
+			@extend %fontSize18;
+			&:not(:last-child), &:only-child{
+				margin-bottom: 18px;
+				@include breakpoint(small){
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+	&-info-bottom{
+		padding: 13px 35px 0;
+		@include breakpoint(xlarge){
+			padding: 13px 15px 0;
+		}
+	}
+	&-price-wrapper{
+		line-height: 1;
+		span{
+			@extend %fontWeight600;
+			@extend %fontSize18;
+			@extend %displayInlineBlock;
+			&.new-price{
+				padding-right: 10px;
+				@include breakpoint(xlarge){
+					padding-right: 5px;
+				}
+			}
+			&.old-price{
+				color: $color-dove-gray;
+			}
+		}
+	}
+	&-countdown-wrap{
+	    position: absolute;
+	    top: 20%;
+	    left: 5%;	
+	}
+	&-countdown{
+		.single-countdown{
+			line-height: 1.3;
+			&:not(:last-child){
+				margin-bottom: 5px;
+			}
+			&__time{
+				@extend %heading-color;
+				@extend %displayInlineBlock;
+				@extend %textCenter;
+				@extend %white-color;
+				@extend %fontSize16;
+				font-family: $font-2;
+				@include circle(45);
+				border: 1px solid $border-color;
+				@include breakpoint(small){
+					@include circle(40);
+				}
+			}
+			&__text{
+				display: none;
+			}
+		}
+	}
+}
+
+.trinity-product{
+	@extend %posrelative;
+	&-action{
+		@extend %posabsolute;
+		@extend %fullwidth;
+		.add_to_cart_btn{
+			opacity: 0;
+			width: 0;
+			height: 0;
+			font-size: 0;
+			@include transition(opacity .1s, width .3s, height .3s, font-size .4s, border-radius .4s);
+		}
+		.action-btn-group{
+			opacity: 0;
+			@include transform(translateX(90px));
+			@include transition(transform .4s, opacity .2s);
+		}
+	}
+	&:hover{
+		.trinity-product-action{
+			.add_to_cart_btn{
+				opacity: 1;
+				width: 125px;
+				height: 36px;
+				font-size: 16px;
+			}
+			.action-btn-group{
+				opacity: 1;
+				@include transform(translateX(0));
+			}
+		}
+	}
+}
+
+/*-- 29.01 - Proudct List Style --*/
+
+.trinity-product-list{
+	.product{
+		&-inner{
+			@extend %flexbox;
+			@extend %flex-wrap;
+			&:hover{
+				.action-btn-group{
+					right: 45px;
+				}
+			}
+		}
+		&-image{
+			@include flex-basis(300px);
+			max-width: 300px;
+			@extend %posrelative;
+			@extend %overflowHidden;
+			@include breakpoint(medium){
+				@include flex-basis(240px);
+				max-width: 240px;
+			}
+			@include breakpoint(small){
+				@include flex-basis(100%);
+				max-width: 100%;
+			}
+			&-holder, &-holder a, &-holder img{
+				@extend %height100;
+				@include breakpoint(small){
+					height: auto;
+				}
+			}
+			.action-btn-group{
+				@extend %posabsolute;
+				@extend %basetransition;
+				@extend %cursorPointer;
+				right: -45px;
+				bottom: 10px;
+				a{
+					@extend %displayInlineBlock;
+					&:not(:last-child){
+						margin-right: 5px;
+					}
+					&:hover{
+						color: $hover-color;
+					}
+				}
+			}
+		}
+		&-info{
+			@include flex-basis(calc(100% - 300px));
+			max-width: calc(100% - 300px);
+			padding-left: 40px;
+			padding-right: 20px;
+			@include breakpoint(medium){
+				@include flex-basis(calc(100% - 240px));
+				max-width: calc(100% - 240px);
+				padding-left: 25px;
+				padding-right: 15px;
+			}
+			@include breakpoint(small){
+				@include flex-basis(100%);
+				max-width: 100%;
+			}
+		}
+		&-title{
+			margin-bottom: 13px;
+		}
+		&-price-wrapper, &-rating{
+			margin-bottom: 15px;
+		}
+		&-short-desc{
+			max-width: 700px;
+			margin-bottom: 10px;
+		}
+		&-action{
+			@extend %widthAuto;
+			@extend %heightAuto;
+		}
+	}
+	.trinity-product-action{
+		@extend %posrelative;
+		@extend %widthAuto;
+		@extend %heightAuto;
+		.product-action{
+			.add_to_cart_btn{
+				@extend %widthAuto;
+				@extend %heightAuto;
+				@extend %posrelative;
+				@extend %fontSize16;
+				@include transform(translate(0,0));
+				opacity: 1;
+				left: 0;
+				top: 0;
+			}
+		}
+	}
+}
+
+/*-- 29.02 - Countdown Proudct --*/ 
+
+.countdown-product{
+	@extend %flexbox;
+	@extend %align-center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	@include breakpoint(xsmall){
+		display: block;
+	}
+	&.height-1{
+		height: 512px;
+		@include breakpoint(xxclarge){
+			height: 480px;
+		}
+		@include breakpoint(xlarge){
+			height: 464px;
+		}
+		@include breakpoint(xblarge){
+			height: 422px;
+		}
+		@include breakpoint(large){
+			height: auto;
+		}
+	}
+	&__inner{
+		@extend %flexbox;
+		@extend %align-center;
+		@extend %flex-wrap;
+	}
+	&__image{
+		@include flex-basis(45%);
+		max-width: 45%;
+		padding-left: 30px;
+		@include breakpoint(xxclarge){
+			@include flex-basis(42%);
+			max-width: 42%;
+		}
+		@include breakpoint(xlarge){
+			@include flex-basis(40%);
+			max-width: 40%;
+		}
+		@include breakpoint(large){
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		@include breakpoint(xsmall){
+			@include flex-basis(100%);
+			max-width: 100%;
+		}
+		img{
+			@include breakpoint(xsmall){
+				max-width: 130px;
+			}
+		}
+	}
+	&__info{
+		@include flex-basis(55%);
+		max-width: 55%;
+		padding-left: 5%;
+		padding-right: 8rem;
+		@include breakpoint(xxalarge){
+			padding-right: 5rem;
+		}
+		@include breakpoint(xxdlarge){
+			padding-right: 4rem;
+		}
+		@include breakpoint(xxclarge){
+			@include flex-basis(58%);
+			max-width: 58%;
+		}
+		@include breakpoint(xlarge){
+			@include flex-basis(60%);
+			max-width: 60%;
+			padding-right: 2rem;
+		}
+		@include breakpoint(large){
+			padding-right: 12rem;
+		}
+		@include breakpoint(small){
+			padding-right: 5rem;
+		}
+		@include breakpoint(xsmall){
+			@include flex-basis(100%);
+			max-width: 100%;
+		}
+		&--top{
+			border-bottom: 1px solid $border-color-2;
+			padding-bottom: 21px; 
+			@include breakpoint(large){
+				padding-bottom: 15px;
+			}
+		}
+		&--middle{
+			padding-top: 15px;
+			border-bottom: 1px solid $border-color-2;
+			padding-bottom: 17px; 
+			@include breakpoint(large){
+				padding-bottom: 15px;
+			}
+			h5{
+				margin-bottom: 5px;
+			}
+		}
+		&--bottom{
+			padding-top: 30px;
+			a{
+				&:first-child{
+					margin-right: 25px;
+					@include breakpoint(xxalarge){
+						margin-right: 20px;
+					}
+					@include breakpoint(xxdlarge){
+						margin-right: 15px;
+					}
+					@include breakpoint(xblarge){
+						margin-right: 10px;
+						margin-bottom: 5px;
+					}
+				}
+			}
+		}
+	}
+	&__price{
+		line-height: 1.1;
+		span{
+			font-size: 32px;
+			@include breakpoint(xxclarge){
+				font-size: 30px;
+			}
+			@include breakpoint(xlarge){
+				font-size: 26px;
+			}
+			@include breakpoint(medium){
+				font-size: 22px;
+			}
+			&.new-price{
+				@extend %heading-color;
+				@extend %fontWeight700;
+				padding-right: 10px;
+				@include breakpoint(xxclarge){
+					padding-right: 7px;
+				}
+			}
+			&.old-price{
+				color: $color-boulder;
+			}
+		}
+	}
+}
+
+
+/*-- 29.03 - Proudct Summary --*/
+
+.product-summary{
+	.product{
+		&-title{
+			font-size: 36px;
+			margin-bottom: 15px;
+			margin-top: -9px;
+			@include breakpoint(medium){
+				font-size: 28px;
+			}
+		}
+		&-rating{
+			margin-bottom: 20px;
+		}
+		&-price-wrapper{
+			margin-bottom: 37px;
+			@include breakpoint(xlarge){
+				margin-bottom: 30px;
+			}
+			@include breakpoint(medium){
+				margin-bottom: 27px;
+			}
+			.price-label{
+				@extend %proLabel;
+				margin-right: 2px;
+			}
+		}
+		&-short-desc{
+			margin-bottom: 42px;
+			@include breakpoint(xlarge){
+				margin-bottom: 37px;
+			}
+			@include breakpoint(medium){
+				margin-bottom: 32px;
+			}
+			p{
+  				line-height: 1.625;
+			}
+		}
+		&-filter{
+			@extend %flexbox;
+			@extend %align-center;
+			@extend %flex-wrap;
+			margin-bottom: 40px;
+			&--color{
+				margin-bottom: 44px;
+				@include breakpoint(xlarge){
+					margin-bottom: 39px;
+				}
+				@include breakpoint(medium){
+					margin-bottom: 34px;
+				}
+			}
+			&--size{
+				margin-bottom: 36px;
+				@include breakpoint(xlarge){
+					margin-bottom: 31px;
+				}
+				@include breakpoint(medium){
+					margin-bottom: 26px;
+				}
+			}
+			&--stock{
+				margin-bottom: 49px;
+				@include breakpoint(xlarge){
+					margin-bottom: 44px;
+				}
+				@include breakpoint(medium){
+					margin-bottom: 39px;
+				}
+			}
+			&__label{
+				@extend %proLabel;
+				min-width: 95px;
+				@include breakpoint(large){
+					min-width: 80px;
+				}
+				@include breakpoint(xsmall){
+					min-width: 100%;
+				}
+			}
+		}
+		&-swatch-list{
+			li{
+				@extend %displayInlineBlock;
+				&:not(:last-child){
+					margin-right: 40px;
+					@include breakpoint(large){
+						margin-right: 30px;
+					}
+					@include breakpoint(xsmall){
+						margin-right: 20px;
+					}
+				}
+				a{
+					@extend %fontSize18;
+					@extend %fontWeight600;
+					@extend %heading-color;
+					@extend %displayBlock;
+					&.active{
+						@extend %posrelative;
+						@extend %fontWeight700;
+						font-size: 20px;
+						&:after{
+							@extend %pseudo;
+							left: 50%;
+							bottom: -12px;
+							background-color: $color-tundora;
+  							height: 2px;
+  							width: 30px;
+							@include transform(translateX(-50%));
+						}
+					}
+				}
+			}
+			&.color-swatch-list{
+				@extend %flexbox;
+				@extend %align-center;
+				@include breakpoint(xsmall){
+					margin-top: 12px;
+				}
+				li{
+					a{
+						@include circle(15);
+						&.active{
+							@include circle(25);
+						}
+					}
+				}
+			}
+			&.size-swatch-list{
+				@include breakpoint(xsmall){
+					line-height: 1.8;
+				}
+				li{
+					a.active{
+						font-size: 24px;
+						&:after{
+							bottom: 0;
+						}
+					}
+				}
+			}
+			&.stock-swatch-list{
+				li{
+					a.active{
+						&:after{
+							bottom: -4px;
+						}
+					}
+				}
+			}
+		}
+		&-quantity{
+			margin-bottom: 45px;
+			@include breakpoint(xlarge){
+				margin-bottom: 41px;
+			}
+			@include breakpoint(medium){
+				margin-bottom: 35px;
+			}
+		}
+		&-action{
+			height: auto;
+			a{
+				&:not(:last-child){
+					margin-right: 20px;
+					@include breakpoint(xsmall){
+						margin-bottom: 15px;
+					}
+				}
+			}
+		}
+		&-countdown-wrap{
+		    position: relative;
+		    top: auto;
+		    left: auto;	
+		    margin-bottom: 45px;
+		    @include breakpoint(xlarge){
+		    	margin-bottom: 40px;
+		    }
+		    @include breakpoint(medium){
+		    	margin-bottom: 35px;
+		    }
+		}
+		&-countdown{
+		    @extend %flexbox;
+			.single-countdown{
+				&:not(:last-child){
+					margin-right: 10px;
+					margin-bottom: 0;
+				}
+				&__time{
+					@extend %heading-color;
+					@extend %displayInlineBlock;
+					@extend %textCenter;
+					@extend %white-color;
+					@extend %fontSize18;
+					font-family: $font-2;
+					@include circle(55);
+					border: 1px solid $border-color;
+					@include breakpoint(small){
+						@include circle(40);
+					}
+				}
+				&__text{
+					display: none;
+				}
+			}
+		}
+	}
+	&--2{
+		background-color: #e4ecdf;
+		.product{
+			&-title{
+				margin-top: 0;
+			}
+		}
+	}
+	&--slider-full{
+		.product{
+			&-summary{
+				&--middle{
+					position: relative;
+				}
+				&--left{
+					width: 40%;
+					@include breakpoint(xxclarge){
+						width: 45%;
+					}
+					@include breakpoint(xlarge){
+						width: 50%;
+					}
+					@include breakpoint(medium){
+						width: 100%;
+					}
+				}
+				&--right{
+					position: absolute;
+					right: 0;
+					top: 0;
+					width: 60%;
+					@extend %flexbox;
+					@include breakpoint(xxclarge){
+						width: 55%;
+					}
+					@include breakpoint(xlarge){
+						width: 50%;
+					}
+					@include breakpoint(medium){
+						position: relative;
+						width: 100%;
+					}
+				}
+			}
+			&-short-desc{
+				max-width: 500px;
+			}
+			&-filters-wrapper{
+				@extend %posrelative;
+				padding-left: 40px;
+				width: 100%;
+				@include breakpoint(medium){
+					padding-left: 0px;
+				}
+			}
+			&-filter{
+				&--stock{
+					position: absolute;
+					right: 20%;
+					top: -6px;
+					@include breakpoint(xxalarge){
+						right: 10%;
+					}
+					@include breakpoint(xlarge){
+						position: relative;
+						right: auto;
+						top: 0;
+					}
+				}
+				&__label{
+					@include breakpoint(xxclarge){
+						min-width: 80px;
+					}
+				}
+			}
+			&-swatch-list{
+				li{
+					&:not(:last-child){
+						@include breakpoint(xxclarge){
+							margin-right: 30px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.product-main-details{
+	.product-summary{
+		padding-left: 80px;
+		@include breakpoint(xlarge){
+			padding-left: 60px;
+		}
+		@include breakpoint(large){
+			padding-left: 40px;
+		}
+		@include breakpoint(blarge){
+			padding-left: 0;
+		}
+		@include breakpoint(medium){
+			padding-left: 0;
+		}
+		&--2{
+			padding-left: 10rem;
+			padding-right: 13rem;
+			padding-top: 70px;
+			padding-bottom: 70px;
+			@include breakpoint(xlarge){
+				padding-left: 8rem;
+				padding-right: 10rem;
+			}
+			@include breakpoint(large){
+				padding-left: 6rem;
+				padding-right: 8rem;
+				padding-top: 45px;
+				padding-bottom: 45px;
+			}
+			@include breakpoint(xsmall){
+				padding-left: 4rem;
+				padding-right: 4rem;
+				padding-top: 30px;
+				padding-bottom: 30px;
+			}
+		}
+	}
+}
+.product-summary-row.flex-row-reverse{
+	.product-main-details{
+		.product-summary{
+			padding-right: 80px;
+			padding-left: 0;
+			@include breakpoint(xlarge){
+				padding-right: 60px;
+				padding-left: 0;
+			}
+			@include breakpoint(large){
+				padding-right: 40px;
+				padding-left: 0;
+			}
+			@include breakpoint(blarge){
+				padding-right: 0;
+				padding-left: 0;
+			}
+			&--2{
+				padding-left: 10rem;
+				padding-right: 13rem;
+				padding-top: 70px;
+				padding-bottom: 70px;
+				@include breakpoint(xlarge){
+					padding-left: 8rem;
+					padding-right: 10rem;
+				}
+				@include breakpoint(large){
+					padding-left: 6rem;
+					padding-right: 8rem;
+					padding-top: 45px;
+					padding-bottom: 45px;
+				}
+				@include breakpoint(xsmall){
+					padding-left: 4rem;
+					padding-right: 4rem;
+					padding-top: 30px;
+					padding-bottom: 30px;
+				}
+			}
+		}
+	}
+}
+
+/*-- 29.04 - Proudct Gallery --*/
+
+.product-gallery{
+	&.vertical-slide-nav{
+		@extend %flexbox;
+		@extend %flex-wrap;
+		@extend %justify-end;
+		@include breakpoint(medium){
+			padding-bottom: 0;
+		}
+		@include breakpoint(small){
+			background-color: $color-catskill;
+		}
+		.product-gallery{
+			&__large-image{
+				@include flex-basis(calc(100% - 215px));
+				max-width: calc(100% - 215px);
+				@include breakpoint(xlarge){
+					@include flex-basis(calc(100% - 195px));
+					max-width: calc(100% - 195px);
+				}
+				@include breakpoint(small){
+					@include flex-basis(100%);
+					max-width: 100%;
+				}
+			}
+			&__nav-image{
+				@include flex-basis(155px);
+				max-width: 155px;
+				margin-left: 60px;
+				@include breakpoint(xlarge){
+					margin-left: 40px;
+				}
+				@include breakpoint(small){
+					@include flex-basis(100%);
+					max-width: 100%;
+					margin-left: 0;
+				}
+				&--single{
+					padding: 33px 0;
+					@include breakpoint(small){
+						padding: 15px;
+					}
+					&:not(.last-active){
+						border-bottom: 1px solid $color-iron;
+						@include breakpoint(small){
+							border: none;
+						}
+					}
+				}
+			}
+		}
+		&.flex-row-reverse{
+			.product-gallery{
+				&__nav-image{
+					margin-right: 60px;
+					margin-left: 0;
+					@include breakpoint(xlarge){
+						margin-right: 40px;
+						margin-left: 0;
+					}
+					@include breakpoint(small){
+						margin-left: 0;
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
+	&__image{
+		background-color: $color-catskill;
+		padding: 57px 20px;
+		@extend %posrelative;
+		@include breakpoint(small){
+			padding: 45px 20px;
+		}
+		img{
+			width: auto !important;
+		}
+	}
+	&__actions{
+		@extend %posabsolute;
+		right: 40px;
+		bottom: 25px;
+		a{
+			&:first-child{
+				margin-bottom: 5px;
+				@extend %displayBlock;
+			}
+		}
+	}
+	&__large-image{
+		@extend %posrelative;
+	}
+	&__image{
+		@extend %textCenter;
+	}
+	&__nav-image{
+		&--single{
+			background-color: $color-catskill;
+			img{
+				width: auto !important;
+			}
+			&.slick-current{
+				@extend %posrelative;
+				&:after{
+					@extend %pseudo;
+					left: 50%;
+					bottom: 0;
+					@include transform(translateX(-50%));
+					width: 80px;
+					height: 3px;
+					background-color: $color-tundora
+				}
+			}
+		}
+	}
+	&--2{
+		background-color: #e7f1f3;
+		padding-bottom: 40px;
+		.product-gallery{
+			&__image{
+				padding: 82px 0;
+				@include breakpoint(large){
+					padding: 60px 0;
+				}
+			}
+			&__nav-image{
+				&--single{
+					padding-bottom: 23px;
+				}
+			}
+		}
+	}
+}
+
+/*-- 29.05 - Proudct Summary Row --*/
+
+.product-summary-row{
+	.product-main-image{
+		@include flex-basis(700px);
+		max-width: 700px;
+		position: relative;
+		@include breakpoint(xlarge){
+			@include flex-basis(580px);
+			max-width: 580px;
+		}
+		@include breakpoint(large){
+			@include flex-basis(550px);
+			max-width: 550px;
+		}
+		@include breakpoint(blarge){
+			@include flex-basis(100%);
+			max-width: 100%;
+		}
+	}
+	.product-main-details{
+		@include flex-basis(calc(100% - 700px));
+		max-width: calc(100% - 700px);
+		@include breakpoint(xlarge){
+			@include flex-basis(calc(100% - 580px));
+			max-width: calc(100% - 580px);
+		}
+		@include breakpoint(large){
+			@include flex-basis(calc(100% - 550px));
+			max-width: calc(100% - 550px);
+		}
+		@include breakpoint(blarge){
+			@include flex-basis(100%);
+			max-width: 100%;
+		}
+	}
+}
+.product-summary-row-2{
+	.product-main-image{
+		@include flex-basis(590px);
+		max-width: 590px;
+		position: relative;
+		@include breakpoint(xlarge){
+			@include flex-basis(490px);
+			max-width: 490px;
+		}
+		@include breakpoint(large){
+			@include flex-basis(390px);
+			max-width: 390px;
+		}
+		@include breakpoint(medium){
+			@include flex-basis(100%);
+			max-width: 100%;
+		}
+	}
+	.product-main-details{
+		@include flex-basis(calc(100% - 590px));
+		max-width: calc(100% - 590px);
+		@include breakpoint(xlarge){
+			@include flex-basis(calc(100% - 390px));
+			max-width: calc(100% - 390px);
+		}
+		@include breakpoint(medium){
+			@include flex-basis(100%);
+			max-width: 100%;
+		}
+	}
+	.product-gallery{
+		@extend %height100;
+	}	
+	.product-summary{
+		@extend %height100;
+	}
+}

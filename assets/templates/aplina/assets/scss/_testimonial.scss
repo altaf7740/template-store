@@ -1,0 +1,85 @@
+/*-- 
+    12. Testimonial Area Css
+-----------------*/
+.bg-testimonial {
+    background: url(../images/bg/04.jpg) 50% 100% no-repeat;
+}
+.testimonial-active {
+    & .slick-dots {
+        margin-top: 20px;
+        text-align: center;
+            & li {
+                display: inline-block;
+                margin: 0 5px;
+                & {
+                    button {
+                    border: 1px solid $white;
+                    width: 10px;
+                    height: 10px;
+                    padding: 0;
+                    border-radius: 50%;
+                    background-color: transparent;
+                    text-indent: -9999px;
+                }
+                &.slick-active {
+                    & button {
+                        background-color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+.single-testimonial {
+    text-align: center;
+    color: #fff;
+    & .client-image {
+        margin-bottom: 10px;
+        justify-content: center;
+        display: flex;
+        & img {
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            border: 5px solid $theme-color;
+        }
+    }
+    & .client-rating {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+        background: url(../images/icon/2.png) 50% 100% no-repeat;
+        padding-bottom:  45px;
+        & ul {
+            & li {
+                & a {
+                    color: #E7BF2E;
+                    margin: 0 1px;
+                }
+            }
+        }
+    }
+    & .testimonial-text {
+        & .client-texe-dec {
+            margin: 25px 0 30px;
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: 500;
+        }
+    }
+    .test-author {
+        position: relative;
+        & h3 {
+            font-weight: 600;
+            margin-top: -3px;
+            font-size: 20px;
+            margin-bottom: 0;
+            color: $white;
+            
+        }
+        & p {
+            font-weight: 500;
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,109 @@
+/*****************************
+25 - Components - Comment
+*****************************/
+
+.comment{
+	margin-bottom: 6.3rem;
+	&-title{
+	    margin-bottom: 4.7rem; 
+	    font-size: 24px;
+	}
+	&-list{
+		& > li{
+			&:last-child{
+				& > .single-comment:only-child{
+					margin-bottom: 0;
+				}
+				
+				.children{
+					& > li{
+						&:last-child{
+							.single-comment{
+								margin-bottom: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.single-comment{
+		@extend %posrelative;
+		margin-bottom: 4.6rem;
+	}
+	&-avatar{
+		@extend %posabsolute;
+		left: 0;
+		top: 0;
+		@include breakpoint(xsmall){
+			position: relative !important;
+			margin-bottom: 10px;
+		}
+		img{
+			@include circle(97);
+			background-color: $color-perigal;
+			padding: 5px;
+		}
+	}
+	&-info{
+		margin-left: 120px;
+		@include breakpoint(xsmall){
+			margin-left: 0;
+		}
+	}
+	&-meta{
+		@extend %verticalFlexCenter;
+		@include breakpoint(xxsmall){
+			@include flex-direction(column);
+			align-items: flex-start !important;
+		}
+	}
+	&-author{
+		@extend %fontSize18;
+		margin-bottom: 13px;
+		a{
+			@extend %heading-color;
+			&:hover{
+				@extend %primary-color;
+			}
+		}
+	}
+	&-date{
+		@extend %fontWeight700;
+		@extend %fontSize14;
+		margin-right: 30px;
+	}
+	.reply{
+	    @extend %heading-color;
+	    @extend %fontSize14;
+	    @extend %fontWeight700;
+	}
+	&-content{
+		p{
+			font-family: $font-2;
+  			line-height: 1.624;
+			@extend %heading-color;
+			&:not(:last-child){
+				margin-bottom: 10px;
+			}
+		}
+	}
+	.children{
+		margin-left: 10rem;
+	}
+	&-reply-title{
+	    margin-bottom: 27px;
+	    font-size: 24px;
+	}
+}
+.reply-title{
+	@extend %heading-color;
+	@extend %fontWeight700;
+	@extend %displayBlock;
+	font-size: 24px;
+	line-height: 1.5;
+	margin-bottom: 25px;
+	@include breakpoint(small){
+		margin-bottom: 15px;
+	}
+}

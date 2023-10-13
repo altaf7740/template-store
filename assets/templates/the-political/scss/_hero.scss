@@ -1,0 +1,304 @@
+/*----------------------------------------*/
+/*  3.  Hero Area
+/*----------------------------------------*/
+.hero-area {
+    margin-top: 170px;
+    @media #{$tablet-device}{
+        margin-top: 244px;
+    }
+    @media #{$small-mobile}{
+        margin-top: 146px;
+    }
+}
+/*Hero Slider*/
+.hero-slider {
+    /*Hero Slider Pagination*/
+    & .slick-dots {
+        height: auto;
+        left: 100px;
+        margin: 0;
+        position: absolute;
+        text-align: left;
+        top: 50%;
+        @include transform(translateY(-50%));
+        z-index: 999;
+        @media #{$laptop-device}{
+            left: 15px;
+        }
+        @media #{$desktop-device}{
+            left: 0;
+        }
+        @media #{$tablet-device}{
+            visibility: hidden;
+        }
+        & li {
+            clear: both;
+            display: block;
+            float: left;
+            height: auto;
+            margin: 10px 0;
+            overflow: hidden;
+            padding-right: 28px;
+            position: relative;
+            width: 66px;
+            &::before {
+                background-color: $color-white;
+                content: "";
+                height: 2px;
+                opacity: 0;
+                position: absolute;
+                right: 0;
+                top: 11px;
+                width: 20px;
+                @media #{$desktop-device}{
+                    display: none;
+                }
+            }
+            &.slick-active {
+                &::before {
+                    opacity: 1;
+                }
+            }
+            & button {
+                background-color: transparent;
+                border: medium none;
+                color: $color-white;
+                display: block;
+                font-size: 20px;
+                height: auto;
+                line-height: 15px;
+                opacity: 1;
+                padding: 0;
+                text-indent: 0;
+                width: auto;
+                &::before {
+                    content: "0";
+                }
+            }
+            &.slick-active {
+                & button {
+                    font-size: 30px;
+                    font-weight: 400;
+                    color: $theme-color;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
+/*Hero Slide Item*/
+.hs-item {
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    padding-top: 50px;
+    position: relative;
+    &::before {
+        background-color: $color-black;
+        position: absolute;
+        content: "";
+        left: 0;
+        right: 0;
+        opacity: 0.85;
+        top: 0;
+        bottom: 0;
+        z-index: 2;
+    }
+    & .hs-item-wrapper {
+        position: relative;
+        z-index: 3;
+    }
+    & .hs-image {
+        width: 100%;
+        margin-left: 35px;
+        max-width: 429px;
+        @media #{$desktop-device}{
+            max-width: 300px;
+        }
+        @media #{$tablet-device}{
+            max-width: 260px;
+        }
+        @media #{$large-mobile}{
+            max-width: 170px;
+            margin-left: 15px;
+        }
+        @media #{$small-mobile}{
+            margin-left: 10px;
+            max-width: 105px;
+        }
+        & img {
+            width: 100%;
+            -webkit-animation-duration:1s;
+            animation-duration:1s;
+            -webkit-animation-fill-mode:both;
+            animation-fill-mode:both
+        }
+    }
+    & .hs-content {
+        margin-top: 225px;
+        max-width: 705px;
+        float: left;
+        @media #{$desktop-device}{
+            margin-top: 115px;
+            max-width: 605px;
+        }
+        @media #{$tablet-device}{
+            margin-top: 90px;
+            max-width: 425px;
+        }
+        @media #{$large-mobile}{
+            margin-top: 50px;
+            max-width: 260px;
+        }
+        @media #{$small-mobile}{
+            max-width: 175px;
+            margin-top: 10px;
+        }
+        & * {
+            -webkit-animation-duration:1s;
+            animation-duration:1s;
+            -webkit-animation-fill-mode:both;
+            animation-fill-mode:both
+        }
+        & h2 {
+            color: #cccccc;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 23px;
+            margin-bottom: 17px;
+            @media #{$desktop-device}{
+                font-size: 26px;
+            }
+            @media #{$tablet-device}{
+                font-size: 18px;
+                line-height: 16px;
+            }
+            @media #{$large-mobile}{
+                font-size: 14px;
+            }
+            @media #{$small-mobile}{
+                line-height: 16px;
+                margin-bottom: 10px;
+            }
+        }
+        & h1 {
+            color: $color-white;
+            font-size: 38px;
+            font-weight: 700;
+            margin-bottom: 17px;
+            text-transform: uppercase;
+            @media #{$desktop-device}{
+                font-size: 32px;
+            }
+            @media #{$tablet-device}{
+                font-size: 22px;
+            }
+            @media #{$large-mobile}{
+                font-size: 20px;
+            }
+            @media #{$small-mobile}{
+                font-size: 14px;
+            }
+        }
+        & p {
+            color: $color-white;
+            font-size: 18px;
+            line-height: 28px;
+            margin-bottom: 36px;
+            @media #{$laptop-device}{
+                font-size: 16px;
+            }
+            @media #{$tablet-device}{
+                font-size: 16px;
+                line-height: 26px;
+                margin-bottom: 30px;
+            }
+            @media #{$large-mobile}{
+                display: none;
+            }
+            @media #{$small-mobile}{
+                display: none;
+            }
+        }
+        & a {
+            background-color: transparent;
+            border: 1px solid #cccccc;
+            border-radius: 0;
+            color: $color-white;
+            display: inline-block;
+            font-size: 16px;
+            height: 40px;
+            line-height: 24px;
+            padding: 7px 29px;
+            text-transform: uppercase;
+            @media #{$tablet-device}{
+                font-size: 14px;
+            }
+            @media #{$large-mobile}{
+                font-size: 12px;
+                height: 32px;
+                padding: 3px 15px;
+            }
+            @media #{$small-mobile}{
+                font-size: 10px;
+                height: 30px;
+                padding: 2px 15px;
+            }
+            &:hover {
+                background-color: $theme-color;
+                border-color: $theme-color;
+                color: $color-white;
+            }
+            & i {
+                font-size: 21px;
+                line-height: 18px;
+                margin-left: 8px;
+                position: relative;
+                top: 2px;
+                @media #{$large-mobile}{
+                    font-size: 16px;
+                }
+                @media #{$small-mobile}{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    &.slick-current {
+        & .hs-image {
+            & img {
+                -webkit-animation-name: fadeInUp;
+                animation-name: fadeInUp;
+                -webkit-animation-delay: 0.5s;
+                animation-delay: 0.5s;
+            }
+        }
+        & .hs-content {
+            & h2{
+                -webkit-animation-name: fadeInUp;
+                animation-name: fadeInUp;
+                -webkit-animation-delay: 1.3s;
+                animation-delay: 1.3s;
+            }
+            & h1{
+                -webkit-animation-name: fadeInUp;
+                animation-name: fadeInUp;
+                -webkit-animation-delay: 1.8s;
+                animation-delay: 1.8s;
+            }
+            & p{
+                -webkit-animation-name: fadeInUp;
+                animation-name: fadeInUp;
+                -webkit-animation-delay: 2.3s;
+                animation-delay: 2.3s;
+            }
+            & a{
+                -webkit-animation-name: fadeInUp;
+                animation-name: fadeInUp;
+                -webkit-animation-delay: 2.8s;
+                animation-delay: 2.8s;
+            }
+        }
+    }
+}

@@ -1,0 +1,98 @@
+/*---
+   06. Contact Css 
+----------------------------------------*/
+#googleMap-2 {
+    height: 550px;
+    width: 100%;
+    @media #{$large-mobile}{
+        height: 400px;
+    }
+}
+.form_wrapper {
+    background: transparent;
+    @media #{$large-mobile}{
+        margin-top: 55px;
+        
+    }
+}
+.contact-info-wrapper {
+    position: relative;
+    margin-right: 70px;
+    &::after {
+        position: absolute;
+        right: 0;
+        content: "";
+        top: 50%;
+        height: 200px;
+        width: 1px;
+        background: #ddd;
+        transform: translate(0, -50%);
+    }
+    @media #{$desktop-device, $tablet-device}{
+        margin-right: 20px;
+    }
+    @media #{$large-mobile }{
+        margin-right: 0px;
+        &::after {
+            display: none;
+        }
+    }
+}
+.form-inner-box-warp {
+    & input,textarea {
+        width: 100%;
+        border: 1px solid #c9c9c9;
+        padding: 8px 15px;
+        color: #777;
+        background: transparent;
+    }
+    & textarea {
+        height: 250px;
+        @media #{$large-mobile,$tablet-device}{
+            height: 150px;
+        }
+    }
+    & .submit-btn {
+        color: $theme-color;
+        color: $white;
+    }
+}
+.single-contact-info {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 20px 20px;
+    margin-top: 30px;
+    background: #fff;
+    & .icon {
+        display: block;
+        margin-top: -50px;
+        & i {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            font-size: 20px;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            background: #fff;
+        }
+    }
+    .content {
+        margin-top: 20px;
+    }
+    & h6 {
+        font-weight: 600;
+    }
+    & p {
+        font-weight: 500;
+    }
+    &:hover{
+        border: 1px solid $theme-color;
+        & .icon {
+            & i {
+                border: 1px solid $theme-color;
+                color: $theme-color;
+            }
+        }
+    }
+}

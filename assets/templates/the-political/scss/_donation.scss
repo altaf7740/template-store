@@ -1,0 +1,103 @@
+/*----------------------------------------*/
+/*  6.  Doantion Area
+/*----------------------------------------*/
+.donation-area {
+    background-image: url(img/bg/donation.jpg);
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+    &::before {
+        bottom: 0;
+        content: "";
+        background-color: $color-black;
+        left: 0;
+        opacity: 0.7;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+.donation-wrapper {}
+/*Donation Form*/
+#donation-form {
+    & .donation-amount {
+        display: inline-block;
+        vertical-align: top;
+        & .input {
+            display: block;
+            float: left;
+            margin: 0 10px;
+            position: relative;
+            @media #{$large-mobile}{
+                display: inline-block;
+                float: none;
+                margin-bottom: 20px;
+                vertical-align: middle;
+            }
+            @media #{$small-mobile}{
+                margin: 0 5px 10px;
+            }
+            & label {
+                border: 1px solid $color-white;
+                color: $color-white;
+                cursor: pointer;
+                display: block;
+                font-size: 18px;
+                font-weight: 500;
+                height: 40px;
+                letter-spacing: -0.5px;
+                line-height: 24px;
+                margin: 0;
+                overflow: hidden;
+                padding: 7px 35px;
+                @include transition(all 0.3s ease 0s);
+                &:hover {
+                    background-color: $color-white;
+                    color: $heading-color;
+                }
+            }
+            & input {
+                cursor: pointer;
+                height: 100%;
+                left: 0;
+                margin: 0;
+                opacity: 0;
+                overflow: hidden;
+                position: absolute;
+                width: 100%;
+            }
+            & input:checked + label {
+                background-color: $color-white;
+                color: $heading-color;
+            }
+            & input:hover + label {
+                background-color: $color-white;
+                color: $heading-color;
+            }
+        }
+    }
+    & .donation-submit {
+        margin-top: 44px;
+        @media #{$large-mobile}{
+            margin-top: 24px;
+        }
+        @media #{$small-mobile}{
+            margin-top: 34px;
+        }
+        & input {
+            background-color: $theme-color;
+            border: medium none;
+            color: $color-white;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 600;
+            height: 40px;
+            line-height: 24px;
+            overflow: hidden;
+            padding: 8px 30px;
+            text-transform: uppercase;
+            vertical-align: top;
+        }
+    }
+}

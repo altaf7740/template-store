@@ -1,0 +1,303 @@
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Bagani Gardening and Landscaping Bootstrap4 Template.
+  Template URI: #
+  Description: Bagani is a unique website template designed in HTML with a simple & beautiful look. There is an excellent solution for creating clean, wonderful and trending material design corporate, corporate any other purposes websites.
+  
+-------------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------
+  Menu basic style
+------------------------------------------*/
+.header{
+  z-index: 10;
+  position: relative;
+}
+.main__menu {
+  display: flex;
+  justify-content: flex-start;
+}
+.main__menu li:first-child a {
+  padding-left: 0;
+}
+.main__menu > li > a {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  height: 75px;
+  line-height: 75px;
+  padding: 0 24px;
+  position: relative;
+  text-transform: uppercase;
+  color: #fff;
+  transition: 0.4s;
+}
+.main__menu li {
+  position: relative;
+}
+.main__menu > li:hover > a{
+  color: #ddd;
+}
+.logo a{
+  display: block;
+}
+.menu__btn {
+    align-items: center;
+    display: flex;
+    height: 75px;
+	line-height:75px;
+    justify-content: flex-end;
+	text-align:right;
+}
+.phone {
+  border: medium none;
+  color: #fff;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  height: 36px;
+  line-height: 33px;
+  padding: 0;
+  text-transform: capitalize;
+  transition: all 0.3s ease 0s;
+  letter-spacing:1px;
+}
+.phone img{margin-right:12px;}
+.slider__btn a {
+  background: rgba(255, 255, 255, 0.2) none repeat scroll 0 0;
+  border: 1px solid #555;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  height: 50px;
+  line-height: 45px;
+  padding: 0 25px;
+  text-transform: capitalize;
+  transition: all 0.3s ease 0s;
+}
+.slider__btn a:hover {
+    background: rgba(73, 160, 16, 0.8);
+    border: 1px solid #49a010;
+    color: #fff;
+}
+.header--2 .menu__btn .btn:hover {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.menumenu__container {
+  background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+  border-radius: 37px;
+  padding: 0 68px;
+}
+.mainmenu__wrap.sticky__header {
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 105px;
+    width: 100%;
+    z-index: 99;
+}
+.htc-header {
+    position: relative;
+}
+.main__menu li {
+    position: relative;
+}
+
+/*--------------------------
+  Header top
+---------------------------*/
+.logo {
+  align-items: center;
+  display: flex;
+  height: 105px;
+}
+.header__top {
+  background: #f1f1f1 none repeat scroll 0 0;
+  position: relative;
+}
+.contact {
+    align-items: center;
+    display: flex;
+    height: 105px;
+    justify-content: center;
+}
+.social__icon {
+    align-items: center;
+    display: flex;
+    height: 105px;
+    justify-content: flex-end;
+}
+.social__icon li a i {
+    border: 1px solid #49a010;
+    border-radius: 100%;
+    color: #49a010;
+    display: inline-block;
+    font-size: 18px;
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+    transition: all 0.4s ease 0s;
+    width: 30px;
+}
+.social__icon li + li {
+    margin-left: 13px;
+}
+.social__icon li a:hover i {
+    background: #49a010 none repeat scroll 0 0;
+    border: 1px solid #49a010;
+    color: #fff;
+}
+.contact li a span {
+    color: #49a010;
+    font-size: 16px;
+    padding-right: 14px;
+}
+.contact li a {
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+}
+.contact li a {
+  align-items: center;
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+}
+.contact li + li {
+    margin-left: 30px;
+}
+
+
+/*-----------------------------------------
+  Sticky  For  Header
+-------------------------------------------*/
+
+.header-top.scroll-header {
+  animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+  background: rgba(255, 255, 255, 1) none repeat scroll 0 0;
+  box-shadow: 0 1px 3px rgba(50, 50, 50, 0.4);
+  left: 0;
+  margin: 0 auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+}
+.fluid-container.mobile-menu-container {
+  position: relative;
+}
+.mobile-logo {
+  align-items: center;
+  display: flex;
+  height: 52px;
+  left: 0;
+  padding-left: 15px;
+  position: absolute;
+  top: 0;
+  z-index: 2147483647;
+}
+.mobile-logo img {
+  max-height: 25px;
+}
+
+/*-----------------------------
+  Dropdown Menu
+--------------------------------*/
+.main__menu li.drop{
+    position: relative;
+}
+.main__menu li.drop ul.dropdown {
+  background: #ffffff none repeat scroll 0 0;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+  left: 0;
+  margin: 0;
+  opacity: 0;
+  padding: 0;
+  position: absolute;
+  top: 120%;
+  transition: all 0.2s ease-in-out 0s;
+  visibility: hidden;
+  width: 220px;
+  z-index: 999;
+}
+.scroll-header .main__menu li.drop ul.dropdown {
+  top: 100%;
+}
+.scroll-header .main__menu li.drop:hover ul.dropdown {
+  top: 100%;
+}
+.main__menu li.drop:hover ul.dropdown {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+.main__menu ul.dropdown li {
+    border-bottom: 1px solid #f4f4f4;
+    display: block;
+}
+.main__menu ul.dropdown li a {
+  background: #ffffff none repeat scroll 0 0;
+  color: #333;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 8px 14px;
+  text-align: left;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.3s ease 0s;
+}
+.main__menu li.drop ul.dropdown li:hover > a {
+    background: #fafafa none repeat scroll 0 0;
+    color: #222222;
+}
+
+/*----------------------------
+  Header Two
+---------------------------*/
+
+.header__content--wrap::before {
+  background: rgba(0, 0, 0, 0) url("../../images/bg/5.png") repeat scroll left center / cover ;
+  bottom: 10px;
+  content: "";
+  height: 43%;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  width: 60%;
+  z-index: -1;
+}
+.header__content--wrap {
+  position: relative;
+}
+.header--2 .menumenu__container {
+  background: #49a010 none repeat scroll 0 0;
+  border-radius: 0;
+}
+.header--2 .mainmenu__wrap.sticky__header {
+  top: 109px;
+}
+.header--2 .main__menu li::before {
+  background: #93bf77 none repeat scroll 0 0;
+}
+.header--2 .main__menu > li:hover > a {
+  color: #000;
+}
+.header--2 .menu__btn .btn {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #fff;
+  color: #49a010;
+}
+.btn.border__radi--none,
+.slider__btn a.btn.border__radi--none,
+.about__btn a.btn.border__radi--none,
+.contact-btn .btn.border__radi--none,
+.cmnt__btn .btn.border__radi--none{
+  border-radius: 0;
+}

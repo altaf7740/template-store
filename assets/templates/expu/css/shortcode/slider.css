@@ -1,0 +1,211 @@
+/* -----------------------------------
+Template Name: Expu
+Template URI: www.bootitems.com
+Description: This is a multipurpose html5 template
+Author URI: www.bootitems.com
+Version: 1.0  
+
+NOTE: This is Slider style file. All Slider related style included in this file.
+-----------------------------------------------------------------------------------
+CSS INDEX
+===================
+   1. Default Slider Settings
+--------------------------------------*/
+/*===========================================
+   1. Default Slider Settings
+=============================================*/
+#slider-container {
+	background-color: #ffffff;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+}
+.owl-item{width: 34%}
+#slider-container .owl-wrapper-outer,
+#slider-container .owl-wrapper,
+#slider-container .owl-item{
+	height: 100%;
+	position: relative;
+	width: 100%;
+}
+.slider-content-area{
+	display: block;
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.slider-container {
+	display: block;
+	height: auto;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+}
+.single-slide {
+	height: 100%;
+	position: relative;
+	width: 100%;
+}
+.single-slide > a {
+	display: block;
+	position: relative;
+}
+.single-slide img {
+	width: 100%;
+	z-index: 1;
+}
+.corporate .single-slide img {
+	height:100vh;
+}
+.dis-table{
+	display: table;
+	float: left;
+	height: 100%;
+	width: 100%;	
+}
+.dis-table-cell{
+	display: table-cell;
+	vertical-align: middle;	
+}
+/* Slider Content Style */
+.slider-content, .home-banner-content, .fixed-content{
+	position: relative;
+	z-index: 20;
+    margin-left: 4.9%;
+    width: 40%;	
+}
+.slide-content h1, .home-banner-content h1 {
+	font-size: 60px;
+	line-height: 66px;
+	padding-top: 95px;
+	margin-bottom: 5px;
+	position:relative;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+.slide-content p, .home-banner-content p {
+    font-family: 'Poppins', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+    color: #fff;
+}
+.slide-content .btn, .home-banner-content .btn {
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    color: #ffffff;
+    display: inline-block;
+    font-family: "Poppins",sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 10px;
+    padding: 9px 30px 7px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.slide-content .btn:hover{
+    background: #365A73;
+    border: 2px solid #365A73;
+}
+
+/* Default Slider Animations */
+.owl-item.active .slide-content h3{
+        -webkit-animation: fadeInLeft 1000ms ease-in-out;
+    animation: fadeInLeft 1000ms ease-in-out;
+}
+.owl-item.active .slide-content h1, .home-banner-content h1{
+        -webkit-animation: fadeInUp 2500ms ease-in-out;
+    animation: fadeInUp 2500ms ease-in-out;
+}
+.owl-item.active .slider-content p, .home-banner-content p{
+        -webkit-animation: fadeInUp 3000ms ease-in-out;
+    animation: fadeInUp 3000ms ease-in-out;
+}
+.owl-item.active .slider-content a.btn, .home-banner-content a.btn{
+        -webkit-animation: fadeInUp 5000ms ease-in-out;
+    animation: fadeInUp 5000ms ease-in-out;
+}
+/*===========================================
+  Home Parallax
+=============================================*/
+#slider-container-2 {
+	display: block;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+#slider-container-2 .owl-wrapper-outer,
+#slider-container-2 .owl-wrapper,
+#slider-container-2 .owl-item{
+	height: 100%;
+	position: relative;
+	width: 100%;
+	overflow:hidden;
+	z-index:1;
+}
+#slider-container-2 .slider-bg{
+	display: block;
+	position: relative;	
+}
+#slider-container-2 .slider-content-wrap {
+	display: block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 9;
+}
+#slider-container-2 .slider-content-wrap > div{
+	width:100%;
+	height:100%;
+	position:relative;
+}
+#slider-container-2 .owl-controls.clickable {
+    display:none !important;
+}
+.video-background {
+    height: 570px;
+    overflow: hidden;
+    position: relative;
+}
+#video-bg {width: 100%;}
+.video-wrapper, .video-banner {
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    z-index: 99;
+}
+.banner-image-wrap {
+    background-attachment: fixed;
+    background-image: url("../../images/slider/1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 125px 0;
+    position: relative;
+}
+.banner-image-wrap.default {
+    background-attachment: inherit;
+}
+.banner-image-wrap div{height: 100%}
+.common-para > p{text-align: justify}
+.animated-background .banner-content-area {
+    left: 0;
+    position: absolute;
+    top: 26%;
+}
+.banner-content.text-left, .banner-content h2.pull-left {
+    margin-left: 15px;
+}
+.banner-content .banner-breadcrumb.pull-right {
+    margin-right: 15px;
+}

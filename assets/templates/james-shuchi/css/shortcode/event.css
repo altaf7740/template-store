@@ -1,0 +1,52 @@
+/* -----------------------------------
+Template:  Theme Name
+
+NOTE: This is event style file. All event related style included in this file.
+
+--------------------------------------*/
+.single-event{
+	margin-top:10px;
+	margin-bottom:5px;
+}
+.event-wrapper {
+  background: #ffffff none repeat scroll 0 0;
+  padding: 10px;
+  border-radius:4px;
+  transition:all .4s;
+}
+.event-btn {
+  background: #ffffff none repeat scroll 0 0;
+  border-radius: 15px;
+  display: inline-block;
+  font-weight: 700;
+  padding: 6px 15px;
+  transition:all .4s;
+}
+.event-content {
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+.event-content ul li {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px 0 5px 35px;
+  position: relative;
+  text-align: left;
+}
+.event-content li::before {
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.8);
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  content: "";
+  left: 10px;
+  top: 13px;
+  border-radius: 50%;
+}
+.single-event:hover .event-wrapper {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+.single-event:hover .event-btn{
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}

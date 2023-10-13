@@ -1,0 +1,425 @@
+@import "../variables";
+@import "../mixins";
+
+
+/*=====================
+	Sidebar Styles
+========================*/
+
+
+
+.sidebar__widgets{
+
+	.single__widget{
+		h4{
+			color: #444444;
+		    font-family: $heading-font;
+		    font-size: 16px;
+		    line-height: 30px;
+		    margin-bottom: 37px;
+		    padding-bottom: 25px;
+		    position: relative;
+		    text-transform: uppercase;
+		    &::before {
+			    background-image: url("images/icons/line-5.png");
+			    background-repeat: no-repeat;
+			    bottom: 0;
+			    content: "";
+			    height: 12px;
+			    position: absolute;
+			    width: 272px;
+			}
+		}
+		&.search{
+			form{
+				position: relative;
+				input{
+					border: 1px solid #e4e4e4;
+				    color: #666666;
+				    font-size: 12px;
+				    height: 50px;
+				    padding-left: 30px;
+				    padding-right: 64px;
+				    width: 100%;
+				}
+				button{
+					background: transparent none repeat scroll 0 0;
+				    border: 0 none;
+				    color: #b5b5b5;
+				    font-size: 18px;
+				    outline: medium none;
+				    position: absolute;
+				    right: 30px;
+				    top: 50%;
+				    transform: translateY(-50%);
+				    transition: all 0.3s ease 0s;
+				    &:hover{
+				    	color: $theme-color;
+				    }
+				}
+			}
+		}
+
+		&.about{
+			margin-top: 50px;
+			.about__content{
+				border-radius: 5px;
+			    position: relative;
+			    z-index: 2;
+			    &::before {
+				    background: #000 none repeat scroll 0 0;
+				    border-radius: 5px;
+				    content: "";
+				    height: 100%;
+				    left: 0;
+				    opacity: 0.5;
+				    position: absolute;
+				    top: 0;
+				    width: 100%;
+				}
+				.about__info{
+					position: absolute;
+				    text-align: center;
+				    top: 50%;
+				    transform: translateY(-50%);
+				    width: 100%;
+				    .about__inner{
+				    	span{
+				    		color: #ffffff;
+    						font-size: 12px;
+				    	}
+				    	h6{
+				    		color: #ffffff;
+						    font-family: $heading-font;
+						    font-weight: 600;
+						    margin-bottom: 27px;
+						    margin-top: 5px;
+						    text-transform: uppercase;
+				    	}
+				    }
+
+				}
+			}
+		}
+
+		&.recent__post{
+			margin-top: 40px;
+			ul{
+				li{
+					@include flexbox();
+					&:not(first-child){
+						margin-top: 30px;
+					}
+					a{
+						img{
+							width: 95px;
+						}
+					}
+					.post__content{
+						padding-left: 20px;
+						h6{
+							font-family: $heading-font;
+						    font-size: 16px;
+						    font-weight: 700;
+						    line-height: 23px;
+
+						}
+						span{
+							&.date{
+								color: #666666;
+    							font-size: 12px;
+								i{
+									padding-right: 7px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&.offer{
+			margin-top: 48px;
+		}
+
+		&.recent__comment{
+			margin-top: 42px;
+			> ul{
+				> li{
+					padding-left: 30px;
+					h6{
+						font-family: $heading-font;
+					    font-size: 16px;
+					    font-weight: 700;
+					    line-height: 25px;
+					    margin-bottom: 5px;
+					    position: relative;
+					    &::before {
+						    color: #666666;
+						    content: "\f0e6";
+						    font-family: FontAwesome;
+						    font-size: 20px;
+						    left: -30px;
+						    position: absolute;
+						}
+					}
+					ul{
+						@include flexbox();
+						li{
+							color: #666;
+    						font-size: 12px;
+    						& + li{
+								margin-left: 15px;
+							    padding-left: 18px;
+							    position: relative;
+							    &::before {
+								    background: #666 none repeat scroll 0 0;
+								    content: "";
+								    height: 7px;
+								    left: 0;
+								    position: absolute;
+								    top: 38%;
+								    width: 7px;
+								}
+    						}
+    						a{
+    							color: #666;
+    							font-size: 12px;
+    						}
+						}
+					}
+					&:not(first-child){
+						margin-top: 28px;
+					}
+				}
+			}
+		}
+
+		&.Popular__classes{
+			margin-top: 37px;
+			ul{
+				margin-top: -20px;
+				li{
+					padding-left: 23px;
+   					position: relative;
+					& + li{
+						border-top: 1px solid #e5e5e5;
+					    height: 50px;
+					    line-height: 47px;
+					}
+					&::before {
+					    background: #646464 none repeat scroll 0 0;
+					    content: "";
+					    height: 8px;
+					    left: 0;
+					    position: absolute;
+					    top: 50%;
+					    transform: translateY(-50%) rotate(39deg);
+					    transition: all 0.3s ease 0s;
+					    width: 8px;
+					}
+					&:first-child{
+						height: 50px;
+    					line-height: 50px;
+					}
+					a{
+						color: #646464;
+					    display: block;
+					    font-size: 16px;
+					    font-weight: 600;
+					    text-transform: capitalize;
+					    transition: all 0.3s ease 0s;
+					    &:hover{
+					    	color: $theme-color;
+					    }
+
+					}
+					&:hover::before{
+						background: $theme-color;
+					}
+				}
+			}
+
+		}
+
+		&.instagram__feed{
+			margin-top: 23px;
+			ul{
+				@include flexbox();
+				@include flex-wrap(wrap);
+				li{
+					@include flex-basis(50%);
+				    margin-bottom: 6px;
+				    padding: 0 3px;
+				}
+			}
+		}
+
+		&.recent__twitter{
+			margin-top: 35px;
+			ul{
+				li{
+					&:not(first-child){
+						margin-top: 20px;
+					}
+					h6{
+						color: #444444;
+					    font-family: $heading-font;
+					    font-size: 16px;
+					    font-weight: 700;
+					    margin-bottom: 10px;
+					    padding-left: 30px;
+					    position: relative;
+					    &::before {
+						    color: #666666;
+						    content: "\f099";
+						    font-family: FontAwesome;
+						    font-size: 20px;
+						    left: 0;
+						    position: absolute;
+						}
+					}
+					p{
+						line-height: 23px;
+	    				margin-bottom: 11px;
+					}
+					.twit__time{
+						span{
+							color: #666666;
+						    font-size: 12px;
+						    font-weight: 600;
+						    & + span{
+						    	margin-left: 10px;
+							    padding-left: 18px;
+							    position: relative;
+							    &::before {
+								    background: #666 none repeat scroll 0 0;
+								    content: "";
+								    height: 6px;
+								    left: 0;
+								    position: absolute;
+								    top: 50%;
+								    transform: translateY(-50%);
+								    width: 6px;
+								}
+						    }
+						}
+					}
+				}
+			}
+		}
+
+		&.Social__network{
+			margin-top: 31px;
+		}
+
+		&.tags{
+			margin-top: 40px;
+			ul{
+				display: flex;
+				flex-wrap: wrap;
+				margin-left: -1px;
+				margin-right: -1px;
+				li{
+					margin-bottom: 20px;
+				    margin-left: 1px;
+				    margin-right: 1px;
+					a{
+						border: 1px solid #cbcbcb;
+					    border-radius: 5px;
+					    color: #666666;
+					    display: inline-block;
+					    font-family: $body-font;
+					    font-weight: 700;
+					    height: 36px;
+					    line-height: 33px;
+					    padding: 0 27px;
+						&:hover{
+							background: #89d700 none repeat scroll 0 0;
+						    border: 1px solid #89d700;
+						    color: #fff;
+						}
+					}
+				}
+			}
+		}
+
+		&.banner{
+			margin-top: 35px;
+		}
+	}
+
+}
+
+
+
+
+
+
+
+@media #{$lg-layout}{
+
+	.sidebar__widgets .single__widget.recent__comment > ul > li ul li + li {
+	  margin-left: 4px;
+	  padding-left: 14px;
+	}
+	.sidebar__widgets .single__widget.recent__comment > ul > li ul li {
+	  font-size: 10px;
+	}
+	.sidebar__widgets .single__widget.recent__twitter ul li h6 {
+	  font-size: 13px;
+	}
+	.sidebar__widgets .single__widget h4::before {
+	  width: 195px;
+	}
+
+}
+@media #{$md-layout}{
+
+
+	.sidebar__widgets .single__widget.about .about__content img {
+	  width: 100%;
+	}
+	.sidebar__widgets.sidebar--right {
+	  margin-top: 60px;
+	}
+	.sidebar__widgets.sidebar--left {
+	  margin-top: 60px;
+	}
+	.sidebar__widgets .single__widget.instagram__feed ul {
+	  flex-wrap: nowrap;
+	}
+	.sidebar__widgets .single__widget.instagram__feed ul li a img{
+		width: 100%;
+	}
+}
+@media #{$sm-layout}{
+
+	.sidebar__widgets .single__widget.about .about__content img {
+	  width: 100%;
+	}
+	.sidebar__widgets.sidebar--right {
+	  margin-top: 60px;
+	}
+	.sidebar__widgets .single__widget.instagram__feed ul {
+	  flex-wrap: nowrap;
+	}
+
+}
+
+
+@media #{$xs-layout}{
+
+	.sidebar__widgets .single__widget.instagram__feed ul {
+	  flex-wrap: wrap;
+	}
+	.sidebar__widgets .single__widget.instagram__feed ul li a img{
+		width: 100%;
+	}
+	.sidebar__widgets .single__widget.instagram__feed ul li{
+		flex-basis: 50%;
+	}
+
+
+}
+

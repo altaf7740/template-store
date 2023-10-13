@@ -1,0 +1,53 @@
+/*--
+    - Breadcrumb Style
+------------------------------------------*/
+
+/*---- Breadcrumb One ----*/
+.breadcrumb-area {
+    background: url("../images/bg/breadcrumb-2.png") repeat scroll 0 0;
+    text-align: center;
+    & h2 {
+        font-size: 30px;
+        font-weight: 700;
+        margin-top: -5px;
+        font-weight: 700;
+        color: $white;
+        @media #{$tablet-device}{
+            font-size: 24px;
+        }
+        @media #{$large-mobile}{
+            font-size: 24px;
+        }
+    }
+}
+.breadcrumb-list {
+    & .breadcrumb-item {
+        font-family: $opensans;
+        font-size: 14px;
+        color: $white;
+        text-transform: capitalize;
+        line-height: 1;
+        display: inline-block;
+        &.active {
+            color: $theme-color;
+            color: $white;
+        }
+        & a {
+            &:hover {
+                color: $black;
+            }
+        }
+    } 
+}
+
+.breadcrumb-item + .breadcrumb-item {
+    &::before {
+    color: $white;
+    content: "/";
+    display: inline-block;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    }  
+}
+    
+

@@ -1,0 +1,124 @@
+/*----------------------------------------*/
+/*  7.  Event Area
+/*----------------------------------------*/
+.event-area {}
+
+/*-- Event Tab List --*/
+.event-tab-list {
+    display: inline-block;
+    vertical-align: top;
+    & li {
+        display: block;
+        float: left;
+        margin: 0 15px;
+        @media #{$large-mobile}{
+            margin: 0 10px;
+        }
+        @media #{$small-mobile}{
+            margin: 0 5px;
+        }
+        & a {
+            background-color: #f1f1f1;
+            border: medium none;
+            border-radius: 0;
+            color: $heading-color;
+            display: block;
+            font-size: 20px;
+            height: 44px;
+            line-height: 20px;
+            padding: 10px 30px;
+            text-transform: capitalize;
+            @media #{$small-mobile}{
+                height: 40px;
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+        }
+        &.active a {
+            background-color: $theme-color;
+            color: $color-white;
+        }
+    }
+}
+
+/*-- Event --*/
+.event-item {
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 27px;
+    & .image {
+        display: block;
+        margin-bottom: 30px;
+        & img {
+            width: 100%;
+        }
+    }
+    & .head {
+        margin-bottom: 13px;
+        & .date {
+            border-left: 4px solid #f1f1f1;
+            color: $heading-color;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 20px;
+            margin-right: 20px;
+            padding-left: 13px;
+            text-align: center;
+            & span {
+                display: block;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 13px;
+                margin-top: 12px;
+                text-transform: capitalize;
+            }
+        }
+        & .title-meta {
+            & h4 {
+                font-size: 20px;
+                font-weight: 400;
+                margin-top: -4px;
+                margin-bottom: 12px;
+                @media #{$tablet-device}{
+                    font-size: 17px;
+                }
+                @media #{$small-mobile}{
+                    font-size: 16px;
+                }
+                & a {
+                    color: $heading-color;
+                    &:hover {
+                        color: $theme-color;
+                    }
+                }
+            }
+            & ul {
+                & li {
+                    color: #999999;
+                    display: block;
+                    float: left;
+                    line-height: 16px;
+                    margin-right: 25px;
+                    @media #{$desktop-device}{
+                        font-size: 12px;
+                        margin-right: 10px;
+                    }
+                    @media #{$small-mobile}{
+                        font-size: 12px;
+                        margin-right: 10px;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    & i {
+                        font-size: 16px;
+                        float: left;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+    & p {
+        color: $heading-color;
+    }
+}

@@ -1,0 +1,147 @@
+// main: style.scss
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  background: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 48px;
+  z-index: 3;
+  transition: all 0.5s ease;
+
+  #logo {
+    padding: 6px 0 0 0;
+    h1 {
+      color: #505050;
+      font-family: "Philosopher", sans-serif;
+      font-size: 26px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin: 0;
+    }
+
+    h1 a {
+      color: #555;
+      line-height: 1;
+      display: inline-block;
+      text-decoration: none;
+      span {
+        color: $accent-color;
+      }
+    }
+
+    img {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+.scroll-header {
+  background: #fff;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+}
+
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: calc(100vh - 40px);
+  background: url(../img/hero-bg.png) center bottom no-repeat;
+  background-size: 100%;
+  position: relative;
+  margin-top: 40px;
+
+  @media (min-width: 1025px) {
+    background-attachment: fixed;
+  }
+
+  .hero-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    font-family: "Philosopher", sans-serif;
+    color: $accent-color;
+    @media (max-width: 768px) {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  }
+
+  h2 {
+    color: #777;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+  }
+
+  img {
+    max-width: 95%;
+    margin-bottom: 30px;
+  }
+
+  .btn-get-started {
+    font-family: $heading-font;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 11px 36px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin-bottom: 30px;
+    border: 2px solid $accent-color;
+    background: #fff;
+    color: $accent-color;
+    text-decoration: none;
+    &:hover {
+      background: $accent-color;
+      color: #fff;
+    }
+  }
+
+  .btns {
+    a {
+      color: #555;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin: 4px 20px;
+      text-decoration: none;
+      transition: 0.3s;
+      @media (max-width: 575px ) {
+        margin: 4px 8px;
+      }
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  }
+}

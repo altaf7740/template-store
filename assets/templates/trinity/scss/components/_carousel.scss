@@ -1,0 +1,238 @@
+/*****************************
+24 - Components - Carousel
+*****************************/
+
+
+/*-- 24.00 - Carousel Helper --*/
+
+.slick{
+	&-btn,
+	&-arrow{
+		cursor: pointer;
+		z-index: 1;
+		display: inline-block;
+		@extend %basetransition;
+	}
+}
+
+/*-- 24.01 - Carousel Gutter --*/
+
+@for $i from 1 through 20{
+	.slick-gutter-#{$i * 5}{
+		.slick-list{
+			margin-left: -#{($i * 5)/2}px;
+			margin-right: -#{($i * 5)/2}px;
+		}
+		.slick-slide{
+			padding-left: #{($i * 5)/2}px;
+			padding-right: #{($i * 5)/2}px;
+		}
+
+		&.slick-vertical{
+			.slick-list{
+				margin-top: -#{($i * 5)/2}px;
+				margin-bottom: -#{($i * 5)/2}px;
+				margin-left: 0;
+				margin-right: 0;
+				@include breakpoint(small){
+					margin-left: -#{($i * 5)/2}px;
+					margin-right: -#{($i * 5)/2}px;
+					margin-left: 0;
+					margin-right: 0;
+				}
+			}
+			.slick-slide{
+				padding-top: #{($i * 5)/2}px;
+				padding-bottom: #{($i * 5)/2}px;
+				padding-left: 0;
+				padding-right: 0;
+				@include breakpoint(small){
+					padding-left: #{($i * 5)/2}px;
+					padding-right: #{($i * 5)/2}px;
+					padding-top: 0;
+					padding-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+
+/*-- 24.02 - Slick Dot Margin Bottom --*/
+
+@for $i from 1 through 20{
+	.slick-dot-mb-#{$i * 5}{
+		.slick-dots{
+			margin-top: #{($i * 5)}px !important;
+		}
+		.slick-btn{
+			margin-top: #{($i * 5)}px !important;
+		}
+	}
+}
+
+@for $i from 1 through 20{
+	@include breakpoint(medium){
+		.slick-dot-mb-md-#{$i * 5}{
+			.slick-dots{
+				margin-top: #{($i * 5)}px !important;
+			}
+		}
+	}
+}
+
+
+/*-- 24.03 - Carousel Nav --*/
+
+.trinity-element-carousel{
+	@extend %posrelative;
+}
+.tty-slick{
+	&-text{
+		@extend %lineheight1;
+		&-btn{
+			@extend %transparent-bg;
+			@extend %border-none;
+			@extend %fontSize18;
+			@extend %fontWeight700;
+			@extend %textUpper;
+			@extend %lineheight1;
+			padding: 0;
+		}
+		&-prev{
+			padding-right: 40px;
+			color: #bebebe;
+			@include breakpoint(xsmall){
+				padding-right: 15px;
+			}
+		}
+		&-next{
+			@include breakpoint(xsmall){
+				padding-right: 15px;
+			}
+		}
+		&:hover{
+			color: $hover-color;
+		}
+	}
+	&-btn{
+		i{
+			@extend %fontSize18;
+		}
+	}
+}
+.slick{
+	&-dots{
+		@extend %posrelative;
+		line-height: 0;
+		text-align: center;
+		bottom: 30px;
+		li{
+			display: inline-block;
+		    position: relative;
+			margin: 0 5px;
+			cursor: pointer;
+			padding: 0;
+			width: 20px;
+			height: 3px;
+			background: #495057b8;
+			@extend %basetransition;
+			button{
+			    font-size: 0;
+			    display: block;
+			    width: 100%;
+			    height: 100%;
+			    padding: 0;
+			    cursor: pointer;
+			    @extend %border-none;
+			    @extend %transparent-bg;
+			    @extend %basetransition;
+			}
+			&.slick-active{
+				border-color: $color-black;
+				background-color: $color-black;
+				width: 40px;
+			}
+		}
+	}
+	&-dot{
+		&-right{
+			.slick-dots{
+				text-align: right;
+				right: 60px;
+				@include breakpoint(xsmall){
+					right: 40px;
+				}
+			}
+		}
+		&-left{
+			.slick-dots{
+				text-align: left;
+				left: 60px;
+				@include breakpoint(xsmall){
+					left: 40px;
+				}
+			}
+		}
+		&-style{
+			&-2{
+				.slick{
+					&-dots{
+						li{
+							button{
+								&:hover{
+									border-color: $heading-color
+								}
+							}
+							&.slick-active{
+								button{
+									border-color: $heading-color;	
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.slick-slide{
+	img{
+		margin: 0 auto;
+	}
+}
+.nav{
+	&-round{
+		.tty-slick-btn{
+			@include borderIconCenter(35, 1);
+			@include border-radius(50%);
+			border: 1px solid #cccccc;;
+			font-size: 18px;
+			color: #8f8f8f;
+		}
+	}
+	&-vertical-center{
+		.tty-slick{
+			&-btn{
+				@extend %verticalCenter;
+			}
+			&-prev{
+				left: 0;
+			}
+			&-next{
+				right: 0;
+			}
+		}
+		&.nav-s-25{
+			.tty-slick{
+				&-prev{
+					left: 25px;
+				}
+				&-next{
+					right: 25px;
+				}
+			}
+		}
+	}
+}
+

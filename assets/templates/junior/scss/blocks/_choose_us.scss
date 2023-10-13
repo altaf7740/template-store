@@ -1,0 +1,57 @@
+@import "../variables";
+@import "../mixins";
+
+
+/*========================
+	Choose Us Area
+===========================*/
+
+
+.dacre__choose__option{
+	margin-top: 40px;
+	.choose{
+		display: flex;
+    	justify-content: space-between;
+		.choose__inner{
+			text-align: right;
+			h4{
+				font-size: 24px;
+			    line-height: 32px;
+			    margin-bottom: 10px;
+			    font-family: $heading-font;
+				a{
+
+				}
+			}
+			p{
+
+			}
+		}
+		.choose__icon{
+			padding-left: 20px;
+    		padding-top: 11px;
+			img{
+
+			}
+		}
+	}
+	.choose__big__img{
+		text-align: center;
+	}
+	&.text__align--left{
+		.choose{
+			.choose__inner{
+				text-align: left;
+			}
+			.choose__icon{
+				padding-left: 0;
+			    padding-right: 20px;
+			}
+		}
+	}
+}
+
+.choose:not(first-child) {
+    margin-top: 40px;
+}
+

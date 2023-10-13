@@ -1,0 +1,515 @@
+/* Large Screen  */
+@media only screen and (min-width: 1171px) and (max-width: 1500px) {
+
+
+
+}
+
+
+/* Normal desktop :992px. */
+@media only screen and (min-width: 992px) and (max-width: 1169px) {
+
+/*-- Header --*/
+.header-section {
+  padding: 0 30px;
+}
+.header-search {
+  padding: 35px 0;
+}
+.header-search .search-toggle {
+  padding: 0;
+}
+.header-account {
+  margin-left: 15px;
+}
+.header-account > ul > li > a {
+  padding: 0;
+}
+.header-cart {
+  margin-left: 15px;
+}
+.header-cart .cart-toggle {
+  padding: 0 10px 0 0;
+}
+
+/*-- Menu --*/
+.main-menu.menu-right {
+  margin-right: 20px;
+}
+.main-menu > ul > li {
+  margin: 0 10px;
+}
+
+/*-- Home Slider --*/
+.hero-video-caption {
+  padding: 200px 0;
+}
+.hero-slider-content {
+  margin-top: 40px;
+  padding-right: 45px;
+}
+.hero-slider-content h1 {
+  font-size: 40px;
+}
+.hero-slider-content p {
+  font-size: 14px;
+}
+/*-- Slider Nav --*/
+.nivo-prevNav {
+  left: 20px;
+}
+.nivo-nextNav {
+  right: 20px;
+}
+
+/*-- Testimonial Slider --*/
+.testimonial-slider {
+  padding: 0 50px;
+}
+
+/*-- Banner Style --*/
+.single-banner-2::before {
+  width: 420px;
+}
+
+/*-- List Product --*/
+.list-product-info {
+  padding-top: 10px;
+}
+.list-product-info .title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.list-product-info .price {
+  margin-bottom: 10px;
+}
+
+
+
+}
+
+ 
+/* Tablet desktop :768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+/*-- Header --*/
+.header-section {
+  padding: 0 15px;
+}
+.header-option-btns {
+  padding-right: 50px;
+}
+
+/*-- Home Slider --*/
+.hero-video-caption {
+  padding: 150px 0;
+}
+.hero-slider-content {
+  margin-top: 40px;
+  padding-right: 45px;
+}
+.hero-slider-content h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.hero-slider-content h1 {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+.hero-slider-content p {
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+.hero-slider-content a {
+  height: 32px;
+  padding: 4px 20px;
+}
+/*-- Slider Content 2 --*/
+.hero-slider-content-2 h1 {
+  font-size: 30px;
+}
+.hero-slider-content-2 h1 span {
+  font-size: 50px;
+}
+.hero-slider-content-2 a {
+  height: 32px;
+  padding: 4px 20px;
+}
+/*-- Slider Nav --*/
+.nivo-prevNav {
+  left: 0;
+}
+.nivo-nextNav {
+  right: 0;
+}
+
+/*-- Banner --*/
+.single-banner-2::before {
+  -webkit-transform: rotate(20deg) scale(1.8);
+  -ms-transform: rotate(20deg) scale(1.8);
+  transform: rotate(20deg) scale(1.8);
+  width: 320px;
+}
+.single-banner-2 .content {
+  max-width: 360px;
+  right: 50px;
+}
+.single-banner-2 .content h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.single-banner-2 .content p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.single-banner-2 .content a {
+  height: 36px;
+  padding: 6px 20px;
+}
+    
+/*-- Product Slider Controls --*/
+.product-slider .arrow-prev {
+  left: 0;
+}
+.product-slider .arrow-next {
+  right: 0;
+}
+
+/*-- Footer --*/
+.footer-widget:nth-child(2n+1) {
+  clear: both;
+}
+.footer-widget.link-widget {
+  padding-left: 15px;
+}
+
+
+
+
+
+
+
+
+}
+
+ 
+/* Large Mobile :480px. */
+@media only screen and (max-width: 767px) {
+.container {
+  width:450px;
+}
+.page-banner-section {
+  padding: 65px 0;
+}
+.page-banner-content h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.page-banner-content .breadcrumb li {
+  font-size: 14px;
+}
+/*-- Header --*/
+.header-section {
+  background-color: #fff;
+  padding: 0 15px;
+  position: static;
+}
+.header-section.stick {
+  box-shadow: none;
+  position: static;
+}
+.header-option-btns {
+  padding-right: 50px;
+}
+.header-logo {
+  padding: 21px 0;
+  width: 150px;
+}
+.header-search {
+  padding: 20px 10px;
+}
+.header-account > ul > li {
+  padding: 20px 0;
+}
+.header-cart {
+  padding: 20px 0;
+}
+a.meanmenu-reveal {
+  top: -50px;
+}
+.mean-nav {
+  box-shadow: none;
+}
+.mean-nav > ul > li > a {
+  padding: 6px 0;
+}
+.mean-nav ul li li a, .mean-nav ul li li li a, .mean-nav ul li li li li a {
+  padding: 3px 0;
+}
+.mean-nav ul li li:hover a {
+  padding: 3px 0;
+}
+
+/*-- Home Slider --*/
+.hero-video-caption {
+  padding: 100px 0;
+}
+.hero-slider-content {
+  margin-top: 0;
+  padding-right: 15px;
+  text-align: center;
+}
+.hero-slider-content h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.hero-slider-content h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.hero-slider-content p {
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+.hero-slider-content a {
+  height: 32px;
+  padding: 4px 20px;
+}
+/*-- Slider Content 2 --*/
+.hero-slider-content-2 {
+  text-align: center;
+}
+.hero-slider-content-2 h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-left: 0;
+}
+.hero-slider-content-2 h1 span {
+  font-size: 40px;
+}
+.hero-slider-content-2 a {
+  height: 32px;
+  padding: 4px 20px;
+}
+/*-- Slider Nav --*/
+.nivo-directionNav a {
+  display: none;
+}
+
+/*-- Banner --*/
+.single-banner-2::before {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  width: 100%;
+}
+.single-banner-2 .content {
+  padding: 0 30px;
+  right: 0;
+  text-align: center;
+  width: 100%;
+}
+.single-banner-2 .content h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.single-banner-2 .content p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.single-banner-2 .content a {
+  font-size: 13px;
+  height: 32px;
+  padding: 4px 20px;
+}
+
+/*-- Testimonial Slider --*/
+.testimonial-slider {
+  padding: 0;
+}
+    
+/*-- Product Slider Controls --*/
+.product-slider .arrow-prev {
+  left: 0;
+}
+.product-slider .arrow-next {
+  right: 0;
+}
+
+/*-- Footer --*/
+.footer-widget.link-widget {
+  padding-left: 15px;
+}
+.footer-bottom-section .copyright, .footer-bottom-section .payment-method {
+  text-align: center;
+}
+.footer-bottom-section .copyright {
+  margin-bottom: 15px;
+}
+
+/*-- Shop --*/
+.shop-tablist {
+  width: auto;
+}
+.shop-bar p {
+  display: block;
+  float: left;
+  text-align: left;
+  width: 100%;
+}
+
+/*-- List Product --*/
+.list-product-img {
+  margin-right: 0;
+  width: 100%;
+}
+.list-product-info {
+  width: 100%;
+}
+.list-product-info .title {
+  font-size: 24px;
+}
+.comment-list li ul {
+  margin-left: 0;
+}
+
+
+
+
+
+
+
+ 
+}
+ 
+/* small mobile :320px. */
+@media only screen and (max-width: 479px) {
+.container {
+  width:300px;
+}
+.col-xs-wide {
+  width: 100%;
+}
+.page-banner-section {
+  padding: 30px 0;
+}
+.page-banner-content h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.page-banner-content .breadcrumb li {
+  font-size: 12px;
+}
+
+/*-- Section Title --*/
+.section-title {
+  margin-bottom: 50px;
+}
+.section-title h4 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.section-title h2 {
+  font-size: 24px;
+  line-height: 18px;
+}
+
+/*-- Header --*/
+.header-option-btns {
+  display: none;
+  padding-right: 50px;
+}
+
+/*-- Home Slider --*/
+.hero-video-caption {
+  padding: 70px 0;
+}
+.hero-slider-content h4 {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.hero-slider-content h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-left: 0;
+}
+.hero-slider-content p {
+  display: none;
+}
+.hero-slider-content a {
+  font-size: 11px;
+  height: 28px;
+  padding: 2px 15px;
+}
+/*-- Slider Content 2 --*/
+.hero-slider-content-2 h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.hero-slider-content-2 h1 span {
+  font-size: 28px;
+}
+.hero-slider-content-2 a {
+  height: 30px;
+  padding: 3px 18px;
+}
+/*-- Service --*/
+.single-service {
+  width: 100%;    
+}
+
+/*-- Banner --*/
+.single-banner-2 .content h1 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.single-banner-2 .content p {
+  display: none;
+}
+.single-banner-2 .content a {
+  font-size: 12px;
+  height: 28px;
+  padding: 2px 15px;
+}
+
+/*-- List Product --*/
+.list-product-info .title {
+  font-size: 20px;
+}
+.list-action-btn .add-to-cart {
+  float: none;
+}
+.list-action-btn a {
+  margin: 10px 10px 0 0;
+}
+
+.product-details .title {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+.cart-coupon input[type="text"], .cart-coupon input[type="submit"] {
+  text-align: center;
+  width: 100%;
+}
+.checkout-login-wrapper form .remember-me-box {
+  float: left;
+  width: 100%;
+}
+
+.single-blog-post .blog-info .title {
+  font-size: 16px;
+  line-height: 24px;
+}
+.single-comment .image {
+  float: none;
+  margin-bottom: 15px;
+}
+.login-reg-form {
+  padding: 20px;
+}
+.login-reg-form form label.inline {
+  float: left;
+}
+ 
+}
+ 

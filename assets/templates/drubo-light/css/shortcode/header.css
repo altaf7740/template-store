@@ -1,0 +1,220 @@
+/* -----------------------------------
+
+	Template Name: Drubo
+    Template URI: https://devitems.com/html/drubo-preview/
+    Description: This is html5 template
+    Author: HasTech
+    Author URI: https://devitems.com/
+    Version: 1.0 
+
+	Note: This is Short code style file. All Short code related style included in this file. 
+
+--------------------------------------*/
+/*Header Style Top*/
+.header-area {
+  background: #fff none repeat scroll 0 0;
+  opacity: 0.9;
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+}
+.header-left ul li {
+  margin-right: 35px;
+}
+.header-left ul li span {
+  color: #606060;
+  font-size: 16px;
+  margin-right: 8px;
+}
+.header-left ul li a {
+  color: #606060;
+  font-family: lato;
+}
+.header-left ul li a:hover,.header-left ul li:hover span{color:#14b1bb;}
+/* Header Right */
+.social-icon ul { margin: 0; padding: 0; float:left; }
+.social-icon ul li { display: inline-block; list-style: none; }
+.social-icon ul li a {
+  color: #666666;
+  display: block;
+  font-size: 16px;
+  height: 50px;
+  padding: 15px 0;
+  text-align: center;
+  width: 35px;
+}
+li.search-active {
+  margin-left: 23px;
+  padding-left: 23px;
+  position: relative;
+}
+li.search-active::before {
+  color: #c5c2c2;
+  content: "|";
+  position: absolute;
+  left: 0px;
+  top: 15px;
+}
+.search-form {
+  bottom: -64px;
+  opacity: 0;
+  position: absolute;
+  right: -5px;
+  transform: scaleY(0);
+  transform-origin: 0 0 0;
+  transition: all 0.5s ease 0s;
+  z-index: 99999999;
+  width: 205px;
+}
+.search-form input[type="text"] {
+  background: #fbfbfb none repeat scroll 0 0;
+  border: 1px solid #d9d9d9;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  padding: 5px 18px;
+}
+.search-active:hover .search-form {
+  opacity: 1;
+  transform: scaleY(1);
+  z-index: 99;
+}
+.social-icon ul li a:hover { color: #14b1bb; }
+
+.social-icon.socile-icon-style-2 ul li a { color: #fff; background: #323232; border-radius: 0;}
+.social-icon.socile-icon-style-2 ul li a:hover { background: #EB3B60;  }
+
+.social-icon.socile-icon-style-3 ul li a { color: #fff; background: transparent; border:1px solid #fff; }
+.social-icon.socile-icon-style-3 ul li a:hover { background: #EB3B60; border-color:#EB3B60; }
+/*Header Menu Area*/
+/*menu style */
+.main-menu {
+  float: right;
+}
+.main-menu ul > li > a {
+  color: #303030;
+  font-family: raleway;
+  font-weight: 600;
+  line-height: 50px;
+  padding: 40px 15px;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+  position: relative;
+}
+.main-menu ul li.active a,.main-menu ul li:hover a{color:#14b1bb;}
+.main-menu ul li >  ul {
+  background: #ffffff none repeat scroll 0 0;
+  box-shadow: 2px 0 7px 0 rgba(0, 0, 0, 0.13);
+  margin: 0;
+  opacity: 0;
+  padding: 15px;
+  position: absolute;
+  text-align: left;
+  top: 100px;
+  transform-origin: 0 0 0;
+  transition: all 0.5s ease 0s;
+  visibility: hidden;
+  width: 225px;
+  z-index: -9999;
+}
+.main-menu ul li ul li {
+  display: block;
+  overflow: hidden;
+}
+.main-menu ul li ul > li > a {
+  color: #303030 !important;
+  display: block;
+  font-family: raleway;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 12px;
+  overflow: hidden;
+  padding: 10px;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+}
+.main-menu ul li ul li a:hover{color:#14b1bb!important;}
+.main-menu ul li:hover ul {
+  opacity: 1;
+  visibility: visible;
+  z-index: 999;
+  top:75px;
+}
+/*---------------------
+  mega-menu 
+-----------------------*/
+.main-menu ul#nav li .mega-menu {
+  background: #ffffff none repeat scroll 0 0;
+  opacity: 0;
+  position: absolute;
+  top: 190%;
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  width: 1040px;
+  z-index: -99;
+}
+.main-menu ul#nav li:hover .mega-menu{
+  margin-top: 0;
+  opacity: 1;
+  top: 151%;
+  z-index: 999;
+  visibility:visible
+}
+.main-menu ul#nav li .mega-menu .single {
+  border-right: 1px solid #eee;
+  float: left;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  width: 25%;
+}
+.main-menu ul#nav li .mega-menu .single:last-child{border:none;border-bottom:0}
+.main-menu ul#nav li .mega-menu .single li > a:last-child{border-bottom:0}
+.main-menu ul#nav li .mega-menu .single > li > a {
+  color: #888888;
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 12px;
+  margin: 0 35px;
+  padding: 10px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.main-menu ul#nav li .mega-menu .single > li> a:hover{color:#fff;}
+.main-menu ul#nav li .mega-menu {
+  left: auto;
+  right: 0;
+}
+ /*Sticky Menu*/
+.sticky {
+  animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+  background: rgba(255, 255, 255, 1) none repeat scroll 0 0;
+  box-shadow: 0 1px 3px rgba(50, 50, 50, 0.4);
+  left: 0;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  background: #fff;
+}
+.sticky.main-menu-area {
+  padding: 8px 0;
+}
+.sticky.main-menu-area .main-menu ul li:hover ul {top: 58px;}
+.sticky .main-menu ul#nav li:hover .mega-menu {top: 117%;}
+/* Headroom js */
+.headroom {
+  will-change: transform;
+  transition: transform 200ms linear;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: #fff;
+}
+.headroom--pinned {
+  transform: translateY(0%);
+  box-shadow: 0 1px 3px rgba(50, 50, 50, 0.4)
+}
+.headroom--unpinned {
+  transform: translateY(-100%);
+}

@@ -1,0 +1,113 @@
+/*---------------------------------------
+    16. Contact
+-----------------------------------------*/
+
+/*-- Contact Info --*/
+.ht-contact-info-one {
+    & .title {
+        font-size: 30px;
+        font-weight: 900;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+        @media #{$small-mobile}{
+            font-size: 24px;
+        }
+    }
+    & p {
+        font-size: 16px;
+        font-family: $poppins;
+        font-weight: 500;
+        line-height: 28px;
+        margin-bottom: 33px;
+    }
+    & ul {
+        margin-bottom: 55px;
+        & li {
+            font-size: 16px;
+            font-family: $poppins;
+            line-height: 28px;
+            color: $body-color-light;
+            margin-bottom: 6px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            & span {
+                font-weight: 500;
+                color: $body-color;
+            }
+        }
+    }
+}
+
+/*-- Contact Form --*/
+.ht-contact-form-one {
+    max-width: 370px;
+    
+    & .title {
+        font-size: 30px;
+        font-weight: 900;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+        @media #{$small-mobile}{
+            font-size: 24px;
+        }
+    }
+    
+    & input {
+        height: 46px;
+        line-height: 24px;
+        background-color: #f0f3f4;
+        border-radius: 25px;
+        padding: 11px 25px;
+        border: none;
+        font-family: $montserrat;
+        color: #999999;
+        width: 100%;
+        margin-bottom: 15px;
+        &[type="submit"] {
+            margin-bottom: 0;
+            padding: 11px 35px;
+            background-color: $blue;
+            color: $white;
+            text-transform: uppercase;
+            width: auto;
+            font-size: 14px;
+            font-weight: 500;
+            &:hover {
+                box-shadow: 0 10px 35px -7px rgba($blue, 0.8);
+                transform: translateY(-3px);
+            }
+        }
+    }
+    & textarea {
+        height: 90px;
+        line-height: 24px;
+        background-color: #f0f3f4;
+        border-radius: 25px;
+        padding: 11px 25px;
+        border: none;
+        font-family: $montserrat;
+        color: #999999;
+        resize: none;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    & .form-messege {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+/*-- Contact Map --*/
+.ht-contact-map-three {
+    & .map {
+        width: 100%;
+        height: 500px;
+        margin: auto;
+        @media #{$large-mobile}{
+            height: 350px
+        }
+    }
+}

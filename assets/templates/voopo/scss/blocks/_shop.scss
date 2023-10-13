@@ -1,0 +1,75 @@
+/*------------------
+    Shop Styles 
+---------------------*/
+
+.product {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    .thumb {
+        a {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .content {
+        padding: 5px 20px 30px;
+        h2 {
+            margin-bottom: 2px;
+            a {
+                color: #010f54;
+                font-size: 20px;
+                line-height: 47px;
+                transition: 0.5s;
+                &:hover {
+                    color: $hover-color;
+                }
+            }
+        }
+        p {
+            margin-bottom: 18px;
+        }
+        span {
+            &.price {
+                color: #010f54;
+                font-size: 24px;
+                font-weight: 500;
+            }
+        }
+    }
+    .hover__action {
+        opacity: 0;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all 0.5s ease 0s;
+        width: 100%;
+    }
+    &:hover .hover__action {
+        opacity: 1;
+    }
+}
+
+// Responsive Css
+@media #{$xx-layout} {}
+
+@media #{$xlg-layout} {}
+
+@media #{$lg-layout} {
+    .product .content h2 a {
+        font-size: 17px;
+        line-height: 41px;
+    }
+    .product .content {
+        padding: 5px 17px 30px;
+    }
+}
+
+@media #{$md-layout} {}
+
+@media #{$sm-layout} {}
+
+@media #{$xs-layout} {}
+
+@media #{$xxs-layout} {}

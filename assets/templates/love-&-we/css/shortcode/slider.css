@@ -1,0 +1,237 @@
+/* -----------------------------------
+Template Name: Love & we
+Template URI: www.bootitems.com
+Description: This is a multipurpose html5 template
+Author URI: www.bootitems.com
+Version: 1.0  
+
+NOTE: This is Slider style file. All Slider related style included in this file.
+-----------------------------------------------------------------------------------
+CSS INDEX
+===================
+   1. Default Slider Settings
+--------------------------------------*/
+/*===========================================
+   1. Default Slider Settings
+=============================================*/
+#slider-container {
+	background-color: #ffffff;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+}
+.owl-item{width: 34%}
+#slider-container .owl-wrapper-outer,
+#slider-container .owl-wrapper,
+#slider-container .owl-item{
+	height: 100%;
+	position: relative;
+	width: 100%;
+}
+.slider-content-area{
+	display: block;
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.slider-container {
+	display: block;
+	height: auto;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+}
+.single-slide {
+	height: 100%;
+	position: relative;
+	width: 100%;
+    background-position: center center;
+    background-size: cover;
+}
+.single-slide:after {
+	height: 100%;
+	position: absolute;
+	width: 100%;
+    background: rgba(0, 0, 0, 0.74);
+    content: "";
+    left: 0;
+    top: 0;
+    z-index: 9;
+}
+.height-100vh {
+    height: 100vh;
+}
+.single-slide > a {
+	display: block;
+	position: relative;
+}
+.single-slide img {
+	width: 100%;
+	z-index: 1;
+}
+.dis-table{
+	display: table;
+	height: 100%;
+	width: 100%;	
+}
+.dis-table-cell{
+	display: table-cell;
+	vertical-align: middle;	
+}
+/* Slider Content Style */
+.slider-content, .home-banner-content, .fixed-content{
+	position: relative;
+	z-index: 20;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.slide-content h1, .banner-content h1, .banner-image-wrap .banner-content h1 {
+	font-size: 80px;
+	position:relative;
+    font-family: 'Kaushan Script', cursive;
+    color: #fff;
+    position: relative;
+    margin-bottom: 20px;
+}
+.banner-image-wrap .banner-content h1 {
+    margin-top: inherit;
+}
+.slide-content h5, .banner-content h5 {
+	font-size: 24px;
+	margin-bottom: 25px;
+	position:relative;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    margin-top: 215px;
+}
+.banner-content h5 {
+    margin-top: 155px;
+}
+.banner-content.short > h5 {
+  margin-top: 100px;
+}
+.slide-content h4, .banner-content h4 {
+	position:relative;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    font-size: 30px;
+}
+/* Default Slider Animations */
+.owl-item.active .slide-content h4, .banner-content h4{
+        -webkit-animation: fadeInUp 2500ms ease-in-out;
+    animation: fadeInUp 2500ms ease-in-out;
+}
+.owl-item.active .slide-content h1, .banner-content h1{
+        -webkit-animation: fadeInUp 2500ms ease-in-out;
+    animation: fadeInUp 2500ms ease-in-out;
+}
+.owl-item.active .slider-content h5, .banner-content h5{
+        -webkit-animation: fadeInUp 2500ms ease-in-out;
+    animation: fadeInUp 2500ms ease-in-out;
+}
+.owl-item.active .slider-content img, .banner-content img{
+        -webkit-animation: fadeInUp 2500ms ease-in-out;
+    animation: fadeInUp 2500ms ease-in-out;
+    height: 35px;
+    width: 281px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+#banner-container{
+    position: relative;
+    background-image: url(../../img/banner/1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 170px 0 118px;
+}
+.banner-content {
+  z-index: 99;
+  position: relative;
+}
+#banner-container:after, .bg-1:after, .banner-image-wrap:after, .video-banner:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    content: "";
+}
+.banner-content-area-home{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: 99;
+}
+.banner-content-area h1{
+    color: #fff;
+    font-size: 36px;
+    font-family: 'Kaushan Script', cursive;
+    margin-bottom: 12px;
+    margin-top: 130px;
+}
+.banner-content-area .banner-content.short > h1{
+    margin-top: 100px;
+}
+.dis-table{
+    height: 100%;
+    display: table;
+}
+.dis-table-cell{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+}
+#particles-js.bg-1 {
+  background-image: url("../../img/slider/1.jpg");
+}
+#particles-js {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+}
+.banner-image-wrap div {
+  height: 100%;
+}
+.banner-image-wrap {
+  background-attachment: fixed;
+  background-image: url("../../img/slider/1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 150px 0;
+  position: relative;
+}
+.banner-image-wrap.default {
+  background-attachment: inherit;
+}
+.video-wrapper, .video-banner {
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  z-index: 99;
+}
+.video-bg-img {
+  background: rgba(0, 0, 0, 0) url("../../img/video/2.png") repeat fixed center center / cover ;
+}
+.banner-content-area.shortcode banner-content h1{
+    margin-top: 20px;
+}
+.banner-content-area.four h1{margin-top: 0}
+.animated-background {
+  position: relative;
+}

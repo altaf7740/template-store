@@ -1,0 +1,89 @@
+/*--
+    10. Testimonial Css
+-------------------------------------*/
+
+.testimonial-slider-5 {
+    .testimonial-for5 {
+        .testimonial-desc {
+            text-align: center;
+            padding-bottom: 0;
+            text-align: center;
+            padding: 30px 85px 0;
+
+            .client {
+                h6 {
+                    color: #131313;
+                    font-weight: 600;
+                    font-size: 22px;
+                    margin-bottom: 5px;
+                    letter-spacing: 2px
+                }
+
+                span {
+                    color: #333333;
+                    font-size: 18px;
+                    font-weight: 400;
+                    font-family: "Montserrat", sans-serif;
+                    letter-spacing: 5px;
+                    margin-bottom: 25px;
+                    display: inline-block;
+
+                    @media #{$large-mobile} {
+                        margin-bottom: 17px;
+                    }
+                }
+            }
+
+            p {
+                color: #767676;
+                font-weight: 600;
+                font-style: italic;
+                font-size: 18px;
+                line-height: 38px;
+                margin: 0;
+
+                @media #{$large-mobile} {
+                    font-size: 14px;
+                    line-height: 29px;
+                }
+            }
+            
+
+            @media #{$large-mobile} {
+                padding: 20px 0px 0;
+            }
+        }
+    }
+}
+
+
+.testimonial-slider-5 .testimonal-nav5.slick-slider {
+    padding: 0px 100px;
+}
+
+.testimonal-nav5 .testimonal-img img{
+    border-radius: 50%;
+}
+
+.testimonal-nav5 .slick-current.slick-active {
+    transform: scale(1);
+    justify-content: center;
+    display: flex;
+}
+
+.testimonal-nav5 .slick-active {
+    transform: scale(0.8);
+    text-align: center;
+}
+.testimonial-slider-5 .slick-slide.slick-active .testimonal-img img {
+    border: 0 none;
+}
+.slick-slide.slick-active.slick-center .testimonal-img img {
+    transform: scale(1);
+}
+.testimonal-img {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+

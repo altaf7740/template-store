@@ -1,0 +1,69 @@
+/*----------------------------------------*/
+/*  19.  Partner
+/*----------------------------------------*/
+
+/*-- Partner Tab List --*/
+.partner-tab-list {
+    display: inline-block;
+    vertical-align: top;
+    & a {
+        display: block;
+        float: left;
+        height: 60px;
+        line-height: 24px;
+        padding: 18px 21px;
+        background-color: $white;
+        position: relative;
+        color: $heading-color;
+        text-transform: uppercase;
+        font-family: $montserrat;
+        @media #{$large-mobile}{
+            height: 46px;
+            padding: 12px 15px;
+            font-size: 12px;
+        }
+        @media #{$small-mobile}{
+            font-size: 10px;
+        }
+        &:first-child {
+            padding-left: 47px;
+            border-radius: 50px 0 0 50px;
+            @media #{$large-mobile}{
+                padding-left: 30px;
+            }
+            @media #{$small-mobile}{
+                padding-left: 25px;
+            }
+        }
+        &:last-child {
+            padding-right: 47px;
+            border-radius: 0 50px 50px 0;
+            @media #{$large-mobile}{
+                padding-right: 30px;
+            }
+            @media #{$small-mobile}{
+                padding-right: 25px;
+            }
+        }
+        &.active {
+            background-color: $blue;
+            box-shadow: 0 0 25px 5px rgba($black, 0.1);
+            z-index: 2;
+            color: $white;
+        }
+    }
+}
+
+/*-- Single Partner --*/
+.single-partner {
+    flex-grow: 1; 
+    padding: 0 15px;
+    width: calc(100% * (1/4));
+    text-align: center;
+    @media #{$large-mobile}{
+        width: calc(100% * (1/2));
+    }
+    & img {
+        max-width: 100%;;
+    }
+}

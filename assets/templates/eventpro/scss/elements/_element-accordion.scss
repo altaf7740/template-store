@@ -1,0 +1,125 @@
+/*-- Single Accordion --*/
+.single-accordion {
+    background-color: $white;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 30px;
+    margin-top: 0 !important;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    & .collapse {
+    }
+}
+
+/*-- Accordion Header --*/
+.accordion-header {
+    & h5 {
+        margin-bottom: 0;
+        & a {
+            background-color: $blue;
+            color: $white;
+            display: block;
+            font-weight: 700;
+            line-height: 24px;
+            padding: 13px 30px 13px 70px;
+            position: relative;
+            text-align: left;
+            text-transform: uppercase;
+            width: 100%;
+            justify-content: center;
+            &::before {
+                background-image: url(img/icons/minus-light.png);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-color: darken($blue, 10);
+                content: "";
+                height: 50px;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 50px;
+            }
+            &:focus, &:hover {
+                color: $white;
+            }
+            &.collapsed {
+                background-color: #f1f2f3;
+                color: $heading-color;
+                &::before {
+                    background-image: url(img/icons/plus-light.png);
+                    background-color: $heading-color;
+                    content: "";
+                    line-height: 48px;
+                }
+                &:focus {
+                    color: $heading-color;
+                }
+                &:hover {
+                    color: $blue;
+                }
+            }
+        }
+    }
+}
+
+/*-- Accordion Header Two --*/
+.accordion-header-two {
+    & h5 {
+        margin-bottom: 0;
+        & a {
+            background-color: $blue;
+            color: $white;
+            display: block;
+            font-weight: 700;
+            line-height: 24px;
+            padding: 13px 30px 13px 30px;
+            position: relative;
+            text-align: left;
+            text-transform: uppercase;
+            width: 100%;
+            justify-content: center;
+            &::before {
+                content: "\f106";
+                font-family: 'Fontawesome';
+                font-size: 22px;
+                height: 50px;
+                color: $white;
+                right: 0;
+                line-height: 44px;
+                position: absolute;
+                text-align: center;
+                top: 0;
+                width: 50px;
+            }
+            &:focus, &:hover {
+                color: $white;
+            }
+            &.collapsed {
+                background-color: #f1f2f3;
+                color: $heading-color;
+                &::before {
+                    color: $heading-color;
+                    content: "\f107";
+                    line-height: 48px;
+                }
+                &:focus {
+                    color: $heading-color;
+                }
+                &:hover {
+                    color: $blue;
+                }
+            }
+        }
+    }
+}
+
+/*-- Accordion Body --*/
+.accordion-body {
+    padding: 20px 30px;
+    border: 1px solid #eeeeee;
+    border-top-width: 0px;
+    & p {}
+}

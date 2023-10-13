@@ -1,0 +1,807 @@
+/*----------------------------------------*/
+/*  1.  RTL CSS
+/*----------------------------------------*/
+/* Bootstrap Css For Rtl */
+.text-left {
+  text-align: right;
+}
+.text-right {
+  text-align: left;
+}
+.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12,
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12,
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12,
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: right;
+}
+@media (min-width:768px){.col-sm-offset-12{margin-left:auto;margin-right:100%}.col-sm-offset-11{margin-left:auto;margin-right:91.66666667%}.col-sm-offset-10{margin-left:auto;margin-right:83.33333333%}.col-sm-offset-9{margin-left:auto;margin-right:75%}.col-sm-offset-8{margin-left:auto;margin-right:66.66666667%}.col-sm-offset-7{margin-left:auto;margin-right:58.33333333%}.col-sm-offset-6{margin-left:auto;margin-right:50%}.col-sm-offset-5{margin-left:auto;margin-right:41.66666667%}.col-sm-offset-4{margin-left:auto;margin-right:33.33333333%}.col-sm-offset-3{margin-left:auto;margin-right:25%}.col-sm-offset-2{margin-left:auto;margin-right:16.66666667%}.col-sm-offset-1{margin-left:auto;margin-right:8.33333333%}.col-sm-offset-0{margin-left:auto;margin-right:0}}@media (min-width:992px){.col-md-offset-12{margin-left:auto;margin-right:100%}.col-md-offset-11{margin-left:auto;margin-right:91.66666667%}.col-md-offset-10{margin-left:auto;margin-right:83.33333333%}.col-md-offset-9{margin-left:auto;margin-right:75%}.col-md-offset-8{margin-left:auto;margin-right:66.66666667%}.col-md-offset-7{margin-left:auto;margin-right:58.33333333%}.col-md-offset-6{margin-left:auto;margin-right:50%}.col-md-offset-5{margin-left:auto;margin-right:41.66666667%}.col-md-offset-4{margin-left:auto;margin-right:33.33333333%}.col-md-offset-3{margin-left:auto;margin-right:25%}.col-md-offset-2{margin-left:auto;margin-right:16.66666667%}.col-md-offset-1{margin-left:auto;margin-right:8.33333333%}.col-md-offset-0{margin-left:auto;margin-right:0}}@media (min-width:1200px){.col-lg-offset-12{margin-left:auto;margin-right:100%}.col-lg-offset-11{margin-left:auto;margin-right:91.66666667%}.col-lg-offset-10{margin-left:auto;margin-right:83.33333333%}.col-lg-offset-9{margin-left:auto;margin-right:75%}.col-lg-offset-8{margin-left:auto;margin-right:66.66666667%}.col-lg-offset-7{margin-left:auto;margin-right:58.33333333%}.col-lg-offset-6{margin-left:auto;margin-right:50%}.col-lg-offset-5{margin-left:auto;margin-right:41.66666667%}.col-lg-offset-4{margin-left:auto;margin-right:33.33333333%}.col-lg-offset-3{margin-left:auto;margin-right:25%}.col-lg-offset-2{margin-left:auto;margin-right:16.66666667%}.col-lg-offset-1{margin-left:auto;margin-right:8.33333333%}.col-lg-offset-0{margin-left:auto;margin-right:0}}
+
+.float-left {
+  float: right;
+}
+.float-right {
+  float: left;
+}
+input, textarea {
+  text-align: right;
+}
+select {
+  background-position: left center !important;
+  text-align: right;
+}
+.panel-group {
+  text-align: right;
+}
+.panel-group .panel-title {
+  padding: 9px 15px 9px 10px;
+}
+.panel-group .panel-title a:before {
+  left: 0;
+  right: auto;
+}
+.arrival-slider .slick-dots {
+  left: 57px;
+  right: auto;
+}
+.nivo-controlNav {
+  margin-top: -45px;
+}
+.progress-bar {
+  float: right;
+}
+/*----------------------------------------*/
+/*  2.  Header RTL CSS
+/*----------------------------------------*/
+.header-left-1 {
+  left: auto;
+  right: 50px;
+}
+.header-right-1, .header-right-3 {
+  left: 50px;
+  right: auto;
+}
+.language-currency > ul:before {
+  left: 0;
+  right: auto;
+}
+.language-currency > ul > li > ul.right {
+  left: 0;
+  right: auto;
+}
+.search-dropdown.right {
+  left: 0;
+  right: auto;
+}
+.mini-cart.right {
+  left: 0;
+  right: auto;
+}
+.acc-menu-dropdown.right {
+  left: 0;
+  right: auto;
+}
+.acc-menu-toggle {
+  margin-left: 0;
+  margin-right: 15px;
+}
+.mini-cart-wrapper-2 .mini-cart-btn {
+  padding-left: 0;
+  padding-right: 15px;
+}
+.language-currency-4 > ul:before {
+  left: auto;
+  right: 0;
+}
+.header-search-4 .search-toggle {
+  padding-left: 15px;
+  padding-right: 0;
+}
+.search-dropdown.left {
+  left: auto;
+  right: 0;
+}
+.language-currency > ul > li > ul.left {
+  left: auto;
+  right: 0;
+  text-align: right;
+}
+.header-top-link a:before {
+  left: 0;
+  right: auto;
+}
+.mini-cart-wrapper-4 .mini-cart-btn {
+  padding-left: 0;
+  padding-right: 15px;
+}
+.language-currency-5 ul:before {
+  left: auto;
+  right: 0;
+}
+/* Menu */
+.menu nav > ul > li {
+  direction: rtl;
+  float: right;
+}
+.sub-menu {
+  text-align: right;
+}
+.sub-menu li:hover > a {
+  padding-left: 0;
+  padding-right: 7px;
+}
+.sub-menu .sub-menu {
+  left: auto;
+  right: 100%;
+}
+.mega-menu {
+  left: auto;
+  right: 0;
+  text-align: right;
+}
+.mega-menu ul {
+  float: right;
+}
+.mega-menu ul li:hover a {
+  padding-left: 0;
+  padding-right: 7px;
+}
+.menu-banner {
+  float: right;
+}
+.sidebar-menu-wrapper {
+  left: auto;
+  right: -400px;
+}
+.sidebar-menu-wrapper.open {
+  left: auto;
+  right: 0;
+}
+.mobile-menu-wrapper-2 .mean-bar {
+  text-align: right;
+}
+.mobile-menu-wrapper-2 .meanmenu-reveal {
+  float: left;
+}
+/*----------------------------------------*/
+/*  3.  Footer RTL CSS
+/*----------------------------------------*/
+.footer-top-area {
+  text-align: right;
+}
+.footer-shipping ul li a:before, .footer-account ul li a:before, .footer-information ul li a:before {
+  content: "\f2fa";
+  float: right;
+  margin-left: 10px;
+  margin-right: 0;
+}
+.footer-shipping ul li a:hover, .footer-account ul li a:hover, .footer-information ul li a:hover {
+  padding-left: 0;
+  padding-right: 7px;
+}
+.footer-newsletter .mc-form input[type="email"] {
+  text-align: right;
+}
+.footer-contact div span {
+  float: right;
+}
+.footer-social a {
+  float: right;
+  margin-left: 15px;
+  margin-right: 0;
+}
+.footer-tags .tags-cloud a {
+  float: right;
+  margin-left: 15px;
+  margin-right: 0;
+}
+.footer-collection-wrap .sin-collection {
+  float: right;
+}
+.footer-payment .payment-co img {
+  float: right;
+  margin-left: 20px;
+  margin-right: 0;
+}
+.sin-footer-contact i {
+  float: right;
+  margin-left: 14px;
+  margin-right: 0;
+}
+.newsletter-wrapper h3 {
+  float: right;
+}
+.newsletter-form .mc-form input[type="email"] {
+  float: right;
+  margin-left: 50px;
+  margin-right: 0;
+  text-align: right;
+}
+/*----------------------------------------*/
+/*  4.  Service RTL CSS
+/*----------------------------------------*/
+.sin-shipping-1 {
+  text-align: right;
+}
+.sin-shipping-1 .icon {
+  margin-left: 20px;
+  margin-right: 0;
+  display: inline-block;
+}
+.sin-shipping-1 .content {
+  text-align: right;
+}
+/*----------------------------------------*/
+/*  5.  Banner RTL CSS
+/*----------------------------------------*/
+.banner-wrap .banner-content.left {
+  left: auto;
+  right: 50px;
+  text-align: right;
+}
+.banner-content-2.left {
+  padding-right: 60px;
+  right: 40px;
+  text-align: right;
+}
+.banner-content-2.left h1 {
+  right: 0;
+  -webkit-transform: rotate(-90deg) translateY(-100%);
+      -ms-transform: rotate(-90deg) translateY(-100%);
+          transform: rotate(-90deg) translateY(-100%);
+  -webkit-transform-origin: right top 0;
+      -ms-transform-origin: right top 0;
+          transform-origin: right top 0;
+}
+/*----------------------------------------*/
+/*  6.  Mini Product RTL CSS
+/*----------------------------------------*/
+.mini-product-wrapper h4 {
+  text-align: right;
+}
+.mini-product-wrapper h4:before {
+  right: 0;
+  left: auto;
+}
+.sin-mini-product .image {
+  margin-left: 30px;
+  margin-right: 0;
+  float: right;
+}
+.mini-product-slider .slick-list {
+  margin-right: -15px;
+  margin-left: 0;
+}
+.mini-product-item {
+  padding: 15px 15px 15px 0;
+}
+/*----------------------------------------*/
+/*  7.  Blog RTL CSS
+/*----------------------------------------*/
+.blog-content.content-left:before {
+  left: auto;
+  right: -30px;
+}
+.blog-content.content-right:before {
+  right: auto;
+  left: -30px;
+}
+.blog-content-wrapper {
+  text-align: right;
+}
+.blog-date i {
+  float: right;
+  margin-left: 9px;
+  margin-right: 0;
+}
+.blog-foot .blog-meta a {
+  float: right;
+  margin-left: 20px;
+  margin-right: 0;
+}
+.blog-foot .blog-meta a i, .blog-top-right .blog-meta a i {
+  float: right;
+  margin-left: 9px;
+  margin-right: 0;
+}
+.blog-foot .read-more {
+  float: right;
+}
+.blog-foot .read-more i {
+  float: left;
+  left: auto;
+  right: 0;
+  top: 4px;
+}
+.blog-foot .read-more:hover i {
+  left: auto;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  right: 8px;
+}
+.blog-top-left .date {
+  float: right;
+  margin-left: 9px;
+  margin-right: 0;
+}
+.blog-top-left a i {
+  float: right;
+  margin-left: 9px;
+  margin-right: 0;
+}
+.blog-social {
+  float: left;
+}
+.blog-social p, .blog-social a {
+  float: right;
+}
+.blog-details-author img {
+  float: right;
+  margin-left: 10px;
+  margin-right: 0;
+}
+.blog-details-author .content {
+  text-align: right;
+}
+.blog-comments, .comments-form {
+  text-align: right;
+}
+.comment-list .sin-comment .image {
+  margin-left: 25px;
+  margin-right: 0;
+}
+.comment-list .sin-comment .content h4 {
+  float: right;
+  margin: 0 0 0 15px;
+}
+.comment-list .sin-comment .content span {
+  float: right;
+}
+.comment-list .sin-comment .content a {
+  float: left;
+}
+.comment-list li .comment-list {
+  margin-right: 67px;
+  margin-left: 0;
+}
+/*----------------------------------------*/
+/*  8.  Arrival RTL CSS
+/*----------------------------------------*/
+.arrival-image {
+  padding: 0 0 0 40px;
+}
+.arrival-content-2 {
+  padding-left: 60px;
+  padding-right: 15px;
+}
+.arrival-price-ratting h3 {
+  float: right;
+  margin-left: 15px;
+  margin-right: 0;
+}
+.arrival-price-ratting .pro-ratting {
+  float: right;
+}
+/*----------------------------------------*/
+/*  9.  Shop RTL CSS
+/*----------------------------------------*/
+.pagination p, .pro-showing p, .pro-short-by p {
+  float: right;
+  margin-left: 18px;
+  margin-right: 0;
+}
+.pro-short-by select, .pro-showing select {
+  background-position: left center;
+  text-align: right;
+}
+.shop-top-bar .view-mode li {
+  float: right;
+}
+.shop-top-bar .view-mode li + li {
+  margin-left: 0;
+  margin-right: 10px;
+}
+.list-pro-details {
+  text-align: right;
+}
+.list-pro-details .pro-title {
+  float: right;
+}
+.list-pro-details .pro-price .new {
+  float: right;
+  margin-left: 15px;
+  margin-right: 0;
+}
+/* Sidebar */
+.sidebar-wrapper {
+  text-align: right;
+}
+.sidebar-title h4 {
+  border-left: 0 none;
+  border-right: 2px solid #606060;
+  padding-left: 0;
+  padding-right: 17px;
+}
+.cat-treeview .hitarea {
+  left: 19px;
+  right: auto;
+}
+.size-wrap a {
+  border-left: 1px solid #dcdcdc;
+  float: right;
+  border-right: 0;
+}
+.size-wrap a:last-child {
+  border-left: medium none;
+}
+.color-wrap a {
+  float: right;
+  margin-left: 7px;
+  margin-right: 0;
+}
+.sidebar-recent-item .image {
+  margin-left: 20px;
+  margin-right: 0;
+}
+.sidebar-search form input {
+  padding: 0 20px 0 60px;
+}
+.sidebar-search form button {
+  left: 0;
+  right: auto;
+}
+.sin-sidebar-post .image {
+  margin-left: 15px;
+  margin-right: 0;
+}
+.sidebar-tags a {
+  float: right;
+  margin-left: 15px;
+  margin-right: 0;
+}
+.sidebar-instagram a {
+  float: right;
+}
+/*----------------------------------------*/
+/*  10.  Product Details RTL CSS
+/*----------------------------------------*/
+.single-product-image {
+  display: block;
+  float: right;
+  margin-left: 35px;
+  margin-right: 0;
+}
+.single-product-content {
+  text-align: right;
+}
+.single-pro-color h5, .single-pro-size-1 h5 {
+  float: right;
+}
+.single-pro-color a, .single-pro-size-1 a {
+  float: right;
+  margin-left: 6px;
+  margin-right: 0;
+}
+.pro-thumb-slider {
+  float: right;
+}
+.pro-details-tablist li, .tab-list li {
+  float: right;
+  margin-left: 45px;
+  margin-right: 0;
+}
+.tab-pane {
+  text-align: right;
+}
+.pro-rev-tab {
+  float: right;
+}
+.review-image {
+  float: right;
+  margin-left: 30px;
+  margin-right: 0;
+}
+.review-author h3 {
+  margin-left: 30px;
+  margin-right: 0;
+  float: right;
+}
+.review-form .star-box .star {
+  border-left: 1px solid #cccccc;
+  border-right: 0;
+  float: right;
+  margin-left: 15px;
+  margin-right: 0;
+  padding-left: 15px;
+  padding-right: 0;
+}
+.pro-thumb {
+  margin-left: 30px;
+  margin-right: 0;
+}
+.pro-qty-wrap-2 {
+  margin-left: 35px;
+  margin-right: 0;
+}
+.pro-qty-wrap-2 h5, .single-pro-size-2 h5 {
+  float: right;
+  margin: 0 0 0 20px;
+}
+.pro-qty-2 input {
+  border-width: 0 0 0 1px;
+  float: right;
+}
+.single-pro-size-2 select {
+  padding-left: 30px;
+  padding-right: 0;
+  background-position: left;
+}
+.product-share {
+  float: right;
+}
+.product-share a {
+  margin-left: 15px;
+  margin-right: 0;
+}
+/*----------------------------------------*/
+/*  11.  Checkout, Cart RTL CSS
+/*----------------------------------------*/
+.billing-details, .order-payment {
+  text-align: right;
+}
+.order-payment ul li .name {
+  float: right;
+}
+.order-payment ul li .price {
+  float: left;
+}
+.cart-table .cart-product {
+  text-align: left;
+}
+.shipping-tax, .product-coupon, .procced-checkout {
+  text-align: right;
+}
+/*----------------------------------------*/
+/*  12.  Other RTL CSS
+/*----------------------------------------*/
+.about-content {
+  text-align: right;
+}
+.about-content ul {
+  direction: rtl;
+  float: right;
+}
+.team-social a {
+  float: right;
+}
+.contact-form, .contact-info {
+  text-align: right;
+}
+.sin-con-info img {
+  margin-left: 30px;
+  margin-right: 0;
+  float: right;
+}
+.sin-con-info .content .info i {
+  float: right;
+  margin-left: 20px;
+  margin-right: 0;
+}
+.page-404 .search-form input {
+  float: right;
+}
+/*----------------------------------------*/
+/*  12.  RTL Responsive CSS
+/*----------------------------------------*/
+@media (min-width: 1200px) and (max-width: 1400px) {
+
+
+}
+
+/* Normal desktop :992px. */
+@media only screen and (min-width: 992px) and (max-width: 1169px) {
+.banner-wrap .banner-content.left {
+  right: 20px;
+}
+.sin-mini-product .image {
+  margin-left: 20px;
+}
+
+
+}
+
+/* Tablet desktop :768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.header-left-1 {
+  float: left;
+  margin-left: 0;
+}
+.mobile-menu-wrapper .meanmenu-reveal {
+  left: auto !important;
+  right: 0 !important;
+}
+.mean-nav ul li a, .mean-nav ul li li a, .mean-nav ul li li li a {
+  text-align: right;
+}
+.mean-nav .mean-expand {
+  left: 0;
+  right: auto;
+}
+.header-right-2 {
+  float: left;
+}
+.header-left-2 {
+  margin-left: 0;
+  margin-right: 33.3333%;
+}
+.header-center-3 {
+  float: right;
+  margin-left: 0;
+  margin-right: 33.3333%;
+}
+.banner-wrap .banner-content.left {
+  right: 30px;
+}
+.sin-mini-product .image {
+  margin-left: 15px;
+}
+.arrival-image {
+  padding: 80px 80px 0;
+}
+.arrival-content-2 {
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 70px;
+}
+
+
+
+
+
+}
+
+
+
+/* Large Mobile :480px. */
+@media only screen and (max-width: 767px) {
+.header-left-1 {
+  float: left;
+  margin-left: 0;
+}
+.mobile-menu-wrapper .meanmenu-reveal {
+  left: auto !important;
+  right: 0 !important;
+}
+.mean-nav ul li a, .mean-nav ul li li a, .mean-nav ul li li li a {
+  text-align: right;
+}
+.mean-nav .mean-expand {
+  left: 0;
+  right: auto;
+}
+.header-right-2 {
+  float: left;
+  padding-left: 15px;
+}
+.header-left-2 {
+  margin-left: 0;
+  margin-right: 33.3333%;
+}
+.header-center-3 {
+  float: right;
+  margin-left: 0;
+  margin-right: 33.3333%;
+}
+.product-tab-list li a {
+  float: right;
+}
+.product-tab-list li a:before {
+  left: 40px;
+  right: 0;
+}
+.arrival-image {
+  padding: 0;
+}
+.blog-foot .blog-meta {
+  float: right;
+}
+.arrival-content-2 {
+  padding: 50px 20px;
+}
+.mini-product-wrapper.left h4 {
+  text-align: right;
+}
+.mini-product-wrapper.left .sin-mini-product .image {
+  float: right;
+  margin-left: 30px;
+  margin-right: 0;
+}
+.pro-showing {
+  float: right;
+}
+.pagination ul {
+  float: right;
+}
+.review-details {
+  clear: both;
+}
+.review-author span {
+  clear: both;
+  float: right;
+}
+.single-product-image {
+  margin-left: 0;
+}
+.product-big-image-2 {
+  width: 315px;
+}
+.pro-qty {
+  float: right;
+}
+.blog-foot .blog-meta {
+  clear: both;
+  float: right;
+}
+.comment-list li .comment-list {
+  margin-right: 0;
+}
+	
+}
+
+/* small mobile :320px. */
+@media only screen and (max-width: 479px) {
+.mini-cart-wrapper-4 .mini-cart-btn {
+  padding-right: 0;
+}
+.banner-wrap .banner-content.left {
+  right: 30px;
+}
+.arrival-slider .slick-dots {
+  left: 20px;
+  right: auto;
+}
+.pro-short-by {
+  float: right;
+}
+.single-pro-price {
+  margin: 0;
+}
+.single-pro-ratting {
+  clear: both;
+  float: right;
+}
+.pro-details-act-btn {
+  float: right;
+  margin-left: 30px !important;
+  margin-right: 0 !important;
+}
+.pro-qty {
+  float: right;
+}
+.pro-thumb {
+  margin-left: 10px;
+  margin-right: 0;
+}
+.product-big-image-2 {
+  width: 210px;
+}
+.pro-details-action-2 .pro-details-act-btn {
+  margin-left: 10px !important;
+}
+.sin-review .replay-delect {
+  float: right;
+}
+.comment-list .sin-comment .image {
+  float: right;
+}
+.comment-list .sin-comment .content {
+  clear: both;
+}
+.blog-details-author .content {
+  clear: both;
+}
+.blog-top-right, .blog-social {
+  float: right;
+}
+
+
+}

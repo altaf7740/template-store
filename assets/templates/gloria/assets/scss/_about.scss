@@ -1,0 +1,199 @@
+/*--
+    05. About Css
+--------------------------*/
+
+
+
+
+.welcome-inner {
+    .content {
+        h2 {
+            color: #242424;
+            font-size: 30px;
+            font-style: italic;
+            font-family: 'Playfair Display', serif;
+            font-weight: 400;
+            position: relative;
+            padding-bottom: 15px;
+            font-weight: 600;
+
+            &::before {
+                position: absolute;
+                content: "";
+                left: 0;
+                bottom: 0;
+                width: 80px;
+                background: #e54c2a;
+                height: 2px;
+            }
+        }
+
+        p {
+            color: #666666;
+            font-size: 16px;
+            line-height: 30px;
+            font-family: 'Cabin', sans-serif;
+            margin-top: 20px;
+
+            &.sub-title {
+                color: #242424;
+                font-size: 20px;
+                line-height: 32px;
+                font-family: 'Cabin', sans-serif;
+            }
+        }
+    }
+}
+
+
+
+
+/* Popular Desis */
+
+.res-popular-desases {
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+    & a {
+        display: block;
+        & img {
+            width: 100%;
+        }
+    }
+    .content {
+        text-align: center;
+        padding: 36px 46px;
+        span {
+            color: #6b6b6b;
+            font-weight: 500;
+            font-size: 14px;
+            font-family: 'Cabin', sans-serif;
+        }
+        h2 {
+            font-size: 24px;
+            line-height: 30px;
+            font-weight: 400;
+            margin-top: 6px;
+            margin-bottom: 13px;
+            font-family: 'Playfair Display', serif;
+            a {
+                color: #2b2a2a;
+            }
+        }
+        p {
+            margin: 0;
+            color: #2b2a2a;
+            font-size: 30px;
+            font-weight: 400;
+            font-family: 'Playfair Display', serif;
+        }
+    }
+}
+
+
+
+
+
+/* Resturant Tab */
+
+.res-tab-wrapper{
+    &.separator {
+        position: relative;
+        &::before {
+            position: absolute;
+            content: "";
+            border-style: dashed;
+            width: 1px;
+            height: 100%;
+            border-width: 1px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-color: #e54c2a;
+            @media #{$large-mobile,$tablet-device} {
+                display: none;
+            }
+        }
+    }
+
+
+}
+
+.res-tab-content-wrap-left {
+    .res-tab-content{
+        padding-right: 40px;
+        @media #{$large-mobile,$tablet-device}{
+            padding: 0 0px;
+        }
+    }
+}
+.res-tab-content-wrap-right {
+    .res-tab-content{
+        padding-left: 40px;
+        @media #{$large-mobile,$tablet-device}{
+            padding: 0 0px;
+        }
+    }
+}
+
+.res-tab-content{
+    margin-bottom: 56px;
+    @media #{$large-mobile}{
+        padding: 0 0px;
+        margin-bottom: 26px;
+    }
+    .title {
+        padding-bottom: 15px;
+        border-bottom: 1px dashed #626262;
+        margin-bottom: 18px;
+        h2 {
+            display: inline-block;
+            font-weight: 400;
+            font-size: 18px;
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            a{
+                color: #2b2a2a;
+                transition: 0.3s ease-in-out;
+                &:hover{
+                    color: #e54c2a;
+                }
+            }
+        }
+        span {
+            display: inline-block;
+            float: right;
+            padding-left: 20px;
+            color: #e54c2a;
+            font-size: 18px;
+            font-weight: 700;
+            font-family: 'Playfair Display', serif;
+            @media #{$large-mobile,$tablet-device}{
+                margin-top: -30px;
+            }
+        }
+    }
+    p {
+        color: #4a4a4a;
+        font-size: 16px;
+        margin: 0;
+        line-height: 30px;
+        font-family: 'Cabin', sans-serif;
+    }
+    &:last-child{
+        margin-bottom: 0;
+    }
+    
+}
+
+
+
+
+.resturant-test.testimonial-slide-active-4 .slick-dots li button {
+    background: #ffffff;
+}
+.resturant-test.testimonial-slide-active-4 .slick-dots li.slick-active button {
+    background: #e54c2a;
+}
+.resturant-test.testimonial-slide-active-4 button.slick-arrow{
+    color: #e54c2a;
+}
+

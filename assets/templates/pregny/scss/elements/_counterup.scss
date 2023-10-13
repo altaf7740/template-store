@@ -1,0 +1,93 @@
+// Counterup Area
+.counterup_wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media #{$sm-layout} {
+        
+    }
+    @media #{$md-layout} {
+        
+    }
+   
+    .single_counter {
+        text-align: center;
+        @media #{$small-mobile} {
+            flex-basis: 50%;
+            margin-top: 21px;
+        }
+        .count {
+            color: #121212;
+            font-family: $heading-font;
+            font-size: 35px;
+            font-weight: 600;
+        }
+        h5 {
+            color: #424242;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 0;
+            margin-top: 15px;
+            @media #{$sm-layout} {
+                font-size: 20px;
+                margin-top: 5px;
+            }
+            @media #{$large-mobile} {
+                font-size: 16px;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+.instagram_list {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: -9px;
+}
+
+
+.service_style--2{
+    .space_ver{
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            top: 63%;
+            height: 2px;
+            background: #f3f4f8;
+            left: 50%;
+            width: 70%;
+            margin: 0 auto;
+            transform: translateX(-50%);
+
+        }
+    }
+    .space_hor{
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "";
+            left: 63%;
+            width: 2px;
+            background: #f3f4f8;
+            left: 49%;
+            height: 96%;
+            top: 17%;
+
+        }
+    }
+}
+
+
+
+.brand_list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.brand_list.owl-carousel .owl-item img {
+    width: auto;
+    margin: auto;
+}

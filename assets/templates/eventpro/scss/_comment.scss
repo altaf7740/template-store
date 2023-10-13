@@ -1,0 +1,102 @@
+/*----------------------------------------*/
+/*  23.  Comment
+/*----------------------------------------*/
+
+/*-- Comment Wrapper --*/
+.comment-wrapper {
+    margin-top: 40px;
+    border-top: 1px solid #eeeeee;
+    padding-top: 60px;
+    & .title {
+        line-height: 1;
+        margin-bottom: 40px;
+    }
+}
+
+/*-- Comment List --*/
+.comment-list {
+    margin-bottom: 60px;
+    & li {
+        & .child-comment {
+            padding-left: 100px;
+            @media #{$small-mobile}{
+                padding-left: 0;
+            }
+            & li {}
+        }
+    }
+}
+
+/*-- Single Comment --*/
+.single-comment {
+    margin-bottom: 40px;
+    & .image {
+        border-radius: 5px;
+        margin-right: 20px;
+        margin-bottom: 0;
+        overflow: hidden;
+        width: 70px;
+        @media #{$small-mobile}{
+            float: none !important;
+            margin-bottom: 15px;
+        }
+        & img {
+            width: 100%;
+        }
+    }
+    & .content {
+        & .head {
+            float: left;
+            @media #{$large-mobile}{
+                width: 100%;
+            }
+            & h5 {
+                font-size: 14px;
+                text-transform: uppercase;
+                font-weight: 400;
+                float: left;
+                margin-right: 10px;
+                @media #{$large-mobile}{
+                    margin-bottom: 6px;
+                }
+            }
+            & span {
+                display: block;
+                float: left;
+                font-size: 12px;
+                line-height: 16px;
+                position: relative;
+                &::before {
+                    content: "-";
+                    margin: 10px;
+                }
+            }
+        }
+        & .reply {
+            color: $body-color;
+            text-transform: uppercase;
+            float: right;
+            font-size: 12px;
+            font-weight: 700;;
+            @media #{$large-mobile}{
+                float: none;
+            }
+            &:hover {
+                color: $blue;
+            }
+            & i {
+                margin-right: 5px;
+            }
+        }
+        & p {
+            float: left;
+            width: 100%;
+        }
+    }
+}
+
+/*-- Comment Form --*/
+.comment-form {
+    & input {}
+    & textarea {}
+}

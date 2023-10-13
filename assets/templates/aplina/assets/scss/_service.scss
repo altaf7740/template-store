@@ -1,0 +1,346 @@
+/*--
+    07. Service Area Css
+-------------------------*/
+.service-area {
+    & .section-title {
+        margin-bottom: 40px;
+        text-align: center;
+        @media #{$large-mobile}{
+            margin-bottom: 10px;
+        } 
+    }
+}
+.single-service {
+    float: left;
+    margin-top: 17px;
+    position: relative;
+    width: 33.33%;
+    @media #{$tablet-device}{
+        width: 50%;
+    }
+    @media #{$large-mobile}{
+        width: 100%;
+    }  
+    &:nth-child(4) {
+        & .service-border {
+            &::before {
+                top: -3.5% !important;
+            } 
+        }
+    }
+    &:nth-child(5) {
+        & .service-border {
+            &::before {
+                top: -3.5% !important;
+            } 
+        }
+    }
+    &:nth-child(3) {
+        & .service-border {
+            &::before {
+                display: none;
+            } 
+        }
+    }
+    &:nth-child(6) {
+        & .service-border {
+            &::before {
+               display: none;
+            } 
+        }
+    }
+    &:nth-child(5),
+    &:nth-child(4),
+    &:nth-child(6)
+    {
+        & .service-border {
+            &::after {
+               display: none;
+            } 
+        }
+    }
+    @media #{$tablet-device}{
+        &:nth-child(3) {
+            & .service-border {
+                &::before {
+                    display: inherit;
+                } 
+            }
+        }
+        &:nth-child(6),
+        &:nth-child(2),
+        &:nth-child(4){
+            & .service-border {
+                &::before {
+                   display: none;
+                } 
+            }
+        }
+        &:nth-child(4){
+            & .service-border {
+                &::after {
+                   display: inherit;
+                } 
+            }
+        }
+    }
+    @media #{$large-mobile}{
+        &:nth-child(3),
+        &:nth-child(2),
+        &:nth-child(4),
+        &:nth-child(5),
+        &:nth-child(4){
+            & .service-border {
+                &::after {
+                   display: inherit;
+                } 
+            }
+        }
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(4),
+        &:nth-child(5){
+            & .service-border {
+                &::before {
+                   display: none;
+                } 
+            }
+        }
+    }  
+    
+}
+.service-border {
+    display: block;
+    padding: 22px 27px 39px;
+    &::before {
+        background: #ddd none repeat scroll 0 0;
+        content: "";
+        height: 93%;
+        position: absolute;
+        right: 0;
+        top: 3.5%;
+        width: 1px;
+    }
+    &::after {
+        background: #ddd none repeat scroll 0 0;
+        bottom: 0;
+        content: "";
+        height: 1px;
+        left: 2.5%;
+        position: absolute;
+        width: 95%;
+    }
+    & .service-icon {
+        background: $theme-color;
+        border-radius: 100%;
+        display: table;
+        color: $white;
+        font-size: 20px;
+        height: 71px;
+        margin: 0 auto 22px;
+        width: 71px;
+        position: relative;
+        line-height: 71px;
+        &::after {
+            border: 2px solid $theme-color;
+            border-radius: 500px;
+            content: "";
+            height: 83px;
+            left: -6px !important;
+            opacity: 0;
+            position: absolute;
+            top: -6px !important;
+            transform: scale(1.5);
+            transition: all 0.5s ease 0s;
+            width: 83px;
+        }
+    }
+    &:hover {
+        & .service-icon::after {
+            left: 0;
+            opacity: 1;
+            top: 0;
+            transform: scale(1);
+        }
+    }
+    .service-text {
+        & h4 {
+            color: #333;
+            font-size: 14px;
+            font-weight: 800;
+            font-family: $lato;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            animation-name: fadeInBottom;
+            animation-duration: 0.5s;
+            letter-spacing: 1px;
+        }
+        & p {
+            animation-name: fadeInBottom;
+            animation-duration: 0.6s;
+        }
+    }
+}
+
+// Feature Two Css
+
+.feature-area-inner {
+    & .feature-image {
+        @media #{$tablet-device}{
+            margin-bottom: 40px;
+        } 
+        @media #{$large-mobile}{
+            margin: 30px 0;
+        }  
+    }
+    & .single-feature {
+        margin-bottom: 30px;
+        display: flex;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+        &.row-reverse {
+            flex-direction: row-reverse;
+            & .feature-icon {
+                margin-left: 20px;
+                margin-right: 0;
+            }
+            @media #{$large-mobile}{
+                flex-direction: row;
+                text-align: left !important;
+                & .feature-icon {
+                    font-size: 40px;
+                    margin-left: 0px;
+                    margin-right: 15px;
+                }
+            } 
+        }
+        & .feature-icon {
+            margin-left: 0px;
+            margin-right: 20px;
+            & i {
+                display: inline-block;
+                font-size: 28px;
+                width: 56px;
+                height: 56px;
+                background: $theme-color;
+                border-radius: 50%;
+                color: #fff;
+                line-height: 56px;
+                text-align: center; 
+                position: relative;
+                &::after {
+                    border: 2px solid #863F51;
+                    border-radius: 500px;
+                    content: "";
+                    height: 60px;
+                    left: -2px !important;
+                    opacity: 1;
+                    position: absolute;
+                    top: -2px !important;
+                    opacity: 0;
+                    transform: scale(1.5);
+                    transition: all 0.5s ease 0s;
+                    width: 60px;
+                }
+            }
+        }
+        &:hover {
+            & .feature-icon {
+                & > i {
+                    &::after {
+                        transform: scale(1.1);
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        & .feature-content {
+            & h4 {
+                font-size: 17px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+            & p {
+                font-size: 15px;
+            }
+        }  
+    }
+    
+}
+
+// feature-area-inner-four CSS
+.feature-area-inner-four {
+    & .single-feature {
+        padding: 50px 30px;
+        transition: all 0.4s ease-in-out;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+        & .feature-icon {
+            font-size: 34px;
+            margin-bottom: 20px;
+        }
+        & .feature-text {
+            & h3 {
+                font-size: 22px;
+                font-weight: 500;
+                text-transform: capitalize;
+            }
+            & p {
+                font-size: 16px;
+                margin-top: 15px;
+            }
+        }
+        &.active{
+            &::after {
+                opacity: 1;
+            }
+            & .feature-icon {
+                    color: #fff;
+                }  
+            & .feature-text {
+                          
+                & h3 {
+                    color: #fff;
+                }
+                & p {
+                   color: #fff
+                }
+            }
+        }
+        &::after {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            content: "";
+            -webkit-transition: opacity 1s;
+            transition: opacity 1s;
+            opacity: 0;
+            transition: all 0.4s ease-in-out;
+            background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #863F4B 0%, #4D3543 100%) repeat scroll 0 0;
+            
+        }
+        &:hover {
+            &:after {
+                opacity: 1;
+            }
+            & .feature-icon {
+                color: #fff;
+            }
+            & .feature-text {
+                & h3 {
+                    color: #fff;
+                }
+                & p {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    
+}

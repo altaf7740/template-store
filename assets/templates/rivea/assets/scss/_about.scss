@@ -1,0 +1,25 @@
+/*--
+    05. About Css
+--------------------------*/
+.gardening-welcome {
+    & .content {
+        & h2 {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        & p {
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+        & a {
+            font-weight: 500;
+            border-bottom: 1px solid #333;
+            &:hover{
+                border-color: $theme-color;
+            }
+        }
+        @media #{$large-mobile,$tablet-device}{
+            margin-top: 30px;
+        }
+    }
+}

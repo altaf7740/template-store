@@ -1,0 +1,51 @@
+/*--
+    12. Projcet Css
+-----------------------*/
+.construction-gallery-menu {
+    margin-bottom: 40px;
+    & button {
+        border: none;
+        font-weight: 600;
+        font-size: 14px;
+        background: transparent;
+        padding: 0px 0px;
+        margin: 0 10px;
+        &.is-checked {
+            color: $theme-color;
+            border-bottom: 1px solid $theme-color;
+        }
+    }
+}
+.project-info {
+    & h4 {
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+}
+
+.project-list {
+    & li {
+        display: block;
+        margin-bottom: 12px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        & span {
+            font-weight: bold;
+        }
+    }
+}
+.project-share {
+    margin-top: 20px;
+    & span {
+        font-weight: bold;
+    }
+    & a {
+        margin-left: 12px;
+    }
+}
+.project-dec-wrap  {
+    & h4 {
+        font-weight: 600;
+    }
+}

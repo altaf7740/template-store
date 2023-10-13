@@ -1,0 +1,154 @@
+/*----------------------
+    Blog list Styles 
+------------------------*/
+
+.blog__list__wrapper {
+    margin-top: -60px;
+}
+
+.blog__list {
+    align-items: center;
+    background: #fff none repeat scroll 0 0;
+    border-radius: 13px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    margin-top: 60px;
+    .content {
+        padding: 37px 40px;
+        h2 {
+            margin-bottom: 28px;
+            a {
+                color: #1344a5;
+                font-size: 24px;
+                line-height: 34px;
+                transition: all 0.3s ease 0s;
+                &:hover {
+                    color: $hover-color;
+                }
+            }
+        }
+        p {
+            font-size: 16px;
+            line-height: 27px;
+            margin-bottom: 41px;
+        }
+        .blog__meta {
+            display: flex;
+            list-style: outside none none;
+            margin-bottom: 25px;
+            padding: 0;
+            li {
+                color: #035f91;
+                font-size: 12px;
+                font-weight: 500;
+                &.separator {
+                    padding: 0 13px;
+                }
+                a {
+                    color: #035f91;
+                    transition: 0.3s;
+                    &:hover {
+                        color: $hover-color;
+                    }
+                }
+            }
+        }
+        .blog__cat {
+            display: flex;
+            list-style: outside none none;
+            margin: 0;
+            padding: 0;
+            li {
+                a {
+                    background: #eef3f6 none repeat scroll 0 0;
+                    border-radius: 8px;
+                    color: #035f91;
+                    display: block;
+                    font-size: 12px;
+                    font-weight: 500;
+                    height: 20px;
+                    line-height: 20px;
+                    padding: 0 6px;
+                    transition: all 0.3s ease 0s;
+                    &:hover {
+                        background: $theme-color none repeat scroll 0 0;
+                        color: #fff;
+                    }
+                }
+                &+li {
+                    margin-left: 13px;
+                }
+            }
+        }
+    }
+}
+
+// Responsive Css
+@media #{$xx-layout} {}
+
+@media #{$xlg-layout} {}
+
+@media #{$lg-layout} {
+    .blog__list {
+        display: block;
+    }
+    .blog__list .thumb a img {
+        width: 100%;
+    }
+    .blog__list .content {
+        padding: 40px 22px;
+    }
+    .blog__list .content h2 {
+        margin-bottom: 10px;
+    }
+}
+
+@media #{$md-layout} {
+    .blog__list .content p {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 21px;
+    }
+    .blog__list .content {
+        padding: 40px 28px;
+    }
+}
+
+@media #{$sm-layout} {
+    .blog__list {
+        display: block !important;
+    }
+    .blog__list .thumb a img {
+        width: 100%;
+    }
+    .blog__list .content p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+@media #{$xs-layout} {
+    .blog__list .content {
+        padding: 40px 20px;
+    }
+    .blog__list .content h2 {
+        margin-bottom: 18px;
+    }
+    .blog__list .content h2 a {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .blog__list .content p {
+        margin-bottom: 18px;
+    }
+    .banner .hover__action .banner__content h3 a {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .banner.b11 .hover__action .banner__content h3 a {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media #{$xxs-layout} {}

@@ -1,0 +1,257 @@
+/*--
+    17. Latest Blog Css
+---------------------------------*/
+.single-lest-blog {
+    & .blog-image {
+        & a {
+            display: block;
+            & img {
+                width: 100%;
+            }
+        }
+    }
+    &:hover {
+        & .blog-content {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+.blog-content {
+    width: 90%;
+    background: #fafafa;
+    padding: 35px 30px;
+    margin-top: -50px;
+    z-index: 1;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    & .blog-meta {
+        position: relative;
+        & span {
+            margin-right: 30px;
+            color: #8e8e8e;
+        }
+        &::after {
+            position: absolute;
+            left: -30px;
+            top: -5px;
+            content: '';
+            background: $theme-color;
+            height: 30px;
+            width: 3px;
+        }
+    }
+    & h4 {
+        font-weight: 600;
+        margin-top: 10px;
+    }
+    
+    @media #{$large-mobile}{
+        margin-top: -20px;
+        width: 95%;
+        & h4 {
+            font-size: 18px;
+        }
+        
+        & .blog-meta {
+            & span {
+                margin-right: 15px;
+            }
+        }
+        
+    }
+    
+}
+
+.blog-details-wrap {
+    & .blog-content {
+        width: 95%;
+        & .blog-meta {
+            position: relative;
+            & span {
+                margin-right: 30px;
+                color: #8e8e8e;
+            }
+            &::after {
+                position: absolute;
+                left: -30px;
+                top: -5px;
+                content: '';
+                background: $theme-color;
+                height: 30px;
+                width: 3px;
+            }
+        }
+        & h4 {
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+    }
+}
+
+
+/* Mesonry Blog Css */
+
+
+.single-mesonry {
+    & .mesonry-image{
+        & a {
+            display: block;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    & .mesonry-content {
+        padding: 25px 20px;
+        border-bottom: 1px solid #f1f1f1;
+        border-right: 1px solid #f1f1f1;
+        border-left: 1px solid #f1f1f1;
+        transition: all 0.3s ease-in-out;
+        & .blog_meta {
+            margin-bottom: 10px;
+        }
+        & .title {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 26px;
+            position: relative;
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            &::after {
+                position: absolute;
+                background: #333;
+                left: 0;
+                bottom: 0;
+                content: "";
+                height: 1px;
+                width: 100px;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+        & p {}
+    }
+    
+    &:hover {
+        & .mesonry-content {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            & .title {
+                &::after {
+                    width: 80px;
+                }
+            }
+        }
+    }
+}
+.admin-info {
+    display: flex;
+    justify-content: space-between;
+    & p {
+        color: $theme-color;
+        & a {
+            color: #b4b4b4;
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+    & .socail {
+        display: flex;
+        & .title {
+            color: #b4b4b4;
+        }
+        & ul {
+            display: flex;
+            & li {
+                margin-left: 10px;
+                & a {
+                    color: $theme-color;
+                    
+                }
+            }
+        }
+    }
+    @media #{$small-mobile}{
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+}
+.tag {
+    ul {
+        & li {
+            display: inline-block;
+        }
+    }
+}
+.blog-details-video {
+    position: relative;
+    & .image {
+        position: relative;
+        display: inline-block;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+    }
+    & a {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 50px;
+        height: 50px;
+        line-height: 54px;
+        background: #ffffff;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        font-size: 20px;
+        color: $theme-color;
+        &:hover {
+            color: $white;
+            background: $theme-color;
+        }
+        & i {
+            margin-left: 3px;
+        }
+    }
+}
+
+.next-prev-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    width: 95%;
+    border-bottom: 1px solid #ddd;
+    
+    & h4 {
+        font-weight: 600;
+    }
+    & a {
+        font-weight: 500;
+    }
+    & .prev {
+        text-align: right;
+    }
+     @media #{$small-mobile}{
+        flex-direction: column;
+         & h4 {
+            font-size: 16px;
+        }
+        & .prev {
+            text-align: left;
+            margin-top: 20px;
+        }
+    }
+}
+
+.commentes-wrap {
+    max-width: 95%;
+    @media #{$small-mobile}{
+        max-width: 100%;
+    }
+}

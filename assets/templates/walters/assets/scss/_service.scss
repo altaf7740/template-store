@@ -1,0 +1,60 @@
+/*--
+    04. Service Css
+-------------------------------------*/ 
+
+
+.service-6 {
+    margin-top: 12px;
+    .icons {
+        border:  1px solid #4e89fb;
+        width: 100px;
+        height:  100px;
+        line-height:  100px;
+        border-radius: 100%;
+        float: left;
+        text-align:  center;
+        margin-right: 22px;
+        margin-top: 10px;
+        @media #{$large-mobile} {
+            margin: auto;
+            margin-bottom: 21px;
+            float: inherit;
+        }
+        @media #{$desktop-device} {
+            width: 90px;
+            height:  90px;
+            line-height:  90px;
+        }
+    }
+    .content {
+        overflow:  hidden;
+
+        @media #{$large-mobile} {
+            text-align: center;
+
+        }
+        p {
+            font-size:  14px;
+            line-height:  25px;
+            color:  #5b5b5b;
+        }
+        h4 {
+            color:  #5f5f5f;
+            font-size:  24px;
+            font-weight:  600;
+            margin-bottom: 7px;
+            @media #{$large-mobile} {
+                font-size: 21px;
+            }
+            @media #{$tablet-device} {
+                font-size: 21px;
+            }
+            @media #{$desktop-device} {
+                font-size: 18px;
+            }
+        }
+    }
+
+    
+}
+

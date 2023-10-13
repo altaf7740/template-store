@@ -1,0 +1,310 @@
+/*--
+    04. Header Css
+--------------------------------------*/
+.logo {
+    @media #{$large-mobile}{
+        text-align: center;
+    }
+}
+.contact-information-top {
+    display: flex;
+    justify-content: flex-end;
+    @media #{$large-mobile}{
+        justify-content: center;
+    }
+}
+.single-information-top {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 12px;
+    &:first-child {
+        margin-left: 0;
+    }
+    @media #{$large-mobile}{
+        justify-content: center;
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+    @media #{$small-mobile}{
+        margin-left: 15px;
+    }
+    @media #{$tablet-device}{
+        margin-left: 25px;
+    }
+    & .info-icon {
+        & i {
+            color: $theme-color;
+            font-size: 36px;
+            @media #{$tablet-device}{
+                font-size: 32px;
+            }
+            @media #{$small-mobile}{
+                font-size: 26px;
+            }
+        }
+    }
+    & .info-content {
+        margin-left: 15px;
+        & h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+        & p {
+            font-size: 14px;
+            font-weight: 500;
+            color: #555;
+        }
+        @media #{$small-mobile}{
+            margin-left: 8px;
+            & h4 {
+                font-size: 15px;
+            }
+        }
+    }
+}
+.border-top-1 {
+    border-top: 1px solid #ddd;
+}
+.border-bottom-1 {
+    border-bottom: 1px solid #ddd;
+}
+.bluewood-top-area {
+    border-bottom: 2px solid $theme-color-two;
+}
+.bluewood-information-area {
+    & .single-information-top {
+        & .info-icon {
+            & i {
+                color: $theme-color-two;
+            }
+        }
+        & .info-content {
+            h4 {
+                color: $theme-color-two;
+            }
+        }
+    }
+}
+.header-menu-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.main-menu {
+    & ul {
+        & li {
+            display: inline-block;
+            margin-right: 30px;
+            position: relative;
+            &:last-child {
+                margin-right: 0;
+            }
+            &.active{
+                & a {
+                    color: $theme-color;
+                }
+            }
+            & a {
+                color: #333;
+                font-size: 16px;
+                font-weight: 600;
+                padding: 40px 0;
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+            // sub-menu Css
+            & .sub-menu {
+                width: 230px;
+                box-shadow:  0 0 3px rgba(0, 0, 0, 0.15);
+                position: absolute;
+                background: #fff;
+                padding: 15px;
+                z-index: 9;
+                top: 120%;
+                visibility: hidden;
+                @include opacity(0);
+                @include transition(.3s);
+                border-bottom: 2px solid $theme-color;
+                & li {
+                    display: block;
+                    margin-right: 0;
+                    margin-bottom: 8px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    & > a {
+                        display: block;
+                        padding: 0;
+                        font-weight: 500;
+                        text-align: left;
+                        text-transform: capitalize;
+                        color: #333;
+                        font-size: 14px;
+                        &:hover {
+                            color: $theme-color;
+                        }
+                    }
+                }
+            }
+            &:hover {
+                color: $theme-color;
+                & .sub-menu{
+                    visibility: visible;
+                    @include opacity(1);
+                    top: 100%;
+                }
+            }
+        }
+    }
+}
+.make-apoinmant-button {
+    padding-top: 28px;
+    @media #{$large-mobile,$tablet-device}{
+        padding: 15px 0;
+        & > a {
+            padding:8px 15px;
+        } 
+    }
+}
+.header-menu-two {
+    .main-menu {
+        & ul {
+            & li {
+                & a {
+                    color: #fff;
+                    padding: 21px 0;
+                    &:hover {
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+    & .make-apoinmant-button {
+        padding-top:0;
+        & a {
+            padding: 21px 30px;
+            font-size: 18px;
+            text-transform: capitalize;
+        }
+        @media #{$large-mobile,$tablet-device}{
+            padding: 0;
+            & > a {
+                padding:14px 15px;
+                font-size: 16px;
+            } 
+        }
+        @media #{$desktop-device}{
+            & > a {
+                padding:20px 15px;
+                font-size: 18px;
+            } 
+        }
+    }
+}
+.is-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: #fff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+    & .border-top-1 {
+        border-top: none;
+    }
+    & .main-menu {
+        & ul {
+            & li {
+                & a {
+                    padding: 25px 0;
+                } 
+            }
+        }
+    }
+    &.menu-area-top {
+       & .main-menu {
+            & ul {
+                & li {
+                    & a {
+                        color: #222;
+                        &:hover {
+                            color: $theme-color;
+                        }
+                    } 
+                }
+            }
+        } 
+        & .meanmenu-reveal {
+            & span {
+                /*---- Menu Open ----*/
+                &.menu-bar {
+                    background-color: #333;
+                    &::before, &::after {
+                        background-color: #333;
+                    }
+                }
+                
+                /*---- Menu Close ----*/
+                &.menu-close {
+                    &::before, &::after {
+                        background-color: #333;
+                    }
+                }
+            }
+        }
+    }
+    & .make-apoinmant-button {
+        padding-top: 12px;
+    }
+    & .header-menu-two {
+        & .main-menu {
+            & ul {
+                & > li {
+                    & > a {
+                        padding: 19px 0;
+                    }
+                    & .sub-menu {
+                        & li {
+                            & > a {
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .make-apoinmant-button {
+            padding-top:0;
+            & a {
+                padding: 18px 30px;
+                font-size: 18px;
+            }
+            @media #{$large-mobile,$tablet-device}{
+                padding: 0;
+                & > a {
+                    padding:14px 15px;
+                    font-size: 16px;
+                } 
+            }
+            @media #{$desktop-device}{
+                & > a {
+                    padding:20px 15px;
+                    font-size: 18px;
+                } 
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

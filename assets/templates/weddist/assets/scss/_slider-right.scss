@@ -1,0 +1,288 @@
+/*--
+    05. Slider Right Css
+-----------------------*/
+#hero-map {
+    width: 100%;
+    height: 400px;
+}
+.slider-left-area {
+    max-width: 55%;
+    @media #{$large-mobile}{
+        position: inherit;
+        max-width: 100%;
+    }
+}
+.sidebar-wrapper {
+    background: #ddd;
+    right: 0;
+    max-width: 45%;
+    bottom: 0;
+    position: relative;
+    overflow-x: hidden !important;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+    display: block;
+    margin-top: 125px;
+    position: fixed;
+    background: #ffffff;
+    top: 0;
+    bottom: 0;
+    z-index: 9;
+    overflow-y: hidden !important;
+    max-height: 100% !important;
+    
+    @media #{$large-mobile}{
+        left: inherit;
+        max-width: 100%;
+        bottom: inherit;
+        position: inherit;
+        overflow-x: inherit !important;
+        overflow: inherit;
+        -webkit-overflow-scrolling: touch;
+        height: inherit;
+        display: inherit;
+        margin-top: inherit;
+        position: inherit;
+        background: inherit;
+        top: inherit;
+        bottom: inherit;
+        z-index: inherit;
+        overflow-y: inherit !important;
+        max-height: inherit !important;/*
+        overflow: hidden !important;*/
+        [data-simplebar]{
+            display: none;
+        }
+        .horizontal.simplebar-track .simplebar-scrollbar {
+            opacity: 0!important;
+            visibility: hidden !important;
+        }
+    }  
+}
+.slier-right-wrap {
+    padding-bottom: 60px;
+    overflow-x: hidden !important;
+    @media #{$large-mobile}{
+        padding-bottom: 10px;
+    }  
+}
+.simplebar-content {
+    overflow-x: hidden !important;
+
+}
+.slier-right-header {
+    background: #050621;
+}
+.filter-header {
+    padding: 0px 18px 30px 18px;
+    @media #{$small-mobile}{
+        padding: 0 0 30px 0;
+    }
+    & .input-box {
+        margin-top: 30px;
+        
+        & input {
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+            padding: 11px 20px;
+        }
+        & .icon-place {
+            font-family: $body-font;
+        }
+    }
+   
+}
+.filter-header {
+    & form {
+        #price-range {
+            height: 5px;
+            background-color: $white;
+            border-radius: 50px;
+            position: relative;
+            margin-top: 5px;
+            width: 70%;
+            @media #{$small-mobile}{
+                width: 100%;
+            }
+            & .ui-slider-range {
+                background-color: $theme-color;
+                border-radius: 50px;
+                height: 100%;
+                position: absolute;
+                top: 0;
+            }
+            .ui-slider-handle {
+                width: 18px;
+                height: 18px;
+                border-radius: 50px;
+                background-color: $theme-color;
+                display: block;
+                position: absolute;
+                top: -6px;
+                transition: none;
+                &:last-child {
+                  margin-left: -18px;
+                }
+                & span {
+                  position: absolute;
+                  left: 50%;
+                  bottom: -20px;
+                  transform: translateX(-50%);
+                  display: block;
+                  line-height: 1;
+                  font-size: 14px;
+                  color: #fff;
+                }
+            }
+        }
+    }
+    .price-range-box {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        @media #{$small-mobile}{
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        & p {
+            color: $white;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 14px;
+        }
+    }
+    & .search-filter-btn {
+        width: 100%;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        background: transparent;
+        border: 1px solid $theme-color;
+        color: $white;
+        font-weight: 600;
+        transition: all 0.3s ease-in-out;
+        & i {
+            margin-right: 5px;
+        }
+        &:hover {
+            background: $theme-color;
+        }
+    }
+    
+}
+.map-property-wrapper{
+    padding: 30px 30px !important;
+    
+    & > p {
+        margin-bottom: 30px;
+        span{
+            font-weight: 600;
+            font-size: 15px;
+        }
+    }
+    @media #{$large-mobile}{
+        padding: 30px 30px 0 !important;
+    }
+}
+.simplebar-scroll-content {
+    @media #{$large-mobile}{
+        padding: 0 !important;
+    }
+}
+.map-property-area {
+    overflow: hidden;
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+    
+    & li {
+        width: 50%;
+        float: left;
+        padding: 0px 15px;
+        margin-bottom: 30px;
+        
+        @media #{$tablet-device}{
+            width: 100%;
+        }
+        @media #{$large-mobile}{
+            width: 50%;
+        }
+        @media #{$small-mobile}{
+            width: 100%;
+        }
+        & a {
+            padding: 0 !important;
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+            &:hover {
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            }
+            & .image {
+                & img {
+                    width: 100%;
+                }
+            }
+            & .content {
+                padding: 20px 30px 30px;
+                
+                & .map-address {
+                    color: #4e4e4e;
+                }
+                & h4 {
+                    font-weight: 600;
+                    color: #262626;
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        color: $theme-color;
+                    }
+                }
+                & .box {
+                    display: flex;
+                    justify-content: space-between;
+                    & .price {
+                        color: $theme-color;
+                        font-weight: 600;
+                    }
+                    & .ratting {
+                        display: flex;
+                        color: $theme-color;
+                    }
+                }
+            }
+            @media #{$laptop-device}{
+                & h4 {
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+            }
+            @media #{$desktop-device}{
+                & h4 {
+                    font-size: 15px;
+                    line-height: 22px;
+                }
+                & .content {
+                    padding: 15px 11px 20px;
+                }
+            }
+            @media #{$tablet-device}{
+                & h4 {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+                & .content {
+                    padding: 15px 11px 20px;
+                }
+            }
+            @media #{$large-mobile}{
+                & h4 {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+                & .content {
+                    padding: 15px 11px 20px;
+                }
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,116 @@
+/* -----------------------------------
+Template Name: Eduguide - Education Html Template 
+
+NOTE: This is Slider style file. All Slider related style included in this file.
+
+--------------------------------------*/
+
+.slider-area .slider-all > img {
+    width: 100%;
+}
+.slider-all {
+    position: relative;
+}
+.slider-text-wrapper {
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+}
+.slider-text {
+    -webkit-animation-name: fadeOutDown;
+    animation-name: fadeOutDown;
+}
+.slick-active .slider-text {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+.slider-all {
+    position: relative
+}
+.slider-all::before {
+    background-color: #000;
+    height: 100%;
+    left: 0;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    content: "";
+}
+.slider-text h1 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+}
+.slider-text > p {
+    color: #fff;
+    font-size: 18px;
+    margin: 16px 0 24px;
+}
+.slider-area .slick-dots {
+    bottom: 105px;
+    padding-left: 0;
+}
+.slider-area .slick-dots li {
+    display: inline-block;
+    height: auto;
+    width: auto;
+}
+.slider-area .slick-dots li button {
+    color: #a1a1a0;
+    padding: 5px 4px;
+    width: auto;
+    height: auto;
+    line-height: 14px;
+    font-family: "Lato", sans-serif;
+    transition: all .3s ease 0s;
+}
+.slider-area .slick-dots li button:hover {
+    color: #fff;
+}
+.slider-area .slick-dots li button::before {
+    content: "0";
+    width: auto;
+    font-size: inherit;
+    position: static;
+    height: auto;
+    font-family: inherit;
+    color: inherit;
+    line-height: inherit;
+    opacity: inherit;
+}
+.slider-area .slick-dots li.slick-active button {
+    color: #fff;
+}
+.slider-area {
+    left: 0;
+    margin: auto;
+    right: 0;
+    width: 100%;
+}
+/* -----------------------------------
+
+text-animation-3
+
+--------------------------------------*/
+
+h3.tlt5 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+h3.tlt7 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.text-animation-1 .slider-text h1 {
+    margin-bottom: 18px;
+}

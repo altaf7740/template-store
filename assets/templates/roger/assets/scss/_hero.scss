@@ -1,0 +1,101 @@
+/*--
+    03. Hero
+-----------------------------------------*/
+.hero-section {
+    position: relative;
+}
+
+/*-- Hero Slider --*/
+.hero-slider-one {
+    
+    /*-- Arrow --*/
+    & .slick-arrow {
+        display: none !important;
+    }
+    /*-- Dots --*/
+    & .slick-dots {
+        display: none !important;
+    }
+}
+
+/*-- Hero Content --*/
+.hero-content {
+    // All Element Selector
+    & > * {
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-name: fadeOutUp;
+    }
+    @media #{$large-mobile}{
+        margin-top: 0px;
+    }
+    & h1 {
+        font-size: 70px;
+        font-weight: 800;
+        margin-bottom: 10px;
+        color: $heading-color;
+        
+        // Responsive
+        @media #{$laptop-device}{
+            font-size: 50px;
+        }
+        @media #{$desktop-device}{
+            font-size: 54px;
+        }
+        @media #{$tablet-device}{
+            font-size: 45px;
+        }
+        @media #{$large-mobile}{
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+    & p {
+        max-width: 630px;
+        color: $heading-color;
+        margin: 15px 0;
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        @media #{$small-mobile}{
+            font-size: 14px;
+        }
+    }
+    
+    
+}
+
+
+/*-- Slide Content In Animation --*/
+.slick-active {
+    /*-- Hero Content --*/
+    & .hero-content {
+
+        // All Element Selector
+        & > * {
+            animation-name: fadeInUp;
+            
+            // Child Selector
+            &:nth-child(1) {
+                animation-delay: 0.5s;
+            }
+            &:nth-child(2) {
+                animation-delay: 1s;
+            }
+            &:nth-child(3) {
+                animation-delay: 1.5s;
+            }
+            &:nth-child(4) {
+                animation-delay: 2s;
+            }
+            &:nth-child(5) {
+                animation-delay: 2.5s;
+            }
+            &:nth-child(6) {
+                animation-delay: 3s;
+            }
+            
+        }
+    }
+    
+}

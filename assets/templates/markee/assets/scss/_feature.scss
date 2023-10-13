@@ -1,0 +1,14 @@
+/*----------------------------------------*/
+/*  04. Feature CSS
+/*----------------------------------------*/
+.featuerd-item-img{
+    &.border{
+        border: 1px solid #e1e1e1;
+    }
+    & a{
+        display: block;
+        & img{
+            width: 100%;
+        }
+    }
+}

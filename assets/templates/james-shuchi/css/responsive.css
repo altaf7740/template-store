@@ -1,0 +1,229 @@
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+/*-----------------
+ home-1
+------------------- */	
+.mainmenu ul li a {
+  padding: 21px 9px;
+}
+.caple-icon a {
+  margin-left: 5px;
+}
+.single-cauple-bottom {
+  padding: 10px;
+}
+.caple-icon.cople-iconright a {
+  margin-right: 5px;
+}
+.timeline-text a h4 {
+  font-size: 15px;
+}
+.timeline-meta span {
+  display: inline-block;
+  margin-left: -7px;
+}
+.timeline-date {
+  height: 60px;
+  width: 60px;
+}
+.timeline-date > h3 {
+  font-size: 30px;
+}
+.timeline-content {
+  padding: 19px 10px 0;
+}
+.friends-wishes-info > p {
+  margin-bottom: 0;
+}
+.friends-wishes h4 {
+  margin-top: 0;
+}
+.friends-wishes-info {
+  padding:  0px 15px;
+}
+
+/* ----------
+	blog-page
+---------------	*/
+.single-blog-detail.mt-30.pl-100 {
+  margin-left: 100px;
+}
+}
+
+ 
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+/*-----------------
+ home-1
+------------------- */	
+.logo img {
+  padding-top: 8px;
+}
+.mainmenu ul li a {
+  padding: 21px 7px;
+}
+.slider-content h2 {
+  font-size: 50px;
+}
+.single-cauple {
+  margin-bottom: 30px;
+}
+.cauple-area {
+  padding-bottom: 60px;
+}
+.about-name > h4::before {
+  left: 24%;
+  width: 83px;
+}
+.sent-your-wish-left > h4 {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+.sent-your-wish-left::before {
+  bottom: -46px;
+  left: 1px;
+}
+.friends-wishes-area {
+  padding-bottom: 60px;
+}
+.friends-wishes-img {
+  margin-bottom: 30px;
+  width: 30%;
+}
+.friends-wishes-info {
+  width: 70%;
+  padding-bottom:47px;
+}
+.latest-blog-bottom-info > h4 {
+  font-size: 15px;
+}
+.latest-blog-info a > h4 {
+  font-size: 13px;
+}
+}
+
+ 
+/* small mobile :320px. */
+@media (max-width: 767px) {
+.container {width:300px}
+.sticky {
+  display: none;
+} 
+.header-bottom-area {
+  padding: 20px 0;
+}
+.header-btn {
+  margin-top: 8px;
+}
+.slider-content {
+  top: 36%;
+}
+.slider-content p {
+  display: none;
+}
+.slider-content h2 {
+  font-size: 25px;
+}
+.slider-btn {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 19px;
+  padding: 8px 20px;
+}
+.cauple-area {
+  padding-bottom: 60px;
+}
+.single-cauple {
+  margin-bottom: 30px;
+}
+.timeline-text a h4 {
+  font-size: 15px;
+  margin-bottom:0;
+}
+.timeline-meta span {
+  display: inline-block;
+  font-size: 11px;
+  margin-left: -5px;
+}
+.timeline-date {
+  height: 60px;
+  width: 60px;
+}
+.timeline-date > h3 {
+  font-size: 30px;
+}
+.timeline-content {
+  padding: 19px 13px 0;
+}
+.single-gallery-col {
+  width: 100%;
+}
+.about-area {
+  padding-bottom: 60px;
+}
+.single-about {
+  margin-bottom: 30px;
+}
+.send-your-wish-area .wish-search input:first-child {
+  margin-top: 30px;
+}
+.send-your-wish-area .wish-search form p input {
+  margin-top: 0 !important;
+}
+.sent-your-wish-left::before {
+  left: 0px;
+}
+.friends-wishes-area, .latest-blog-area {
+  padding-bottom: 60px;
+}
+.friends-wishes-img {
+  text-align: center;
+}
+.friends-wishes-info, .friends-wishes-img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.latest-blog-info  h4 {
+  font-size: 15px;
+}
+/* blog-page */
+.blog-detail-meta {
+  padding: 15px;
+}
+.blog-detail-info {
+  padding: 15px;
+}
+.single-blog-detail-img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.single-blog-detail-meta {
+  padding-left:0px;
+  width: 100%;
+}
+.res-mar{margin-bottom:30px;}
+}
+ 
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {width:450px}
+.cauple-img img {
+  width: 100%;
+}
+.single-gallery-img {
+  text-align: center;
+}
+.about-img {
+  text-align: center;
+}
+.about-name > h4::before {
+  left: 38%;
+}
+.timeline-date {
+  background: #ff6666 none repeat scroll 0 0;
+  border-radius: 4px;
+  color: #ffffff;
+  margin-top: 12px;
+} 
+}
+ 

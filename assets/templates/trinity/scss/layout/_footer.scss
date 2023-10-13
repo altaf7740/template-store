@@ -1,0 +1,41 @@
+/*****************************
+11 - Layout - Footer
+*****************************/
+
+.footer{
+	&-top{
+		padding-left: 115px;
+		padding-right: 115px;
+		padding-top: 80px;
+		padding-bottom: 80px;
+		@include breakpoint(xxalarge){
+			padding-left: 95px;
+			padding-right: 95px;
+		}
+		@include breakpoint(xlarge){
+			padding-left: 70px;
+			padding-right: 70px;
+			padding-top: 70px;
+			padding-bottom: 70px;
+		}
+		@include breakpoint(large){
+			padding-bottom: 62px;
+		}
+		@include breakpoint(medium){
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-top: 60px;
+			padding-bottom: 53px;
+		}
+		@include breakpoint(small){
+			padding-bottom: 38px;
+		}
+	}
+}
+.copyright-text{
+	@extend %font2;
+	margin-bottom: 0;
+	strong{
+		@extend %fontWeight600;
+	}
+}

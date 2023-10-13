@@ -1,0 +1,525 @@
+/* Large desktop :1920px. */
+@media (min-width: 1400px) and (max-width: 1920px) {
+    .container {width: 1200px}
+    .banner-area {height: 1196px}
+    .banner-product-image {margin-top: 66%;}
+    .banner-text h1 {font-size: 68px;}
+    .banner-area .col-lg-5 {padding-left: 15px; padding-right: 0;}
+    .banner-apps {
+        margin-left: 76px;
+        margin-top: -315px;
+    }
+    .single-app {
+        height: 140px;
+        width: 140px;
+        border: 4px solid #ffffff
+    }
+    .banner-apps .single-app:nth-child(1) {
+        left: auto;
+        right: 0;
+        top: 122px;
+    }
+    .banner-apps .single-app:nth-child(2) {
+        right: 258px;
+        left: auto;
+        top: 60px;
+    }
+    .single-app:nth-child(3) {
+        right: 516px;
+        left: auto;
+        top: 0;
+    }
+    .single-app h4, .single-app h3 {font-size: 16px}
+    .single-app h3 {font-size: 18px}
+    .about-text {
+        margin-left: 54px;
+        margin-right: 0;
+        margin-top: 75px;
+    }
+    .features-area, .features-area.features-blue, .features-area.features-yellow {
+        background-position: 106% 63%;
+        background-size: 60% auto;
+    }
+    .features-area .single-item:first-child, .features-area .single-item:last-child {
+        margin-left: -50px;
+        margin-right: 0;
+    }
+    .features-area .single-item:nth-child(3) {
+        margin-left: 0;
+        margin-right: 123px;
+    }
+    .download-area {
+        margin-top: -197px;
+        padding-bottom: 408px;
+        padding-top: 358px;
+    }
+    .download-area::before, .download-area::after, .footer-area:before {height: 460px}
+    .pricing-area {margin-top: -104px}
+    .pricing-area .col-sm-4:first-child .single-price-package {
+        margin-left: 87px;
+        margin-right: 3px;
+    }
+    .pricing-area .col-sm-4:last-child .single-price-package {
+        margin-right: 87px;
+        margin-left: 3px;
+    }
+    .pricing-area .single-price-package.list-large {margin: -34px 26px 0}
+    .footer-area {
+        margin-top: -102px;
+        padding-top: 322px;
+    }
+    .download-btn {z-index: 9}
+    .banner-area::before, .domain-name-area::before, .domain-name-area::after {height: 460px;}
+    .banner-area.banner-image {height: 1050px;}
+    .domain-name-area {
+        padding-bottom: 400px;
+        padding-top: 380px;
+    }
+    .banner-area.banner-horizontal {height: 1075px;}
+    .banner-area.banner-horizontal::before {height: 212px;}
+    .banner-horizontal .banner-apps .single-app {top: 30px;}
+    .service-area.horizontal::after {display: none;}
+    .box-layout .banner-apps {margin-top: -405px;}
+    .box-layout .about-area {padding-top: 22px;}
+    .box .download-area::before, .box .download-area::after, .box .footer-area::before {height: 372px;}
+    .box .download-area {padding-bottom: 360px;}
+    .box-layout .banner-table-cell p {font-size: 14px;}
+    .box .domain-name-area::before, .box .domain-name-area::after {height: 345px;}
+    .box .domain-name-area {padding-bottom: 370px;}
+    .about-four.about-box-layout {margin-top: -200px;}
+    .banner-horizontal.box-layout .banner-apps {margin-top: -311px;}
+    .box .download-area.horizontal {padding-bottom: 85px;}
+}
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+	.container-wrapper {width: 970px;}
+    .container {width:970px}
+    .banner-area {height: 724px}
+    .banner-text h1, .box-layout .banner-text h1 {
+        font-size: 56px;
+        line-height: 58px;
+        margin-bottom: 10px;
+    }
+    #main-menu {top: 60px}
+    .about-text, .about-four .about-text {
+        margin-right: 0;
+        margin-top: 37px;
+        margin-left: 0;
+    }
+    .features-area .single-item:nth-child(2), .features-area .single-item:nth-child(4) {
+        margin-left: 0;
+        margin-right: 72px;
+    }
+    .features-area .single-item:nth-child(3) {margin-right: 149px; margin-left: 0}
+    .features-area .single-item {margin-bottom: 55px}
+    .features-area, .features-area.features-yellow, .features-area.features-blue {
+        background-position: 111% 64%;
+        background-size: 53% auto;
+        margin-top: -145px;
+    } 
+    .download-area::before, .footer-area::before, .download-area::after {height: 283px}
+    .download-area {
+        margin-top: -78px;
+        padding-bottom: 322px;
+        padding-top: 280px;
+    }
+    .testimonial-text-slider {width: 84%}
+    form#contact-form {margin-right: 0}
+    .footer-area {
+        margin-top: -5px;
+        padding-bottom: 100px;
+        padding-top: 245px;
+    }
+    .banner-area::before {height: 273px;}
+    .banner-area.banner-image {height: 810px;}
+    .domain-name-area {padding-bottom: 315px;}.banner-area .col-lg-5 {
+        padding-left: 15px;
+        padding-right: 0;
+    }
+    .banner-product-image {margin-top: 59%;}
+    .banner-horizontal .banner-apps .single-app {top: 75px;}
+    .banner-area.banner-horizontal::before {height: 98px;}
+    .banner-area.banner-horizontal .banner-product-image {margin-top: 72%;}
+    .banner-area.banner-image.horizontal {height: 580px;}
+    .features-area.horizontal {background-position: 111% 67%; margin-top: 0}
+    .box-layout .banner-text p {font-size: 14px}
+    .about-box-layout .about-area {padding-top: 80px;}
+    .box .download-area::before, .box .banner-area::before, .box .domain-name-area::before {
+        height: 280px;
+    }
+    .box .footer-area::before {height: 260px;}
+    .box .download-area::after {height: 320px;}
+    .box .pricing-area {
+        margin-top: -90px;
+        padding-top: 45px;
+    }
+}
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+	.container-wrapper {width: 750px;}
+    .container {width:750px}
+    .mobile-menu .mean-bar {
+        background: url("../img/logo/logo.png") no-repeat scroll right top;
+    }
+    .header-blue .mobile-menu .mean-bar {
+        background: url("../img/logo/logo-2.png") no-repeat scroll right top;
+    }
+    .header-yellow .mobile-menu .mean-bar {
+        background: url("../img/logo/logo-3.png") no-repeat scroll right top;
+    }
+    #main-menu {top: 70px}
+    .banner-area {height: 620px}
+    .banner-text h1 {
+        font-size: 48px;
+        line-height: 56px;
+        margin-bottom: 30px;
+    }
+    .banner-text p {display: none}
+    .banner-apps {
+        margin-left: 0px;
+        margin-top: -221px;
+        position: relative;
+        margin-right: 0
+    }
+    .about-area {padding-top: 121px}
+    .about-text {margin: 0}
+    .about-text h2 {margin-bottom: 10px}
+    .about-text > p {margin-bottom: 12px}
+    .about-buttons {margin-top: 20px}
+    .service-area {
+        padding-bottom: 265px;
+        padding-top: 253px;
+    }
+    .service-area::after {
+        height: 400px;
+        top: 18%;
+    }
+    .features-area, .features-area.features-yellow, .features-area.features-blue {
+        background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+        margin-top: -200px;
+        padding-top: 122px;
+    }
+    .features-area .single-item:first-child, .features-area .single-item:last-child, .features-area .single-item:nth-child(2), .features-area .single-item:nth-child(4), .features-area .single-item:nth-child(3) {
+        margin-left: 0;
+        margin-right: 0
+    }
+    .features-area .single-item {margin-bottom: 65px}
+    .download-area {
+        margin-top: -212px;
+        padding-top: 320px;
+    }
+    .download-btn {
+        margin: 0 6px;
+        padding: 0 19px 0 58px;
+    }
+    .download-btn i {left: 4px}
+    .pricing-area {
+        margin-top: -175px;
+        padding-top: 122px;
+    }
+    .pricing-area .col-sm-4:first-child .single-price-package, .pricing-area .col-sm-4:last-child .single-price-package {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .pricing-area .single-price-package.list-large {margin: -34px 0 0}
+    .price-list {padding-top: 30px}
+    .price-btn .button {margin-top: 30px}
+    .price-title {padding: 25px 0 24px}
+    .list-large .price-title {padding: 27px 0 30px}
+    .testimonial-text-slider {
+        padding: 30px 41px 0;
+        width: 100%;
+    }
+    .slick-prev, [data-carousel-3d] [data-prev-button] {left: 0}
+    .slick-next, [data-carousel-3d] [data-next-button] {right: 0}
+    .footer-area {
+        margin-top: -100px;
+        padding-top: 290px;
+        padding-bottom: 60px
+    }
+    .submit-form .button {margin-bottom: 20px}
+    .newsletter {margin-top: 60px}
+    form#contact-form {margin-right: 0; margin-left: 0}
+    .banner-area::before {height: 233px;}
+    .banner-area.banner-image {height: 640px;}
+    .about-area.about-four {
+        padding-top: 112px;
+        padding-bottom: 0;
+    }
+    .feature-four, .feature-four.horizontal {padding-top: 122px}
+    .domain-name-area {padding-bottom: 305px;}
+    .banner-area .col-lg-5 {padding: 0;}
+    .banner-product-image {margin-top: 66%;}
+    .banner-horizontal .banner-apps .single-app {top: 75px;}
+    .banner-area.banner-horizontal::before {height: 98px;}
+    .banner-area.banner-horizontal .banner-product-image {margin-top: 75%;}
+    .banner-area.banner-image.horizontal {height: 500px;}
+    .about-area.horizontal, .about-area.about-four.horizontal {padding: 125px 0;}
+    .features-area.horizontal {
+        margin-top: 0;
+        padding-bottom: 100px;
+        padding-top: 100px;
+    }
+    .download-area.horizontal {
+        padding-bottom: 125px;
+        padding-top: 120px;
+    }
+    .pricing-area.horizontal {padding-top: 121px;}
+    .testimonial-area.horizontal, .screenshots-area.horizontal {padding-top: 122px;}
+    .footer-area.horizontal {
+        padding-bottom: 122px;
+        padding-top: 122px;
+    }
+    .service-area .col-md-4:nth-child(1) {margin-top: -100px;}
+    .service-area .col-md-4:nth-child(2) {margin-top: -100px;}
+    .about-four .about-text {margin: 0 0 33px 54px;}
+    .box-layout .banner-text h1 {font-size: 46px;}
+    .features-box-layout .features-area {margin-top: -260px;}
+    .features-box-layout {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .box .download-area {
+        padding-bottom: 300px;
+        padding-top: 325px;
+    }
+    .about-box-layout .about-area {padding-top: 100px;}
+    .box .download-area::before, .box .footer-area::before, .box .banner-area::before, .box .domain-name-area::before {
+        height: 300px;
+    }
+    .about-box-layout .about-area.horizontal {padding-bottom: 85px;}
+    .box .download-area.horizontal, .features-box-layout .features-area.hidden-xs.horizontal {
+        padding-bottom: 85px;
+        padding-top: 85px;
+    }
+    .box .pricing-area.horizontal {padding-top: 100px;}
+    .about-image {margin-left: 0;}
+}
+/* small mobile :320px. */
+@media (max-width: 767px) {
+    .container-wrapper {width: 300px;}
+    .container {width:300px}
+    .mobile-menu .mean-bar {
+        background: url("../img/logo/logo.png") no-repeat scroll right top;
+    }
+    .header-blue .mobile-menu .mean-bar {
+        background: url("../img/logo/logo-2.png") no-repeat scroll right top;
+    }
+    .header-yellow .mobile-menu .mean-bar {
+        background: url("../img/logo/logo-3.png") no-repeat scroll right top;
+    }
+    #main-menu {top: 40px}
+    .banner-area {height: 610px;}
+    .banner-text h1 {
+        font-size: 26px;
+        line-height: 38px;
+        margin-bottom: 20px;
+    }
+    .banner-apps {display: none}
+    .button-default {
+        font-size: 16px;
+        line-height: 45px;
+        padding: 0 15px;
+    }
+    .banner-buttons .button-default {margin-left: 2px;}
+    .about-area, .about-area.about-four {
+        margin-top: -80px;
+        padding-top: 100px;
+    }
+    .about-image, form#contact-form {margin-left: 0}
+    .section-title, .pricing-area .section-title {margin-bottom: 50px}
+    .about-text {margin: 0 0 45px;}
+    .about-buttons, .newsletter {margin-top: 30px}
+    .about-buttons button.button-default {margin-right: 4px}
+    .download-area {
+        margin-top: 0;
+        padding-bottom: 130px;
+        padding-top: 135px;
+    }
+    .section-title h1 {
+        font-size: 33px;
+        line-height: 37px;
+    }
+    .download-area::before, .footer-area::before, .download-area::after {height: 110px}
+    .download-btn {
+        margin: 0 auto 20px;
+        padding: 0 77px 0 7px;
+        width: 100%;
+    }
+    .download-btn i {right: 13px; left: auto}
+    .pricing-area .col-sm-4:first-child .single-price-package, .pricing-area .col-sm-4:last-child .single-price-package, .pricing-area .single-price-package.list-large {
+        margin: 0 0 25px 0;
+    }
+    .pricing-area {
+        padding-top: 100px;
+    }
+    .testimonial-area, .screenshots-area {padding-top: 100px}
+    .slick-prev, [data-carousel-3d] [data-prev-button] {left: 0}
+    .slick-next, [data-carousel-3d] [data-next-button] {right: 0}
+    .testimonial-text-slider {
+        padding: 30px 0 0;
+        width: 100%;
+    }
+    .sin-testiText p {margin-bottom: 10px}
+    .testimonial-text-slider h2 {font-size: 22px}
+    .footer-area {
+        margin-top: 0;
+        padding-bottom: 65px;
+        padding-top: 130px;
+    }
+    .submit-form .button {margin-bottom: 30px;}
+    .contact-icon {margin-right: 0px}
+    .newsletter > h3 {line-height: 35px}
+    .newsletter-content .button {
+        width: 34%;
+        font-size: 14px
+    }
+    .newsletter-content > input {height: 45px}
+    .footer-links a {margin: 0 1px}
+    .banner-image .banner-text {padding-top: 45%;}
+    .banner-image.horizontal .banner-text {padding-top: 65%;}
+    .banner-image .banner-buttons .button-default{margin-left: 2px; margin-right: 0}
+    .banner-image .banner-text h1{margin-bottom: 10px; line-height: 33px}
+    .banner-image .banner-text p {margin-bottom: 16px;}
+    .banner-area::before, .banner-area.box-layout::before {height: 115px;}
+    .banner-area.banner-image {height: 620px}
+    .about-four .about-text h2 {font-size: 27px;}
+    .service-info-container > span {padding-left: 0;padding-right: 12px;}
+    .about-four .about-buttons{margin: 30px 0 30px 0}
+    .download-area::before, .domain-name-area::before {height: 126px;}
+    .domain-name-area {
+        padding-bottom: 110px;
+        padding-top: 157px;
+    }
+    .domain-name-area h1 {font-size: 27px;}
+    .domain-wrapper {margin: 0;}
+    #text-search {
+        font-size: 16px;
+        padding: 0 10px 0 150px;
+        text-align: right
+    }
+    .search-categories {
+        left: 122px;
+        right: auto;
+        width: 63px;
+    }
+    #btn-search-category {
+        font-size: 14px;
+        padding-right: 4px;
+        width: 130px;
+        padding-left: 0;
+    }
+    .category-items{padding: 0; width: 63px}
+    .search-cat {background-position: 93% 22px;}
+    .domain-name-area::after {height: 103px;}
+    .pricing-four .single-price-package {margin-bottom: 20px;}
+    .pricing-four .col-sm-3:last-child .single-price-package{margin-bottom: 0}
+    .pricing-area.pricing-four {margin-top: -60px;}
+    .banner-area .col-lg-5 {padding: 0;}
+    .banner-area.banner-horizontal::before, .banner-area.banner-horizontal.box-layout:before {height: 55px;}
+    .pricing-area.horizontal .col-sm-4:last-child .single-price-package {margin-bottom: 0;}
+    .banner-area.banner-image.horizontal {height: 570px;}
+    .about-area.horizontal, .about-area.about-four.horizontal {padding: 100px 0 80px;}
+    .features-area.horizontal {
+        padding-bottom: 100px;
+        padding-top: 122px;
+    }
+    .download-area.horizontal {
+        padding-bottom: 85px;
+        padding-top: 85px;
+    }
+    .pricing-area.horizontal {padding-top: 100px;}
+    .testimonial-area.horizontal, .screenshots-area.horizontal {padding-top: 122px;}
+    .footer-area.horizontal {
+        padding-bottom: 122px;
+        padding-top: 122px;
+    }
+    .about-four .about-text {margin: 0 0 33px 0;}
+    .about-area.about-four {padding-bottom: 100px;}
+    .about-four .about-image {margin: 5px 0 0;}
+    .box-layout .banner-text p {font-size: 14px;}
+    .about-box-layout .about-area {margin-top: -100px;}
+    .box-layout .banner-text h1 {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .box-layout .banner-buttons .button-default {
+        margin-right: 0;
+        padding: 0 12px;
+    }
+    .box .download-area::before, .box .footer-area::before, .box .download-area::after {height: 102px;}
+    .box .section-title h1 {font-size: 30px;}
+    .box .download-btn {padding: 0 58px 0 0;}
+    .box .download-btn i {right: 0;}
+    .box .download-area {padding: 130px 15px 100px 15px;}
+    .box .pricing-area {padding-top: 100px;}
+    .box .footer-links a {margin: 0;}
+    .contact-icon {
+        height: 50px;
+        margin-right: 4px;
+        width: 50px;
+    }
+    .box-layout.banner-image .banner-buttons .button-default {padding: 0 8px;}
+    .about-box-layout.about-four .about-text h2, .box .domain-name-area h1 {font-size: 24px;}
+    .box .download-area.horizontal {
+        padding-bottom: 85px;
+        padding-top: 85px;
+    }
+    .banner-area.banner-image.box-layout::before {height: 133px;}
+    .box .pricing-area.horizontal {padding-top: 100px;}
+}
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.container-wrapper {width: 450px;}	
+    .container {width:450px}
+    .banner-text p {
+        font-size: 15px;
+        margin-bottom: 33px;
+    }
+    .banner-text h1 {font-size: 40px}
+    .download-area::before, .footer-area::before, .download-area::after {height: 180px}
+    .download-area {
+        margin-top: -25px;
+        padding-bottom: 152px;
+        padding-top: 164px;
+    }
+    .download-btn {width: 66%}
+    .pricing-area {margin-top: -110px}
+    .sin-testiImage img {
+        height: 80px;
+        margin-top: 48px;
+        width: 80px;
+    }
+    .sin-testiImage.slick-current img {
+        height: 133px;
+        margin-top: 21px;
+        width: 133px;
+    }
+    .slick-prev, .slick-next {top: 38%}
+    .footer-area {
+        margin-top: -15px;
+        padding-top: 155px;
+    }
+    .banner-image .banner-text h1 {
+        font-size: 28px;
+        line-height: 37px;
+    }
+    .banner-area::before, .banner-area.box-layout::before {height: 177px;}
+    .banner-area.banner-image {height: 660px;}
+    .domain-name-area::before, .domain-name-area::after {height: 177px;}
+    .domain-name-area h1 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .domain-name-area {
+        padding-bottom: 175px;
+        padding-top: 175px;
+    }
+    .box .pricing-area {margin-top: -60px;}
+    .box .download-area::before, .box .footer-area::before, .box .download-area::after {height: 150px;}
+    .box .download-area {
+        padding-bottom: 150px;
+        padding-top: 190px;
+    }
+    .banner-image.horizontal .banner-text {padding-top: 48%;}
+}

@@ -1,0 +1,198 @@
+// Counterup Area
+.counterup_area {
+    .counter_width {
+        width: calc(100% + 30px);
+        padding-left: 70px;
+    }
+
+    .counter_contain{
+        padding-left: 47px;
+        width: 50%;
+        padding-right: 30px;
+
+
+        .counter_content {
+            @media #{$laptop-device} {
+                background-size: 0;
+                padding: 7px 0;
+            }
+            @media #{$lg-layout} {
+                background-size: 0;
+                padding: 7px 0;
+            }
+            @media #{$md-layout} {
+                background-size: 0;
+                padding: 7px 0;
+                justify-content: center;
+            }
+            @media #{$sm-layout} {
+                background-size: 0;
+                padding: 7px 0;
+                justify-content: center;
+            }
+            .content {
+                position: relative;
+                text-align: center;
+                @media #{$laptop-device} {
+
+                }
+                @media #{$lg-layout} {
+
+                }
+                @media #{$sm-layout} {
+                    
+                }
+                @media #{$md-layout} {
+                    
+                    margin-bottom: 27px;
+                }
+                h2 {
+                    font-size: 16px;
+                    font-weight: 600;
+                    margin: 0 0 10px;
+                    
+                    @media #{$md-layout} {
+                        
+                    }
+
+                    
+                }
+                h3 {
+                    font-size: 26px;
+                    font-weight: 600;
+                    margin: 0 0 10px;
+
+                    @media #{$laptop-device} {
+                        
+                    }
+                    @media #{$lg-layout} {
+                        
+                    }
+                    @media #{$md-layout} {
+                        
+                    }
+
+                    @media #{$sm-layout} {
+                       
+                    }
+                }
+                p{
+                    margin-bottom: 26px;
+                }
+                
+                ul{
+                    &.price{
+                        padding:  0;
+                        list-style:  none;
+                        margin:  0;
+                        display:  flex;
+                        justify-content:  center;
+                        margin-bottom: 37px;
+                        li{
+                            margin: 0 10px;
+                            color:  #5b77d8;
+                            font-size:  32px;
+                            font-weight:  700;
+                            &.old_price{
+                                color:  #1b1b1c;
+                                font-size: 26px;
+                                font-weight:  600;
+                                text-decoration:  line-through;
+                            }
+                        }
+                    }
+                }
+
+
+
+            }
+        }
+    }
+}
+
+
+.service_style--2{
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Counterup Area
+.counterup_count {
+    display: flex;
+    justify-content: center;
+    @media #{$lg-layout} {
+
+    }
+    @media #{$md-layout} {
+        justify-content: center;
+        position: inherit;
+    }
+    @media #{$sm-layout} {
+        justify-content: center;
+        position: inherit;
+    }
+    .box {
+        font-size: 13px;
+        color: $theme-color;
+        font-weight: 600;
+        padding-right: 20px;
+        margin-right: 20px;
+        font-family: $heading-font;
+        text-transform: uppercase;
+        position: relative;
+        &::after {
+            position:  absolute;
+            content:  "";
+            right:  0;
+            top: 50%;
+            height:  20px;
+            width: 2px;
+            background: #dcdcdc;
+            transform: translateY(-50%);
+        }
+        &:last-child::after{
+            display: none;
+        }
+        @media #{$lg-layout} {
+            
+        }
+        @media #{$md-layout} {
+            
+            font-size: 15px;
+        }
+        @media #{$sm-layout} {
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        span {
+            display: block;
+            text-align: center;
+            color: #1b1b1c;
+            font-size: 24px;
+            font-weight: 500;
+            @media #{$md-layout} {
+                
+            }
+            @media #{$sm-layout} {
+               
+            }
+        }
+    }
+}
+
+
+
+
+
+

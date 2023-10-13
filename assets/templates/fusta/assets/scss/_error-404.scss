@@ -1,0 +1,53 @@
+/*--    
+    22. Error 404 Page Css
+---------------------------*/
+.search-error-wrapper{
+    & h1 {
+        color: #e97730;
+        font-size: 120px;
+        line-height: 86px;
+        margin-bottom: 60px;
+        @media #{$large-mobile}{
+            font-size: 70px;
+            line-height: 50px;
+            margin-bottom: 40px;
+        }
+    }
+}
+.error-form-input {
+    position: relative;
+    width: 275px;
+    margin: 30px auto;
+    & input {
+        border: 1px solid #dddddd;
+        font-size: 15px;
+        padding: 5px 45px 6px 10px;
+        position: relative;
+        width: 275px;
+        border-radius: 35px;
+    }
+    & .error-s-button {
+        background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+        border: medium none;
+        padding: 7px 15px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+.search-error-wrapper {
+    & .home-bacck-button {
+        background: $theme-color;
+        border-radius: 35px;
+        box-shadow: none;
+        color: #ffffff;
+        display: inline-block;
+        font-size: 12px;
+        font-weight: bold;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 30px;
+        text-transform: uppercase;
+        @include transition(0.4);
+    }
+}

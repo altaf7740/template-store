@@ -1,0 +1,88 @@
+/* -----------------------------------
+Template Name: Clumb
+Description: This is html5 template
+Author: HasTech
+Version: 1.0
+NOTE: This is Slider style file. All Slider related style included in this file.
+
+--------------------------------------*/
+.slider-area img, .slider-two-area img {width: 100%;}
+.slider-area, .slider-two-area, .banner-content,.single-slide, .owl-item, .owl-stage, .slider-wrapper, .owl-stage-outer, .banner-content .container, .banner-content .row, .banner-content .col-lg-7, .banner-content .col-lg-8, .banner-content .text-content-wrapper, .banner-content .text-content, .banner-content .display-table, .banner-content .display-table-cell{
+    height: 100%;
+}
+.slider-area {
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+.text-content-wrapper, .slider-area img, .slider-two-area img {width: 100%;}
+.banner-content .text-content-wrapper {display: table;}
+.banner-content .text-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+.banner-btn {clear: both; display: block;}
+.slider-area .default-btn {
+    background: #00d8ff none repeat scroll 0 0;
+    border-radius: 11px;
+    padding: 13px 32px;
+}
+.slider-area .default-btn:hover {
+    background: #fff none repeat scroll 0 0;
+    color: #00d8ff
+}
+.banner-content h2 {
+    font-size: 48px;
+    line-height: 34px;
+    margin-bottom: 29px;
+    text-transform: capitalize;
+    color: #fff
+}
+.banner-content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 36px;
+    margin-bottom: 31px;
+    color: #fff
+}
+.banner-content h1 span {color: #fff}
+.banner-content p {
+    font-weight: 500;
+    margin-bottom: 22px;
+    padding-right: 110px;
+    color: #fff;
+    padding: 0 95px
+}
+.slider-area .owl-item.active .banner-content h2, .slider-area .owl-item.active .banner-content h1, .slider-area .owl-item.active .banner-content p, .slider-area .owl-item.active .banner-content .banner-btn{
+    -webkit-animation: 2500ms ease-in-out 0s normal both 1 running bounceInUp;
+            animation: 2500ms ease-in-out 0s normal both 1 running bounceInUp;
+}
+.slider-area .owl-item.active .banner-content h2 {-webkit-animation-delay: 300ms;animation-delay: 300ms} 
+.slider-area .owl-item.active .banner-content h1 {-webkit-animation-delay: 1000ms;animation-delay: 1000ms} 
+.slider-area .owl-item.active .banner-content p {-webkit-animation-delay: 1500ms;animation-delay: 1500ms} 
+.slider-area  .owl-item.active .banner-content .banner-btn {
+    -webkit-animation-delay: 2000ms;animation-delay: 2000ms
+} 
+.owl-nav div {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    color: #ffff;
+    font-size: 43px;
+    height: 50px;
+    left: -56px;
+    line-height: 55px;
+    margin-top: -20px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    width: 50px;
+    z-index: 999;
+}
+.owl-nav .owl-next {left: auto; right: -56px;}
+.slider-area:hover .owl-nav div {left: 10px;}
+.slider-area:hover .owl-nav .owl-next {left: auto;  right: 10px;}
+.owl-nav div:hover{background: rgba(255, 255, 255, 0.4)}
+.single-slide{background-position: top center; background-size: cover}

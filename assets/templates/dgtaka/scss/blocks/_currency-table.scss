@@ -1,0 +1,136 @@
+/*-------------------
+    Currency Styles
+--------------------*/
+
+.dg__get__currency__area {
+    position: relative;
+}
+
+.images-2 {
+    position: absolute;
+    right: 90px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.images-2 img {
+    width: 100%;
+}
+
+.get__currency {
+    h2 {
+        color: #1856b8;
+        font-size: 24px;
+        margin-bottom: 9px;
+        text-transform: uppercase;
+    }
+    h3 {
+        color: #1856b8;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 44px;
+        text-transform: uppercase;
+    }
+}
+
+.currency__form {
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.currency__box {
+    .input__box {
+        margin-bottom: 30px;
+        span {
+            color: #648dd2;
+            display: block;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        input {
+            border: 1px solid #d6e3fa;
+            border-radius: 4px;
+            height: 44px;
+            padding: 0 20px;
+            width: 100%;
+            outline: none;
+        }
+        &.name {
+            flex-basis: 50%;
+            margin: 0 15px 30px;
+        }
+    }
+}
+
+.currency__box {
+    .submit__btn {
+        a {
+            background: #1852b5 none repeat scroll 0 0;
+            border: 1px solid #1852b5;
+            border-radius: 4px;
+            color: #fff;
+            display: inline-block;
+            font-size: 16px;
+            height: 40px;
+            line-height: 38px;
+            padding: 0 30px;
+            text-transform: uppercase;
+            transition: all 0.3s ease 0s;
+            &:hover {
+                background: transparent none repeat scroll 0 0;
+                border: 1px solid #1852b5;
+                color: #1852b5;
+            }
+        }
+    }
+}
+
+/* Responsive Css*/
+
+@media #{$lg-layout} {
+    .images-2 {
+        right: 42px;
+        width: 45%;
+    }
+}
+
+@media #{$md-layout} {
+    .images-2 {
+        margin-top: 64px;
+        position: inherit;
+        right: 0;
+        top: inherit;
+        -webkit-transform: inherit;
+        transform: inherit;
+    }
+}
+
+@media #{$sm-layout} {
+    .images-2 {
+        margin-top: 64px;
+        position: inherit;
+        right: 0;
+        top: inherit;
+        -webkit-transform: inherit;
+        transform: inherit;
+    }
+    .currency__form {
+        display: block;
+    }
+}
+
+@media #{$xlg-layout} {
+    .images-2 {
+        right: 0;
+        width: 49%;
+    }
+}
+
+@media #{$xx-layout} {
+    .images-2 {
+        right: 0;
+        width: 49%;
+    }
+}

@@ -1,0 +1,81 @@
+/* -----------------------------------
+Template Name: Conjoint
+Description: This is html5 template
+Author: HasTech
+Version: 1.0
+NOTE: This is Slider style file. All Slider related style included in this file.
+
+--------------------------------------*/
+.slider-area img, .slider-two-area img {width: 100%;}
+.slider-area, .slider-two-area, .banner-content,.single-slide, .owl-item, .owl-stage, .slider-wrapper, .owl-stage-outer, .banner-content .container, .banner-content .row, .banner-content .col-lg-7, .banner-content .col-lg-8, .banner-content .text-content-wrapper, .banner-content .text-content, .banner-content .display-table, .banner-content .display-table-cell{
+    height: 100%;
+}
+.slider-area {
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+.text-content-wrapper, .slider-area img, .slider-two-area img {width: 100%;}
+.banner-content .text-content-wrapper {display: table;}
+.banner-content .text-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+.banner-btn {clear: both; display: block;}
+.slider-area .button-default, .slider-two-area .button-default{display: inline;}
+.banner-content h2 {
+    font-size: 48px;
+    line-height: 34px;
+    margin-bottom: 29px;
+    text-transform: capitalize;
+    color: #fff
+}
+.banner-content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 36px;
+    margin-bottom: 31px;
+    color: #fff
+}
+.banner-content p {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 22px;
+    padding-right: 110px;
+}
+.text-content.text-center p {padding: 0 90px;}
+.slider-area .owl-item.active .banner-content h2, .slider-area .owl-item.active .banner-content h1, .slider-area .owl-item.active .banner-content p, .slider-area .owl-item.active .banner-content .banner-btn{
+    -webkit-animation: 1000ms ease-in-out 0s normal both 1 running fadeInUp;
+            animation: 1000ms ease-in-out 0s normal both 1 running fadeInUp;
+}
+.slider-area .owl-item.active .banner-content h2 {-webkit-animation-delay: 600ms;animation-delay: 600ms} 
+.slider-area .owl-item.active .banner-content h1 {-webkit-animation-delay: 1100ms;animation-delay: 1100ms} 
+.slider-area .owl-item.active .banner-content p {-webkit-animation-delay: 1600ms;animation-delay: 1600ms} 
+.slider-area .owl-item.active .banner-content .banner-btn {
+    -webkit-animation-delay: 2100ms;animation-delay: 2100ms
+} 
+.slider-area .owl-nav div {display: none}
+.slider-area .owl-dots {
+    left: 30px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    z-index: 9;
+}
+.slider-area .owl-dot {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 1px;
+    height: 10px;
+    margin: 11px 0;
+    transform: rotate(-45deg);
+    transition: all 0.3s ease-in-out 0s;
+    width: 10px;
+    z-index: 1;
+}
+.slider-area .owl-dot.active, .slider-area .owl-dot:hover {
+    background: #ffffff none repeat scroll 0 0; 
+    transform: rotate(45deg);
+}
+.single-slide{background-position: top center; background-size: cover}

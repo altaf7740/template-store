@@ -1,0 +1,210 @@
+/*--
+    08. Blog Css
+---------------------------*/
+
+.post-carousel-2 {
+    
+    & .thumb {
+        & a {
+            display: block;
+            & img {
+                width: 100%;
+            }
+        }
+    }
+    .ptc-content {
+        padding: 0 20px;
+        margin-top: -50px;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+
+        @media #{$desktop-device} {
+            padding: 0 10px;
+        }
+        @media #{$large-mobile} {
+            padding: 0 5px;
+        }
+        .content {
+            background: #ffffff;
+            padding: 20px;
+            border-bottom: 4px solid #b5b5b5;
+            padding-top: 35px;
+            transition: 0.4s ease-in-out;
+            
+            @media #{$desktop-device} {
+                padding: 15px 20px;
+            }
+
+            @media #{$tablet-device} {
+                padding: 15px 20px;
+            }
+            
+            @media #{$large-mobile} {
+                 padding: 15px 10px;
+            }
+           
+            
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+
+                &.meta {
+                    li {
+                        color: #333333;
+                        font-size: 14px;
+                        font-family: 'Courgette', cursive;
+                        display: inline-block;
+
+                        i {
+                            font-size: 14px;
+                            padding-right: 12px;
+                            color: #333333;
+                        }
+
+                        a {
+                            color: #333333;
+                        }
+                    }
+                }
+            }
+
+            h2 {
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 11px;
+                line-height: 28px;
+                margin-bottom: 25px;
+                padding: 0 30px;
+
+                @media #{$desktop-device} {
+                    padding: 0 9px;
+                }
+
+                @media #{$large-mobile} {
+                    padding: 0;
+                    margin-bottom: 16px;
+                }
+
+                a {
+                    color: #4f4f4f;
+                    transition: 0.4s ease-in-out;
+
+                    &:hover {
+                        color: #0056ff;
+                    }
+
+                }
+            }
+
+            p {
+                color: #333;
+                font-size: 14px;
+                line-height: 24px;
+                margin-bottom: 29px;
+                font-family: "Montserrat", sans-serif;
+                font-weight: 400;
+            }
+        }
+    }
+
+    &:hover .ptc-content .content {
+        border-bottom: 4px solid #0056ff;
+    }
+
+    &.construction-post {
+        .ptc-content {
+            .content {
+                background: #eff2f7;
+                border-bottom: 4px solid #dedede;
+                h2 {
+
+                    a {
+                        &:hover {
+                            color: $theme-color;
+                        }
+
+                    }
+                }
+            }
+        }
+        &:hover .ptc-content .content {
+            border-bottom: 4px solid $theme-color;
+        }
+    }
+
+    &.event-post {
+        .ptc-content {
+            .content {
+                background: #ffffff;
+                border-bottom: 4px solid #b5b5b5;
+                h2 {
+
+                    a {
+                        &:hover {
+                            color: $theme-color;
+                        }
+
+                    }
+                }
+            }
+        }
+        &:hover .ptc-content .content {
+            border-bottom: 4px solid $theme-color;
+        }
+    }
+
+    &.resturant-post {
+        .ptc-content {
+            .content {
+                background: #ffffff;
+                border-bottom: 4px solid #b5b5b5;
+                h2 {
+
+                    a {
+                        &:hover {
+                            color: $theme-color;
+                        }
+
+                    }
+                }
+            }
+        }
+        &:hover .ptc-content .content {
+            border-bottom: 4px solid $theme-color;
+        }
+    }
+}
+
+.post-carousel-active-5 {
+    position: relative;
+
+    button {
+        position: absolute;
+        top: 28%;
+        left: 15px;
+        width: 46px;
+        height: 46px;
+        background: #ffffff;
+        border: 0 none;
+        color: #0056ff;
+        font-size: 24px;
+        padding: 0;
+        margin: 0;
+        transition: 0.4s ease-in-out;
+        z-index: 2;
+
+        &:hover {
+            background: $theme-color;
+            color: #ffffff;
+        }
+
+        &.post-next {
+            left: auto;
+            right: 15px;
+        }
+    }
+}
+
+

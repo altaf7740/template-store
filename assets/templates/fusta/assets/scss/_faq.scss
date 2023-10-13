@@ -1,0 +1,40 @@
+/*--
+    24. Frequently Question Page Css
+---------------------------------*/
+
+.feequently-about-content {
+    margin-bottom: 60px;
+    & h4 {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+}
+.faequently-accordion {
+    & h4 {
+        background: #ffffff none repeat scroll 0 0;
+        border: 1px solid #ddd;
+        line-height: 1.5;
+        padding: 0;
+        text-transform: uppercase;
+        padding: 10px;
+        font-size: 15px;
+        &.open{
+            width: 100%;
+            color: $theme-color;
+            border-bottom: 1px solid $theme-color;
+            border-top: 1px solid $theme-color;
+            border-left: 1px solid $theme-color;
+            border-right: 1px solid $theme-color;
+        }
+    }
+}
+.faequently-description {
+    border-left: 1px solid $theme-color;
+    border-right: 1px solid $theme-color;
+    border-bottom: 1px solid $theme-color;
+    padding: 20px 25px;
+    margin-bottom: 15px;
+    margin-top: -7px;
+}

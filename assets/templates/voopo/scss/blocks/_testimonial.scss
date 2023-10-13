@@ -1,0 +1,54 @@
+/*------------------
+    Testimonial Styles 
+---------------------*/
+
+.testimonial {
+    margin-top: 40px;
+    .thumb {
+        margin-bottom: 24px;
+    }
+    .clint__info {
+        h4 {
+            color: #010f54;
+            font-size: 24px;
+            margin-bottom: 19px;
+            padding-bottom: 24px;
+            position: relative;
+            &::before {
+                background: linear-gradient(to left, #fccec8, #e05941);
+                bottom: 0;
+                content: "";
+                height: 3px;
+                left: 0;
+                position: absolute;
+                width: 150px;
+            }
+        }
+        p {
+            font-size: 16px;
+            line-height: 27px;
+            margin: 0;
+        }
+    }
+}
+
+// Responsive Css
+@media #{$xx-layout} {}
+
+@media #{$xlg-layout} {}
+
+@media #{$lg-layout} {}
+
+@media #{$md-layout} {
+    .testimonial .clint__info h4 {
+        font-size: 20px;
+        margin-bottom: 19px;
+        padding-bottom: 25px;
+    }
+}
+
+@media #{$sm-layout} {}
+
+@media #{$xs-layout} {}
+
+@media #{$xxs-layout} {}

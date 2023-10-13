@@ -1,0 +1,151 @@
+/*--
+    12. Projcet Css
+-----------------------*/
+.construction-gallery-menu {
+    margin-bottom: 40px;
+    & button {
+        border: none;
+        font-weight: 600;
+        font-size: 14px;
+        background: transparent;
+        padding: 6px 20px;
+        &.is-checked {
+            color: $white;
+        }
+    }
+}
+.project-info {
+    & h4 {
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+}
+
+.project-list {
+    & li {
+        display: block;
+        margin-bottom: 12px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        & span {
+            font-weight: bold;
+        }
+    }
+}
+.project-share {
+    margin-top: 20px;
+    & span {
+        font-weight: bold;
+    }
+    & a {
+        margin-left: 12px;
+    }
+}
+.project-dec-wrap  {
+    & h4 {
+        font-weight: 600;
+    }
+}
+.masonry-wrap-2 {
+    & .thumb {
+        & a {
+            display: block;
+            & img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.construction-gallery-menu {
+    margin-bottom: 30px;
+
+    button {
+        color: #18012c;
+        font-weight: 600;
+        border: 0 none;
+        font-size: 14px;
+        margin: 0  20px;
+        padding-bottom: 8px;
+        position: relative;
+        padding: 0;
+        padding-bottom: 8px;
+        @media #{$large-mobile} {
+            margin: 0 10px;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 1px;
+            background: $theme-color;
+            bottom: 0;
+            transition: 0.4s ease-in-out;
+        }
+
+        &:hover::before ,
+        &.is-checked::before{
+            width: 100%;
+        }
+
+        &:hover,
+        &.is-checked {
+            color: $theme-color;
+        }
+    }
+
+    &.my-work{
+        button {
+            &::before {
+                background: $theme-color;
+            }
+            &:hover,
+            &.is-checked {
+                color: $theme-color;
+            }
+        }
+    }
+}
+
+.single-image-grid{
+    &.construction-gallery {
+        position: relative;
+        .image-grid-content {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding-left: 30px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            background: rgba(255,255,255,0.7);
+            transition: 0.4s ease-in-out;
+            @media #{$small-mobile}{
+                padding: 10px 20px;
+            }
+            .hover-action {
+                h2 {
+                    color: $heading-color;
+                    font-size: 16px;
+                    font-weight: 600;
+                    margin: 0;
+                    margin-bottom: 0px;
+                    transition: 0.4s ease-in-out;
+                }
+                p {
+                    color: $heading-color;
+                    font-size: 12px;
+                    font-weight: 500;
+                    margin: 0;
+                    transition: 0.4s ease-in-out;
+                }
+            }
+        }
+        &:hover .image-grid-content{
+            background: $theme-color;
+        }
+        
+    }
+}
+

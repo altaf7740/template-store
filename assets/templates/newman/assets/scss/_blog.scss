@@ -1,0 +1,151 @@
+/*--
+    08. Blog Css
+---------------------------*/
+
+.single-post-slide{
+    position: relative;
+    overflow: hidden;
+    &:hover {
+        & .content {
+            & .post-inner {
+                background: rgba(29,179,248,0.6);
+            }
+        }
+    }
+    .thumb{
+        & a {
+            position: relative;
+            display: block;
+        }
+    }
+    .content {
+        position: absolute;
+        left: 0;
+        top: 0;
+        max-width: 40%;
+        height: 100%;
+        padding: 10px;
+        transition: all 0.4s ease-in-out;
+        & .post-inner {
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 30px;
+            padding: 30px 20px;
+            align-items: center;
+
+            @media #{$large-mobile} {
+                padding: 20px 10px;
+            }
+                
+            & .post-category{
+                & li {
+                    line-height: 22px;
+                    background: #f05555;
+                    height: 24px;
+                    display: inline-block;
+                    padding: 0 9px;
+                    margin: 0 10px;
+                    transition: 0.4s ease-in-out;
+                    & a {
+                        color: $white;
+                        font-size: 12px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            
+            h4 {
+                font-weight: 700;
+                margin-top: 10px;
+                margin-bottom: 6px;
+                a {
+                    color: #ffffff;
+                    &:hover {
+                        color: #333;
+                    }
+                }
+            }
+            & .meta {
+                 & li {
+                    font-size: 13px;
+                    margin: 0 15px;
+                    display: inline-block;
+                    color: $white;
+                    i {
+                        padding-right: 5px;
+                        color: $white;
+                    }
+                    & a {
+                        font-size: 14px;
+                    }
+                }
+            }
+            p {
+                color: #ffffff;
+                font-size: 14px;
+                line-height: 28px;
+                margin-top: 22px;
+            }
+            & .readmore-btn{
+                background: transparent;
+                border: 0 none;
+                height: auto;
+                padding: 0;
+                border-radius: 0;
+                font-size: 14px;
+                line-height: inherit;
+                border-bottom: 1px solid #fff;
+                color: $white;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .content{
+        max-width: 100%;
+        padding: 0;
+        right: 0;
+        left: 0;
+    }
+}
+
+.post-carousel-active {
+    overflow: hidden;
+    & button {
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        color: #f4f4f4;
+        border: 0 none;
+        font-size: 30px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        background: #000000;
+        transform: translateY(-50%);
+        z-index: 2;
+        transition: 0.4s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+      
+        &:hover{
+            color: #ffffff;
+            background: $theme-color;
+        }
+        &.post-next{
+            left: auto;
+            right: 0px;
+          
+        }
+    }
+    &:hover{
+        & button {
+        opacity: 1;
+        visibility: visible;
+        }
+    }
+}

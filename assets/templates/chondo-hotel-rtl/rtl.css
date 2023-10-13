@@ -1,0 +1,436 @@
+/*----------------------------------------*/
+/*  1.  RTL CSS
+/*----------------------------------------*/
+/* Bootstrap Css For Rtl */
+.text-left {
+  text-align: right;
+}
+.text-right {
+  text-align: left;
+}
+.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12,
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12,
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12,
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: right;
+}
+@media (min-width:768px){.col-sm-offset-12{margin-left:auto;margin-right:100%}.col-sm-offset-11{margin-left:auto;margin-right:91.66666667%}.col-sm-offset-10{margin-left:auto;margin-right:83.33333333%}.col-sm-offset-9{margin-left:auto;margin-right:75%}.col-sm-offset-8{margin-left:auto;margin-right:66.66666667%}.col-sm-offset-7{margin-left:auto;margin-right:58.33333333%}.col-sm-offset-6{margin-left:auto;margin-right:50%}.col-sm-offset-5{margin-left:auto;margin-right:41.66666667%}.col-sm-offset-4{margin-left:auto;margin-right:33.33333333%}.col-sm-offset-3{margin-left:auto;margin-right:25%}.col-sm-offset-2{margin-left:auto;margin-right:16.66666667%}.col-sm-offset-1{margin-left:auto;margin-right:8.33333333%}.col-sm-offset-0{margin-left:auto;margin-right:0}}@media (min-width:992px){.col-md-offset-12{margin-left:auto;margin-right:100%}.col-md-offset-11{margin-left:auto;margin-right:91.66666667%}.col-md-offset-10{margin-left:auto;margin-right:83.33333333%}.col-md-offset-9{margin-left:auto;margin-right:75%}.col-md-offset-8{margin-left:auto;margin-right:66.66666667%}.col-md-offset-7{margin-left:auto;margin-right:58.33333333%}.col-md-offset-6{margin-left:auto;margin-right:50%}.col-md-offset-5{margin-left:auto;margin-right:41.66666667%}.col-md-offset-4{margin-left:auto;margin-right:33.33333333%}.col-md-offset-3{margin-left:auto;margin-right:25%}.col-md-offset-2{margin-left:auto;margin-right:16.66666667%}.col-md-offset-1{margin-left:auto;margin-right:8.33333333%}.col-md-offset-0{margin-left:auto;margin-right:0}}@media (min-width:1200px){.col-lg-offset-12{margin-left:auto;margin-right:100%}.col-lg-offset-11{margin-left:auto;margin-right:91.66666667%}.col-lg-offset-10{margin-left:auto;margin-right:83.33333333%}.col-lg-offset-9{margin-left:auto;margin-right:75%}.col-lg-offset-8{margin-left:auto;margin-right:66.66666667%}.col-lg-offset-7{margin-left:auto;margin-right:58.33333333%}.col-lg-offset-6{margin-left:auto;margin-right:50%}.col-lg-offset-5{margin-left:auto;margin-right:41.66666667%}.col-lg-offset-4{margin-left:auto;margin-right:33.33333333%}.col-lg-offset-3{margin-left:auto;margin-right:25%}.col-lg-offset-2{margin-left:auto;margin-right:16.66666667%}.col-lg-offset-1{margin-left:auto;margin-right:8.33333333%}.col-lg-offset-0{margin-left:auto;margin-right:0}}
+
+.float-left {
+  float: right;
+}
+.float-right {
+  float: left;
+}
+input, textarea {
+  text-align: right;
+}
+select {
+  background-position: left center !important;
+  text-align: right;
+}
+.progress-bar {
+  float: right;
+}
+/*----------------------------------------*/
+/*  2.  Header RTL CSS
+/*----------------------------------------*/
+.header-top {
+  overflow: hidden;
+}
+.top-header .adresses,.menu-list{
+  float: right;
+}
+.header-top .social-links, .menu .search-bar-icon {
+  float: left;
+}
+.header-top .adresses .phone {
+  float: right;
+  margin-left: 20px;
+}
+.search-form-wrap .search-button {
+  left: 12px;
+}
+.welcome-text {
+  text-align: right;
+}
+.b-date i,.select-book::before{
+  left: 15px;
+  right: auto
+}
+.select-book select,.b-date input {
+  padding-right: 10px;
+}
+.menu nav ul li ul.dropdown_menu,.menu nav ul li ul.mega_menu {
+  text-align: right;
+}
+.static2 .header-top .adresses {
+  float: right;
+}
+.welcome-text.text-center {
+  text-align: center ;
+}
+.select-book .bootstrap-select.btn-group .dropdown-toggle .filter-option {
+  text-align: right !important;
+}
+.select-book .dropdown-menu {
+  float: right !important;
+  right: 0;
+  text-align: right;
+}
+/*-------------------
+3. Home page content
+---------------------*/
+.single-room .room-name {
+  text-align: right;
+}
+.single-room .room-rent {
+  float: right;
+}
+.room-desc .room-book {
+  float: none;
+  margin-top: -10px;
+}
+.news-inner .news-img, .news-inner .news-desc, .read-more, .news-post .n-date {
+  float: right;
+}
+.news-inner .news-desc {
+  text-align: right;
+}
+h3.news-title {
+  margin: 0 0 20px 107px;
+}
+.news-share, .news-img .comment, .news-views {
+  float: left;
+}
+.news-share {
+  line-height: 35px;
+}
+.news-views {
+  margin-right: 0;
+  margin-left: 10px;
+}
+.news-share > p {
+  float: left;
+  margin-right: 10px;
+  margin-top: 6px;
+}
+.newsletter-form button {
+  left: 0;
+  right: auto;
+}
+.newsletter-form input {
+  padding: 0 10px 0 0;
+}
+.get-conatct input {
+  padding: 0 10px 0 0;
+}
+.get-conatct button {
+  float: right;
+}
+.single-footer,.copyright p {
+  text-align: right;
+}
+.footer-menu {
+  text-align: left;
+}
+.menu nav ul li ul.dropdown_menu {
+  right: 0;
+}
+.sticky .menu {
+  margin-left: 0;
+  margin-right: 40px;
+}
+.testimonial-desc {
+  float: right;
+  padding-left: 0;
+  padding-right: 30px;
+  text-align: right;
+}
+.testimonial-img {
+  float: right;
+}
+.client-say-desc > p {
+  margin-right: 0;
+  margin-left: 55px;
+}
+.copyright.static2 p {
+  text-align: center !important;
+}
+.feature-tab-desc {
+  float: right;
+}
+.single-room-details.pl-50 {
+  padding-left: 0;
+  padding-right: 50px;
+}
+.our-skill .lead {
+  right: 0;
+  left: auto
+}
+.our-skill .progress-bar > span {
+  float: left;
+}
+.progress-bar > span {
+  float: right;
+  padding-right: 12px;
+}
+
+.booking-box2 .b_date:last-child, .booking-box3 .select_book:last-child,.booking-box1 .booking-filed:last-child{
+  padding-right: 0;
+}
+.booking-box1 .booking-filed, .booking-box2 .b_date, .booking-box3 .select_book {
+  padding-right: 30px;
+  padding-left: 0;
+}
+.selcted-room .select-room-inner {
+  text-align: right;
+}
+.room-booking .booking_form {
+  text-align: right;
+}
+.room-booking-box .select-book::before {
+  left: 15px;
+  right: auto
+}
+.service-tab-desc .single-form-part .date-to i {
+  left: 15px;
+   right: auto;
+}
+.client-say-title > h2 {
+  float: right;
+}
+.client-say-title {
+  overflow: hidden;
+}
+
+.mean-container .mean-nav ul li a {
+  float: right;
+  text-align: right;
+}
+.mean-container .mean-nav ul li a.mean-expand {
+  left: 0;
+}
+/*----------------------------------------*/
+/*  12.  RTL Responsive CSS
+/*----------------------------------------*/
+@media (min-width: 1170px) and (max-width: 1200px) {
+.menu nav ul li {
+  margin-left: 25px;
+}
+.static2 .menu nav ul li {
+  margin-left: 25px;
+}
+	
+	
+	
+	
+	
+}
+
+/* Normal desktop :992px. */
+@media only screen and (min-width: 992px) and (max-width: 1169px) {
+.sticky .menu {
+   margin-right: 10px;
+}
+
+.room-desc .room-book a{
+  padding: 8px 12px;
+}
+	
+	
+	
+
+}
+
+/* Tablet desktop :768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+.sticky .menu {
+  margin-right: 0;
+}
+h3.news-title {
+  margin: 0;
+}	
+.news-action .news-share {
+  float: right;
+}	
+.newsletter-title h2 {
+  line-height: 28px;
+  margin: 0;
+}	
+	
+.social-links.float-right {
+  float: left;
+}	
+.sticky-header .logo {
+  float: right;
+}	
+.single-view-post .news-action .news-share {
+  float: left;
+  margin-top: 0;
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+}
+
+
+/* Large Mobile :480px. */
+@media only screen and (max-width: 767px) {
+.welcome-text {
+  text-align: center;
+}
+.room-desc .room-book {
+margin-top: 25px;
+  display: block;
+}	
+.single-room .room-rent {
+  float: none;
+}	
+.single-room .room-name {
+  text-align: center;
+}	
+h3.news-title {
+  margin: 0;
+}
+.news-action .read-more {
+  float: none;
+}	
+.news-action {
+  text-align: center;
+}	
+.news-action .news-share {
+  float: none;
+}	
+.news-share > p {
+  float: none;
+  display: inline-block;
+}	
+.newsletter-form button {
+  float: right;
+}	
+.footer-menu,.copyright p  {
+  text-align: center;
+}
+.single-room-details.pl-50 {
+  padding-right: 0;
+}	
+.contact-info {
+  padding-right: 0;
+}	
+.single-view-post .news-action .news-share {
+  float: left;
+  margin-top: 0;
+}		
+.news-action .read-more {
+  float: right;
+}	
+.booking-box1 .booking-filed, .booking-box2 .b_date, .booking-box3 .select_book {
+  padding-right: 0;
+}	
+.section-title > h2, .video-tour .section_title > h2 {
+  font-size: 20px;
+  line-height: 15px;
+}	
+	
+	
+	
+	
+	
+
+}
+
+
+/* small mobile :320px. */
+@media only screen and (max-width: 479px) {
+.welcome-text {
+  text-align: center;
+}
+.room-desc .room-book {
+margin-top: 25px;
+  display: block;
+}	
+.single-room .room-rent {
+  float: none;
+}	
+.single-room .room-name {
+  text-align: center;
+}	
+h3.news-title {
+  margin: 0;
+}
+.news-action .read-more {
+  float: none;
+}	
+.news-action {
+  text-align: center;
+}	
+.news-action .news-share {
+  float: none;
+}	
+.news-share > p {
+  float: none;
+  display: inline-block;
+}	
+.newsletter-form button {
+  float: right;
+}	
+.footer-menu,.copyright p  {
+  text-align: center;
+}
+.single-room-details.pl-50 {
+  padding-right: 0;
+}
+.contact-info {
+  padding-right: 0;
+}	
+.single-view-post .news-action .news-share {
+  float: right;
+  margin-top: 10px;
+}		
+.news-action .read-more {
+  float: right;
+}	
+.news-action {
+  overflow: hidden;
+}	
+.news-action .news-share {
+  overflow: hidden;
+  width: 100%;
+  float: right;
+  text-align: right;	
+}	
+.single-view-post .news-action .news-share {
+  text-align: right;
+}
+.booking-box1 .booking-filed, .booking-box2 .b_date, .booking-box3 .select_book {
+  padding-right: 0;
+}	
+.section-title > h2, .video-tour .section_title > h2 {
+  font-size: 16px;
+  line-height: 15px;
+}
+	
+	
+	
+	
+	
+	
+	
+
+
+}
+
+
+
+

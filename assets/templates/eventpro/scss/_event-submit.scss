@@ -1,0 +1,77 @@
+/*----------------------------------------*/
+/*  12.  Event Submit
+/*----------------------------------------*/
+
+/*-- Event Submit Wrapper --*/
+.event-submit-wrapper {
+    & h2 {
+        font-weight: 500;
+        line-height: 40px;
+        margin-bottom: 60px;
+        @media #{$large-mobile}{
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+}
+
+/*-- Event Submit Pricing Wrapper --*/
+.event-submit-pricing-wrapper {
+    & > p {
+        font-size: 16px;
+        margin-bottom: 27px;
+    }
+    
+    /*-- Event Submit Pricing --*/
+    & .event-submit-pricing {
+        background-color: $bg-light-gray;
+        padding: 30px 35px;
+        border-radius: 4px;
+        position: relative;
+        cursor: pointer;
+        &::before {
+            position: absolute;
+            right: 35px;
+            top: 30px;
+            width: 30px;
+            height: 30px;
+            content: "";
+            border-radius: 50%;
+            background-color: $blue;
+            opacity: 0.1;
+        }
+        &.active {
+            &::before {
+                opacity: 1;
+            }
+        }
+        & h3 {
+            font-family: $open-sans;
+            color: $body-color;
+            line-height: 1;
+            margin-bottom: 27px;
+        }
+        & h1 {
+            color: $blue;
+            font-weight: 200;
+            font-size: 60px;
+            position: relative;
+            margin-bottom: 16px;
+            @media #{$desktop-device}{
+                font-size: 50px;
+            }
+            @media #{$large-mobile}{
+                font-size: 44px;
+            }
+            & span {
+                display: inline-block;
+                font-size: 30px;
+                vertical-align: top;
+                margin-top: -14px;
+            }
+        }
+        & p {
+            color: $heading-color;
+        }
+    }
+}

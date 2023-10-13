@@ -1,0 +1,64 @@
+/*--
+    21. Contact Us Page Css
+------------------------------*/
+.contact-info-wrapper {
+    & h2 {
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    & p {
+        margin-bottom: 30px;
+    }
+}
+.contact-info-list {
+    & li {
+        margin-bottom: 12px;
+        &:last-child{
+            margin-bottom: 0
+        }
+    }
+}
+.contact-form-warp {
+    margin-top: 60px;
+    & input,
+    & textarea {
+        width: 100%;
+        margin-bottom: 20px;
+        background: #f0f0f0;
+        border: none;
+        height: 45px;
+        font-size: 14px;
+        font-style: italic;
+        padding: 10px;
+        font-family: $opensans;
+        color: #444;
+    }
+    & textarea {
+        height: 148px;
+    }
+}
+.contact-submit-btn {
+    & .submit-btn {
+        padding: 10px 30px;
+        background: $theme-color;
+        color: #fff;
+        border: none;
+        margin-top: 10px;
+        @include transition(.4s);
+        &:hover {
+            background: $black;
+        }
+    }
+}
+.map {
+    height: 680px;
+    width: 100%;
+    @media #{$tablet-device}{
+        margin-top: 40px;
+    }
+    @media #{$large-mobile}{
+        margin-top: 40px;
+        height: 400px
+    }
+}

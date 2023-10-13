@@ -1,0 +1,123 @@
+/*--
+    05. About Css
+--------------------------*/
+.section-feature {
+    padding-bottom: 60px;
+    @media #{$desktop-device}{
+        overflow: hidden;
+        padding-bottom: 0px;
+    }
+    @media #{$tablet-device , $large-mobile}{
+        padding-bottom: 0px;
+    }
+}
+.bg_image--01 {
+    background-image: url(../images/bg/bg-image-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.corporate-feature{
+    position: relative;
+    .content{
+        padding-bottom: 110px;
+        h2 {
+            color: #ffffff;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 47px;
+            margin-bottom: 10px;
+            @media #{$large-mobile}{
+                font-size: 24px;
+                line-height: 30px;
+            }
+        }
+        p {
+            color: #ffffff;
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 20px;
+        }
+        ul {
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            list-style: none;
+            margin: 0;
+            li {
+                color: #ffffff;
+                font-size: 14px;
+                line-height: 26px;
+                display: flex;
+                i{
+                    margin-top: 5px;
+                    padding-right: 12px;
+                }
+            }
+            @media #{$large-mobile}{
+                display: block;
+                li {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+       
+    }
+    .thumb {
+        position: absolute;
+        right: -25%;
+        bottom: -36%;
+        
+        @media #{$laptop-device}{
+            position: absolute;
+            right: -0%;
+            bottom: -20%;
+        }
+        @media #{$desktop-device}{
+            right: -90px;
+            bottom: 90px;
+        }
+        @media #{$tablet-device , $large-mobile}{
+            position: relative;
+            right: 3%;
+            bottom: 53px
+        }
+    }
+}
+
+.counterup-bg {
+    background: url(../images/bg/counter-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.counter {
+    & h3 {
+        font-weight:  700;
+        color: #333;
+        margin-top: 10px;
+    }
+    & p {
+        color: #333;
+        font-weight: 500;
+        font-size: 17px;
+        margin: 0;
+        margin-top: 0px;
+        position: relative;
+        margin-top: 9px;
+        display: block;
+        padding-bottom: 10px;
+        &::before {
+            background: #333;
+            width: 48px;
+            height: 1px;
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+

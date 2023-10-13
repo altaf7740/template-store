@@ -1,0 +1,236 @@
+@import "../variables";
+@import "../mixins";
+/*======= Cartbox Styles =======*/
+
+
+.cartbox-wrap{
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	left: 0;
+	top: 0;
+	visibility: hidden;
+	opacity: 0;
+	@include transition(all 0.7s ease-in-out 0s);
+	z-index: 9998px;
+	.body-overlay{
+		position: fixed;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		background: rgba(30,30,30,0.85);
+		z-index: 9991;
+		visibility: hidden;
+		opacity: 0;
+		cursor: url(images/icon/close.png), crosshair;
+	}
+	&.is-visible{
+		visibility: visible;
+		opacity: 1;
+		.body-overlay{
+			visibility: visible;
+			opacity: 1;
+		}
+		.cartbox{
+			right: 0;
+			@include animation(slideInRight 0.7s ease-in-out both);
+		}
+	}
+}
+.cartbox{
+	position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 9992;
+    height: 100%;
+    width: 465px;
+    background: #fafafa;
+    min-height: 100vh;
+    @include box-shadow(0 0 20px rgba(0,0,0,0.1));
+    padding: 25px 35px;
+    @include transition(all 0.7s ease-in-out 0s); 
+    overflow-y: auto;
+    .cartbox-close{
+    	@include transition(all 0.3s ease-in-out 0s);
+    	background: transparent;
+    	font-size: 25px;
+    	text-transform: uppercase;
+    	margin-right: -5px;
+    	border: 0 none;
+    	&:hover{
+    		color: $theme-color;
+    	}
+    }
+}
+.cartbox__items{
+	padding-bottom: 20px;
+	border-bottom: 1px solid #aaaaaa;
+}
+.cartbox__item{
+	@include flexbox();
+	@include justify-content(space-between);
+	@include align-items(center);
+	padding: 20px 0;
+	border-bottom: 1px solid #f0f0f0;
+	&:last-child{
+		border-bottom: none;
+	}
+}
+.cartbox__item__thumb{
+	width: 70px;
+	display: inline-block;
+}
+.cartbox__item__thumb a{
+	display: inline-block;
+}
+.cartbox__item__content {
+    flex-grow: 100;
+    padding-left: 25px;
+    padding-right: 25px;
+    h5 {
+    	font-family: $body-font;
+	    font-size: 15px;
+	    font-style: normal;
+	    font-weight: 500;
+	    line-height: 1;
+	    margin-bottom: 4px;
+	    text-transform: capitalize;
+        a{
+        	&:hover{
+        		color: $theme-color;
+        	}
+        }
+    }
+    p{
+    	 font-size: 12px;
+    	margin-bottom: 0;
+    }
+    span.price{
+    	font-weight: 500;
+    	color: $theme-color;
+    }
+}
+button.cartbox__item__remove {
+    background:  none;
+    font-size:  20px;
+    padding: 0;
+    @include align-self(flex-start);
+	@include transition(all 0.3s ease-in-out 0s);
+	@include transform-origin(center center);
+	color: #999;
+	border: 0 none;
+    &:hover{
+		color: $theme-color;
+    }
+}
+
+.cartbox__total{
+	margin-top: 20px;
+	ul{
+		padding-left: 0;
+		list-style: none;
+		li{
+			@include flexbox;
+			@include justify-content(space-between);
+			font-size: 18px;
+			font-weight: 400;
+			font-style: italic;
+			line-height: 1.5;
+			&.shipping-charge{
+				span.price{
+					&:before{
+						content: "+";
+						font-size: 16px;
+						padding-right: 3px;
+					}
+				}
+			}
+			&.grandtotal{
+				font-size: 24px;
+				color: black;
+				margin-top: 7px;
+				font-weight: 700;
+			}
+		}
+	}
+}
+.cartbox__buttons{
+	margin-top: 30px;
+	a.cr-btn{
+		text-align: center;
+		margin-top: 20px;
+		display: block;
+		height: 50px;
+		padding: 4px 30px;
+		border-radius: 0;
+		&:before{
+			border-radius: 0;
+		}
+	}
+}
+.cartbox__item__thumb a img {
+  max-width: 100%;
+}
+
+.cartbox__buttons a {
+    display: block;
+    font-family: Open Sans;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+.cartbox__buttons a + a {
+    margin-top: 20px;
+}
+
+
+@media #{$lg-layout}{
+	.cartbox{
+		width: 400px;
+	}
+}
+
+@media #{$md-layout}{
+	.cartbox{
+		width: 350px;
+		padding: 15px 25px;
+	}
+}
+
+@media #{$sm-layout}{
+	.cartbox{
+		width: 350px;
+		padding: 15px 15px;
+	}
+}
+
+@media #{$xs-layout}{
+	.cartbox{
+		width: calc(100% - 30px);
+		padding: 15px 15px;
+	}
+}
+
+
+// Brand Area
+
+@media #{$xs-layout}{
+
+	.brand__list li + li {
+	  margin-top: 30px;
+	}
+	.brand__list li a img {
+	  width: auto;
+	}
+	.brand__list {
+	  display: block !important;
+	  text-align: center;
+	}
+
+
+}
+
+
+
+

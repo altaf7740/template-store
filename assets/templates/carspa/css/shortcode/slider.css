@@ -1,0 +1,229 @@
+/* ====================================
+	
+	Template: Carspa
+	Css Name: Slider
+	Version: 1
+	Design and Developed by:HasTech
+	NOTE: This is Footer style file. All footer related style included in this file.
+
+======================================== */
+
+/*----------------------------------------*/
+/*  3.  Hero Area
+/*----------------------------------------*/
+
+/* Slick Slider Theme Css* /
+@charset 'UTF-8';
+
+
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+    src: url('./fonts/slick.eot');
+    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+}
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-prev{left: -25px;}
+[dir='rtl'] .slick-prev{right: -25px;left: auto;}
+.slick-prev:before{content: '←';}
+[dir='rtl'] .slick-prev:before{content: '→';}
+.slick-next{right: -25px;}
+[dir='rtl'] .slick-next{right: auto;left: -25px;}
+.slick-next:before{content: '→';}
+[dir='rtl'] .slick-next:before{content: '←';}
+
+/* Dots */
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+.slick-dots {
+  bottom: 45px;
+  display: block;
+  left: 370px;
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+}
+.slick-dots li {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 5px;
+  padding: 0;
+  position: relative;
+}
+.slick-dots li button {
+  background: #d42f38 none repeat scroll 0 0;
+  border: 0 none;
+  border-radius: 20px;
+  color: transparent;
+  cursor: pointer;
+  display: block;
+  font-size: 0;
+  height: 10px;
+  line-height: 0;
+  outline: medium none;
+  padding: 5px;
+  width: 20px;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before{
+    opacity: 1;
+}
+.slick-dots li.slick-active button{
+    opacity: 1;
+	background: #fff none repeat scroll 0 0;
+	width: 30px;
+}
+
+/* Slick Slider Text Css */
+.hero-item {
+  padding: 158px 0 0;
+}
+.hero-item .content {
+  margin-top: 116px;
+}
+.hero-item .content * {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeOutDown;
+  animation-name: fadeOutDown; }
+.hero-item .content h1 {
+  animation-delay: 0.8s;
+  color: #fffefe;
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+.hero-item .content h1 span {
+  animation-fill-mode: backwards;
+  color: #d42f38;
+}
+.hero-item .content p {
+  animation-delay: 1.2s;
+  color: #fffefe;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  margin-bottom: 35px;
+  width: 520px;
+}
+.hero-item .content a {
+  animation-delay: 1.6s;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  height: 50px;
+  line-height: 25px;
+  padding: 12px 38px;
+  text-transform: uppercase;
+  transition:.3s;
+}
+.hero-item .content a:hover {
+   background-color: #d42f38;border-color:#d42f38; 
+}
+.hero-item .images {
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+.hero-item .images img {
+  position: absolute;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+.hero-item .images img[class^="icon-"] {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut; }
+.hero-item .images img.main {
+  animation-name: fadeOutDown;
+  float: right;
+  position: static;
+}
+.hero-item.slick-active h2 {
+-webkit-animation-name: fadeInUp;
+animation-name: fadeInUp; }
+.hero-item.slick-active h1 {
+-webkit-animation-name: fadeInUp;
+animation-name: fadeInUp; }
+.hero-item.slick-active p {
+-webkit-animation-name: fadeInUp;
+animation-name: fadeInUp; }
+.hero-item.slick-active a {
+-webkit-animation-name: fadeInUp;
+animation-name: fadeInUp; }
+.hero-item.slick-active img.main {
+-webkit-animation-name: fadeInUp;
+animation-name: fadeInUp; }
+.hero-item.slick-active img[class^="icon-"] {
+-webkit-animation-name: fadeIn;
+animation-name: fadeIn; }
+	

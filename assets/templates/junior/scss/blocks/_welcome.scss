@@ -1,0 +1,318 @@
+@import "../variables";
+@import "../mixins";
+
+
+/*========================
+	Welcome Area
+===========================*/
+
+
+.jn__welcome__wrapper{
+	margin-top: 50px;
+    padding: 0 77px;
+	.welcome__juniro__inner{
+		h3{
+			color: #333333;
+		    font-size: 44px;
+		    font-weight: 400;
+		    margin-bottom: 13px;
+		    font-family: $heading-font;
+		}
+		p{
+			color: #777777;
+		    font-size: 15px;
+		    line-height: 27px;
+		    padding-right: 7%;
+
+		}
+		.wel__btn{
+			margin-top: 48px;
+		}
+	}
+	.jnr__Welcome__thumb{
+		position: relative;
+		margin-right: -28px;
+		a{
+			&.play__btn{
+				color: #89d700;
+			    font-size: 24px;
+			    left: 50%;
+			    position: absolute;
+			    top: 50%;
+			    transform: translateY(-50%) translateX(-50%);
+			    z-index: 2;
+			    margin-left: 19px;
+			    i{
+			    	padding-left: 5px;
+			    }
+			    &::before{
+			    	background: #fff none repeat scroll 0 0;
+				    border-radius: 100%;
+				    bottom: 0;
+				    content: "";
+				    height: 65px;
+				    left: -25px;
+				    margin: auto;
+				    position: absolute;
+				    right: 0;
+				    top: 0;
+				    transform: scale(1);
+				  	transition: transform 0.2s cubic-bezier(0.56, 0.2, 0.25, 1) 0s;
+				    width: 65px;
+				    z-index: -1;
+			    }
+			    &:hover::before{
+					transform: scale(1.15);
+			    }
+
+			}
+		}
+	}
+}
+
+
+
+.jn__welcome__wrapper .welcome__juniro__inner h3 span.theme-color {
+  color: $theme-color;
+}
+.jn__welcome__wrapper .welcome__juniro__inner h3 span {
+  color: #fed706;
+}
+
+// Welcome Style Two
+
+.welcome--2  .jn__welcome__wrapper {
+  margin-top: 80px;
+  padding: 0;
+}
+.welcome--2 .jn__welcome__wrapper .jnr__Welcome__thumb a.play__btn {
+  margin-left: 0;
+}
+.welcome--2 .jnr__Welcome__thumb::before {
+  background: #000 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  opacity: 0.4;
+  position: absolute;
+  width: 100%;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+}
+.welcome--2 .jnr__Welcome__thumb{
+	border-radius: 5px;
+}
+.welcome--2 .welcome__juniro__inner {
+  padding-left: 100px;
+}
+.welcome--2 .jn__welcome__wrapper .welcome__juniro__inner p {
+  padding-right: 13%;
+}
+
+.welcome--2 .dcare__btn {
+  height: 44px;
+  line-height: 41px;
+}
+
+// Welcome Style Three
+
+.welcome__juniro__three{
+	.welcome-tab{
+		margin-bottom: 23px;
+	    margin-left: -2px;
+	    margin-right: -2px;
+		.nav-item{
+			border: 1px solid #eeeeee;
+		    border-radius: 5px;
+		    color: #666666;
+		    font-family: $heading-font;
+		    font-size: 16px;
+		    font-weight: 700;
+		    height: 35px;
+		    line-height: 32px;
+		    margin: 0 2px;
+		    padding: 0 19px;
+		    text-transform: capitalize;
+		    &.active,
+		    &:hover{
+		    	background: #ff5020 none repeat scroll 0 0;
+			    border: 1px solid #ff5020;
+			    color: #fff;
+		    }
+		}
+	}
+	.single__welcome__content{
+		margin-bottom: 37px;
+		p{
+			padding-right: 22%;
+		}
+	}
+	
+}
+
+.junior__welcome__area{
+	overflow: hidden;
+}
+.jn__welcome__wrapper--2 {
+  margin-top: 80px;
+}
+
+
+.welcome__images {
+  bottom: -70px;
+  position: absolute;
+  right: 199px;
+  width: 49%;
+}
+
+.welcome__images--2 {
+  position: absolute;
+  right: 16%;
+  top: 32%;
+}
+
+
+.welcome__juniro__three .dcare__btn {
+  box-shadow: 0 0 35px rgba(255, 80, 32, 0.1);
+}
+
+
+.single__welcome__content.tab-pane:not(.active) {
+    display: none;
+}
+
+
+
+
+
+
+// Responsive Css
+
+
+@media #{$xlg-layout}{
+
+	
+}
+@media #{$lg-layout}{
+	
+	.jn__welcome__wrapper .welcome__juniro__inner p {
+	  padding-right: 15%;
+	}
+	.client__details p {
+	  font-size: 19px;
+	  line-height: 27px;
+	}
+
+	.welcome--2 .welcome__juniro__inner {
+	  padding-left: 30px;
+	}
+	.welcome__images--2 {
+	  right: 9%;
+	  top: 41%;
+	}
+	.welcome__images {
+	  right: 71px;
+	  width: 69%;
+	}
+	.welcome__juniro__three .single__welcome__content p {
+	  padding-right: 1%;
+	}
+
+
+}
+@media #{$md-layout}{
+	.jn__welcome__wrapper .welcome__juniro__inner p {
+	  padding-right: 5%;
+	}
+	.jn__welcome__wrapper .jnr__Welcome__thumb a.play__btn {
+	  margin-left: 0;
+	}
+
+	.jn__welcome__wrapper {
+	  padding: 0;
+	}
+	.jn__welcome__wrapper .jnr__Welcome__thumb {
+	  text-align: center;
+	}
+
+	.welcome--2 .welcome__juniro__inner {
+	  padding-left: 0;
+	}
+	.jnr__Welcome__thumb img {
+	  width: 100%;
+	}
+
+	.welcome__images {
+	  margin-top: 25px;
+	  position: inherit;
+	  width: 100%;
+	}
+	.welcome__images--2 {
+	  right: 6%;
+	  top: 45%;
+	}
+
+	.jn__welcome__wrapper .jnr__Welcome__thumb {
+	  margin-right: 0;
+	}
+
+}
+@media #{$sm-layout}{
+
+	.jn__welcome__wrapper {
+	  padding: 0;
+	}
+	.jn__welcome__wrapper .welcome__juniro__inner p {
+	  padding-right: 0;
+	}
+	
+	.jn__welcome__wrapper .jnr__Welcome__thumb a.play__btn {
+	  margin-left: 0;
+	}
+	.welcome--2 .welcome__juniro__inner {
+	  padding-left: 0;
+	}
+	.jnr__Welcome__thumb img {
+	  width: 100%;
+	}
+
+	.welcome--2 .jn__welcome__wrapper .welcome__juniro__inner p {
+	  padding-right: 5%;
+	}
+	.welcome__images {
+	  margin-top: 25px;
+	  position: inherit;
+	  width: 100%;
+	}
+	.welcome__images--2 {
+	  right: -2%;
+	  top: 44%;
+	}
+	.jn__welcome__wrapper .jnr__Welcome__thumb {
+	  margin-right: 0;
+	}
+
+}
+@media #{$xs-layout}{
+
+	.jn__welcome__wrapper .welcome__juniro__inner h3 {
+	  font-size: 30px;
+	}
+
+	.welcome__images--2 {
+	  display: none;
+	}
+
+	.welcome__juniro__three .welcome-tab .nav-item {
+	  font-size: 14px;
+	  padding: 0 13px;
+	}
+	.welcome__juniro__three .single__welcome__content p {
+	  padding-right: 0;
+	}
+
+
+
+
+
+}

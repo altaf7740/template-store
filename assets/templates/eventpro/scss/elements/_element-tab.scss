@@ -1,0 +1,52 @@
+/*-- Nav Tab --*/
+.nav-tab {
+    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 20px;
+    & a {
+        display: block;
+        float: left;
+        line-height: 24px;
+        padding: 8px 20px 8px 0;
+        margin-right: 30px;
+        font-weight: 600;
+        color: $heading-color;
+        border-bottom: 2px solid transparent;
+        margin-bottom: -1px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &.active {
+            border-color: $blue;
+        }
+    }
+}
+
+/*-- Nav Tab Two --*/
+.nav-tab-two {
+    border-top: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    & a {
+        display: block;
+        float: left;
+        line-height: 24px;
+        padding: 8px 20px 8px 20px;
+        font-weight: 600;
+        color: $heading-color;
+        border-top: 2px solid transparent;
+        margin-top: -1px;
+        border-right: 1px solid #eeeeee;
+        &.active {
+            border-top-color: $blue;
+        }
+    }
+}
+
+/*-- Tab Content --*/
+.tab-content {
+    & .tab-pane {}
+    & .tab-pane-border {
+        border: 1px solid #eeeeee;
+        padding: 20px;
+    }
+}

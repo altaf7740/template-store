@@ -1,0 +1,269 @@
+/*-----------------------------------------------------------------------------------
+  Template Name: Mounter  Corporate HTML Template.
+  Template URI: #
+  Description: Mounter is a unique website template designed in HTML with a simple & beautiful look. There is an excellent solution for creating clean, wonderful and trending material design corporate, corporate any other purposes websites.
+  Author: HasTech
+  Author URI: https://themeforest.net/user/hastech/portfolio
+  Version: 1.0
+-------------------------------------------------------------------------------------*/
+/*
+  font-family: 'Open Sans', sans-serif;;
+
+*/
+
+/*----------------------------------------
+  Menu basic style
+------------------------------------------*/
+.htc__header {
+  position: relative;
+  z-index: 999;
+}
+ul.main__menu li.logo a {
+  height: auto;
+  line-height: 0;
+  margin: 0 66px;
+  padding: 0;
+}
+.mainmenu__wrap {
+  position: absolute;
+  top: 60px;
+  width: 100%;
+}
+.main__menu {
+  display: flex;
+  justify-content: center;
+  display: -webkit-box; 
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex; 
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+}
+.main__menu > li > a {
+  align-items: flex-end;
+  display: flex;
+  display: -webkit-box; 
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex; 
+  font-family: "Open Sans",sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  height: 50px;
+  line-height: 16px;
+  padding: 0 25px;
+  position: relative;
+  text-transform: uppercase;
+  color: #fff;
+}
+.main__menu > li {
+  position: relative;
+  padding-bottom: 22px;
+}
+.main__menu > li:hover > a{
+  color: #00bbd5;
+}
+.logo a{
+  display: block;
+}
+
+/*--------------------
+  Header 3
+---------------------*/
+.header--three .main__menu > li > a {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0 28px;
+}
+.header--three .main__menu {
+  justify-content: flex-end;
+}
+.header--three .main__menu li:last-child a {
+  padding-right: 0;
+}
+
+.header--three .main__menu > li {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+/*--------------------
+  Header 4
+---------------------*/
+
+.header--four .mainmenu__wrap {
+  top: 44px;
+}
+
+.header--four .menu__icon {
+    text-align: right;
+}
+.header--four .menu__icon a i {
+  color: #fff;
+  font-size: 48px;
+  transition: all 0.3s ease 0s;
+}
+.header__style--four .main__menu > li {
+  padding-bottom: 0;
+}
+
+/*-----------------------------------------
+  Sticky  For  Header
+-------------------------------------------*/
+
+.sticky__header.scroll-header {
+  animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+  background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
+  left: 0;
+  margin: 0 auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999999;
+}
+.sticky__header.scroll-header .main__menu > li > a {
+  height: 70px;
+  line-height: 68px;
+}
+.sticky__header.scroll-header .main__menu > li {
+  padding-bottom: 0px;
+}
+.sticky__header.scroll-header ul.main__menu li.logo a {
+  height: 70px;
+  line-height: 65px;
+}
+.header--two .display__none.sticky__header.scroll-header {
+  display: block;
+}
+.header--three .sticky__header.scroll-header .main__menu > li {
+  padding-bottom: 0;
+}
+.header--four .sticky__header.scroll-header .header__inner {
+  padding: 0 88px;
+}
+
+.fluid-container.mobile-menu-container {
+  position: relative;
+}
+.mobile-logo {
+  align-items: center;
+  display: flex;
+  height: 52px;
+  left: 0;
+  padding-left: 15px;
+  position: absolute;
+  top: 0;
+  z-index: 2147483647;
+}
+.mobile-logo img {
+  max-height: 39px;
+}
+
+/*-----------------------------
+  Dropdown Menu
+--------------------------------*/
+
+.main__menu li.drop ul.dropdown {
+  background: #ffffff none repeat scroll 0 0;
+  box-shadow: 0 7px 12px rgba(0, 0, 0, 0.12), 7px 0 12px rgba(0, 0, 0, 0.12);
+  left: 0;
+  margin: 0;
+  opacity: 0;
+  padding: 12px 0;
+  position: absolute;
+  top: 100%;
+  transform-origin: center top 0;
+  transition: all 0.5s ease 0s;
+  visibility: hidden;
+  width: 233px;
+  z-index: 999;
+}
+.main__menu li.drop:hover ul.dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-header .main__menu li.drop ul.dropdown {
+  top: 100%;
+}
+.scroll-header .main__menu li.drop:hover ul.dropdown {
+  top: 100%;
+}
+.main__menu ul.dropdown li {
+  display: block;
+}
+.main__menu ul.dropdown li a {
+  background: #ffffff none repeat scroll 0 0;
+  color: #333333;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 4px 16px 4px 25px;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.4s ease 0s;
+}
+.main__menu li.drop ul.dropdown li:hover > a {
+    color: #00bbd5;
+}
+.main__menu li.drop ul.dropdown li{
+  margin-left: 0px;
+}
+
+.mani_menu_box{
+  position: relative;
+}
+.menu__icon{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.mani_menu_box .main__menu > li > a {
+  align-items: center;
+}
+.mani_menu_box .main__menu {
+  justify-content: flex-end;
+}
+.mani_menu_box .main__menu__nav {
+  padding-right: 40px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+}
+.mani_menu_box .main__menu__nav.show-menu {
+  padding-right: 60px;
+  opacity: 1;
+  visibility: visible;
+}
+.menu__icon i {
+  color: #fff;
+  font-size: 36px;
+}
+.click-menu-open{
+  width: 40px;
+  height: 20px;
+  background-image: url(../../images/icons/click-menu.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+}
+.click-menu-close{
+  width: 40px;
+  height: 20px;
+  background-image: url(../../images/icons/click-menu-close.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+}
+.header--four .header__inner {
+  align-items: center;
+  display: flex;
+}

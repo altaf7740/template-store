@@ -1,0 +1,81 @@
+/* -----------------------------------
+Template Name: Love & we
+Template URI: www.bootitems.com
+Description: This is a multipurpose html5 template
+Author URI: www.bootitems.com
+Version: 1.0  
+
+NOTE: This is Couple style file. All Slider related style included in this file.
+---------------------------------------------------------------------------------------*/
+.couple-area{
+    background-image: url(../../img/couple/bg.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+.couple-img:hover .couple-hover{opacity: 1}
+.couple-img img{
+    position: relative;
+}
+.couple-hover{
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 354px;
+    height: 326px;
+    content: "";
+    background: url(../../img/couple/hover.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 0;
+    text-align: center;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.couple-area .col-md-6:last-child .single-couple .couple-hover{
+    right: 15px;
+    left: auto;
+}
+.hover-content{
+    transform: translateY(-50%);
+    top: 50%;
+    position: absolute;
+    padding: 0 50px;
+}
+.couple-hover h3{
+    font-size: 30px;
+    color: #fefefe;
+    font-family: 'Kaushan Script', cursive;
+    margin-bottom: 8px
+}
+.couple-hover p{
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+.couple-social ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.couple-social ul li{
+    display: inline-block;
+    margin: 0 5px;
+    border: 1px solid #fff;
+    height: 25px;
+    width: 25px;
+}
+.couple-social ul li a{
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 24px;
+}
+.couple-social ul li:hover a{
+    background: #fff;
+    color: #F65589;
+}

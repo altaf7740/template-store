@@ -1,0 +1,85 @@
+/* -----------------------------------
+Template Name: Love & we
+Template URI: www.bootitems.com
+Description: This is a multipurpose html5 template
+Author URI: www.bootitems.com
+Version: 1.0  
+
+NOTE: This is Events style file. All Slider related style included in this file.
+---------------------------------------------------------------------------------------*/
+.events-area{
+    background: #F7F7F7;
+}
+.event-img{position: relative}
+.event-content{
+    position: absolute;
+    left: -70px;
+    top: 30px;
+    content: "";
+}
+.single-event{
+    background-image: url(../../img/events/1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    padding: 60px 70px;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.single-event:hover, .single-event.active {
+    background: url(../../img/events/hover.png);
+    background-position: center center;
+    background-size: cover;
+}
+.single-event:hover h2, .single-event:hover p, .single-event:hover li, .single-event:hover li i, .single-event.active h2, .single-event.active p, .single-event.active li, .single-event.active li i{
+    color: #fff;
+}
+.single-event h2{
+    font-size: 30px;
+    color: #333333;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.single-event p{
+    font-size: 14px;
+    color: #343434;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 0;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.event-time ul{
+    margin-bottom: 10px;
+    padding: 0;
+    list-style: none;
+}
+.event-time ul li{
+    display: inline-block;
+    font-size: 12px;
+    color: #343434;
+    font-family: 'Lato', sans-serif;
+    margin-right: 25px;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.event-time ul li:last-child{
+    margin-right: 0px;
+}
+.event-time ul li i{
+    font-size: 14px;
+    color: #666666;
+    margin-right: 5px;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}

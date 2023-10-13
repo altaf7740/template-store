@@ -1,0 +1,334 @@
+/*-- Button CSS --*/
+.btn {
+    height: 41px;
+    border: 1px solid transparent;
+    line-height: 24px;
+    padding: 8px 35px;
+    font-family: $montserrat;
+    border-radius: 50px;
+    background-color: transparent;
+    font-size: 15px;
+    display: inline-flex;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    transition: all 0.4s ease 0s;
+    @media #{$large-mobile}{
+        font-size: 12px;
+        height: 35px;
+        padding: 5px 20px;
+    }
+    &::before {
+        transition: all 0.4s ease 0s;
+        position: absolute;
+        left: -7px;
+        right: -7px;
+        top: -7px;
+        bottom: -7px;
+        content: "";
+        border-radius: 50px;
+        border: 1px solid transparent;
+    }
+    
+    /*-- Button Style --*/
+    &.btn-square {
+        border-radius: 0;
+        &::before {
+            border-radius: 0 !important;
+        }
+    }
+    &.btn-radius {
+        border-radius: 5px;
+        &::before {
+            border-radius: 5px !important;
+        }
+    }
+    
+    /*-- Button Size --*/
+    &.btn-lg {
+        height: 51px;
+        padding: 13px 45px;
+        font-size: 16px;
+    }
+    &.btn-sm {
+        height: 33px;
+        padding: 4px 20px;
+        font-size: 13px;
+    }
+    
+    /*-- Light Button --*/
+    &.btn-light {
+        background-color: $white;
+        border-color: $white;
+        color: $heading-color;
+    }
+    &.btn-light-border {
+        background-color: transparent;
+        border-color: $white;
+        color: $white;
+    }
+    &.btn-light-outline {
+        background-color: $white;
+        border-color: $white;
+        color: $heading-color;
+        margin: 6px;
+        &::before {
+            position: absolute;
+            left: -7px;
+            right: -7px;
+            top: -7px;
+            bottom: -7px;
+            content: "";
+            border-radius: 50px;
+            border: 1px solid $white;
+        }
+    }
+    
+    /*-- Dark Button --*/
+    &.btn-dark {
+        background-color: $heading-color;
+        border-color: $heading-color;
+        color: $white;
+    }
+    &.btn-dark-border {
+        background-color: transparent;
+        border-color: $heading-color;
+        color: $heading-color;
+    }
+    &.btn-dark-outline {
+        background-color: $heading-color;
+        border-color: $heading-color;
+        color: $white;
+        margin: 6px;
+        &::before {
+            position: absolute;
+            left: -7px;
+            right: -7px;
+            top: -7px;
+            bottom: -7px;
+            content: "";
+            border-radius: 50px;
+            border: 1px solid $heading-color;
+        }
+    }
+    
+    /*-- Blue Button --*/
+    &.btn-blue {
+        background-color: $blue;
+        border-color: $blue;
+        color: $white;
+    }
+    &.btn-blue-border {
+        background-color: transparent;
+        border-color: $blue;
+        color: $blue;
+    }
+    &.btn-blue-outline {
+        background-color: $blue;
+        border-color: $blue;
+        color: $white;
+        margin: 6px;
+        &::before {
+            position: absolute;
+            left: -7px;
+            right: -7px;
+            top: -7px;
+            bottom: -7px;
+            content: "";
+            border-radius: 50px;
+            border: 1px solid $blue;
+        }
+    }
+    
+    /*-- Light Blue Button --*/
+    &.btn-light-blue {
+        background-color: $light-blue;
+        border-color: $light-blue;
+        color: $white;
+    }
+    &.btn-light-blue-border {
+        background-color: transparent;
+        border-color: $light-blue;
+        color: $light-blue;
+    }
+    &.btn-light-blue-outline {
+        background-color: $light-blue;
+        border-color: $light-blue;
+        color: $white;
+        margin: 6px;
+        &::before {
+            position: absolute;
+            left: -7px;
+            right: -7px;
+            top: -7px;
+            bottom: -7px;
+            content: "";
+            border-radius: 50px;
+            border: 1px solid $light-blue;
+        }
+    }
+    
+    /*-- Red Button --*/
+    &.btn-red {
+        background-color: $red;
+        border-color: $red;
+        color: $white;
+    }
+    &.btn-red-border {
+        background-color: transparent;
+        border-color: $red;
+        color: $red;
+    }
+    &.btn-red-outline {
+        background-color: $red;
+        border-color: $red;
+        color: $white;
+        margin: 6px;
+        &::before {
+            position: absolute;
+            left: -7px;
+            right: -7px;
+            top: -7px;
+            bottom: -7px;
+            content: "";
+            border-radius: 50px;
+            border: 1px solid $red;
+        }
+    }
+    
+    /*-- Hover Light Button --*/
+    &.btn-hover-light:hover {
+        background-color: $white;
+        border-color: $white;
+        color: $heading-color;
+    }
+    &.btn-hover-light-border:hover {
+        background-color: transparent;
+        border-color: $white;
+        color: $white;
+    }
+    &.btn-hover-light-outline:hover {
+        background-color: $white;
+        border-color: $white;
+        color: $heading-color;
+        &::before {
+            position: absolute;
+            left: -7px;
+            right: -7px;
+            top: -7px;
+            bottom: -7px;
+            content: "";
+            border-radius: 50px;
+            border: 1px solid $white;
+        }
+    }
+    
+    /*-- Hover Dark Button --*/
+    &.btn-hover-dark:hover {
+        background-color: $heading-color;
+        border-color: $heading-color;
+        color: $white;
+    }
+    &.btn-hover-dark-border:hover {
+        background-color: transparent;
+        border-color: $heading-color;
+        color: $heading-color;
+    }
+    &.btn-hover-dark-outline:hover {
+        background-color: $heading-color;
+        border-color: $heading-color;
+        color: $white;
+        &::before {
+            position: absolute;
+            left: -7px;
+            right: -7px;
+            top: -7px;
+            bottom: -7px;
+            content: "";
+            border-radius: 50px;
+            border: 1px solid $heading-color;
+        }
+    }
+    
+    /*-- Hover Blue Button --*/
+    &.btn-hover-blue:hover {
+        background-color: $blue;
+        border-color: $blue;
+        color: $white;
+    }
+    &.btn-hover-blue-border:hover {
+        background-color: transparent;
+        border-color: $blue;
+        color: $blue;
+    }
+    &.btn-hover-blue-outline:hover {
+        background-color: $blue;
+        border-color: $blue;
+        color: $white;
+        &::before {
+            position: absolute;
+            left: -7px;
+            right: -7px;
+            top: -7px;
+            bottom: -7px;
+            content: "";
+            border-radius: 50px;
+            border: 1px solid $blue;
+        }
+    }
+    
+    /*-- Hover Light Blue Button --*/
+    &.btn-hover-light-blue:hover {
+        background-color: $light-blue;
+        border-color: $light-blue;
+        color: $white;
+    }
+    &.btn-hover-light-blue-border:hover {
+        background-color: transparent;
+        border-color: $light-blue;
+        color: $light-blue;
+    }
+    &.btn-hover-light-blue-outline:hover {
+        background-color: $light-blue;
+        border-color: $light-blue;
+        color: $white;
+        &::before {
+            position: absolute;
+            left: -7px;
+            right: -7px;
+            top: -7px;
+            bottom: -7px;
+            content: "";
+            border-radius: 50px;
+            border: 1px solid $light-blue;
+        }
+    }
+    
+    /*-- Hover Red Button --*/
+    &.btn-hover-red:hover {
+        background-color: $red;
+        border-color: $red;
+        color: $white;
+    }
+    &.btn-hover-red-border:hover {
+        background-color: transparent;
+        border-color: $red;
+        color: $red;
+    }
+    &.btn-hover-red-outline:hover {
+        background-color: $red;
+        border-color: $red;
+        color: $white;
+        &::before {
+            position: absolute;
+            left: -7px;
+            right: -7px;
+            top: -7px;
+            bottom: -7px;
+            content: "";
+            border-radius: 50px;
+            border: 1px solid $red;
+        }
+    }
+    
+}

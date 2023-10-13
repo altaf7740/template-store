@@ -1,0 +1,236 @@
+// Counterup Area
+.counterup_area {
+    .counter_width {
+        width: calc(100% + 30px);
+        padding-left: 70px;
+    }
+    .counter_content {
+        background-attachment: scroll;
+        background-position: 118.5% 0;
+        background-repeat: no-repeat;
+        display: flex;
+        padding: 50px 0;
+        background-image: url(img/icons/cdown_layer_img.png);
+        margin-right: -16px;
+        @media #{$laptop-device} {
+            background-size: 0;
+            padding: 7px 0;
+        }
+        @media #{$lg-layout} {
+            background-size: 0;
+            padding: 7px 0;
+        }
+        @media #{$md-layout} {
+            background-size: 0;
+            padding: 7px 0;
+            justify-content: center;
+        }
+        @media #{$sm-layout} {
+            background-size: 0;
+            padding: 7px 0;
+            justify-content: center;
+        }
+        .thumb {
+            left: -125px;
+            position: relative;
+            @media #{$md-layout} {
+                display: none;
+            }
+            @media #{$sm-layout} {
+                display: none;
+            }
+        }
+        .content {
+            margin-left: 85px;
+            position: relative;
+            margin-top: -17px;
+            text-align: center;
+            @media #{$laptop-device} {
+                margin-left: -70px;
+                margin-top: 61px;
+            }
+            @media #{$lg-layout} {
+                margin-left: 0;
+                margin-top: 44px;
+                padding: 0;
+            }
+            @media #{$sm-layout} {
+                margin-left: 0;
+            }
+            @media #{$md-layout} {
+                margin-left: 0;
+                margin-bottom: 27px;
+            }
+            h2 {
+                color: #d8d8d8;
+                font-size: 30px;
+                font-weight: 400;
+                margin: 0 0 5px;
+                @media #{$laptop-device} {
+                    color: $heading-color;
+                }
+                @media #{$lg-layout} {
+                    color: $heading-color;
+                }
+                @media #{$md-layout} {
+                    color: $heading-color;
+                    font-size: 22px;
+                }
+                @media #{$sm-layout} {
+                    color: $heading-color;
+                }
+
+                @media #{$large-mobile} {
+                    font-size: 25px;
+                }
+                
+            }
+            h3 {
+                color: #d8d8d8;
+                font-size: 46px;
+                font-weight: 600;
+                line-height: 60px;
+                margin: 0 0 13px;
+                @media #{$laptop-device} {
+                    font-size: 37px;
+                    line-height: 50px;
+                    margin: 0 0 9px;
+                    color: $heading-color;
+                }
+                @media #{$lg-layout} {
+                    color: $heading-color;
+                    font-size: 38px;
+                    line-height: 56px;
+                    margin: 0 0 4px;
+                }
+                @media #{$md-layout} {
+                    color: $heading-color;
+                    font-size: 28px;
+                    line-height: 46px;
+                }
+
+                @media #{$sm-layout} {
+                    color: $heading-color;
+                    font-size: 28px;
+                    line-height: 43px;
+                }
+
+                @media #{$large-mobile} {
+                    font-size: 23px;
+                    line-height: 37px;
+                }
+
+            }
+            a {
+                border-bottom: 2px solid #6f6e7a;
+                color: #d8d8d8;
+                display: inline-block;
+                font-size: 22px;
+                font-weight: 500;
+                text-decoration: none;
+                text-transform: capitalize;
+                font-family: $heading-font;
+                @media #{$laptop-device} {
+                    color: $heading-color;
+                }
+                @media #{$lg-layout} {
+                    color: $heading-color;
+                }
+                @media #{$md-layout} {
+                    color: $heading-color;
+                }
+                @media #{$sm-layout} {
+                    color: $heading-color;
+                }
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+
+// Counterup Area
+.counterup_count {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 88px;
+    padding-bottom: 54px;
+    margin: 0 -35px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    @media #{$lg-layout} {
+        margin: 0 -15px;
+        padding-right: 22px;
+    }
+    @media #{$md-layout} {
+        justify-content: center;
+        padding-right: 0;
+        margin: 0 -10px;
+        position: inherit;
+    }
+    @media #{$sm-layout} {
+        justify-content: center;
+        padding-right: 0;
+        margin: 0 -10px;
+        position: inherit;
+    }
+    .box {
+        color: #252525;
+        font-size: 23px;
+        font-weight: 500;
+        margin: 0 35px;
+        font-family: $heading-font;
+        
+        @media #{$lg-layout} {
+            margin: 0 15px;
+        }
+        @media #{$md-layout} {
+            margin: 0 11px;
+            font-size: 15px;
+        }
+        @media #{$sm-layout} {
+            font-size: 14px;
+            margin: 0 10px;
+            margin-top: 20px;
+        }
+        span {
+            display: block;
+            text-align: center;
+            font-size: 44px;
+            font-weight: 500;
+            color: #252525;
+            margin-bottom: 11px;
+            @media #{$md-layout} {
+                font-size: 27px;
+                margin-bottom: 11px;
+            }
+            @media #{$sm-layout} {
+                font-size: 32px;
+                margin-bottom: 11px;
+            }
+        }
+    }
+}
+
+.box_layout {
+    .counterup_area {
+        .counter_content {
+            .content {
+                margin-top: -14px;
+                @media #{$md-layout} {
+                    margin-top: 0px;
+                }
+                @media #{$lg-layout} {
+                    margin-left: 0;
+                    margin-top: 90px;
+                    padding: 0;
+                }
+                @media #{$sm-layout} {
+                    margin-top: 0px;
+                }
+            }
+        }
+    }
+}

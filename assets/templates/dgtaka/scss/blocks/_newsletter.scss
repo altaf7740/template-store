@@ -1,0 +1,128 @@
+/*---------------------
+    Newsletter Styles
+-----------------------*/
+
+.newsletter__container {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  padding: 50px 0;
+  text-align: center;
+}
+
+.newsletter__area {
+  left: 0;
+  margin: -60px auto auto;
+  position: absolute;
+  right: 0;
+}
+
+.newsletter__inner {
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 30px;
+  }
+  .input__box {
+    margin: auto;
+    position: relative;
+    width: 600px;
+    input {
+      border: 1px solid #e5e7ea;
+      border-radius: 4px;
+      height: 50px;
+      outline: medium none;
+      padding: 0 178px 0 60px;
+      width: 100%;
+    }
+    button {
+      &.submit__btn {
+        background: #0b0801 none repeat scroll 0 0;
+        border: 0 none;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 16px;
+        height: 40px;
+        padding: 0 42px;
+        position: absolute;
+        right: 6px;
+        text-transform: uppercase;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        transition: all 0.5s ease 0s;
+        &:hover {
+          background: #f7a901;
+        }
+      }
+    }
+    &::after {
+      color: #001232;
+      content: "\f159";
+      font-family: "Material-Design-Iconic-Font";
+      font-size: 18px;
+      left: 30px;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.newsletter__area.space-between {
+  padding: 0 115px;
+}
+
+/* Responsive Css*/
+
+@media #{$lg-layout} {}
+
+@media #{$md-layout} {}
+
+@media #{$sm-layout} {
+  .newsletter__inner .input__box {
+    width: 462px;
+  }
+}
+
+@media #{$xs-layout} {
+  .newsletter__inner .input__box {
+    width: 351px;
+  }
+  .newsletter__inner .input__box button.submit__btn {
+    font-size: 14px;
+    padding: 0 20px;
+  }
+  .newsletter__inner .input__box input {
+    padding: 0 126px 0 43px;
+  }
+  .newsletter__inner .input__box::after {
+    left: 17px;
+  }
+}
+
+@media #{$xxs-layout} {
+  .newsletter__inner h2 {
+    font-size: 21px;
+    margin-bottom: 18px;
+  }
+  .newsletter__inner .input__box button.submit__btn {
+    position: inherit;
+    top: inherit;
+    -webkit-transform: inherit;
+    transform: inherit;
+    right: 0;
+    margin-top: 22px;
+  }
+  .newsletter__inner .input__box::after {
+    display: none;
+  }
+  .newsletter__inner .input__box {
+    text-align: left;
+    width: 256px;
+  }
+  .newsletter__inner .input__box input {
+    padding: 0 28px;
+  }
+}

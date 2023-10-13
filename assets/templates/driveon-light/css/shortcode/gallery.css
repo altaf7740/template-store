@@ -1,0 +1,116 @@
+/*-------------------------- 
+	Gallery Style
+--------------------------*/
+/* Gallery Filter */
+.gallery-filter {
+  margin-bottom: 44px;
+}
+.gallery-filter button {
+  background-color: transparent;
+  border: medium none;
+  display: inline-block;
+  line-height: 23px;
+  margin: 0 17px;
+  padding: 0;
+  position: relative;
+  text-transform: uppercase;
+  vertical-align: top;
+}
+.gallery-filter button.active {
+  color: #dec839;
+}
+.gallery-filter button::before, .gallery-filter button::after {
+  background-color: #333;
+  border-radius: 50%;
+  content: "";
+  height: 1px;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+}
+.gallery-filter button::before {
+  left: 0;
+  top: 0;
+}
+.gallery-filter button::after {
+  bottom: 0;
+  right: 0;
+}
+.gallery-filter button:hover::before, .gallery-filter button:hover::after {
+  width: 15px;
+  opacity: 1;
+}
+.gallery-filter button.active::before, .gallery-filter button.active::after {
+  background-color: #dec839;
+  width: 15px;
+  opacity: 1;
+}
+/* Gallery Grid */
+.gallery-grid{}
+.gallery-item {
+  margin-bottom: 30px;
+}
+.gallery-image {
+  display: block;
+  position: relative;
+}
+.gallery-image:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.gallery-image::before {
+  background-color: #dec839;
+  bottom: 0;
+  content: "";
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.gallery-image::after {
+  border: 1px solid #fff;
+  bottom: 22px;
+  content: "";
+  left: 22px;
+  opacity: 0;
+  position: absolute;
+  right: 22px;
+  top: 22px;
+}
+.gallery-image:hover::before {
+  opacity: 0.8;
+}
+.gallery-image:hover::after {
+  opacity: 1;
+}
+.gallery-image img {
+  width: 100%;
+}
+.gallery-image .content {
+  left: 50%;
+  margin-top: 30px;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  z-index: 9;
+}
+.gallery-image:hover .content {
+  margin-top: 0;
+  opacity: 1;
+}
+.gallery-image .content i {
+  color: #ffffff;
+  display: inline-block;
+  font-size: 24px;
+}
+.gallery-image .content h4 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 16px;
+  margin: 6px 0 0;
+}

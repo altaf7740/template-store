@@ -1,0 +1,135 @@
+/*----------------------------------------*/
+/*  03. Hero CSS
+/*----------------------------------------*/
+.hero-section {
+}
+/*-- Hero Item --*/
+.hero-item {
+    width: 100%;
+    height: 750px;
+    align-items: center;
+    display: flex !important;
+    justify-content: center;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 1;
+    //Responsive
+    @media #{$laptop-device}{
+        height: 700px;
+    }
+    @media #{$desktop-device}{
+        height: 600px;
+    }
+    @media #{$tablet-device}{
+        height: 500px;
+    }
+    @media #{$large-mobile}{
+        height: 400px;
+    }
+}
+
+/*-- Hero Content For Background Video --*/
+.hero-content {
+    text-align: center;
+    & h1 {
+        font-size: 56px;
+        line-height: 1;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $heading-color;
+        margin-bottom: 20px;
+        // Responsive
+        @media #{$desktop-device}{
+            font-size: 46px;
+        }
+        @media #{$tablet-device}{
+            font-size: 34px;
+        }
+        @media #{$large-mobile}{
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+    & p.bold {
+        font-size: 20px;
+        color: $body-color;
+        margin-bottom: 10px;
+        font-weight: 400;
+        // Responsive
+        @media #{$desktop-device}{
+            font-size: 18px;
+        }
+        @media #{$tablet-device}{
+            font-size: 16px;
+        }
+        @media #{$large-mobile}{
+            font-size: 18px;
+        }
+    }
+    & p{
+        font-size: 16px;
+        color: #282828;
+        font-weight: 300;
+        // Responsive
+        @media #{$large-mobile}{
+            font-size: 14px;
+        }
+         
+    }
+    & .hero-search{
+        width: 670px;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 40px;
+        //Responsive
+        @media #{$tablet-device}{
+            width: 540px;
+        }
+        @media #{$large-mobile}{
+            width: 100%;
+            margin-top: 20px;
+        }
+        & input{
+            width: 100%;
+            height: 60px;
+            border: 1px solid #cccccc;
+            font-size: 14px;
+            color: #545454;
+            border-radius: 50px;
+            background-color: rgba(217,246,225,0.5);
+            padding: 0 35px;
+            padding-right: 70px;
+            //Responsive
+            @media #{$large-mobile}{
+                height: 50px;
+                padding: 0 20px;
+                padding-right: 50px;
+            }
+        }
+        & button{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 80px;
+            height: 60px;
+            line-height: 60px;
+            font-size: 24px;
+            transition: all 0.3s ease-in-out;
+            border: 0 none;
+            background-color: transparent;
+            //Responsive
+            @media #{$large-mobile}{
+                height: 50px;
+                line-height: 50px;
+                font-size: 20px;
+                width: 50px;
+            }
+            &:hover{
+                color: $theme-color;
+            }
+        }
+    }
+}
+

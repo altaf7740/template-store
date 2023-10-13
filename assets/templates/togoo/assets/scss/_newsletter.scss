@@ -1,0 +1,123 @@
+
+
+.bg_image--03 {
+    background-image: url(../images/bg/bg-image-03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.newsletter-style-one {
+    text-align: center;
+    .title {
+        h2 {
+            color: #000000;
+            font-size: 48px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            font-family: $font-one;
+
+            @media #{$tablet-device} {
+                font-size: 34px;
+            }
+            @media #{$large-mobile} {
+                font-size: 24px;
+                line-height: 36px;
+            }
+
+        }
+        p {
+            color: #798294;
+            font-size: 16px;
+            line-height: 28px;
+            max-width: 605px;
+            margin: 0 auto;
+            width: 100%;
+            margin-bottom: 58px;
+            margin-top: 16px;
+            font-family: $font-one;
+        }
+    }
+    .input-box {
+        position: relative;
+        max-width: 530px;
+        margin: 0 auto;
+        input {
+            border: 1px solid #f7ca18;
+            height: 50px;
+            line-height: 50px;
+            width: 100%;
+            border-radius: 25px;
+            font-weight: 300;
+            font-style: italic;
+            color: #b7b7b7;
+            padding-left: 14px;
+            padding-right: 138px;
+        }
+        button {
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 40px;
+            line-height: 42px;
+            padding: 0 20px;
+            outline: none;
+            background: #f7ca18;
+            border: 0 none;
+            color: #011a48;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            border-radius: 20px;
+            transition: 0.5s;
+            font-family: $heading-font;
+            transition: 0.4s;
+            &:hover{
+                background: $theme-color;
+                color: #ffffff;
+            }
+        }
+    }
+    &.white-newsletter{
+        .title {
+            h2 {
+                color: #333;
+            }
+            p {
+                color: #333;
+            }
+        }
+        .input-box {
+            input {
+                border: 1px solid $theme-color;
+                color: #333;
+            }
+            button {
+                background: $theme-color;
+                color: #fff;
+                &:hover{
+                    background: #333;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+
+.newsletter-style-one.white-newsletter .input-box input::-webkit-input-placeholder {
+    color: #444;
+}
+
+.newsletter-style-one.white-newsletter .input-box input::-moz-placeholder {
+    color: #444;
+}
+
+.newsletter-style-one.white-newsletter .input-box input:-ms-input-placeholder {
+    color: #444;
+}
+
+.newsletter-style-one.white-newsletter .input-box input:-moz-placeholder {
+    color: #444;
+}

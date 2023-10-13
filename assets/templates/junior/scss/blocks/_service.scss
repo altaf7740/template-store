@@ -1,0 +1,235 @@
+
+@import "../variables";
+@import "../mixins";
+
+
+/*===================
+	Service Area
+=====================*/
+
+
+.service {
+    box-shadow: 0 0 13px rgba(0, 0, 0, 0.1);
+    padding: 0 10%;
+    position: relative;
+    text-align: center;
+    .service__icon {
+    	background: #fff none repeat scroll 0 0;
+	    border-radius: 100%;
+	    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	    height: 85px;
+	    left: 50%;
+	    line-height: 85px;
+	    margin: auto;
+	    position: absolute;
+	    text-align: center;
+	    top: -43px;
+	    transform: translateX(-50%);
+	    width: 85px;
+    }
+    .service__details{
+    	padding-bottom: 30px;
+    	padding-top: 70px;
+    	h6{
+    		a{
+	    		color: #333333;
+                display: block;
+                font-family: $heading-font;
+                font-size: 22px;
+                font-weight: 700;
+                margin-bottom: 21px;
+                transition: all 0.3s ease 0s;
+                &:hover{
+                    color: $theme-color;
+                }	
+    		}
+    	}
+        p{
+            color: #777777;
+           font-size: 15px;
+           line-height: 27px; 
+        }
+    }
+    .service__btn{
+    	margin-top: 28px;
+        a{
+           &.dcare__btn--2{
+                background: transparent none repeat scroll 0 0;
+                border: 1px solid #dddddd;
+                border-radius: 5px;
+                color: #777777;
+                display: inline-block;
+                font-size: 16px;
+                font-weight: 700;
+                height: 44px;
+                line-height: 42px;
+                padding: 0 36px;
+                text-transform: capitalize;
+                transition: all 0.5s ease 0s;
+                &:hover{
+                   background: #89d700 none repeat scroll 0 0;
+                   border: 1px solid #89d700;
+                   color: #fff; 
+                }
+           } 
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+// Service Style Two
+
+.service--2{
+    .service {
+        @include transition(0.4s);
+        &:hover .service__icon{
+             background: #444444 none repeat scroll 0 0;
+        }
+        &:hover{
+            transform: translateY(-20px);
+        }
+        .service__icon {
+            @include transition(0.3s);
+        }
+        .service__details{
+            padding-bottom: 38px;
+            padding-top: 62px;
+            h6{
+                a{
+                    color: #ffffff;
+                    display: block;
+                    font-size: 24px;
+                    font-weight: 700;
+                    margin-bottom: 21px;
+                    &:hover{
+                        color: $theme-color;
+                    }   
+                }
+            }
+            p{
+                color: #ffffff;
+                line-height: 23px;
+            }
+        }
+        .service__btn{
+            margin-top: 28px;
+        }
+    }
+}
+
+.service--2 .border__color::before {
+  box-shadow: 8px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+// Service Style Three
+
+
+.service--3{
+    text-align: center;
+    .service__inner{
+        h4{
+            a{
+                color: #ffffff;
+                display: inline-block;
+                font-size: 24px;
+                line-height: 32px;
+                margin-top: 15px;
+                text-transform: capitalize;
+                font-family: $heading-font;
+            }
+        }
+        p{
+            color: #ffffff;
+            margin-top: 17px;
+
+        }
+        .service__btn{
+            margin-top: 13px;
+            a{
+               background: transparent none repeat scroll 0 0;
+                border-bottom: 2px solid #a0a0a0;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 700;
+                height: 45px;
+                line-height: 45px;
+                text-transform: capitalize;
+                &:hover{
+                    background: #fff none repeat scroll 0 0;
+                    border-bottom: 2px solid transparent;
+                    border-radius: 5px;
+                    color: #666;
+                    display: inline-block;
+                    height: 45px;
+                    line-height: 45px;
+                    padding: 0 24px;
+                } 
+            }
+        }
+    }    
+}
+
+
+
+
+
+// Helper Css
+
+
+.border__color {
+    position: relative;
+    &::before{
+    	background: #f59e01 none repeat scroll 0 0;
+	    bottom: 0;
+	    content: "";
+	    height: 5px;
+	    left: 0;
+	    position: absolute;
+	    width: 100%;
+    }
+    &.border__color--2::before{
+    	background: #b1c642 none repeat scroll 0 0;
+    }
+    &.border__color--3::before{
+    	background: #ff4069 none repeat scroll 0 0;
+    }
+    &.border__color--4::before{
+        background: #f7cb4f none repeat scroll 0 0;
+    }
+    &.border__color--5::before{
+        background: #b1c642 none repeat scroll 0 0;
+    }
+    &.border__color--6::before{
+        background: #f7cb4f none repeat scroll 0 0;
+    }
+    &.border__color--7::before{
+        background: #f5594e none repeat scroll 0 0;
+    }
+    &.border__color--8::before{
+    	background: #68b9d8 none repeat scroll 0 0;
+    }
+}
+
+
+
+// Responsive css
+
+
+
+
+
+
+
+
+

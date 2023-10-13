@@ -1,0 +1,108 @@
+// Contact Area
+#googleMap {
+    height: 550px;
+    width: 100%;
+}
+
+.ct_title {
+    color: #252525;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+p.form-messege {
+    margin: 0;
+}
+.ct_address {
+    p {
+        color: #252525;
+        line-height: 28px;
+        margin-bottom: 35px;
+        font-size: 14px;
+    }
+}
+
+.address_wrapper {
+    .address {
+        display: flex;
+        margin-bottom: 15px;
+        .icon {
+            min-width: 35px;
+            i {
+                color: #252525;
+                font-size: 22px;
+            }
+        }
+        .contact-info-text {
+            p {
+                color: #252525;
+                margin: 0;
+                font-size: 14px;
+                span {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+.contact_form {
+    .input_box {
+        input {
+            background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+            border: 1px solid #dddddd;
+            border-radius: 3px;
+            color: #252525;
+            height: 45px;
+            margin-bottom: 20px;
+            padding: 0 20px;
+            text-transform: capitalize;
+        }
+    }
+    textarea {
+        background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+        border-radius: 3px;
+        height: 150px;
+        margin-bottom: 20px;
+        padding: 10px;
+        width: 100%;
+    }
+    button {
+        background: #252525 none repeat scroll 0 0;
+        border: 1px solid #252525;
+        color: #ffffff;
+        display: inline-block;
+        padding: 0px 40px;
+        text-transform: uppercase;
+        transition: all 0.3s ease 0s;
+        height: 45px;
+        line-height: 45px;
+        &:hover {
+            background-color: #000;
+            color: #ffffff;
+            opacity: 0.7;
+        }
+    }
+}
+
+
+.contact_area .pt--120 {
+    @media #{$sm-layout} {
+        padding-top: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

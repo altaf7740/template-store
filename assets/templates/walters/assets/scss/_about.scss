@@ -1,0 +1,51 @@
+/*--
+    05. About Css
+--------------------------*/
+
+.st-benft-inner{
+    .content {
+        h2{
+            color: #18012c;
+            font-size: 36px;
+            font-weight: 600;
+            padding-right: 19%;
+            margin-bottom: 20px;
+            span{
+                color: $theme-color;
+            }
+        }
+        p{
+            color: #666666;
+            line-height: 27px;
+        }
+        ul{
+            &.benifits-list{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                margin-top: 40px;
+                li {
+                    color: #666666;
+                    line-height: 24px;
+                    transition: 0.3s;
+                    padding-bottom: 11px;
+                    &:hover{
+                        color: $theme-color;
+                    }
+                    i{
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+        
+        @media #{$large-mobile}{
+            margin-top: 30px;
+            h2{
+                font-size: 26px;
+                padding-right: 0%;
+            }
+        }
+    }
+}
+

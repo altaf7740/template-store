@@ -1,0 +1,125 @@
+/*--
+   11. Newsletter Css
+-------------------------------*/
+.bg_image {
+    background: url(../images/bg/bg-01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.bg-overlay {
+    position: relative;
+    &::before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: rgba(0, 0, 0, 0.5);
+        content: "";
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.newsletter-style-2 {
+    .title {
+        & h4 {
+            color: $white;
+            font-weight: 500;
+        }
+        h2 {
+            color: #ffffff;
+            font-weight: 500;
+            margin: 0;
+            font-weight: 600;
+        }
+        @media #{$large-mobile}{
+            & h4 {
+               font-size: 18px; 
+            }
+            & h2 {
+                font-size: 24px;
+                margin-bottom: 20px;
+                line-height: 28px;
+            }
+        }
+        @media #{$tablet-device}{
+            
+            & h2 {
+                margin-bottom: 25px;
+            }
+        }
+    }
+    .input-box {
+        position: relative;
+        input {
+            background-color: transparent;
+            height: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            color: rgba(255, 255, 255, 0.4);
+            border-radius: 5px;
+            line-height: 24px;
+            padding: 12px 30px;
+            font-size: 14px;
+            color: #d8d8d8;
+            width: calc(100% - 190px);
+            font-style: italic;
+            @media #{$large-mobile} {
+                width: 100%;
+            }
+        }
+        button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 170px;
+            height: 50px;
+            background-color: #0056ff;
+            border: none;
+            border-radius: 5px;
+            padding: 13px 20px;
+            color: rgba(255, 255, 255, 0.8);
+            text-transform: uppercase;
+            font-family: $heading-font;
+            font-size: 14px;
+            transition: 0.4s;
+            font-weight: 600;
+
+            @media #{$small-mobile} {
+                position: inherit;
+                margin-top: 30px;
+            }
+            &:hover{
+                background-color: $theme-color;
+                color: #ffffff;
+            }
+        }
+    }
+
+    &.political-newsletter{
+        .input-box {
+            button {
+                background-color: $theme-color;
+                &:hover{
+                    background-color: $heading-color;
+                }
+            }
+        }
+    }
+}
+
+.newsletter-style-2 .input-box input::-webkit-input-placeholder {
+    color: #d8d8d8;
+}
+
+.newsletter-style-2 .input-box input::-moz-placeholder {
+    color: #d8d8d8;
+}
+
+.newsletter-style-2 .input-box input:-ms-input-placeholder {
+    color: #d8d8d8;
+}
+
+.newsletter-style-2 .input-box input:-moz-placeholder {
+    color: #d8d8d8;
+}
+

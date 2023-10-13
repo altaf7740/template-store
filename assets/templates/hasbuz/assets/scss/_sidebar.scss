@@ -1,0 +1,238 @@
+/*----------------------------------------*/
+/*  15. Sidebar
+/*----------------------------------------*/
+
+.ht-sidebar-three {
+    margin-bottom: 50px;
+    float: left;
+    width: 100%;
+    & .sidebar-title {
+        font-size: 20px;
+        text-transform: capitalize;
+        font-weight: 500;
+        line-height: 1;
+        font-family: $poppins;
+        padding-bottom: 11px;
+        position: relative;
+        margin-bottom: 30px;
+        &::before, &::after {
+            position: absolute;
+            left: 0;
+            content: "";
+            height: 1px;
+            background-color: $heading-color;
+        }
+        &::before {
+            bottom: 3px;
+            width: 54px;
+        }
+        &::after {
+            bottom: 0px;
+            width: 27px;
+        }
+    }
+}
+
+/*-- Sidebar One Search --*/
+.ht-sidebar-three-search {
+    & form {
+        position: relative;
+        border: 1px solid #dfdfdf;
+        border-radius: 4px;
+        & input {
+            width: 100%;
+            border: none;
+            line-height: 24px;
+            padding: 9px 18px;
+            background-color: transparent;
+            color: $body-color-light;
+        }
+        & button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-color: transparent;
+            padding: 0;
+            border: none;
+            color: $body-color-light;
+            padding: 0 15px;
+            &:hover {
+                color: $blue;
+            }
+            & i {
+                font-size: 18px;
+                line-height: 42px;
+                display: block;
+            }
+        }
+    }
+}
+
+/*-- Sidebar One Link --*/
+.ht-sidebar-three-link {
+    & li {
+        border-bottom: 1px solid #eaeaea;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        & a {
+            display: block;
+            position: relative;
+            font-family: $poppins;
+            line-height: 30px;
+            font-weight: 400;
+            & span {
+                float: right;
+                display: block;
+            }
+        }
+    }
+}
+
+/*-- Sidebar One Blog --*/
+.ht-sidebar-three-blog {
+    margin-bottom: 25px;
+    float: left;
+    width: 100%;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    & .image {
+        width: 67px;
+        margin-right: 13px;
+        float: left;
+        & img {
+            width: 100%;
+        }
+    }
+    & .content {
+        & .title {
+            font-weight: 500;
+            font-size: 14px;
+            & a {
+                &:hover {
+                    color: $blue;
+                }
+            }
+        }
+        & span {
+            font-family: $poppins;
+            font-size: 12px;
+            line-height: 14px;
+            color: $body-color-light;
+            text-transform: uppercase;
+            position: relative;
+            padding-right: 16px;
+            margin-right: 15px;
+            display: block;
+            float: left;
+            &:last-child {
+                margin-right: 0;
+                padding-right: 0;
+                &::before {
+                    display: none;
+                }
+            }
+            &::before {
+                content: "";
+                height: 9px;
+                width: 1px;
+                position: absolute;
+                right: 0;
+                top: 2px;
+                background-color: $body-color-light;
+            }
+        }
+    }
+}
+
+/*-- Sidebar One Instagram --*/
+.ht-sidebar-three-instagram {
+    float: left;
+    margin: 0 -2px;
+    & li {
+        float: left;
+        display: flex;
+        width: 25%;
+        padding: 0 2px 4px;
+        @media #{$small-mobile}{
+            width: 33.33%;
+        }
+        & a {
+            position: relative;
+            overflow: hidden;
+            display: block;
+            width: 100%;
+            &::before {
+                position: absolute;
+                left: 0;
+                width: 100%;
+                top: 0;
+                height: 100%;
+                content: "";
+                background-color: $blue;
+                opacity: 0;
+                z-index: 2;
+                transition: all 0.3s ease 0s;
+            }
+            &::after {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                margin-left: -15px;
+                margin-top: -15px;
+                content: "\f16d";
+                font-family: 'Fontawesome';
+                color: $white;
+                display: block;
+                font-size: 16px;
+                z-index: 3;
+                opacity: 0;
+                transition: all 0.3s ease 0s;
+            }
+            & img {
+                width: 100%;
+                transition: all 0.3s ease 0s;
+            }
+            &:hover {
+                &::before {
+                    opacity: 0.6;
+                }
+                &::after {
+                    opacity: 1;
+                }
+                & img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+/*-- Sidebar One Tags --*/
+.ht-sidebar-three-tags {
+    display: flex;
+    flex-wrap: wrap;
+    & a {
+        display: block;
+        float: left;
+        font-size: 12px;
+        font-family: $poppins;
+        color: $white;
+        font-weight: 400;
+        line-height: 16px;
+        padding: 6px 20px;
+        background-color: $cyan-blue;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        &:hover {
+            background-color: $blue;
+        }
+    }
+}

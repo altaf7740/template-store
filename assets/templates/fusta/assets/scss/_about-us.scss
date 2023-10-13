@@ -1,0 +1,28 @@
+/*--
+    20. About Us Page Css
+---------------------*/
+.count-title {
+    & .count {
+        font-weight: 700;  
+    }
+    & span {
+        font-size: 18px;
+        font-weight: 500;
+        color: $black;
+        text-transform: capitalize;
+    }
+}
+.project-count-area {
+    &.pb--70 {
+        @media #{$tablet-device}{
+            padding-bottom: 50px;
+        }
+        @media #{$large-mobile}{
+            padding-bottom: 40px;
+        }
+        @media #{$small-mobile}{
+            padding-bottom: 30px;
+        }
+        
+    }
+}

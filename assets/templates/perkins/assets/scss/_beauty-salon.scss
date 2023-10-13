@@ -1,0 +1,204 @@
+/* ===================
+Beauty Salon Css 
+===========================*/
+
+.beauty-welcome-inner {
+    .content {
+        span {
+            color: #ff759d;
+            font-size: 30px;
+            font-weight: 300;
+            font-family: 'Cookie', cursive;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #2a2a2a;
+            font-weight: 500;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-family: $heading-font;
+            color: #3d3d3d;
+            font-size: 16px;
+            line-height: 28px;
+            margin-bottom: 24px;
+        }
+
+        a {
+            &.buty-btn {
+                color: #ff759d;
+                font-family: $heading-font;
+                font-size: 16px;
+                line-height: 28px;
+                border-bottom: 1px solid #ff759d;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+.bty-awesome {
+    display: flex;
+    margin-bottom: 45px;
+
+    .thumb{
+        img{
+            max-width: 60px;
+        }
+    }
+
+    .content {
+        text-align: right;
+        padding-right: 20px;
+
+        h4 {
+            color: #333333;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 9px;
+        }
+        p {
+            color: #333333;
+            font-size: 14px;
+            line-height: 25px;
+        }
+        &.text-left{
+            padding-right: 0;
+            padding-left: 20px;
+        }
+    }
+}
+
+.cr-welcome-wrapper .beauty-counter .funfact .content span {
+    font-family: 'Cookie', cursive;
+    color: #ff759d;
+    font-size: 60px;
+    @media #{$large-mobile}{
+        font-size: 30px;
+    }
+}
+
+.cr-welcome-wrapper .beauty-counter .funfact .content span::after {
+    color: #ff759d;
+    font-size: 60px;
+}
+.cr-welcome-wrapper .funfact .content h2{
+    font-family: $body-font;
+    font-size: 15px;
+    line-height:  18px;
+    margin-top: 10px;
+}
+
+.beauty-welcome .cr-welcome-wrapper > .content p{
+    color: #3d3d3d;
+    font-size: 16px;
+    line-height: 28px;
+    font-family: $heading-font;
+    margin-top: 25px;
+}
+
+
+
+.bg_image--01 {
+    background-image: url(../images/bg/about-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.counter-style--2 .content {
+    margin-right: 40px;
+    margin-top: 40px;
+    @media #{$desktop-device}{
+        margin-right: 10px;
+    }
+    @media #{$large-mobile}{
+        margin-right: 12px;
+    }
+}
+/*=====================
+    Pricing Table 
+========================*/
+
+
+.pricing-panel-7.beauty-pricing-table .pricing-heading .price h4{
+    color: #2a2a2a;
+}
+
+.pricing-panel-7.active.beauty-pricing-table .pricing-heading .price h4 {
+    color: #ffffff;
+}
+
+.pricing-panel-7.beauty-pricing-table .pricing-heading .title h2{
+    color: #ff759d;
+}
+
+.pricing-panel-7.active.beauty-pricing-table .pricing-footer a.price_btn {
+    background: #ff759d;
+    color: #ffffff;
+}
+
+.pricing-panel-7.beauty-pricing-table .pricing-footer a.price_btn:hover {
+    background: #ff759d;
+    color: #ffffff;
+}
+
+/* Blog Css */
+.post-carousel-active-5.beauty-post-wrapper button {
+    color: #ff759d;
+}
+.post-carousel-active-5.beauty-post-wrapper button:hover {
+    background: #ff759d;
+    color: #ffffff;
+}
+
+.post-carousel-5.beauty-post .ptc-content .content h2 a:hover {
+    color: #ff759d;
+}
+
+.post-carousel-5.beauty-post .ptc-content .content .post-btn a.readmore-btn:hover {
+    border-bottom: 1px solid #ff759d;
+    color: #ff759d;
+}
+
+.form-style-1 form input[type="submit"]{
+    background-color: #ff759d;
+}
+
+
+
+
+@media #{$tablet-device}{
+    .beauty-welcome-inner {
+        margin-top: 30px;
+    }
+}
+
+@media #{$large-mobile}{
+    .beauty-welcome-inner {
+        margin-top: 30px;
+    }
+    .service-2.beauty-service .content {
+        padding: 40px 20px;
+    }
+    .section-title--19 p{
+        padding: 0 10%;
+    }
+}
+
+@media #{$large-mobile}{
+    .section-title--19 p {
+        padding: 0 0;
+    }
+}
+

@@ -1,0 +1,171 @@
+@import "../variables";
+@import "../mixins";
+
+
+/*========================
+    Contact Area
+===========================*/
+
+
+
+.contact__map{
+	.google__map{
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	.child__image{
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+}
+
+#googleMap{
+	width: 100%;
+	height: 783px;
+}
+
+.page__contact{
+	.address{
+		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+	    position: relative;
+	    text-align: center;
+		.ct__icon{
+			position: absolute;
+		    text-align: center;
+		    top: -42px;
+		    width: 100%;
+			i{
+				background: #fff none repeat scroll 0 0;
+			    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+			    height: 85px;
+			    line-height: 85px;
+			    margin: auto;
+			    text-align: center;
+			    top: 0;
+			    width: 85px;
+			    border-radius: 100%;
+			    color: #666666;
+			    font-size: 30px;
+
+			}
+		}
+		.address__inner{
+			padding: 59px 20px 28px;
+			h2{
+				font-family: $heading-font;
+			    font-size: 24px;
+			    font-weight: 700;
+			    margin-bottom: 24px;
+			    text-transform: capitalize;
+
+			}
+			p{
+				color: #666666;
+			    line-height: 23px;
+			    margin-bottom: 18px;
+
+			}
+			ul{
+				li{
+					color: #666666;
+    				line-height: 23px;
+					a{
+						color: #666666;
+    					line-height: 23px;
+
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+.contact__box{
+	.single-contact-form{
+		&.name{
+			display: flex;
+		    margin-left: -15px;
+		    margin-right: -15px;
+		    input{
+		    	flex-basis: 50%;
+   				margin: 0 15px;
+		    }
+		}
+		input{
+			border: 1px solid #eeeeee;
+		    color: #666666;
+		    height: 45px;
+		    padding: 0 40px;
+		    width: 100%;
+		}
+		textarea{
+			border: 1px solid #eeeeee;
+		    color: #666666;
+		    min-height: 200px;
+		    padding: 20px;
+		    width: 100%;
+
+		}
+		
+
+		& + .single-contact-form{
+			margin-top: 30px;
+		}
+
+	}
+	.contact-btn{
+		margin-top: 30px;
+		text-align: center;
+		.dcare__btn{
+			border: 0 none;
+			text-transform: uppercase;
+		}
+	}
+
+}
+
+
+@media #{$lg-layout}{
+
+	#googleMap {
+	  height: 408px;
+	}
+
+}
+
+
+
+@media #{$sm-layout}{
+
+	.page__contact .address .address__inner p {
+	  font-size: 13px;
+	}
+	.page__contact .address .address__inner h2 {
+	  font-size: 20px;
+	  margin-bottom: 11px;
+	}
+	.page__contact .address .address__inner {
+	  padding: 54px 20px 28px;
+	}
+
+}
+
+@media #{$xs-layout}{
+
+	.contact__box .single-contact-form.name {
+	  flex-wrap: wrap;
+	}
+	.contact__box .single-contact-form.name input {
+	  flex-basis: 100%;
+	}
+	.contact__box .single-contact-form.name input + input{
+	  margin-top: 30px;
+	}
+
+
+
+}
+

@@ -1,0 +1,46 @@
+/*---------------------------------------
+    + CTA
+-----------------------------------------*/
+.ht-cta-content-two {
+    & h1 {
+        font-size: 36px;
+        font-weight: 700;
+        color: $white;
+        line-height: 50px;
+        margin-bottom: 15px;
+        font-family: $poppins;
+        @media #{$tablet-device}{
+            font-size: 28px;
+            line-height: 40px;
+        }
+        @media #{$large-mobile}{
+            font-size: 24px;
+            line-height: 32px;
+        }
+        @media #{$small-mobile}{
+            font-size: 18px;
+            line-height: 24px;
+        }
+        & span {
+            color: $red;
+        }
+    }
+    & p {
+        font-size: 18px;
+        line-height: 32px;
+        font-family: $poppins;
+        max-width: 750px;
+        margin: auto;
+        color: #bfbfbf;
+        margin-bottom: 44px;
+        @media #{$tablet-device}{
+            font-size: 16px;
+            line-height: 28px;
+        }
+        @media #{$large-mobile}{
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+    & .btn {}
+}

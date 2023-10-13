@@ -1,0 +1,40 @@
+/*----------------------------------------*/
+/*  18.  Gallery
+/*----------------------------------------*/
+
+/*-- Single Gallery --*/
+.single-gallery {
+    position: relative;
+    color: $white;
+    overflow: hidden;
+    display: block;
+    & img {
+        width: 100%;
+    }
+    & .hover {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($blue, 0.8);
+        opacity: 1;
+        &::before {
+            content: '\e657';
+            font-family: "Pe-icon-7-stroke";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            font-size: 36px;
+            z-index: 1;
+            margin-left: -20px;
+            margin-top: -20px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+        }
+    }
+    &:hover {
+        color: $white;
+    }
+}

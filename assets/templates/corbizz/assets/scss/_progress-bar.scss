@@ -1,0 +1,164 @@
+/*---------------------------------
+    Progress Bar Style
+-----------------------------------*/
+.bg_image--02 {
+    background-image: url(../images/bg/bg-image-02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.progress {
+    &.progress-label-top {
+        span {
+            &.percent-label {
+                position: absolute;
+                right: 0;
+                top: -39px;
+            }
+        }
+    }
+    &.progress-label-bottom {
+        span {
+            &.percent-label {
+                position: absolute;
+                right: 0;
+                bottom: -29px;
+                z-index: 3;
+                top: auto;
+            }
+        }
+    }
+    &.progress-label-center-right {
+        span {
+            &.percent-label {
+                position: absolute;
+                right: 50px;
+            }
+        }
+    }
+}
+
+/*------------------------------------------------
+    // Progress Indicator Style
+ ----------------------------------------------*/
+
+.progress {
+    // Indicator Style 01
+    &.progress-indicator-1 {
+        .progress-bar {
+            position: relative;
+            &::after {
+                position: absolute;
+                content: "";
+                border: 4px solid $theme-color;
+                width: 24px;
+                height: 24px;
+                right: -1px;
+                border-radius: 100%;
+                background: #fff;
+            }
+            &.progress-bar-bg--7 {
+                &::after {
+                    border: 4px solid #f13f4b;
+                }
+            }
+        }
+    } // Indicator Style 01
+    &.progress-indicator-2 {
+        .progress-bar {
+            position: relative;
+            &::after {
+                position: absolute;
+                content: "";
+                width: 14px;
+                height: 14px;
+                right: -1px;
+                border-radius: 100%;
+            }
+            &.progress-bar-bg--1 {
+                &::after {
+                    background: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+/*------------------------------
+    Progress Css
+ -------------------------------*/
+
+.progress-height-4 {
+    height: 4px;
+    .progress-bar {
+        height: 4px;
+    }
+}
+
+.progress-height-5 {
+    height: 5px;
+    .progress-bar {
+        height: 5px;
+    }
+}
+
+.progress-height-6 {
+    height: 6px;
+    .progress-bar {
+        height: 6px;
+    }
+}
+
+.progress-height-8 {
+    height: 8px;
+    .progress-bar {
+        height: 8px;
+    }
+}
+
+.progress-height-34 {
+    height: 34px;
+    .progress-bar {
+        height: 34px;
+    }
+}
+
+.progress-height-77 {
+    height: 77px;
+    .progress-bar {
+        height: 77px;
+    }
+}
+
+.single-skill {
+    margin-top: 14px;
+    overflow: hidden;
+    padding-bottom: 23px;
+    p {
+        font-family: $heading-font;
+        color: #666666;
+        font-weight: 500;
+        font-size: 16px;
+        margin-bottom: 17px;
+    }
+    .progress {
+        overflow: visible;
+        .progress-bar {
+            position: relative;
+        }
+    }
+}
+.progress span.percent-label {
+    color: #000;
+}
+
+.progress-bar-bg--1 {
+    background: #18012c;
+}
+
+.progress.progress-indicator-2 .progress-bar.progress-bar-bg--1::after {
+    background: #18012c;
+}
+.progress-bar-bg--5 {
+    background: #acacac;
+}

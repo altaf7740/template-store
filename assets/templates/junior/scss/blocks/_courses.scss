@@ -1,0 +1,131 @@
+@import "../variables";
+@import "../mixins";
+
+
+/*===============================
+	Courses Area
+=================================*/
+
+
+
+
+
+.courses{
+	box-shadow: 0 0 32px rgba(254, 46, 41, 0.1);
+    margin-top: 40px;
+    &:hover .courses__thumb a img{
+		transform: scale(1.2);
+    }
+	.courses__thumb{
+		overflow: hidden;
+		a{
+			img{
+				transition: 0.3s;
+				width: 100%;
+
+			}
+		}
+	}
+	.courses__inner{
+		ul{
+			&.courses__meta{
+				align-items: center;
+				li{
+					align-self: center;
+				    background: #f6f6f6 none repeat scroll 0 0;
+				    flex-basis: 33.33%;
+				    height: 60px;
+				    line-height: 60px;
+				    text-align: center;
+					i{
+
+					}
+					&.prize{
+						color: #fe5629;
+					    font-size: 24px;
+					    font-weight: 700;
+						i{
+							
+						}
+					}
+					&.comment{
+						background: #fe5629 none repeat scroll 0 0;
+						color: #fff;
+						i{
+							padding-right: 9px;
+						}
+					}
+					&.like{
+						background: #faae08 none repeat scroll 0 0;
+						color: #fff;
+						i{
+							padding-right: 9px;
+						}
+					}
+				}
+			}
+		}
+		.courses__wrap{
+			padding: 30px 20px;
+			.courses__date{
+				i{
+					padding-right: 9px;
+				}
+			}
+			.courses__content{
+				h4{
+					font-size: 24px;
+				    margin-bottom: 10px;
+				    margin-top: 14px;
+				    padding-bottom: 19px;
+				    position: relative;
+				    text-transform: capitalize;
+				    font-family: $heading-font;
+				    &::before {
+					    background-image: url("images/icons/title-3.png");
+					    background-repeat: no-repeat;
+					    bottom: 0;
+					    content: "";
+					    height: 10px;
+					    left: 0;
+					    position: absolute;
+					    width: 122px;
+						}
+					a{
+
+					}
+				}
+				p{
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+}
+
+.class__grid__page{
+	margin-top: -40px;
+}
+.rating {
+	li{
+		i{
+			color: #fe5629;
+    		font-size: 14px;
+		}
+	}
+}
+.rating {
+	li{
+		span{
+			color: #fe5629;
+    		font-size: 14px;
+		}
+	}
+}
+
+    
+.rating li + li {
+    margin-left: 9px;
+}
+
+

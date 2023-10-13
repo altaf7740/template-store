@@ -1,0 +1,75 @@
+/*--
+    10. Testimonial Css
+-------------------------------------*/
+.bg_image--03 {
+    background-image: url(../images/bg/bg-image-03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.testimonial-style-3 {
+    .testimonal {
+        img {
+            float: left;
+            float: left;
+            max-width: 90px;
+            border-radius: 50%;
+            border: 2px solid #43df9c;
+            box-sizing: content-box;
+
+            @media #{$large-mobile} {
+                float: inherit;
+                margin-bottom: 10px;
+            }
+        }
+
+        .content {
+            overflow: hidden;
+            padding-left: 20px;
+
+            p {
+                color: #3e3e3e;
+                font-size: 16px;
+                margin-bottom: 20px;
+                line-height: 28px;
+            }
+
+            .clint-info {
+                padding-left: 50px;
+                position: relative;
+
+                @media #{$large-mobile} {
+                    padding-left: 0;
+                }
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 30px;
+                    height: 2px;
+                    background: #383838;
+                    left: 0;
+                    top: 4px;
+
+                    @media #{$large-mobile} {
+                        display: none;
+                    }
+                }
+
+                h4 {
+                    font-weight: 600;
+                    font-size: 16px;
+                    color: #383838;
+                    margin-bottom: 2px;
+                }
+
+                span {
+                    color: #383838;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    @media #{$large-mobile,$tablet-device} {
+        margin-bottom: 30px;
+    }
+}

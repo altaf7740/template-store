@@ -1,0 +1,151 @@
+
+.slider-wrapper {
+	width: 100%;
+}
+
+/*====================*/
+/*=== Other Styles ===*/
+/*====================*/
+.clear {
+	clear:both;
+}
+.nivo-caption .container {
+	height: 100%;
+}
+.main-caption-wrapper {
+	height: 100%;
+}
+.nivo-caption {
+	height: 100%;
+	background: rgba(0, 0, 0, .5);
+	opacity: 1;
+}
+
+/*Slide one text css start*/
+
+.caption-position1 {
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	align-items: center;
+}
+.caption-text-slide1 {
+	width: 80%;
+}
+.cap-style1 .cap-bold-text h2 {
+	font-size: 70px;
+	font-weight:700;
+	color: #ffffff;
+	
+}
+.cap-style1 .small-text-style1 p {
+	color: inherit;
+	font-size: 16px;
+}
+/*Slide 1st text css end*/
+
+/*Slide 2nd text css start*/
+
+.caption-position2 {
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	align-items: center;
+}
+.caption-text-slide2 {
+  width: 80%;
+}
+
+.cap-style2 .cap-bold-text h2 {
+	font-size: 70px;
+	font-weight:700;
+	color: #ffffff;
+	
+}
+.cap-style2 .small-text-style1 p {
+	color: inherit;
+	font-size: 16px;
+}
+/*Slide 2nd text css end*/
+/*slider button start*/
+.slider-button {
+	margin-top: 30px;
+	padding:0 10px;
+}
+.slider-button-wrapper {
+	display: flex;
+	justify-content: center;
+}
+.slider-btn1 a {
+	background: #fdc800;
+	padding: 10px 32px;
+	display: inline-block;
+	color: #ffffff;
+	border: 1px solid #fdc800;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 14px;
+	text-decoration: none;
+	transition:.3s;
+}
+.slider-btn1 a:hover {
+	background: #ffffff;
+	border: 1px solid #ffffff;
+	color: #fdc800;
+}
+.slider-btn2 a {
+	background: #ffffff;
+	padding: 10px 32px;
+	display: inline-block;
+	color: #fdc800;
+	border: 1px solid #ffffff;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 14px;
+	text-decoration: none;
+	transition:.3s;
+}
+.slider-btn2 a:hover {
+	background: #fdc800;
+	color: #ffffff;
+	border: 1px solid #fdc800;
+}
+/*slider button end*/
+
+.nivo-directionNav a {
+	position: absolute;
+	top: 50%;
+	z-index: 9;
+	cursor: pointer;
+	transform: translateY(-50%);
+	opacity:1;
+	color:#ffffff;
+	font-size:24px;
+	font-weight:700px;
+}
+.nivo-directionNav a:hover {
+	color:#fdc800;
+}
+
+
+.slider-wrapper:hover .nivo-directionNav a {
+	opacity: 1;
+
+}
+.nivo-prevNav {
+	left: 4%;
+}
+.slider-wrapper:hover .nivo-prevNav{
+	left: 2%;
+}
+.nivo-nextNav{
+	right:4%;
+	left:auto;
+}
+.slider-wrapper:hover .nivo-nextNav{
+	right: 2%;
+}
+
+
+
+

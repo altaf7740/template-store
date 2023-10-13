@@ -1,0 +1,619 @@
+/*----------------------------------------*/
+/*  8.  Event Schedule
+/*----------------------------------------*/
+
+/*-- Event Schedule Section One --*/
+.event-schedule-section-one {
+    position: relative;
+    &::before {
+        content: "";
+        background-color: $bg-light-gray;
+        background-image: url('img/bg/schedule-1.png');
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        height: 395px;
+        @media #{$large-mobile}{
+            height: 418px;
+        }
+    }
+    
+    @media #{$small-mobile}{
+        & .section-title-one {
+            padding-bottom: 120px;
+        }
+    }
+}
+
+/*-- Event One Schedule Tab List --*/
+.event-one-schedule-tab-list {
+    margin-top: -120px;
+    
+    @media #{$large-mobile}{
+        margin-top: -79px;
+    }
+    @media #{$small-mobile}{
+        margin-top: -53px;
+    }
+    & a {
+        padding: 30px 40px 30px 30px;
+        display: block;
+        @media #{$large-mobile}{
+            padding: 15px 20px;
+        }
+        @media #{$small-mobile}{
+            padding: 10px 12px;
+        }
+        &.active, &:focus {
+            background-color: $white;
+            box-shadow: 0 0 25px 5px rgba($black, 0.1);
+        }
+        & h3 {
+            color: $blue;
+            font-weight: 700;
+            text-transform: capitalize;
+            margin-bottom: 12px;
+            @media #{$large-mobile}{
+                font-size: 18px;
+                margin-bottom: 0;
+            }
+            @media #{$small-mobile}{
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+        & span {
+            display: block;
+            font-family: $montserrat;
+            font-size: 16px;
+            margin: 0;
+            line-height: 20px;
+            color: $body-color;
+            @media #{$large-mobile}{
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+/*-- Event One Schedule Tab Content --*/
+.event-one-schedule-tab-content {
+    z-index: 9;
+    & .event-one-schedule-tab-pane {
+        float: left;
+        width: 100%;
+    }
+}
+
+/*-- Event One Schedule List --*/
+.event-one-schedule-list {
+    float: left;
+    width: 100%;
+    
+    /*-- Event One Single Schedule --*/
+    & .event-one-single-schedule {
+        display: block;
+        float: left;
+        width: 100%;
+        padding: 50px 0;
+        &:nth-child(2n+1) {
+            background-color: #fafafa;
+        }
+        &:nth-child(2n) {
+            background-color: #f1f1f1;
+        }
+        @media #{$tablet-device}{
+           padding: 30px 40px;
+        }
+        @media #{$large-mobile}{
+           padding: 40px;
+        }
+        @media #{$small-mobile}{
+           padding: 20px 25px;;
+        }
+        & > div {
+            @media #{$tablet-device}{
+                padding: 18px 0 !important;
+                border-bottom: 1px solid #dddddd;
+            }
+            @media #{$large-mobile}{
+                width: 100% !important;
+                padding: 13px 0 !important;
+                border-bottom: 1px solid #dddddd;
+            }
+            
+            & h5 {
+                color: $blue;
+                line-height: 18px;
+                font-weight: 300;
+                margin-bottom: 5px;
+                & a {
+                    &:hover {
+                        color: $red;
+                    }
+                }
+                
+            }
+            & h4 {
+                margin-bottom: 0;
+                line-height: 24px;
+                & a {
+                    color: inherit;
+                    &:hover {
+                        color: $red;
+                    }
+                }
+            }
+            
+            &.day-time {
+                width: 200px;
+                padding: 3px 40px;
+                @media #{$desktop-device}{
+                    width: auto;
+                    padding: 3px 30px;
+                }
+                @media #{$tablet-device}{
+                    width: 180px;
+                }
+                & h4 {
+                    text-transform: uppercase;
+                }
+            }
+            &.category-title {
+                width: 470px;
+                padding: 3px 0;
+                @media #{$desktop-device}{
+                    width: 380px;
+                }
+                @media #{$tablet-device}{
+                    width: 420px;
+                }
+            }
+            &.organizer {
+                width: 230px;
+                padding: 3px 0;
+                @media #{$desktop-device}{
+                    width: 170px;
+                }
+                @media #{$tablet-device}{
+                    width: 180px;
+                    border: none;
+                }
+            }
+            &.buy-button {
+                width: 270px;
+                text-align: center;
+                @media #{$desktop-device}{
+                    width: 220px;
+                }
+                @media #{$tablet-device}{
+                    text-align: left;
+                    border: none;
+                }
+                @media #{$large-mobile}{
+                    text-align: left;
+                    border: none;
+                }
+                & .btn {}
+            }
+        }
+    }
+}
+
+/*-- Event Two Schedule List --*/
+.event-two-schedule-list {
+    
+    /*-- Event Two Single Schedule --*/
+    & .event-two-single-schedule {
+        display: flex;
+        background-image: url("img/pattern/event-list-2.png");
+        float: left;
+        width: 100%;
+        margin-bottom: 10px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        @media #{$tablet-device}{
+            display: block;
+        }
+        @media #{$large-mobile}{
+            display: block;
+        }
+        
+        /*-- Title --*/
+        & .title {
+            border-right: 1px solid #eeeeee;
+            display: flex;
+            padding: 30px;
+            width: 365px;
+            @media #{$desktop-device}{
+                padding: 30px 15px;
+            }
+            @media #{$tablet-device}{
+                border-right: none;
+                border-bottom: 1px solid #eeeeee;
+            }
+            @media #{$large-mobile}{
+                border-right: none;
+                border-bottom: 1px solid #eeeeee;
+            }
+            & h4 {
+                margin: auto;
+                & a {
+                    &:hover {
+                        color: $blue;
+                    }
+                }
+            }
+        }
+        
+        /*-- Event Speakers --*/
+        & .event-speakers {
+            width: 570px;
+            
+            /*-- Speaker --*/
+            & .speaker {
+                display: flex;
+                flex: 0 0 100%;
+                border-bottom: 1px solid #eeeeee;
+                &:last-child {
+                    border-bottom: none;
+                    @media #{$tablet-device}{
+                        border-bottom: 1px solid #eeeeee;
+                    }
+                    @media #{$large-mobile}{
+                        display: block;
+                        border-bottom: 1px solid #eeeeee;
+                    }
+                }
+                @media #{$tablet-device}{
+                    float: none !important;
+                }
+                @media #{$large-mobile}{
+                    display: block !important;
+                    width: 100%;
+                }
+            
+                /*-- Speaker Info --*/
+                & .speaker-info {
+                    border-right: 1px solid #eeeeee;
+                    padding: 30px;
+                    display: flex;
+                    width: 340px;
+                    @media #{$desktop-device}{
+                        padding: 30px 15px;
+                        width: 285px;
+                    }
+                    @media #{$large-mobile}{
+                        border-right: none;
+                        border-bottom: 1px solid #eeeeee;
+                        display: block !important;
+                        width: 100%;
+                    }
+                
+                    /*-- Image --*/
+                    & .image {
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        margin-right: 20px;
+                        margin-top: auto;
+                        margin-bottom: auto;
+                        @media #{$desktop-device}{
+                            width: 75px;
+                            height: 75px;
+                        }
+                        @media #{$large-mobile}{
+                            width: 75px;
+                            height: 75px;
+                        }
+                        & img {
+                            width: 100%;
+                        }
+                    }
+                    
+                    /*-- Content --*/
+                    & .content {
+                        margin: auto 0;
+                        width: 155px;
+                        @media #{$large-mobile}{
+                            margin-top: 10px;
+                        }
+                        & h4 {
+                            margin-bottom: 2px;
+                            & a {
+                                &:hover {
+                                    color: $blue;
+                                }
+                            }
+                        }
+                        & p {
+                            font-family: $montserrat;
+                        }
+                    }
+                }
+                    
+                /*-- Time & Place --*/
+                & .time-place {
+                    border-right: 1px solid #eeeeee;
+                    display: flex;
+                    padding: 30px 20px;
+                    width: 225px;
+                    @media #{$desktop-device}{
+                        padding: 30px 15px;
+                        width: 185px;
+                    }
+                    @media #{$tablet-device}{
+                        border-right: none;
+                    }
+                    @media #{$large-mobile}{
+                        border-right: none;
+                        width: 100%;
+                        display: block;
+                        padding: 30px;
+                    }
+                    & .time-place-wrap {
+                        margin: auto;
+                        & h5 {
+                            color: $body-color;
+                            margin: 2px 0;
+                        }
+                    }
+                }
+                
+            }
+        }
+        
+        /*-- Button --*/
+        & .buy-button {
+            padding: 30px;
+            display: flex;
+            @media #{$desktop-device}{
+                padding: 30px 15px;
+            }
+            & .btn {
+                margin: auto;
+            }
+        }
+                
+        & .title, & .event-speakers, & .buy-button {
+            @media #{$tablet-device}{
+                display: block;
+                float: left;
+                width: 100%;
+            }
+            @media #{$large-mobile}{
+                display: block;
+                float: left;
+                width: 100%;
+            }
+        }
+    }
+}
+
+/*-- Event Three Schedule Tab List --*/
+.event-three-schedule-tab-list {
+    justify-content: center;
+    margin-bottom: 20px;
+    & a {
+        border: 1px solid $blue;
+        display: block;
+        border-radius: 50px;
+        color: $body-color;
+        height: 40px;
+        line-height: 24px;
+        padding: 7px 26px;
+        text-transform: uppercase;
+        font-size: 18px;
+        margin: 0 15px 10px;
+        @media #{$small-mobile}{
+            height: 30px;
+            font-size: 12px;
+            padding: 2px 15px;
+            margin: 0  5px 10px;
+        }
+        &.active {
+            background-color: $blue;
+            color: $white;
+        }
+    }
+}
+
+/*-- Event Three Single Schedule --*/
+.event-three-single-schedule {
+    padding: 20px;
+    background-color: $bg-light-gray;
+    & .head {
+        margin-bottom: 20px;
+        & h4 {
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 3px;
+            & a {
+                color: $body-color;
+                &:hover {
+                    color: $blue;
+                }
+            }
+        }
+        & h5 {
+            margin-bottom: 0;
+            color: $body-color;
+            line-height: 1;
+        }
+    }
+    & .image {
+        position: relative;
+        display: block;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        overflow: hidden;
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            content: "";
+            background-color: $blue;
+            opacity: 0;
+        }
+        & img {
+            width: 100%;
+        }
+        & .btn {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(0);
+            letter-spacing: 0px;
+            padding-left: 30px;
+            padding-right: 30px;
+            opacity: 0;
+        }
+    }
+    & .footer {
+        & h4 {
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 3px;
+            & a {
+                color: $body-color;
+                &:hover {
+                    color: $blue;
+                }
+            }
+        }
+        & h5 {
+            margin-bottom: 0;
+            color: $body-color;
+            line-height: 1;
+        }
+    }
+    &:hover {
+        & .image {
+            &::before {
+                opacity: 0.8;
+            }
+            & .btn {
+                opacity: 1;
+                transform: translateX(-50%) translateY(-50%);
+            }
+        }
+    }
+}
+
+/*-- Event Four Single Schedule --*/
+.event-four-single-schedule {
+    float: left;
+    width: 100%;
+    padding-left: 45px;
+    position: relative;
+    padding-bottom: 68px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &::before {
+        position: absolute;
+        left: 0px;
+        top: 22px;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        border: 1px solid $red;
+        content: "";
+    }
+    &::after {
+        position: absolute;
+        left: 8px;
+        top: 40px;
+        width: 2px;
+        bottom: -22px;
+        background-color: $red;
+        content: "";
+    }
+    &:last-child {
+        padding-bottom: 0;
+        &::after {
+            display: none;
+        }
+    }
+    & .date-title-cat {
+        @media #{$desktop-device}{
+            width: 300px;
+        }
+        @media #{$tablet-device}{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        @media #{$large-mobile}{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        & p {
+            text-transform: capitalize;
+            margin-bottom: 11px;
+            
+        }
+        & h4 {
+            text-transform: uppercase;
+            font-weight: 500;
+            margin-bottom: 4px;
+            & a {
+                &:hover {
+                    color: $red;
+                }
+            }
+        }
+        & h5 {
+            margin-bottom: 0;
+            text-transform: capitalize;
+            & a {
+                color: $body-color;
+                &:hover {
+                    color: $red;
+                }
+            }
+        }
+    }
+    & .speaker {
+        align-items: center;
+        display: flex;
+        @media #{$small-mobile}{
+            margin-bottom: 30px;
+        }
+        & img {
+            float: left;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        & .content {
+            & h4 {
+                font-weight: 500;
+                text-transform: uppercase;
+                margin-bottom: 5px;
+                & a {
+                    &:hover {
+                        color: $red;
+                    }
+                }
+            }
+            & h5 {
+                margin-bottom: 0;
+                text-transform: capitalize;
+                color: $body-color;
+            }
+        }
+    }
+    & .button {
+        & .btn {}
+    }
+}

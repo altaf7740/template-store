@@ -1,0 +1,182 @@
+/*--
+    09. Pricing Table Css
+---------------------------------*/
+.single-priceing {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: $white;
+    padding: 55px 0;
+    @include transition(0.3s); 
+    & .priceing-header {
+        padding: 0 60px;
+        margin-bottom: 25px;
+        @media #{$large-mobile,$tablet-device,$desktop-device}{
+            padding: 0 30px;
+        }
+        & h4 {
+            font-size: 16px;
+            font-weight: 600;
+            font-family: $lato;
+        } 
+    }
+    & .pricing-title {
+        padding: 30px 60px;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        @include transition(0.4s);
+        background: $white;
+        @media #{$large-mobile,$tablet-device, $desktop-device}{
+            padding: 30px 30px;
+        }
+        & h3 {
+            font-size: 18px;
+            font-family: $lato;
+            font-weight: 600;
+            & span {
+                font-size: 24px;
+            }
+            & .price-tb {
+                font-weight: 700;
+                font-size: 36px;
+            }
+        }
+    }
+    & .pricing-body {
+        padding: 0 60px;
+        @media #{$large-mobile,$tablet-device,$desktop-device}{
+            padding: 0 30px;
+        }
+        & ul {
+            margin-top: 30px;
+            & li {
+                margin-bottom: 8px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        & .plan-button {
+            margin-top: 30px;
+            & a {
+                border: 1px solid $theme-color;
+                padding: 10px 25px;
+                color: $theme-color;
+                font-size: 16px;
+                &:hover {
+                    color: $white;
+                    background: $theme-color;
+                }
+            }
+        }
+    }
+    &.active {
+        & .priceing-header {
+            & h4 {
+                color: $theme-color;
+            } 
+        }
+        & .pricing-title {
+            background: $theme-color;
+            & h3 {
+                color: $white;
+            }
+            & p {
+                color: $white;   
+            }
+        }
+        & .plan-button {
+            & a {
+                color: $white;
+                background: $theme-color;
+                &:hover {
+                    color: $theme-color;
+                    background: $white;
+                }
+            }
+        }
+    }
+    &:hover {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        & .pricing-title {
+            background: $theme-color;
+            & h3 {
+                color: $white;
+            }
+            & p {
+                color: $white;   
+            }
+        }
+    }
+}
+
+/*--
+    10. Testimonial Css
+---------------------------------*/
+
+.testimonial-wrap {
+    padding: 0 100px;
+    @media #{$large-mobile}{
+        padding: 0;
+    }
+    & .testimonial-image {
+        text-align: center;
+        margin-bottom: 20px;
+        & img {
+            border-radius: 50%;
+            margin: auto;
+        }
+    }
+    & .testimonial-content {
+        padding: 30px 100px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        margin: 0 5px;
+        & ul {
+            margin-bottom: 10px;
+            & li {
+                display: inline-block;
+            }
+        }
+        @media #{$desktop-device}{
+            padding: 30px 50px;
+        }
+        @media #{$large-mobile,$tablet-device}{
+            padding: 30px;
+        }
+    }
+    & .author-info {
+        margin-top: 22px;
+        & h4 {
+            font-family: $lato;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+    }
+}
+.testimonial-active {
+    & .slick-arrow {
+        font-size: 36px;
+        position: absolute;
+        top: 60%;
+        left: 0;
+        right: auto;
+        border: none;
+        border-radius: 5px;
+        z-index: 5;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+        &:hover {
+            color: $theme-color;
+        }
+        &.slick-next {
+            right: 0;
+            left: auto;
+        }
+    } 
+    &:hover .slick-arrow {
+        transform: translateY(-60%);
+        visibility: visible;
+        opacity: 1;
+    }
+}

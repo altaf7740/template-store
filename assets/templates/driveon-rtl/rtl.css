@@ -1,0 +1,422 @@
+/*----------------------------------------*/
+/*  1.  RTL CSS
+/*----------------------------------------*/
+/* Bootstrap Css For Rtl */
+.text-left {
+  text-align: right;
+}
+.text-right {
+  text-align: left;
+}
+.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12,
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12,
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12,
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: right;
+}
+@media (min-width:768px){.col-sm-offset-12{margin-left:auto;margin-right:100%}.col-sm-offset-11{margin-left:auto;margin-right:91.66666667%}.col-sm-offset-10{margin-left:auto;margin-right:83.33333333%}.col-sm-offset-9{margin-left:auto;margin-right:75%}.col-sm-offset-8{margin-left:auto;margin-right:66.66666667%}.col-sm-offset-7{margin-left:auto;margin-right:58.33333333%}.col-sm-offset-6{margin-left:auto;margin-right:50%}.col-sm-offset-5{margin-left:auto;margin-right:41.66666667%}.col-sm-offset-4{margin-left:auto;margin-right:33.33333333%}.col-sm-offset-3{margin-left:auto;margin-right:25%}.col-sm-offset-2{margin-left:auto;margin-right:16.66666667%}.col-sm-offset-1{margin-left:auto;margin-right:8.33333333%}.col-sm-offset-0{margin-left:auto;margin-right:0}}@media (min-width:992px){.col-md-offset-12{margin-left:auto;margin-right:100%}.col-md-offset-11{margin-left:auto;margin-right:91.66666667%}.col-md-offset-10{margin-left:auto;margin-right:83.33333333%}.col-md-offset-9{margin-left:auto;margin-right:75%}.col-md-offset-8{margin-left:auto;margin-right:66.66666667%}.col-md-offset-7{margin-left:auto;margin-right:58.33333333%}.col-md-offset-6{margin-left:auto;margin-right:50%}.col-md-offset-5{margin-left:auto;margin-right:41.66666667%}.col-md-offset-4{margin-left:auto;margin-right:33.33333333%}.col-md-offset-3{margin-left:auto;margin-right:25%}.col-md-offset-2{margin-left:auto;margin-right:16.66666667%}.col-md-offset-1{margin-left:auto;margin-right:8.33333333%}.col-md-offset-0{margin-left:auto;margin-right:0}}@media (min-width:1200px){.col-lg-offset-12{margin-left:auto;margin-right:100%}.col-lg-offset-11{margin-left:auto;margin-right:91.66666667%}.col-lg-offset-10{margin-left:auto;margin-right:83.33333333%}.col-lg-offset-9{margin-left:auto;margin-right:75%}.col-lg-offset-8{margin-left:auto;margin-right:66.66666667%}.col-lg-offset-7{margin-left:auto;margin-right:58.33333333%}.col-lg-offset-6{margin-left:auto;margin-right:50%}.col-lg-offset-5{margin-left:auto;margin-right:41.66666667%}.col-lg-offset-4{margin-left:auto;margin-right:33.33333333%}.col-lg-offset-3{margin-left:auto;margin-right:25%}.col-lg-offset-2{margin-left:auto;margin-right:16.66666667%}.col-lg-offset-1{margin-left:auto;margin-right:8.33333333%}.col-lg-offset-0{margin-left:auto;margin-right:0}}
+
+.float-left {
+  float: right;
+}
+.float-right {
+  float: left;
+}
+input, textarea {
+  text-align: right;
+}
+select {
+  background-position: left center !important;
+  text-align: right;
+}
+.panel-group {
+  text-align: right;
+}
+.sub-title {
+  text-align: right;
+}
+.sub-title::before {
+  left: auto;
+  right: 0;
+}
+/* Header RTL CSS -*/
+.header-logo, .navbar-header {
+  float: right;
+}
+.main-menu nav > ul > li {
+  float: right;
+}
+.main-menu nav > ul > li + li {
+  margin-right: 44px;
+  margin-left: 0;
+}
+.main-menu nav > ul > li > a i {
+  float: left;
+  margin-right: 3px;
+  margin-left: 0;
+}
+/* Sub Menu 1st Level */
+.main-menu nav > ul ul {
+  left: auto;
+  right: -20px;
+  text-align: right;
+}
+.main-menu nav > ul li ul li a i {
+  float: left;
+}
+.main-menu nav > ul li ul li a i::before {
+  content: '\eb76';
+}
+/* Sub Menu 2nd */
+.main-menu nav > ul ul li ul {
+  left: auto;
+  right: 100%;
+  margin-left: 0;
+  margin-right: -10px;
+}
+/* Sub Menu 3rd Level */
+.main-menu nav > ul ul ul li ul {
+  left: 100%;
+  margin-left: -10px;
+  margin-right: 0;
+  right: auto;
+}
+/* Sub Menu 4th */
+.main-menu nav > ul ul ul ul li ul {
+  left: auto;
+  right: 100%;
+  margin-left: 0;
+  margin-right: -10px;
+}
+/* Sub Menu 5th */
+.main-menu nav > ul ul ul ul ul li ul {
+  left: 100%;
+  margin-left: -10px;
+  margin-right: 0;
+  right: auto;
+}
+/* Header 5 */
+.menu-toggle {
+  float: left;
+  margin-left: 0;
+  margin-right: 30px;
+}
+.menu-style-toggle nav {
+  float: right;
+  margin-left: -30px;
+  margin-right: 0;
+}
+.menu-style-toggle nav.menu-open {
+  margin-left: 0;
+  margin-right: 0;
+}
+/* Header 6 */
+.menu-style-6 nav > ul > li + li {
+  margin-left: 0;
+  margin-right: 14px;
+}
+/* Header 7 */
+.menu-style-7 nav > ul > li + li {
+  margin-left: 0;
+  margin-right: 14px;
+}
+/* Mobile Mean Menu */
+.mean-container a.meanmenu-reveal {
+  right: auto!important;
+  left: 0!important;
+}
+.mean-container .mean-nav ul li a {
+  text-align: right;
+}
+.mean-container .mean-nav ul li a i {
+  display: none;
+}
+.mean-container .mean-nav ul li a.mean-expand {
+  left: 0;
+  right: auto;
+}
+.mean-container .mean-nav > ul > li > ul li a {
+  padding-right: 0;
+}
+.mean-container .mean-nav > ul > li ul {
+  padding-bottom: 10px;
+  padding-left: 0;
+  padding-right: 15px;
+}
+/* Footer */
+.about-widget .widget-social {
+  float: right;
+}
+.about-widget .widget-social a {
+  margin: 6px 6px 6px 16px;
+}
+.widget-blog .image {
+  margin-left: 20px;
+  margin-right: 0;
+}
+.instagram-item {
+  float: right;
+}
+/* Course Form */
+.find-course-form h5 span {
+  float: right;
+}
+.find-course-form h5 i {
+  float: left;
+}
+.find-course-form form > div input {
+  padding: 3px 30px 3px 10px;
+}
+.find-course-form form > div i {
+  left: auto;
+  right: 3px;
+}
+.bootstrap-select .btn {
+  padding: 3px 30px 3px 10px;
+}
+.bootstrap-select.btn-group .dropdown-toggle .filter-option {
+  text-align: right;
+}
+.bootstrap-select.btn-group .dropdown-toggle .caret {
+  left: 12px;
+  right: auto;
+}
+.bootstrap-select .dropdown-menu {
+  text-align: right;
+}
+.find-course-form form .course-submit input {
+  text-align: center;
+}
+/* Gallery */
+.gallery-filter {
+  direction: rtl;
+}
+/* Instructor */
+.instructor-social a {
+  float: right;
+  margin-left: 15px;
+  margin-right: 0;
+}
+.instructor-tab-list {
+  float: right;
+}
+.instructor-tab-list li {
+  float: right;
+  margin-left: 30px;
+  margin-right: 0;
+}
+/* Toggles Accordions */
+.panel-title a {
+  background-position: right 16px center !important;
+  padding: 10px 66px 10px 16px;
+}
+.panel-body {
+  padding: 20px 70px 20px 30px;
+}
+/* Call to action */
+.call-to-action h3 {
+  float: right;
+}
+.call-to-action a {
+  float: left;
+}
+/* Blog */
+.blog-item {
+  text-align: right;
+}
+.blog-item .meta p a i, .blog-meta p a i {
+  float: right;
+  margin-left: 6px;
+  margin-right: 0;
+}
+.pagination ul li {
+  float: right;
+}
+.single-blog {
+  text-align: right;
+}
+blockquote {
+  border-left: 0 none;
+  border-right: 3px solid #dec839;
+}
+.blog-tags p, .blog-share p {
+  direction: rtl;
+  float: right;
+  margin-left: 30px;
+  margin-right: 0;
+}
+.blog-tags a, .blog-share a {
+  float: right;
+}
+.blog-tags a + a {
+  margin-left: 0;
+  margin-right: 13px;
+}
+.blog-tags a::before {
+  left: -10px;
+  right: auto;
+}
+.blog-share a + a {
+  margin-left: 0;
+  margin-right: 23px;
+}
+.single-comment .avatar {
+  margin-left: 30px;
+  margin-right: 0;
+}
+.single-comment .content {
+  text-align: right;
+}
+.single-comment .content a i {
+  float: right;
+  margin-left: 9px;
+  margin-right: 0;
+}
+/* Sidebar */
+.single-sidebar {
+  text-align: right;
+}
+.single-sidebar > div {
+  padding-left: 0;
+  padding-right: 20px;
+}
+.sidebar-title {
+  border-left: 0 none;
+  border-right: 5px solid #dec839;
+  padding-left: 0;
+  padding-right: 15px;
+  text-align: right;
+}
+.latest-blog-sidebar .sin-blog .image {
+  margin-left: 30px;
+  margin-right: 0;
+}
+.latest-blog-sidebar .sin-blog .content p i {
+  float: right;
+  margin-left: 10px;
+  margin-right: 0;
+}
+.tags-sidebar a {
+  float: right;
+  margin-left: 10px;
+  margin-right: 0;
+}
+.contact-info .single-info .icon {
+  float: right;
+  margin-left: 40px;
+  margin-right: 10px;
+}
+/* ShortCode */
+.alert {
+  text-align: right;
+}
+.alert .close {
+  float: left;
+}
+.progress-text {
+  text-align: right;
+}
+.progress-bar {
+  float: right;
+}
+.nav-tabs > li {
+  float: right;
+}
+.nav-tabs > li > a {
+  margin-right: 0;
+  margin-left: 2px;
+}
+.nav-var-tabs {
+  float: right;
+}
+.nav-var-tabs > li {
+  float: none;
+}
+.nav-var-tabs > li > a {
+  margin-right: 0;
+  margin-left: 0;
+}
+.tab-content {
+  text-align: right;
+}
+/*----------------------------------------*/
+/*  12.  RTL Responsive CSS
+/*----------------------------------------*/
+@media (min-width: 1200px) and (max-width: 1400px) {
+
+
+}
+
+/* Normal desktop :992px. */
+@media only screen and (min-width: 992px) and (max-width: 1169px) {
+.main-menu nav > ul > li + li {
+  margin-left: 0;
+  margin-right: 25px;
+}
+.menu-style-6 nav > ul > li + li {
+  margin-left: 0;
+  margin-right: 5px;
+}
+.menu-style-7 nav > ul > li + li {
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+
+
+}
+
+/* Tablet desktop :768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.text-center .logo {
+  float: right;
+}
+.instructor-tab-list {
+  float: left;
+}
+.main-menu nav > ul > li + li {
+  margin-left: 0;
+  margin-right: 15px;
+}
+
+
+}
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+.text-center .logo {
+  float: right;
+}
+.instructor-tab-list li {
+  margin-left: 0;
+  margin-right: 0;
+}
+.blog-meta p {
+  float: right;
+  margin-right: 15px;
+}
+.blog-share {
+  float: right;
+}
+.navbar-header {
+  width: 100%;
+}
+.navbar-toggle {
+  float: left;
+}
+.navbar-header .logo {
+  float: right;
+}
+
+ 
+}
+ 
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+
+
+ 
+}
+ 

@@ -1,0 +1,162 @@
+/*--
+   09. Priceing Area Css
+---------------------*/
+.priceing-content {
+        &.pt--25 {
+            @media #{$tablet-device}{
+                padding-top: 0;
+            }
+            @media #{$large-mobile}{
+                padding-top: 0;
+            }
+            @media #{$small-mobile}{
+               padding-top: 0;
+            }
+        }
+        &.pt--25 {
+            @media #{$tablet-device}{
+                padding-bottom: 0;
+            }
+            @media #{$large-mobile}{
+                padding-bottom: 0;
+            }
+            @media #{$small-mobile}{
+               padding-bottom: 0;
+            }
+        }
+    }
+.single-price-package {
+    background: #FFF none repeat scroll 0 0;
+    box-shadow: 0px 0px 5px 5px rgba(15, 9, 128, 0.035), 5px 12px 30px 5px rgba(15, 9, 128, 0.05);
+    margin-bottom: 0;
+    padding: 0;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    & .price-title {
+        text-align: center;
+        padding: 30px 0; 
+        transition: all 0.3s ease-in-out;
+        
+    }
+    &  h3 {
+        color: $theme-color;
+        font-size: 20px;
+    }
+    & h1 {
+        color: #333;
+        font-size: 45px;
+        margin-bottom: 0;
+    }
+    & p {
+        color: #29323c;
+        font-size: 14px;
+        line-height: 21px;
+        text-transform: uppercase;
+        margin-top: 8px;
+    }
+    & .price-list {
+        border-top: 1px solid #f5f5f5;
+        padding: 30px 0;
+        text-align: center;
+        & ul {
+            & li {
+                color: #333;
+                margin: 0 auto 15px;
+                font-size: 14px;
+                font-family: $raleway;
+                text-transform: capitalize;
+                font-weight: 500;
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+    & .price-btn {
+        text-align: center;
+        border-top: 1px solid #f5f5f5;
+        & .button {
+            background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+            color: #333 !important;
+            border: 1px solid #863F51;
+            display: inline-block;
+            margin: 30px 0;
+            border-radius: 30px;
+            color: #863F51 !important;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 46px;
+            padding: 0 30px;
+            text-transform: uppercase;
+            transition: all 0.3s ease-in 0s;
+            &:hover {
+                background: $theme-color;  
+                color: $white !important;
+            }
+        }
+    }
+    &.dark {
+        background: #863F51 /* rgba(134, 63, 81, 0.9)*/;
+        padding: 25px 0 25px;
+        margin-top: -25px;
+        @media #{$large-mobile}{
+            margin: 30px 0;
+        }
+        &  h3 {
+            color: #fff;;
+        }
+        & h1 {
+            color: #fff;
+            font-size: 45px;
+            margin-bottom: 0;
+        }
+        & p {
+            color: #fff;
+        }
+        & .price-list {
+            border-top: 1px solid #904557;
+            & ul {
+                & li {
+                    color: #fff;
+                }
+            }
+        } 
+        & .price-btn {
+            border-top: 1px solid #904557;
+            & .button {
+                background: $theme-color;
+                color: #fff !important;;
+                border: 1px solid #fff;
+                color: #ffffff;
+                &:hover {
+                    background: $white;  
+                    color: $theme-color  !important;
+                }
+            }
+        }
+    }
+    &.gradient-bg {
+        background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #863F4B 0%, #4D3543 100%) repeat scroll 0 0;
+        & .price-list {
+            border-top: 1px solid #7c4955;
+        }
+        & .price-btn {
+            border-top: 1px solid #6c3744;
+        }
+    }
+}
+.priceing-content {
+    @media #{$large-mobile}{
+        & .row {
+            & .pr-0 {
+                padding-right: 15px !important;
+            }
+            & .pl-0 {
+                padding-left: 15px !important;
+            }
+        }
+    } 
+}
+.gradient-overly {
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #863F4B 0%, #4D3543 100%) repeat scroll 0 0;
+}

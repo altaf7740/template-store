@@ -1,0 +1,150 @@
+/*--
+    07. Team Style Css
+----------------------------*/
+.bg_image---01 {
+    background-image: url(../images/bg/bg-image-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.team {
+    margin-bottom: 30px;
+    ul {
+        &.social-network {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .thumb {
+        position: relative;
+        overflow: hidden;
+    }
+}
+.team-5{
+    text-align: center;
+    .thumb{
+        display: inline-block;
+    }
+    .team-hover-action {
+        position:  absolute;
+        top:  0;
+        left:  0;
+        width:  100%;
+        height:  100%;
+        border-radius: 100%;
+        text-align:  center;
+        &::before {
+            position:  absolute;
+            content:  "";
+            background: rgba(182, 22, 112, 0.7) repeat scroll 0 0;
+            width: auto;
+            height: auto;
+            border-radius: 100%;
+            left: 10px;
+            top: 10px;
+            bottom:  10px;
+            right: 10px;
+            opacity: 0;
+            -webkit-transition: all 0.4s ease-in-out;
+            -moz-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+        }
+        .hover-action {
+            position:  absolute;
+            top:  50%;
+            transform: translateY(-50%);
+            width:  100%;
+            text-align:  center;
+            h4 {
+                font-size:  16px;
+                margin-bottom: 13px;
+                font-weight:  500;
+                text-transform: uppercase;
+                -webkit-transform: translateX(100%);
+                -moz-transform: translateX(100%);
+                -ms-transform: translateX(100%);
+                -o-transform: translateX(100%);
+                transform: translateX(100%);
+                -webkit-transition: all 0.35s ease-in-out;
+                -moz-transition: all 0.35s ease-in-out;
+                transition: all 0.35s ease-in-out;
+                a {
+                    color:  #ffffff;
+                    font-size: 16px;
+                }
+            }
+
+            ul{
+                &.social-network{
+                    -webkit-transform: translateX(-100%);
+                    -moz-transform: translateX(-100%);
+                    -ms-transform: translateX(-100%);
+                    -o-transform: translateX(-100%);
+                    transform: translateX(-100%);
+                    -webkit-transition: all 0.35s ease-in-out;
+                    -moz-transition: all 0.35s ease-in-out;
+                    transition: all 0.35s ease-in-out;
+                }
+            }
+        }
+    }
+    &:hover .team-hover-action::before{
+        opacity: 1;
+    }
+    &:hover .team-hover-action .hover-action h4{
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
+    }
+    &:hover .team-hover-action .hover-action ul.social-network{
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+/*-
+    Social Service Style One
+-----------------------------*/
+.social-net-1 {
+    margin-bottom: 8px;
+    li {
+        margin: 0 10px;
+        a {
+            color: #fff;
+            font-size: 14px;
+            display: block;
+            background: transparent;
+            &.facebook:hover {
+                color: #3B5998;
+                background: transparent;
+            }
+            &.twitter:hover {
+                color: #00ACEE;
+                background: transparent;
+            }
+            &.google-plus:hover {
+                color: #DD4C48;
+                background: transparent;
+            }
+            &.vimeo:hover {
+                color: #1AB7EA;
+                background: transparent;
+            }
+            &.dribbble:hover {
+                color: #E2324D;
+                background: transparent;
+            }
+        }
+    }
+}
+
+
+
+

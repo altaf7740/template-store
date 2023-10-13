@@ -1,0 +1,84 @@
+/* -----------------------------------
+Template:  Erctor
+
+NOTE: This is Header style file. All Header related style included in this file.
+
+--------------------------------------*/
+header.header {
+  background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+}
+.menu ul > li {
+  display: inline-block;
+  margin-right: 38px;
+    padding: 39px 0;
+  
+  position: relative;
+}
+.menu ul > li:hover > a {
+  color: #FFE200;
+}
+.menu {
+    text-align: center;
+}
+.menu ul > li > a {
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 42px 0;
+}
+.menu ul > li:last-child {
+    margin-right: 0;
+}
+.menu ul > li.logo > a > img {
+  margin-bottom: -18px;
+}
+.menu ul > li.logo {
+  margin: 0 61px 0 23px;
+  padding: 0;
+}
+.menu ul > li > ul > li:first-child {
+  margin-left: 0;
+}
+.menu ul > li > ul > li {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  display: block;
+  margin-left: 0;
+    padding: 0px 0;
+    margin-right: 0px;
+}
+.menu ul > li > ul > li a {
+  color: #444;
+  display: block;
+  padding: 10px;
+  text-transform: capitalize;
+}
+.menu ul > li > ul {
+  background: #fff none repeat scroll 0 0;
+  border-bottom: 2px solid #ffe200;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  text-align: left;
+  top: 105px;
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  width: 190px;
+  z-index: 999;
+}
+.menu ul > li:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+
+
+
+
+
+
+

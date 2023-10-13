@@ -1,0 +1,241 @@
+
+
+.htc-verctimeline-wrapper{
+
+    position: relative;
+    margin-top: 30px;
+    &.border-syle-2{
+        &::before{
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 0;
+            width: 6px;
+            background: #18012c;
+            height: 100%;
+            margin-left: -1px;
+            border-radius: 20px;
+        }
+    }
+
+    /* Start Single Timeline */
+    .ht-ver-timeline{
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        justify-content: space-between;
+        padding: 30px 0;
+        position: relative;
+        &:last-child {
+            padding-bottom: 0;
+        }
+
+        &::before{
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 0;
+            width: 2px;
+            background: #d2d2d2;
+            height: 100%;
+            margin-left: -1px;
+        }
+
+        &:last-child::before{
+            display: none;
+        }
+        .vertical-time{
+            width: 50%;
+            text-align: right;
+            padding: 0 30px;
+            position: relative;
+            -webkit-align-self: baseline;
+            -moz-align-self: baseline;
+            -ms-flex-item-align: baseline;
+            align-self: baseline;
+            position: relative;
+            top: -53px;
+            @media #{$small-mobile} {
+                padding: 0;
+            }
+
+            &::before{
+                position: absolute;
+                content: "";
+                right: -15px;
+                top: 50%;
+                margin-top: -15px;
+                height: 30px;
+                width: 30px;
+                border: 7px solid #e98250;
+                border-radius: 100%;
+                background: #fff;
+                transform: translateY(-50%);
+            }
+
+            .vertical-date {
+                width: 100px;
+                border: 13px solid #f88a55;
+                text-align: center;
+                display: inline-block;
+                height: 100px;
+                border-radius: 100%;
+                background: #fff;
+                position: relative;
+                top: -12px;
+                margin-right: 11px;
+                @media #{$small-mobile} {
+                    margin-right: 30px;
+                    width: 90px;
+                    height: 90px;
+                }
+
+                &::before{
+                    position: absolute;
+                    content: "";
+                    left: 115%;
+                    top: 56%;
+                    margin-top: -15px;
+                    height: 10px;
+                    width: 10px;
+                    border-top: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-bottom: 10px solid transparent;
+                    border-left: 15px solid #f58854;
+                }
+                span{
+                    display: block;
+                    color: #fc8c56;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 28px;
+                    font-family: $heading-font;
+                    &.month{
+                        margin-top: 7px;
+                    }
+                }
+            }
+        }
+        .timeline-content{
+            padding-left: 123px;
+            text-align: left;
+            width: 50%;
+            position: relative;
+            top: -30px;
+            @media #{$large-mobile} {
+                padding-left: 31px
+            }
+
+            &::before{
+                position: absolute;
+                content: "";
+                border-style: dashed;
+                left: 25px;
+                height: 1px;
+                width: 80px;
+                border-width: 0 0 2px;
+                top: 11px;
+                border-color: #f38753;
+                @media #{$large-mobile} {
+                    display: none;
+                }
+            }
+            p{
+                color: #494849;
+                font-size: 14px;
+                line-height: 28px;
+            }
+        }
+        &.vertical-reverse{
+            -webkit-box-direction: reverse;
+            -webkit-box-orient: horizontal;
+            -webkit-flex-direction: row-reverse;
+            -moz-flex-direction: row-reverse;
+            -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+            .vertical-time{
+                text-align: left;
+
+                &::before{
+                    right: auto;
+                    left: -15px;
+                }
+                .vertical-date{
+                    margin-right: 0;
+                    margin-left: 11px;
+                    @media #{$small-mobile} {
+                         margin-left: 30px;
+                    }
+
+                    &::before{
+                        right: 115%;
+                        left: auto;
+                        border-top: 10px solid transparent;
+                        border-right: 15px solid #fc8c56;
+                        border-bottom: 10px solid transparent;
+                        border-left: 10px solid transparent;
+                    }
+                }
+            }
+            .timeline-content{
+                padding-left: 0;
+                padding-right: 123px;
+                text-align: right;
+                @media #{$large-mobile} {
+                    padding-right: 31px
+                }
+                &::before{
+                    left: auto;
+                    right: 25px;
+                }
+            }
+        }
+
+
+        &.political-timeline{
+            &::before{
+                background: #042e6d;
+            }
+            .vertical-time{
+                &::before{
+                    border: 7px solid #eb3244;
+                }
+                .vertical-date {
+                    border: 13px solid #eb3244;
+                    &::before{
+                        border-left: 15px solid #eb3244;
+                    }
+                    span{
+                        color: #eb3244;
+                    }
+                }
+            }
+            .timeline-content{
+                &::before{
+                    border-color: #eb3244;
+                }
+            }
+            &.vertical-reverse{
+                .vertical-time{
+                    .vertical-date{
+                        &::before{
+                            border-right: 15px solid #eb3244;
+                            border-left: 15px solid transparent;
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+    }
+
+
+}

@@ -1,0 +1,172 @@
+/* -----------------------------------
+Template:  Expu
+
+NOTE: This is Shortcodes style file. All Header related style included in this file.
+
+--------------------------------------*/
+.shortcodes-area{
+    padding-bottom: 80px;
+}
+.shortcodes-title h4{
+    padding-top: 80px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+    text-transform: uppercase;;
+    position: relative;
+}
+.shortcodes-title h4:after{
+    content: "";
+    background:  #303030;
+    width: 100px;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.shortcodes-area .btn-group, .shortcodes-area .dropdown{
+    padding-bottom: 30px;
+}
+.shortcodes-area .panel-heading {
+  padding: 17px 15px 17px 0;
+}
+.mean-container .mean-nav ul li {
+    background: #fff;
+}
+.mean-container .mean-nav ul li li a {
+    color: #303030;
+    opacity: .90;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    filter: alpha(opacity=90);
+    border-top: 0;
+}
+.mean-container a.meanmenu-reveal {
+    color: #444;
+}
+.meanmenu-reveal.meanclose:hover {
+    color: #303030 !important;
+}
+.mean-container a.meanmenu-reveal:hover span {
+    background: #303030;
+}
+.mobile-menu-area .mean-nav {
+    background: #EC552C none repeat scroll 0 0;
+}
+.mean-last {
+    margin-bottom: 20px;
+}
+.mobile-menu {
+    position: relative;
+}
+.mean-container .mean-bar:before {
+    color: #ffffff;
+    content: "MENU";
+    font-size: 18px;
+    font-weight: 600;
+    left: 10px;
+    position: absolute;
+    top: 10px;
+}
+.google-map-area.shortcode{margin-right: 0}
+.ec-handle i {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+.as-mainwrapper {
+  position: relative;
+}
+.as-mainwrapper.wrapper-boxed {
+  background-color: #ffffff;
+  box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.1);
+  float: none;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+textarea {
+  resize: none;
+}
+.common-area p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    padding-bottom: 25px;
+}
+.common-area p:nth-child(2){
+    padding-bottom: 0px;
+}
+/* Preloader Css */
+.preloader{
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    margin-top: 0px;
+    top: 0px;
+    z-index: 99999999;
+}
+.loading-center{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.loading-center-absolute {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 150px;
+    width: 150px;
+    margin-top: -75px;
+    margin-left: -75px;
+}
+.object{
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 65px;
+    border-radius: 50% 50% 50% 50%;
+}
+.object_one {	
+    -webkit-animation: object_one 1.5s infinite;
+    animation: object_one 1.5s infinite;
+}
+.object_two {
+    -webkit-animation: object_two 1.5s infinite;
+    animation: object_two 1.5s infinite;
+    -webkit-animation-delay: 0.25s; 
+    animation-delay: 0.25s;
+}
+.object_three {
+    -webkit-animation: object_three 1.5s infinite;
+    animation: object_three 1.5s infinite;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+.hover-text > p {
+    font-size: 12px;
+    line-height: 18px;
+}
+.mailchimp-alerts{
+    margin-top: 20px;
+    font-size: 12px;
+}

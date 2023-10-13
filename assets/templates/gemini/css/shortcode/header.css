@@ -1,0 +1,206 @@
+/* -----------------------------------
+
+	Template Name: Gemini Personal Blog
+    Template URI: https://devitems.com/html/lira-preview/
+    Description: This is html5 template
+    Author: BootExperts
+    Author URI: https://devitems.com/
+    Version: 1.0
+
+--------------------------------------*/
+
+/*-------------- Menu Style --------------*/
+.header-top {
+  box-shadow: 1px 1px 2px #ddd;
+}
+.mobile-menu-area {
+  display: none;
+}
+.main-menu ul > li{position:relative;}
+.main-menu ul > li > a {
+  color: #333333;
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 20px;
+  position: relative;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+}
+.main-menu ul > li > a::after {
+  background: #000 none repeat scroll 0 0;
+  content: "";
+  height: 1px;
+  left: -50px;
+  position: absolute;
+  top: 15px;
+  width: 35px;
+  opacity:0;
+  transition:.3s;
+}
+.main-menu ul > li > a::before {
+  background: #000 none repeat scroll 0 0;
+  bottom: 15px;
+  content: "";
+  height: 1px;
+  position: absolute;
+  right: -50px;
+  width: 35px;
+  opacity:0;
+  transition:.3s;
+}
+.main-menu ul li.active a::after,.main-menu ul > li:hover > a::after{opacity:1;left:0px}
+.main-menu ul li.active a::before,.main-menu ul > li:hover > a::before{opacity:1;right:0px}
+.main-menu ul li > ul {
+  background: #ffffff none repeat scroll 0 0;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+  margin: 0;
+  opacity: 0;
+  padding: 15px;
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  transform-origin: 0 0 0;
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  width: 200px;
+  z-index: 999;
+}
+.main-menu > ul > li:hover ul {
+  opacity: 1;
+  visibility: visible;
+  top:100%;
+}
+.main-menu ul li ul li {
+  display: block;
+  position:relative;
+}
+.main-menu ul li ul li a {
+  color: #707070;
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 12px;
+  overflow: hidden;
+  padding: 10px;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+}
+.main-menu ul li ul li a:hover{color:#303030!important;}
+.main-menu ul li ul li a::after,.main-menu ul li ul li a::before{display:none;}
+.main-menu ul li:hover > ul{opacity:1;visibility:visible;}
+.main-menu ul li ul li:hover > a{padding-left:15px}
+.main-menu ul li ul li a:before{display:none}
+.main-menu ul li ul li > ul {
+  left: 109%;
+  margin-top: -1px;
+  opacity: 0;
+  position: absolute;
+  top: 45%;
+  visibility: hidden;
+}
+.main-menu ul li > ul > li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  top: -14px;
+}
+.main-menu ul li ul li a span {
+  float: right;
+  font-size: 14px;
+}
+
+.main-menu ul li ul li {
+  border-top: 1px solid rgba(0, 0, 0, 0.03);
+}
+.main-menu ul li ul li:first-child {
+  border-top: medium none;
+}
+
+/*-------------- Sticky Menu --------------*/
+
+.sticky {
+  animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+  background: rgba(255, 255, 255, 1) none repeat scroll 0 0;
+  box-shadow: 0 1px 3px rgba(50, 50, 50, 0.4);
+  left: 0;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  background: #fff;
+}
+.style-two.sticky {
+  background: #000;
+}
+.sticky .main-menu ul > li > a {
+  padding: 18px;
+}
+.sticky .main-menu ul li ul > li > a{padding: 10px;}
+.sticky .logo-area {
+  margin-bottom: 18px;
+  margin-top: 18px;
+}
+.sticky .main-menu ul > li > a::before {
+  bottom: 12px;
+}
+.sticky  .main-menu ul > li > a::after {
+  top: 12px;
+}
+.sticky .social-icon ul li a {
+  padding: 14px 6px;
+}
+.sticky .search-icn {
+  line-height: 52px;
+}
+/*-------------- Social Icon Search --------------*/
+	
+.social-icon > ul {
+  float: left;
+}
+.social-icon ul li a {
+  color: #606060;
+  display: block;
+  font-size: 16px;
+  padding: 16px 6px;
+}
+.search-icn {
+  float: right;
+  line-height: 56px;
+}
+.search-icn button{
+  background: transparent none repeat scroll 0 0;
+  border: 0 none;
+  color: #252525;
+  display: block;
+  font-size: 22px;
+  margin-left: 15px;
+  padding-left: 21px;
+  position: relative;
+}
+.search-icn button::before {
+  border-left: 1px solid #606060;
+  content: "";
+  height: 15px;
+  left: 0;
+  position: absolute;
+  top: 20px;
+}
+.social-icon ul li a:hover{color:#000;}
+.search-icn input {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #ddd;
+  box-shadow: 1px 1px 1px 1px #ddd;
+  display: block;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 58px;
+  transition: all .3s ease 0s;
+  visibility: hidden;
+  width: 300px;
+  z-index: 999;
+  transform:scaley(0);
+}
+.search-icn:hover input{opacity:1;visibility:visible;transform:scaley(1);}

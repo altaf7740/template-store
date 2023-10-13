@@ -1,0 +1,142 @@
+
+/*------------------
+    About Styles 
+---------------------*/
+
+.voopo__about__area {
+    padding-bottom: 120px;
+    position: relative;
+    z-index: 2;
+    padding-top: 120px;
+    .about--thumb {
+        position: absolute;
+        right: 0;
+        top: -52px;
+    }
+
+}
+
+.about__inner {
+    p {
+        font-size: 16px;
+        line-height: 27px;
+        margin: 0;
+        &+p {
+            margin-top: 29px;
+        }
+    }
+}
+
+// Responsive Css
+@media #{$xx-layout} {
+    .voopo__about__area .about--thumb {
+        width: 59%;
+    }
+}
+
+@media #{$xlg-layout} {
+    .voopo__about__area {
+        padding-bottom: 250px;
+    }
+    .voopo__about__area .about--thumb {
+        top: 50%;
+        transform: translateY(-50%);
+        width: 55%;
+    }
+    .voopo__about__area .about--thumb img {
+        width: 100%;
+    }
+}
+
+@media #{$lg-layout} {
+    .voopo__about__area {
+        padding-bottom: 150px;
+    }
+    .voopo__about__area .about--thumb {
+        top: 50%;
+        transform: translateY(-50%);
+        width: 55%;
+    }
+    .voopo__about__area .about--thumb img {
+        width: 100%;
+    }
+    .about__inner p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+@media #{$md-layout} {
+    .voopo__about__area {
+        padding-bottom: 150px;
+    }
+    .voopo__about__area .about--thumb {
+        position: inherit;
+        top: auto;
+        transform: inherit;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .voopo__about__area .about--thumb img {
+        width: 100%;
+    }
+    .voopo__about__area {
+        background: #f8fafb none repeat scroll 0 0;
+        padding: 120px 0 90px;
+    }
+    .voopo__about__area .about--shape {
+        display: none;
+    }
+    .about__inner p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+@media #{$sm-layout} {
+    .voopo__about__area {
+        padding-bottom: 150px;
+    }
+    .voopo__about__area .about--thumb {
+        position: inherit;
+        top: auto;
+        transform: inherit;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .voopo__about__area .about--thumb img {
+        width: 100%;
+    }
+    .voopo__about__area {
+        background: #f8fafb none repeat scroll 0 0;
+        padding: 120px 0 90px;
+    }
+    .voopo__about__area .about--shape {
+        display: none;
+    }
+    .about__inner p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .works .content p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .works__inner p {
+        font-size: 14px;
+        line-height: 24px;
+        padding-right: 0;
+    }
+    .voopo__about__area {
+        padding: 60px 0;
+    }
+    .about__inner p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+}
+
+@media #{$xs-layout} {}
+
+@media #{$xxs-layout} {}

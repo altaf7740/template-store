@@ -1,0 +1,204 @@
+/*----------------------------------------*/
+/*  24.  Subscribe
+/*----------------------------------------*/
+
+/*-- Subscribe Content One --*/
+.subscribe-content-one {
+    & h2 {
+        color: $white;
+        font-weight: 500;
+        margin: 0;
+        @media #{$desktop-device}{
+            font-size: 24px;
+            line-height: 30px;
+        }
+        @media #{$large-mobile}{
+            font-size: 20px;
+            line-height: 26px;
+        }
+        @media #{$small-mobile}{
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+}
+
+/*-- Subscribe Form One --*/
+.subscribe-form-one {
+    align-self: center;
+    & form {
+        position: relative;
+        padding-right: 180px;
+        @media #{$large-mobile}{
+            padding-right: 150px
+        }
+        @media #{$small-mobile}{
+            padding-right: 0;
+        }
+        
+        & input[type="email"] {
+            background-color: transparent;
+            width: 100%;
+            height: 50px;
+            border: 1px solid rgba($white, 0.4);
+            color: rgba($white, 0.4);
+            border-radius: 5px;
+            line-height: 24px;
+            padding: 12px 30px;
+            font-size: 14px;
+            font-family: $open-sans;
+            
+            &:-moz-placeholder {
+                color: rgba($white, 0.4);
+                opacity: 1;
+            }
+            &::-webkit-input-placeholder {
+                color: rgba($white, 0.4);
+                opacity: 1;
+            }
+            &::-moz-placeholder {
+                color: rgba($white, 0.4);
+                opacity: 1;
+            }
+            &:-ms-input-placeholder {
+                color: rgba($white, 0.4);
+                opacity: 1;
+            }
+        }
+        & input[type="submit"], & button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 170px;
+            height: 50px;
+            background-color: $blue;
+            border: none;
+            border-radius: 5px;
+            padding: 13px 20px;
+            color: rgba($white, 0.8);
+            text-transform: uppercase;
+            @media #{$large-mobile}{
+                width: 140px;
+            }
+            @media #{$small-mobile}{
+                width: 100%;
+                position: static;
+                margin-top: 10px;
+            }
+            &:hover {
+                background-color: $white;
+                color: $blue;
+            }
+        }
+        
+    }
+}
+
+/*-- Subscribe Content Two --*/
+.subscribe-content-two {
+    padding-right: 45px;
+    &::before {
+        position: absolute;
+        right: -1px;
+        top: 0;
+        width: 2px;
+        height: 100%;
+        content: "";
+        background-color: $white;
+        opacity: 0.4;
+    }
+    & p {
+        color: $white;
+        margin-bottom: 7px;
+    }
+    & h3 {
+        color: $white;
+        font-weight: 500;
+        margin-bottom: 0;
+        @media #{$small-mobile}{
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+    @media #{$large-mobile}{
+        padding-right: 15px;
+        text-align: left !important;
+        padding-bottom: 20px;
+        &::before {
+            height: 2px;
+            width: 100px;
+            top: auto;
+            bottom: 0;
+            right: auto;
+            left: 15px;
+        }
+    }
+}
+
+/*-- Subscribe Form Two --*/
+.subscribe-form-two {
+    padding-left: 45px;
+    @media #{$large-mobile}{
+        padding-left: 15px;
+    }
+    & form {
+        position: relative;
+        max-width: 440px;
+        width: 100%;
+        
+        & input[type="email"] {
+            background-color: transparent;
+            width: 100%;
+            font-style: italic;
+            height: 50px;
+            border: 1px solid rgba($white, 0.4);
+            color: rgba($white, 0.4);
+            border-radius: 50px;
+            line-height: 24px;
+            padding: 12px 45px 12px 25px;
+            font-size: 14px;
+            font-family: $open-sans;
+            
+            &:-moz-placeholder {
+                color: rgba($white, 0.4);
+                opacity: 1;
+            }
+            &::-webkit-input-placeholder {
+                color: rgba($white, 0.4);
+                opacity: 1;
+            }
+            &::-moz-placeholder {
+                color: rgba($white, 0.4);
+                opacity: 1;
+            }
+            &:-ms-input-placeholder {
+                color: rgba($white, 0.4);
+                opacity: 1;
+            }
+        }
+        
+        & input[type="submit"], & button {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            width: 40px;
+            height: 40px;
+            background-color: rgba($white, 0.4);
+            border: none;
+            border-radius: 50px;
+            padding: 0;
+            text-align: center;
+            color: $white;
+            overflow: hidden;
+            & i {
+                font-size: 20px;
+                line-height: 44px;
+            }
+            &:hover {
+                background-color: $white;
+                color: $blue;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,119 @@
+/*----------------------------------------*/
+/*  + Testimonial
+/*----------------------------------------*/
+
+.ht-testimonial-slider-two {
+    & .slick-arrow {
+        border: none;
+        position: absolute;
+        top: 111px;
+        width: 40px;
+        height: 40px;
+        margin-top: -20px;
+        background-color: $cyan-blue;
+        color: $white;
+        text-align: center;
+        border-radius: 50%;
+        z-index: 9999;
+        @media #{$desktop-device}{
+            top: 130px;
+        }
+        &.slick-prev {
+            left: -45px;
+            @media #{$desktop-device}{
+                left: -5px;
+            }
+            @media #{$tablet-device}{
+                left: -5px;
+            }
+            @media #{$large-mobile}{
+                left: -5px;
+            }
+        }
+        &.slick-next {
+            right: -45px;
+            @media #{$desktop-device}{
+                right: -5px;
+            }
+            @media #{$tablet-device}{
+                right: -5px;
+            }
+            @media #{$large-mobile}{
+                right: -5px;
+            }
+        }
+        &:hover {
+            background-color: $blue;
+            box-shadow: 0 10px 35px -7px rgba($blue, 0.8);
+        }
+        & i {
+            line-height: 40px;
+            font-size: 24px;
+        }
+    }
+    
+    & .slick-dots {
+        display: flex !important;
+        justify-content: center;
+        margin-top: 40px;
+        & li {
+            display: inline-flex;
+            padding: 0 5px;
+            & button {
+                border: 1px solid $heading-color;
+                width: 12px;
+                height: 12px;
+                padding: 0;
+                border-radius: 50%;
+                background-color: transparent;
+                text-indent: -9999px;
+            }
+            &.slick-active {
+                & button {
+                    background-color: $heading-color;
+                }
+            }
+        }
+    }
+    
+}
+
+/*-- Single Testimonial Two --*/
+.ht-testimonial-two {
+    text-align: center;
+    & p {
+        font-size: 18px;
+        font-family: $poppins;
+        line-height: 30px;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 32px;
+        &::before {
+            font-family: 'Fontawesome';
+            content: "\f10d";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            color: $heading-color;
+            font-size: 74px;
+            line-height: 1;
+            opacity: 0.1;
+            z-index: -1;
+        }
+    }
+    & h3 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        color: $heading-color-light;
+        margin-bottom: 6px;
+    }
+    & h5 {
+        font-size: 14px;
+        color: $red;
+        line-height: 1;
+        margin-bottom: 0;
+    }
+    
+}

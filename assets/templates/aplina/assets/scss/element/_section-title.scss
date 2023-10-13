@@ -1,0 +1,59 @@
+/*--
+    - Section Title Css
+-------------------------------*/
+
+
+.section-title {
+    margin-bottom: 60px;
+    text-align: center;
+    @media #{$large-mobile}{
+        margin-bottom: 50px;
+    }
+    & h2 {
+        font-size: 30px;
+        margin-top: -4px;
+        font-weight: 800;
+        text-transform: uppercase;
+        background: url(../images/icon/1.png) 50% 100% no-repeat;
+        margin-bottom: 20px;
+        text-align: center;
+        padding-bottom: 38px;
+        @media #{$large-mobile}{
+            font-size: 26px;
+        }
+    }
+    & p {
+        font-size: 16px;
+    }
+    &.text-black {
+        & h2 {
+            color: #fff;
+            background: url(../images/icon/2.png) 50% 100% no-repeat;
+        }
+        & p {
+            color: #fff;
+        }
+    }
+}
+.contact-title {
+    margin-bottom: 30px;
+    & h2 {
+        font-size: 28px;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+    & p {
+        font-size: 16px;
+    }
+}
+
+.about-title {
+    & h2 {
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        font-size: 30px;
+        line-height: 36px;
+    }
+}

@@ -1,0 +1,127 @@
+/* -----------------------------------
+Template Name: Aerial
+Description: This is html5 template
+Author: HasTech
+Version: 1.0
+NOTE: This is Slider style file. All Slider related style included in this file.
+
+--------------------------------------*/
+.slider-area, .slider-two-area, .banner-content,.single-slide, .owl-item, .owl-stage, .slider-wrapper, .owl-stage-outer, .banner-content .container, .banner-content .row, .banner-content .col-lg-10, .banner-content .text-content-wrapper, .banner-content .text-content, .banner-content .display-table, .banner-content .display-table-cell{
+    height: 100%;
+}
+.slider-area {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.single-slide:after, .video-banner:after, .fixed-bg-1:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .65);
+    content: "";
+    z-index: 2
+}
+.slider-area .owl-item  .single-slide img {width: auto ;}
+.banner-content .text-content-wrapper {display: table; width: 100%}
+.banner-content .text-content {
+    display: table-cell;
+    position: relative;
+    vertical-align: middle;
+    z-index: 3;
+}
+.social-btn {
+    clear: both; 
+    display: block;
+    animation-delay: 1.6s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeOutDown;
+}
+.social-btn a {
+    color: #ffffff;
+    display: inline-block;
+    font-size: 22px;
+    height: 32px;
+    text-align: center;
+    width: 32px;
+    border-radius: 2px;
+    transition: all 0.3s ease 0s
+}
+.social-btn a:hover {background: #fff; color: #535353}
+.banner-content h1 {
+    color: #ffffff;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 55px;
+    margin-bottom: 39px;
+    text-transform: uppercase;
+    animation-delay: 0.4s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeOutDown;
+}
+.banner-content h2 {
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 20px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeOutDown;
+}
+.slider-area .owl-item.active .banner-content h2, .slider-area .owl-item.active .banner-content h1, .slider-area .owl-item.active .banner-content .social-btn{
+    animation-name: fadeInUp
+}
+.slider-area .owl-nav div {display: none}
+.slider-area .owl-dots {
+    position: absolute;
+    right: 70px;
+    text-align: center;
+    top: 43%;
+    z-index: 9;
+}
+.slider-area .owl-dot {
+    background: transparent;
+    border: 1px solid #dadbdd;
+    border-radius: 50%;
+    height: 15px;
+    margin: 11px 0;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    width: 15px;
+    z-index: 1;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s
+}
+.slider-area .owl-dot.active, .slider-area .owl-dot:hover {background: #fff}
+.single-slide {
+    background-position: center center;
+    background-size: cover;
+}
+.banner-content.static-text {
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    z-index: 3;
+}
+.video-banner, .fixed-bg-1 {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.background-area {position: relative}
+.fixed-bg-1 {background: rgba(0, 0, 0, 0) url("../../img/slider/1.jpg") no-repeat fixed center top / cover ;}
+.fixed-bg-1 .banner-content h1, .fixed-bg-1 .banner-content h2, .fixed-bg-1 .banner-content .social-btn, .video-banner .banner-content h1, .video-banner .banner-content h2, .video-banner .banner-content .social-btn {
+    animation-name: fadeInUp;
+}

@@ -1,0 +1,245 @@
+/*----------------------------------------*/
+/*  30.  Contact
+/*----------------------------------------*/
+
+/*-- Home Google Map --*/
+.home-google-map {
+    float: left;
+    height: 500px;
+    width: 100%;
+    @media #{$large-mobile}{
+        height: 300px;
+    }
+}
+
+/*-- Contact Map Section --*/
+.contact-map-section {
+    position: relative;
+    
+    /*-- Contact Google Map --*/
+    & .contact-google-map {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        @media #{$tablet-device}{
+            position: static;
+            height: 400px;
+            width: 100%;
+        }
+        @media #{$large-mobile}{
+            position: static;
+            height: 400px;
+            width: 100%;
+        }
+    }
+}
+
+/*-- Contact Map Content --*/
+.contact-map-content {
+    padding: 200px 15px;
+    @media #{$tablet-device}{
+        padding: 100px 15px;
+    }
+    @media #{$large-mobile}{
+        padding: 100px 15px;
+    }
+    & h2 {
+        font-weight: 500;
+        margin-bottom: 22px;
+        @media #{$large-mobile}{
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+    & p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+/*-- Contact Info --*/
+.contact-info {
+    &::before {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 300%;
+        background-color: $blue;
+        content: "";
+        @media #{$tablet-device}{
+            width: 200%;
+            left: -50%;
+            right: -50%;
+        }
+        @media #{$large-mobile}{
+            width: 200%;
+            left: -50%;
+            right: -50%;
+        }
+    }
+    
+    /*-- Contact Info Wrapper --*/
+    & .contact-info-wrapper {
+        padding: 100px 0;
+        position: relative;
+        z-index: 2;
+        & .contact-title {
+            margin-bottom: 30px;
+            & h2 {
+                color: $white;
+                font-weight: 500;
+                position: relative;
+                padding-bottom: 14px;
+                margin-bottom: 14px;
+                @media #{$large-mobile}{
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+                &::before {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    height: 1px;
+                    width: 50px;
+                    content: "";
+                    background-color: $white;
+                }
+            }
+            & p {
+                color: $white;
+                max-width: 370px;
+            }
+        }
+        
+        /*-- Info --*/
+        & .info {
+            max-width: 350px;
+            display: block;
+            clear: both;
+            margin-top: 30px;
+            float: left;
+            overflow: hidden;
+            & p {
+                display: block;
+                float: left;
+                width: 100%;
+                color: $white;
+                & strong {
+                    font-size: 16px;
+                    font-weight: 700;
+                    float: left;
+                    width: 90px;
+                }
+                & span {
+                    font-size: 14px;
+                    line-height: 25px;
+                    display: block;
+                    overflow: hidden;
+                }
+            }
+        }
+        
+        /*-- Social --*/
+        & .social {
+            width: 100%;
+            display: block;
+            overflow: hidden;
+            margin-top: 60px;
+            float: left;
+            & a {
+                width: 30px;
+                height: 30px;
+                border-radius: 50px;
+                float: left;
+                background-color: rgba($black, 0.15);
+                text-align: center;
+                color: $white;
+                margin-right: 20px;
+                &:hover {
+                    background-color: $white;
+                    color: $blue;
+                }
+                & i {
+                    display: block;
+                    line-height: 32px;
+                }
+            }
+        }
+    }
+}
+
+/*-- Contact Form --*/
+.contact-form {
+    
+    /*-- Contact Form Wrapper --*/
+    & .contact-form-wrapper {
+        padding: 100px 70px;
+        position: relative;
+        z-index: 2;
+        @media #{$tablet-device}{
+            padding: 100px 0;
+        }
+        @media #{$large-mobile}{
+            padding: 100px 0;
+        }
+        & .contact-title {
+            margin-bottom: 30px;
+            & h2 {
+                font-weight: 500;
+                position: relative;
+                padding-bottom: 14px;
+                margin-bottom: 14px;
+                @media #{$large-mobile}{
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+                &::before {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    height: 1px;
+                    width: 50px;
+                    content: "";
+                    background-color: $heading-color;
+                }
+            }
+            & p {
+                max-width: 370px;
+            }
+        }
+        
+        /*-- Form --*/
+        & form {
+            & input[type="text"], input[type="email"] , textarea {
+                height: 45px;
+                margin-bottom: 15px;
+                background-color: #edf2fa;
+                line-height: 25px;
+                padding: 10px 20px;
+                width: 100%;
+                color: $body-color;
+                border: none;
+            }
+            & textarea {
+                height: 120px;
+                resize: none;
+            }
+            & input[type="submit"] {
+                height: 45px;
+                background-color: $blue;
+                color: white;
+                line-height: 25px;
+                padding: 10px 50px;
+                border: none;
+                text-transform: uppercase;
+                font-weight: 600;
+                &:hover {
+                    background-color: darken($blue, 5);
+                }
+            }
+        }
+    }
+}

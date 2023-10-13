@@ -1,0 +1,129 @@
+/*----------------------------------------*/
+/*  25.  Product
+/*----------------------------------------*/
+
+/*-- Product Slider --*/
+.product-slider {
+    float: left;
+    width: 100%;
+}
+
+/*-- Product Item --*/
+.product-item {
+    position: relative;
+    overflow: hidden;
+    
+    /*-- Image --*/
+    & .image {
+        display: block;
+        & img {
+            width: 100%;
+        }
+    }
+    
+    /*-- label --*/
+    & .label {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        left: 20px;
+        top: 20px;
+        background-color: $heading-color;
+        color: $white;
+        font-size: 14px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 40px;
+        text-transform: capitalize;
+        z-index: 2;
+    }
+    
+    /*-- Wishlist --*/
+    & .wishlist {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        right: 20px;
+        top: 20px;
+        background-color: $heading-color;
+        color: $white;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 40px;
+        text-transform: capitalize;
+        z-index: 2;
+        opacity: 0;
+        &:hover {
+            background-color: $blue;
+        }
+        & i {
+            font-size: 20px;
+            line-height: 42px;
+        }
+    }
+    
+    /*-- Content --*/
+    & .content {
+        position: absolute;
+        left: 0;
+        bottom: -120px;
+        width: 100%;
+        background-color: $bg-light-gray;
+        padding: 20px 30px;
+        display: flex;
+        transition: all 0.3s ease 0s;
+        z-index: 3;
+        
+        /*-- Details --*/
+        & .details {
+            float: left;
+            & h4 {
+                margin-bottom: 4px;
+                & a {
+                    &:hover {
+                        color: $blue;
+                    }
+                }
+            }
+            & span {
+                font-size: 14px;
+                display: block;
+                line-height: 20px;
+            }
+        }
+        
+        /*-- Add to Cart Button --*/
+        & .add-to-cart {
+            background-color: $heading-color;
+            border: medium none;
+            border-radius: 3px;
+            color: $white;
+            float: right;
+            height: 40px;
+            margin: auto 0 auto auto;
+            text-align: center;
+            width: 40px;
+                &:hover {
+                    background-color: $blue;
+                }
+            & i {
+                font-size: 20px;
+                line-height: 40px;
+            }
+        }
+    }
+    
+    &:hover {
+        & .image {
+            & img {
+                transform: scale(1.2);
+            }
+        }
+        & .wishlist {
+            opacity: 1;
+        }
+        & .content {
+            bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,146 @@
+/*----------------------------------------*/
+/*  14.  Footer Area
+/*----------------------------------------*/
+.footer-area {
+}
+/*Footer Top*/
+.footer-top {
+    background-image: url(img/bg/footer.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center bottom
+}
+/*Footer Widget*/
+.footer-widget {
+    @media #{$tablet-device}{
+        &:nth-child(2n+1) {
+            clear: both;
+        }
+    }
+    & h4 {
+        display: block;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        color: $color-white;
+        line-height: 14px;
+        margin-bottom: 38px;
+        text-transform: uppercase;
+    }
+}
+
+/*About Widget*/
+.about-widget {
+    max-width: 320px;
+    & img {
+        margin-bottom: 25px;
+    }
+    & p {
+        color: #cccccc;
+        margin-bottom: 0;
+    }
+}
+.footer-social {
+    margin-top: 30px;
+    & a {
+        color: #ffffff;
+        display: inline-block;
+        margin-right: 25px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover {
+            color: $theme-color;
+        }
+        & i {
+            display: block;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+        }
+    }
+}
+
+/*Instagram Widget*/
+.link-widget {
+    margin-left: -10px;
+    margin-right: -10px;
+    & li {
+        float: left;
+        margin-bottom: 10px;
+        padding: 0 10px;
+        width: 50%;
+        & a {
+            color: #cccccc;
+            display: block;
+            font-size: 16px;
+            line-height: 20px;
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+}
+
+/*Instagram Widget*/
+.instagram-widget {
+    margin-left: -4px;
+    margin-right: -4px;
+    & li {
+        width: 25%;
+        float: left;
+        display: block;
+        padding: 0 4px 8px;
+        @media #{$desktop-device}{
+            width: 33.3333%;
+        }
+        & a {
+            display: block;
+            position: relative;
+            &::after {
+                background-color: $theme-color;
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                content: "";
+                opacity: 0;
+                z-index: 1;
+            }
+            &:hover::after {
+                opacity: 0.8;
+            }
+            &::before {
+                position: absolute;
+                font-family: "Material-Design-Iconic-Font";
+                left: 50%;
+                top: 50%;
+                content: "\f18e";
+                opacity: 0;
+                color: $color-white;
+                @include transform(translateX(-50%) translateY(-50%) rotate(-45deg));
+                font-size: 24px;
+                z-index: 3;
+            }
+            &:hover::before {
+                opacity: 1;
+            }
+            & img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+/*Footer Copyright*/
+.footer-bottom {
+    background-color: #191919;
+}
+.copyright {
+    padding: 25px 0;
+    & p {
+        color: lighten( $text-color, 50% );
+        line-height: 20px;
+    }
+}

@@ -1,0 +1,308 @@
+@import "../variables";
+@import "../mixins";
+
+
+/*======= Login Styles =======*/
+
+
+
+
+
+.wrapper{
+	position: relative;
+}
+
+.accountbox-wrapper,
+.login-wrapper{
+	z-index: -9991;
+	@include flexbox;
+	@include flex-wrap(wrap);
+	position: fixed;
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	@include transition(all 0.5s ease-in-out 0s);
+	visibility: hidden;
+	&.is-visible{
+		visibility: visible;
+		opacity: 1;
+		z-index: 9991;
+	}
+	.body-overlay{
+		position: fixed;
+		left: 0;
+		top: 0;
+		z-index: -21;
+		height: 100%;
+		width: 100%;
+		background: #15181C;
+		opacity: 0;
+		@include transition(all 0.5s ease-in-out 0s);
+		cursor: url(images/icon/close.png), crosshair;
+	}
+	&.is-visible{
+		.accountbox{
+			@include transform(translate(-50%, -50%));
+			opacity: 1;
+			visibility: visible;
+		}
+		.body-overlay{
+			opacity: 0.85;
+			visibility: visible;
+			z-index: 21;
+		}
+
+	}
+
+}
+
+.accountbox__inner{
+ 	padding: 40px;
+}
+
+.accountbox{
+	background: #fff;
+	position: absolute;
+	z-index: 23;
+	left: 50%;
+	top: 50%;
+	width: 460px;
+	opacity: 0;
+	visibility: hidden;
+	@include transform(translate(-50%, -120%));
+	@include transition(transform 0.5s cubic-bezier(0.38, 0.7, 0.66, 0.82) 0.3s);
+	h4{
+		color: #ffb606;
+	    font-family: $heading-font;
+	    font-size: 24px;
+	    text-transform: uppercase;
+	    margin-bottom: 42px;
+	}
+	.single-input{
+		margin-top: 25px;
+		input{
+			background: transparent none repeat scroll 0 0;
+		    border: 1px solid #eeeeee;
+		    color: #959595;
+		    font-size: 14px;
+		    font-weight: 400;
+		    height: 40px;
+		    line-height: 42px;
+		    padding: 0 20px;
+		    width: 100%;
+			&:focus{
+				border-color: $theme-color;
+			}
+			&::placeholder{
+				color: #959595 !important;
+				opacity: 1;
+			}
+			&::-moz-placeholder{
+				color: #959595 !important;
+				opacity: 1;
+			}
+		}
+		button{
+			&.sign__btn{
+				background: transparent none repeat scroll 0 0;
+			    border: 1px solid #eee;
+			    color: #959595;
+			    height: 40px;
+			    margin-top: 15px;
+			    padding: 0 20px;
+			    transition: all 0.3s ease 0s;
+			    &:hover{
+			    	background: $theme-color;
+				    border: 1px solid $theme-color;
+				    color: #fff;
+			    }
+			}
+		}
+	}
+}
+
+
+
+
+.accountbox-login__others{
+	margin-top: 25px;
+	h6{
+		background: #fff none repeat scroll 0 0;
+	    color: #959595;
+	    display: inline-block;
+	    font-family: $heading-font;
+	    font-size: 14px;
+	    margin-bottom: 25px;
+	    padding: 0 10px;
+	    position: relative;
+	    &::before {
+		  background: #dddddd none repeat scroll 0 0;
+		  content: "";
+		  height: 1px;
+		  left: 50%;
+		  position: absolute;
+		  top: 50%;
+		  transform: translateY(-50%) translateX(-50%);
+		  width: 180px;
+		  z-index: -1;
+		}
+	}
+}
+
+
+.accountbox h3 {
+  background: #ffb606 none repeat scroll 0 0;
+  border-top: 1px solid #999999;
+  color: #fff;
+  font-family: $heading-font;
+  font-size: 14px;
+  padding: 13px 0;
+  text-align: center;
+}
+
+
+.accountbox-login__others{
+	.dacre__social__link{
+		li{
+			a{
+				span{
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+
+
+.accountbox-close-button{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background: transparent;
+	text-align: center;
+	line-height: 40px;
+	font-size: 25px;
+	color: #333333;
+	position: absolute;
+	right: 4px;
+	top: 6px;
+	cursor: pointer;
+	@include transition(all 0.3s ease-in-out 0s);
+	&:hover{
+		opacity: 0.9;
+		color: $theme-color;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+// Responsive Css
+
+
+@media #{$md-layout}{
+	.accountbox-wrapper,
+	.login-wrapper{
+		overflow-x: hidden;
+		overflow-y: scroll;
+		.accountbox{
+			top: 50px;
+			.accountbox-close-button{
+				left: auto;
+				right: 0;
+			}
+		}
+		&.is-visible{
+			.accountbox{
+				@include transform(translate(-50%, 0));
+			}
+		}
+	}
+}
+
+
+@media #{$sm-layout}{
+	.accountbox-wrapper,
+	.login-wrapper{
+		overflow-x: hidden;
+		overflow-y: scroll;
+		.accountbox{
+			top: 50px;
+			width: calc(100% - 60px);
+			@include transform(translate(-50%, -120%));
+		    left: 50%;
+			&.is-visible{
+				@include transform(translate(0, 0));
+			}
+		}
+
+		&.is-visible{
+			.accountbox{
+				@include transform(translate(-50%, 0));
+			}
+		}
+	}
+}
+
+@media #{$xs-layout}{
+	.accountbox-wrapper,
+	.login-wrapper{
+		overflow-x: hidden;
+		overflow-y: scroll;
+		.accountbox{
+		    padding: 45px 30px;
+		    padding-right: 30px;
+			top: 50px;
+			width: calc(100% - 60px);
+			@include transform(translate(-50%, -120%));
+		    left: 50%;
+			&.is-visible{
+				@include transform(translate(0, 0));
+			}
+		}
+
+		&.is-visible{
+			.accountbox{
+				@include transform(translate(-50%, 0));
+			}
+		}
+	}
+}
+
+
+
+
+@media #{$xs-layout}{
+
+	.accountbox-wrapper .accountbox, .login-wrapper .accountbox {
+	  padding: 0;
+	}
+	.accountbox .single-input {
+	  margin-top: 9px;
+	}
+	.accountbox-login__others {
+	  margin-top: 10px;
+	}
+	.accountbox h4 {
+	  font-size: 15px;
+	  margin-bottom: 15px;
+	}
+
+
+
+}
+
+
+
+

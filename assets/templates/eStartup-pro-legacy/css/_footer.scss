@@ -1,0 +1,63 @@
+// main: style.scss
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+.footer {
+  background: #2a2c30;
+  padding-top: 50px;
+
+  .footer-logo .navbar-brand {
+    color: #fff;
+    display: inline-block;
+    float: none;
+    font-family: "Philosopher", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    height: 100%;
+    letter-spacing: 0.2em;
+    padding-left: 0;
+    padding-top: 0;
+  }
+
+  .footer-logo p {
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .list-menu > h4 {
+    color: #fff;
+    padding-bottom: 20px;
+  }
+
+  .list-menu ul li a {
+    color: #fff;
+    font-size: 12px;
+    padding-left: 5px;
+    text-decoration: none;
+    letter-spacing: 0;
+  }
+
+  .copyrights {
+    background: #fff;
+    margin-top: 50px;
+    text-align: center;
+    padding: 25px;
+  }
+
+  .copyrights p, .copyrights .credits {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0;
+    a {
+      letter-spacing: 0;
+      color: $accent-color;
+    }
+  }
+
+}

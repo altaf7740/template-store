@@ -1,0 +1,62 @@
+// main: style.scss
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  height: 90px;
+  padding: 25px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+
+  @media (max-width: 991px) {
+    background: rgba($heading-color, 0.98);
+    height: 70px;
+    padding: 15px 0;
+    transition: all 0.5s;
+  }
+
+  @media (max-width: 1199px) {
+    .container {
+      max-width: 100%;
+    }
+  }
+
+  &.header-scrolled, &.header-fixed  {
+    background: rgba($heading-color, 0.98);
+    height: 70px;
+    padding: 15px 0;
+    transition: all 0.5s;
+  }
+
+
+  #logo {
+
+    h1 {
+      font-size: 36px;
+      margin: 0;
+      padding: 6px 0;
+      line-height: 1;
+      font-family: $accent-font;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      span {
+        color: $accent-color;
+      }
+    }
+
+    h1 a, h1 a:hover {
+      color: #fff;
+    }
+
+    img {
+      padding: 0;
+      margin: 0;
+      max-height: 40px;
+    }
+  }
+}

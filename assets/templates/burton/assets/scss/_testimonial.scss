@@ -1,0 +1,109 @@
+/*--
+    10. Testimonial Css
+-------------------------------------*/
+.bg_image--83 {
+    background-image: url(../images/bg/bg-image-83.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.testimonial-style-2 {
+    .testimonal {
+        text-align: center;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+        margin-top: 53px;
+        padding-bottom: 27px;
+        border-radius: 10px;
+        padding-top: 1px;
+
+        img {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            border: 2px solid #727272;
+            border-radius: 50%;
+            max-width: 100px;
+            box-sizing: content-box;
+        }
+
+        .content {
+            margin-top: 69px;
+
+            p {
+                color: #5b5b5b;
+                font-size: 14px;
+                line-height: 24px;
+                padding: 0 4%;
+                font-style: italic;
+                margin-bottom: 4px;
+            }
+
+            h4 {
+                color: #5b5b5b;
+                font-size: 16px;
+                line-height: 37px;
+                margin: 0;
+                font-weight: 600;
+            }
+
+            span {
+                color: #3e3e3e;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.testimonial-style-2 .slick-slide {
+    padding: 5px 15px;
+}
+
+.testimonial-style-2 .slick-center .testimonal img {
+    border: 2px solid #ff6600;
+}
+
+.testimonial-style-2 .slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: #e3e3e3;
+    border-radius: 100%;
+}
+
+.testimonial-style-2 .slick-dots li.slick-active button {
+    background: #ff6600;
+}
+
+.testimonial-style-2 .slick-dots li button:before {
+    display: none;
+}
+
+.testimonial-style-2 .slick-dots {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.testimonial-style-2 .slick-dots li {
+    margin: 0 7px;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}

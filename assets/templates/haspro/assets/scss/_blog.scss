@@ -1,0 +1,88 @@
+/*----------------------------------------*/
+/*  + Blog
+/*----------------------------------------*/
+
+.ht-blog-two {
+    
+    /*-- Image --*/
+    & .image {
+        display: block;
+        overflow: hidden;
+        margin-bottom: 45px;
+        & img {
+            width: 100%;
+            transition: all 0.4s ease 0s;
+        }
+    }
+    
+    /*-- Content --*/
+    & .content {
+        
+        /*-- Title --*/
+        & .title {
+            font-family: $poppins;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 30px;
+            margin-bottom: 14px;
+            @media #{$large-mobile}{
+                font-size: 18px;
+                line-height: 24px;
+            }
+            & a {
+                color: $heading-color-light;
+                &:hover {
+                    color: $red;
+                }
+            }
+        }
+        
+        /*-- Meta --*/
+        & .meta {
+            list-style: none;
+            margin-bottom: 14px;
+            & li {
+                font-size: 14px;
+                font-family: $montserrat;
+                color: $body-color-light;
+                line-height: 24px;
+                float: left;
+                &::after {
+                    content: "|";
+                    margin: 0 15px;
+                }
+                &:last-child {
+                    &::after {
+                        display: none;
+                    }
+                }
+                & a {
+                    &:hover {
+                        color: $red;
+                    }
+                }
+            }
+        }
+        
+        /*-- Description --*/
+        & .desc {
+            margin-bottom: 32px;
+            & p {
+                font-family: $poppins;
+                font-weight: 300;
+                color: $body-color;
+            }
+        }
+        
+        /*-- Button --*/
+        & .btn {}
+    }
+    
+    &:hover {
+        & .image {
+            & img {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

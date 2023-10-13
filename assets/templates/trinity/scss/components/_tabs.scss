@@ -1,0 +1,168 @@
+/*****************************
+31 - Components - Tabs
+*****************************/
+
+/*-- 31.01 - Tab Content --*/
+
+.tab-content {
+    width: 100%;
+    .tab-pane {
+        display: none;
+        height: 0;
+        max-width: 100%;
+        visibility: hidden;
+        overflow: hidden;
+        opacity: 0;
+        &.active {
+            display: block;
+            height: auto;
+            visibility: visible;
+            opacity: 1;
+            overflow: visible;
+        }
+    }
+}
+
+
+/*-- 31.02 - Tab Style 1 --*/
+.tab-style-1{
+    .nav{
+        &-tabs{
+            @extend %border-none;
+        }
+        &-link{
+            @extend %fontSize18;
+            @extend %textUpper;
+            @extend %fontWeight700;
+            @extend %border-none;
+            color: $color-silver;
+            padding: 0 17px 0;
+            line-height: 1.9;
+            @include breakpoint(small){
+                padding: 0 10px 0;
+                font-size: 16px;
+            }
+            &:first-child{
+                padding-left: 0;
+            }
+            &:last-child{
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+/*-- 31.03 - Tab Style 2 --*/
+.tab-style-2{
+    .nav{
+        &-tabs{
+            @extend %border-none;
+            background: #e7f1f3;
+        }
+        &-link{
+            @extend %textUpper;
+            @extend %fontWeight700;
+            @extend %border-none;
+            @extend %lineheight1;
+            @extend %textCenter;
+            color: $color-scoropion;
+            font-size: 24px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            flex-basis: calc(100% / 3);
+            max-width: calc(100% / 3);
+            @include breakpoint(small){
+                padding-top: 20px;
+                padding-bottom: 20px;
+                font-size: 20px;
+            }
+            @include breakpoint(xsmall){
+                flex-basis: 100%;
+                max-width: 100%;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 25px;
+                font-size: 20px;
+                text-align: left;
+            }
+            &:not(:last-child){
+                border-right: 1px solid $color-alto-2;
+                @include breakpoint(xsmall){
+                    border-right: 0px;
+                    border-bottom: 1px solid $color-alto-2;
+                }
+            }
+            &.active{
+                background-color: transparent;
+                @extend %heading-color;
+            }
+        }
+    }
+    .tab{
+        &-content{
+            background-color: $color-selago;
+            padding: 53px 60px 55px;
+            @include breakpoint(small){
+                padding: 32px 35px 32px;
+            }
+            @include breakpoint(xsmall){
+                padding: 30px 25px 30px;
+            }
+        }
+    }
+}
+
+/*-- 31.04 - User Dashboard tab --*/
+.user-dashboard-tab{
+    @extend %flexbox;
+    @extend %align-start;
+    &__head{
+        background-color: $color-perigal;
+        padding: 15px 0;
+        @include flex-basis(190px);
+        max-width: 190px;
+        margin-right: 40px;
+        @include breakpoint(small){
+            @include flex-basis(100%);
+            max-width: 100%;
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 30px;
+            padding: 0;
+        }
+        .nav-link{
+            @extend %displayBlock;
+            padding: 10px 30px;
+            font-family: $font-2;
+            @include breakpoint(small){
+                padding: 12px;
+            }
+            &.active, 
+            &:hover{
+                @extend %primary-bg-color;
+                @extend %white-color;
+            }
+        }
+    }
+
+    &__content{
+        @include flex-basis(calc(100% - 230px));
+        max-width: calc(100% - 230px);
+        font-family: $font-2;
+        @include breakpoint(small){
+            @include flex-basis(100%);
+            max-width: 100%;
+            width: 100%;
+        }
+        p{
+            a{
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+
+

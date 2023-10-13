@@ -1,0 +1,112 @@
+// About Area
+.about_area {
+    .about_content {
+        padding-right: 88px;
+        h2 {
+            color: #191919;
+            font-size: 45px;
+            padding-bottom: 20px;
+            position: relative;
+            margin-bottom: 50px;
+            &::before {
+                background: #454545 none repeat scroll 0 0;
+                bottom: 0;
+                content: "";
+                height: 4px;
+                position: absolute;
+                width: 115px;
+            }
+            @media #{$sm-layout} {
+                font-size: 33px;
+                margin-bottom: 26px;
+            }
+            @media #{$small-mobile} {
+                font-size: 28px;
+                margin-bottom: 21px;
+            }
+        }
+        h3 {
+            color: #252525;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 35px;
+            @media #{$sm-layout} {
+                font-size: 16px;
+                line-height: 28px;
+            }
+        }
+        p {
+            color: #252525;
+            font-size: 16px;
+            line-height: 28px;
+            margin-top: 20px;
+            @media #{$sm-layout} {
+                font-size: 14px;
+                line-height: 25px;
+            }
+        }
+        @media #{$sm-layout} {
+            padding-right: 31px;
+            margin-bottom: 43px;
+        }
+        @media #{$small-mobile} {
+            padding-right: 0;
+        }
+    }
+    .thumb {
+        @media #{$md-layout} {
+            text-align: center;
+        }
+        @media #{$sm-layout} {
+            text-align: center;
+        }
+        img {}
+    }
+    @media #{$sm-layout} {
+        padding-bottom: 50px;
+        padding-top: 60px;
+    }
+    @media #{$small-mobile} {
+        padding-bottom: 50px;
+        padding-top: 60px;
+    }
+}
+
+// Video area
+.video_block_inner {
+    position: relative;
+    margin-top: 60px;
+    &::before {
+        background: #000000 none repeat scroll 0 0;
+        content: "";
+        height: 100%;
+        left: 0;
+        opacity: 0.4;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    .thumb {
+        a {
+            img {}
+        }
+    }
+    .video__btn {
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        a {
+            border: 4px solid #ffffff;
+            border-radius: 50%;
+            color: #ffffff;
+            display: inline-block;
+            font-size: 20px;
+            height: 70px;
+            line-height: 62px;
+            width: 70px;
+            i {}
+        }
+    }
+}

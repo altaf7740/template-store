@@ -1,0 +1,46 @@
+@import "../variables";
+@import "../mixins";
+/*----------------------
+    Breadcaump area
+------------------------*/
+
+.pr__bradcaump__area {
+    align-items: center;
+    display: flex;
+    height: 415px;
+    justify-content: center;
+    .bradcaump__inner {
+        h2 {
+            color: #ffffff;
+            display: block;
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 18px;
+            text-transform: uppercase;
+        }
+        .breadcrumb_item {
+            color: #ffffff;
+            font-size: 18px;
+        }
+        .brd-separetor {
+            color: #fff;
+            padding: 0 9px;
+        }
+    }
+}
+
+/* Responsive Css*/
+
+@media #{$xx-layout} {}
+
+@media #{$xlg-layout} {}
+
+@media #{$lg-layout} {}
+
+@media #{$md-layout} {}
+
+@media #{$sm-layout} {}
+
+@media #{$xs-layout} {}
+
+@media #{$xxs-layout} {}

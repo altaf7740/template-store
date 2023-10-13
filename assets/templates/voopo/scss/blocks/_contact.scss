@@ -1,0 +1,246 @@
+/*----------------------
+    Contact Styles 
+------------------------*/
+
+.voopo__contact__form {
+    h2 {
+        color: #010f54;
+        font-size: 36px;
+        line-height: 45px;
+        margin-bottom: 54px;
+    }
+    .single-contact-form {
+        margin-top: 35px;
+        input {
+            -moz-border-bottom-colors: none;
+            -moz-border-left-colors: none;
+            -moz-border-right-colors: none;
+            -moz-border-top-colors: none;
+            border-color: currentcolor currentcolor #a9c2cb;
+            border-image: none;
+            border-style: none none solid;
+            border-width: 0 0 1px;
+            color: #010f54;
+            font-weight: 500;
+            padding-bottom: 27px;
+            width: 100%;
+            outline: none;
+            &:focus {
+                border-bottom: 1px solid $hover-color;
+            }
+        }
+        textarea {
+            -moz-border-bottom-colors: none;
+            -moz-border-left-colors: none;
+            -moz-border-right-colors: none;
+            -moz-border-top-colors: none;
+            border-color: currentcolor currentcolor #a9c2cb;
+            border-image: none;
+            border-style: none none solid;
+            border-width: 0 0 1px;
+            margin-bottom: 50px;
+            min-height: 80px;
+            resize: none;
+            width: 100%;
+            color: #010f54;
+            outline: none;
+            &:focus {
+                border-bottom: 1px solid $hover-color;
+            }
+        }
+    }
+}
+
+.voopo__contact__form .single-contact-form input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #010f54;
+}
+
+.voopo__contact__form .single-contact-form input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #010f54;
+}
+
+.voopo__contact__form .single-contact-form input:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #010f54;
+}
+
+.voopo__contact__form .single-contact-form input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #010f54;
+}
+
+.voopo__contact__form .single-contact-form textarea::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #010f54;
+}
+
+.voopo__contact__form .single-contact-form textarea::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #010f54;
+}
+
+.voopo__contact__form .single-contact-form textarea:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #010f54;
+}
+
+.voopo__contact__form .single-contact-form textarea:-moz-placeholder {
+    /* Firefox 18- */
+    color: #010f54;
+}
+
+button.voopo__btn {
+    border: 0 none;
+}
+
+.vp__contact__address {
+    padding: 120px 0;
+    h2 {
+        color: #010f54;
+        font-size: 36px;
+        line-height: 45px;
+        margin-bottom: 28px;
+    }
+    .vp__address {
+        h4 {
+            color: #010f54;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 45px;
+            margin-bottom: 17px;
+            padding-bottom: 10px;
+            position: relative;
+            &::before {
+                background: #e15d45 none repeat scroll 0 0;
+                bottom: 0;
+                content: "";
+                height: 3px;
+                left: 0;
+                position: absolute;
+                width: 60px;
+            }
+        }
+        p {
+            margin: 0;
+            color: #010f54;
+            font-size: 18px;
+            line-height: 30px;
+            padding-right: 32%;
+            a {
+                color: #010f54;
+                display: block;
+                font-size: 18px;
+                line-height: 35px;
+                transition: 0.3s;
+                &:hover {
+                    color: $hover-color;
+                }
+            }
+        }
+        &+.vp__address {
+            margin-top: 20px;
+        }
+    }
+}
+
+#googleMap {
+    height: 100%;
+    width: 100%;
+}
+
+.voopo__address {
+    position: relative;
+}
+
+.goggle__map {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1077px;
+}
+
+// Responsive Css
+@media #{$xx-layout} {
+    .goggle__map {
+        width: 800px;
+    }
+}
+
+@media #{$xlg-layout} {
+    .goggle__map {
+        width: 700px;
+    }
+}
+
+@media #{$lg-layout} {
+    .goggle__map {
+        width: 512px;
+    }
+    .voopo__contact__form h2 {
+        font-size: 30px;
+        line-height: 43px;
+        margin-bottom: 37px;
+    }
+    .contact__thumb img {
+        width: 100%;
+    }
+}
+
+@media #{$md-layout} {
+    .goggle__map {
+        width: 400px;
+    }
+    .voopo__contact__form h2 {
+        font-size: 23px;
+        line-height: 36px;
+        margin-bottom: 25px;
+    }
+    .contact__thumb img {
+        width: 100%;
+    }
+}
+
+@media #{$sm-layout} {
+    .voopo__contact__form h2 {
+        font-size: 25px;
+        line-height: 38px;
+        margin-bottom: 18px;
+    }
+    .contact__thumb {
+        margin-top: 30px;
+    }
+    .contact__thumb img {
+        width: 100%;
+    }
+    .vp__contact__address h2 {
+        font-size: 25px;
+    }
+    .goggle__map {
+        height: 500px;
+        position: inherit;
+        top: 0;
+        width: 1077px;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+    }
+    .vp__contact__address .vp__address p {
+        padding-right: 0;
+    }
+}
+
+@media #{$xs-layout} {
+    .contact__thumb img {
+        width: 100%;
+    }
+    .voopo__contact__form h2 {
+        font-size: 20px;
+        line-height: 31px;
+        margin-bottom: 0;
+    }
+}
+
+@media #{$xxs-layout} {}

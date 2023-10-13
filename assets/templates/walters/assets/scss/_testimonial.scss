@@ -1,0 +1,130 @@
+/*--
+    10. Testimonial Css
+-------------------------------------*/
+.bg_image--04 {
+    background-image: url(../images/bg/bg-image-04.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.testimonial-slider-5 {
+    .testimonial-for5 {
+        .testimonial-desc {
+            text-align: center;
+            padding-bottom: 0;
+            text-align: center;
+            padding: 30px 95px 0;
+            background: #ffffff;
+            padding: 40px;
+            position: relative;
+            margin-top: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            margin-left: 10px;
+            margin-right: 10px;
+            
+            .client {
+                h6 {
+                    color: #131313;
+                    font-weight: 600;
+                    font-size: 20px;
+                    margin-bottom: 4px;
+                    letter-spacing: 4px;
+                }
+
+                span {
+                    color: #333333;
+                    font-size: 18px;
+                    font-weight: 400;
+                    font-family: "Montserrat", sans-serif;
+                    letter-spacing: 5px;
+                    margin-bottom: 34px;
+                    display: inline-block;
+
+                    @media #{$large-mobile} {
+                        margin-bottom: 17px;
+                    }
+                }
+            }
+
+            p {
+                color: #444;
+                font-weight: 400;
+                font-size: 18px;
+                margin: 0;
+
+                @media #{$large-mobile} {
+                    font-size: 14px;
+                    line-height: 29px;
+                }
+            }
+            
+
+            @media #{$large-mobile} {
+                padding: 20px 10px;
+            }
+        }
+    }
+}
+
+.testimonal-nav5 .testimonal-img img{
+    border-radius: 50%;
+}
+.testimonial-for5 {
+    padding: 0 15%;
+    @media #{$large-mobile}{
+        padding: 0;
+    }
+    & .triangle {
+        position: absolute;
+        bottom: 100%;
+        margin-top: -1px;
+        border-right: 20px solid transparent;
+        border-left: 20px solid transparent;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid #fff;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    & ul.rating {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        list-style: none;
+        margin-bottom: 10px;
+        & li {
+            color: #f1c30d;
+            font-size: 17px;
+            margin: 0 2px;
+        }
+
+    }
+}
+.testimonal-nav5 .slick-current.slick-active {
+    transform: scale(1);
+    justify-content: center;
+    display: flex;
+}
+
+.testimonal-nav5 .slick-active {
+    transform: scale(0.8);
+    text-align: center;
+}
+.testimonial-slider-5 .slick-slide.slick-active .testimonal-img img {
+    border: 0 none;
+}
+.slick-slide.slick-active.slick-center .testimonal-img img {
+    transform: scale(1);
+}
+.testimonal-img {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.testimonal-nav5.slick-slider {
+    max-width: 35%;
+    width: 100%;
+    margin: 0 auto;
+}

@@ -1,0 +1,64 @@
+
+.ht-process-2 {
+    text-align:  center;
+    .number{
+        margin-bottom: 24px;
+        span {
+            width:  70px;
+            height:  70px;
+            background:  #fff;
+            display:  inline-block;
+            line-height:  70px;
+            font-size:  24px;
+            font-weight:  600;
+            color:  #5a5a5a;
+            border-radius: 14px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    }
+    .content {
+        h4 {
+            color:  #383838;
+            font-size:  18px;
+            margin-bottom: 18px;
+            font-weight: 600;
+        }
+        p {
+            color:  #494849;
+            font-size:  14px;
+            line-height: 28px;
+            padding: 0 10%;
+            margin: 0;
+        }
+    }
+}
+
+.ht-process-2 .number {
+    position: relative;
+}
+
+.ht-process-2 .number::before {
+    position: absolute;
+    content: "";
+    background: url(../images/icon/shape-2.png);
+    right: -129px;
+    top: 50%;
+    width: 236px;
+    height: 2px;
+    @media #{$tablet-device,$large-mobile}{
+        display: none;
+    }
+}
+
+
+.single-work{
+    &:last-child{
+        .ht-process-2{
+            .number{
+                &::before{
+                    display: none;
+                }
+            }
+        }
+    }
+}

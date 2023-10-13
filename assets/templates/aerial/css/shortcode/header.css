@@ -1,0 +1,226 @@
+/* -----------------------------------
+Template Name: Aerial
+Description: This is html5 template
+Author: HasTech
+Version: 1.0
+NOTE: This is Header style file. All Header related style included in this file.
+
+--------------------------------------*/
+.logo {padding: 25px 0;}
+.logo a {display: inline-block}
+.logo img {
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+}
+.main-menu {
+    display: block;
+    z-index: 2;
+    position: relative;
+}
+.main-menu ul {text-align: right;}
+.main-menu ul li {
+    display: inline-block;
+    margin-left: 42px;
+    position: relative;
+}
+.main-menu ul li a {
+    color: #ffffff;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 54px;
+    padding: 0;
+    position: relative;
+    text-transform: capitalize;
+    transition: all 0.4s ease 0s;
+}
+.main-menu > nav > ul > li > a::after {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 center;
+    bottom: -4px;
+    content: "";
+    font-family: "Material-Design-Iconic-Font";
+    height: 3px;
+    left: 0;
+    line-height: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+}
+.main-menu > nav > ul > li:hover > a:after, .main-menu > nav > ul > li.active > a:after {opacity: 1}
+.main-menu ul li ul {
+    background: #fff;
+    box-shadow: -1px 5px 6px 1px rgba(0, 0, 0, 0.2);
+    left: 0;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    padding: 10px 22px;
+    position: absolute;
+    text-align: left;
+    top: calc( 100%  + 3px );
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    visibility: hidden;
+    width: 180px;
+    z-index: 999;
+}
+.main-menu ul li:hover > ul {opacity: 1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; visibility: visible;}
+.main-menu ul li ul li a {}
+.main-menu ul li ul li {
+    display: block;
+    margin: 0;
+    padding: 7px 0;
+}
+.main-menu ul li ul li a {
+    color: #313131;
+    display: block;
+    font-size: 14px;
+    line-height: 26px;
+    padding: 0;
+    text-transform: capitalize;
+}
+.main-menu ul li ul li:hover > a {color: #222; padding-left: 5px;}
+.main-menu ul li ul li a:before {display: none;}
+.main-menu ul li ul li > ul {
+    left: 100%;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    position: absolute;
+    top: 17%;
+    visibility: hidden;
+}
+.mobile-menu-area, .mean-container .mean-bar:after {display: none}
+.mean-container .mean-bar {
+    background: transparent none repeat scroll 0 0;
+    min-height: 0;
+    padding: 0;
+}
+.mean-container a.meanmenu-reveal {
+    border: 0 none;
+    color: #fff;
+    margin-top: -56px;
+    padding: 2px 0px;
+    position: absolute;
+}
+.mean-container a.meanmenu-reveal span {background-color: #fff;}
+.mean-container .mean-nav {
+    margin-top: 0;
+    position: absolute;
+}
+.header-sticky.sticky {
+    -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+            animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+    background: #363636 none repeat scroll 0 0;
+    left: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    box-shadow: 0 0 9.9px 0.1px rgba(91, 91, 91, 0.2)
+}
+.sticky .main-menu > nav > ul > li {padding: 0;}
+.sticky .main-menu > nav > ul > li > a {line-height: 60px;}
+.sticky .logo {padding: 14px 0;}
+.sticky .logo img {width: 75%;}
+.sticky .main-menu {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    margin-bottom: 0;
+}
+.mainmenu-area .sticky {
+    background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+    box-shadow: 0 1px 3px rgba(50, 50, 50, 0.4)
+}
+.header-area .sticky .main-menu > nav > ul > li > a {line-height: 68px;}
+.menu-style-toggle nav {
+    margin-right: -30px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    visibility: hidden;
+}
+.menu-style-toggle nav.menu-open {
+    margin-right: 0;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible;
+}
+.menu-style-toggle nav {
+    float: left;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.hamburger-box {height: 18px; width: 26px;}
+.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before {
+    background-color: #ffffff;
+    height: 3px;
+    width: 26px;
+    border-radius: 0;
+}
+.hamburger-inner::before {top: -8px;}
+.hamburger-inner::after {bottom: -8px;}
+.menu-style-toggle {padding: 18px 0;}
+.menu-style-toggle nav {
+    margin-right: -30px;
+    opacity: 0;
+    visibility: hidden;
+}
+.menu-style-toggle nav.menu-open {
+    margin-right: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.menu-style-toggle nav {
+    float: left;
+    transition: all 0.3s ease 0s;
+}
+.main-menu.mean-menu.menu-style-toggle.text-right {float: right;}
+.mobile-menu-area {
+    background-color: #fff;
+    display: block;
+    height: 100%;
+    left: 0;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+}
+.mobile-menu-area .menu-close {
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    color: #858585;
+    height: 40px;
+    padding: 0;
+    width: 40px;
+	margin-bottom:30px;
+}
+.mobile-menu-area .menu-close:hover {color: #433a8b; border-color: #433a8b;}
+.mobile-menu-area .menu-close i {
+    display: block;
+    font-size: 30px;
+    line-height: 30px;
+    padding-right: 2px;
+}
+.mean-container .mean-bar ul li a {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 15px;
+}
+.sticky .menu-toggle {margin-top: 23px;}
+.fixed {position: absolute; left: 0; width: 100%; z-index: 7}
+.menu-toggle {
+    box-sizing: border-box;
+    float: right;
+    height: 19px;
+    margin-left: 38px;
+    margin-top: 20px;
+    padding: 0;
+}
+.stick .menu-toggle {margin-top: 25px;}
+.sticky .menu-style-toggle {padding: 0}
+.sticky .main-menu > nav > ul > li > a::after {bottom: -1px;}
+.sticky .main-menu ul li ul {top: 100%;}

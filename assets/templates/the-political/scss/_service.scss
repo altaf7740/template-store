@@ -1,0 +1,33 @@
+/*----------------------------------------*/
+/*  5.  Service Area
+/*----------------------------------------*/
+.service-area {
+    background-color: #f6f8ff;
+}
+/*Single Service*/
+.single-service {
+    & .image {
+        display: block;
+        float: left;
+        height: 44px;
+        margin-right: 11px;
+        width: 57px;
+    }
+    &:hover {
+        & .image {
+            background-position: center bottom;
+        }
+    }
+    & h4 {
+        color: $text-color;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 17px;
+        margin-top: 25px;
+    }
+    & p {
+        line-height: 26px;
+        overflow: hidden;
+        width: 100%;
+    }
+}

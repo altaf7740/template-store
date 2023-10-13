@@ -1,0 +1,3990 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: FSON - Responsive eCommerce Template
+    Template URI: http://bootexperts.com
+    Description: This is html5 template
+    Author: BootExperts
+    Author URI: http://bootexperts.com
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+	
+    1. Theme Default CSS (body, link color, section etc)
+	2. Home One Css
+	3. Header Area Top
+	4. Header Menu Area
+	5. Slider Area
+	6. Fashion Style
+	7. Trending Area
+	8. Featured Product
+	9. Shipping Area
+	10. Latset Post
+	11. Our Client
+	12. Footer Main
+	13. Home Two Css
+		13.1 Header Area Top
+		13.2 Slider Area
+		13.3 Banner Area
+		13.4 Popular Collection Area
+		13.5 FEATURED PRODUCTS TWO
+		13.6 OUR LATEST BLOG TWO
+	14. About us Page
+		14.1 Banner Area
+		14.2 Welcome Area
+		14.3 Who Are Skill Area
+	15. Contact Us Page Css
+		15.1 Adress Area
+		15.2 Contact From Area
+	16. Check Out Page Css
+		16.1 Check Out Left Area
+		16.2 Check Out Right Area
+	17. Wishlist Page Css
+		17.1 Wishlist Left Area
+		17.2 Category
+		17.3 Popular Tag
+		17.4 Compare Product
+		17.5 Shop Top Seller
+		17.6 Wishlist Right Area
+		17.7 Wishlist Product Table
+		17.8 Table Bottom Area
+	18. Shoping Cart Page Css
+		18.1 Shoping Cart Table Area
+		18.2 Shoping Cart Bottom Area
+		18.3 Discount Area
+		18.4 Subtotal Area
+	19. Shop Page Css
+		19.1 Price left Area
+		19.2 Shop right Area
+	20. My Account CSS
+	21. Login Page Css
+	22. 404 Page Css
+	23.	Quick Veiw CSS
+	24. ScrollUp
+
+-----------------------------------------------------------------------------------*/
+
+/*----------------------------------------*/
+/*  1.  Theme default CSS
+/*----------------------------------------*/
+html, body {height: 100%;font-family: roboto;color: #666666;}
+body.hm-two {font-family: 'Lato', sans-serif;}
+.floatleft {float:left}
+.floatright {float:right}
+.alignleft {float:left;margin-right:15px;margin-bottom: 15px}
+.alignright {float:right;margin-left:15px;margin-bottom: 15px}
+.aligncenter {display:block;margin:0 auto 15px}
+a:focus {outline:0px solid}
+img {max-width:100%;height:auto}
+.fix {overflow:hidden}
+p {margin:0 0 15px;}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10px;
+}
+a {transition: all 0.3s ease 0s;text-decoration:none;color: #666666;}
+a:hover {
+  color: #E39531;
+  text-decoration: none;
+}
+a:active, a:hover {
+  outline: 0 none;
+}
+ul{
+list-style: outside none none;
+margin: 0;
+padding: 0
+}
+.clear{clear:both}
+body {}
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+@font-face {
+    font-family: 'allerlight';
+    src: url('fonts/aller.light-webfont.eot');
+    src: url('fonts/aller.light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/aller.light-webfont.woff2') format('woff2'),
+         url('fonts/aller.light-webfont.woff') format('woff'),
+         url('fonts/aller.light-webfont.ttf') format('truetype'),
+         url('fonts/aller.light-webfont.svg#allerlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'allerbold';
+    src: url('fonts/aller.bold-webfont.eot');
+    src: url('fonts/aller.bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/aller.bold-webfont.woff2') format('woff2'),
+         url('fonts/aller.bold-webfont.woff') format('woff'),
+         url('fonts/aller.bold-webfont.ttf') format('truetype'),
+         url('fonts/aller.bold-webfont.svg#allerbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*----------------------------------------*/
+/*  2. Home One Css
+/*----------------------------------------*/
+
+/* -------------- 3. Header Area Top  ---------------- */
+.header-area {
+  background: #efefef none repeat scroll 0 0;
+  border-bottom: 3px solid #d4d3d3;
+}
+.social-header {
+  padding: 18px 0;
+}
+.social-header ul li a {
+  color: #bcbcbc;
+}
+.social-header ul li a:hover{color:#DB4437;}
+.user-meta {
+   position: relative;
+}
+.user-meta > a {
+  color: #999;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.user-meta ul {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 1px 2px rgba(86, 86, 90, 0.5);
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  text-align: left;
+  top: 120%;
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  width: 180px;
+  z-index: 999999999;
+}
+.user-meta ul li {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 5px 10px !important;
+}
+.user-meta ul li a {
+  color: #999;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 20px !important;
+  text-transform: uppercase;
+}
+.user-meta ul li a:hover{color:#CA862D}
+.user-meta:hover ul {
+  opacity: 1;
+  top: 102%;
+  visibility: visible;
+}
+.other-page .user-meta:hover ul {
+  top: 106%;
+}
+/* MINI CART */
+.cartlogin-left > ul > li {
+  border-left: 1px solid #d4d3d3;
+  padding: 0;
+}
+.cartlogin-left ul li > a {
+  display: block;
+  line-height: 56px;
+  text-align: center;
+  width: 55px;
+}
+.cartlogin-left ul li a span {
+  background: #e39531 none repeat scroll 0 0;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 500;
+  height: 18px;
+  line-height: 18px;
+  margin: 14px 0 0 -6px;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  width: 18px;
+}
+.cartlogin-left ul li:last-child{border-right: 1px solid #d4d3d3;}
+.mini-cart{
+  position: relative;
+}
+.show-shopping-cart {
+  background: #fff none repeat scroll 0 0;
+  opacity: 0;
+  padding: 30px;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 368px;
+  visibility: hidden;
+  z-index: 999999999;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  visibility: hidden;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.4s ease, -webkit-transform 0.4s ease, visibility 0.4s linear 0s;
+  -moz-transition: opacity 0.4s ease, -moz-transform 0.4s ease, visibility 0.4s linear 0s;
+  -ms-transition: opacity 0.4s ease, -ms-transform 0.4s ease, visibility 0.4s linear 0s;
+  -o-transition: opacity 0.4s ease, -o-transform 0.4s ease, visibility 0.4s linear 0s;
+  transition: opacity .4s ease, transform .4s ease, visibility .4s linear 0s;
+  -webkit-transform: translateY(20px);
+  -moz-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  -o-transform: translateY(20px);
+  transform: translateY(20px);
+}
+.mini-cart:hover .show-shopping-cart {
+  -webkit-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+  -o-transform: translateY(2px);
+  transform: translateY(2px);
+  opacity: 1;
+  filter: alpha(opacity=100);
+  visibility: inherit;
+}
+.other-page .mini-cart:hover .show-shopping-cart {
+  -webkit-transform: translateY(6px);
+  -ms-transform: translateY(6px);
+  -o-transform: translateY(6px);
+  transform: translateY(6px);
+}
+.show-shopping-cart .list-shopping {
+  border-bottom: 1px solid #f1f1f1;
+  float: left;
+  padding: 20px 0;
+  text-align: left;
+  width: 100%;
+}
+.show-shopping-cart .title{
+  font-size: 12px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+}
+.show-shopping-cart .list-product{
+  padding: 0;
+}
+.show-shopping-cart .list-product li {
+  border-bottom: 1px solid #e5e5e5;
+  border-left: medium none !important;
+  border-right: medium none !important;
+  list-style: outside none none;
+  overflow: hidden;
+  padding: 15px 0;
+  width: 100%;
+}
+.show-shopping-cart .list-product .thumb{
+  width: 90px;
+  float: left;
+}
+.show-shopping-cart .list-product  .info{
+  position: relative;
+  padding-right: 20px;
+}
+.show-shopping-cart .remove-item{
+  position: absolute;
+  top: -2px;
+  right: 0;
+  display: inline-block;
+  line-height: normal;
+  color: #222;
+}
+.show-shopping-cart .list-product .product-name{
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.show-shopping-cart .list-product .product-name a {
+  color: #666;
+}
+.show-shopping-cart .list-product .product-name a:hover {
+  color: #d18c32;
+}
+.text-warning {
+  color: #ca872d;
+}
+.button:hover, input[type="submit"]:hover {
+  background-color: #c99947;
+  color: #fff;
+}
+.mini-cart .cart-link{
+  position: relative;
+}
+.mini-cart .count{
+  background-color: #c99947;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 10px;
+  height: 20px;
+  line-height: 20px;
+  position: absolute;
+  right: 40px;
+  text-align: center;
+  top: 30px;
+  width: 20px;
+}
+.mini-cart .sub-total{
+  padding: 15px 0;
+  text-align: center;
+  display: table;
+  width: 100%;
+}
+.mini-cart .group-button .button{
+  display: block;
+  width: 100%;
+  padding: 16px 0px;
+  margin-bottom: 10px;
+}
+.mini-cart .group-button .check-out{
+  border: 1px solid #111;
+  background-color: transparent;
+  color: #222;
+  padding: 15px 0px;
+}
+.mini-cart .group-button .check-out:hover{
+  background-color: #c99947;
+  color: #fff;
+  border-color: #c99947;
+}
+.button, input[type="submit"] {
+  background: #111111 none repeat scroll 0 0;
+  border: medium none;
+  color: #fff;
+  display: inline-block;
+  font-family: lato;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 9px 25px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+}
+/* -------------- 4. Header Menu Area  ---------------- */
+.header-bg {
+  background: #5e5e5e none repeat scroll 0 0;
+  border-top: 3px solid #403f3f;
+  margin-top: -2px;
+}
+.mobile-menu-area {
+  display: none;
+}
+.logo-area {
+  padding: 15px 0 15px 30px;
+}
+.header-menu-area {
+  position: absolute;
+  width: 100%;
+  z-index: 99999999;
+}
+/* Mega Menu */
+.main-menu {
+}
+.main-menu ul {
+  text-align: center;
+}
+.main-menu ul li {
+  display: inline-block;
+  margin: 0 17px;
+  position: relative;
+  position: relative !important;
+}
+.main-menu ul li::before {
+  background: #cc9b5e none repeat scroll 0 0;
+  content: "";
+  height: 3px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity:0;
+  transition:.4s;
+  transform:scale(0);
+}
+.main-menu ul li:hover::before{opacity:1;transform:scale(1);}
+.main-menu ul li.active > a::before{
+  background: #cc9b5e none repeat scroll 0 0;
+  content: "";
+  height: 3px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.main-menu ul li a {
+  color: #fff;
+  display: block;
+  font-family: "roboto",sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 28px 0;
+  text-transform: uppercase;
+}
+.main-menu ul li:hover a{color:#E39531}
+.main-menu ul li ul {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 1px 2px rgba(86, 86, 90, 0.5);
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 130%;
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  width: 250px;
+  z-index: 999999;
+}
+.main-menu ul li ul li {
+  border-bottom: 1px solid #ebebeb;
+  display: block;
+  margin: 0;
+  text-align: left;
+}
+.main-menu ul li.active a{color:#E39531;}
+.main-menu ul li ul li:last-child{border:0}
+.main-menu ul li:hover ul li a{color: #666;}
+.main-menu ul li:hover ul li a:hover{color: #fff;background:#E39531}
+.main-menu ul li ul li a {
+  color: #666;
+  display: block;
+  font-family: "Lato",sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 12px 15px;
+  position: relative;
+  text-transform: uppercase;
+}
+.main-menu ul li:hover ul{opacity:1;top:101%;visibility:visible}
+.header-bottom-area .container .row > div {
+  position: static;
+}
+.main-menu ul li.static{position:static}
+.inner-container{position:relative}
+.main-menu ul li .mega-menu {
+  background-color: #fff;
+  left: -534px;
+  margin: 0;
+  opacity: 0;
+  padding: 20px 30px;
+  position: absolute;
+  text-align: left;
+  top: 130%;
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  width: 1140px;
+  z-index: 9999;
+}
+.main-menu ul li .mega-menu-2 {
+  background-color: #fff;
+  left: -500px;
+  margin: 0;
+  opacity: 0;
+  padding: 20px 30px;
+  position: absolute;
+  text-align: left;
+  top: 130%;
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  width: 923px;
+  z-index: 9999;
+}
+.main-menu ul li:hover .mega-menu{opacity:1;visibility:visible;top:101%}
+.main-menu ul li .mega-menu span {
+  float: left;
+  padding-right: 30px;
+  width: 24.6%;
+}
+.main-menu ul li .mega-menu span a.mega-title {
+  border-bottom: 1px solid #ccc;
+  color: #000;
+  font-family: lato;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.main-menu ul li .mega-menu span a {
+  color: #444;
+  display: block;
+  font-family: lato;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 0;
+  text-transform: capitalize;
+}
+.main-menu ul li:hover .mega-menu span a{color:#444}
+.main-menu ul li:hover .mega-menu span a:hover{color:#E39531}
+.main-menu ul li .mega-menu span.mega-menu-img {
+  padding-right: 0;
+  width: 26%;
+}
+.main-menu ul li .mega-menu .mega-left {
+  float: left;
+  width: 75%;
+}
+.main-menu ul li .mega-menu .mega-left span {
+  width: 33.33%;
+}
+.main-menu ul li .mega-menu .mega-right {
+  float: right;
+  width: 25%;
+}
+.main-menu ul li .mega-menu .mega-right span {
+  width: 100%;
+  padding-right: 0;
+}
+.header-search  {
+  color: #fff;
+  padding: 29px 0;
+  position: relative;
+  text-align: center;
+}
+.header-search::after {
+  background:url(img/home-1/menu-i.png) no-repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 60px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  cursor: pointer;
+}
+.header-search i {
+  margin-left: 57%;
+}
+.header-search form {
+  position: relative;
+}
+.header-search form input {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  color: #999999;
+  font-size: 16px;
+  height: 40px;
+  padding-left: 10px;
+  width: 100%;
+}
+.header-form {
+  background: #fff none repeat scroll 0 0;
+  opacity: 0;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  top: 140%;
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  width: 350px;
+}
+.header-form button i {
+  margin-left: 0;
+}
+.header-search:hover .header-form {opacity:1;top:100%;visibility:visible}
+.header-search form button {
+  background: #666 none repeat scroll 0 0;
+  border: 0 none;
+  color: #fff;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  top:0;
+  transition: all 0.3s ease 0s;
+  width: 40px;
+}
+.header-search form button:hover{background:#E39531;color:#fff}
+/* -------------- 5. Slider Area  ---------------- */
+.slider-area {
+  position: relative;
+}
+.slide-all {
+  display: block;
+  float: right;
+  margin-right: 14.5%;
+  margin-top: 16%;
+  text-align: center;
+}
+.slide-all2 {
+  display: block;
+  float: left;
+  margin-left: 20%;
+  margin-top: 20%;
+  text-align: center;
+}
+.preview-1 .nivo-controlNav {
+  bottom: 40px;
+}
+h2.title5 {
+  font-size: 100px;
+  font-family: 'allerbold';
+  color:#666666;
+}
+h2.title6 {
+  color: #666666;
+  font-family: "allerlight";
+  font-size: 60px;
+  line-height: 80px;
+  margin: 0 0 95px;
+  text-transform: uppercase;
+}
+.slide-all.slide2 h2.title5 {
+  color: #f29e2e;
+  font-family: "allerbold";
+  font-size: 100px;
+  text-transform: uppercase;
+}
+.slide-all.slide2 h2.title6 {
+  color: #fff;
+  font-family: "allerlight";
+  font-size: 60px;
+  line-height: 80px;
+  margin: 0 0 60px;
+  text-transform: uppercase;
+}
+.layer-3 a.min1 {
+  background: #e39531 none repeat scroll 0 0;
+  color: #fff;
+  font-family: roboto;
+  font-weight: 700;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.layer-3 a.min1:hover{background:#818181;}
+/* -------------- 6. Fashion Style  ---------------- */
+.fashion-style-area {
+  margin-top: 30px;
+}
+.right-area .primary {
+  margin-bottom: 30px;
+}
+.right-area .primary:last-child {
+  margin-bottom: 0px;
+}
+.left-area.hover figure a{
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.left-area.hover figure img{
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.left-area.hover figure:hover img {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.left-area .titel {
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 40%;
+  opacity:0;
+  z-index: 9999;
+}
+.titel h3 {
+  color: #e39531;
+  font-size: 100px;
+  font-weight: 500;
+  margin:0;
+}
+.titel h2 {
+  color: #fff;
+  font-size: 100px;
+  font-weight: 300;
+  margin:0;
+}
+.left-area.hover figure a:hover .titel{
+  animation: 500ms ease-in-out 0s normal none 1 running fadeInUpBig;opacity:1;
+}
+.primary > a {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.right-titel {
+  position: absolute;
+  right: 60px;
+  top: 54px;
+}
+.right-titel > h2 {
+  color: #e39531;
+  font-size: 50px;
+  font-weight: 700;
+  margin: 0;
+}
+.right-area .primary > figure {
+	position: relative;
+	display:block;
+	overflow:hidden;
+}
+.right-area .primary > figure::before {
+  background: #000 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  transition:.4s;
+}
+.right-area .primary > figure:hover .post-thumb::after {
+  height: 100%;
+  width: 100%;
+}
+.right-area .primary > figure:hover::before {
+  opacity: 0.4;
+  width: 95%;
+  height: 93%;
+  top: 13.5px;
+  left: 14.5px;
+}
+.left-area figure a::before, .primary figure a::before {
+  bottom: 0;
+  box-sizing: border-box;
+  content: "";
+  left: 0;
+  opacity: 0;
+  overflow: visible;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.3s ease 0s;
+  z-index: 9;
+}
+.left-area figure a:hover::before, .primary figure a:hover::before {
+  border: 15px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  opacity: 1;
+  transition: all 0.3s ease 0s;
+}
+.left-area.hover a::after {
+  background: #000 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transition: all 0.4s ease 0s;
+}
+.left-area figure a:hover::after {
+  height: 96.5%;
+  left: 14.5px;
+  opacity: 0.3;
+  top: 14.5px;
+  width: 95%;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+/* -------------- 7. Trending Area  ---------------- */
+.trending-area {
+  padding: 45px 0 60px;
+}
+#trending-owl {
+  margin-top: 34px;
+}
+.single-item {
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+.section-titel > h2 {
+  border-bottom: 1px solid #cacaca;
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 25px;
+  position: relative;
+  text-align: center;
+}
+.section-titel > h2::before {
+  background: #e39531 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 25px;
+  left: 0;
+  margin: 5px auto;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  transform: rotate(45deg);
+  width: 25px;
+}
+.content {
+  margin-top: 20px;
+  text-align: center;
+}
+.product-titel > a {
+  font-size: 16px;
+  font-weight: 500;
+  transition:.4s;
+}
+.product-titel > a:hover{color:#e39531;}
+.hm-two .product-titel > a:hover{color:#ff6060;}
+.content .product-price > span {
+  font-size: 16px;
+  font-weight: 700;
+}
+.single-item > p {
+  background: #e39531 none repeat scroll 0 0;
+  color: #fff;
+  height: 44px;
+  line-height: 44px;
+  margin: 0;
+  position: absolute;
+  right: 28px;
+  text-align: center;
+  top: 24px;
+  transform: rotate(45deg);
+  width: 44px;
+  z-index: 9999999;
+}
+.single-item p span {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  transform: rotate(-45deg);
+}
+.product-action {
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 20%;
+  opacity:0;
+  transition:.6s;
+  visibility:hidden;
+  animation-duration: 0.5s;
+}
+.single-item:hover .product-action{
+  top:35%;
+  visibility:visible;
+  opacity:1;
+  z-index: 999999;
+}
+.single-item .product-img {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.single-item img.secondary-img {
+  right: 0%;
+  position: absolute;
+  top: -45%;
+  transition: all 800ms ease 0s;
+  opacity:0;
+}
+.single-item:hover img.secondary-img {
+  top: 0;
+  opacity:1;
+}
+.product-action ul li {
+  display: inline-block;
+}
+.single-item > a {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.single-item > a::before {
+  background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  bottom: -60%;
+  width: 100%;
+  transition: all 0.5s ease 0s;
+  visibility:hidden;
+}
+.single-item:hover a::before{
+  opacity:.8;
+  visibility:visible;
+  bottom:0;
+}
+.product-action ul li a {
+  border: 1px solid #fff;
+  color: #fff;
+  display: block;
+  height: 38px;
+  line-height: 35px;
+  margin-left: 18px;
+  position: relative;
+  text-align: center;
+  transform: rotate(45deg);
+  transition: all 0.4s ease 0s;
+  width: 38px;
+}
+.product-action ul li a i {
+  display: block;
+  height: 38px;
+  line-height: 35px;
+  margin: 0 auto;
+  text-align: center;
+  transform: rotate(-45deg);
+  transition: all 0.4s ease 0s;
+  width: 38px;
+}
+.product-action ul li a:hover{background:#E39531;border-color:#E39531;}
+[class^="flaticon-"]::before, [class*=" flaticon-"]::before, [class^="flaticon-"]::after, [class*=" flaticon-"]::after {
+  font-family: Flaticon;
+  font-size: 20px;
+  font-style: normal;
+  margin-left: 0;
+}
+.trending-area .owl-theme .owl-controls .owl-buttons div {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 1px solid #767676;
+  color: #767676;
+  display: inline-block;
+  font-size: 33px;
+  height: 35px;
+  line-height: 0;
+  margin: 5px;
+  opacity: 0.5;
+  padding: 0;
+  text-align: center;
+  width: 35px;
+  position: absolute;
+  top: 35%;
+}
+.trending-area .owl-controls .owl-buttons .owl-next {
+  left: auto;
+  right: 0px;
+  opacity: 0!important;
+}
+.trending-area .owl-controls .owl-buttons .owl-prev {
+  right: auto;
+  left: 0px;
+  opacity: 0!important;
+}
+.trending-area .owl-theme .owl-controls.clickable .owl-buttons div:hover {
+  opacity: 1;
+  text-decoration: none;
+  color:#E39531;
+  border: 1px solid #E39531;
+}
+#trending-owl:hover .owl-controls .owl-buttons .owl-next{opacity: 1!important;right: -14px;}
+#trending-owl:hover .owl-controls .owl-buttons .owl-prev{opacity: 1!important;left: -14px;}
+/* -------------- 8. Featured Product  ---------------- */
+.featured-pro-area {
+  margin-bottom: 25px;
+  margin-top: 28px;
+}
+.featured-left > a {
+  display: inline-block;
+  max-width: 100%;
+  position: relative;
+}
+.featured-left > a::after {
+  border: 0 none;
+  bottom: 0;
+  content: "";
+  left: 0;
+  margin: auto;
+  opacity: 0.5;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.5s ease 0s;
+}
+.featured-left:hover > a::before {
+  border: 268px solid #000;
+  bottom: 0;
+  content: "";
+  left: 0;
+  margin: auto;
+  opacity: 0.5;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.featured-left:hover > a::after {
+  border: 3px solid #fff;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  top: 10px;
+}
+.featured-left .frs-pro-content {
+  color: #fff;
+  display: block;
+  left: 0;
+  margin: 0 auto;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 30%;
+  transition: all 0.5s ease 0s;
+}
+.frs-pro-content > h2 {
+  font-family: roboto;
+  font-size: 30px;
+  font-weight: 700;
+}
+.frs-pro-content h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.featured-left:hover .frs-pro-content{opacity:1;top:45%}
+.featured-right.featured-left:hover > a::before {
+  border: 125px solid #000;
+  bottom: 0;
+  content: "";
+  left: 0;
+  margin: auto;
+  opacity: 0.5;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.featured-right .fes-new {
+  background: #e39531 none repeat scroll 0 0;
+  color: #fff;
+  font-family: lato;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 12px;
+  position: absolute;
+  right: 10px;
+  text-transform: uppercase;
+  top: 10px;
+}
+.featured-right .single-item .product-action {
+  top: 20%;
+}
+.featured-right .single-item:hover .product-action {
+  opacity: 1;
+  top: 45%;
+  visibility: visible;
+}
+.fes-bottom {
+  margin-bottom: 30px;
+}
+.featured-left > p {
+  position: absolute;
+  right: 88px;
+  top: 30px;
+}
+.featured-left p span {
+  color: #fff;
+  font-family: roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 44px;
+  position: absolute;
+  text-align: center;
+  width: 44px;
+}
+.featured-left > p::before {
+  background: #e39531 none repeat scroll 0 0;
+  content: "";
+  height: 44px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotate(45deg);
+  width: 44px;
+}
+.frs-left-pro-content {
+  bottom: 105px;
+  display: block;
+  left: 75px;
+  position: absolute;
+  color: #e39531;
+}
+.frs-left-pro-content > h4 {
+  font-size: 30px;
+  font-weight: 300;
+  margin: 0;
+}
+.frs-left-pro-content > h2 {
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+.frs-left-pro-content a.sp-button {
+  background: #e39531 none repeat scroll 0 0;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 15px;
+  transition:.4s;
+  border:1px solid #e39531;
+}
+.frs-left-pro-content a.sp-button:hover{border-color:#fff;background:transparent;}
+.featured-tab {
+  margin-top: 12px;
+  text-align: center;
+}
+.featured-tab li {
+  display: inline-block;
+}
+.featured-tab li.active a{
+  color: #e39531;
+}
+.featured-tab li a {
+  color: #666666;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 5px 18px;
+  transition: all 0.5s ease 0s;
+  text-decoration: none;
+}
+.featured-tab li a:hover {
+  color: #e39531;
+}
+/* -------------- 9. Shipping Area  ---------------- */
+.shipping-area {
+  display: block;
+  overflow: hidden;
+  padding: 80px 0;
+}
+.shipping-single-item {
+  background: #efefef none repeat scroll 0 0;
+  padding: 55px 0;
+  text-align: center;
+}
+.shipping-area .shipping-single-item h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 8px 0 0;
+}
+.shipping-single-item > p {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+/* -------------- 10. Latset Post  ---------------- */
+.post-single-main-area {
+  border: 1px solid #c5c5c5;
+  box-shadow: 2px 6px 6px -7px;
+  margin-top: 30px;
+}
+.post-single-item{
+  display: block;
+  position: relative;
+}
+.post-single-item > p {
+  background: #e39531 none repeat scroll 0 0;
+  bottom: 62px;
+  color: #fff;
+  height: 80px;
+  line-height: 80px;
+  margin: 0;
+  position: absolute;
+  right: 52px;
+  text-align: center;
+  transform: rotate(45deg);
+  width: 80px;
+  z-index: 9999999;
+}
+.post-single-item p span {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  transform: rotate(-45deg);
+}
+.read-more-overlay {
+  background: rgb(234, 231, 231) none repeat scroll 0 0;
+  bottom: 0;
+  display: block;
+  overflow: hidden;
+  padding: 20px 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  opacity:0;
+  visibility:hidden;
+  transition:.4s;
+}
+.post-single-main-area:hover .read-more-overlay{
+  opacity: 0.8;
+  visibility:visible;
+  padding: 39px 0;
+}
+.read-more-overlay > a {
+  font-size: 16px;
+  font-weight: 700;
+}
+.post-dis {
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 20px;
+}
+.post-dis > h2 {
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+}
+.post-dis > p {
+  border-bottom: medium double #c9c9c9;
+  font-weight: 300;
+  margin: 0;
+  padding: 12px 0px 22px;
+}
+.post-dis > h2::before {
+  background: #c9c9c9 none repeat scroll 0 0;
+  content: "";
+  height: 1px;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 25px;
+  width: 300px;
+}
+.blog-meta {
+  display: block;
+  overflow: hidden;
+  padding: 7px 10px 4px;
+}
+.blog-meta .author-link {
+  float: left;
+}
+.blog-meta .comment-count {
+  float: right;
+}
+.blog-meta .comment-count [class^="flaticon-"]::before, [class*=" flaticon-"]::before, [class^="flaticon-"]::after, [class*=" flaticon-"]::after {
+  font-family: Flaticon;
+  font-size: 15px;
+  font-style: normal;
+  margin-left: 0;
+  color: #e39531;
+  padding-right: 5px;
+}
+/* -------------- 11. Our Client  ---------------- */
+.our-client-area {
+  padding: 76px 0;
+}
+.our-client-area .ourclient-owl {
+  padding-top: 30px;
+}
+/* -------------- 12. Footer Main  ---------------- */
+.footer-main-area {
+  background: #2b2b2b none repeat scroll 0 0;
+  color: #fff;
+  padding: 45px 0 0;
+}
+.footer-logo img {
+  padding-bottom: 10px;
+}
+.footer-logo > p {
+  font-size: 13px;
+}
+.footer-top-right {
+  float: right;
+}
+.footer-top-left {
+  margin-bottom: 42px;
+}
+.footer-newsletter h4 {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+.footer-newsletter form {
+  position: relative;
+}
+.footer-newsletter input {
+  background: #676767 none repeat scroll 0 0;
+  border: medium none;
+  padding: 15px 0 15px 25px;
+  width: 470px;
+}
+.footer-newsletter input[type="text"] {
+  color: #fff;
+  font-size:13px;
+  font-weight:400;
+}
+.footer-newsletter button {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 0 none;
+  color: #e39531;
+  height: 48px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  width: 50px;
+  top:0;
+}
+.footer-middle-area {
+  border-bottom: 1px solid #676767;
+  border-top: 1px solid #676767;
+  padding: 25px 0;
+}
+.contact-titel > p {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  position: relative;
+}
+.contact-titel > p::before {
+  background: #DB9031 none repeat scroll 0 0;
+  bottom: -13px;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  width: 15%;
+}
+.contact-details, .contact-details-middle {
+  padding-top: 40px;
+}
+.contact-details ul li, .contact-details-middle ul li {
+  font-size: 13px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+.contact-details ul li i {
+  border: 1px solid #bbbbbb;
+  border-radius: 50%;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 15px;
+  text-align: center;
+  width: 40px;
+}
+.contact-details-middle a {
+  color: #f0f0f0;
+}
+.contact-details-middle span {
+  float: right;
+}
+.contact-details-middle a:hover{color:#E39531;padding-left:5px;}
+.contact-details ul li a, .contact-details-middle ul li *::before {
+  content: "";
+  font-family: fontawesome;
+  left: 0;
+  margin-right: 15px;
+  margin-top: -1px;
+  position: absolute;
+  text-align: center;
+}
+.contact-social-icon {
+  float: right;
+  margin-top: 40px;
+}
+.contact-social-icon ul li {
+  display: inline-block;
+}
+.contact-social-icon ul li a {
+  color: #b0b0b0;
+  font-size: 20px;
+  margin-right: 15px;
+}
+.contact-social-icon ul li a:hover{color:#ff6060}
+.footer-bottom-area {
+  line-height: 50px;
+}
+.footer-bottom-titel > p {
+  color: #b0b0b0;
+  margin: 0;
+  font-weight: 300;
+}
+.footer-bottom-titel a {
+  color: #b0b0b0;
+  font-weight: 500;
+}
+.footer-bottom-titel a:hover{
+  color: #E39531;
+}
+.footer-bottom-payment {
+  float: right;
+}
+/*----------------------------------------*/
+/*  13. Home Two Css
+/*----------------------------------------*/
+/* -------------- 13.1 Header Area Top  ---------------- */
+.hm-two .header-area {
+  background: #f0f0f0 none repeat scroll 0 0;
+  border-bottom: medium none;
+  display: block;
+  position: relative;
+}
+.hm-two .header-area::before {
+  border-bottom: 1px solid #ddd;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: -6px;
+  width: 100%;
+}
+.hm-two .logo-area {
+  padding: 12px 0 12px 30px;
+}
+.hm-two .main-menu ul li > a {
+  font-weight: 400;
+}
+.hm-two .main-menu ul > li::before {
+  background: #ff6060 none repeat scroll 0 0;
+  top: 72px;
+}
+.hm-two .main-menu ul > li.active a::before {
+  background: #ff6060 none repeat scroll 0 0;
+  top: 72px;
+}
+.main-menu ul li > a:hover {
+  color: #e39531;
+}
+.hm-two .main-menu ul > li.active a {
+  color: #ff6060;
+}
+.hm-two .main-menu ul li a {
+  color: #888888;
+  padding: 29px 0;
+}
+.hm-two .main-menu ul li ul li > a{padding:12px 15px;}
+.hm-two .main-menu ul li ul li:hover::before{opacity: 0;transform: scale(0);}
+.hm-two .main-menu ul li:hover .mega-menu span a:hover{color:#ff6060}
+.hm-two .main-menu ul li > a:hover {
+  color: #ff6060!important;
+}
+.hm-two .main-menu ul li:hover a {
+  color: #ff6060;
+}
+.hm-two .main-menu ul li .mega-menu-2 {
+  left: -450px !important;
+  width: 850px !important;
+}
+.hm-two .main-menu ul li ul {
+  top: 150%!important;
+}
+.hm-two .main-menu ul li:hover ul li a:hover{color: #fff!important;background:#ff6060}
+.hm-two .main-menu ul li ul li a {
+  color: #666!important;
+}
+.hm-two .main-menu ul li .mega-menu {
+  left: -425px;
+  top: 150% !important;
+  width: 1050px;
+}
+.hm-two .main-menu ul li:hover .mega-menu {
+  opacity: 1;
+  top: 91% !important;
+  visibility: visible;
+}
+.other-page .main-menu ul li:hover .mega-menu {
+  top: 100% !important;
+}
+.hm-two .main-menu ul li:hover ul {
+  opacity: 1;
+  top: 91%!important;
+  visibility: visible;
+}
+.other-page .main-menu ul li:hover ul {
+  top: 100%!important;
+}
+.hm-two .header-left ul li > a {
+  line-height: 69px;
+  padding: 0 4px;
+  display: block;
+}
+.header-left ul li a span {
+  background: #ff6060 none repeat scroll 0 0;
+  border-radius: 50%;
+  color: #fff;
+  font-family: roboto;
+  font-size: 11px;
+  font-weight: 500;
+  height: 18px;
+  line-height: 18px;
+  margin: 22px 0 0 -6px;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  width: 18px;
+  top:0;
+  right:0;
+}
+.hm-two .text-warning, .hm-two .show-shopping-cart .list-product .product-name a:hover, .hm-two .user-meta ul li a:hover {
+  color: #ff6060;
+}
+.hm-two .button:hover, input[type="submit"]:hover {
+  background-color: #ff6060;
+}
+.hm-two .mini-cart .group-button .check-out:hover {
+  background-color: #ff6060;
+  border-color: #ff6060;
+}
+/* -------------- 13.2 Slider Area  ---------------- */
+.hm-two .slider-1 h2 {
+  color: #444444;
+  font-family: lato;
+  font-size: 56px;
+  font-weight: 300;
+  left: 34.5%;
+  position: relative;
+  top: -10px;
+}
+.hm-two .slider-1 h3 {
+  color: #ff6060;
+  font-family: lato;
+  font-size: 64px;
+  font-weight: 700;
+  left: 34.5%;
+  position: relative;
+  top: -24px;
+}
+.hm-two .slider-2 h2 {
+  color: #444;
+  font-family: Poppins;
+  font-size: 56px;
+  font-weight: 700;
+  margin-top: -26px;
+  text-transform: uppercase;
+}
+.hm-two .slider-2 h3{
+  text-transform: uppercase;
+  font-weight: uppercase;
+  font-family: Poppins;
+  font-size:30px;
+  color: #444444;
+}
+.hm-two .slider-3 h2 {
+  color: #444444;
+  font-family: Poppins;
+  font-size: 50px;
+  font-weight: 700;
+  left: -46%;
+  position: relative;
+  top: 45px;
+}
+.hm-two .slider-3 h3 {
+  color: #444444;
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 300;
+  left: -46.5%;
+  position: relative;
+  top: 42px;
+}
+.hm-two .preview-1 a.nivo-nextNav {
+  background-position: -50px 0;
+  right: 110px;
+}
+.hm-two .preview-1 .nivo-directionNav a {
+  height: 72px;;
+  width: 50px;
+}
+.hm-two .preview-1 a.nivo-prevNav {
+  left: 110px;
+}
+.hm-two .slider-area .preview-1 .nivo-controlNav {
+  padding: 6px 0px;
+}
+/* -------------- 13.3 Banner Area  ---------------- */
+.banner-1 {
+  width: 32.5%;
+}
+.banner-2 {
+  width: 35%;
+}
+.pad-10{padding-left:7px;padding-right:7px}
+.custom-row{margin-left:-7px;margin-right:-7px}
+.mr-10{margin-bottom:11px;}
+.single-banner .featured-left > a > span.button-three {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background: #ff6060 none repeat scroll 0 0;
+  color: #fff;
+  font-family: lato;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 5px 12px;
+}
+.single-banner {
+  display: block;
+  overflow: hidden;
+}
+.single-banner .button-two {
+  background: #ff6060 none repeat scroll 0 0;
+  color: #fff;
+  font-family: lato;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 12px 10px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 99999;
+}
+/* -------------- 13.4 Popular Collection Area  ---------------- */
+.popular-collection-area {
+  display: block;
+  overflow: hidden;
+  padding: 78px 0 15px;
+  position: relative;
+}
+.section-margin {
+  margin-top: 65px;
+}
+.area-titel {
+  margin: 0;
+  position: relative;
+  text-align: center;
+}
+.area-titel h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+}
+.area-titel::before {
+  border-bottom: 1px solid #ddd;
+  content: "";
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 25px;
+  width: 20%;
+}
+.area-titel::after {
+  background: #ff6060 none repeat scroll 0 0;
+  content: "";
+  height: 20px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 35px;
+  width: 20px;
+}
+.popular-left {
+  cursor: pointer;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.popular-left > a {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.popular-left > a::before {
+  background: #111 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transition:.3s;
+}
+.popular-left:hover a::before{opacity:0.3;}
+.pro-action {
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 33%;
+  transform: scale(0);
+  transition: all 0.5s ease 0s;
+  opacity: 0;
+  visibility:hidden;
+}
+.popular-left:hover .pro-action{transform: scale(1);opacity: 1;visibility:visible;}
+.pro-action ul{text-align:center;}
+.pro-action ul li {
+  display: inline-block;
+  padding-left: 5px;
+}
+.pro-action ul li a {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  display: block;
+  height: 50px;
+  padding-top:10px;
+  transition: all 0.3s ease 0s;
+  width: 50px;
+}
+.pro-action ul li a:hover{color:#fff;background:#ff6060;border-color:#ff6060;}
+.popular-left .content .rating i, .featured-area-two .content .rating i, .single-item .rating i{
+  color: #ff6060;
+}
+.trending-product .single-item .rating i{color: #E39531;}
+.popular-left .content .product-titel > a:hover, .featured-area-two .product-titel > a:hover {
+  color: #ff6060;
+}
+.mrbtm-40 {
+  margin-bottom: 46px;
+}
+.post-thumb {
+  position: relative;
+}
+.post-thumb::after {
+  background: rgba(0, 0, 0, 0.1) none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 0;
+  left: 0;
+  margin: auto;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 400ms ease-in 0s;
+  width: 0;
+  z-index: 1;
+}
+.popular-middle:hover .post-thumb::after {
+  height: 100%;
+  width: 100%;
+}
+.popular-middle a {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+.popular-middle a::before {
+  bottom: 0;
+  box-sizing: border-box;
+  content: "";
+  left: 0;
+  opacity: 0;
+  overflow: visible;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.3s ease 0s;
+  z-index: 9;
+}
+.popular-middle a:hover::before {
+  border: 15px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  opacity: 1;
+  transition: all 0.3s ease 0s;
+}
+.popular-collection-area .owl-theme .owl-controls .owl-buttons div, .featured-area-two .owl-theme .owl-controls .owl-buttons div {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 1px solid #767676;
+  color: #767676;
+  display: inline-block;
+  font-size: 26px;
+  height: 30px;
+  line-height: 26px;
+  margin: 0 auto;
+  opacity: 0.5;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  width: 30px;
+}
+.popularcollection-owl .owl-controls .owl-buttons .owl-prev, .featured-two-owl .owl-controls .owl-buttons .owl-prev{
+  left: 0;
+  opacity: 0 !important;
+  right: auto;
+}
+.popularcollection-owl .owl-controls .owl-buttons .owl-next, .featured-two-owl .owl-controls .owl-buttons .owl-next {
+  left: auto;
+  opacity: 0 !important;
+  right: 0;
+}
+.popularcollection-owl:hover .owl-controls .owl-buttons .owl-prev, .featured-two-owl:hover .owl-controls .owl-buttons .owl-prev {
+  left: -5px;
+  opacity: 1 !important;
+}
+.popularcollection-owl:hover .owl-controls .owl-buttons .owl-next, .featured-two-owl:hover .owl-controls .owl-buttons .owl-next {
+  right: -5px;
+  opacity: 1 !important;
+}
+.popular-collection-area .owl-theme .owl-controls.clickable .owl-buttons div:hover, .featured-area-two .owl-theme .owl-controls.clickable .owl-buttons div:hover {
+  border: 1px solid #ff6060;
+  color: #ff6060;
+  opacity: 1;
+  text-decoration: none;
+}
+/* -------------- 13.5 FEATURED PRODUCTS TWO  ---------------- */
+.featured-area-two {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.featured-area-two .owl-theme .owl-controls .owl-buttons div {
+  top: 38%;
+}
+.single-item .pro-action{z-index: 999999999;}
+.single-item:hover .pro-action{
+  opacity: 1;
+  transform: scale(1);
+  visibility: visible;
+}
+/* -------------- 13.6 OUR LATEST BLOG TWO  ---------------- */
+.latestblog-area-two {
+  padding: 65px 0 0;
+}
+.latestblog-content {
+  background: #f6f6f6 none repeat scroll 0 0;
+  padding: 70px 100px 72px;
+}
+.blog-post-title h3 {
+  font-weight: 400;
+  margin: 0;
+}
+.blog-post-title > span, .latestblog-content > p {
+  font-weight: 300;
+}
+.latestblog-content > p {
+  margin-bottom: 52px;
+  margin-top: 18px;
+}
+.latestblog-single .blog-img {
+  display: block;
+  overflow: hidden;
+}
+.latestblog-single .blog-img > img{transition:.5s;}
+.latestblog-single:hover img {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.shear-comments > a {
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+}
+.shear-comments > a:hover, .count-area ul li a:hover, .blog-post-title h3 a:hover, .blog-post-title > span a:hover{color:#ff6060}
+.hm-two .footer-newsletter button, .hm-two .contact-details-middle a:hover, .hm-two .footer-bottom-titel a:hover {
+  color: #ff6060;
+}
+.hm-two .contact-titel > p::before {
+  background: #ff6060 none repeat scroll 0 0;
+}
+.shear-comments > a::before {
+  border-bottom: 2px solid #ff6060;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 5px;
+  width: 110%;
+}
+.count-area ul li a {
+  font-size: 13px;
+  font-weight: 400;
+}
+.count-area ul li a [class^="flaticon-"]::before, [class*=" flaticon-"]::before, [class^="flaticon-"]::after, [class*=" flaticon-"]::after {
+  font-family: Flaticon;
+  font-size: 13px;
+  font-style: normal;
+  margin-left: 0;
+  margin-right: 2px;
+}
+/* -------------- 14. About us Page  ---------------- */
+
+/* -------------- 14.1 Banner Area  ---------------- */
+.header-banner-area {
+  background: rgba(0, 0, 0, 0) url("img/other-page/banner.jpg") no-repeat scroll center center / cover ;
+  padding: 120px 0;
+  position: relative;
+}
+.other-page .header-banner-area {
+  top: 0px;
+}
+.other-page .main-menu ul li a {
+  padding: 27px 0;
+}
+.other-page .header-area::before {
+  border-bottom: none;
+}
+.header-banner-area::before {
+  background: #111 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.banner-heading {
+  text-align: center;
+}
+.banner-heading h1,.banner-heading  h2{
+  color: #fff;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0;
+}
+/* -------------- 14.2 Welcome Area  ---------------- */
+.welcome-area .welcome-heading > h1 {
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0;
+  padding: 45px 0;
+  text-align: center;
+}
+.welcome-left-titel h3 {
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+}
+.welcome-left-titel h3::before {
+  background: #C9C9C9 none repeat scroll 0 0;
+  bottom: -7px;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  width: 20%;
+}
+.welcome-left {
+  padding-right: 10px;
+}
+.welcome-left > p {
+  font-weight: 300;
+  margin-top: 42px;
+  text-align: justify;
+}
+.whoare-skill-heading > h3, .skill-titel h3, .contact-from-heading h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 49px;
+  position: relative;
+}
+.whoare-skill-heading h3::before {
+  background: #c9c9c9 none repeat scroll 0 0;
+  bottom: -7px;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  width: 11%;
+}
+/* -------------- 14.3 Who Are Skill Area  ---------------- */
+.whoare-skill-area {
+  padding-bottom: 60px;
+  padding-top: 45px;
+}
+.whoare-skill-left .panel-group .panel {
+  border-radius: 0;
+}
+.whoare-skill-left .panel-default > .panel-heading {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+.whoare-skill-right {
+  display: block;
+  overflow: hidden;
+}
+.panel-title > a.right {
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 20px;
+  text-decoration: none;
+}
+.panel-title > a.right:hover {
+  color:#444444;
+}
+.panel-title > a.border {
+  border-right: 1px solid #ddd;
+  margin-left: -15px;
+  padding: 10px 10px 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s ease 0s;
+}
+.panel-title > a.border:hover{
+  background: #ff6060 none repeat scroll 0 0;
+  color:#fff;
+}
+.border i {
+  display: inline-block;
+  margin-left: -5px;
+}
+.skill_area {
+  display: block;
+  padding-top: 15px;
+}
+.skill-titel h3::before {
+  background: #c9c9c9 none repeat scroll 0 0;
+  bottom: -7px;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  width: 18%;
+}
+.progress-bar p {
+  margin-top: -32px;
+}
+.tpl-progress {
+  background: #f0f0f0 none repeat scroll 0 0;
+  border-radius: 0;
+  box-shadow: none;
+  font-weight: 400;
+  height: 2px;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  overflow: visible;
+  text-transform: uppercase;
+}
+.tpl-progress .progress-bar {
+  background-color: #222;
+  box-sizing: border-box;
+  color: #000;
+  font-size: 11px;
+  overflow: visible;
+  padding-top: 2px;
+  position: relative;
+  text-align: left;
+}
+.tpl-progress .progress-bar > span {
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  height: 27px;
+  letter-spacing: 0;
+  line-height: 23px;
+  min-width: 24px;
+  padding: 0 3px;
+  position: absolute;
+  right: -5px;
+  text-align: center;
+  top: -32px;
+}
+/*----------------------------------------*/
+/*    15. Contact Us Page Css
+/*----------------------------------------*/
+/* --------- 15.1 Adress Area  --------- */
+.adress-area {
+  padding: 82px 0 78px;
+}
+.address-single {
+  background: #EBEBEB none repeat scroll 0 0;
+  padding: 70px 0;
+  position: relative;
+  text-align: center;
+  transition:.4s
+}
+.info h3 {
+  font-size: 16px;
+}
+.info p {
+  margin: 0;
+}
+.all-adress-info {
+  display: inline-block;
+}
+.icon {
+  float: left;
+  height: auto;
+}
+.icon i {
+  font-size: 28px;
+  padding-top: 32px;
+}
+.info {
+  float: left;
+  display: inline-block;
+  margin-left: 12px;
+}
+.address-single:hover{
+  background: #ff6060 none repeat scroll 0 0;
+  color:#fff;
+}
+.address-single:hover .info > h3 {
+  color: #fff;
+}
+/* --------- 15.2 Contact From Area  --------- */
+.contact-from-heading h3::before {
+  background: #c9c9c9 none repeat scroll 0 0;
+  bottom: -7px;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  width: 16%;
+}
+.contact-from-area {
+  padding-bottom: 80px;
+}
+.input-text input {
+  border: 1px solid #c9c9c9;
+  padding: 10px 15px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.input-message textarea {
+  border: 1px solid #c9c9c9;
+  width: 100%;
+  height: 160px;
+  padding: 15px;
+}
+.input-message input[type="submit"] {
+  background: #444444 none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  height: 40px;
+  margin-top: 16px;
+  padding: 0px 25px;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+  font-weight: 500;
+}
+.input-message input[type="submit"]:hover {
+  background: #ff6060 none repeat scroll 0 0;
+}
+/*----------------------------------------*/
+/*    16. Check Out Page Css
+/*----------------------------------------*/
+/* --------- 16.1 Check Out Left Area -------- */
+.checkout-area {
+  padding: 80px 0 60px;
+}
+.checkout-left-area {
+  padding-right: 80px;
+}
+.checkout-left-area .panel-group .panel {
+  border-radius: 0;
+  margin-bottom: 20px;
+}
+.checkout-left-area .panel-heading {
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 10px 15px;
+  background-color: #e0e0e0;
+}
+.checkout-left-area .panel {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);
+}
+.checkout-left-area .panel-default {
+  border: medium none;
+}
+.checkout-left-area .panel-group a {
+  font-family: roboto;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.checkout-left-area .panel-default.actives .panel-title a {
+  color: #ff6060;
+}
+.checkout-left-area .panel-group a:hover{color:#ff6060;}
+.checkout-left-area .panel-group a span {
+  background: #ff6060 none repeat scroll 0 0;
+  margin-right: 10px;
+  padding: 2px 8px;
+  color: #fff;
+}
+.checkout-left-area .panel-body {
+  background: #fff none repeat scroll 0 0;
+  padding: 0;
+}
+.log-in-left {
+  float: left;
+  margin-right: 90px;
+}
+.log-in-left h3, .log-in-right h3{
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+.left-content > span {
+  display: block;
+  padding-bottom: 20px;
+}
+.left-content i {
+  margin-right: 10px;
+}
+.left-content a:hover {
+  background: #444444 none repeat scroll 0 0;
+  color: #fff!important;
+}
+.log-in-right {
+  display: block;
+  overflow: hidden;
+}
+.log-in-from p span {
+  display: block;
+  margin-bottom: 10px;
+}
+.log-in-from p input {
+  background: #e0e0e0 none repeat scroll 0 0;
+  border: medium none;
+  padding: 10px;
+  width: 100%;
+}
+.login-btn {
+  margin-top: 70px;
+}
+.login-btn a {
+  background: #ff6060 none repeat scroll 0 0;
+  color: #fff;
+  margin-left: 25px;
+  padding: 10px 25px;
+}
+.login-btn-left {
+  margin-top: 50px;
+}
+.login-btn-left a{
+ background: #ff6060 none repeat scroll 0 0;
+ color: #fff;
+ padding: 10px 25px; 
+}
+.login-btn a:hover {
+  background: #444444 none repeat scroll 0 0;
+  color: #fff!important;
+}
+.checkbox-form h3 {
+  border-bottom: 1px solid #e5e5e5;
+  color: #2b2b2b;
+  font-size: 30px;
+  margin: 0 0 20px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  width: 100%;
+}
+.country-select {
+  margin-bottom: 30px;
+  position: relative;
+  margin-top: 40px;
+}
+.country-select label,.checkout-form-list label{
+  color: #333;
+  margin: 0 0 5px;
+  display:block
+}
+.country-select label span.required,.checkout-form-list label span.required{color:red}
+.country-select select {
+  -moz-appearance: none;
+  border: 1px solid #ddd;
+  color: #2b2b2b;
+  height: 32px;
+  padding-left: 10px;
+  width: 100%;
+}
+.country-select::before {
+  content: "";
+  display: inline-block;
+  font-family: fontawesome;
+  font-size: 20px;
+  position: absolute;
+  right: 12px;
+  top: 31px;
+}
+.checkout-form-list {
+  color: #2b2b2b;
+  margin-bottom: 30px;
+}
+.checkout-form-list label{color: #333;}
+.checkout-form-list label span.required{}
+.checkout-form-list input[type="text"], .checkout-form-list input[type="password"], .checkout-form-list input[type="email"] {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #e5e5e5;
+  border-radius: 0;
+  color: #2b2b2b;
+  height: 42px;
+  padding: 0 0 0 10px;
+  width: 100%;
+}
+.checkout-form-list{}
+.checkout-form-list input[type=checkbox]{display: inline-block;
+margin-right: 10px;
+position: relative;
+top: 2px;}
+.create-acc label {
+  color: #333;
+  display: inline-block;
+}
+.checkout-form-list input[type=password]{}
+.create-account{display:none}
+.ship-different-title{}
+.ship-different-title{}
+.ship-different-title h3 label {
+  display: inline-block;
+  font-family: roboto;
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+.ship-different-title input{}
+.order-notes {
+  color: #2b2b2b;
+  padding-bottom: 50px;
+}
+.order-notes textarea{height: 90px;
+padding: 15px;width:100%}
+#ship-box-info{display:none}
+#checkout-review-table {
+  background: #fff none repeat scroll 0 0;
+  border-color: #f2f2f2 #f2f2f2 #d9dde3;
+  border-style: solid;
+  border-width: 1px;
+  width: 100%;
+}
+#checkout-review-table thead {
+  text-align: center;
+}
+#checkout-review-table thead tr:first-child {
+  font-size: 16px;
+}
+#checkout-review-table thead tr th:first-child {
+  width: 70%;
+}
+#checkout-review-table thead tr th {
+  border-right: 1px solid #f2f2f2;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize;
+}
+.data-table thead th {
+  background-color: #ff6060;
+  color: #252525;
+  padding: 5px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+#checkout-review-table tbody tr:first-child {
+  font-size: 16px;
+}
+#checkout-review-table tbody tr {
+  border-top: 1px solid #f2f2f2;
+}
+#checkout-review-table tbody tr td:first-child {
+  text-align: left;
+}
+#checkout-review-table tbody tr td {
+  border-bottom: 1px solid #f2f2f2;
+  border-right: 1px solid #f2f2f2;
+  font-weight: normal;
+  padding: 6px 10px;
+  text-align: center;
+  vertical-align: top;
+}
+#checkout-review-table tbody tr td .product-name {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 7px 0 5px;
+}
+#checkout-review-table tbody tr td {
+  font-weight: normal;
+  text-align: center;
+}
+.price {
+  color: #444444;
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+#checkout-review-table tfoot tr td {
+  border-right: 1px solid #f2f2f2;
+  padding: 6px 10px;
+  vertical-align: top;
+}
+#review-buttons-container {
+  border-color: #d9dde3;
+  border-style: solid;
+  border-width: 0 1px 1px;
+  margin: 0;
+  padding: 20px 30px;
+  text-align: right;
+}
+#review-buttons-container p {
+  color: #db3838;
+  font-size: 12px;
+  line-height: 30px;
+  margin: 0;
+}
+#checkout-review-table tfoot tr {
+  font-weight: normal;
+  text-align: right;
+}
+#review-buttons-container p a {
+  color: #393939;
+}
+#checkout-progress button.button {
+  line-height: normal;
+}
+.button.btn-checkout,.buttons-set button {
+  border: medium none;
+  font-weight: 500;
+  padding: 10px 20px;
+  color: #fff;
+}
+.button.btn-checkout:hover{
+  background: #ff6060 none repeat scroll 0 0;
+  color:#fff;
+}
+.buttons-set button:hover{
+  background: #444444 none repeat scroll 0 0;
+  color:#fff;
+}
+.form-list li {
+  margin: 0 0 8px;
+  overflow: hidden;
+}
+#billing-form li.control input.radio, #billing-form li.control input.checkbox, #payment-form li.control input.radio {
+  float: left;
+  margin-right: 7px;
+  margin-top: 7px;
+}
+#billing-form li.control label, #payment-form li.control label {
+  line-height: 30px;
+}
+#billing-form li.control label, #payment-form li.control label, ul.form-list li.control label {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+.form-list li .field label, .form-list li label {
+  color: #252525;
+  float: left;
+  font-size: 12px;
+  font-weight: normal;
+  position: relative;
+}
+.buttons-set {
+  border-top: 1px solid #f2f2f2;
+  clear: both;
+  margin: 20px 0 0;
+  padding: 8px 0 0;
+  text-align: right;
+}
+.payment-met {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+/* --------- 16.2 Check Out Right Area -------- */
+.checkout-right-area > p {
+  font-weight: 500;
+}
+.checkout-right-area ul li {
+  border-bottom: 1px solid #d6d6d6;
+  color: #6c6c6c;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 29px;
+  padding: 8px 0;
+  text-transform: capitalize;
+}
+.checkout-right-area ul li a{
+  color: #444444;
+  text-decoration: none;
+}
+.checkout-right-area ul li a:hover{
+  padding-left:5px;
+}
+.checkout-right-area ul li::before {
+  color: #a8a8a8;
+  content: "\f068 ";
+  display: inline-block;
+  font-family: FontAwesome;
+  font-size: 14px;
+  font-weight: normal;
+  margin-right: 10px;
+}
+/*----------------------------------------*/
+/*    17. Wishlist Page Css
+/*----------------------------------------*/
+/* --------- 17.1 Wishlist Left Area  --------- */
+.wishlist-area {
+  display: block;
+  overflow: hidden;
+  padding: 80px 0 14px;
+}
+.shoping-cart-area {
+  display: block;
+  overflow: hidden;
+  padding: 80px 0 90px;
+}
+.category {
+  background: #e0e0e0 none repeat scroll 0 0;
+}
+/* --------- 17.2 Category  --------- */
+.category > h4, .price-slider h4{
+  border-bottom: 1px solid #666666;
+  color: #666666;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+}
+.category-list {
+  padding: 36px 15px 36px 25px;
+}
+.category-list ul li {
+  margin-bottom: 30px;
+}
+.category-list li:last-child {
+  margin-bottom: 0;
+}
+.category-list ul li a {
+  color: #666666;
+  display: block;
+}
+.category-list ul li a i {
+  margin-right: 10px;
+}
+.category-list ul li a span {
+  float: right;
+  letter-spacing: 4px;
+}
+.category-list ul li a:hover{
+  color:#111;
+  padding-left:4px;
+}
+/* --------- 17.3 Popular Tag  --------- */
+.popular-tag, .shop-top-seller {
+  display: block;
+  margin: 40px 0;
+  overflow: hidden;
+}
+.popular-tag h4, .compare-products h4, .shop-top-seller h4{
+  border-bottom: 1px solid #666666;
+  color: #666666;
+  font-family: lato;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 20px;
+  padding-bottom: 15px;
+}
+.top-seller-details h5 a {
+  color: #444444;
+}
+.top-seller-details a:hover {
+  color: #ff6060;
+}
+.popular-tag ul li {
+  display: inline-block;
+}
+.popular-tag ul li a {
+  background: #E0E0E0 none repeat scroll 0 0;
+  color: #666666;
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+}
+.popular-tag ul li a:hover{
+  background: #ff6060 none repeat scroll 0 0;
+  color:#fff;
+}
+/* --------- 17.4 Compare Product -------- */
+.single-product {
+  display: block;
+  margin-top: 28px;
+  position: relative;
+}
+.single-product > a {
+  display: block;
+  position: relative;
+}
+.compare-products .single-product > a::before {
+  background: #111 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transform:scalex(0);
+  visibility:hidden;
+  transition:.5s;
+}
+.single-product a:hover::before{
+  transform:scalex(1);
+  visibility:visible;
+}
+.single-product a span {
+  background: #ff6060 none repeat scroll 0 0;
+  color: #fff;
+  font-family: raleway;
+  font-weight: 700;
+  padding: 5px 15px;
+  position: absolute;
+  right: -6px;
+  text-transform: uppercase;
+  top: 15px;
+}
+.single-product a span::before {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-origin: padding-box;
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  bottom: -30px;
+  content: "";
+  height: 100%;
+  position: absolute;
+  right: 0;
+  width: 10%;
+}
+.single-product a p {
+  bottom: 0%;
+  color: #fff;
+  font-weight: 500;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  transition:.4s;
+  opacity:0;
+  visibility:hidden;
+}
+.single-product a:hover p{
+  bottom: 45%;
+  opacity:1;
+  visibility:visible;
+}
+.wishlist-top-details > img {
+  float: left;
+}
+.wishlist-rating {
+  display: block;
+  overflow: hidden;
+  text-align: center;
+}
+.wishlist-rating h3 {
+  font-family: raleway;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 5px;
+}
+/* --------- 17.5 Shop Top Seller -------- */
+.shop-top-seller h4{
+  border-bottom: 1px solid #666666;
+  color: #666666;
+  font-family: raleway;
+  font-size: 16px;
+  font-weight: 500;
+  margin:0;
+}
+.shop-single-main {
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+  padding: 20px 0;
+}
+.shop-single-main:last-child {
+  border-bottom: medium none;
+}
+.top-seller-details {
+  overflow: hidden;
+  padding: 20px 0;
+  text-align: center;
+}
+.top-seller-product {
+  float: left;
+  overflow: hidden;
+}
+.top-seller-details h5 {
+  font-family: lato;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.top-seller-details li {
+  display: inline;
+}
+/* --------- 17.6 Wishlist Right Area -------- */
+.wishlist-right-area {
+  border-bottom: 1px solid #ddd;
+}
+.wishlist-right-area table, .shoping-cart-area table {
+  border-color: #c7c7c7;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px 0 0 1px;
+  margin: 0 0 50px;
+  text-align: center;
+  width: 100%;
+}
+.wishlist-right-area table th, .shoping-cart-area table th {
+  border-top: medium none;
+  color: #6f6f6f;
+  padding: 20px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.wishlist-right-area th.product-name {
+  width: 160px;
+}
+.wishlist-right-area th.product-details-comment {
+  width: 415px;
+}
+.wishlist-right-area th.product-price-cart {
+  width: 200px;
+}
+.wishlist-right-area th.product-remove {
+  width: 100px;
+}
+.wishlist-right-area table th, .wishlist-right-area table td, .shoping-cart-area table th, .shoping-cart-area table td {
+  border-bottom: 1px solid #c7c7c7;
+  border-right: 1px solid #c7c7c7;
+}
+.wishlist-right-area .product-image {
+  padding: 0px 20px;
+}
+/* --------- 17.7 Wishlist Product Table -------- */
+.product-details {
+  padding: 10px;
+  text-align: left;
+}
+.product-cart-details {
+  margin-bottom: 160px;
+}
+.product-cart {
+  padding: 0 30px;
+}
+.product-details > h4 {
+  color: #666666;
+  font-family: lato;
+  font-size: 16px;
+  font-weight: 700;
+}
+.product-details > p {
+  color: #666666;
+  font-family: raleway;
+  font-weight: 300;
+  margin: 0 0 40px;
+  text-align: justify;
+  font-size:13px;
+}
+.product-details textarea {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #ddd;
+  height: 135px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 395px;
+}
+.product-cart-details > span {
+  font-size: 16px;
+  font-weight: 500;
+}
+.product-cart-details > input[type="number"] {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  font-weight: 500;
+  height: 40px;
+  margin-top: 10px;
+  text-align: center;
+  width: 105px;
+}
+.product-cart-details > input[type="submit"] {
+  background: #d5d5d5 none repeat scroll 0 0;
+  border: 0 none;
+  color: #444444;
+  font-weight: 700;
+  margin-top: 10px;
+  padding: 10px;
+  transition: all 0.4s ease 0s;
+}
+.product-cart-details > input[type="submit"]:hover {
+  background: #ff6060 none repeat scroll 0 0;
+  color:#fff;
+}
+.product-cart p a {
+  bottom: 0;
+  color: #444444;
+  float: right;
+  font-size: 16px;
+  margin-top: 30px;
+}
+.product-remove > a {
+  color: #444444;
+  font-size: 25px;
+}
+.product-remove > a:hover{
+  color:#DD4E42;
+}
+.product-cart p a:hover{
+  color:#DD4E42;
+}
+/* --------- 17.8 Table Bottom Area -------- */
+.table-bottom-area {
+  margin-top: 25px;
+}
+.table-bottom-area > a {
+  color: #666666;
+  float: left;
+  font-weight: 500;
+  transition:.4s;
+}
+.table-bottom-area > a:hover {
+  padding-left: 8px;
+}
+.table-bottom-area .bottom-button {
+  float: right;
+}
+.table-bottom-area .bottom-button > a, .shopingcart-bottom-area a {
+  background: #ff6060 none repeat scroll 0 0;
+  color: #fff;
+  font-weight: 400;
+  margin-left: 5px;
+  padding: 10px 25px;
+}
+.table-bottom-area .bottom-button > a:hover{
+  color:#fff;
+  background: #444444 none repeat scroll 0 0;
+}
+/*----------------------------------------*/
+/*    18. Shoping Cart Page Css
+/*----------------------------------------*/
+/* --------- 18.1 Shoping Cart Table Area -------- */
+.shoping-cart-area table{
+  margin: 0 0 20px;
+}
+.product-remove {
+  width: 130px;
+}
+.product-image {
+  width: 265px;
+}
+.product-name {
+  width: 170px;
+}
+.product-edit {
+  width: 112px;
+}
+.product-unit-price, .product-quantity, .product-subtotal {
+  width: 165px;
+}
+.wishlist-table-area .product-name h3 a {
+  color: #444444;
+  font-size: 14px;
+  font-weight: 300;
+}
+.wishlist-table-area .product-edit p a {
+  bottom: 0;
+  color: #444444;
+  font-size: 14px;
+  font-weight: 300;
+}
+.wishlist-table-area .product-edit p a:hover{
+  color:#DD4E41;
+}
+.wishlist-table-area .product-name h3 a:hover{
+  color:#DD4E41;
+}
+.product-image img {
+  padding: 25px 0;
+}
+/* --------- 18.2 Shoping Cart Bottom Area -------- */
+.shopingcart-bottom-area .bottom-button {
+  float: right;
+}
+.bottoma {
+  margin-left: 11% !important;
+  padding: 10px 60px !important;
+}
+.bottomb{
+  padding: 10px 50px!important;
+}
+.shopingcart-bottom-area a:hover {
+  background: #444444 none repeat scroll 0 0;
+  color: #fff;
+}
+/* --------- 18.3 Discount Area -------- */
+.discount-area {
+  padding-bottom: 80px;
+}
+.discount-main-area {
+  border: 1px solid #ddd;
+  text-align: center;
+}
+.discount-top > p {
+  margin: 0;
+  font-weight: 300;
+}
+.discount-top {
+  background: #fff none repeat scroll 0 0;
+  border-bottom: 1px solid #ddd;
+  padding: 35px 0;
+}
+.discount-middle {
+  padding: 82px 0;
+}
+.discount-middle > input {
+  background: #f4f4f4 none repeat scroll 0 0;
+  border: medium none;
+  display: block;
+  margin: auto auto 20px;
+  padding: 10px;
+  width: 75%;
+}
+/* --------- 18.4 Subtotal Area -------- */
+.subtotal-main-area {
+  border: 1px solid #ddd;
+}
+.subtotal-area h2 {
+  background: #f4f4f4 none repeat scroll 0 0;
+  border-bottom: 1px solid #ddd;
+  color: #666666;
+  font-family: roboto;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  padding: 35px;
+}
+.subtotal-area span {
+  float: right;
+}
+.subtotal-main-area > a {
+  background: #ff6060 none repeat scroll 0 0;
+  float: right;
+  font-weight: 500;
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  color: #fff;
+}
+.subtotal-main-area > a:hover{
+  background:#444444;
+  color: #fff;
+}
+.subtotal-main-area > p {
+  color: #666666;
+  font-family: roboto;
+  font-size: 16px;
+  margin: 0;
+  padding-bottom: 62px;
+  padding-top: 100px;
+  text-align: center;
+}
+.discount-top h3 {
+  color: #666666;
+  font-family: roboto;
+  font-size: 16px;
+  font-weight: 500;
+}
+.discount-middle > a {
+  background: #ff6060 none repeat scroll 0 0;
+  color: #fff;
+  font-weight: 500;
+  padding: 10px;
+}
+.discount-middle > a:hover {
+  background:#444444;
+  color: #fff;
+}
+/*----------------------------------------*/
+/*    19. Shop Page Css
+/*----------------------------------------*/
+/* --------- 19.1 Price left Area -------- */
+.wishlist-area.shop-area {
+  display: block;
+  overflow: hidden;
+  padding: 80px 0 38px;
+}
+.other-page.shp .our-brand-area {
+  padding-top: 10px;
+}
+.price_filter {
+  padding: 50px 15px 55px;
+}
+.price_filter .ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all {
+  background: #6a6a6a none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 0;
+  height: 2px;
+  margin-bottom: 30px;
+  margin-left: auto;
+}
+.price_filter .ui-slider-range {
+  background: #ff6060 none repeat scroll 0 0;
+}
+.price_filter .ui-slider-handle.ui-state-default.ui-corner-all {
+  background: #ff6060 none repeat scroll 0 0;
+  border: 3px solid #ff6060;
+  border-radius: 50%;
+  height: 15px;
+  margin-top: -2px;
+  width: 15px;
+}
+.price_slider_amount > input[type="text"] {
+  border-color: #cccccc #ddd #cccccc #cccccc;
+  border-image: none;
+  border-style: solid;
+  border-width: 1px;
+  color: #2b2b2b;
+  float: right;
+  font-weight: 500;
+  height: 40px;
+  letter-spacing: 3px;
+  margin-left: 0;
+  text-align: center;
+  width: 130px;
+}
+.price_slider_amount > input[type="submit"] {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #666666;
+  color: #666666;
+  float: left;
+  font-family: raleway;
+  font-size: 12px;
+  font-weight: 500;
+  height: 40px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 400ms ease-out 0s;
+  width: 85px;
+}
+.price_slider_amount > input[type="submit"]:hover {background: #ff6060;color:#fff;border-color:#ff6060;}
+.price-slider.size-area > ul {
+  padding: 30px 15px;
+}
+.size-area ul li {
+  display: inline-block;
+}
+.price-slider.size-area ul li a {
+  background: #e9e9e9 none repeat scroll 0 0;
+  color: #444444;
+  font-family: raleway;
+  font-weight: 500;
+  margin-right: 5px;
+  padding: 4px 8px;
+}
+.price-slider.size-area ul li a:hover{background:#ff6060;color:#fff}
+/* --------- 19.2 Shop right Area -------- */
+.shop-banner {
+  margin-bottom: 40px;
+}
+.shop-banner:hover::before{
+  transform: scaley(1);
+}
+.shop-tab-pill {
+  border: 1px solid #ddd;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+.shop-tab-area .col-md-4 {
+  margin-bottom: 28px;
+}
+.shop-tab-pill li {
+  display: inline-block;
+}
+.shop-tab-pill ul li a i {
+  height: 30px;
+  line-height: 30px;
+  margin-right: 10px;
+  text-align: center;
+  width: 30px;
+}
+.shop-tab-pill li#m-mar, .shop-tab-pill li#r-mar,.shop-tab-pill li#p-mar {
+  margin-right: 28px;
+}
+.shop-tab-pill li#n-mar {
+  margin-left: 28px;
+}
+.shop-tab-pill ul li a {
+  color: #444444;
+  text-decoration: none;
+}
+.shop-tab-pill ul li a span {
+  font-weight: 500;
+}
+.show-label {
+  margin-right: 8px;
+  padding-left: 370px;
+}
+.show-label > select, .sort-position > select {
+  border: medium none;
+  margin-left: 5px;
+}
+.sort-position label i {
+  padding-right: 10px;
+}
+.shop-single-product-area .arrival-product-area {
+  margin-bottom: 30px;
+}
+/* Shop Grid List Product CSS*/
+.arrival-cart {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.arrival-cart a {
+  background: #ff6060 none repeat scroll 0 0;
+  color: #fff;
+  display: block;
+  line-height: 35px;
+  margin-bottom: 1px;
+  text-align: center;
+  width: 34px;
+}
+.arrival-cart a:hover {
+  background: #444444 none repeat scroll 0 0;
+  color: #fff;
+}
+.product-content {
+  font-size: 15px;
+  padding: 0;
+  text-align: center;
+}
+.product-content > h2, .featured-content h2 {
+  margin: 0;
+}
+.product-content h2 a {
+  color: #444444;
+  font-family: raleway;
+  font-size: 15px;
+}
+.product-content h2 a:hover {
+  color: #ff6060;
+}
+.product-content > p {
+  margin: 0;
+  padding-bottom: 5px;
+}
+.product-content .rating i.color {
+  color: #ff6060;
+}
+.shop-tab-pill ul li.active i {
+  border-color: #ff6060;
+  color: #ff6060;
+}
+.shop-list-right {
+  overflow: hidden;
+  padding: 20px 0;
+}
+.shop-list-single {
+  border: 1px solid #ddd;
+  display: block;
+  margin-bottom: 30px;
+  overflow: hidden;
+  padding: 5px;
+}
+.shop-list-left {
+  float: left;
+  padding-right: 30px;
+}
+.shop-list-single .product-content {
+  text-align: left;
+}
+.product-content h2 a {
+  color: #444444;
+  font-family: raleway;
+  font-size: 15px;
+}
+.product-desc {
+  margin-bottom: 21px;
+  margin-top: 14px;
+}
+.shop-list-single .arrival-cart {
+  margin-bottom: 12px;
+  position: inherit;
+}
+.shop-list-single .arrival-cart li {
+  display: inline-block;
+}
+/*----------------------------------------*/
+/*  20. My Account CSS
+/*----------------------------------------*/
+.my-account-area {
+  padding: 76px 0 82px;
+}
+.my-account-area h1 {
+  margin-bottom: 20px;
+}
+h1.heading-title {
+  border-bottom: 1px solid #d6d4d4;
+  font: 500 18px/22px "roboto",sans-serif;
+  padding: 0 0 17px;
+  text-transform: uppercase;
+}
+.my-account-area ul.myaccount-link-list li {
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+.my-account-area .panel-default > .panel-heading {
+  background: #fff none repeat scroll 0 0;
+  border-image: none;
+  border-radius: 0;
+  border-width: 1px;
+  color: #555454;
+  display: block;
+  font: 500 16px/20px "roboto",sans-serif;
+  overflow: hidden;
+  text-decoration: none;
+  text-shadow: 0 1px #ffffff;
+  text-transform: uppercase;
+}
+.addresses-lists .panel-heading a i {
+  color: #666666;
+  font-size: 18px;
+}
+.my-account-area .panel-default > .panel-heading h4 {
+  font-size: 14px;
+}
+.my-account-area .panel-title a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+}
+.my-account-area .panel-title a::before {
+  border: 1px solid #eeeeee;
+  content: "";
+  height: 46px;
+  left: 30px;
+  position: absolute;
+  top: -10px;
+}
+.addresses-lists .panel-heading a:hover {
+  color: #ff6060;
+}
+.addresses-lists .panel-heading a span {
+  font-family: roboto;
+  font-weight: 500;
+  margin-left: 20px;
+}
+.button.button-small span {
+  display: block;
+  padding: 8px 20px;
+}
+.button.button-small {
+  background: #ff6060 none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 0;
+  color: #fff;
+  padding: 0;
+}
+.button.button-small span:hover {
+  background: #666666 none repeat scroll 0 0;
+  border-color: #ff7575;
+}
+.addresses-lists {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.create-account-button {
+  border-top: 1px solid #dddddd;
+  padding-top: 20px;
+  width: 100%;
+}
+.my-account-area h1 {
+  margin-bottom: 20px;
+}
+.addresses-lists p.coupon-text {
+  color: #333333;
+}
+.addresses-lists p.required {
+  color: #f13340;
+  margin: 9px 0 16px;
+}
+.addresses-lists .order-notes textarea {
+  margin-bottom: 15px;
+}
+.order-history p {
+  background: #ff6060 none repeat scroll 0 0;
+  color: #ffffff;
+  padding: 15px;
+}
+p.alert {
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 15px;
+}
+.addresses-lists .btn-default i {
+  font-size: 10px;
+}
+.addresses-lists h1.heading-title {
+  font: 500 16px/22px "roboto",sans-serif;
+}
+.addresses-lists .shop-select select {
+  width: 100%;
+}
+.myaccount-link-list .panel-default {
+  margin-bottom: 5px;
+}
+.addresses-lists .checkbox input[type="checkbox"] {
+  margin-top: 0;
+}
+.radio-inline label.top span.checked input {
+  margin-top: 1px;
+}
+/*=========================== 
+	21. Login Page Css
+============================= */
+.login-area {
+  padding: 80px 0;
+}
+.account-area .heading-title {
+  margin-bottom: 30px;
+}
+h1.heading-title {
+  border-bottom: 1px solid #d6d4d4;
+  font-family: raleway;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0 0 17px;
+  text-transform: uppercase;
+}
+p.form-row label {
+  display: block;
+}
+label {
+  color: #333333;
+}
+.account-details p.form-row input {
+  background: #ffffff none repeat scroll 0 0;
+}
+p.form-row input {
+  background: #fbfbfb none repeat scroll 0 0;
+  border: 1px solid #e5e5e5;
+  height: 30px;
+  margin: 0 0 14px;
+  outline: 0 none;
+  padding: 0 0 0 10px;
+  width: 100%;
+}
+#submitcreate {
+  background-color: #ff6060;
+  border: 0 none;
+  border-radius: 0;
+  font-size: 13px;
+  line-height: 1.42857;
+  outline: medium none;
+  padding: 2px;
+  text-align: center;
+  transition: all 0.4s ease 0s;
+}
+#submitcreate:hover{
+  background-color: #444444;
+}
+#submitcreate > span {
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+}
+#submitcreate span i, p.submit button#submitlogin span i {
+  display: inline-block;
+  font-size: 24px;
+  margin: -4px 10px 0 0;
+  vertical-align: -2px;
+}
+.create-account-form, .login-form {
+  background: #fbfbfb none repeat scroll 0 0;
+  border: 1px solid #d6d4d4;
+  line-height: 20px;
+  min-height: 340px;
+  padding: 14px 18px 20px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.lost-password.form-group a {
+  color: #777777;
+  text-decoration: underline;
+}
+p.submit {
+  margin-bottom: 0;
+}
+p.submit button#submitlogin {
+  background: #ff6060 none repeat scroll 0 0;
+  border: medium none;
+  padding: 0;
+}
+p.submit button#submitlogin:hover{
+  background-color: #444444;
+}
+p.submit button#submitlogin span {
+  color: #fff;
+  display: block;
+  font-size: 12px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+}
+/*----------------------------------------*/
+/*    22. 404 Page Css
+/*----------------------------------------*/
+.four-zero-four {
+  padding: 200px 0;
+  text-align: center;
+}
+.four-zero-content h2 {
+  color: #333333;
+  font-size: 70px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.four-zero-content h2 span {
+  color: #ff6060;
+}
+.four-zero-content a {
+  background: #ff6060 none repeat scroll 0 0;
+  color: #fff;
+  display: inline-block;
+  padding: 12px 30px;
+  text-transform: capitalize;
+}
+.four-zero-content a:hover {
+  background: #333333 none repeat scroll 0 0;
+}
+/*--------------------- 11. blog--------------------*/
+.blog-area .blog-info {
+  color: #a1a1a1;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.blog-area .blog-info > span {
+  display: inline-block;
+  margin-right: 20px;
+}
+.blog-area .blog-info > span > i {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 3px;
+  vertical-align: text-top;
+}
+.blog-area .blog-info > span > a {
+  color: #a1a1a1;
+  transition: all 0.4s ease 0s;
+}
+.blog-area .blog-info > span > a:hover{
+  color: #ff6060;
+}
+.blog-area .tb-content7 > a.blog7, .top-shop-sidebar.sim > a.blog7 {
+  background-color: transparent;
+  border: 1px solid #c5c5c5;
+  color: #747474;
+  display: inline-block;
+  margin: 30px 0;
+  outline: medium none;
+  padding: 10px 34px 7px;
+  text-align: center;
+}
+.blog-area .tb-content7 > a.blog7:hover {
+  background: #ff6060 none repeat scroll 0 0;
+  border-color: #ff6060;
+  color: #fff;
+}
+.blog-area {
+  padding: 80px 0;
+  position: relative;
+}
+.blog-area h3.wg-title, .top-shop-sidebar h3.wg-title, .last-line h3, .single-sidebar h3.wg-title {
+  background: #fff none repeat scroll 0 0;
+  color: #474747;
+  display: inline-block;
+  font-size: 17px;
+  margin: 0;
+  padding-right: 10px;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 29px;
+  visibility: visible;
+  z-index: 99;
+  opacity: 1;
+}
+.zo-recent-posts .tb-recent-thumbb, .top-shop-sidebar .tb-recent-thumbb, .single-sidebar .tb-recent-thumbb {
+  display: block;
+  float: left;
+  margin-right: 15px;
+}
+.zo-recent-posts .tb-recentb, .top-shop-sidebar .tb-recentb, .single-sidebar .tb-recentb7 {
+  font-size: 13px;
+  line-height: 22px;
+  overflow: hidden;
+  padding-top: 15px;
+}
+.tb-postb > p {
+  margin-bottom: 5px;
+  color: #747474;
+  font-size: 12px;
+}
+.zo-recent-posts {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.widget_searchform_content input[type="text"]:focus {
+  border-color: #ff6060;
+}
+.zo-recent-posts .tb-postd {
+  color: #ff6060;
+}
+.blog-area .zo-recent-posts ul li {
+  border-bottom: 1px solid #ebebeb;
+  display: inline-block;
+  list-style: outside none none;
+  padding: 15px 0 15px;
+  width: 100%;
+}
+.blog-area .zo-recent-posts2 ul li a {
+  color: #747474;
+  font-size: 13px;
+  font-weight: normal;
+}
+.blog-area .zo-recent-posts2 ul li a:hover{
+  color: #ff6060;
+}
+.blog-area .zo-recent-posts2 ul li {
+  border-bottom: 1px solid #ebebeb;
+  display: inline-block;
+  list-style: outside none none;
+  padding: 7px 0;
+  width: 100%;
+}
+.zo-recent-posts3 {
+  margin: 30px 0;
+}
+.zo-recent-posts2.os4 {
+  margin: 30px 0;
+}
+.blog-area .zo-recent-posts2 ul li a abbr{
+  border-bottom: 1px dotted #777;
+  cursor: help;
+}
+.blog-area .zo-recent-posts::before, .blog-area .zo-recent-posts2::before, .blog-area .zo-recent-posts3::before, .shop-area .top-shop-sidebar::before {
+  background: #ebebeb none repeat scroll 0 0;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 21px;
+  width: 100%;
+  z-index: -1;
+}
+.zo-recent-posts, .zo-recent-posts2, .zo-recent-posts3, .top-shop-sidebar {
+  position: relative;
+  overflow: hidden;
+}
+.blog-area .pagination {
+  border-top: 1px solid #c5c5c5;
+  margin: 0;
+  padding: 15px 0 0;
+  width: 100%;
+}
+.blog-area .pagination .page-numbers {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #c5c5c5;
+  color: #7b7b7b;
+  display: inline-block;
+  font-size: 12px;
+  height: 21px;
+  line-height: 19px;
+  margin: 0 2px;
+  padding: 0;
+  text-align: center;
+  width: 21px;
+}
+.blog-area .pagination .page-numbers.current, .blog-area .pagination .page-numbers:hover {
+    background: #ff6060 none repeat scroll 0 0;
+    border-color: #ff6060;
+    color: #fff;
+}
+.blog-area .tb-post-item .tb-thumb .tb-publish {
+  background: #686868 none repeat scroll 0 0;
+  color: #ffffff;
+  display: inline-block;
+  left: 0;
+  line-height: 24px;
+  padding: 10px 20px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 0;
+  transition: all 0.4s ease 0s;
+}
+.blog-area .tb-post-item .tb-thumb {
+  line-height: 0;
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s ease 0s;
+}
+.blog-area .tb-content7 a h4.tb-titlel {
+  color: #3f3f3f;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  transition: all 0.4s ease 0s;
+}
+.blog-area .tb-content7 a h4.tb-titlel:hover {
+  color: #ff6060;
+}
+.blog-area .widget_searchform_content > form {
+  padding-right: 80px;
+  position: relative;
+}
+.blog-area .widget_searchform_content input[type="text"] {
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  color: #444;
+  line-height: 28.8px;
+  outline: medium none;
+  padding: 5px 15px;
+  transition: all 0.4s ease 0s;
+  width: 100%;
+}
+.tb-recent-thumbb > a img {
+  width: 90px;
+}
+.blog-area .widget_searchform_content > form > input {
+  height: 40px;
+  margin: 0;
+}
+.blog-area .widget_searchform_content > form > input[type="submit"] {
+  background: #ff6060 none repeat scroll 0 0;
+  border: 1px solid #ff6060;
+  color: #ffffff;
+  position: absolute;
+  right: 0;
+  text-transform: uppercase;
+  top: 0;
+  width: 80px;
+}
+/*--------------------- 12. blog-details --------------------*/
+.blog-area.bd-area .tb-post-item:hover .tb-thumb {
+  opacity: inherit;
+}
+.blog-area.bd-area .tb-post-item:hover .tb-thumb > img {
+  transform: inherit;
+}
+.blog-area.bd-area .tb-post-item .tb-thumb .tb-publish:hover{
+  color: #ff6060;
+  font-weight: 600;
+}
+.blog-area.bd-area .tb-content7 h4.tb-titlel,  .blog-area.bd-area .bd-comment h4.tb-titlel {
+  color: #4e4e4e;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  transition: all 0.4s ease 0s;
+  margin: 16px 0;
+}
+.bd-area .blog2 {
+  margin-left: 20px;
+}
+.bd-area .next-pre a{
+  margin-bottom: 0;
+  padding: 6px 12px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 20px;
+  transition: all 0.3s ease 0s;
+  color: #999;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 1px solid ;
+  display: inline-block;
+  font-weight: 300;
+  vertical-align: top;
+}
+.bd-area .next-pre a:hover {
+  background: #ff6060 none repeat scroll 0 0;
+  border-color: #ff6060;
+  color: #fff;
+}
+.bd-area .next-pre {
+  display: block;
+  float: right;
+  margin-bottom: 14px;
+  margin-top: 7px;
+}
+.form-control {
+  border-radius: 0;
+  box-shadow: inherit;
+  font-size: 12px;
+  height: 40px;
+}
+.form-control:focus {
+  border-color: #ff6060;
+  box-shadow: inherit;
+  outline: 0 none;
+}
+.bd-comment .di-na {
+  margin-bottom: 20px;
+}
+.di-na.bs {
+  margin-top: 20px;
+}
+.last-cart-con.bd-icon {
+  float: left;
+  margin-top: 4px;
+}
+.blog-desc > p {
+  font-weight: 300;
+}
+.last-cart-con input[type="submit"] {
+  background-color: transparent;
+  border: 1px solid #c5c5c5;
+  color: #747474;
+  display: inline-block;
+  line-height: 1;
+  margin-top: 10px;
+  outline: medium none;
+  padding: 15px 45px 12px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.4s ease 0s;
+  width: initial;
+}
+.last-cart-con input[type="submit"]:hover {
+  background-color: #ff6060 ;
+  border-color: #ff6060;
+  color: #fff;
+}
+/*----------------------------------------*/
+/*  23.	Quick Veiw CSS
+/*----------------------------------------*/
+#productModal .modal-dialog {
+  margin: 5% auto;
+  max-width: 96%;
+  min-height: 300px;
+  padding: 20px;
+  transition: all 0.5s ease 0s;
+  width: 870px;
+}
+.modal-product {
+  overflow: hidden;
+}
+.modal-product .product-images {
+  float: left;
+  width: 40%;
+}
+.modal-product .product-images .main-image {
+  float: left;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.modal-product .product-images .main-image img {
+  box-shadow: none;
+}
+.modal-product .product-info {
+  float: left;
+  padding-left: 30px;
+  width: 60%;
+}
+.modal-product .product-info h1 {
+  font-size: 22px;
+  font-weight: normal;
+  margin: 0 0 20px;
+}
+.modal-product .product-info .price-box {
+  float: left;
+  margin: 0 0 12px;
+  width: 100%;
+}
+.modal-product .product-info .price-box p {
+  margin: 0;
+}
+.modal-product .product-info .price-box .special-price {
+  color: #ff6060;
+  font-size: 24px;
+  font-weight: 400;
+}
+.modal-product .product-info .see-all {
+  color: #42414f;
+  display: inline-block;
+  margin-bottom: 40px;
+  text-decoration: underline;
+}
+.modal-product .product-info .see-all:hover {
+  color: #FF6060;
+}
+a.see-all {
+  color: #232323;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.modal-product .product-info .quick-add-to-cart {
+  border-bottom: 1px solid #e5e5e5;
+  float: left;
+  margin: 0 0 20px;
+  padding: 0 0 38px;
+  width: 100%;
+}
+.numbers-row > input {
+  border: 1px solid #dddddd;
+  float: left;
+  height: 40px;
+  text-align: center;
+  width: 60px;
+}
+.quick-add-to-cart .single_add_to_cart_button {
+  background: #FF6060 none repeat scroll 0 0;
+  border: medium none;
+  color: #ffffff;
+  float: left;
+  font-weight: 700;
+  height: 40px;
+  margin-left: 15px;
+  padding: 0 70px;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+}
+.quick-add-to-cart .single_add_to_cart_button:hover {
+  background: #282828 none repeat scroll 0 0;
+}
+.modal-product .product-info .quick-desc {
+  border-bottom: 1px solid #e5e5e5;
+  color: #909295;
+  float: left;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 21px;
+  margin: 0 0 25px;
+  padding: 0 0 15px;
+  width: 100%;
+}
+.modal-product .widget {
+  float: left;
+  width: 100%;
+}
+h3.widget-title-modal {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  color: #42414f;
+  float: left;
+  font-size: 16px;
+  line-height: 30px;
+  margin: 0 0 5px;
+  text-align: left;
+  text-transform: none;
+  width: 100%;
+}
+.modal-product .widget .social-icons {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.modal-product .widget .social-icons li {
+  float: left;
+  line-height: 30px;
+  list-style: outside none none;
+  margin-right: 10px;
+}
+.modal-product .widget .social-icons li .social-icon {
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  color: #909295;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  width: 40px;
+}
+#productModal button.close {
+  opacity: 1;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  transition: all 0.3s ease 0s;
+  z-index: 2;
+}
+#productModal button.close span {
+  border: 1px solid #909295;
+  border-radius: 60px;
+  color: #909295;
+  display: block;
+  height: 30px;
+  line-height: 24px;
+  padding-top: 1px;
+  text-align: center;
+  width: 30px;
+}
+#productModal .modal-header {
+  border: 0 none;
+  min-height: auto;
+  padding: 0;
+}
+.modal-product .widget .social-icons li .social-icon.facebook:hover {
+  background: #3b579d none repeat scroll 0 0;
+  border: 1px solid #3b579d;
+}
+.modal-product .widget .social-icons li .social-icon.twitter:hover {
+  background: #3acaff none repeat scroll 0 0;
+  border: 1px solid #3acaff;
+}
+.modal-product .widget .social-icons li .social-icon.pinterest:hover {
+  background: #cb2027 none repeat scroll 0 0;
+  border: 1px solid #cb2027;
+}
+.modal-product .widget .social-icons li .social-icon.gplus:hover {
+  background: #d11717 none repeat scroll 0 0;
+  border: 1px solid #d11717;
+}
+.modal-product .widget .social-icons li .social-icon.linkedin:hover {
+  background: #0097bd none repeat scroll 0 0;
+  border: 1px solid #0097bd;
+}
+.modal-product .widget .social-icons li .social-icon:hover {
+  color: #ffffff;
+}
+/*=========================== 
+	24. ScrollUp
+============================= */
+#scrollUp {
+  border-radius: 2px;
+  bottom: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  color: #fff;
+  font-size: 28px;
+  height: 40px;
+  line-height: 35px;
+  position: fixed;
+  right: 15px;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  width: 40px;
+  z-index: 200;
+  background:#000;
+}
+#scrollUp:hover{background:#ff6060;}

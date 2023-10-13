@@ -1,0 +1,69 @@
+/*****************************
+34 - Components - Review
+*****************************/
+
+
+.product-reviews{
+	.review{
+		&__list{
+			margin-bottom: 31px;
+		}
+		&__title{
+			font-size: 24px;
+			line-height: 1.4;
+			margin-bottom: 39px;
+			@include breakpoint(small){
+				font-size: 20px;
+				margin-bottom: 28px;
+			}
+		}
+		&__item{
+			&:not(:last-child){
+				margin-bottom: 15px;
+			}
+		}
+		&__container{
+			@extend %posrelative;
+			padding-left: 100px;
+			@include breakpoint(xsmall){
+				padding-left: 0;
+			}
+		}
+		&__avatar{
+			@extend %posabsolute;
+			left: 0;
+			top: 0;
+		    padding: 5px;
+		    width: 84px;
+	    	height: 84px;
+	    	@include border-radius(50%);
+		    background: $color-perigal;
+		    @include breakpoint(xsmall){
+		    	position: relative !important;
+		    	margin-bottom: 10px;
+		    }
+		}
+		&__text{
+		    border: 1px solid $border-color-2;
+		    padding: 16px;
+		    @extend %borderRadius;
+		    @include breakpoint(xsmall){
+		    	margin: 0;
+		    }
+			.star-rating{
+				margin-left: 0;
+			}
+		}
+		&__meta{
+			@extend %heading-color;
+			@extend %fontSize16;
+			@include breakpoint(small){
+				margin-bottom: 10px;
+			} 
+		}
+		&__description{
+			@extend %heading-color;
+			font-family: $font-2;
+		}
+	}	
+}

@@ -1,0 +1,113 @@
+/*-------------------
+	Banner Styles
+----------------------*/
+
+.single__account.tab-pane:not(.active) {
+	display: none;
+}
+
+.acount__nav {
+	border-bottom: 2px solid #a3a3a3;
+	margin-bottom: 60px;
+	text-align: center;
+	a {
+		color: #a3a3a3;
+		font-size: 28px;
+		line-height: 50px;
+		padding: 15px;
+		position: relative;
+		text-align: center;
+		transition: all 0.5s ease 0s;
+		width: 50%;
+		&:hover {
+			color: #000;
+		}
+		&.active {
+			color: #000;
+			&::before {
+				background: #000 none repeat scroll 0 0;
+				bottom: -2px;
+				content: "";
+				height: 2px;
+				left: 0;
+				position: absolute;
+				width: 100%;
+			}
+		}
+	}
+}
+
+.dg__account {
+	margin: 0 auto;
+	width: 570px;
+}
+
+.single__account {
+	.input__box {
+		span {
+			color: #333;
+			display: block;
+			font-size: 18px;
+			margin-bottom: 15px;
+			text-transform: capitalize;
+		}
+		input {
+			border: 1px solid #bebebe;
+			height: 50px;
+			margin-bottom: 21px;
+			padding: 0 15px;
+			width: 100%;
+			outline: none;
+			
+		}
+	}
+	.forget__pass {
+		color: #333;
+		display: block;
+		font-size: 18px;
+		margin-bottom: 20px;
+		text-align: right;
+	}
+}
+
+.account__btn {
+	background: #002556 none repeat scroll 0 0;
+	border: 0 none;
+	border-radius: 30px;
+	color: #fff;
+	display: block;
+	font-size: 19px;
+	height: 45px;
+	padding: 0 8px;
+	text-transform: capitalize;
+	transition: all 0.5s ease 0s;
+	width: 100%;
+	&:hover {
+		background: #f7a901 none repeat scroll 0 0;
+		color: #fff;
+	}
+}
+
+/* Responsive Css*/
+
+@media #{$lg-layout} {}
+
+@media #{$md-layout} {}
+
+@media #{$sm-layout} {
+	.dg__account {
+		width: 502px;
+	}
+}
+
+@media #{$xs-layout} {
+	.dg__account {
+		width: 400px;
+	}
+}
+
+@media #{$xxs-layout} {
+	.dg__account {
+		width: 300px;
+	}
+}

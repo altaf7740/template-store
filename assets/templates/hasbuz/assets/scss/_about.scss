@@ -1,0 +1,243 @@
+/*----------------------------------------*/
+/*  04. About
+/*----------------------------------------*/
+
+/*--
+/*  - About One
+/*----------------------------------------*/
+
+/*-- About Video One --*/
+.ht-about-video-one {
+    & img {
+        max-width: 100%;
+    }
+    & > h2 {
+        font-weight: 700;
+        max-width: 430px;
+        margin: 0 auto 30px;
+        @media #{$large-mobile}{
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+    & p {
+        margin-bottom: 56px;
+        font-size: 16px;
+        font-family: $poppins;
+        font-weight: 300;
+        color: $body-color-light;
+    }
+}
+    
+/*-- Video Box --*/
+.ht-video-box-one {
+    z-index: 1;
+    text-align: center;
+    padding: 200px 30px 190px;
+    @media #{$desktop-device}{
+        padding: 160px 30px 150px;
+    }
+    @media #{$tablet-device}{
+        padding: 120px 30px 110px;
+    }
+    @media #{$large-mobile}{
+        padding: 100px 30px 90px;
+    }
+    @media #{$small-mobile}{
+        padding: 80px 30px 70px;
+    }
+    &::before {
+        z-index: -1;
+    }
+    & a {
+        display: inline-block;
+        margin-bottom: 20px;
+        @media #{$small-mobile}{
+            width: 50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        & img {
+            max-width: 100%;
+        }
+    }
+    & h2 {
+        color: $white;
+        font-size: 36px;
+        line-height: 44px;
+        margin-bottom: 0;
+        @media #{$tablet-device}{
+            font-size: 30px;
+            line-height: 36px;
+        }
+        @media #{$large-mobile}{
+            font-size: 24px;
+            line-height: 30px;
+        }
+        @media #{$small-mobile}{
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+    
+    /*-- Medium --*/
+    &.medium {
+        padding: 150px 30px 140px;
+        @media #{$large-mobile}{
+            padding: 100px 30px 90px;
+        }
+        @media #{$small-mobile}{
+            padding: 80px 30px 70px;
+        }
+        & a {
+            margin-bottom: 15px;
+        }
+        & h2 {
+            font-size: 30px;
+            line-height: 36px;
+            @media #{$large-mobile}{
+                font-size: 24px;
+                line-height: 30px;
+            }
+            @media #{$small-mobile}{
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+    
+    /*-- Small --*/
+    &.small {
+        padding: 120px 30px 110px;
+        @media #{$large-mobile}{
+            padding: 100px 30px 90px;
+        }
+        @media #{$small-mobile}{
+            padding: 80px 30px 70px;
+        }
+        & h2 {
+            font-size: 24px;
+            line-height: 30px;
+            @media #{$small-mobile}{
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+    
+}
+
+/*-- About One --*/
+.ht-content-box-one {
+    & img {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    & h5 {
+        font-size: 14px;
+        font-weight: 700;
+        color: $blue;
+        text-transform: uppercase;
+    }
+    & p {
+        font-family: $poppins;
+        font-weight: 300;
+        margin: 0;
+    }
+}
+
+
+/*--
+/*  - About Three
+/*----------------------------------------*/
+
+/*-- About Studio Image --*/
+.ht-studio-image {
+    z-index: 9;
+    & img {
+        float: right;
+        @media #{$tablet-device}{
+            width: 100%;
+        }
+        @media #{$large-mobile}{
+            width: 100%;
+        }
+    }
+}
+/*-- Studio Content --*/
+.ht-studio-content {}
+
+/*-- Studio Title --*/
+.ht-studio-title {
+    & h2 {
+        font-size: 30px;
+        font-family: $poppins;
+        font-weight: 900;
+        line-height: 34px;
+        margin-bottom: 19px;
+    }
+    & p {
+        font-size: 15px;
+        font-family: $poppins;
+        line-height: 26px;
+        color: #777777;
+        margin-bottom: 40px;
+    }
+}
+
+/*-- Studio Text Box --*/
+.ht-studio-text-box {
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 30px;
+    &:last-child {
+        margin-bottom: 0px;
+    }
+    & .dot {
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #c5c8c8;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 4px;
+            top: 4px;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: #535353;
+        }
+        & .line {
+            position: absolute;
+            left: -142px;
+            top: 7px;
+            height: 1px;
+            width: 150px;
+            background-color: #535353;
+            @media #{$tablet-device}{
+                display: none;
+            }
+            @media #{$large-mobile}{
+                display: none;
+            }
+        }
+    }
+    & h5 {
+        font-size: 16px;
+        text-transform: capitalize;
+        font-family: $poppins;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    & p {
+        margin: 0;
+        color: #777777;
+        font-size: 14px;
+        font-family: $poppins;
+        line-height: 24px;
+    }
+}

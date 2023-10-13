@@ -1,0 +1,47 @@
+@import "../variables";
+@import "../mixins";
+
+
+/*========================
+	Kidz Area
+===========================*/
+
+.dcare__kidezone__wrapper{
+	text-align: center;
+	.kidz__thumb{
+		margin-bottom: 30px;
+	}
+	.kidz__details{
+		h6{
+			color: #1a7097;
+		    font-family: $heading-font;
+		    font-size: 24px;
+		    text-transform: uppercase;
+			span{
+				color: #ee5250;
+			}
+		}
+		p{
+			font-size: 14px;
+		    margin-top: 3px;
+		    text-transform: capitalize;	
+		}
+	}
+}
+
+.dacre__kidz__area.section-padding--lg {
+  padding: 150px 0 225px;
+}
+
+
+
+
+@media #{$xxs-layout}{
+
+	.kidz__zone {
+		flex-basis: 100%;
+	}
+
+}
+
+

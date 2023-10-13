@@ -1,0 +1,103 @@
+@import "../variables";
+@import "../mixins";
+/*----------------------
+    Blog Styles 
+------------------------*/
+
+.pn__banner__area {
+    text-align: center;
+}
+
+.banner--possition {
+    bottom: 0;
+    left: 0;
+    margin-left: -2px;
+    margin-right: -2px;
+    position: absolute;
+    right: 0;
+}
+
+.banner--2 {
+    background: rgba(255, 255, 255, 0.6) none repeat scroll 0 0;
+    margin-left: -14px;
+    margin-right: -14px;
+    padding: 38px 30px;
+    position: relative;
+    transition: 0.5s;
+    overflow: hidden;
+    z-index: 2;
+    h6 {
+        color: #424242;
+        font-size: 14px;
+        font-weight: 700;
+        margin: 9px 0 0;
+        text-transform: uppercase;
+    }
+    span {
+        border-bottom: 1px solid #81ad7b;
+        color: #81ad7b;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    &::before {
+        background-color: #fff;
+        content: "";
+        height: auto;
+        left: 100%;
+        margin: auto;
+        opacity: 0;
+        padding-top: 200%;
+        pointer-events: none;
+        position: absolute;
+        top: -20%;
+        transition: left 0.75s ease-in-out 0s, opacity 0.25s ease-in-out 0s, visibility 0.25s ease-in-out 0s;
+        visibility: hidden;
+        width: 200%;
+        z-index: -1;
+    }
+    &:hover::before {
+        left: -50%;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+/* Responsive Css*/
+
+@media #{$xx-layout} {}
+
+@media #{$xlg-layout} {}
+
+@media #{$lg-layout} {
+    .banner--2 h6 {
+        line-height: 25px;
+    }
+    .banner--2 {
+        padding: 22px 25px;
+    }
+}
+
+@media #{$md-layout} {
+    .banner--2 {
+        padding: 21px 19px;
+    }
+    .banner--2 h6 {
+        line-height: 23px;
+    }
+}
+
+@media #{$sm-layout} {
+    .banner--possition {
+        background: #f2f2f2 none repeat scroll 0 0;
+        position: inherit;
+    }
+    .banner--2 h6 {
+        line-height: 22px;
+    }
+}
+
+@media #{$xs-layout} {}
+
+@media #{$xxs-layout} {}

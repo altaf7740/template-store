@@ -1,0 +1,208 @@
+@import "../variables";
+@import "../mixins";
+
+
+/*========================
+	Upcoming Event
+===========================*/
+
+
+
+.upcomming__event{
+    margin-left: 120px;
+    margin-top: 40px;
+    position: relative;
+    .upcomming__thumb{
+        img{
+            width: 100%;
+        }
+    }
+    .upcomming__inner{
+        left: 54px;
+        position: absolute;
+        top: 37px;
+        h6{
+            a{
+                color: #444444;
+                display: inline-block;
+                font-size: 24px;
+                margin-bottom: 24px;
+                padding-bottom: 10px;
+                position: relative;
+                transition: 0.3s;
+                font-family: $heading-font;
+                &:hover{
+                    color: $theme-color;
+                }
+                &::before {
+                    border: 1px dashed #d0d0d0;
+                    bottom: 0;
+                    content: "";
+                    left: 0;
+                    position: absolute;
+                    width: 120px;
+                }
+            }
+        }
+        p{
+            margin-bottom: 24px;
+            padding-right: 10%;
+        }
+        .event__time{
+            margin-left: -27px;
+            text-align: center;
+            li{
+                i{
+                    border: 1px solid #666;
+                    border-radius: 100%;
+                    color: #666666;
+                    display: block;
+                    font-size: 22px;
+                    height: 45px;
+                    line-height: 42px;
+                    margin: auto auto 9px;
+                    padding-right: 0;
+                    text-align: center;
+                    width: 45px;
+                }
+                & + li{
+                    margin-top: 12px;
+                }
+            }
+        }
+    }
+    .event__occur{
+        left: -27%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        img{
+
+        }
+        .enent__pub{
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            span{
+                color: #89d700;
+                display: block;
+                &.time{
+                    display: inline-block;
+                    font-size: 36px;
+                    font-weight: 700;
+                    margin-bottom: 6px;
+                }
+                &.bate{
+
+                }
+            }
+        }
+    }
+   
+}
+
+
+.event__time li + li {
+    
+}
+
+
+
+@media #{$lg-layout}{
+   
+    .upcomming__event .event__occur {
+      left: -38%;
+    }
+    .upcomming__event .upcomming__inner p {
+      margin-bottom: 11px;
+    }
+
+
+.upcomming__event .upcomming__inner .event__time {
+  text-align: left;
+}
+.upcomming__event .upcomming__inner .event__time li i {
+  margin: auto 12px 0 auto;
+  padding-right: 0;
+  text-align: center;
+  width: 45px;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+}
+
+@media #{$md-layout}{
+  
+    .upcomming__event .event__occur {
+      left: -17%;
+    }
+    .upcomming__event .upcomming__inner {
+      left: 69px;
+    }
+
+
+
+}
+
+@media #{$sm-layout}{
+
+    .upcomming__event {
+      margin-left: 0;
+    }  
+    .upcomming__event .event__occur {
+      left: -22%;
+    }
+
+
+
+
+
+
+}
+
+@media #{$xs-layout}{
+
+
+    .upcomming__event {
+      margin-left: 0;
+      margin-top: 40px;
+      position: relative;
+    }
+
+    .upcomming__event .event__occur {
+      left: 50%;
+      top: 0;
+      transform: translateY(-72%) translateX(-50%);
+    }
+    .upcomming__event {
+      margin-top: 122px;
+    }
+
+    .upcomming__event .upcomming__inner {
+      left: 24px;
+      top: 37px;
+    }
+    .upcomming__event .upcomming__inner p {
+      margin-bottom: 9px;
+      padding-right: 7px;
+      font-size: 13px;
+      line-height: 23px;
+    }
+    .upcomming__event .upcomming__inner h6 a {
+      margin-bottom: 13px;
+    }
+.upcomming__event .event__occur {
+  display: none;
+}
+
+
+}

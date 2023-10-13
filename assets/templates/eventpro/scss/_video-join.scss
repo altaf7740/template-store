@@ -1,0 +1,162 @@
+/*----------------------------------------*/
+/*  13.  Video Join
+/*----------------------------------------*/
+
+/*-- Video Join Section --*/
+.video-join-section {}
+
+/*-- Video Content --*/
+.video-content {
+    @media #{$desktop-device}{
+        align-self: center;
+        margin-top: 15px
+    }
+    & h1 {
+        font-size: 48px;
+        font-weight: 700;
+        color: $white;
+        line-height: 63px;
+        margin-bottom: 15px;
+        @media #{$large-mobile}{
+            font-size: 30px;
+            line-height: 36px;
+        }
+    }
+    & p {
+        line-height: 25px;
+        color: $white;
+        max-width: 570px;
+    }
+    & .play-video {
+        color: $white;
+        font-family: $montserrat;
+        font-size: 18px;
+        text-transform: capitalize;
+        margin-top: 28px;
+        & img {
+            float: left;
+            margin-right: 10px;
+            transform: scale(0.8);
+        }
+        & span {
+            display: block;
+            float: left;
+            color: inherit;
+            line-height: 60px;
+        }
+        &:hover {
+            & img {
+                margin-right: 20px;
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+/*-- Join Form --*/
+.join-form {
+    & .join-form-wrapper {
+        background-color: $white;
+        box-shadow: 0 0 25px 5px rgba($black, 0.1);
+        padding: 30px 40px 40px;
+        margin-top: 15px;
+        margin-bottom: -250px;
+        @media #{$desktop-device}{
+            margin-bottom: 0;
+        }
+        @media #{$tablet-device}{
+            margin-bottom: 30px;
+        }
+        @media #{$large-mobile}{
+            margin-bottom: 30px;
+        }
+        @media #{$small-mobile}{
+            padding: 30px 30px 40px;
+        }
+        & h2 {
+            font-weight: 500;
+            line-height: 40px;
+            @media #{$small-mobile}{
+                font-size: 24px;
+                line-height: 30px;
+            }
+        }
+        & p {
+            font-size: 16px;
+            line-height: 25px;
+            max-width: 325px;
+            margin-bottom: 18px;
+            @media #{$small-mobile}{
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+        & form {
+            & input {
+                display: block;
+                width: 100%;
+                border-width: 0 0 1px;
+                border-style: solid;
+                border-color: #dddddd;
+                font-size: 12px;
+                font-family: $montserrat;
+                color: #8a8a8a;
+                line-height: 24px;
+                height: 42px;
+                padding: 9px 0;
+                letter-spacing: 1px;
+                margin-bottom: 25px;
+                &:focus {
+                    border-color: $blue;
+                }
+            }
+            & textarea {
+                display: block;
+                width: 100%;
+                border-width: 0 0 1px;
+                border-style: solid;
+                border-color: #dddddd;
+                font-size: 12px;
+                font-family: $montserrat;
+                color: #8a8a8a;
+                line-height: 24px;
+                padding: 9px 0;
+                letter-spacing: 1px;
+                margin-bottom: 25px;
+                resize: none;
+                &:focus {
+                    border-color: $blue;
+                }
+            }
+            & .btn {
+                float: left;
+            }
+            & .extra-info {
+                margin-left: 30px;
+                float: left;
+                margin-top: 5px;
+                @media #{$large-mobile}{
+                    margin-top: 0;
+                }
+                @media #{$small-mobile}{
+                    margin-left: 0;
+                    margin-top: 20px;
+                    width: 100%;
+                }
+                & p {
+                    color: #8a8a8a;
+                    line-height: 16px;
+                    margin-bottom: 10px;
+                }
+                & h5 {
+                    font-size: 16px;
+                    margin-bottom: 0;
+                    line-height: 18px;
+                    & span {
+                        color: $blue;
+                    }
+                }
+            }
+        }
+    }
+}

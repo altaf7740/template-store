@@ -1,0 +1,257 @@
+/*****************************
+26 - Components - Form
+*****************************/
+
+/*--- 26.00 - Global Form --*/
+ 
+.form{
+    div, input, textarea{
+        line-height: 1;
+    }
+    p,a {
+        font-family: $font-2;
+    }
+    &-row{
+        margin-right: -15px;
+        margin-left: -15px;
+        & > [class*="col-"],
+        & > .col{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    &__notes{
+        font-family: $font-2;
+    }
+    &__output{
+        text-align: left;
+        margin-top: 5px;
+        &.success{
+            color: $color-green;
+        }
+        &.error{ 
+            color: $color-red;
+        }
+    }
+    &__label{
+        font-family: $font-2;
+        font-weight: 600;
+        @extend %fontSize14;
+        margin-right: 10px;
+    }
+    &__input{
+        width: 100%;
+        height: 40px;
+        border: none;
+        border-bottom: 1px solid $color-gallery;
+        font-family: $font-2;
+        font-weight: 600;
+        color: $heading-color;
+        @extend %fontSize14;
+        @extend %transparent-bg;
+        @include placeholder{
+            font-family: $font-2;
+            color: $heading-color;
+        }
+        &--2{
+            border: 1px solid $border-color;
+            padding-left: 10px;
+            &.form__input--textarea{
+                padding-top: 10px;
+            }
+        }
+        &--textarea{
+            height: 135px;
+            padding-top: 3px;
+        }
+        &.nice-select{
+            border: 1px solid $border-color;
+            @include border-radius(0);
+            span{
+                &.current{
+                    @extend %fontSize14;
+                    font-family: $font-2
+                }
+            }
+        }
+    }
+    &__fieldset{
+        border: 1px solid $border-color;
+        padding: 15px;
+    }
+    &__legend{
+        border: 0;
+        padding: 0 10px;
+        display: inline-block;
+        font-size: inherit;
+        width: auto;
+    }
+    .suggestion{
+        margin-top: 5px;
+        @extend %displayBlock;
+    }
+    &.shipping-calculator-form{
+        .nice-select{
+            margin-bottom: 1rem;
+            @include breakpoint(small){
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+}
+
+/*--- 26.01 - Search Form --*/
+
+.search-form{
+    @extend %posrelative;
+    &__input{
+        @extend %border;
+        @extend %width100;
+        height: 40px;
+        padding-left: 15px;
+        padding-right: 50px;
+        @include border-radius(500px);
+    }
+    &__submit{
+        @extend %transparent-bg;
+        @extend %border-none;
+        @extend %posabsolute;
+        right: 20px;
+        top: 4px;
+        padding: 0;
+    }
+}
+
+/*--- 26.02 - Newsletter Form --*/
+
+.newsletter-form{
+    @extend %posrelative;
+    max-width: 600px;
+    &__input{
+        @extend .search-form__input;
+        padding-left: 25px;
+        padding-right: 60px;
+        background-color: transparent;
+    }
+    &__button{
+        @extend %transparent-bg;
+        @extend %border-none;
+        @extend %posabsolute;
+        @extend %cursorPointer;
+        top: 0;
+        padding: 0;
+        right: 25px;
+        height: 40px;
+    }
+}
+
+
+/*--- 26.03 - Nice Select --*/
+
+.nice-select{
+    padding-right: 0;
+    width: 100%;
+    height: 44px;
+    line-height: 44px !important;
+    border: 2px solid $border-color;
+    .current{
+        display: block;
+        font-size: $body-font-size;
+        color: $body-color;
+    }
+    &:after{
+        @extend %fontAwesome;
+        content: '\f107';
+        border: none;
+        top: 0;
+        right: 0;
+        margin-top: 0;
+        height: 100%;
+        width: 40px;
+        background-color: #eeeeee;
+        text-align: center;
+        line-height: 44px !important;
+        font-size: 16px;
+        @extend %heading-color;
+        @include transform-origin(0 0);
+        @include transform(rotate(0));
+    }
+    &.open{
+        &:after{
+            @include transform(rotate(0));
+        }
+    }
+    .list{
+        width: 100%;
+        max-height: 260px;
+    }
+}
+
+/*-- 26.04 - Cart Form --*/ 
+
+.cart-form{
+    &__input{
+        border: none;
+        border-bottom: 1px solid $border-color;
+        width: 100%;
+        padding-bottom: 5px;
+        padding-right: 110px;
+        @extend %heading-color;
+        @extend %fontSize16;
+        @extend %fontWeight700;
+        @include placeholder{
+            color: $heading-color;
+        }
+    }
+    &__btn{
+        background: none;
+        border: none;
+        @extend %heading-color;
+        @extend %fontSize16;
+        @extend %fontWeight700;
+        @extend %cursorPointer;
+        &:hover{
+            @extend %primary-color;
+        }
+    }
+    .coupon{
+        @extend %posrelative;
+        @include breakpoint(xsmall){
+            margin-bottom: 20px;
+        }
+        .cart-form{
+            &__input{
+                
+            }
+            &__btn{
+                @extend %posabsolute;
+                right: 0;
+                top: 0;
+            }
+        }
+    }
+}
+
+/*-- 26.05 - Shipping Calculator Form --*/ 
+
+.shipping-form{
+    &__group{
+
+    }
+    &__input{
+        border: 1px solid $border-color;
+        width: 100%;
+        height: 40px;
+        font-family: $font-2;
+        padding-left: 10px;
+        margin-bottom: 15px;
+        &.nice-select{
+            line-height: 38px !important;
+            padding-left: 0;
+            @include border-radius(0);
+            .current{
+                padding-left: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,72 @@
+/*-------------------------- 
+	Button Style
+--------------------------*/
+.btn {
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 0;
+  color: #333;
+  display: inline-block;
+  height: 37px;
+  line-height: 35px;
+  padding: 0 25px;
+  text-transform: uppercase;
+}
+.btn + .btn{
+  margin-left: 6px;
+}
+.btn.black {
+  background-color: #333;
+  border-color: #333;
+  color: #fff;
+}
+.btn.color {
+  background-color: #dec839;
+  border-color: #dec839;
+  color: #fff;
+}
+.btn.transparent, .btn.color.transparent {
+  background-color: transparent;
+  color: #fff;
+}
+.btn.black.transparent {
+  color: #333;
+}
+.btn.color.transparent {
+  color: #dec839;
+}
+.btn.btn-lg {
+  height: 44px;
+  line-height: 42px;
+  padding: 0 30px;
+}
+.btn.btn-sm {
+  height: 32px;
+  line-height: 30px;
+  padding: 0 20px;
+}
+.btn.btn-xs {
+  height: 28px;
+  line-height: 26px;
+  padding: 0 15px;
+}
+.btn.color:hover {
+  background-color: #fff ;
+  border-color: #fff ;
+  color: #dec839;
+}
+.btn:hover, .btn.hover-white:hover {
+  background-color: #fff ;
+  border-color: #fff;
+  color: #333;
+}
+.btn.hover-black:hover {
+  background-color: #333;
+  border-color: #333;
+  color: #fff !important;
+}
+.btn.hover-color:hover {
+  background-color: #dec839;
+  border-color: #dec839;
+  color: #fff;
+}

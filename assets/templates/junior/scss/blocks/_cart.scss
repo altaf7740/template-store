@@ -1,0 +1,199 @@
+@import "../variables";
+@import "../mixins";
+
+
+/*======= Cart Styles =======*/
+
+
+
+
+/*---------------------------------------
+  26. Our Cart Area
+----------------------------------------*/
+
+
+.car-header-title h2{
+    font-size: 20px;
+    margin: 0;
+    text-transform: uppercase;
+}
+.table-content table {
+  background: #fff none repeat scroll 0 0;
+  border-color: #eaeaea;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px 0 0 1px;
+  text-align: center;
+  width: 100%;
+}
+.table-content table th {
+    border-top: medium none;
+    font-weight: bold;
+    padding: 20px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.table-content table th, .table-content table td {
+  border-bottom: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+}
+.table-content table td {
+	border-top: medium none;
+	font-size: 13px;
+	padding: 20px 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+.table-content table td input{
+    background: #e5e5e5 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 3px;
+    color: #6f6f6f;
+    font-size: 15px;
+    font-weight: normal;
+    height: 40px;
+    padding: 0 5px 0 10px;
+    width: 60px;
+}
+.table-content table td.product-subtotal {
+    font-size: 14px;
+    font-weight: bold;
+    width: 120px;
+    color: #777;
+}
+.table-content table td.product-name a{
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 10px;
+    color: #6f6f6f;
+}
+.table-content table td.product-name{
+    width: 270px;
+}
+.table-content table td.product-thumbnail{
+    width: 130px;
+}
+.table-content table td.product-remove i{
+    color: #919191;
+    display: inline-block;
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 40px;
+}
+.table-content table .product-price .amount {
+    font-size: 15px;
+    font-weight: 700;
+    color: #777;
+}
+.table-content table td.product-remove i:hover{
+    color:#252525
+}
+.table-content table td.product-quantity{
+    width: 180px;
+}
+.table-content table td.product-remove{
+    width: 150px;
+}
+.table-content table td.product-price{
+    width: 130px;
+}
+.table-content table td.product-name a:hover{
+    color:#89d700
+}
+.cart_totals table tr.order-total th,
+.cart_totals table tr.order-total .amount{
+    font-size: 20px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.owl-theme .owl-controls .owl-page span {
+    background: #ffffff none repeat scroll 0 0;
+    border: 1px solid #c1c1c1;
+    border-radius: 100%;
+    display: block;
+    height: 13px;
+    margin: 3px;
+    width: 13px;
+    transition: 0.3s;
+}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+    border: 2px solid #c1c1c1;
+}
+.product-thumbnail a img {
+  width: 100%;
+}
+
+.table-content table .title-top th {
+  background: #f6f6f6 none repeat scroll 0 0;
+  border-bottom: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+
+
+.cartbox__btn {
+    background: #f6f6f6 none repeat scroll 0 0;
+    border-bottom: 1px solid #e8e8e8;
+    border-left: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+    padding: 40px;
+}
+.cart__btn__list li a {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 5px;
+    display: block;
+    font-family: $heading-font;
+    font-size: 18px;
+    font-weight: 400;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 26px;
+    text-transform: capitalize;
+    transition: all 0.3s ease 0s;
+}
+.cart__btn__list li a:hover {
+    background: #89d700 none repeat scroll 0 0;
+    color: #fff;
+}
+.cartbox-total {
+    background: #f6f6f6 none repeat scroll 0 0;
+    padding: 0 40px;
+}
+.cartbox__total__area {
+    margin-top: 90px;
+}
+.cart__total__amount {
+    background: #89d700 none repeat scroll 0 0;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    line-height: 60px;
+    padding: 0 40px;
+}
+.cart__total__list li {
+    color: #444444;
+    font-family: $heading-font;
+    font-size: 18px;
+    height: 60px;
+    line-height: 60px;
+}
+.cart__total__tk li {
+    color: #444444;
+    font-size: 18px;
+    font-weight: 700;
+    height: 60px;
+    line-height: 60px;
+}
+.cart__total__tk {
+}
+.cart__total__list {
+}
+.cart__total__amount span {
+    color: #fff;
+    font-size: 18px;
+}
+

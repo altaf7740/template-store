@@ -1,0 +1,26 @@
+/*---------------------------------------
+    + Footer
+-----------------------------------------*/
+
+/*-- Footer Bottom --*/
+.ht-footer-bottom-section-two {
+    padding: 13px 0;
+}
+
+/*-- Footer Copyright --*/
+.ht-footer-copyright-two {
+    text-align: center;
+    & p {
+        font-size: 12px;
+        font-family: $montserrat;
+        font-weight: 300;
+        line-height: 24px;
+        color: #dddddd;
+        & a {
+            font-weight: 500;
+            &:hover {
+                color: $red;
+            }
+        }
+    }
+}

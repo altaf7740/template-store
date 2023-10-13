@@ -1,0 +1,214 @@
+/*----------------------------------------*/
+/*  + Portfolio
+/*----------------------------------------*/
+
+/*-- Portfolio Wrap --*/
+.ht-portfolio-wrap-one {
+    padding: 0 100px;
+    background-position: top 30px right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    @media #{$laptop-device}{
+        padding: 0 50px;
+    }
+    @media #{$desktop-device}{
+        padding: 0 30px;
+    }
+    @media #{$tablet-device}{
+        padding: 0 30px;
+    }
+    @media #{$large-mobile}{
+        padding: 0 30px;
+    }
+    @media #{$large-mobile}{
+        padding: 0 15px;
+    }
+}
+
+/*-- Filter --*/
+.portfolio-filter-one {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 85px;
+    flex-wrap: wrap;
+    @media #{$large-mobile}{
+        margin-bottom: 50px;
+    }
+    & button {
+        display: inline-flex;
+        border: none;
+        background-color: transparent;
+        font-size: 14px;
+        line-height: 1;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-family: $montserrat;
+        color: $heading-color;
+        padding: 0;
+        margin: 0 18px 15px;
+        &.active, &:hover {
+            color: $red;
+        }
+    }
+}
+
+/*-- Portfolio Style One --*/
+.ht-portfolio-one {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    & .image {
+        display: block;
+        & img {
+            width: 100%;
+        }
+    }
+    & .content {
+        background-color: $white;
+        padding: 35px 30px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        transform: translateY(100%);
+        transition: all 0.3s ease 0s;
+        @media #{$desktop-device}{
+            padding: 25px 20px;
+        }
+        @media #{$small-mobile}{
+            padding: 25px 20px;
+        }
+        & .title {
+            font-weight: 500;
+            line-height: 1;
+            margin-bottom: 9px;
+            font-size: 20px;
+            @media #{$small-mobile}{
+                font-size: 16px;
+            }
+            & a {
+                color: $body-color;
+                &:hover {
+                    color: $red;
+                }
+            }
+        }
+        & span {
+            font-size: 14px;
+            line-height: 1;
+            display: block;
+            font-family: $poppins;
+            color: $body-color-light;
+            text-transform: capitalize;
+        }
+    }
+    
+    &:hover {
+        & .image {
+            & img {
+                transform: translateY(-55px);
+                @media #{$desktop-device}{
+                    transform: translateY(-45px);
+                }
+                @media #{$small-mobile}{
+                    transform: translateY(-45px);
+                }
+            }
+        }
+        & .content {
+            transform: translateY(0);
+        }
+    }
+    
+}
+
+/*-- Portfolio Style One Small --*/
+.ht-portfolio-one-small {
+    & .content {
+        padding: 20px 30px;
+        & .title {
+            font-weight: 500;
+            line-height: 1;
+            margin-bottom: 9px;
+            font-size: 16px;
+        }
+        & span {
+            font-size: 12px;
+        }
+    }
+    
+    &:hover {
+        & .image {
+            & img {
+                transform: translateY(-40px);
+            }
+        }
+    }
+    
+}
+
+/*-- Portfolio Style Two --*/
+.ht-portfolio-two {
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    & .image {
+        display: block;
+        overflow: hidden;
+        & img {
+            width: 100%;
+            transition: all 0.3s ease 0s;
+        }
+    }
+    & .content {
+        width: 100%;
+        padding-top: 30px;
+        @media #{$desktop-device}{
+            padding: 25px 20px;
+        }
+        @media #{$small-mobile}{
+            padding: 25px 20px;
+        }
+        & .title {
+            font-weight: 500;
+            line-height: 1;
+            margin-bottom: 9px;
+            font-size: 20px;
+            @media #{$small-mobile}{
+                font-size: 16px;
+            }
+            & a {
+                color: $body-color;
+                &:hover {
+                    color: $red;
+                }
+            }
+        }
+        & span {
+            font-size: 14px;
+            line-height: 20px;
+            display: block;
+            font-family: $poppins;
+            color: $body-color-light;
+            text-transform: capitalize;
+        }
+    }
+    
+    &:hover {
+        & .image {
+            & img {
+                transform: scale(1.2);
+            }
+        }
+    }
+    
+}
+
+/*-- Load More Toggle --*/
+.load-more-toggle {
+    display: flex;
+    & i {
+        margin-left: 10px;
+        line-height: 30px;
+    }
+}

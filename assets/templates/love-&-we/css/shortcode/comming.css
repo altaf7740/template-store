@@ -1,0 +1,60 @@
+/* -----------------------------------
+Template Name: Love & we
+Template URI: www.bootitems.com
+Description: This is a multipurpose html5 template
+Author URI: www.bootitems.com
+Version: 1.0  
+
+NOTE: This is Comming Soon style file. All Slider related style included in this file.
+---------------------------------------------------------------------------------------*/
+.section-title{}
+.section-title h2{
+    font-size: 36px;
+    color: #2a2a2a;
+    font-family: 'Kaushan Script', cursive;
+    position: relative;
+    margin-bottom: 15px;
+}
+.comming-wrapper {
+  box-shadow: 0px 0px 5px 1px #dddddd;
+}
+.timer {
+    padding-left: 35px;
+    padding-top: 10px;
+}
+.timer .timer-grid {
+    text-align: center;
+}
+.timer-grid::after {
+    left: auto;
+    right: 10%;
+}
+.timer-grid > div {
+    background: url(../../img/comming/1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #393939;
+    display: inline-block;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 18px;
+    font-weight: 400;
+    height: 160px;
+    margin-right: 80px;
+    text-transform: capitalize;
+    width: 175px;
+    padding-top: 22px;
+}
+.timer-grid > div:last-child {
+    margin-right: 0;
+}
+.timer .timer-grid span {
+    color: #333333;
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 10px;
+    padding-top: 32px;
+    text-align: center;
+}

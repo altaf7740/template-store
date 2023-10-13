@@ -1,0 +1,56 @@
+/*****************************
+41 - Pages - Cart
+*****************************/
+
+.cart-calculator{
+	&__item{
+		@extend %flexbox;
+		@extend %flex-wrap;
+	    margin-bottom: 20px;
+	    line-height: 1;
+	    @include breakpoint(xsmall){
+	    	margin-bottom: 15px;
+	    }
+		&--head{
+			@include flex-basis(90px);
+			max-width: 90px;
+			line-height: 1.4;
+			@extend %fontSize16;
+			@extend %fontWeight700;
+			@include breakpoint(xsmall){
+				padding-bottom: 8px;
+			}
+		}
+		&--value{
+			@include flex-basis(calc(100% - 90px));
+			max-width: calc(100% - 90px);
+			@include breakpoint(xxsmall){
+				@include flex-basis(100%);
+				max-width: 100%;
+			}
+			& > span,
+			& > a{
+				@extend %displayInlineBlock;
+				margin-bottom: 5px;
+				font-family: $font-2;
+				line-height: 1.4;
+			}
+			.product-price-wrapper{
+				& > span{
+					font-weight: 400;
+				}
+			}
+		}
+		&.order-total{
+			border-top: 1px solid $border-color;
+			padding-top: 15px;
+		}
+	}
+}  
+
+.shipping-calculator-wrap{
+	a{
+		font-family: $font-2;
+		line-height: 1.4;
+	}
+}

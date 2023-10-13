@@ -1,0 +1,566 @@
+/* -----------------------------------
+
+	Template Name: Gemini Personal Blog
+    Template URI: https://devitems.com/html/lira-preview/
+    Description: This is html5 template
+    Author: BootExperts
+    Author URI: https://devitems.com/
+    Version: 1.0
+
+	NOTE: This is Slider style file. All Slider related style included in this file.
+
+--------------------------------------*/
+
+/*----------- Nivo Slider Css -----------*/
+.nivoSlider {
+	position:relative;
+	width:100%;
+	height:auto;
+	overflow: hidden;
+}
+.nivoSlider img {
+  filter: grayscale(80%);
+  left: 0;
+  max-width: none;
+  position: absolute;
+  top: 0;
+}
+.nivo-main-image {
+	display: block !important;
+	position: relative !important; 
+	width: 100% !important;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+	background:white; 
+	filter:alpha(opacity=0); 
+	opacity:0;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+	top:0;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+	overflow:hidden;
+}
+.nivo-box img { display:block; }
+
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	color:#fff;
+	width:100%;
+	z-index:8;
+	padding: 5px 10px;
+	opacity: 1;
+	overflow: hidden;
+	display: none;
+	-moz-opacity: 0.8;
+	filter:alpha(opacity=8);
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-prevNav {
+	left:0px;
+}
+.nivo-nextNav {
+	right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+	text-align:center;
+	padding: 15px 0;
+}
+.nivo-controlNav a {
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}
+/* --------------- Default Theme ---------------*/
+.slider-direction {
+	position: absolute;
+	left:0; 
+	top:0;  
+	width: 100%;
+	background: none;
+	color: #fff;
+	font-size: 16px;
+	z-index: 999;
+	display: none;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    border:0;
+    padding:0;
+    margin:0;
+    z-index:6;
+    display:none;
+    background:white; 
+    filter:alpha(opacity=0); 
+    opacity:0;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+    display:block;
+    position:absolute;
+    z-index:5;
+    height:100%;
+    top:0;
+}
+.nivo-box {
+    display:block;
+    position:absolute;
+    z-index:5;
+    overflow:hidden;
+}
+.nivo-box img { display:block; }
+.nivo-caption {
+  position:absolute;
+    left:0; 
+    top:0;  
+    color:#fff;
+    width:100%;
+    height: 100%;
+    z-index:8;
+}
+.nivo-main-image {
+    display: block !important;
+    position: relative !important; 
+    width: 100% !important;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+    display:block;
+    position:absolute;
+    z-index:5;
+    height:100%;
+    top:0;
+}
+.nivo-box {
+    display:block;
+    position:absolute;
+    z-index:5;
+    overflow:hidden;
+}
+@-webkit-keyframes myfirst {
+  from {width: 0;}
+  to {width: 100%;}
+ }
+ @keyframes myfirst {
+  from {width: 0;}
+  to {width: 100%;}
+ }
+ .slider-progress.pos_hover{
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+ }
+/* -------------- Custom Slider  ---------------- */
+.slider-progress{
+	position:absolute;
+	top:0;
+	left:0;
+	background-color: rgba(255, 255, 255, .7);
+	height:5px;
+	-webkit-animation: myfirst 5000ms ease-in-out;
+	-moz-animation: myfirst 5000ms ease-in-out;
+	-ms-animation: myfirst 5000ms ease-in-out;
+	animation: myfirst 5000ms ease-in-out;
+}
+.s-tb{
+	display: table;
+	height: 100%;
+	width: 100%;
+	float: left;
+}
+.s-tb-c{
+	display: table-cell;
+    vertical-align: middle;
+}
+.t-cn{text-align: center}
+.t-lft{text-align: left}
+.t-lfr{text-align: right}
+/* -------------- Slider Text Style  ---------------- */
+.sl-text-contnt {
+  display: block;
+  float: right;
+  margin-right: 15%;
+  padding: 30px 0;
+  position: relative;
+  text-align: center;
+  top: -25px;
+  width: 565px;
+  animation: fadeInDown 1500ms ease-in-out;
+}
+.sl-text-contnt::after {
+  background: #fff none repeat scroll 0 0;
+  content: "";
+  height: 1px;
+  left: -48px;
+  position: absolute;
+  top: 0;
+  width: 33%;
+} 
+.sl-text-contnt::before {
+  background: #fff none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  position: absolute;
+  right: 180px;
+  width: 33%;
+}
+.slide-btn > a {
+  border: 1px solid #fff;
+  color: #fff;
+  left: 120px;
+  margin-top: 60px;
+  padding: 8px 20px;
+  position: absolute;
+  text-transform: uppercase;
+}
+.slide-btn > a:hover{background:#fff;color:#000;}
+.slider-1 h1{
+	left: 20%;
+    position: relative;
+    font-size: 60px;
+    font-weight: 700;
+	color: #fff
+}
+.slider-1 h3{
+	left: 20%;
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
+	color: #c2a376;
+}
+.slider-2 h1{
+	text-transform: uppercase;
+	font-size: 60px;
+	font-weight: 700;
+	font-family: 'Open Sans', sans-serif;
+}
+.slider-2 h3{
+	text-transform: uppercase;
+	font-weight: uppercase;
+	font-family: 'Open Sans', sans-serif;
+}
+.slider-3 h1 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 15px 0;
+  position: relative;
+  right: 20%;
+}
+.slider-3 h3 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+  position: relative;
+  right: 20%;
+}
+.slider-3.color h1,.slider-3.color h3,.color .slide-btn > a{color:#252525;}
+.color .slide-btn > a{border:1px solid #252525}
+.color .slide-btn > a:hover{border-color:#fff;}
+.color .sl-text-contnt::after,.color .sl-text-contnt::before{background:#252525;}
+/* -------------- Slider Preview Style  ---------------- */
+/* preview-1  */
+.preview-1 .nivoSlider {
+	position:relative;
+	background: url(../../img/icon/loading.gif) no-repeat 50% 50%;
+}
+.preview-1 .nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+.preview-1 .nivoSlider a {
+	border:0;
+	display:block;
+}
+
+.preview-1 .nivo-controlNav {
+	text-align: center;
+	padding: 20px 0;
+}
+.preview-1 .nivo-controlNav a {
+	display:inline-block;
+	width:22px;
+	height:22px;
+	background:url(../../img/icon/bullets.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	margin: 0 2px;
+}
+.preview-1 .nivo-controlNav a.active {
+	background-position:0 -22px;
+}
+
+.preview-1 .nivo-directionNav a {
+	display:block;
+	width:30px;
+	height:30px;
+	background:url(../../img/icon/arrows.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	opacity: 0;
+	-webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+.preview-1:hover .nivo-directionNav a { opacity: 1; }
+.preview-1 a.nivo-nextNav {
+	background-position:-30px 0;
+	right:15px;
+}
+.preview-1 a.nivo-prevNav {
+	left:15px;
+}
+.preview-1 .nivo-caption {
+    font-family: Helvetica, Arial, sans-serif;
+}
+.preview-1 .nivo-caption a {
+    color:#fff;
+    border-bottom:1px dotted #fff;
+}
+.preview-1 .nivo-caption a:hover {
+    color:#fff;
+}
+
+.preview-1 .nivo-controlNav.nivo-thumbs-enabled {
+	width: 100%;
+}
+.preview-1 .nivo-controlNav.nivo-thumbs-enabled a {
+	width: auto;
+	height: auto;
+	background: none;
+	margin-bottom: 5px;
+}
+.preview-1 .nivo-controlNav.nivo-thumbs-enabled img {
+	display: block;
+	width: 120px;
+	height: auto;
+}
+.preview-1 .nivo-controlNav {
+    position: relative;
+    z-index: 99999;
+    bottom: 68px;
+}
+.preview-1 .nivo-controlNav a {
+	border:5px solid #fff;
+	display: inline-block;
+	height:18px;
+	margin: 0 5px;
+	text-indent: -9999px;
+	width:18px;
+	line-height: 8px;
+	background: #3c3c3c;
+	cursor: pointer;
+	position: relative;
+	z-index: 9;
+	border-radius: 100%;
+	opacity: 0;
+	z-index: -999;
+}
+.preview-1:hover .nivo-controlNav a{
+  opacity: 1;
+  z-index: 999999;
+}
+.preview-1 .nivo-controlNav a:hover, .preview-1 .nivo-controlNav a.active {
+    background: #000;
+    cursor: pointer;
+}
+.bend {
+  position: relative;
+}
+/* Preview-2 */
+.preview-2 .nivoSlider:hover .nivo-directionNav a.nivo-prevNav {
+  left: 15px;
+}
+.preview-2 .nivoSlider:hover .nivo-directionNav a.nivo-nextNav{
+  right: 65px;
+}
+.preview-2 .nivoSlider .nivo-directionNav a.nivo-prevNav {
+  left: -34px;
+  font-size: 0;
+}
+.preview-2 .nivoSlider .nivo-directionNav a.nivo-nextNav {
+  right: 16px;
+  font-size: 0;
+}
+.preview-2 .nivo-directionNav a.nivo-prevNav:hover:before{
+  background: #fff;
+  color: #000;
+}
+.preview-2 .nivo-directionNav a.nivo-prevNav:before{
+  background: rgba(0,0,0,0.25);
+  content: "\f053";
+  font: normal normal normal 14px/1 FontAwesome;
+  color: #fff;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 400;
+  height: 50px;
+  line-height: 50px;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  top: 45%;
+  transition: all 300ms ease-in 0s;
+  width: 50px;
+  z-index: 9;
+}
+.preview-2 .nivo-directionNav a.nivo-nextNav:hover:before{
+  background:#fff;
+  color: #000
+}
+.preview-2 .nivo-directionNav a.nivo-nextNav:before{
+  background: rgba(0,0,0,0.25);
+  content: "\f054";
+  font: normal normal normal 14px/1 FontAwesome;
+  color: #fff;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 400;
+  height: 50px;
+  line-height: 50px;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  top: 45%;
+  transition: all 300ms ease-in 0s;
+  width: 50px;
+  z-index: 9;
+}
+.preview-2 .nivo-controlNav {
+  margin-left: 0;
+  position: absolute;
+  right: 25px;
+  top: 42.5%;
+  width: 30px;
+  z-index: 99999;
+}
+.preview-2 .nivo-controlNav a {
+  background: #606060 none repeat scroll 0 0;
+  border-radius: 100%;
+  cursor: pointer;
+  display: inline-block;
+  height: 15px;
+  margin: 0 5px;
+  opacity: 1;
+  position: relative;
+  text-indent: -9999px;
+  width: 15px;
+  z-index: 999999;
+  line-height: 30px;
+  transition:.3s;
+}
+.preview-2 .nivo-controlNav a::after {
+  border: 1px solid #fff;
+  border-radius: 100%;
+  content: "";
+  height: 19px;
+  left: -2px;
+  position: absolute;
+  top: -2px;
+  width: 19px;
+  opacity:0;
+  transition:.3s;
+}
+.preview-2 .nivo-controlNav a:hover::after,.preview-2 .nivo-controlNav a.active::after{opacity:1;}
+.preview-2 .nivo-controlNav a:hover,.preview-2 .nivo-controlNav a.active{background:#fff;}
+/* -------------- Slider Animation Css  ---------------- */
+.slider-1 h1{
+	-webkit-animation: fadeInLeft 500ms ease-in-out;
+    -moz-animation: fadeInLeft 500ms ease-in-out;
+    -ms-animation: fadeInLeft 500ms ease-in-out;
+    animation: fadeInLeft 500ms ease-in-out;
+}
+.slider-1 h3{
+	-webkit-animation: fadeInLeft 1500ms ease-in-out;
+    -moz-animation: fadeInLeft 1500ms ease-in-out;
+    -ms-animation: fadeInLeft 1500ms ease-in-out;
+    animation: fadeInLeft 1500ms ease-in-out;
+}
+.slider-2 h1{
+	-webkit-animation: bounceInUp 1000ms ease-in-out;
+    -moz-animation: bounceInUp 1000ms ease-in-out;
+    -ms-animation: bounceInUp 1000ms ease-in-out;
+    animation: bounceInUp 1000ms ease-in-out;
+}
+.slider-2 h3{
+	-webkit-animation: fadeInLeft 1500ms ease-in-out;
+    -moz-animation: fadeInLeft 1500ms ease-in-out;
+    -ms-animation: fadeInLeft 1500ms ease-in-out;
+    animation: fadeInLeft 1500ms ease-in-out;
+}
+.slider-3 h1{
+	-webkit-animation: fadeInLeft 1000ms ease-in-out;
+    -moz-animation: fadeInLeft 1000ms ease-in-out;
+    -ms-animation: fadeInLeft 1000ms ease-in-out;
+    animation: fadeInLeft 1000ms ease-in-out;
+}
+.slider-3 h3{
+	-webkit-animation: fadeInRight 1500ms ease-in-out;
+    -moz-animation: fadeInRight 1500ms ease-in-out;
+    -ms-animation: fadeInRight 1500ms ease-in-out;
+    animation: fadeInRight 1500ms ease-in-out;
+}
+.sl-text-contnt {
+  -webkit-animation: fadeInDown 1500ms ease-in-out;
+  -moz-animation: fadeInDown 1500ms ease-in-out;
+  -ms-animation: fadeInDown 1500ms ease-in-out;
+  animation: fadeInDown 1500ms ease-in-out;
+}
+.slide-btn {
+  -webkit-animation: rollIn 1500ms ease-in-out;
+  -moz-animation: rollIn 1500ms ease-in-out;
+  -ms-animation: rollIn 1500ms ease-in-out;
+  animation: rollIn 1500ms ease-in-out;
+}

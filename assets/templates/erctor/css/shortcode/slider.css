@@ -1,0 +1,113 @@
+/* -----------------------------------
+Template:  Erctor
+
+NOTE: This is slider style file. All Header related style included in this file.
+
+--------------------------------------*/
+.slider-container {
+  position: relative;
+}
+.overlay::before {
+  background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
+.slide-text {
+  margin-left: 215px;
+  position: absolute;
+  top: 41.5%;
+  z-index: 99;
+}
+.slide-caption-img {
+  display: inline-block;
+  float: right;
+  margin-right: 295px;
+  padding-top: 130px;
+  position: relative;
+  z-index: 9;
+}
+.slide-caption-img > img {
+  position: inherit;
+}
+.nivo-controlNav {
+  bottom: 45px;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+}
+.nivo-controlNav a.active {
+  color: #ffe200;
+  font-size: 30px;
+}
+.nivo-controlNav a {
+  color: #ffffff;
+  margin-right: 12px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.nivo-controlNav a:last-child {
+  margin-right: 0;
+}
+.middle-text .title-1 h2 {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+.middle-text .desc p {
+  color: #ffffff;
+  font-size: 16px;
+  padding: 0;
+}
+
+.middle-text .learn-more a {
+    border: 1px solid #ffe200;
+    color: #ffffff;
+    display: inline-block !important;
+    font-size: 16px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 28px;
+    text-transform: uppercase;
+}
+.middle-text .learn-more a:hover {
+    background: #ffe200 none repeat scroll 0 0;
+    color: #000;
+}
+.learn-more {
+    margin-top: 45px;
+}
+.social-media-follow {
+  left: 40px;
+  position: absolute;
+  top: 44.2%;
+}
+.social-box-inner li a {
+    color: #ffffff;
+    font-size: 18px;
+}
+.social-box-inner ul li {
+    margin-bottom: 18px;
+}
+.social-box-inner ul li:last-child {
+    margin-bottom: 0px;
+}
+.social-box-inner li a:hover {
+    color: #ffe200;
+}
+
+
+
+
+
+
+
+

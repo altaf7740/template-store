@@ -1,0 +1,63 @@
+/*
+Skin Name: Nivo Slider Default Theme
+Skin URI: http://nivo.dev7studios.com
+Description: The default skin for the Nivo Slider.
+Version: 1.3
+Author: Gilbert Pellegrom
+Author URI: http://dev7studios.com
+Supports Thumbs: true
+*/
+/* -------------------------------------
+preview-1 
+---------------------------------------- */
+.preview .nivoSlider {
+	position:relative;
+	background: url(../img/loading.gif) no-repeat 50% 50%;
+}
+.preview .nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+.preview .nivoSlider a {
+	border:0;
+	display:block;
+}
+
+
+.nivo-controlNav {
+  display: none;
+}
+.preview .nivo-directionNav a {
+	display:block;
+	width:30px;
+	height:34px;
+	text-indent:-9999px;
+	border:0;
+	opacity: 0;
+	-webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+.preview .nivo-directionNav a.nivo-prevNav{
+	background:url(../../img/preview.png) no-repeat;
+}
+.preview .nivo-directionNav a.nivo-nextNav{
+	background:url(../../img/preview1.png) no-repeat;
+}
+.preview .nivo-directionNav a.nivo-prevNav:hover{
+	background:url(../../img/preview-hover.png) no-repeat;
+}
+.preview .nivo-directionNav a.nivo-nextNav:hover{
+	background:url(../../img/preview1-hover.png) no-repeat;
+}
+.preview:hover .nivo-directionNav a { opacity: 1; }
+.preview a.nivo-nextNav {
+	background-position:-30px 0;
+	right:15px;
+}
+.preview a.nivo-prevNav {
+	left:15px;
+}

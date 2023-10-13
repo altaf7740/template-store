@@ -1,0 +1,92 @@
+/*--
+    04. Search Css
+--------------------*/
+.search-area {
+    background: #fff;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 30px 0 45px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    & h2 {
+        color: $black;
+        font-weight: 600;
+    }
+    & input {
+        width: 100%;
+    }
+    & .btn {
+        & i {
+            font-size: 12px;
+        }
+        background: $theme-color;
+        border: 1px solid $theme-color;
+        color: $white;
+    }
+    
+    @media #{$laptop-device}{
+        padding: 20px 0 35px 0;
+        & h2 {
+            font-size: 34px;
+        }
+    }
+    @media #{$desktop-device}{
+        padding: 10px 0 35px 0;
+        & h2 {
+            font-size: 28px;
+        }
+    }
+    @media #{$tablet-device}{
+        padding: 10px 0 35px 0;
+        & h2 {
+            font-size: 28px;
+            margin-bottom: 0;
+            line-height: 28px;
+        }
+    }
+    
+    @media #{$large-mobile}{
+        position: inherit;
+        padding: 10px 0 35px 0;
+        & h2 {
+            font-size: 28px;
+            margin-bottom: 0;
+            line-height: 28px;
+        }
+        & .btn {
+            padding: 9px 31px;
+        }
+    }
+}
+
+.class-grow {
+    .col {
+        flex-grow: 1
+    }
+}
+.nice-select,.input-box-2 {
+    width: 100%;
+    height: 45px;
+}
+.btn-custom {
+    max-width: 180px;
+    @media #{$large-mobile}{
+        max-width: 150px;
+    }
+}
+.search-area input {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.nice-select .list {
+    min-width: 100%;
+    background-color: #f1f1ff;
+    border: 1px solid #f1f1ff;
+    box-shadow: none;
+}
+.container-100 {
+    max-width: 1470px;
+    margin: auto;
+}

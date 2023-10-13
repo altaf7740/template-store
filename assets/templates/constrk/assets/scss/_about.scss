@@ -1,0 +1,64 @@
+/*--
+    05. About Css
+--------------------------*/
+.about-bg {
+    background: url(../images/bg/about-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-area {
+    & .title {
+        & p {
+            font-size: 16px;
+            margin-bottom: 0;
+            font-style: italic;
+        }
+        & h2 {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+    }
+    & .content {
+        & p {
+            font-size: 16px;
+        }
+        @media #{$large-mobile,$tablet-device}{
+            margin-bottom: 30px;
+        }
+    }
+}
+.counterup-bg {
+    background: url(../images/bg/counter-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.counter {
+    & h3 {
+        font-weight:  700;
+        color: $white;
+        margin-top: 10px;
+    }
+    & p {
+        color: $white;
+        font-weight: 500;
+        font-size: 17px;
+        margin: 0;
+        margin-top: 0px;
+        position: relative;
+        margin-top: 9px;
+        display: block;
+        padding-bottom: 10px;
+        &::before {
+            background: #d5d5d5;
+            width: 48px;
+            height: 1px;
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

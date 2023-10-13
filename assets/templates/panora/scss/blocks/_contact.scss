@@ -1,0 +1,161 @@
+@import "../variables";
+@import "../mixins";
+/*----------------------
+    Blog Details 
+------------------------*/
+
+.panora__contact {
+    padding: 100px 0;
+    .ct__title {
+        color: #424242;
+        font-size: 30px;
+        margin-bottom: 59px;
+        text-transform: uppercase;
+    }
+    .single-contact-form {
+        &.space-between {
+            display: flex;
+            margin-left: -15px;
+            margin-right: -15px;
+            input {
+                margin: 0 15px 30px;
+            }
+        }
+        input {
+            background: #f2f2f2 none repeat scroll 0 0;
+            border: 2px solid transparent;
+            flex-basis: 50%;
+            height: 55px;
+            margin-bottom: 30px;
+            outline: medium none;
+            padding: 0 20px;
+            transition: all 0.5s ease 0s;
+            width: 100%;
+            &:focus {
+                border: 2px solid #81ad7b;
+                outline: medium none;
+            }
+        }
+        textarea {
+            background: #f2f2f2 none repeat scroll 0 0;
+            border: 0 none;
+            min-height: 190px;
+            padding: 20px;
+            width: 100%;
+            border: 2px solid transparent;
+            outline: medium none;
+            transition: all 0.5s ease 0s;
+            &:focus {
+                border: 2px solid #81ad7b;
+                outline: medium none;
+            }
+        }
+    }
+    .pr__btn {
+        background: #81ad7b none repeat scroll 0 0;
+        border: 0 none;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 13px;
+        font-weight: 800;
+        height: 47px;
+        line-height: 49px;
+        margin-top: 32px;
+        padding: 0 29px;
+        text-transform: uppercase;
+        transition: 0.5s;
+        &:hover {
+            background: #f2f2f2;
+            color: $theme-color;
+        }
+    }
+}
+
+.panora__address p {
+    font-size: 15px;
+    margin-bottom: 51px;
+    padding-right: 44%;
+}
+
+.address {
+    align-items: center;
+    border-top: 1px solid #e4e4e4;
+    display: flex;
+    padding: 13px 0;
+}
+
+.address p {
+    margin: 0;
+}
+
+.address .icon {
+    margin-right: 30px;
+}
+
+.address .icon i {
+    color: #424242;
+    font-size: 18px;
+}
+
+.address p {
+    color: #848484;
+    font-size: 13px;
+    line-height: 20px;
+    padding-right: 0;
+}
+
+.working__hours {
+    margin-top: 26px;
+}
+
+.working__hours h4 {
+    color: #424242;
+    font-size: 18px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.working__hours p {
+    color: #545454;
+    font-size: 14px;
+    margin: 0;
+}
+
+.working__hours p span {
+    color: #424242;
+    font-weight: 700;
+}
+
+/* Responsive Css*/
+
+@media #{$xx-layout} {}
+
+@media #{$xlg-layout} {}
+
+@media #{$lg-layout} {}
+
+@media #{$md-layout} {}
+
+@media #{$sm-layout} {}
+
+@media #{$xs-layout} {
+    .panora__contact .single-contact-form.space-between {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .panora__contact .single-contact-form.space-between input {
+        margin: 0 0px 30px;
+    }
+    .panora__contact .ct__title {
+        margin-bottom: 20px;
+    }
+    .panora__address p {
+        padding-right: 13%;
+    }
+    .panora__contact .ct__title {
+        font-size: 23px;
+    }
+}
+
+@media #{$xxs-layout} {}

@@ -1,0 +1,76 @@
+/*--
+    09. Letest Wedding Venus Css
+-----------------------*/
+.single-wedding-venue {
+    position: relative;
+    & .wedding-image {
+        position: relative;
+        & a {
+            display: block;
+            position: relative;
+            & img {
+                width: 100%;
+            }
+            &::before {
+                position: absolute;
+                content: '';
+                left: 0;
+                top: 0;
+                background: rgba(0, 0, 0, 0.6);
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                visibility: hidden;
+                transition:all 0.3s ease-in-out;
+            } 
+        }
+    }
+    & .wedding-details {
+        position: absolute;
+        top: 0;
+        padding: 30px 40px;
+        width: 100%;
+        & .wedding-details-inner {
+            transform: translateX(-35px);
+            opacity: 0;
+            visibility: hidden;
+            position: relative;
+            padding-left: 15px;
+            transition: all 0.5s ease-in-out;
+            
+            &::before {
+                position: absolute;
+                top: 7px;
+                left: 0;
+                width: 3px;
+                height: 42px;
+                content: "";
+                background: $theme-color;
+            }
+        }
+        & h4 {
+            font-weight: 600;
+            color: $white;
+            margin-bottom: 5px;
+        }
+        & p {
+            color: $white;
+        }
+    }
+    &:hover {
+        .wedding-details-inner {
+           transform: translateX(0px);
+            opacity: 1;
+            visibility: visible;
+        }
+        & .wedding-image {
+            & a {
+                
+                &::before {
+                    opacity: 1;
+                    visibility: visible;
+                } 
+            }
+        }
+    } 
+}

@@ -1,0 +1,183 @@
+/*--
+    08. Blog Css
+---------------------------*/
+
+.post-carousel-5 {
+    .thumb {
+        & a{
+            display: block;
+            & img {
+                width: 100%;
+            }
+        }
+    }
+    .ptc-content {
+        .content {
+            text-align: left;
+            padding: 25px 0 0;
+
+            ul {
+                justify-content: flex-start;
+
+                &.post-category {
+                    li {
+                        a {}
+                    }
+                }
+
+                &.meta {
+                    margin: 0 -10px;
+                    margin-bottom: 7px;
+
+                    li {
+                        color: #333333;
+                        font-size: 14px;
+                        font-family: $heading-font;
+                        padding: 0 10px;
+                        font-weight: 500;
+                        position: relative;
+                        display: inline-block;
+
+                        &::before {
+                            position: absolute;
+                            content: "/";
+                            right: 0;
+                            top: 2px;
+                        }
+
+                        &:last-child::before {
+                            display: none;
+                        }
+
+                        a {
+                            color: #333333;
+                        }
+
+                    }
+                }
+            }
+
+            h2 {
+                font-size: 24px;
+                font-weight: 500;
+                margin-bottom: 11px;
+
+                @media #{$desktop-device} {
+                    font-size: 22px;
+                }
+
+                @media #{$large-mobile} {
+                    font-size: 19px;
+                }
+
+                @media #{$tablet-device} {
+                    font-size: 22px;
+                }
+
+                a {
+                    color: #333333;
+                    transition: 0.4s ease-in-out;
+
+                    &:hover {
+                        color: $theme-color;
+                    }
+                }
+            }
+
+            p {
+                color: #333333;
+                font-size: 15px;
+                line-height: 29px;
+                margin-bottom: 20px;
+
+                @media #{$desktop-device} {
+                    font-size: 14px;
+                }
+
+                @media #{$large-mobile} {
+                    font-size: 14px;
+                }
+
+                @media #{$tablet-device} {
+                    font-size: 14px;
+                }
+            }
+
+            .post-btn {
+                a {
+                    &.readmore-btn {
+                        display: inline-block;
+                        border-bottom: 1px solid #464646;
+                        font-size: 14px;
+                        transition: 0.4s ease-in-out;
+                        font-family: $heading-font;
+                        color: #333333;
+
+                        &:hover {
+                            border-bottom: 1px solid $theme-color;
+                            color: $theme-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.cleaning-post {
+        .ptc-content {
+            .content {
+                h2 {
+                    a {
+                        &:hover {
+                            color: $theme-color;
+                        }
+                    }
+                }
+                p {
+                    color: #6d6a6a;
+                }
+                .post-btn {
+                    a {
+                        &.readmore-btn {
+                            &:hover {
+                                border-bottom: 1px solid $theme-color;
+                                color: $theme-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.post-carousel-active-5 {
+    position: relative;
+
+    button {
+        position: absolute;
+        top: 28%;
+        left: 15px;
+        width: 46px;
+        height: 46px;
+        background: #ffffff;
+        border: 0 none;
+        color: $theme-color;
+        font-size: 24px;
+        padding: 0;
+        margin: 0;
+        transition: 0.4s ease-in-out;
+        z-index: 2;
+
+        &:hover {
+            background: $theme-color;
+            color: #ffffff;
+        }
+
+        &.post-next {
+            left: auto;
+            right: 15px;
+        }
+    }
+}
+
+

@@ -1,0 +1,219 @@
+/*-- List Style --*/
+ul[class*="list-"] {
+    list-style: none;
+    & li {
+        display: block;
+        line-height: 24px;
+        font-size: 16px;
+        color: $heading-color;
+        position: relative;
+        & + li {
+            margin-top: 13px;
+        }
+    }
+}
+
+/*-- List Circle --*/
+.list-circle {
+    & li {
+        padding-left: 25px;
+        &::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            float: left;
+            position: absolute;
+            left: 1px;
+            border-radius: 50%;
+            background-color: $blue;
+            margin-top: 8px;
+        }
+    }
+}
+
+/*-- List Square --*/
+.list-square {
+    & li {
+        padding-left: 25px;
+        &::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            float: left;
+            position: absolute;
+            left: 1px;
+            background-color: $blue;
+            margin-top: 8px;
+        }
+    }
+}
+
+/*-- List Circle --*/
+.list-line {
+    & li {
+        padding-left: 25px;
+        &::before {
+            content: "";
+            width: 10px;
+            height: 2px;
+            float: left;
+            position: absolute;
+            left: 1px;
+            background-color: $blue;
+            margin-top: 12px;
+        }
+    }
+}
+
+/*-- List Check --*/
+.list-check {
+    & li {
+        padding-left: 25px;
+        &::before {
+            content: "\f00c";
+            font-family: 'Fontawesome';
+            float: left;
+            position: absolute;
+            left: 1px;
+            color: $blue;
+            line-height: 26px;
+            font-size: 14px;
+        }
+    }
+}
+
+/*-- List Check Square --*/
+.list-check-square {
+    & li {
+        padding-left: 25px;
+        &::before {
+            content: "\f14a";
+            font-family: 'Fontawesome';
+            float: left;
+            position: absolute;
+            left: 1px;
+            color: $blue;
+            line-height: 26px;
+            font-size: 14px;
+        }
+    }
+}
+
+/*-- List Arrow --*/
+.list-arrow {
+    & li {
+        padding-left: 25px;
+        &::before {
+            content: "\f105";
+            font-family: 'Fontawesome';
+            float: left;
+            position: absolute;
+            left: 1px;
+            color: $blue;
+            line-height: 26px;
+            font-size: 14px;
+        }
+    }
+}
+
+/*-- List Arrow Double --*/
+.list-arrow-double {
+    & li {
+        padding-left: 25px;
+        &::before {
+            content: "\f101";
+            font-family: 'Fontawesome';
+            float: left;
+            position: absolute;
+            left: 1px;
+            color: $blue;
+            line-height: 26px;
+            font-size: 14px;
+        }
+    }
+}
+
+/*-- List Long Arrow --*/
+.list-long-arrow {
+    & li {
+        padding-left: 25px;
+        &::before {
+            content: "\f178";
+            font-family: 'Fontawesome';
+            float: left;
+            position: absolute;
+            left: 1px;
+            color: $blue;
+            line-height: 26px;
+            font-size: 14px;
+        }
+    }
+}
+
+/*-- List Arrow Circle --*/
+.list-arrow-circle {
+    & li {
+        padding-left: 25px;
+        &::before {
+            content: "\f0a9";
+            font-family: 'Fontawesome';
+            float: left;
+            position: absolute;
+            left: 1px;
+            color: $blue;
+            line-height: 26px;
+            font-size: 14px;
+        }
+    }
+}
+
+/*-- List Like --*/
+.list-like {
+    & li {
+        padding-left: 25px;
+        &::before {
+            content: "\f087";
+            font-family: 'Fontawesome';
+            float: left;
+            position: absolute;
+            left: 1px;
+            color: $blue;
+            line-height: 26px;
+            font-size: 14px;
+        }
+    }
+}
+
+/*-- List Folder --*/
+.list-folder {
+    & li {
+        padding-left: 25px;
+        &::before {
+            content: "\f115";
+            font-family: 'Fontawesome';
+            float: left;
+            position: absolute;
+            left: 1px;
+            color: $blue;
+            line-height: 26px;
+            font-size: 14px;
+        }
+    }
+}
+
+/*-- List Time --*/
+.list-time {
+    & li {
+        padding-left: 25px;
+        &::before {
+            content: "\f017";
+            font-family: 'Fontawesome';
+            float: left;
+            position: absolute;
+            left: 1px;
+            color: $blue;
+            line-height: 26px;
+            font-size: 14px;
+        }
+    }
+}

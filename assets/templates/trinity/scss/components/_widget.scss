@@ -1,0 +1,203 @@
+/*****************************
+32 - Components - Widget
+*****************************/
+
+/*-- 32.00 - Footer Widget --*/
+
+.footer-widget{
+	.textwidget{
+		p{
+			@extend %font2;
+		}
+	}
+	.widget-title{
+	    font-size: 24px;
+	    padding-top: 15px;
+	    padding-bottom: 0;
+	    margin-bottom: 19px;
+	    @extend %textUpper;
+	}
+	.widget-menu{
+		li{
+			&:not(:last-child){
+				margin-bottom: 5px;
+			}
+			a{
+				@extend %font2;
+				@extend %heading-color; 
+			}
+		}
+	}
+	.footer-logo{
+		margin-bottom: 18px;
+	}
+	.contact-info-widget{
+		p{
+			@extend %font2;
+			strong{
+				@extend %fontWeight600;
+			}
+		}
+	}
+}
+
+/*-- 32.01 - Sidebar Widget --*/
+
+.sidebar-inner{
+	.widget-title{
+		@extend %fontWeight700;
+		@extend %textUpper;
+		@extend %posrelative;
+		font-size: 24px;
+		line-height: 1.1;
+		padding-bottom: 20px;
+		border-bottom: 1px solid $border-color-2;
+		&:after{
+			@extend %pseudo;
+			left: 0;
+			bottom: 0;
+			height: 4px;
+			width: 30px;
+			@extend %heading-bg-color;
+		}
+	}
+}
+
+/*-- 32.02 - Widget List --*/
+
+.widget-list{
+	li{
+		line-height: 1.4;
+		&:not(:last-child){
+			margin-bottom: 1.8rem;
+		}
+		a{
+			@extend %verticalFlexCenter;
+			@extend %justify-between;
+			@extend %body-color;
+			@extend %posrelative;
+			@extend %fontWeight700;
+			@extend %fontSize16;
+			strong{
+				@extend %heading-color;
+			}
+		}
+	}
+	&.category-list{
+		li{
+			a{
+				&:after{
+					@extend %pseudo;
+					right: 25px;
+					top: 50%;
+					height: 1px;
+					width: 69px;
+					background-color: rgb(240, 240, 240);
+				}
+			}
+		}
+	}
+}
+
+/*-- 32.03 - Tagcloud --*/
+
+.tagcloud{
+	a{
+		@extend %heading-color;
+		@extend %posrelative;
+		@extend %displayInlineBlock;
+		@extend %border;
+		@extend %borderRadius;
+		padding: 5px 8px;
+		margin-right: 5px;
+		margin-bottom: 5px;
+	}
+}
+
+/*-- 32.04 - Recent Post --*/
+
+.recent-post{
+	&__item{
+		@extend %flexbox;
+		padding-bottom: 30px;
+		border-bottom: 1px solid $border-color;
+		@include breakpoint(small){
+			padding-bottom: 20px;
+		}
+		&:not(:last-child){
+			margin-bottom: 30px;
+			@include breakpoint(small){
+				margin-bottom: 20px;
+			}
+		}
+	}
+	&__thumb{
+		@include flex-basis(70px);
+		max-width: 70px;
+	}
+	&__content{
+		@include flex-basis(calc(100% - 70px));
+		max-width: calc(100% - 70px);
+		padding-left: 20px;
+	}
+	&__title{
+		@extend %fontSize18;
+		margin-bottom: 5px;
+		line-height: 1.2;
+		a{	
+			@extend %heading-color;
+		}
+	}
+	.read-more{
+		@extend %fontSize14;
+		font-family: $font-2;
+	}
+}
+
+
+/*-- 32.05 - Widget Color --*/
+
+.widget-color{
+	a{
+		display: inline-block;
+		padding: 8px 14px;
+	    margin-bottom: 7px;
+	    margin-right: 4px;
+		@extend %white-color;
+		@extend %fontSize16;
+		@extend %fontWeight700;
+		&.red{
+			background-color: $color-red;
+		}
+		&.pink{
+			background-color: $color-pink;
+		}
+		&.black{
+			background-color: $color-black;
+		}
+		&.brown{
+			background-color: $color-brown;
+		}
+		&.blue{
+			background-color: $color-blue;
+		}
+		&.boulder{
+			background-color: $color-boulder;
+		}
+		&.shaft{
+			background-color: $color-shaft;
+		}
+		&.gray{
+			background-color: $color-gray;
+		}
+	}
+}
+
+/*-- 32.06 - Contact Info Widget --*/
+
+.contact-info-widget{
+	p,a{
+		font-family: $font-2;
+		font-size: 15px;
+	}
+}

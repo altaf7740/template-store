@@ -1,0 +1,175 @@
+/*--
+    13. Footer Css
+---------------------------*/
+.footer-bg {
+    background: url(../images/bg/footer-bg.jpg);
+    background-size: cover;
+}
+.footer-top,.footer-top-inner {
+    @media #{$desktop-device}{
+        &.pb--100 {
+            padding-bottom: 80px;
+        }
+        &.pt--50 {
+            padding-top: 30px;
+        }
+    }
+    @media #{$tablet-device}{
+        &.pb--100 {
+            padding-bottom: 70px;
+        }
+        &.pt--50 {
+            padding-top: 20px;
+        }
+    }
+    @media #{$large-mobile}{
+        &.pb--100 {
+            padding-bottom: 60px;
+        }
+        &.pt--50 {
+            padding-top: 10px;
+        }
+    }
+    @media #{$small-mobile}{
+        &.pb--100 {
+            padding-bottom: 50px;
+        }
+        &.pt--50 {
+            padding-top: 0px;
+        }
+    }
+}
+.footer-info {
+    & .social {
+        margin-top: 20px;
+        & li {
+            display: inline-block;
+            margin-right: 5px;
+            & a {
+                color: $white;
+                font-size: 28px;
+                &:hover {
+                    color: #ccc;
+                }
+            }
+        }
+    }
+    & .footer-title {
+        margin-bottom: 30px;
+        @media #{$large-mobile}{
+            margin-bottom: 20px;
+        }
+        & h3 {
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-top: -5px;
+            font-family: $lato;
+            @media #{$large-mobile}{
+                    margin-top: -15px;
+            }
+        }
+    }
+    & p {
+        color: $white;
+        font-size: 15px;
+        margin-top: 25px;
+    }
+    & .footer-list {
+        & li {
+            color: $white;
+            margin-bottom: 10px;
+            font-size: 15px;
+            @media #{$small-mobile}{
+                margin-bottom: 8px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+            & a {
+                &:hover {
+                    color: #ccc;
+                }
+            }
+        }
+    }
+    .footer-list-instagram {
+        margin: 0 -5px -5px -5px;
+        & li {
+            float: left;
+            width: 27%;
+            padding: 5px;
+            & a {
+                display: block;
+                overflow: hidden;
+                & img {
+                    width: 100%;
+                    transform: scale(1);
+                }
+                &:hover {
+                   & img {
+                        transform: scale(1.2);
+                    } 
+                }
+            }
+        }
+    }
+}
+
+// footer-bottom Css
+.footer-bottom {
+    & .footer-bottom-inner {
+        padding: 30px 0;
+        border-top: 1px solid #f1f1f1;
+        & p {
+            color: #fff;
+            font-size: 14px;
+            font-family: $lato;
+        }
+    }
+}
+
+// footer white Css
+.footer-top-inner {
+    border-top: 1px solid $theme-color;
+    & .social {
+        & li {
+            & a {
+                color: #333;
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+    
+    & .footer-title {
+        & h3 {
+            color: #333;
+        }
+    }
+    & p {
+        color: #333;
+    }
+    & .footer-list {
+        & li {
+            color: #333;
+            & a {
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+    
+}
+.footer-bottom-inner {
+    &.text-black {
+        border-top: 1px solid $theme-color;
+        & p {
+            color: #333;
+        }
+    }
+}

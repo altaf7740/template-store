@@ -1,0 +1,1220 @@
+
+/*
+    CSS INDEX
+
+    01. Base CSS
+    02. header area
+        2.1 logo
+        2.2 mainmenu
+    03. slider
+        3.1 layers
+    04. book now
+    05. about us
+    06. tour
+        6.1 tour menu
+        6.2 tour place
+        6.3 load more
+    07. honeymoon place
+    08. team
+    09. hotel
+    10. blog
+    11. testimonial
+    12. partner
+    13. instragram
+    14. contact-area
+    15. contact another
+    16. footer
+    17. modal
+*/
+
+/* 01. Base CSS */
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #3a3e54;
+    font-size: 14px;
+    line-height: 24px;
+}
+a, a:hover {
+    text-decoration: none;
+}
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+a {
+    transition: all 0.5s ease 0s;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    line-height: 32px;
+    margin: 0 0 10px;
+}
+.section-padding {
+    padding: 100px 0px;
+}
+#scrollUp {
+    background-color: #3a3e54;
+    border: 1px solid #2bcdc1;
+    border-radius: 50%;
+    bottom: 20px;
+    color: #2bcdc1;
+    display: none;
+    font-size: 20px;
+    height: 40px;
+    line-height: 20px;
+    padding: 10px;
+    position: fixed;
+    right: 20px;
+    text-align: center;
+    width: 40px;
+    transition: all 0.5s ease 0s;
+}
+#scrollUp:hover {
+    background-color: #2bcdc1;
+    border: 1px solid #FFF;
+    color: #FFF;
+}
+
+/* 02. header area */
+
+.sticky-wrapper {
+  position: absolute;
+}
+.header-area {
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 120px;
+    padding: 20px 10% 16px;
+    position: fixed;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+    z-index: 9999;
+}
+.h-bg-color {
+  background-color: rgba(0, 0, 0, 0.3);
+    transition: .3s;
+}
+/* 2.1 logo */
+
+.logo a {
+    font-family: 'loveloline_bold';
+    font-size: 36px;
+    color: #2bcdc1;
+    line-height: 32px;
+}
+.logo a span {
+    font-family: 'loveloblack';
+    color: #FFF;
+}
+
+/* 2.2 mainmenu */
+
+.mobile-menu-area {
+    display: none;
+}
+.mainmenu-area {
+    position: relative;
+}
+.mainmenu-area .mainmenu-open {
+    text-align: right;
+}
+.mainmenu-area .mainmenu-open button {
+    background-color: transparent;
+    border: medium none;
+    display: inline-block;
+    font-size: 40px;
+    line-height: 70px;
+}
+.mainmenu-area .mainmenu-open button i {
+    color: #2bcdc1;
+}
+.mainmenu-area .mainmenu {
+    position: absolute;
+    right: 5%;
+    top: -100%;
+    opacity: 0;
+    transition: .3s;
+    visibility: hidden;
+}
+.mainmenu-area .mainmenu.open {
+    top: 0%;
+    opacity: 1;
+    visibility: visible;
+}
+.mainmenu-area .mainmenu ul {
+  text-align: right;
+}
+.mainmenu-area .mainmenu ul li {
+  display: inline-block;
+}
+.mainmenu-area .mainmenu ul li a {
+    color: #ffffff;
+    line-height: 70px;
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+.mainmenu-area .mainmenu ul li:hover a,
+.mainmenu-area .mainmenu ul li.active a {
+    color: #2bcdc1;
+}
+
+/* sticky menu */
+
+.header-area.stick {
+    background-color: #ffffff;
+    border-bottom: 1px solid #efefef;
+    margin-top: 0;
+    padding: 10px 10%;
+    width: 100% !important;
+    z-index: 9999;
+}
+.stick .logo a span {
+    color: #3a3e54;
+}
+.stick .mainmenu-area .mainmenu ul li a {
+    color: #3a3e54;
+}
+.stick .mainmenu-area .mainmenu ul li a:hover,
+.stick .mainmenu-area .mainmenu ul li.active a
+{
+    color: #2bcdc1;
+}
+.nav > li > a:focus,
+.nav > li > a:hover {
+    background-color: transparent;
+}
+
+
+
+/* 03. slider  */
+
+.slider-area {
+    clear: both;
+}
+
+/* 3.1 layers */
+
+.layer-1-1 h2.title-1  , .layer-2-1 h2.title-1  , .layer-3-1 h2.title-1  {
+    font-size: 48px;
+    line-height: 72px;
+    color: #FFF;
+    font-family: 'BIG_JOHN';
+    animation: 0.8s ease-in-out .8s normal backwards 1 running fadeInLeft;
+    position: absolute;
+    font-weight: 700;
+    top: 42%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.layer-1-2 h1.title-2 , .layer-2-2 h1.title-2 , .layer-3-2 h1.title-2  {
+    animation: 0.8s ease-in-out 1.5s normal backwards 1 running fadeInRight;
+    color: #2bcdc1;
+    font-family: "BIG_JOHN";
+    font-size: 66px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    line-height: 72px;
+    position: absolute;
+    top: 50%;
+    font-weight: 700;
+}
+.layer-1-3 p.title-3  , .layer-2-3 p.title-3  , .layer-3-3 p.title-3   {
+    animation: 0.8s ease-in-out 2.3s normal backwards 1 running fadeInUp;
+    color: #ffffff;
+    font-size: 24px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    letter-spacing: 23px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 60%;
+    margin-left: 2%;
+}
+
+/* 04. book now */
+
+.book-pos {
+    height: 160px;
+    position: relative;
+}
+.book-now {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    height: 125px;
+    left: 0;
+    position: absolute;
+    top: -40%;
+    width: 100%;
+    z-index: 99;
+}
+.book-now-title {
+    float: left;
+    padding-left: 8.33%;
+    width: 75%;
+}
+.book-now-title h3 {
+  line-height: 26px;
+  padding-top: 50px;
+  display: block;
+}
+.book-now-button {
+  overflow: hidden;
+  padding-top: 36px;
+}
+.book-now-button a {
+    border: 1px solid #3F4458;
+    color: #3a3e54;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    transition: .4s;
+}
+.book-now-button a:hover , .load-more .more-place button:hover , .find-hotel button:hover , .hotel-info a:hover , .contact-social a:hover , .contact-form button:hover, .newsletter-form button:hover , .place-info a.p-book-now:hover {
+    background-color: #2BCDC1;
+    border-color: #2BCDC1;
+    color: #FFF;
+}
+
+/* 05. about us */
+
+.about-us {
+    position: relative;
+    overflow: hidden;
+    border: 10px solid #393E54;
+}
+.about-img {
+    float: left;
+    width: 50%;
+    background-image: url("img/banner-1.jpg");
+    background-position: center top;
+    background-size: cover;
+    height: 632px;
+}
+.about-info {
+    background-color: #fff;
+    border-left: 10px solid #393e54;
+    float: left;
+    width: 50%;
+    height: 632px;
+}
+.about-content {
+    background-color: #fff;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.9);
+    left: -18%;
+    padding: 90px;
+    position: relative;
+    top: 7.5%;
+    width: 100%;
+    z-index: 99;
+}
+.section-heading {
+    text-align: center;
+}
+.about-info .section-heading {
+    text-align: justify;
+}
+.section-heading h2 {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 700;
+    position: relative;
+}
+.section-heading h2::before {
+    background-color: #424758;
+    bottom: -25%;
+    content: "";
+    height: 3px;
+    left: 25%;
+    position: absolute;
+    width: 50%;
+}
+.section-heading h2::after {
+    background-color: #2dcdc1;
+    bottom: -25%;
+    content: "";
+    height: 3px;
+    left: 25%;
+    position: absolute;
+    width: 25%;
+    transition: .3s;
+}
+.about-content .section-heading h2::before , .contact-another-area .section-heading h2:before {
+  left: 0;
+}
+.about-content .section-heading h2::after , .contact-another-area .section-heading h2:after {
+    left: 0%;
+}
+.contact-another-area .section-heading h2:before {
+    background-color: #9EA1AF;
+}
+.section-heading p {
+  color: #6e748f;
+  font-size: 16px;
+  line-height: 28px;
+}
+ul.tab-control li {
+    display: inline-block;
+    position: relative;
+    margin-right: -4px;
+}
+ul.tab-control {
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+ul.tab-control li:before {
+    position: absolute;
+    content: "";
+    background-color: #424758;
+    width: 100%;
+    height: 3px;
+    bottom: -25%;
+    left: 0;
+}
+ul.tab-control li:after {
+    position: absolute;
+    content: "";
+    background-color: #2dcdc1;
+    width: 0%;
+    height: 3px;
+    bottom: -25%;
+    left: 0;
+    transition: .5s;
+}
+ul.tab-control li:hover:after , ul.tab-control li.active:after{
+    width: 40%;
+}
+ul.tab-control li a {
+    color: #3a3e54;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 32px;
+    padding-right: 34px;
+}
+ul.tab-control li a:hover , ul.tab-control li.active a {
+    color: #2dcdc1;
+}
+.about-us .tab-content p {
+  margin-bottom: 35px;
+}
+
+/* 06. tour */
+
+/* 6.1 tour menu */
+.tour-menu ul {
+    margin: 25px 0;
+    text-align: center;
+}
+.tour-menu ul li {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 32px;
+    padding: 0 22px;
+    transition: all 0.3s ease 0s;
+}
+.tour-menu ul li.active {
+  color: #3fcdc1;
+}
+.tour-menu ul li:hover {
+    color: #2bcdc1;
+}
+
+/* 6.2 tour place */
+
+.tour-place .mix{
+    display: none;
+}
+.tour-place {
+    overflow: hidden;
+}
+.single-place {
+    float: left;
+    padding: 5px;
+    position: relative;
+    width: 25%;
+}
+.place-img img {
+    width: 100%;
+}
+.place-info {
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 95%;
+    left: 2.5%;
+    opacity: 0;
+    overflow: hidden;
+    padding: 12px 25px 0;
+    position: absolute;
+    top: 2.5%;
+    transform: scaleX(-1);
+    transition: all 0.8s ease 0s;
+    visibility: hidden;
+    width: 95%;
+}
+.single-place:hover .place-info {
+    visibility: visible;
+    opacity: 1;
+    transform: scaleX(1);
+}
+.place-info h3 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 32px;
+}
+.place-info h3 span {
+    float: right;
+}
+.place-info p {
+    font-weight: 300;
+    margin-bottom: 15px;
+    line-height: 20px;
+    text-align: justify;
+}
+.place-info a.p-book-now {
+    border: 1px solid #3a3e54;
+    color: #3a3e54;
+    display: inline-block;
+    line-height: 26px;
+    padding: 5px 20px;
+    text-transform: uppercase;
+}
+.place-info a.details {
+    background-color: #2bcdc1;
+    bottom: -80px;
+    height: 160px;
+    position: absolute;
+    right: -80px;
+    transform: rotate(45deg);
+    width: 160px;
+}
+a.details i {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    left: 13%;
+    line-height: 16px;
+    padding: 5px 7px;
+    position: relative;
+    top: 40%;
+    transform: rotate(-45deg);
+}
+
+/* 6.3 load more */
+
+.load-more .more-place button , .find-hotel button  {
+    background-color: transparent;
+    border: 1px solid #424758;
+    margin-top: 55px;
+    padding: 6px 20px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+
+/* 07. honeymoon place */
+
+.honeymoon-place-area {
+    background-image: url("img/honeymoon/honeymoon-bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    height: 705px;
+    position: relative;
+}
+.honeymoon-place-info {
+    padding-left: 25px;
+    padding-top: 100px;
+}
+.honeymoon-content h2 {
+    color: #2bcdc1;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 32px;
+}
+.honeymoon-content p {
+    color: #fff;
+    font-size: 16px;
+}
+.honeymoon-content {
+    margin-bottom: 50px;
+}
+
+.honeymoon-slider {
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+.h-single-place {
+    overflow: hidden;
+    position: relative;
+}
+.h-img img {
+    width: 100%;
+}
+.couple-img {
+    left: 10%;
+    padding-top: 20px;
+    position: absolute;
+    top: 0;
+}
+.h-info {
+    background-color: #fff;
+    bottom: -100%;
+    left: 0;
+    padding-left: 25px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    position: absolute;
+    transform-origin: 0 0 0;
+    transition: all 0.3s ease 0s;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+}
+.honeymoon-slider:hover .h-info {
+    visibility: visible;
+    opacity: 1;
+    bottom: 0;
+}
+.h-info h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: -5px;
+}
+.honeymoon-slider .owl-buttons div.owl-next, .hotel-img a {
+    background-color: #2bcdc1;
+    bottom: -63px;
+    height: 120px;
+    position: absolute;
+    right: -60px;
+    transform: rotate(45deg);
+    width: 120px;
+    color: #FFF;
+}
+.hotel-img a i , .honeymoon-slider .owl-buttons div.owl-next i {
+    display: inline-block;
+    font-size: 30px;
+    line-height: 80px;
+    margin-left: 20px;
+    margin-top: 19px;
+    transform: rotate(135deg);
+}
+.honeymoon-slider .owl-buttons div.owl-next {
+    bottom: 0px;
+    opacity: 0;
+    right: -100%;
+    transition: all 0.5s ease 0s;
+    visibility: hidden;
+    z-index: 99;
+}
+.honeymoon-slider:hover .owl-buttons div.owl-next {
+    bottom: -63px;
+    right: -60px;
+    opacity: 1;
+    transition: all 0.5s ease 0s;
+    visibility: visible;
+}
+
+/* 08. team  */
+
+.team-area {
+  background-color: #f7f7f7;
+}
+.team-members {
+    margin-top: 45px;
+}
+.member-info h3 {
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: -10px;
+    text-transform: capitalize;
+}
+.member-info h5 {
+    text-transform: capitalize;
+}
+.member-info p {
+    font-weight: 300;
+}
+.member-social {
+    background-color: #ffffff;
+    bottom: 0;
+    position: absolute;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+}
+.member-social a {
+    color: #bec0c9;
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 8.8%;
+}
+.member-social a:hover {
+    color: #2BCDC1;
+}
+.single-team {
+    position: relative;
+}
+.member-info {
+    background-color: #ffffff;
+    border: 1px solid #3f4458;
+    bottom: 1%;
+    height: 98%;
+    left: 1%;
+    opacity: 0;
+    padding: 15% 8%;
+    position: absolute;
+    right: 1%;
+    transform: scaleY(0);
+    transform-origin: 0 0 0;
+    transition: all 0.5s ease 0s;
+    visibility: hidden;
+    width: 98%;
+}
+.single-team:hover .member-info {
+    opacity: 0.9;
+    transform: scaleY(1);
+    visibility: visible;
+}
+.single-team:hover .member-social {
+    background-color: transparent;
+    bottom: 25%;
+    z-index: 999;
+}
+
+/* 09. hotel */
+
+.single-hotel {
+    margin-top: -14px;
+}
+.hotel-sample , .blog-post {
+  margin-top: 50px;
+}
+.hotel-img {
+    position: relative;
+    overflow: hidden;
+}
+.hotel-info {
+    background-color: #f3f3f3;
+    padding: 15% 9% 14.5% 10.5%;
+    position: relative;
+}
+.hotel-info.arrow-left::after, .hotel-info.arrow-right::after {
+    background-color: #f3f3f3;
+    content: "";
+    height: 30px;
+    left: -9px;
+    position: absolute;
+    top: 10%;
+    transform: rotate(45deg);
+    width: 30px;
+    z-index: -99;
+}
+.hotel-info.arrow-right:after {
+    left: auto;
+    right: -9px;
+}
+.hotel-info h2 a {
+    border: inherit;
+    font-size: 21px;
+    margin-bottom: 0;
+    padding: inherit;
+    text-transform: capitalize;
+}
+.hotel-info h2 a:hover {
+    background-color: transparent;
+    color: #2bcdc1;
+}
+.hotel-info h4 {
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.hotel-info h4 span {
+    color: #2bcdc1;
+}
+.hotel-info h4 span.ratings {
+  float: right;
+}
+.hotel-info p {
+  font-weight: 300;
+}
+.hotel-info .hotel-order-btn {
+  text-align: right;
+}
+.hotel-info a {
+  border: 1px solid #3a3e54;
+  color: #3a3e54;
+  display: inline-block;
+  line-height: 26px;
+  padding: 8px 20px;
+  text-transform: uppercase;
+}
+
+/* 10. blog */
+
+.single-blog-post {
+  float: left;
+  width: 50%;
+}
+.post-content {
+    background-color: #f3f3f3;
+    padding: 11% 0;
+}
+.post-content .post-info h3 {
+    border-bottom: 1px solid #9ea1af;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 10%;
+    padding-right: 10%;
+    text-transform: capitalize;
+}
+.post-content .post-info h3 span {
+    float: right;
+    font-size: 14px;
+    font-weight: 300;
+}
+.post-summary {
+    padding: 0 10%;
+}
+.post-summary a {
+    color: #3a3e54;
+    display: inline-block;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.post-summary > a:hover {
+    color: #2BCDC1;
+}
+.post-summary p {
+    font-weight: 300;
+    text-align: justify;
+}
+.post-summary .detail a {
+    color: #2bcdc1;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.post-summary .detail a:hover {
+    text-decoration: underline;
+}
+.post-summary .detail .love-share {
+    display: inline-block;
+    float: right;
+}
+.post-summary .detail .love-share a {
+    color: #9ea1af;
+    font-size: 16px;
+    margin-left: 25px;
+}
+.post-summary .detail .love-share a:hover {
+    color: #2bcdc1;
+}
+
+/* 11. testimonial */
+
+.testimonial-area {
+    background-color: #f3f3f3;
+}
+.testimonial-slider {
+  position: relative;
+}
+.single-testimonial .test-info h4 {
+    color: #303030;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-bottom: -10px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.single-testimonial .test-info h5 {
+    color: #777;
+    font-size: 14px;
+    line-height: 28px;
+    text-transform: capitalize;
+}
+.single-testimonial .test-info p {
+    color: #303030;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 32px;
+    font-family: 'Open Sans', sans-serif;
+}
+.single-testimonial .line-img {
+    margin-bottom: 25px;
+    margin-top: 23px;
+}
+.testimonial-area .owl-prev , .testimonial-area .owl-next {
+    background-image: url("img/testimonial/test-prev.png");
+    height: 17px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    width: 15px;
+}
+.testimonial-area .owl-next {
+    background-image: url("img/testimonial/test-next.png");
+    left: auto;
+    right: 0;
+}
+
+/* 12. partner */
+
+.partner-area {
+    padding-bottom: 100px;
+}
+.partners-company {
+    padding-top: 90px;
+}
+.partners-company .single-partner {
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+
+/* 13. instragram */
+
+.instragram-area {
+    background-image: url(img/instragram/instragram-bg.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+.single-instragram {
+    width: 100%;
+    float: left;
+}
+.single-instragram a {
+    display: block;
+    position: relative;
+    transform: scale(1);
+    transition: all 0.5s ease 0s;
+    z-index: 99;
+}
+.single-instragram a:hover {
+    transform: scale(1.2);
+    z-index: 999;
+}
+.single-instragram a:before {
+    background-color: #000000;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+    z-index: 999;
+    visibility: hidden;
+}
+.single-instragram a:hover:before {
+    opacity: 0.75;
+    visibility: visible;
+}
+
+.single-instragram a:after {
+    background-color: transparent;
+    content: "\f067";
+    height: 30px;
+    left: -20px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.5s ease 0s;
+    width: 30px;
+    z-index: 999;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    color: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    line-height: 30px;
+    font-family: 'fontawesome';
+    text-align: center;
+    visibility: hidden;
+}
+.single-instragram a:hover:after{
+    opacity: 1;
+    visibility: visible;
+}
+.single-instragram img {
+    width: 100%;
+}
+
+/* 14. contact-area */
+
+.contact-area {
+    padding-top: 60px;
+}
+.street-address {
+    margin: 50px 0 55px;
+}
+.street-address a {
+    color: #2bcdc1;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-family: 'loveloline_bold';
+}
+.street-address a span {
+    font-size: 22px;
+    color: #6e748f;
+    font-family: 'loveloblack';
+}
+.street-address h4 {
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 10px;
+}
+.street-address p {
+  margin-top: 20px;
+}
+.contact-social {
+    padding-bottom: 60px;
+}
+.contact-social a {
+    border: 1px solid #6e748f;
+    color: #9ea1af;
+    display: inline-block;
+    font-size: 20px;
+    height: 70px;
+    line-height: 70px;
+    margin: 0 10px;
+    width: 70px;
+}
+
+/* 15. contact another */
+
+.contact-another-area {
+    overflow: hidden;
+}
+.contact-another-area .section-heading {
+    text-align: left;
+}
+.contact-another-area .single-part {
+    background-color: #f3f3f3;
+    float: left;
+    width: 50%;
+    height: 520px;
+}
+.contact-another-area .single-part.news {
+    background-color: #424343;
+}
+.get-in-touch , .newsletter {
+  padding: 100px 200px;
+}
+.contact-form , .newsletter-form {
+  width: 85%;
+}
+.contact-form input {
+    border-color: #9ea1af;
+    border-style: none none solid;
+    border-width: 0 0 1px;
+    width: 100%;
+    background-color: transparent;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    color: #424758;
+}
+.contact-form textarea {
+    background-color: transparent;
+    border-color: #9ea1af;
+    border-style: none none solid;
+    border-width: 0 0 1px;
+    color: #424758;
+    padding-top: 25px;
+    text-transform: capitalize;
+    width: 100%;
+}
+.contact-form button {
+    background-color: transparent;
+    border: 1px solid #9ea1af;
+    display: block;
+    margin-top: 25px;
+    text-transform: uppercase;
+    padding-left: 40px;
+    transition: all 0.5s ease 0s;
+}
+.contact-form button i {
+    border-left: 1px solid #9ea1af;
+    display: inline-block;
+    padding: 15px 15px 15px;
+    margin-left: 40px;
+    transition: all 0.5s ease 0s;
+}
+.contact-form button:hover i {
+    border-color: #FFF;
+}
+.newsletter .section-heading h2 {
+    color: #ddd;
+}
+.newsletter-form h4 {
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 15px;
+}
+.newsletter-form input[type="email"] {
+    background-color: transparent;
+    border-color: #9ea1af;
+    border-style: none none solid;
+    border-width: 0 0 1px;
+    color: #9ea1af;
+    font-size: 15px;
+    padding-bottom: 5px;
+    padding-top: 25px;
+    width: 100%;
+}
+.newsletter-form button {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    display: block;
+    color: #ddd;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    transition: all 0.5s ease 0s;
+}
+.newsletter-form  span {
+    color: #ddd;
+    margin-left: 5px;
+}
+
+/* 16. footer */
+
+.footer-area .footer-copyright {
+    background-color: #FFF;
+    padding: 40px 0px;
+}
+.footer-area .footer-copyright p {
+    margin-bottom: 0px;
+    color: #3f4040;
+}
+.footer-area .footer-copyright a {
+    color: #3f4040;
+}
+.footer-area .footer-copyright a:hover {
+    color: #2BCDC1;
+}
+
+/* 17. modal */
+
+.menu-expand-modal-body {
+    overflow: hidden;
+}
+.modal {
+    z-index: 9999999;
+    background-color: rgba(0,0,0,.5);
+}
+.modal-content {
+    overflow: hidden;
+    padding: 50px 20px 20px;
+}
+.modal-content .part-1,
+.modal-content .part-2 {
+    overflow: hidden;
+}
+.modal-content .part-2 .section-heading {
+    margin-bottom: 25px;
+}
+.modal-inner-content {
+    float: left;
+    width: 50%;
+}
+.modal-img {
+    overflow: hidden;
+}
+.modal-book-title h3 {
+    color: #3a3e54;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 0;
+}
+.modal-book-title h4 {
+    color: #2bcdc1;
+    font-size: 21px;
+    font-weight: 700;
+}
+.modal-book-title h4 span {
+    color: #909090;
+    text-transform: lowercase;
+}
+.modal-book-info p {
+    font-weight: 300;
+    padding-right: 30px;
+    text-align: justify;
+}
+.modal-inner-content .section-heading h2 {
+    font-size: 21px;
+    margin-bottom: 40px;
+    margin-top: 25px;
+    text-transform: capitalize;
+}
+.book-now-form .part-1, .book-now-form .part-2 {
+    float: left;
+    padding-right: 10px;
+    width: 50%;
+}
+.book-now-form input, .book-now-form select, .book-now-form .part-2 textarea  {
+    border: 1px solid #c1c1c1;
+    margin-bottom: 9px;
+    padding: 8px 10px;
+    width: 100%;
+    color: #909090;
+}
+.book-now-form .part-2 textarea {
+    height: 88px !important;
+}
+.send-btn {
+    text-align: center;
+}
+.send-btn button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #777;
+    line-height: 40px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    width: 50%;
+    transition: all 0.5s ease 0s;
+}
+.send-btn button:hover {
+    background-color: #2bcdc1;
+    color: #fff;
+    border-color: #2BCDC1;
+}
+button.close {
+    background-color: #000;
+    border-radius: 50%;
+    color: #fff;
+    height: 25px;
+    line-height: 25px;
+    position: relative;
+    right: 50px;
+    top: 15px;
+    width: 25px;
+    z-index: 9999;
+}
+.close:focus, .close:hover {
+    color: #fff;
+}
+
+
+
+
+
+
+
+

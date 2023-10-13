@@ -1,0 +1,136 @@
+/*---
+   06. Contact Css 
+----------------------------------------*/
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.form-style-3 {
+    form {
+        input {
+            color: #333;
+            font-weight: 400;
+            font-style: italic;
+            border: 0 none;
+            border-bottom: 1px solid #c0c0c0;
+            padding: 0;
+            margin-bottom: 50px;
+            padding-bottom: 4px;
+            font-size: 16px;
+            width: 100%;
+            &:focus{
+                border-bottom: 1px solid $theme-color;
+            }
+
+            &[type="submit"] {
+                border: 0 none;
+                background: #0056ff;
+                color: #fff;
+                margin-top: 40px;
+                margin-bottom: 0;
+                height: 55px;
+                line-height: 59px;
+                padding: 0 20px;
+                transition: 0.5s;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+                &:hover {
+                    background: #ffffff;
+                    color: #0056ff;
+                }
+            }
+        }
+        textarea {
+            border: 0 none;
+            border-bottom: 1px solid #c0c0c0;
+            font-style: italic;
+            padding: 0;
+            min-height: 150px;
+            resize: none;
+            color: #333;
+            width: 100%;
+            font-size: 16px;
+            font-weight: 400;
+
+            &:focus{
+                border-bottom: 1px solid $theme-color;
+            }
+        }
+    }
+    &.medical-aapoinment{
+        form {
+            input,
+            select {
+                color: #707070;
+                font-weight: 400;
+                font-style: normal;
+                border: 1px solid #cdcdcd;
+                padding: 0 20px;
+                margin-bottom: 30px;
+                padding-bottom: 4px;
+                font-size: 16px;
+                font-family: $heading-font;
+                background: #f0f0f0;
+                height: 50px;
+                &:focus{
+                    border: 1px solid $theme-color;
+                }
+    
+                &[type="submit"] {
+                    border: 0 none;
+                    background: $theme-color;
+                    color: #fff;
+                    margin-top: 40px;
+                    margin-bottom: 0;
+                    height: 55px;
+                    line-height: 59px;
+                    padding: 0 20px;
+                    transition: 0.5s;
+                    &:hover {
+                        background: #ffffff;
+                        color: $theme-color;
+                    }
+                }
+            }
+            textarea {
+                border: 1px solid #cdcdcd;
+                color: #707070;
+                padding: 20px;
+                background: #f0f0f0;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 16px;
+                font-family: $heading-font;
+                &:focus{
+                    border: 1px solid $theme-color;
+                }
+            }
+        }
+    }
+}
+
+.form-messege{
+    margin-top: 10px;
+    &.success {
+        color: green;
+    }
+    &.error {
+        color: red;
+    }
+}
+
+
+.form-style-3.portfolio-contact form input[type="submit"]{
+    background: $theme-color;
+}
+
+.form-style-3.portfolio-contact form input[type="submit"]:hover{
+    background: #ffffff;
+    color: $theme-color;
+}

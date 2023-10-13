@@ -1,0 +1,164 @@
+/*
+ * jQuery Nivo Slider v3.2
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+ 
+/* The Nivo Slider styles */
+.nivoSlider {
+	position:relative;
+	width:100%;
+	height:auto;
+	overflow: hidden;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	max-width: none;
+}
+.nivo-main-image {
+	display: block !important;
+	position: relative !important; 
+	width: unset !important;
+}
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+	background:white; 
+	filter:alpha(opacity=0); 
+	opacity:0;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+	top:0;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+	overflow:hidden;
+}
+.nivo-box img { display:block; }
+
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	width:100%;
+	z-index:8;
+	padding: 5px 10px;
+	opacity: 0.8;
+	overflow: hidden;
+	display: none;
+	-moz-opacity: 0.8;
+	filter:alpha(opacity=8);
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	border: 1px solid #ef6644;
+	color: #ef6644;
+	cursor: pointer;
+	font-size: 25px;
+	height: 40px;
+	line-height: 45px;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	width: 40px;
+	z-index: 8;
+}
+.nivo-prevNav {
+  margin: 20px 0;
+  right: 0;
+  transform: rotate(90deg);
+}
+.nivo-nextNav {
+  margin: -19px 0;
+  right: 0;
+  transform: rotate(-90deg);
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+	left: 50px;
+	padding: 0;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	z-index:8;
+}
+
+.nivo-control.active {
+    background: #ef6644 none repeat scroll 0 0;
+    position: relative;
+}
+.nivo-control.active::after {
+    background: #ef6644 none repeat scroll 0 0;
+    content: "";
+    height: 1px;
+    margin-top: 2px;
+    position: absolute;
+    right: 9px;
+    top: 0;
+    width: 100px;
+}
+.nivo-control.active::before {
+    border: 1px solid #ef6644;
+    border-radius: 50%;
+    content: "";
+    height: 15px;
+    left: 50%;
+    margin-left: -7.5px;
+    margin-top: -7.5px;
+    position: absolute;
+    top: 50%;
+    width: 15px;
+}
+.nivo-controlNav a {
+	background: #813d2d none repeat scroll 0 0;
+	border-radius: 50%;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	height: 5px;
+	margin: 10px;
+	width: 5px;
+	transition: all 0.5s ease 0s;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+	transition: all 0.5s ease 0s;
+}

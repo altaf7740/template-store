@@ -1,0 +1,671 @@
+/*----------------------------------------*/
+/*  1.  Theme default CSS
+/*----------------------------------------*/
+
+/*-- Google Font --*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Open+Sans:300,400,400i,600,700');
+
+/*-- Common Style --*/
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body{
+    background-color: $white;
+    line-height: 24px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    visibility: visible;
+    font-family: $open-sans;
+    color: $body-color;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: $heading-color;
+    font-family: $montserrat;
+    font-weight: 400;
+    margin-top: 0;
+}
+h1 {
+    font-size: 36px;
+    line-height: 42px;
+}
+h2 {
+    font-size: 30px;
+    line-height: 36px;
+}
+h3 {
+    font-size: 24px;
+    line-height: 30px;
+}
+h4 {
+    font-size: 18px;
+    line-height: 24px;
+}
+h5 {
+    font-size: 14px;
+    line-height: 18px;
+}
+h6 {
+    font-size: 12px;
+    line-height: 14px;
+}
+p:last-child {
+    margin-bottom: 0;
+}
+a, button {
+    color: inherit;
+    display: inline-block;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+a, i, button, img, input, span,
+*:before, *:after {
+    transition: all 0.3s ease 0s;
+}
+*:focus {
+    outline: none !important;
+}
+a:focus {
+    color: inherit;
+    outline: none;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+    color: $blue;
+}
+button, input[type="submit"] {
+    cursor: pointer;
+}
+ul{
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+/*-- 
+    Common CSS
+-----------------------------------------*/
+.fix {
+    overflow:hidden
+}
+.clear{
+    clear: both;
+}
+.section {
+    float: left;
+    width: 100%;
+}
+
+/*-- 
+    Background color
+-----------------------------------------*/
+.bg-white {
+    background-color: $white;
+}
+.bg-black {
+    background-color: $black;
+}
+.bg-light-gray {
+    background-color: $bg-light-gray;
+}
+.bg-dark-gray {
+    background-color: $bg-dark-gray;
+}
+.bg-dark {
+    background-color: $bg-dark !important;
+}
+.bg-blue {
+    background-color: $blue;
+}
+.bg-light-blue {
+    background-color: $light-blue;
+}
+.bg-red {
+    background-color: $red;
+}
+.bg-gradient {
+    background: $blue;
+    background: linear-gradient(to right, $blue 0%, $red 100%);
+}
+.bg-gradient-two {
+    background: $red;
+    background: linear-gradient(to right, $red 0%, $blue 100%);
+}
+
+/*-- Container Width For Mobile Device --*/
+@media #{$large-mobile}{
+    .container {
+        width: 450px;
+    }
+}
+@media #{$small-mobile}{
+    .container {
+        width: 300px;
+    }
+}
+
+/*-- 
+    Margin & Padding
+-----------------------------------------*/
+/*-- Margin Top --*/
+@for $i from 1 through 40 {
+    .mt-#{5 * $i}{margin-top: 5px * $i;}
+}
+
+/*-- Margin Bottom --*/
+@for $i from 1 through 40 {
+    .mb-#{5 * $i}{margin-bottom: 5px *$i;}
+}
+
+/*-- Padding Top --*/
+@for $i from 1 through 40 {
+    .pt-#{5 * $i}{padding-top: 5px *$i;}
+}
+
+/*-- Padding Bottom --*/
+@for $i from 1 through 40 {
+    .pb-#{5 * $i}{padding-bottom: 5px *$i;}
+}
+
+/*-- 
+    Input Placeholder
+-----------------------------------------*/
+input:-moz-placeholder, textarea:-moz-placeholder {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+/*-- 
+    Scroll Up 
+-----------------------------------------*/
+#scrollUp {
+    width: 40px;
+    height: 40px;
+    background-color: $blue;
+    color: $white;
+    right: 40px;
+    bottom: 40px;
+    text-align: center;
+    overflow: hidden;
+    @media #{$large-mobile}{
+        display: none !important;
+    }
+    & i {
+        display: block;
+        line-height: 40px;
+        font-size: 24px;
+    }
+    &:hover i {
+        animation-name: fadeInUp;
+        animation-duration:1s;
+        animation-fill-mode:both;
+        animation-iteration-count: infinite;
+    }
+}
+
+/*-- 
+    Overlay CSS
+-----------------------------------------*/
+[class*="overlay-"] {
+    position: relative;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    &::before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        content: "";
+    }
+}
+/*-- Color --*/
+.overlay-light {
+    &::before {
+        background-color: $white;
+    }
+}
+.overlay-dark {
+    &::before {
+        background-color: $black;
+    }
+}
+.overlay-blue {
+    &::before {
+        background-color: $blue;
+    }
+}
+.overlay-red {
+    &::before {
+        background-color: $red;
+    }
+}
+.overlay-gradient {
+    &::before {
+        background: #f85032;
+        background: linear-gradient(to right, $blue 0%, $red 100%);
+    }
+}
+/*-- Opacity --*/
+.overlay-opacity-10 {
+    &::before {
+        opacity: 0.1;
+    }
+}
+.overlay-opacity-15 {
+    &::before {
+        opacity: 0.15;
+    }
+}
+.overlay-opacity-20 {
+    &::before {
+        opacity: 0.2;
+    }
+}
+.overlay-opacity-25 {
+    &::before {
+        opacity: 0.25;
+    }
+}
+.overlay-opacity-30 {
+    &::before {
+        opacity: 0.3;
+    }
+}
+.overlay-opacity-35 {
+    &::before {
+        opacity: 0.35;
+    }
+}
+.overlay-opacity-40 {
+    &::before {
+        opacity: 0.4;
+    }
+}
+.overlay-opacity-45 {
+    &::before {
+        opacity: 0.45;
+    }
+}
+.overlay-opacity-50 {
+    &::before {
+        opacity: 0.5;
+    }
+}
+.overlay-opacity-55 {
+    &::before {
+        opacity: 0.55;
+    }
+}
+.overlay-opacity-60 {
+    &::before {
+        opacity: 0.6;
+    }
+}
+.overlay-opacity-65 {
+    &::before {
+        opacity: 0.65;
+    }
+}
+.overlay-opacity-70 {
+    &::before {
+        opacity: 0.7;
+    }
+}
+.overlay-opacity-75 {
+    &::before {
+        opacity: 0.75;
+    }
+}
+.overlay-opacity-80 {
+    &::before {
+        opacity: 0.8;
+    }
+}
+.overlay-opacity-85 {
+    &::before {
+        opacity: 0.85;
+    }
+}
+.overlay-opacity-90 {
+    &::before {
+        opacity: 0.9;
+    }
+}
+.overlay-opacity-95 {
+    &::before {
+        opacity: 0.95;
+    }
+}
+
+/*-- Main Wrapper --*/
+#main-wrapper {
+    position: relative;
+    padding-top: 128px;
+    height: 100%;
+    @media #{$tablet-device}{
+        padding-top: 89px;
+    }
+    @media #{$large-mobile}{
+        padding-top: 89px;
+    }
+    @media #{$small-mobile}{
+        padding-top: 70px;
+    }
+}
+#main-wrapper.transparent-header {
+    padding-top: 0;
+}
+
+/*-- 
+    Section Title 
+-----------------------------------------*/
+
+/*-- Section Title One --*/
+.section-title-one {
+    & h1 {
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: capitalize;
+        padding-bottom: 20px;
+        margin-bottom: 0;
+        position: relative;
+        @media #{$large-mobile}{
+            font-size: 30px;
+        }
+        @media #{$small-mobile}{
+            font-size: 24px;
+        }
+        &::before {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            height: 1px;
+            width: 50px;
+            margin-left: -25px;
+            background-color: $blue;
+            content: "";
+        }
+    }
+    & p {
+        max-width: 630px;
+        margin: 23px auto 0;
+        line-height: 25px;
+    }
+    &.left, &.text-left {
+        text-align: left !important;
+        & h1 {
+            &::before {
+                left: 0;
+                margin-left: 0;
+            }
+        }
+        & p {
+            margin: 23px 0 0;
+        }
+    }
+    &.white, &.title-white {
+        & h1 {
+            color: $white;
+            &::before {
+                background-color: $white;
+            }
+        }
+        & p {
+            color: $white;
+        }
+    }
+}
+
+/*-- Section Title Two --*/
+.section-title-two {
+    & h5 {
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 14px;
+    }
+    & h1 {
+        font-weight: 500;
+        line-height: 30px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding-bottom: 30px;
+        margin-bottom: 0;
+        position: relative;
+        @media #{$large-mobile}{
+            font-size: 30px;
+        }
+        @media #{$small-mobile}{
+            font-size: 24px;
+        }
+        &::before {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            height: 2px;
+            width: 100px;
+            margin-left: -50px;
+            background-color: $blue;
+            content: "";
+        }
+    }
+    &.left, &.text-left {
+        text-align: left !important;
+        & h1 {
+            &::before {
+                left: 0;
+                margin-left: 0;
+            }
+        }
+    }
+    &.white, &.title-white {
+        & h5 {
+            color: $white;
+        }
+        & h1 {
+            color: $white;
+            &::before {
+                background-color: $white;
+            }
+        }
+    }
+}
+
+/*-- Section Title Three --*/
+.section-title-three {
+    & h1 {
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: uppercase;
+        padding-bottom: 30px;
+        display: inline-block;
+        margin-bottom: 0;
+        position: relative;
+        @media #{$large-mobile}{
+            font-size: 30px;
+        }
+        @media #{$small-mobile}{
+            font-size: 24px;
+        }
+        &::before {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            height: 2px;
+            width: 80px;
+            margin-left: -40px;
+            background-color: $blue;
+            content: "";
+        }
+        &::after {
+            position: absolute;
+            content: "";
+        }
+    }
+    & p {
+        max-width: 630px;
+        margin: 23px auto 0;
+        line-height: 25px;
+    }
+    &.left, &.text-left {
+        text-align: left !important;
+        & h1 {
+            &::before {
+                left: 0;
+                margin-left: 0;
+            }
+        }
+        & p {
+            margin: 23px 0 0;
+        }
+    }
+    &.white, &.title-white {
+        & h1 {
+            color: $white;
+            &::before {
+                background-color: $white;
+            }
+        }
+        & p {
+            color: $white;
+        }
+    }
+}
+
+/*-- Section Title Four --*/
+.section-title-four {
+    & h2 {
+        font-weight: 500;
+        line-height: 30px;
+        text-transform: capitalize;
+        display: inline-block;
+        margin-bottom: 0;
+        position: relative;
+        @media #{$large-mobile}{
+            font-size: 30px;
+        }
+        @media #{$small-mobile}{
+            font-size: 24px;
+        }
+    }
+    & p {
+        max-width: 630px;
+        margin: 33px auto 0;
+        line-height: 25px;
+    }
+    &.left, &.text-left {
+        text-align: left !important;
+        & h1 {
+            &::before {
+                left: 0;
+                margin-left: 0;
+            }
+        }
+        & p {
+            margin: 23px 0 0;
+        }
+    }
+    &.white, &.title-white {
+        & h1 {
+            color: $white;
+            &::before {
+                background-color: $white;
+            }
+        }
+        & p {
+            color: $white;
+        }
+    }
+}
+
+/*-- 
+    Page Banner 
+-----------------------------------------*/
+.page-banner-section {
+    padding: 125px 0;
+    @media #{$tablet-device}{
+        padding: 80px 0;
+    }
+    @media #{$large-mobile}{
+        padding: 40px 0;
+    }
+}
+
+/*-- Page Banner Content --*/
+.page-banner-content {
+    & h1 {
+        text-transform: capitalize;
+        font-weight: 500;
+        color: $white;
+        margin-bottom: 13px;
+        @media #{$large-mobile}{
+            font-size: 24px;
+            line-height: 30px;
+            margin-bottom: 10px;
+        }
+    }
+    & p {
+        color: $white;
+        font-size: 16px;
+        margin-bottom: 3px;
+        @media #{$large-mobile}{
+            font-size: 14px;
+        }
+    }
+    
+    /*-- Breadcrumb --*/
+    & .breadcrumb {
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+        & li {
+            display: block;
+            float: left;
+            margin-right: 8px;
+            color: $white;
+            margin-top: 0;
+            padding: 0;
+            &::after {
+                content: "/"
+            }
+            & a {
+                margin-right: 8px;
+                text-transform: capitalize;
+                font-size: 14px;
+                &:hover {
+                    color: inherit;
+                }
+            }
+            &:last-child {
+                margin-right: 0;
+                padding-right: 0;
+                &::after {
+                    content: "";
+                }
+                & a {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+

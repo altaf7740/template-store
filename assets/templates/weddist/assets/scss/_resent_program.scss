@@ -1,0 +1,47 @@
+/*--
+    08. Programs Css
+----------------------*/
+.single-programs {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    &:hover {
+        & a {
+            & img {
+                transform: scale(1.06);
+            }
+        }
+    }
+}
+.programs-image {
+    overflow: hidden;
+    & a {
+        display: block;
+        & img {
+            transition: all 0.3s ease-in-out;
+            transform: scale(1.0);
+        }
+        @media #{$large-mobile}{
+            & img {
+                width: 100%;
+                transform: scale(1.0);
+            }
+        }
+        
+    }
+}
+.programs-info-box {
+    & h5 {
+        padding: 20px 25px;
+        font-weight: 600;
+    }
+    & .programs-details {
+        padding: 15px 25px;
+        border-top: 1px solid #eaeaea;
+    }
+}
+
+.resent-program-active {
+    & .slick-slide {
+        padding: 0 3px;
+    }
+}

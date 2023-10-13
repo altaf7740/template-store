@@ -1,0 +1,48 @@
+@import "../variables";
+@import "../mixins";
+/**
+  Section Title Styles
+*/
+
+.instagram__activation.owl-theme .owl-nav.disabled+.owl-dots {
+  margin-top: 0;
+}
+
+.instagram__activation.owl-theme .owl-dots .owl-dot span {
+  background: #c2c2c2 none repeat scroll 0 0;
+  height: 10px;
+  margin: 5px 4px;
+  width: 10px;
+  transition: 0.3s;
+}
+
+.instagram__activation.owl-theme .owl-dots .owl-dot.active span,
+.instagram__activation.owl-theme .owl-dots .owl-dot:hover span {
+  background: #141414;
+}
+
+.instagram__activation.owl-theme .owl-dots,
+.instagram__activation.owl-theme .owl-nav {
+  bottom: 23px;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* Responsive Css*/
+
+@media #{$xx-layout} {}
+
+@media #{$xlg-layout} {}
+
+@media #{$lg-layout} {}
+
+@media #{$md-layout} {}
+
+@media #{$sm-layout} {}
+
+@media #{$xs-layout} {}
+
+@media #{$xxs-layout} {}

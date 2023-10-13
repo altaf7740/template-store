@@ -1,0 +1,105 @@
+// main: style.scss
+
+/*--------------------------------------------------------------
+# Speakers Section
+--------------------------------------------------------------*/
+
+#speakers {
+  padding: 60px 0 30px 0;
+
+  .speaker {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    
+    .details {
+      background: rgba($heading-color, 0.76);
+      position: absolute;
+      left: 0;
+      bottom: -30px;
+      right: 0;
+      text-align: center;
+      padding-top: 10px;
+      transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+
+      h3 {
+        color: #fff;
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+
+      p {
+        color: #fff;
+        font-size: 15px;
+        margin-bottom: 10px;
+        font-style: italic;
+      }
+
+      .social {
+        height: 30px;
+      }
+
+      a {
+        color: #fff;
+        &:hover {
+          color: $accent-color;
+        }
+      }
+    }
+
+    &:hover {
+      .details {
+        bottom: 0;
+      }
+    }
+  }
+}
+
+
+#speakers-details {
+  padding: 60px 0;
+
+  .details {
+
+    h2 {
+      color: lighten($heading-color, 15%);
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    
+    .social {
+      margin-bottom: 15px;
+      a {
+        background: lighten($heading-color, 87%);
+        color: lighten($heading-color, 15%);
+        line-height: 1;
+        display: inline-block;
+        text-align: center;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        padding-top: 9px;
+
+        &:hover {
+          background: $accent-color;
+          color: #fff;
+        }
+
+        i {
+          font-size: 18px;
+        }
+      }
+    }
+
+    p {
+      color: lighten($heading-color, 15%);
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+
+  }
+}

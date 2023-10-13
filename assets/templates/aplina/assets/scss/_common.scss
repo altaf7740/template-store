@@ -1,0 +1,363 @@
+/*----------------------------------------*/
+/*  01. Theme default CSS
+/*----------------------------------------*/
+
+/*-- Google Font --*/
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Raleway:300,400,500,600,700,800');
+
+/*-- Common Style --*/
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body{
+    background-color: $body-color;
+    line-height: 28px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    visibility: visible;
+    font-family: $lato;
+    color: #333;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: $heading-color;
+    font-family: $lato;
+    margin-top: 0;
+}
+h1 {
+    line-height: 1;
+    font-weight: 800;
+}
+h2 {
+    font-size: 30px;
+    line-height: 36px;
+}
+h3 {
+    font-size: 24px;
+    line-height: 30px;
+}
+h4 {
+    font-size: 18px;
+    line-height: 24px;
+}
+h5 {
+    font-size: 14px;
+    line-height: 18px;
+}
+h6 {
+    font-size: 12px;
+    line-height: 14px;
+}
+p:last-child {
+    margin-bottom: 0;
+}
+p{
+    font-family: $raleway;
+}
+a, button {
+    color: inherit;
+    display: inline-block;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+a, button, img, input, span {
+    transition: all 0.3s ease 0s;
+}
+*:focus {
+    outline: none !important;
+}
+a:focus {
+    color: inherit;
+    outline: none;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+    color: $theme-color;
+}
+button, input[type="submit"] {
+    cursor: pointer;
+}
+img {max-width:100%;height:auto}
+ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+/*-- 
+    - Common Classes
+-----------------------------------------*/
+.fix {
+    overflow:hidden
+}
+.hidden {
+    display: none;
+}
+.clear{
+    clear: both;
+}
+@media #{$large-mobile}{
+    .container {
+        width: 450px;
+    }
+}
+@media #{$small-mobile}{
+    .container {
+        width: 320px;
+    }
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.container-fluid {
+    max-width: 1830px;
+}
+.no-gutters > .col, .no-gutters > [class*="col-"] {
+	padding-right: 0;
+	padding-left: 0;
+    margin: 0;
+}
+.border-t-one {
+    border-top: 1px solid #e5e5e5;
+}
+
+/*-- 
+    - Background color
+-----------------------------------------*/
+.bg-white {
+    background-color: $white;
+}
+.bg-light-grey {
+    background-color: $light-grey;
+}
+.bg-grey {
+    background: $grey;
+}
+.bg-black {
+    background: $bg-black
+}
+
+
+/*-- 
+    - color
+-----------------------------------------*/
+.c-blue {
+    color: $theme-color;
+}
+
+/*-- 
+    - Input Placeholder
+-----------------------------------------*/
+input:-moz-placeholder, textarea:-moz-placeholder {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+/*-- 
+    Scroll Up 
+-----------------------------------------*/
+#scrollUp {
+    width: 40px;
+    height: 40px;
+    background-color: $theme-color;
+    color: $white;
+    right: 20px;
+    bottom: 60px;
+    text-align: center;
+    overflow: hidden;
+    & i {
+        display: block;
+        line-height: 40px;
+        font-size: 24px;
+    }
+    &:hover i {
+        animation-name: fadeInUp;
+        animation-duration:1s;
+        animation-fill-mode:both;
+        animation-iteration-count: infinite;
+    }
+}
+
+/*-- 
+    - Main Wrapper
+-----------------------------------------*/
+.main-wrapper {
+    &.header-transparent {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
+/*-- 
+    - Section Padding
+-------------------------------------*/
+// Padding Top Bottom 
+.section-ptb {
+    padding: 100px 0;
+    
+    @media #{$desktop-device} {
+        padding: 80px 0;
+    }
+    @media #{$tablet-device} {
+        padding: 80px 0;
+    }
+    @media #{$large-mobile} {
+        padding: 70px 0;
+    }
+    @media #{$small-mobile} {
+        padding: 60px 0;
+    }
+}
+// Section Padding Top
+.section-pt {
+    padding-top: 100px;
+    
+    @media #{$desktop-device} {
+        padding-top: 80px;
+    }
+    @media #{$tablet-device} {
+        padding-top: 80px;
+    }
+    @media #{$large-mobile} {
+        padding-top: 70px;
+    }
+    @media #{$small-mobile} {
+        padding-top: 60px;
+    }
+}
+.section-pt-70 {
+    padding-top: 70px;
+    
+    @media #{$desktop-device} {
+        padding-top: 50px;
+    }
+    @media #{$tablet-device} {
+        padding-top: 50px;
+    }
+    @media #{$large-mobile} {
+        padding-top: 40px;
+    }
+    @media #{$small-mobile} {
+        padding-top: 30px;
+    }
+}
+// Section Padding Bottom
+.section-pb {
+    padding-bottom: 100px;
+    
+    @media #{$desktop-device} {
+        padding-bottom: 80px;
+    }
+    @media #{$tablet-device} {
+        padding-bottom: 80px;
+    }
+    @media #{$large-mobile} {
+        padding-bottom: 70px;
+    }
+    @media #{$small-mobile} {
+        padding-bottom: 60px;
+    }
+}
+.section-pb-70 {
+    padding-bottom: 70px;
+    
+    @media #{$desktop-device} {
+        padding-bottom: 50px;
+    }
+    @media #{$tablet-device} {
+        padding-bottom: 50px;
+    }
+    @media #{$large-mobile} {
+        padding-bottom: 40px;
+    }
+    @media #{$small-mobile} {
+        padding-bottom: 30px;
+    }
+}
+
+/*-- Margin top --*/
+@for $i from 1 through 20 {
+    .mt--#{5 * $i} {
+        margin-top: 5px *$i;
+    }
+}
+
+/*-- Margin Bottom --*/
+@for $i from 1 through 20 {
+    .mb--#{5 * $i} {
+        margin-bottom: 5px *$i;
+    }
+}
+
+/*-- padding top --*/
+@for $i from 1 through 20 {
+    .pt--#{5 * $i} {
+        padding-top: 5px *$i;
+    }
+}
+
+/*-- padding Bottom --*/
+@for $i from 1 through 20 {
+    .pb--#{5 * $i} {
+        padding-bottom: 5px *$i;
+    }
+}
+.plr-40 {
+    padding: 0 40px;
+    @media #{$tablet-device} {
+        padding: 0 30px;
+    }
+    @media #{$large-mobile} {
+        padding: 0 15px;
+    }
+    @media #{$small-mobile} {
+        padding: 15px;
+    }
+}
+.plr-30 {
+    padding: 0 30px;
+    @media #{$large-mobile} {
+        padding: 0 15px;
+    }
+    @media #{$small-mobile} {
+        padding: 15px;
+    }
+}
+
+// container-box
+
+body {
+    &.box-body {
+        background: $grey;
+    }
+}
+.container-box {
+    max-width: 1251px;
+    position: relative;
+    background: #fff;
+    margin: 0 auto;
+}
+.container-box-inner {
+  padding: 40px 0; 
+  margin: 0 0 -40px 0;
+}

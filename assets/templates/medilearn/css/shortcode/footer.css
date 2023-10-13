@@ -1,0 +1,890 @@
+/*-----------------------------------------------------------------------------------
+  Template Name: Medilearn  Medical HTML Template.
+  Template URI: #
+  Description: Medilearn is a unique website template designed in HTML with a simple & beautiful look. There is an excellent solution for creating clean, wonderful and trending material design corporate, corporate any other purposes websites.
+  Author: HasTech
+  Author URI: https://themeforest.net/user/hastech/portfolio
+  Version: 1.0
+-------------------------------------------------------------------------------------*/
+/*
+    font-family: 'Poppins', sans-serif;
+
+    font-family: 'Montserrat', sans-serif;
+*/
+/*-----------------------------
+	Footer Default
+------------------------------*/
+
+
+/*Footer BG*/
+.ftr-bg-1 {
+  background: #404040 !important;
+}
+/*ftr bg 2 4 6*/
+.ftr-bg-2 {
+  background: #3a3a3a !important;
+}
+/*ftr bg 3 5 7*/
+.ftr-bg-3{
+  background: #4c8bf5 !important;
+}
+/*Footer Btm bg*/
+.ftr-btm-1 {
+  background: #fff !important;
+}
+/*ftr btm 2 4 6*/
+.ftr-btm-2{
+  background: #303030 !important;
+}
+/*ftr btm 3 5 7*/
+.ftr-btm-3{
+  background: #3977de !important;
+}
+.ftr-btm-3 p{
+  color: #fff;
+}
+/*Footer Text*/
+.ftr-bg p,
+.ftr-bg span,
+.ftr-bg ul,
+.ftr-bg a:not(.btn) {
+  color: #ffffff;
+}
+.ftr-bg h1,
+.ftr-bg h2,
+.ftr-bg h3,
+.ftr-bg h4,
+.ftr-bg h5,
+.ftr-bg h6,
+.ftr-bg i{
+  color: #ffffff;
+}
+
+/*Start Footer-images hover*/
+.ft-instagram li a {
+    display: block;
+    position: relative;
+}
+.ft-instagram li a::before {
+    background: #4C8BF5 none repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    transition: all 0.3s ease 0s;
+    visibility: hidden;
+    width: 100%;
+    z-index: 9;
+}
+.ft-instagram li a:hover::before {
+    visibility: visible;
+}
+
+/*End Footer-images hover*/
+
+
+
+
+
+
+
+
+/*-----------------------------
+	Footer Style 1
+------------------------------*/
+.footer-pra {
+  font-size: 13px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  margin-top: 26px;
+}
+.single-footer-address {
+    display: flex;
+}
+.ml-footer-icon {
+    margin-right: 10px;
+}
+
+.ml-footer-address a {
+    font-size: 13px;
+    line-height: 23px;
+}
+.ml-footer-details .single-footer-address:first-child {
+  margin-bottom: 15px;
+}
+.ml-footer-title {
+  display: inline-block;
+  font-size: 18px;
+  padding-bottom: 7px;
+  position: relative;
+  text-transform: capitalize;
+  margin-bottom: 27px;
+}
+.ml-footer-title::before{
+    background: #fff none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.ft-post-thumd img {
+  width: 100%;
+}
+.ml-single-ft-post > div.ft-post-thumb {
+  float: left;
+  margin-right: 10px;
+  width: 58px;
+}
+.ft-post-thumb img {
+  width: 100%;
+}
+.ft-post-details {
+  overflow: hidden;
+}
+.ft-post-thumd {
+    margin-right: 10px;
+}
+.ft-post-title {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+.ft-post-details p.ft-post-pra {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+}
+.ft-post-title a{
+  transition: 0.3s;
+}
+.ft-post-title:hover a {
+  color: #4C8BF5;
+}
+.ml-footer-address a {
+  display: block;
+}
+.ml-footer-address a:hover {
+  color: #4C8BF5;
+}
+.ml-leatest-post {
+  margin-bottom: 18px;
+}
+.ml-leatest-post:last-child {
+  margin-bottom: 0;
+}
+.ml-footer-menu li a {
+  display: block;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 24px;
+  padding: 5px 0;
+  text-transform: capitalize;
+  transition: all 0.3s ease 0s;
+}
+.ml-footer-menu li a i {
+    font-size: 14px;
+    margin-right: 10px;
+    transition: all 0.3s ease 0s;
+}
+.ml-footer-menu li a:hover {
+    color: #4c8bf5;
+}
+.ml-footer-menu li a:hover i {
+    color: #4c8bf5;
+}
+.ml-single-footer-widget.our-course {
+  padding-left: 40px;
+}
+.input-box {
+    margin-top: 28px;
+    position: relative;
+}
+.input-boxt input[type="email"] {
+    background: transparent none repeat scroll 0 0;
+}
+.input-box input[type="email"] {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  color: #fff !important;
+  font-family: Poppins;
+  font-weight: 300;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 20px;
+  padding-right: 65px;
+  text-transform: capitalize;
+  width: 100%;
+}
+button.send-btn {
+    background: #fff none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 5px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 0.3s ease 0s;
+    width: 46px;
+}
+button.send-btn i {
+    color: #4c8bf5;
+    font-size: 12px;
+    transition: all 0.3s ease 0s;
+}
+button.send-btn:hover {
+    background: #4c8bf5 none repeat scroll 0 0;
+}
+button.send-btn:hover i {
+    color: #fff;
+}
+.ml-footer-menu li:first-child a {
+  padding-top: 0;
+}
+.ft-social-icon-area p.ft-pra {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.ml-social-icon {
+    display: flex;
+    margin-top: 30px;
+}
+.ml-social-icon li a {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #fff;
+  display: block;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  width: 22px;
+}
+.ml-social-icon li + li {
+  margin-left: 15px;
+}
+.ml-social-icon li a:hover {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #fff;
+}
+.ml-social-icon li a:hover i{
+  color: #fff;
+}
+.ml-social-icon li a i {
+    color: #4c8bf5;
+}
+/*Footer Bottom Area*/
+.ft-btm-inner p {
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+}
+.ft-btm-inner {
+  align-items: center;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+}
+.demo-content p + p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 15px;
+}
+.footer-style-1 .ft-instagram li {
+  width: 21%;
+}
+
+
+
+
+
+
+
+
+
+.footer-style-three .footer-pra ,
+.footer-style-8 .footer-pra ,
+.footer-style-7 .footer-pra ,
+.footer-style-10 .footer-pra ,
+.footer-style-1 .footer-pra,
+.footer-style-five .footer-pra,
+.footer-style-9 .footer-pra,
+.footer-style-8 .ml-footer-address p,
+.footer-style-8 .ml-footer-menu li a,
+.footer-style-7 .ml-footer-menu li a,
+.footer-style-10 .ml-footer-menu li a,
+.footer-style-2 .ml-footer-menu li a,
+.footer-style-three .ml-footer-menu li a,
+.footer-style-1 .ml-footer-menu li a{
+  font-size: 13px;
+  line-height: 24px;
+}
+
+
+.footer-style-10 .ft-social-icon-area p.ft-pra,
+.footer-style-six .ml-footer-address a,
+.footer-style-three .ml-footer-address a,
+.footer-style-five .ml-footer-address a,
+.footer-style-10 .ml-footer-address a,
+.footer-style-1 .ml-footer-tab li a,
+.footer-style-7 .ml-footer-tab li a {
+  font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*End Footer Bottom Area*/
+
+/*-----------------------------
+	Footer Style 2
+------------------------------*/
+.footer-top-titlt {
+    align-items: center;
+    display: flex;
+    height: 170px;
+    text-align: center;
+}
+.ml-ft-line {
+    display: inline-block;
+    font-size: 24px;
+    padding-bottom: 10px;
+    position: relative;
+    text-transform: capitalize;
+}
+.ml-ft-line::before {
+    background: #c1c1c1 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.ml-footer-tab {
+    display: flex;
+    flex-wrap: wrap;
+}
+.ml-footer-tab li a {
+  background: #7c7c7c none repeat scroll 0 0;
+  border-radius: 7px;
+  color: #fff;
+  display: block;
+  font-size: 12px;
+  height: 26px;
+  line-height: 27px;
+  margin-bottom: 15px;
+  margin-right: 14px;
+  padding: 0 14px;
+  transition: all 0.3s ease 0s;
+}
+.ml-footer-tab li a:hover {
+    background: #fff none repeat scroll 0 0;
+    color: #5b5b5b;
+}
+.ft-instagram {
+    display: flex;
+    flex-wrap: wrap;
+}
+.ft-instagram li {
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.ftr-btm-2 .ft-btm-inner p {
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+}
+.footer-style-2 .ft-btm-inner p a:hover {
+  color: #5b5b5b;
+}
+.footer-style-2 .logo {
+    margin-bottom: 26px;
+}
+.footer-style-2 .ml-ft-style-2 {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 14px;
+  text-align: center;
+}
+.footer-style-2 .ml-ft-style-2 li {
+    display: inline-block;
+}
+.footer-style-2 .ml-ft-style-2 li + li {
+    margin-left: 50px;
+}
+.footer-style-2 .ml-ft-style-2 li a {
+    display: block;
+    font-size: 13px;
+}
+.footer-style-2 .ml-single-footer-widget.our-course {
+  padding-left: 0;
+}
+.footer-style-2 .ml-footer-menu li a:hover {
+  color: #5b5b5b;
+}
+
+
+
+/*-----------------------------
+	Footer Style 2
+------------------------------*/
+.footer-style-2 .input-box{
+    display: flex;
+    width: 100%;
+}
+.footer-style-2 .input-box input {
+    margin-bottom: 20px;
+}
+.footer-style-2 .input-box input + input {
+    margin-left: 30px;
+}
+.footer-style-2 .input-box input[type="text"],
+.footer-style-2 .input-box input[type="email"] {
+  background: transparent none repeat scroll 0 0;
+  border-color: transparent transparent #fff;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: none;
+  color: #fff;
+  height: 33px;
+  padding-left: 0;
+  width: 100%;
+  padding-right: 0;
+}
+.footer-style-2 .ft-btn a {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 35px;
+}
+.footer-style-2 .input-box *::-moz-placeholder {
+  color: #fff;
+  font-size: 12px;
+}
+.footer-style-2 .input-message textarea {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: transparent none repeat scroll 0 0;
+  border-color: transparent transparent #fff;
+  border-image: none;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 13px;
+  max-height: 53px;
+  padding: 0;
+  resize: none;
+  width: 100%;
+  color: #fff;
+}
+.footer-style-2 .input-message  *::-moz-placeholder {
+  color: #fff;
+  font-size: 12px;
+}
+.footer-style-2 .input-message *::-moz-placeholder {
+  color: #fff;
+  font-size: 13px;
+}
+.footer-style-2 .ft-btn a {
+  height: 30px;
+  line-height: 30px;
+  margin-top: 30px;
+  padding: 0 35px;
+}
+.ft-btn a:hover{
+  background: #5b5b5b;
+  color: #fff !important;
+}
+.ft-btn a {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 6px;
+    color: #5b5b5b !important;
+    display: inline-block;
+    font-family: Montserrat;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 30px;
+    transition: all 0.3s ease 0s;
+}
+.ft-btn a:hover {
+    background: #5b5b5b none repeat scroll 0 0;
+    color: #fff !important;
+}
+.footer-style-2 .input-box {
+  margin-top: 0;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------
+  Footer Style 3
+------------------------------*/
+.footer-style-three .input-checkbox {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 26px;
+}
+.footer-style-three input[type="text"],
+.footer-style-three input[type="email"],
+.footer-style-three input[type="password"] {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #fff;
+  box-shadow: none;
+  color: #fff;
+  font-size: 12px;
+  height: 40px;
+  padding-left: 20px;
+  width: 100%;
+  line-height: 40px;
+  border-radius: 6px;
+}
+.footer-style-three .ft-btn a {
+  padding: 0 33px;
+}
+.input-checkbox input {
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------
+	Footer Style 4
+------------------------------*/
+.footer-style-four .input-box input[type="text"],
+.footer-style-four .input-box input[type="email"],
+.footer-style-four .input-box input[type="password"],
+.footer-style-six .input-box input[type="text"],
+.footer-style-six .input-box input[type="email"],
+.footer-style-six .input-box input[type="password"]
+ {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  box-shadow: none;
+  color: #fff;
+  font-size: 14px;
+  height: 40px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  width: 45%;
+}
+.footer-style-four .input-box input[type="text"],
+.footer-style-four .input-box input[type="email"],
+.footer-style-four .input-box input[type="password"]{
+  padding-left: 10px;
+}
+
+
+
+
+.footer-style-four .input-box input + input,
+.footer-style-six .input-box input + input {
+  margin-left: 30px;
+}
+
+.footer-style-four .input-box *::-moz-placeholder,
+.footer-style-six .input-box *::-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+.footer-style-four .input-box,
+.footer-style-five .input-box,
+.footer-style-six .input-box {
+  margin-top: 0;
+}
+.footer-style-four textarea,
+.footer-style-six textarea {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px;
+  resize: none;
+  width: 100%;
+}
+.footer-style-four .ft-btn a {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 7px;
+  color: #4c8bf5 !important;
+  display: inline-block;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  height: 32px;
+  line-height: 32px;
+  margin-top: 20px;
+  padding: 0 30px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.footer-style-four .ft-btn a:hover {
+  background: #5b5b5b none repeat scroll 0 0;
+  color: #fff !important;
+}
+.footer-style-four textarea*::-moz-placeholder {
+  color: #fff;
+  font-size: 13px;
+}
+.footer-style-four .ft-btm-social-icon,
+.footer-style-three .ft-btm-social-icon {
+  display: flex;
+}
+.footer-style-four .ft-btm-social-icon li + li,
+.footer-style-three .ft-btm-social-icon li + li {
+    margin-left: 20px;
+}
+.footer-style-four .ft-btm-social-icon li a i:hover {
+  color: #5b5b5b;
+}
+.footer-style-four .ft-btm-social-icon li a i,
+.footer-style-three .ft-btm-social-icon li a i{
+  transition: 0.3s;
+}
+
+.footer-style-four .ml-footer-bootem ,
+.footer-style-three .ml-footer-bootem,
+.footer-style-five .ml-footer-bootem{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-style-four .ft-btm-inner a:hover,
+.footer-style-six .ft-btm-inner a:hover {
+  color: #5b5b5b;
+}
+.footer-style-four .ml-footer-address a:hover {
+  color: #5b5b5b;
+}
+
+
+
+/*-----------------------------
+	Footer Style 5
+------------------------------*/
+.footer-style-five input[type="text"],
+.footer-style-five input[type="email"] {
+  background: transparent none repeat scroll 0 0;
+  border-color: #fff;
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: none;
+  color: #d0d0d0;
+  height: 33px;
+  padding-left: 10px;
+  width: 100%;
+}
+.footer-style-five textarea {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  color: #d0d0d0;
+  font-size: 12px;
+  max-height: 65px;
+  padding: 10px;
+  resize: none;
+  width: 100%;
+}
+.footer-style-five .input-checkbox {
+  margin-bottom: 20px;
+}
+.footer-style-five .ml-footer-bootem {
+  justify-content: center;
+}
+.footer-style-five .ft-btn a {
+  padding: 0 32px;
+}
+
+
+
+
+
+
+/*-----------------------------
+	Footer Style 6
+------------------------------*/
+.footer-style-six .input-checkbox input[type="radio"],
+.footer-style-six .input-checkbox input[type="checkbox"] {
+  margin: 0;
+  margin-right: 10px;
+}
+.footer-style-six .ml-footer-address + .ml-footer-address {
+  margin-top: 30px;
+}
+.footer-style-six a:hover {
+  color: #5b5b5b;
+}
+.footer-style-six textarea {
+  border-radius: 6px;
+  color: #fff;
+  font-size: 12px;
+  min-height: 64px;
+}
+
+.footer-style-six .input-box input *::-moz-placeholder {
+  color: #fff;
+  font-size: 12px;
+}
+.footer-style-six .ft-btn {
+  margin-top: 20px;
+}
+.footer-style-six .ft-btn a {
+  height: 33px;
+  line-height: 33px;
+  padding: 0 33px;
+}
+.footer-style-six .input-box input[type="text"],
+.footer-style-six .input-box input[type="email"],
+.footer-style-six .input-box input[type="password"] {
+  padding-left: 10px;
+}
+
+
+
+
+
+/*-----------------------------
+	Footer Style 7
+------------------------------*/
+.footer-pra.footer-pra-6 {
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+/*-----------------------------
+  Footer Style 8
+------------------------------*/
+.footer-style-8 .footer-pra {
+  margin-top: 0;
+}
+.footer-style-8 .ml-footer-menu li a:hover,
+.footer-style-8 .ml-footer-menu li a:hover i,
+.footer-style-8 a:hover{
+  color: #5b5b5b;
+}
+.footer-style-8 .ft-btm-inner p a:hover {
+  color: #5b5b5b;
+}
+
+
+/*------------------------------
+  Footer Style 9
+------------------------------*/
+.footer-style-9 .input-box input[type="text"],
+.footer-style-9 .input-box input[type="email"] {
+  background: transparent none repeat scroll 0 0;
+  border-color: transparent transparent #fff;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: none;
+  color: #fff;
+  height: 33px;
+  padding-left: 0;
+  padding-right: 0;
+  width: 45%;
+  border-radius: 0px;
+}
+.footer-style-9 .ft-btn a {
+  height: 35px;
+  line-height: 35px;
+  padding: 0 35px;
+  text-transform: uppercase;
+}
+
+
+.footer-style-9 .input-box {
+  margin-top: 0;
+}
+
+.footer-style-9 textarea {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: transparent none repeat scroll 0 0;
+  border-color: -moz-use-text-color -moz-use-text-color #fff;
+  border-image: none;
+  border-style: none none solid;
+  border-width: medium medium 1px;
+  font-size: 14px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding: 0;
+  resize: none;
+  width: 100%;
+  color: #fff;
+}
+.footer-style-9 .input-box input + input {
+  margin-left: 23px;
+}
+.footer-style-9 .ml-social-icon {
+    display: flex;
+}
+.footer-style-9 .ml-social-icon li + li {
+  margin-left: 8px;
+}
+.footer-style-9 .ml-social-icon li a {
+  background: transparent;
+  border: 1px solid transparent;
+}
+.footer-style-9 .ml-social-icon li a i{
+  color: #fff;
+}
+
+.footer-style-9 .ml-social-icon li a:hover i {
+    color: #4c8bf5;
+}
+hr.separator-1 {
+  margin: 0;
+}
+
+/*------------------------------
+  Footer Style 10
+------------------------------*/
+.footer-style-10 .ml-footer-menu li a:hover,
+.footer-style-10 .ml-footer-menu li a:hover i,
+.footer-style-10 a:hover {
+  color: #5b5b5b;
+}
+
+.footer-style-10 button.send-btn:hover {
+  background: #5b5b5b none repeat scroll 0 0;
+}
+

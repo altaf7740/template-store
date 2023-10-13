@@ -1,0 +1,201 @@
+/*----------------------------------------*/
+/*  1.  Theme default CSS
+/*----------------------------------------*/
+/*-- Font Family --*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Poppins:300,400,500,600,700');
+/*-- Common Style --*/
+html, body {
+  height: 100%;
+}
+body{
+    line-height: 24px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    visibility: visible;
+    font-family: $poppins;
+    color: $text-color;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: $heading-color;
+    font-weight: 700;
+    margin-top: 0;
+    font-family: $montserrat;
+}
+p:last-child {
+    margin-bottom: 0;
+}
+a, button {
+    color: inherit;
+    display: inline-block;
+    line-height: inherit;
+    text-decoration: none;
+    font-family: $montserrat;
+}
+input, select, textarea {
+    font-family: $montserrat;
+}
+a, i, button, img, input, span,
+*:before, *:after {
+  @include transition(all 0.3s ease 0s);
+}
+*:focus {
+  outline: 0px solid transparent;
+}
+a:focus {
+  color: inherit;
+  outline: medium none;
+    transform: scale(1);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul{
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+/*-- Common Class --*/
+.fix {
+  overflow:hidden
+}
+.clear{
+  clear: both;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.section {
+    float: left;
+    width: 100%;
+}
+/*-- Background Color Class --*/
+.bg-dark {
+    background-color: #2c2c2c;
+}
+/*-- Custom Row --*/
+.row-5 {
+    margin-left: -5px;
+    margin-right: -5px;
+    & [class*="col"] {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+.row-10 {
+    margin-left: -10px;
+    margin-right: -10px;
+    & [class*="col"] {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+/*-- Overlay --*/
+.overlay {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    &::before {
+        position: absolute;
+        left: 0;
+        top: 0px;
+        right: 0;
+        bottom: 0;
+        content: "";
+        background-color: $theme-color;
+        opacity: 0.8;
+    }
+}
+/*-- Container Width For Mobile Device --*/
+@media #{$large-mobile}{
+    .container {
+        width: 450px;
+    }
+}
+@media #{$small-mobile}{
+    .container {
+        width: 300px;
+    }
+}
+/*-- Margin Top --*/
+@for $i from 1 through 30 {
+    .mt-#{5 * $i}{margin-top: 5px * $i;}
+}
+/*-- Margin Bottom --*/
+@for $i from 1 through 30 {
+    .mb-#{5 * $i}{margin-bottom: 5px *$i;}
+}
+/*-- Padding Top --*/
+@for $i from 1 through 30 {
+    .pt-#{5 * $i}{padding-top: 5px *$i;}
+}
+/*-- Padding Bottom --*/
+@for $i from 1 through 30 {
+    .pb-#{5 * $i}{padding-bottom: 5px *$i;}
+}
+/*-- Input Placeholder --*/
+input:-moz-placeholder, textarea:-moz-placeholder , select:-moz-placeholder {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-placeholder {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+/*-- Scroll Up --*/
+#scrollUp {
+    width: 40px;
+    height: 40px;
+    color: $color-white;
+    right: 20px;
+    border-radius: 50%;
+    bottom: 20px;
+    text-align: center;
+    overflow: hidden;
+    background-color: $theme-color;
+    @media #{$small-mobile}{
+        display: none !important;
+    }
+    & i {
+        display: block;
+        line-height: 40px;
+        font-size: 24px;
+    }
+    &:hover {
+    }
+}
+/*-- 404 Page --*/
+.wrapper-404 {
+    & img {
+        margin-bottom: 50px;
+    }
+    & h1 {
+        font-size: 100px;
+        color: #636363;
+        font-weight: 300;
+        line-height: 71px;
+        margin-bottom: 22px;
+    }
+    & h2 {
+        font-size: 30px;
+        margin-bottom: 0;
+        font-weight: 300;
+        color: #636363;
+        line-height: 24px;
+    }
+}

@@ -1,0 +1,94 @@
+/*------------------
+	Banner Styles
+---------------------*/
+
+.ht__bradcaump__area {
+	align-items: center;
+	display: flex;
+	height: 520px;
+	justify-content: center;
+}
+
+.ht__bradcaump__container {
+	padding-top: 100px;
+}
+
+#bread__image {
+	background: rgba(0, 0, 0, 0) url("images/bg/7.jpg") repeat scroll center center / 105% 100%;
+}
+
+.ht__bradcaump__area {
+	position: relative;
+	.particles-js {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		left: 0;
+		top: 0;
+	}
+}
+
+.bradcaump__inner {
+	position: relative;
+	z-index: 2;
+}
+
+.bradcaump__inner {
+	h2 {
+		color: #ffffff;
+		font-size: 48px;
+		margin-bottom: 12px;
+		text-transform: uppercase;
+	}
+	.breadcrumb-item {
+		color: #ffffff;
+		font-size: 14px;
+		text-transform: uppercase;
+		transition: 0.5s;
+		&:hover{
+			color: #f7a901;
+		}
+	}
+	.brd-separetor {
+		color: #fff;
+		font-size: 14px;
+		margin: 0 4px;
+	}
+}
+
+/* Responsive Css*/
+
+@media #{$lg-layout} {}
+
+@media #{$md-layout} {
+	.bradcaump__inner h2 {
+		font-size: 40px;
+	}
+}
+
+@media #{$sm-layout} {
+	.bradcaump__inner h2 {
+		font-size: 39px;
+	}
+	.ht__bradcaump__area {
+		height: 425px;
+	}
+	.ht__bradcaump__container {
+		padding-top: 138px;
+	}
+
+
+
+
+}
+
+@media #{$xs-layout} {
+	.bradcaump__inner h2 {
+		font-size: 28px;
+	}
+	.ht__bradcaump__container {
+		padding-top: 158px;
+	}
+}
+
+@media #{$xxs-layout} {}

@@ -1,0 +1,176 @@
+// Service Style
+.box_layout {
+    .shipping_wrap {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+
+.shipping_service {
+    @media #{$sm-layout} {
+        padding: 60px 0;
+    }
+    
+}
+
+
+.shipping_wrap {
+    padding-left: 160px;
+    padding-right: 160px;
+    @media #{$laptop-device} {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    @media #{$lg-layout} {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    @media #{$md-layout} {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    @media #{$sm-layout} {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+
+
+
+.service {
+    -moz-box-align: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    @media #{$lg-layout} {
+        display: block;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    @media #{$md-layout} {
+        display: block;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    @media #{$sm-layout} {
+        display: block;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    &::before {
+        background: #b7b7b7 none repeat scroll 0 0;
+        content: "";
+        height: 50px;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 2px;
+        @media #{$laptop-device} {
+            right: 0;
+        }
+        @media #{$lg-layout} {
+            display: none;
+        }
+        @media #{$md-layout} {
+            display: none;
+        }
+        @media #{$sm-layout} {
+            display: none;
+        }
+    }
+    &.item_4 {
+        &::before {
+            display: none;
+        }
+    }
+    .icon {
+        min-width: 55px;
+        @media #{$lg-layout} {
+            margin-bottom: 14px;
+        }
+        @media #{$md-layout} {
+            margin-bottom: 14px;
+        }
+        @media #{$sm-layout} {
+            margin-bottom: 14px;
+        }
+    }
+    .content {
+        padding-left: 20px;
+        @media #{$laptop-device} {
+            padding-left: 15px;
+        }
+        h3 {
+            font-size: 18px;
+            line-height: 1;
+            margin: 0 0 10px;
+            font-weight: 500;
+            text-transform: capitalize;
+
+        }
+        p {
+            font-size: 15px;
+            line-height: 26px;
+            margin-bottom: 0;
+            margin-right: 47px;
+
+            @media #{$laptop-device} {
+                
+            }
+            @media #{$md-layout} {
+                
+            }
+            
+        }
+        &.white_text {
+            h3 {
+                color: #d8d8d8;
+            }
+            p {
+                color: #adadad;
+            }
+        }
+        
+    }
+}
+
+
+
+
+// Service Style Two
+
+.service_style--2{
+    padding-left: 65px;
+    padding-right: 65px;
+    .row{
+    }
+    .service{
+        margin-top: 50px;
+        padding-top: 50px;
+        &::before{
+            display: none;
+        }
+        .content{
+            p{
+                margin-bottom: 0;
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+
+
+.shipping_style--2{
+    border-radius: 94px;
+}
+
+
+
+
+

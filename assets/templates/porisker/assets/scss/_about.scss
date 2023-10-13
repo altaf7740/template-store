@@ -1,0 +1,92 @@
+/*--
+    05. About Css
+--------------------------*/
+
+.agency-benefits{
+    padding-right: 121px;
+
+    @media #{$desktop-device} {
+        padding-right: 0;
+    }
+
+    @media #{$tablet-device} {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    @media #{$large-mobile} {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    .content{
+        h2 {
+            color: #18012c;
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 23px;
+            
+            @media #{$large-mobile} {
+                font-size: 29px;
+            }
+            span {
+                color: $theme-color;
+            }
+        }
+        p {
+            color: #333333;
+            font-size: 14px;
+            line-height: 27px;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            margin-top: 29px;
+            li {
+                color: #333333;
+                font-size: 14px;
+                margin-top: 9px;
+                i{
+                    color: #333333;
+                    font-size: 16px;
+                    padding-right: 14px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+.agency-thumb{
+    .thumb {
+        position: relative;
+        text-align: center;
+        .play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%,-50%,0);
+            a {
+                border: 0 none;
+                background: #ffffff;
+                width: 62px;
+                height: 62px;
+                border-radius: 100%;
+                padding: 0;
+                font-size: 28px;
+                color: #702bc6;
+                display: inline-block;
+                line-height: 62px;
+                text-align: center;
+                i {
+                    margin-left: 6px;
+                }
+            }
+        }
+    }
+}
+
+

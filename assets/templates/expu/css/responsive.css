@@ -1,0 +1,191 @@
+/* Large desktop :1920px. */
+@media (min-width: 1501px) and (max-width: 2300px) {
+    .header-padding{padding: 0 300px}
+    .slider-content {margin-left: 15.9%; width: 36%}
+    #accordion::before {height: 92%}
+    .slide-content p, .home-banner-content p {font-size: 16px}
+    .feature-right.pull-right.ptb-100.pl-100.pr-100{padding-right: 300px}
+}
+
+/* Normal desktop :1200px. */
+@media (min-width: 1201px) and (max-width: 1500px) {
+/*    .container, .wrapper.boxed-layout, .wrapper.boxed-layout .sticky, .wrapper.box-layout, .wrapper.box-layout .sticky {width: 1170px}*/
+    .header-padding{padding: 0 60px}
+    .slide-content h1 {font-size: 40px}
+    ul.navigation-menu li a i{display: none}
+}
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .container, .wrapper.boxed-layout, .wrapper.boxed-layout .sticky, .wrapper.box-layout, .wrapper.box-layout .sticky {width: 970px}
+    .slide-content h1 {font-size: 40px}
+    .mobile-menu-area {display: block}
+    .header-padding{padding: 0 50px}
+    .feature-right.pl-100{padding-left: 50px}
+    ul.navigation-menu li a i{display: none}
+    .business-content h2 {font-size: 35px}
+    .checkout-step h5, .business-content > p {font-size: 16px;}
+    ul.member-social-icon {margin-top: 45px}
+    .pricing-padding.pl-62.pr-62 {padding-left: 20px; padding-right: 20px}
+    .single-case-info h3 a, .news-content h3 a {font-size: 19px}
+    .slide-content h1 {line-height: 40px}
+    .slider-content, .home-banner-content, .fixed-content {margin-left: 5%;}
+	
+}
+ 
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container, .wrapper.boxed-layout, .wrapper.box-layout {width:750px}
+    .mobile-menu-area {display: block}
+    .wrapper.boxed-layout .sticky, .wrapper.box-layout .sticky {width: 750px;}
+    .sticky {position: inherit;}  
+    .logo {text-align: left;}
+    .sticky .logo img {width: auto;}
+    .slide-content h1 {font-size: 32px}
+    .slide-content p {display: none}
+    .header-padding {padding: 0 20px}
+    .feature-right.pl-100{padding-left: 40px; padding-right: 40px}
+    ul.member-social-icon {margin-top: 50px}
+    .pricing-padding.pl-62.pr-62{padding-left: 30px; padding-right: 30px}
+    .business-button.pull-right {float: inherit !important;}
+    ul.navigation-menu li a i{display: none}
+    .google-map-area{margin-right: 0px; margin-top: 30px}
+    #accordion::before {height: 90%}
+    .checkout-step h5 {font-size: 15px}
+    .main-menu ul li ul.submenu.megamenu {right: -232px;}
+    .animated-background .home-banner-content {margin-left: 11%; width: 100%}
+    .feature-left, .feature-right {width: 100%}
+    
+	
+}
+    
+/* small mobile :320px. */
+@media (max-width: 767px) {
+    .container, .wrapper.boxed-layout, .wrapper.box-layout {width:300px}
+    .mobile-menu-area {display: block;}
+    #sticky-header, .wrapper.boxed-layout #sticky-header, .wrapper.box-layout #sticky-header, #sticky-header.fixed {position: inherit;}
+#sticky-header, #contact-form > input, #contact-form > textarea, .main-menu ul li ul.submenu.megamenu.two > li{width: 100%}
+    .logo {text-align: center;}
+    .sticky .logo img {width: auto;}
+    .feature-right.pull-right.ptb-100.pl-100{padding-bottom: 0px}
+    .logo img {transition: none 0s ease 0s ;}   
+    .sticky.header-area {position: inherit;}
+    .business-button.pull-right {float: inherit !important;}
+    .slide-content h1 {font-size: 40px}
+    .slide-content p, .slide-content a {display: none}
+    .google-map-area{margin-right: 0px; margin-top: 30px}
+    .slide-content h1 {font-size: 20px; line-height: 30px}
+    .single-service, .single-pricing-table, .single-case, .solution-content, .single-news, .footer-widget {margin-bottom: 50px}
+    .col-md-4:last-child .single-service, .col-md-4:last-child .single-pricing-table, .col-md-4:last-child .single-case, .col-md-4:last-child .solution-content, .col-md-6:last-child .single-news, .col-md-3:last-child .footer-widget {margin-bottom: 0px}
+    .feature-left, .feature-right {width: 100%}
+    .feature-right.pl-100{padding-left: 15px}
+    .feature-right h2 {font-size: 25px}
+    .checkout-step h5 {font-size: 12px}
+    .panel-body > p{font-size: 11px; padding: 0 20px}
+    .business-content h2 {font-size: 28px; margin-bottom: 20px}
+    .logo {text-align: left;}
+    .header-position {position: static}
+    header .container-fluid { padding-left: 0; padding-right: 0}
+    .feature-right.pull-right.ptb-100.pl-100.pr-100{padding-right: 0}
+    .slider-content {padding-top: 15px;}
+    .testimonial-owl .owl-controls {bottom: 10px;}
+    .logo, .search-btn {padding: 0}
+    .header-sub-padding {padding: 44px 25px}
+    .header-area.stick {background: none; box-shadow: none}
+    .stick .header-sub-padding {padding: 10px 25px}
+    .slide-content h1, .home-banner-content h1{padding-top: 0}
+    .stick .search-btn, .stick .logo {padding: 0}
+    .main-menu ul li a, .stick .main-menu ul li a { padding: 12px 15px}
+    .banner-wrapper.pt-220.pb-115 {padding-top: 100px}
+    .pricing-padding.pl-62.pr-62{padding-left: 0px; padding-right: 0px}
+    .table-head h2 {font-size: 20px}
+    .table-head span.sub {left: -20px}
+    .footer-bottom p {float: none !important; text-align: center}
+    .header-bg{margin-top: 0}
+    #navigation {
+        background-color: #000000;
+        border-bottom: 1px solid #e7e7e7;
+        border-top: 1px solid #e7e7e7;
+        display: none;
+        height: auto;
+        left: 0;
+        overflow: auto;
+        position: relative;
+        top: 0;
+        width: 100%;
+        z-index: 99;
+    }
+    #topnav .navigation-menu {float: none; max-height: 400px;    }
+    .menu-area {
+        float: none;
+        position: relative;
+        top: -42px;
+        display: inherit;
+    }
+    .main-menu ul > li ul.submenu {
+        display: none;
+        list-style: outside none none;
+        margin: 0;
+        padding-left: 20px;
+        position: inherit;
+        width: 100%;
+    }
+    .main-menu ul > li ul.submenu.open {display: block; opacity: 1; visibility: visible}
+    .main-menu ul li {display: block; margin-bottom: 1px}
+    .main-menu ul li ul.submenu.megamenu > li {width: 100%}
+    .main-menu ul li ul.submenu.megamenu {white-space: inherit}
+    .main-menu ul li a i {float: right}
+    .main-menu ul li ul.submenu.open {background-color: #000; top: 0px}
+    .main-menu ul li:hover a, .main-menu ul li ul.submenu li a, .main-menu ul li ul.submenu li:hover > a, .main-menu ul li ul.submenu.megamenu > li:hover > a{color: #fff}
+    #topnav .navbar-toggle {
+        border: 0 none;
+        cursor: pointer;
+        height: 40px;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        width: 40px;
+    }
+    #topnav .navbar-toggle .lines {
+        display: block;
+        height: 15px;
+        margin: 13px auto;
+        position: relative;
+        width: 25px;
+    }
+    #topnav .navbar-toggle span {
+        background-color: #fff;
+        display: block;
+        height: 1px;
+        margin-bottom: 5px;
+        transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+        width: 100%;
+    }
+    #topnav .navbar-toggle.open span {position: absolute}
+    #topnav .navbar-toggle span {background-color: #191b1d}
+    #topnav .navbar-toggle span:last-child {
+        margin-bottom: 0;
+        width: 75%;
+    }
+    #topnav .navbar-toggle.open span:nth-child(2) {visibility: hidden}
+    #topnav .navbar-toggle.open span:last-child {top: 6px; transform: rotate(-45deg); width: 100%}
+    #topnav .navbar-toggle.open span:first-child {top: 6px; transform: rotate(45deg)}
+    .menu-item {border: 1px solid #ddd; float: right}
+    .search-btn {margin-right: 20px}
+    .search {top: 88px}
+    .stick .search {top: 53px}
+    .animated-background .banner-content-area {top: 35%}
+    .slider-content, .home-banner-content, .fixed-content {width: 70%;}
+    
+}
+ 
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {width:450px}
+    .wrapper.boxed-layout, .wrapper.box-layout {width:450px}
+    .single-case-img.news-heffect > img, .single-member-image.block.white-hover > img {width: 100%}
+    .pricing-padding.pl-62.pr-62{padding-left: 20px; padding-right: 20px}
+    .table-head h2 {font-size: 30px}
+    .table-head span.sub {left: -10px}
+    .slide-content h1 {font-size: 35px; line-height: 35px}
+}

@@ -1,0 +1,213 @@
+/* -----------------------------------
+Template:  Expu
+
+NOTE: This is News style file. All Header related style included in this file.
+
+--------------------------------------*/
+.latest-area.home{
+    background: url(../../images/news/1.png);
+}
+.news-content h3 a {
+    color: #565656;
+    display: block;
+    font-family: "Ubuntu",sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+.news-content h3:hover a{
+    color: #49BABF;
+}
+.news-content p{
+    font-family: 'Poppins', sans-serif;
+    color: #565656;
+    font-size: 14px;
+}
+.news-content button {
+    background: #365a73 none repeat scroll 0 0;
+    border-radius: 20px;
+    color: #ffffff;
+    font-family: "Montserrat",sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 0 45px;
+    text-transform: uppercase;
+}
+.new-date-comment ul{
+    margin-bottom: 15px;
+    padding: 0;
+    list-style: none;
+}
+.new-date-comment ul li{
+    display: inline-block;
+    margin-right: 20px;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+.new-date-comment ul li i {
+    font-size: 14px;
+    margin-right: 10px;
+}
+.news-heffect {
+    overflow: hidden;
+    position: relative;
+}
+.news-image{
+    margin-bottom: 35px;
+}
+.news-heffect:before, .news-heffect:after {
+    background: rgba(79, 194, 199, 0.5) none repeat scroll 0 0;
+    content: "";
+    height: 200%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.6s ease 0s;
+    transition: all 0.6s ease 0s;
+    width: 200%;
+}
+.single-case .news-heffect:before, .single-case .news-heffect:after {
+    background: rgba(38, 38, 38, 0.95);
+}
+.news-heffect:after {
+    -webkit-transform: skew(45deg) translateX(-100%);
+            transform: skew(45deg) translateX(-100%);
+}
+.news-heffect:before {
+    -webkit-transform: skew(45deg) translateX(100%);
+            transform: skew(45deg) translateX(100%);
+    z-index: 9;
+}
+.news-heffect:hover:before, .news-heffect:hover:after {
+    -webkit-transform: skew(45deg) translateX(0px);
+            transform: skew(45deg) translateX(0px);
+}
+.news-image:hover a, .single-case-img:hover a {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+.news-image a, .single-case-img a {
+    color: #ffffff;
+    display: block;
+    font-size: 30px;
+    left: 0;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+    -webkit-transition: all 0.5s cubic-bezier(0.6, 0.1, 0.15, 0.8) 0.3s;
+    transition: all 0.5s cubic-bezier(0.6, 0.1, 0.15, 0.8) 0.3s;
+    z-index: 99;
+}
+.widget-title > h2 {
+    color: #5d5d5d;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    margin-bottom: 44px;
+}
+.widget-title > h2:after {
+    position: absolute;
+    bottom: -34px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: url(../../images/icons/2.png);
+    background-repeat: no-repeat;
+}
+.widget-title > h2 > span {
+    color: #49BABF;
+}
+.widget-title > p {
+    color: #616060;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+}
+.widget-search {
+    position: relative;
+}
+.widget-search button {
+    position: absolute;
+    right: 0;
+    z-index: 9;
+    background: #a7a5a5;
+    height: 44px;
+}
+.widget-search input{
+    font-size: 12px;
+    color: #a5a5a5;
+    font-family: 'montserratlight';
+}
+ul.widget-tag{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul.widget-tag li {
+    display: inline-block;
+    margin-bottom: 13px;
+    margin-right: 8px;
+}
+ul.widget-tag li > a {
+    border: 1px solid #a5a5a5;
+    color: #a5a5a5;
+    display: inline-block;
+    font-family: "montserratlight";
+    font-size: 14px;
+    padding: 8px 15px;
+    text-transform: capitalize;
+}
+ul.widget-tag li:hover > a, ul.widget-tag li.active > a{
+    background: #49BABF;
+    color: #fff;
+    border: 1px solid #4FC2C7;
+}
+.post-wid-img{
+    margin-right: 20px;
+}
+.post-wid-content h3{
+    color: #7e7e7e;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.post-wid-content h3:hover a{
+    color: #4FC2C7;
+}
+.post-wid-content p{
+    color: #7a7a7a;
+    font-size: 13px;
+    font-family: 'montserratlight';
+    line-height: 20px;
+    margin-bottom: 0;
+}
+blockquote {
+    background: rgba(0, 0, 0, 0) url("../../images/news/8.jpg") repeat scroll 0 0;
+    border-left: 5px solid #4fc2c7;
+    color: #ffffff;
+    font-family: "Poppins",sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 30px;
+    padding: 30px 35px;
+}
+
+
+
+
+

@@ -1,0 +1,74 @@
+/*****************************
+23 - Components - Button
+*****************************/
+
+/*-- 23.00 - Global Button --*/
+
+.btn{
+	@extend %fontWeight700;
+	@extend %fontSize16;
+	@extend %textUpper;
+	@extend %lineheight1;
+	color: $color-white;
+	background-color: $primary-color;
+	padding: 12px 20px;
+	@include border-radius(35px);
+	@include transition(all .4s ease);
+	@include breakpoint(large){
+		padding: 10px 15px;
+		font-size: 15px;
+	}
+	@include breakpoint(xxsmall){
+		padding: 8px 13px;
+		font-size: 14px;
+	}
+	&--2{
+		width: 123px;
+		height: 35px;
+		padding: 8px 26px;
+		@include breakpoint(small){
+			width: auto;
+			height: auto;
+			padding: 6px 18px;
+		}
+		@include breakpoint(xsmall){
+			width: auto;
+			height: auto;
+			padding: 7px 14px;
+		}
+	}
+	&-fullwidth{
+		@extend %displayBlock;
+		@extend %width100;
+	}
+	&-outline{
+		border: 1px solid $border-color-2;
+		background-color: transparent;
+		color: $heading-color;
+		&:hover{
+			color: $heading-color;
+		}
+	}
+	&.add_to_cart_btn{
+		min-width: 125px;
+		min-height: 36px;
+		padding: 10px 13px;
+	}
+	&:hover{
+		@include border-radius(0);
+	}
+}
+
+/*-- 23.01 - Action Button --*/
+.action-btn{
+    width: 60px;
+    height: 45px;
+    line-height: 45px;
+    background: $color-white;
+    @extend %displayInlineBlock;
+    @extend %textCenter;
+    @extend %fontSize16;
+    @extend %cursorPointer;
+    @extend %border-none;
+}
+

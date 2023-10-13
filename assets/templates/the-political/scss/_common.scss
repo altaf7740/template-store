@@ -1,0 +1,153 @@
+/*----------------------------------------*/
+/*  1.  Theme default CSS
+/*----------------------------------------*/
+/*-- Common Style --*/
+body{
+    color: $text-color;
+    line-height: 24px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    visibility: visible;
+    font-family: $font-ubuntu;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: $heading-color;
+    font-weight: 700;
+    margin-top: 0;
+}
+p {}
+p:last-child {
+    margin-bottom: 0;
+}
+a, button {
+    color: inherit;
+    display: inline-block;
+    line-height: inherit;
+    text-decoration: none;
+}
+a, i, button, img, input, span,
+*:before, *:after {
+  @include transition(all 0.3s ease 0s);
+}
+*:focus {
+  outline:0px solid
+}
+a:focus {
+  color: inherit;
+  outline: medium none;
+    transform: scale(1);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul{
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+/*-- Common Class --*/
+.fix {
+  overflow:hidden
+}
+.clear{
+  clear: both;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.section {
+    float: left;
+    width: 100%;
+}
+/*-- Margin Top --*/
+@for $i from 1 through 30 {
+    .mt-#{5 * $i}{margin-top: 5px * $i;}
+}
+/*-- Margin Bottom --*/
+@for $i from 1 through 30 {
+    .mb-#{5 * $i}{margin-bottom: 5px *$i;}
+}
+/*-- Padding Top --*/
+@for $i from 1 through 30 {
+    .pt-#{5 * $i}{padding-top: 5px *$i;}
+}
+/*-- Padding Bottom --*/
+@for $i from 1 through 30 {
+    .pb-#{5 * $i}{padding-bottom: 5px *$i;}
+}
+/*-- Input Placeholder --*/
+input:-moz-placeholder, textarea:-moz-placeholder {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+/*-- Slick Slider --*/
+.slick-dots {
+    text-align: center;
+    margin-top: 55px;
+    height: 14px;
+    & li {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 6px;
+        height: 14px;
+        & button {
+            display: block;
+            border: 1px solid $color-white;
+            height: 14px;
+            width: 14px;
+            background-color: transparent;
+            text-indent: -99999px;
+            padding: 0;
+            border-radius: 50px;
+        }
+        &.slick-active {
+            & button {
+                background-color: $color-white;
+            }
+        }
+    }
+}
+/*-- Scroll Up --*/
+#scrollUp {
+    width: 40px;
+    height: 40px;
+    background-color: $theme-color;
+    color: $color-white;
+    right: 40px;
+    bottom: 40px;
+    text-align: center;
+    overflow: hidden;
+    @media #{$small-mobile}{
+        display: none !important;
+    }
+    & i {
+        display: block;
+        line-height: 40px;
+        font-size: 24px;
+    }
+    &:hover i {
+        -webkit-animation-name: fadeInUp;
+        animation-name: fadeInUp;
+        -webkit-animation-duration:1s;
+        animation-duration:1s;
+        -webkit-animation-fill-mode:both;
+        animation-fill-mode:both
+    }
+}

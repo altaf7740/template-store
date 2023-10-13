@@ -1,0 +1,139 @@
+/*--
+    15. Pricing Table Css
+---------------------------------*/
+.single-pricing-table {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: $white;
+    padding: 65px 20px 50px;
+    border-radius: 5px;
+    @include transition(0.3s); 
+    &:hover {
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    }
+    & h3 {
+        font-size: 48px;
+        color: $theme-color-two;
+        font-weight: 600;
+        margin-bottom: 30px;
+        & span {
+            font-size: 30px;
+            position: absolute;
+            margin-top: -15px;
+            margin-left: 5px;
+        }
+    }
+    & h4 {
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    & .pricing-content {
+        margin-top: 20px;
+        & ul {
+            & li {
+                margin-bottom: 5px;
+                font-size: 14px;
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+    & .pricing-button {
+        margin-top: 25px;
+        & a {
+            font-size: 14px;
+            text-transform: uppercase;
+            padding: 8px 40px;
+            background: $theme-color;
+            border-radius: 5px;
+            color: $white;
+            &:hover {
+                background: $theme-color-two;
+                color: $white;
+            }
+        }
+    }
+}
+/*--
+   16. Team Area Css
+------------------------------*/
+.single-team-member {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    &:hover {
+        .hover-2 {
+            &::before {
+                opacity: 1;
+                transform: scale(0.90);
+            }
+        }
+        & .team-member-image {
+            & .team-social-link {
+                opacity: 1;
+            }
+        }
+    }
+}
+.team-member-image {
+    & img {
+        width: 100%;
+    }
+    position: relative;
+    & .team-social-link {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        opacity: 0;
+        @include transition (0.3s);
+        & ul {
+            & li {
+                display: inline-block;
+                & a {
+                    display: block;
+                    height: 30px;
+                    width: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    border: 1px solid #fff;
+                    color: #fff;
+                    border-radius: 50%;
+                    margin: 0 7px;
+                    &:hover {
+                        background: #fff;
+                        color: $theme-color-two;
+                    }
+                }
+            }
+        }
+    }
+}
+.hover-2 {
+    position: relative;
+    &::before {
+        background: rgba(53, 75, 101, 0.8);
+        bottom: 0;
+        content: "";
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: scale(1);
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+    }
+}
+.team-member-info {
+    padding: 25px 0;
+    & h3 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 0px;
+        letter-spacing: 1px;
+        line-height: 20px;
+    }
+    & p {
+        font-size: 14px;
+    }
+}

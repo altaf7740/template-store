@@ -1,0 +1,61 @@
+/*----------------------------------------*/
+/*  7.  Work Process
+/*----------------------------------------*/
+
+/*-- Work Process One --*/
+.work-process-one {
+    position: relative;
+    & .icon {
+        float: left;
+        width: 50px;
+        & i {
+            font-size: 40px;
+            display: block;
+            line-height: 32px;
+        }
+    }
+    & .content {
+        overflow: hidden;
+        border-left: 2px solid $red;
+        padding-left: 22px;
+        padding-right: 30px;
+        & h4 {
+            font-size: 20px;
+            line-height: 1;
+        }
+        & p {
+            font-size: 16px;
+        }
+        @media #{$desktop-device}{
+            padding-right: 0;
+        }
+    }
+}
+
+/*-- Work Process One --*/
+.work-process-two {
+    & i {
+        font-size: 35px;
+        line-height: 40px;
+        color: #575757;
+        margin-bottom: 8px;
+    }
+    & h4 {
+        font-weight: 500;
+        position: relative;
+        padding-bottom: 11px;
+        margin-bottom: 25px;
+        &::before {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 1px;
+            background-color: $black;
+            content: "";
+        }
+    }
+    & p {
+        max-width: 300px;
+    }
+}

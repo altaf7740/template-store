@@ -1,0 +1,84 @@
+.funfact {
+  flex-basis: 50%;
+  text-align: center;
+}@import "../variables";
+@import "../mixins";
+
+
+/*========================
+	Counterup Area
+===========================*/
+
+
+
+.funfact{
+	text-align: center;
+	.fact__title {
+		h2{
+			font-size: 24px;
+		    line-height: 30px;
+		    margin-top: 9px;
+		    text-transform: capitalize;
+		    font-family: $heading-font;
+		}
+	}
+	.fact__count{
+		span{
+			
+			&.count{
+				color: #b1c642;
+			    display: block;
+			    font-family: $body-font;
+			    font-size: 36px;
+			    line-height: 30px;
+			    margin-top: 20px;
+			    &.color--2{
+			    	color: #ff5020;
+			    }
+			    &.color--3{
+			    	color: #ffc10d;
+			    }
+			    &.color--4{
+			    	color: #68b9d8;
+			    }
+			}
+		}
+	}
+}
+
+
+
+// Responsive Css
+
+
+@media #{$lg-layout}{
+
+
+
+	
+}
+@media #{$sm-layout}{
+
+.funfact {
+  flex-basis: 50%;
+}
+.funfact:nth-child(n+3) {
+  margin-top: 40px;
+}
+
+
+}
+@media #{$xxs-layout}{
+
+.funfact {
+  flex-basis: 100%;
+}
+.funfact:nth-child(n+2) {
+  margin-top: 40px;
+}
+
+
+
+}
+
+

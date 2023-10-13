@@ -1,0 +1,54 @@
+/*----------------------------------------*/
+/*  12.  Newsletter Area
+/*----------------------------------------*/
+.newsletter-area {
+    background-color: #f1f1f1;
+}
+/*Newsletter Title*/
+.newsletter-title {
+    & h2 {
+        color: $text-color;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 24px;
+        margin-bottom: 13px;
+        text-transform: capitalize;
+    }
+    & p {
+        max-width: 335px;
+    }
+}
+/*Newsletter Form*/
+.newsletter-form {
+    margin-top: 30px;
+    & form {
+        position: relative;
+        & input {
+            background-color: $color-white;
+            border: medium none;
+            color: #999999;
+            height: 50px;
+            padding: 13px 25px;
+            width: 100%;
+        }
+        & .submit {
+            background-color: $theme-color;
+            border: none;
+            color: $color-white;
+            height: 50px;
+            position: absolute;
+            right: 0;
+            text-align: center;
+            top: 0;
+            width: 80px;
+            &:hover {
+                background-color: darken($theme-color, 5);
+            }
+            & i {
+                display: block;
+                font-size: 25px;
+                line-height: 50px;
+            }
+        }
+    }
+}

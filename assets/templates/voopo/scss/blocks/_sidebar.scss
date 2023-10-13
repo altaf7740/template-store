@@ -1,0 +1,233 @@
+/*------------------
+    Sidebar Styles 
+---------------------*/
+
+.vp__widget {
+    &.search {
+        position: relative;
+        input {
+            background: #fff none repeat scroll 0 0;
+            border: 0 none;
+            border-radius: 3px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: #010f54;
+            font-size: 12px;
+            height: 60px;
+            padding: 0 66px 0 30px;
+            width: 100%;
+        }
+        button {
+            background: #e15e46 none repeat scroll 0 0;
+            border: 0 none;
+            border-radius: 3px;
+            height: 100%;
+            padding: 0 20px;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: 0.3s;
+            &:hover {
+                background: $theme-color;
+                color: #fff;
+            }
+            i {
+                color: #fff;
+                font-size: 24px;
+            }
+        }
+    }
+    &.newsletter {
+        background: #fff none repeat scroll 0 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 40px 27px;
+        border-radius: 30px;
+        h4 {
+            color: #1344a5;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 23px;
+        }
+        input {
+            -moz-border-bottom-colors: none;
+            -moz-border-left-colors: none;
+            -moz-border-right-colors: none;
+            -moz-border-top-colors: none;
+            border-color: currentcolor currentcolor #010f54;
+            border-image: none;
+            border-style: none none solid;
+            border-width: 0 0 1px;
+            color: #010f54;
+            font-size: 12px;
+            margin-bottom: 24px;
+            padding-bottom: 7px;
+            width: 100%;
+        }
+        a {
+            &.voopo__btn {
+                height: 40px;
+                line-height: 38px;
+                text-align: center;
+                width: 100%;
+            }
+        }
+    }
+    &.voopo__tag {
+        .tag__list {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: outside none none;
+            margin: 0 -3px;
+            padding: 0;
+            li {
+                margin: 0 3px 13px;
+                a {
+                    background: #eef3f6 none repeat scroll 0 0;
+                    border-radius: 16px;
+                    color: #010f54;
+                    display: inline-block;
+                    font-size: 14px;
+                    font-weight: 500;
+                    height: 30px;
+                    line-height: 30px;
+                    padding: 0 14px;
+                    transition: 0.3s;
+                    &:hover {
+                        background: $theme-color;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.single__tab__content.tab-pane:not(.active) {
+    display: none;
+}
+
+.vp__widget {
+    &.recent__post__wrap {
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        .voopo__nav {
+            border-bottom: 1px solid #eef3f6;
+            margin-bottom: 20px;
+            a {
+                color: #a9c2cb;
+                font-size-s: 18px;
+                font-weight: 700;
+                padding: 0;
+                margin: 0;
+                height: 50px;
+                line-height: 50px;
+                flex-basis: 50%;
+                text-align: center;
+                position: relative;
+                transition: 0.3s;
+                &.active,
+                &:hover {
+                    color: #1344a5;
+                }
+                &+a {
+                    border-left: 1px solid #eef3f6;
+                }
+            }
+        }
+    }
+}
+
+.single__tab__content {
+    padding: 0 25px;
+    .recent__post {
+        align-items: center;
+        display: flex;
+        &+.recent__post {
+            margin-top: 25px;
+        }
+        .thumb {
+            margin-right: 25px;
+            a {
+                img {
+                    width: 75px;
+                }
+            }
+        }
+        .content {
+            h4 {
+                font-weight: 500;
+                line-height: 20px;
+                margin: 0 0 5px;
+                a {
+                    color: #035f91;
+                    font-size: 14px;
+                    transition: all 0.3s ease 0s;
+                    &:hover {
+                        color: $hover-color;
+                    }
+                }
+            }
+            span {
+                color: #035f91;
+                font-size: 12px;
+                font-style: italic;
+            }
+        }
+    }
+}
+
+.vp__widget.recent__post__wrap {
+    border-radius: 30px;
+    padding-bottom: 30px;
+}
+
+.vp__widget.banner .thumb img {
+    width: 100%;
+}
+
+.vp__widget.search input::-webkit-input-placeholder,
+.vp__widget.newsletter input::-webkit-input-placeholder {
+    color: #010f54;
+    opacity: 1;
+}
+
+.vp__widget.search input::-moz-placeholder,
+.vp__widget.newsletter input::-moz-placeholder {
+    color: #010f54;
+    opacity: 1;
+}
+
+.vp__widget.search input:-ms-input-placeholder,
+.vp__widget.newsletter input:-ms-input-placeholder {
+    color: #010f54;
+    opacity: 1;
+}
+
+.vp__widget.search input:-moz-placeholder,
+.vp__widget.newsletter input:-moz-placeholder {
+    color: #010f54;
+    opacity: 1;
+}
+
+// Responsive Css
+@media #{$xx-layout} {}
+
+@media #{$xlg-layout} {}
+
+@media #{$lg-layout} {
+    .single__tab__content .recent__post {
+        display: block;
+    }
+    .single__tab__content .recent__post .thumb {
+        margin-bottom: 6px;
+        margin-right: 0;
+    }
+}
+
+@media #{$md-layout} {}
+
+@media #{$sm-layout} {}
+
+@media #{$xs-layout} {}
+
+@media #{$xxs-layout} {}

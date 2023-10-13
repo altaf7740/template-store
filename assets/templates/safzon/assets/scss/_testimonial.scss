@@ -1,0 +1,161 @@
+/*--
+    10. Testimonial Css
+-------------------------------------*/
+.testimonial-style-3 {
+    .testimonal {
+        img {
+            float: left;
+            max-width: 90px;
+            border-radius: 50%;
+            border: 1px solid $theme-color;
+            box-sizing: content-box;
+            
+            
+        }
+
+        .content {
+            overflow: hidden;
+            padding-left: 20px;
+            p {
+                color: #3e3e3e;
+                font-size: 16px;
+                margin-bottom: 20px;
+                line-height: 28px;
+            }
+            .clint-info {
+                padding-left: 50px;
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 30px;
+                    height: 2px;
+                    background: #383838;
+                    left: 0;
+                    top: 4px;
+                }
+
+                h4 {
+                    font-weight: 600;
+                    font-size: 16px;
+                    color: #383838;
+                    margin-bottom: 2px;
+                }
+
+                span {
+                    color: #383838;
+                    font-size: 14px;
+                }
+            }
+        }
+        
+        @media #{$small-mobile}{
+            img {
+                float: inherit;
+                max-width: 100%;
+                margin: 0 auto 20px;
+            }
+            .content { 
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+.testimonial-grid-2 {
+    padding: 40px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    .testimonal{
+        img{
+            
+        }
+    }
+    @media #{$tablet-device}{
+        padding: 40px 20px;
+    }
+}
+.testimonial-style-2 {
+    &.testimonial-grid-3 {
+        .testimonal {
+            margin-top: 82px;
+
+            .content {
+                padding-top: 73px;
+                margin-top: 0;
+            }
+        }
+    }
+}
+.testimonial-style-6 {
+    &.testimonial-grid-3 {
+        padding: 0;
+    }
+}
+.testimonial-carousel-3 .slick-slide {
+    padding: 5px 15px;
+}
+.testimonial-carousel-3 {
+    position: relative;
+
+    .slick-slide {
+        padding: 5px 15px;
+    }
+
+    .slick-dots {
+    margin-top: 50px;
+        text-align: center;
+        height: 12px;
+
+        li {
+            position: relative;
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            padding: 0;
+            cursor: pointer;
+
+            button {
+                width: 10px;
+                height: 10px;
+                padding: 5px;
+                background: #000;
+                border-radius: 100%;
+                border: none;
+                text-indent: -9999px;
+
+                &::before {
+                    display: none;
+                }
+            }
+            
+            
+
+            &.slick-active {
+                button {
+                    background: $theme-color;
+                }
+            }
+            
+            
+        }
+    }
+    
+    & .slick-arrow {
+        position: absolute;
+        bottom: -8px;
+        left: 50%;
+        margin-left: -65px;
+        border: 0 none;
+        color: $theme-color;
+        font-size: 30px;
+        z-index: 2;
+        background: none;
+    }
+    .post-next.slick-arrow {
+        left: auto;
+        right: 50%;
+        margin-right: -65px;
+    }
+
+}

@@ -1,0 +1,70 @@
+/*---
+   06. Contact Css 
+----------------------------------------*/
+
+.form-style-7{
+    form{
+        input {
+            background: #fff;
+            border:  0  none;
+            height:  55px;
+            padding: 0 20px;
+            margin-bottom: 30px;
+            width: 100%;
+            border: 1px solid #f1f1f1;
+            &:focus{
+                border: 1px solid $theme-color;
+            }
+            &[type="submit"] {
+                width:  auto;
+                margin: 0;
+                padding:  0 58px;
+                background:  $theme-color;
+                color:  #fff;
+                height:  58px;
+                font-weight: 600;
+                line-height: 61px;
+                text-transform: uppercase;
+                transition: 0.5s;
+                margin-top: 10px;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+        }
+        textarea {
+            border: 1px solid #f1f1f1;
+            background:  #fff;
+            border:  0 none;
+            margin-bottom:  30px;
+            min-height:  230px;
+            resize:  none;
+            padding:  20px;
+            margin-bottom: 30px;
+            width: 100%;
+            &:focus{
+                border: 1px solid $theme-color;
+            }
+        }
+    }
+
+}
+
+
+input, textarea {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+}
+   
+.form-messege{
+    margin-top: 10px;
+    &.success {
+        color: green;
+    }
+    &.error {
+        color: red;
+    }
+}

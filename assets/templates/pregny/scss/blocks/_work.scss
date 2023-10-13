@@ -1,0 +1,153 @@
+/*--------------------
+ * Work Style
+----------------------*/
+
+.working_wrapper {
+    padding: 5px 95px;
+    @media #{$laptop-device} {
+        padding: 51px 34px;
+    }
+    @media #{$lg-layout} {}
+    @media #{$md-layout} {
+        padding: 74px 36px 35px;
+    }
+    @media #{$sm-layout} {
+        padding: 60px 32px;
+    }
+    .work_wrap {
+        @media #{$lg-layout} {
+            padding-bottom: 26px;
+            padding-top: 46px;
+            text-align: center;
+        }
+        h3 {
+            color: #d8d8d8;
+            font-size: 21px;
+            font-weight: 300;
+            padding-bottom: 3px;
+        }
+        h2 {
+            color: #d8d8d8;
+            font-size: 41px;
+            font-weight: 600;
+            line-height: 48px;
+            padding-bottom: 7px;
+            @media #{$lg-layout} {
+                font-size: 28px;
+                line-height: 40px;
+                margin-bottom: 5px;
+                margin-top: 5px;
+            }
+            @media #{$laptop-device} {
+                font-size: 22px;
+                line-height: 35px;
+                padding-bottom: 2px;
+            }
+            @media #{$md-layout} {
+                font-size: 34px;
+                padding-bottom: 0;
+            }
+            @media #{$sm-layout} {
+                font-size: 29px;
+                line-height: 35px;
+            }
+
+            @media #{$large-mobile} {
+                font-size: 22px;
+                line-height: 33px;
+                padding-right: 45px;
+            }
+        }
+        h4 {
+            color: #d8d8d8;
+            font-size: 21px;
+            font-weight: 300;
+            span {
+                font-weight: 700;
+            }
+            @media #{$sm-layout} {
+                font-size: 17px;
+                margin-bottom: 28px;
+            }
+        }
+    }
+    .work_process {
+        padding-left: 64px;
+        padding-right: 30px;
+        margin-bottom: -34px;
+        @media #{$laptop-device} {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        @media #{$lg-layout} {
+            margin-bottom: 0;
+            padding-left: 0;
+            padding-right: 30px;
+        }
+        @media #{$md-layout} {
+            padding-left: 0;
+            padding-right: 30px;
+        }
+        @media #{$sm-layout} {
+            padding-left: 0;
+            padding-right: 30px;
+        }
+        @media #{$small-mobile} {
+            padding-right: 0;
+        }
+        .work {
+            margin-bottom: 34px;
+            h3 {
+                color: #d8d8d8;
+                font-size: 22px;
+                margin: 0 0 10px;
+                @media #{$laptop-device} {
+                    font-size: 18px;
+                    margin: 0 0 6px;
+                }
+                @media #{$large-mobile} {
+                    font-size: 16px;
+                    margin: 0 0 7px;
+                }
+            }
+            p {
+                color: #adadad;
+                font-size: 13px;
+                line-height: 24px;
+                margin-bottom: 0;
+                padding-left: 28px;
+                padding-right: 29px;
+
+                @media #{$large-mobile} {
+                    line-height: 23px;
+                    padding-right: 56px;
+
+                }
+                @media #{$small-mobile} {
+                    padding-right: 9px;
+                }
+            }
+        }
+    }
+}
+
+@media #{$md-layout} {
+    .box_layout {
+        .working_wrapper {
+            padding: 0px 36px 0px;
+        }
+    }
+}
+
+@media #{$sm-layout} {
+    .box_layout {
+        .working_wrapper {
+            padding: 0px 36px 0px;
+        }
+    }
+    .box_layout {
+        .working_wrapper {
+            padding: 0px 32px;
+        }
+    }
+}

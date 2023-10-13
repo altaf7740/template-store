@@ -1,0 +1,133 @@
+/*--
+   07. Banner Area Css
+------------------------------*/
+.lg-banner-bg{
+    background: url(../images/bg/01.jpg);
+}
+.lg-banner-bg-2 {
+    background: url(../images/bg/03.jpg);
+}
+.lg-banner-info {
+    & h2 {
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 55px;
+        margin-top: -11px;
+        @media #{$tablet-device} {
+            font-size: 30px;
+        }
+        @media #{$large-mobile}{
+            font-size: 30px;
+            line-height: 44px;
+        }
+        @media #{$small-mobile}{
+            font-size: 23px;
+            line-height: 36px;
+        }
+    }
+    & p {
+        margin-bottom: 0;
+    }
+    & .more-product-btn {
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 500;
+        padding: 18px 40px;
+        margin-top: 25px;
+        @include transition(0.4s);
+        @media #{$tablet-device}{
+            padding: 15px 35px;
+        }
+        @media #{$large-mobile}{
+            padding: 14px 20px;
+        }
+        @media #{$small-mobile}{
+            padding: 14px 20px;
+            margin-top: 20px;
+        }
+    }
+}
+.single-banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    .banner-bg {
+        & > a {
+        display: block;
+        overflow: hidden;
+        position: relative;
+        &::before {
+            background-color: #fff;
+            content: "";
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0px, -120%, 0px);
+            transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0px, -120%, 0px);
+            -webkit-transition: -webkit-transform 0.6s ease 0s;
+            transition: -webkit-transform 0.6s ease 0s;
+            transition: transform 0.6s ease 0s;
+            transition: transform 0.6s ease 0s, -webkit-transform 0.6s ease 0s;
+            width: 100%;
+            z-index: 4;
+            opacity: 0;
+            visibility: hidden;
+        }
+        &:hover:before {
+            -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0px, 120%, 0px);
+            transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0px, 120%, 0px);
+            visibility: visible;
+            opacity: 0.5;
+        }
+    } 
+        img {
+            width: 100%;
+        }
+    }
+}
+.banner-contet {
+    position: absolute;
+    top: 50%;
+    padding-left: 60px;
+    @include transform(translateY(-50%));
+    @media #{$small-mobile} , #{$large-mobile} , #{$tablet-device} {
+        padding-left: 30px;
+    }
+    & p {
+        color: $white;
+        font-style: italic;
+        font-size: 24px;
+        margin-bottom: 10px;
+        @media #{$small-mobile} , #{$large-mobile} , #{$tablet-device} {
+            font-size: 20px;
+        }
+    }
+    & h3 {
+        color: $white;
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 0;
+        @media #{$small-mobile} , #{$large-mobile} , #{$tablet-device} {
+            font-size: 28px;
+        }
+    }
+    & > .btn-3 {
+        color: $white;
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 20px;
+        text-decoration: underline;
+        &:hover {
+            color: $theme-color;
+        }
+        @media #{$small-mobile} , #{$large-mobile} {
+            margin-top: 10px;
+        }
+    }
+}
+@media #{$small-mobile} , #{$large-mobile}{
+    .s-mt-30 {
+        margin-top: 30px;
+    }
+}

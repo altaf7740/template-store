@@ -1,0 +1,116 @@
+/*--
+    04. Service Css
+-------------------------------------*/ 
+.bg_image--01 {
+    background-image: url(../images/bg/bg-image-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+.service-1{
+    .icon{
+        margin-bottom: 30px;
+        i{
+            color:  #ed552d;
+            font-size:  50px;
+        }
+    }
+    .thumb{
+        margin-bottom: 25px;
+    }
+    .content{
+        h4{
+            color:  #333333;
+            font-size:  18px;
+            font-weight:  600;
+        }
+        p{
+            color: #333;
+            font-size: 15px;
+            line-height: 25px;
+            margin: 0;
+            padding: 0 12px;
+            position: relative;
+            padding-bottom: 35px;
+            &::before{
+                position:  absolute;
+                content: "";
+                background:  #969696;
+                width:  20px;
+                height: 1px;
+                bottom:  0;
+                left:  50%;
+                transform: translateX(-50%);
+            }
+            &::after{
+                position:  absolute;
+                content:  "";
+                background:  #969696;
+                height:  1px;
+                width:  30px;
+                bottom: 5px;
+                left:  50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+
+    
+    &.agency-service{
+        .icon{
+            i{
+                color:  $theme-color;
+            }
+        }
+    }
+    
+    &.portfolio-service{
+        .icon{
+            i{
+                color:  $theme-color;
+            }
+        }
+    }
+
+    &.gr-service{
+        .icon{
+            i{
+                color: $theme-color;
+            }
+        }
+        .content{
+            h4{
+                color:  #404040;
+            }
+            p{
+                color: #5b5b5b;
+                font-size: 16px;
+                line-height: 28px;
+                font-family: $body-font;
+                padding: 0 12px;
+                padding-bottom: 35px;
+            }
+        }
+        &.fter-shape-none{
+            .content{
+                p{
+                    &::before ,
+                    &::after{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bg_image--02 {
+    background-image: url(../images/bg/bg-image-02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}

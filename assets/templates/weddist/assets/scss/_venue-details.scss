@@ -1,0 +1,428 @@
+/*--
+    10. Venue Css
+---------------------*/
+.venue-item-title-area {
+    padding: 30px 0;
+    border-bottom: 1px solid #ddd;
+}
+.venue-header-left {
+    & .venue-title {
+        margin-left: 25px;
+        & h4 {
+            font-weight: 600;
+            margin-bottom: 5px;
+            @media #{$small-mobile}{
+                font-size: 16px;
+            }
+        }
+        & p {
+            font-weight: 500;
+        }
+        @media #{$small-mobile}{
+            margin-left: 15px;
+            & h4 {
+                font-size: 16px;
+            }
+        }
+    }
+}
+.post-share-in-fild {
+    
+    & ul {
+        display: flex;
+        justify-content: flex-end;
+        & li {
+            margin-left: 30px;
+            &:first-child {
+                margin-left: 0;
+            }
+            & a {
+                color: #8e8e8e;
+                & i {
+                    margin-right: 5px;
+                }
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+    @media #{$large-mobile}{
+        margin-top: 20px;
+        & ul {
+            justify-content: flex-start;
+        }
+    }
+}
+.venues-tab-list {
+    & li {
+        & a {
+            padding: 30px; 
+            position: relative;
+            font-weight: 500;
+            &::after {
+                background: #ececec;
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                height: 15px;
+                width: 1px;
+                transform: translateY(-50%);
+            }
+            &.active{
+                color: $theme-color;
+            }
+            @media #{$large-mobile}{
+                padding: 8px 15px;
+            }
+        }
+        &:first-child {
+            & a {
+                padding-left: 0;
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+    @media #{$large-mobile}{
+        margin-top: 15px;
+    }
+}
+.venue-image-two {
+    @media #{$large-mobile}{
+        margin-top: 15px;
+    }
+}
+.single-venues-info {
+    padding: 30px;
+    border: 1px solid #ececec;
+}
+
+.venue-info-list {
+    margin-bottom: 25px;
+    & li {
+        display: inline-block;
+        margin-right: 15px;
+        padding-right: 15px;
+        position: relative;
+        font-weight: 500;
+        &::after {
+            position: absolute;
+            content: "";
+            right: 0;
+            top: 50%;
+            background: #ddd;
+            height: 15px;
+            width: 1px;
+            transform: translateY(-50%);
+        }
+        &:last-child {
+            &::after {
+                display: none;
+            }
+            margin-right: 0;
+        }
+        @media #{$large-mobile}{
+           margin-bottom: 10px; 
+            &::after {
+                display: none;
+            }
+        }
+    }
+}
+
+.venue-slider {
+    & .slick-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        border: none;
+        color: #fff;
+        width: 0px;
+        opacity: 0;
+        visibility: hidden;
+    }
+    & .slick-next {
+        right: 0;
+    }
+    & .slick-prev {
+        left: 0;
+    }
+    &:hover {
+        & .slick-arrow {
+            width: 40px;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+.next-prev {
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    padding: 30px 0;
+    
+    @media #{$large-mobile}{
+        flex-direction: column;
+        & .align-self-end {
+            align-self: flex-start !important;
+        }
+        & .text-right {
+            text-align: left !important;
+        }
+        & .single-col {
+            margin: 10px 0px;
+        }
+    }
+}
+
+.page-list {
+    display: flex;
+    & li {
+        font-size: 16px;
+        line-height: 24px;
+        font-family: $heading-font;
+        color: $heading-color;
+        text-align: center;
+        margin: 2px 3px;
+        & a {
+            color: #333;
+            padding: 10px;
+            border-radius: 50px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        // Responsive
+        @media #{$small-mobile}{
+            font-size: 14px;
+            & a {
+                padding: 9px;
+                width: 35px;
+                height: 35px;
+                & i {
+                    line-height: 24px;
+                }
+            }
+        }
+        &:hover {
+            & a {
+                color: $theme-color;
+                background-color: $white;
+                box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            }
+        }
+        &.active {
+            & a {
+                color: $theme-color;
+                background-color: $white;
+                box-shadow: 0 0 10px rgba(0,0,0,.5);
+            }
+        }
+        
+    }
+}
+.review-comments-area {
+    padding: 30px;
+    border: 1px solid #ececec;
+    
+}
+.comment-form-wrap {
+    & h4 {
+        font-weight: 600;
+        margin-bottom: 30px;
+        & span {
+            color: $theme-color;
+            margin-left: 10px;
+        }
+    }
+    & .comments-form {
+        max-width: 540px;
+        & input,textarea {
+            width: 100%;
+            background: #f9f9f9;
+            border: none;
+            padding: 12px 15px;
+            
+        }
+        & textarea {
+            height: 200px;
+        }
+    }
+}
+.comment-submit,.rating-box {
+    display: flex;
+    align-content: center;
+}
+.comment-submit {
+    @media #{$small-mobile}{
+        flex-direction: column;
+    }
+}
+.rating-box {
+    border: 1px solid $theme-color;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-right: 20px;;
+    & span {
+        font-weight: 600;
+        margin-right: 10px;
+    }
+    & ul {
+        & li {
+            display: inline-block;
+        }
+    }
+    @media #{$small-mobile}{
+        margin-bottom: 15px;
+    }
+}
+.comment-submit-btn {
+    & .btn {
+        border: 1px solid $theme-color;
+        background: $theme-color ;
+        color: #fff;
+        font-weight: 600;
+        &:hover{
+            border: 1px solid #3A3A3A;
+        }
+    }
+}
+
+.old-reviews-area {
+    padding: 30px;
+    border-bottom: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    & h4 {
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    & .comment-list {
+        max-width: 640px;
+        & > li {
+            margin-bottom: 35px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    & .content {
+        margin-top: 15px;
+    }
+}
+.commenter-profile {
+    display: flex;
+    justify-content: space-between;
+    @media #{$small-mobile}{
+        flex-direction: column;
+        & .comment-like {
+            margin-top: 10px;
+        }
+    }
+}
+.commenter-pr-info {
+    display: flex;
+    align-items: center;
+    & .comment-name {
+        margin-left: 15px;
+        & h5 {
+            font-weight: 600;
+            margin-bottom: 3px;
+            @media #{$small-mobile}{
+                font-size: 14px;
+            }
+        }
+        & ul {
+            & li {
+                display: inline-block;
+                & a {
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+.comment-like {
+    & span {
+        margin-left: 10px;
+    }
+}
+.venues-sidebar-widget {
+    @media #{$large-mobile,$tablet-device}{
+        padding-top: 60px;
+    }
+}
+.google-map {
+    padding: 10px;
+    border: 1px solid #ececec;
+}
+
+#googleMap-2 {
+    height: 400px;
+}
+
+.venus-address {
+    margin-top: 30px;
+    & h4 {
+        font-weight: 600;
+        
+    }
+}
+.basic-info {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    & h5 {
+        font-weight: 600;
+    }
+    & .single-info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        & .icon {
+            margin-right: 15px;
+            font-size: 20px;
+        }
+        
+        & .info a{
+            display: block;
+        }
+    }
+}
+.venu-opening {
+    border: 1px solid #ececec;
+    padding: 25px 30px;
+    & h5 {
+        font-weight: 600;
+    }
+    
+    & ul {
+        margin-bottom: 20px;
+        & li {
+            display: inline-block;
+            margin-right: 15px;
+            & a {
+                
+            }
+        }
+    }
+}
+.tag {
+    display: flex;
+    & .title {
+        margin-right: 10px;
+    }
+}

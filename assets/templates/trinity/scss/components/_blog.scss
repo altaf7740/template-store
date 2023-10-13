@@ -1,0 +1,288 @@
+/*****************************
+22 - Components - Blog
+*****************************/
+
+/*-- 22.00 - Blog --*/
+
+.blog{
+	@extend %flexbox;
+	@extend %flex-column;
+	@extend %height100;
+	&__media{
+		.image{
+			img{
+				@extend %width100;
+			}
+		}
+	}
+	&__info{
+		background-color: $color-zircon;
+		padding: 25px 25px 30px;
+		border: 1px solid $color-athens-gray;
+		@extend %height100;
+		@include breakpoint(xlarge){
+			padding: 20px 20px 25px;
+		}
+	}
+	&__title{
+		font-size: 24px;
+  		line-height: 1.25;
+  		margin-bottom: 13px;
+  		@include breakpoint(xlarge){
+  			font-size: 20px;
+  		}
+		a{
+			@extend %heading-color;
+		}
+	}
+	&__content{
+		margin-bottom: 16px;
+		p{
+  			line-height: 1.625;
+  			font-family: $font-2;
+		}
+	}
+	&__meta{
+		@extend %posrelative;
+		@extend %flexbox;
+		@extend %align-center;
+		@extend %justify-between;
+		@include breakpoint(large){
+			@include flex-direction(column);
+			@include align-items(flex-start);
+		}
+		@include breakpoint(small){
+			@include flex-direction(row);
+			@include align-items(center);
+		}
+		@include breakpoint(xxasmall){
+			@include flex-direction(column);
+			@include align-items(flex-start);
+		}
+	}
+	&__share{
+		@extend %posrelative;
+		.share-btn{
+			@include borderIconCenter(30);
+			@include border-radius(50%);
+			border: 1px solid $color-silver-3;
+			@extend %displayInlineBlock;
+			@extend %textCenter;
+			@include breakpoint(large){
+				margin-top: 11px;
+			}
+			@include breakpoint(small){
+				margin-top: 0px;
+			}
+			@include breakpoint(xxasmall){
+				margin-top: 10px;
+			}
+			i{
+				@extend %fontSize14;
+			}
+		}
+		&-icons{
+			@extend %posabsolute;
+			@extend %invisible;
+			@extend %basetransition;
+			right: 50px;
+			top: 0;
+			@include breakpoint(large){
+				left: 50px;
+				top: 40px;
+				width: 100%;
+			}
+			@include breakpoint(small){
+				left: auto;
+				top: 0;
+				right: 50px;
+				width: auto;
+			}
+			@include breakpoint(xxasmall){
+				left: 50px;
+				top: 40px;
+				width: 100%;
+			}
+			&.share-visible{
+				@extend %visible;
+			}
+		}
+	}
+	&-list{
+		@extend %flex-row;
+		@extend %flex-wrap;
+		height: auto;
+		.blog{
+			&__media{
+				@include flex-basis(420px);
+				max-width: 420px;
+				@include breakpoint(medium){
+					@include flex-basis(300px);
+					max-width: 300px;
+				}
+				@include breakpoint(asmall){
+					@include flex-basis(100%);
+					max-width: 100%;	
+				}
+				& > figure,
+				& > div,
+				a,
+				img{
+					@extend %height100;
+				}
+			}
+			&__info{
+				@include flex-basis(calc(100% - 420px));
+				max-width: calc(100% - 420px);
+				@extend %heightAuto;
+				@include breakpoint(medium){
+					@include flex-basis(calc(100% - 300px));
+					max-width: calc(100% - 300px);
+				}
+				@include breakpoint(asmall){
+					@include flex-basis(100%);
+					max-width: 100%;	
+				}
+			}
+			&__content{
+				@include breakpoint(medium){
+					margin-bottom: 5px;
+				}
+			}
+			&__meta{
+				@extend %flex-column;
+				@extend %align-start;
+			}
+			&__meta{
+				@extend %displayBlock;
+			}
+			&__share{
+				.share-btn{
+					margin-top: 11px;
+				}
+				&-icons{
+					left: 50px;
+					top: 40px;
+				}
+			}
+		}
+	}
+	.read-more{
+		@extend %heading-color;
+		@extend %fontSize18;
+		@extend %fontWeight700;
+	}
+}
+
+/*-- 22.01 - Single Blog --*/
+
+.single-post-details{
+	border-bottom: 1px solid $color-perigal;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	.entry{
+		&-media{
+			margin-bottom: 30px;
+			@include breakpoint(medium){
+				margin-bottom: 20px;
+			}
+		}
+		&-header{
+			margin-bottom: 24px;
+			@include breakpoint(medium){
+				margin-bottom: 18px;
+			}
+		}
+		&-title{
+			font-size: 36px;
+			line-height: 1.111;
+			max-width: 700px;
+			margin-bottom: 9px;
+			@include breakpoint(large){
+			    font-size: 30px;
+			}
+			@include breakpoint(xsmall){
+			    font-size: 25px;
+			}
+		}
+		&-meta{
+			span, a{
+				font-family: $font-2;
+				@extend %fontWeight600;
+				@extend %fontSize18;
+				@include breakpoint(small){
+					font-size: 16px;
+				}
+			}
+			span{
+				&:not(:last-child){
+					margin-right: 40px;
+					@include breakpoint(large){
+						margin-right: 15px;
+					}
+				}
+			}
+		}
+		&-content{
+			font-family: $font-2;
+			margin-bottom: 3.9rem;
+			@include breakpoint(medium){
+				margin-bottom: 3.3rem;
+			}
+			p{
+				font-family: $font-2;
+				font-size: 16px;
+				&:not(:last-child){
+					margin-bottom: 16px;
+				}
+			}
+			blockquote{
+				@extend %textCenter;
+				@extend %fontSize18;
+				@extend %fontWeight600;
+				font-family: $font-2;
+  				line-height: 1.667;
+  				margin-bottom: 16px;
+			}
+		}
+		&-footer{
+			@extend %verticalFlexCenter;
+			@extend %justify-between;
+			@extend %flex-wrap;
+			.post-share{
+				@extend %verticalFlexCenter;
+				@include breakpoint(xsmall){
+					@include flex-basis(100%);
+					margin-bottom: 5px;
+				}
+				span{
+					@extend %fontSize18;
+					@extend %fontWeight700;
+					padding-right: 15px;
+				}
+			}
+			.tag-list{
+				@include breakpoint(xsmall){
+					@include flex-basis(100%);
+				}
+				span{
+					@extend %fontWeight700;
+				}
+			}
+		}
+	}
+}
+
+/*-- 22.02 - Post Navigation --*/
+
+.post-navigation{
+	margin-bottom: 5.9rem;
+	.nav-links{
+		@extend %verticalFlexCenter;
+		@extend %justify-between;
+		&__link{
+			@extend %fontSize14;
+			font-family: $font-2;
+		}
+	}
+}

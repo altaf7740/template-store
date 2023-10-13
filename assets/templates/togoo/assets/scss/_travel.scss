@@ -1,0 +1,369 @@
+
+/* =====================
+    Travel Css 
+======================*/
+
+.pp-tour {
+    background: #ffffff;
+    & .thumb {
+        & a {
+            display: block;
+            & img {
+                width: 100%;
+            }
+        }
+    }
+    .content{
+        padding: 20px 34px;
+        .title{
+            h2{
+                color: #3b3b3b;
+                font-size: 20px;
+                margin-bottom: 10px;
+                font-weight: 700;
+                font-family: 'Playfair Display', serif;
+                span{
+                    position: relative;
+                    padding-left: 20px;
+                    margin-left: 8px;
+                    &::before {
+                        position: absolute;
+                        content: "/";
+                        left: 0;
+                        font-size: 14px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+        p {
+            color: #717171;
+            font-size: 16px;
+            line-height: 26px;
+            font-family: 'Cabin', sans-serif;
+        }
+        .tp-tour-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #d7d7d7;
+            padding-top: 20px;
+            ul {
+                display: flex;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                &.tp-meta{
+                    li{
+                        color: #3a3a3a;
+                        font-size: 14px;
+                        font-family: 'Cabin', sans-serif;
+                        i{
+                            padding-right: 5px;
+                        }
+                        & + li{
+                            margin-left: 10px;
+                        }
+                    }
+
+                }
+
+                &.rating{
+                    li{
+                        margin-left: 5px;
+                        i{
+                            color: #988f8f;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.travel-popular-tour{
+    .tp-veiw-all-btn {
+        margin-top: 30px;
+        a {
+            height: 55px;
+            padding: 0 65px;
+            background: #efc934;
+            display: inline-block;
+            line-height: 55px;
+            color: #fff;
+            border-radius: 28px;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: 'Cabin', sans-serif;
+            transition: 0.4s ease-in-out;
+            &:hover{
+                background: #408ea0;
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+
+/* =======================
+Countdown Css 
+============================*/
+
+
+.countdown_wrapper{
+    &.travel-countdown{
+        .content{
+            > span{
+                color: #ffffff;
+                font-size: 72px;
+                font-weight: 800;
+                font-family: 'Cabin', sans-serif;
+            }
+            h2{
+                margin-top: 15px;
+                color: #ffffff;
+                font-size: 48px;
+                line-height: 58px;
+                margin-bottom: 40px;
+                font-family: 'Cabin', sans-serif;
+                span{
+                    color: #efc934;
+                }
+            }
+        }
+        @media #{$large-mobile}{
+            .content{
+                > span{
+                    font-size: 42px;
+                }
+                h2{
+                   font-size: 28px;
+                    line-height: 32px;
+                }
+            }
+        }
+    }
+}
+
+.travel-countdown .countdown-style-1 span.ht-count {
+    padding: 16px 0px;
+    border: 2px solid transparent;
+    width: 117px;
+    background: rgba(0,0,0,0.55);
+}
+.travel-countdown .countdown-style-1 .countbox span.time-count{
+    font-family: 'Cabin', sans-serif;
+    color: #fff;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.travel-countdown .countdown-style-1 .countbox span.time-count::before{
+    background-image: linear-gradient(to right, rgba(255,255,255, 0), rgba(255,255,255, 0.8) 40%, rgba(255,255,255, 0.8) 60%, rgba(255,255,255, 0));
+}
+
+.travel-countdown .countdown-style-1 .countbox span span.count-inner p{
+    color: #ffffff;
+    font-size: 24px;
+    font-family: 'Cabin', sans-serif;
+}
+
+.travel-countdown{
+    .count-btn {
+        margin-top: 20px;
+        a {
+            background: #efc934;
+            color: #fff;
+            height: 55px;
+            padding: 0 48px;
+            display: inline-block;
+            line-height: 55px;
+            border-radius: 28px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+    
+}
+
+
+/* ==================
+    Blog Area 
+=====================*/
+
+.post-carousel-active-5.travel-post-wrapper button {
+    color: #efc934;
+}
+
+.post-carousel-active-5.travel-post-wrapper button:hover {
+    background: #efc934;
+    color: #ffffff;
+}
+
+.post-carousel-5.travel-post .ptc-content .content h2 a:hover {
+    color: #efc934;
+}
+.post-carousel-5.travel-post .ptc-content .content .post-btn a.readmore-btn:hover {
+    border-bottom: 1px solid #efc934;
+    color: #efc934;
+}
+
+
+/* ==================
+    Tab Area 
+=====================*/
+
+.ht-tab-nab{
+    &.travel-tab{
+        a{
+            color: #2d2d2d;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: inline-block;
+            font-family: 'Cabin', sans-serif;
+            img{
+                padding-left: 16px;
+            }
+            &.active{
+                background: transparent;
+                color: #efc934;
+            }
+        }
+    }
+}
+
+.travel-offer-form {
+    
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    .single-form {
+        .nice-select {
+            width: 100%;
+            border: 1px solid #e7e7e7;
+            height: 50px;
+            padding: 6px 26px;
+            border-radius: 27px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        button {
+            background: #efc934;
+            height: 50px;
+            border: 0 none;
+            border-radius: 27px;
+            color: #fff;
+            font-size: 16px;
+            width: 100%;
+            &:hover{
+                background: #333;
+                color: #fff;
+            }
+            i {
+                padding-right: 10px;
+            }
+        }
+    }
+}
+
+.bg_image--01 {
+    background-image: url(../images/bg/bg-image-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.countbox {
+    text-align: center;
+    .ht-count {
+        display: inline-block;
+        position: relative;
+        margin: 0 22px;
+
+        @media #{$large-mobile} {
+            margin: 0 16px;
+            margin-bottom: 15px;
+        }
+        
+        &::before {
+            position: absolute;
+            content: ":";
+            right: -26px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #5e5b60;
+            font-size: 55px;
+
+            @media #{$small-mobile} {
+                display: none;
+            }
+        }
+        &:last-child::before {
+            display: none;
+        }
+    }
+}
+
+.countdown-style-1 {
+    span {
+        &.ht-count {
+            padding: 28px 0px;
+            border: 2px solid #18012c;
+            border-radius: 10px;
+            width: 139px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.countdown-style-1 {
+    .countbox {
+        span {
+            &.time-count {
+                color: #242424;
+                font-size: 36px;
+                font-weight: 500;
+                display: block;
+                padding-bottom: 27px;
+                margin-bottom: 27px;
+                position: relative;
+                font-family: $heading-font;
+                &::before {
+                    background-image: linear-gradient(to right, rgba(82, 65, 97, 0), rgba(82, 65, 97, 0.8) 40%, rgba(82, 65, 97, 0.8) 60%, rgba(82, 65, 97, 0));
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: 84% auto;
+                    content: "";
+                    height: 2px;
+                    left: 0;
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.countdown-style-1 {
+    .countbox {
+        span {
+            span {
+                &.count-inner {
+                    p {
+                        color: #242424;
+                        font-size: 30px;
+                        font-weight: 400;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

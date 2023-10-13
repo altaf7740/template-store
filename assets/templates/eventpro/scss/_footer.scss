@@ -1,0 +1,350 @@
+/*----------------------------------------*/
+/*  31.  Footer
+/*----------------------------------------*/
+
+/*-- Footer Top Full Width --*/
+.footer-top-full-width {
+    padding-left: 35px;
+    padding-right: 35px;
+    & .footer-widget {
+        padding: 0 65px;
+    }
+    @media #{$laptop-device}{
+        padding-left: 25px;
+        padding-right: 25px;
+        & .footer-widget {
+            padding: 0 15px;
+        }
+    }
+    @media #{$desktop-device}{
+        padding-left: 25px;
+        padding-right: 25px;
+        & .footer-widget {
+            padding: 0 15px;
+        }
+    }
+    @media #{$tablet-device}{
+        padding-left: 25px;
+        padding-right: 25px;
+        & .footer-widget {
+            padding: 0 15px;
+        }
+    }
+    @media #{$large-mobile}{
+        padding-left: 15px;
+        padding-right: 15px;
+        & .footer-widget {
+            padding: 0 15px;
+        }
+    }
+}
+
+/*-- Footer Widget --*/
+.footer-widget {
+    
+    /*-- Widget Title --*/
+    & .widget-title {
+        color: #c6c6c6;
+        position: relative;
+        text-transform: capitalize;
+        margin-left: -2px;
+        padding-bottom: 16px;
+        margin-bottom: 55px;
+        &::before {
+            position: absolute;
+            left: 2px;
+            bottom: 0;
+            height: 2px;
+            width: 50px;
+            background-color: $blue;
+            content: "";
+        }
+    }
+    & > img {
+        margin-bottom: 40px;
+    }
+    & p {
+        font-size: 16px;
+        line-height: 25px;
+        color: #909090;
+        margin-bottom: 26px;
+    }
+    & small {
+        margin-top: 15px;
+        float: left;
+        font-size: 100%;
+    }
+    
+    /*-- Links --*/
+    & ul {
+        & li {
+            & + li {
+                margin-top: 15px;
+            }
+            & a {
+                display: inline-block;
+                color: #909090;
+                font-size: 16px;
+                &:hover {
+                    padding-left: 8px;
+                    color: $blue;
+                }
+            }
+        }
+    }
+    
+    /*-- Contact Info --*/
+    & .footer-contact-info {
+        display: block;
+        width: 100%;
+        float: left;
+        & span {
+            font-size: 16px;
+            line-height: 25px;
+            display: block;
+            width: 100%;
+            float: left;
+            color: #b8b8b8;
+            & span {
+                width: 72px;
+            }
+        }
+    }
+    
+    /*-- Instagram --*/
+    & .footer-instagram{
+        margin-left: -5px;
+        margin-right: -5px;
+        max-width: 330px;
+        float: left;
+        & .instagram-item {
+            display: block;
+            float: left;
+            padding: 0 5px;
+            width: 33.3333%;
+            margin-bottom: 10px;
+            & a {
+                display: block;
+                position: relative;
+                &::before {
+                    content: "\f03e";
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    margin-left: -20px;
+                    margin-top: -20px;
+                    text-align: center;
+                    font-family: 'Fontawesome';
+                    font-size: 24px;
+                    color: $white;
+                    z-index: 9;
+                    opacity: 0;
+                }
+                &::after {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    background-color: $blue;
+                    content: "";
+                    opacity: 0;
+                }
+                &:hover {
+                    &::before {
+                        opacity: 1;
+                    }
+                    &::after {
+                        opacity: 0.7;
+                    }
+                }
+                & img {
+                    margin: 0;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+    /*-- Subscribe Form --*/
+    & .subscribe-form {
+        position: relative;
+        & input[type="email"] {
+            height: 50px;
+            width: 100%;
+            padding: 13px 21px;
+            line-height: 24px;
+            font-size: 14px;
+            font-weight: 300;
+            border: none;
+            color: #999999;
+            background-color: #272727;
+        }
+        & .button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 50px;
+            width: 50px;
+            border: none;
+            background-color: #272727;
+            color: #e3e3e3;
+            &:hover {
+                background-color: $blue;
+                color: $white;
+            }
+            & i {
+                font-size: 20px;
+                line-height: 50px;
+                display: block;
+            }
+        }
+    }
+}
+
+/*-- Footer Widget Two --*/
+.footer-widget-2 {
+    
+    /*-- Widget Title --*/
+    & .widget-title {
+        color: $white;
+        position: relative;
+        text-transform: capitalize;
+        margin-left: -2px;
+        padding-bottom: 13px;
+        margin-bottom: 25px;
+        font-size: 20px;
+        font-weight: 300;
+        &::before {
+            position: absolute;
+            left: 2px;
+            bottom: 0;
+            height: 2px;
+            width: 30px;
+            background-color: $blue;
+            content: "";
+        }
+    }
+    & p {
+        font-size: 14px;
+        line-height: 25px;
+        color: #898989;
+        margin-bottom: 26px;
+    }
+    
+    /*-- Links --*/
+    & ul {
+        & li {
+            & + li {
+                margin-top: 15px;
+            }
+            & a {
+                display: inline-block;
+                color: #898989;
+                font-size: 14px;
+                &:hover {
+                    padding-left: 8px;
+                    color: $blue;
+                }
+            }
+        }
+    }
+    
+    /*-- Recent Twitter --*/
+    & .recent-twitter {
+        & li {
+            color: #898989;
+            border-bottom: 1px solid #484848;
+            padding-bottom: 12px;
+            &:last-child {
+                border-bottom: 0px solid transparent;
+                padding-bottom: 0;
+            }
+            & + li {
+                margin-top: 12px;
+            }
+            & a {
+                display: inline-block;
+                color: #21b3ff;
+                &:hover {
+                    padding-left: 0;
+                    color: #21b3ff;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+/*-- Footer Bottom --*/
+.footer-bottom {
+    padding: 20px 0;
+}
+
+/*-- Copyright --*/
+.copyright {
+    & p {
+        color: #b0b0b0;
+        font-size: 12px;
+        line-height: 30px;
+        & a {
+            color: inherit;
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+}
+
+/*-- Copyright Two --*/
+.copyright-two {
+    @media #{$large-mobile}{
+        text-align: center !important;
+    }
+    & p {
+        color: $body-color;
+        font-size: 12px;
+        line-height: 30px;
+        & a {
+            color: inherit;
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+}
+
+/*-- Footer Menu --*/
+.footer-menu {
+    @media #{$large-mobile}{
+        text-align: center !important;
+    }
+    & nav {
+        display: inline-block;
+        vertical-align: top;
+        & ul {
+            & li {
+                display: block;
+                float: left;
+                margin-right: 30px;
+                &:last-child {
+                    margin-right: 0px;
+                }
+                & a {
+                    color: $body-color;
+                    font-size: 12px;
+                    line-height: 30px;
+                    font-style: italic;
+                    font-family: $open-sans;
+                    color: $body-color;
+                    &:hover {
+                        color: $blue;
+                    }
+                }
+            }
+        }
+    }
+}

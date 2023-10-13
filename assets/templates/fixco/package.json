@@ -1,0 +1,17 @@
+{
+  "name": "Fixco",
+  "version": "1.0.0",
+  "description": "This is fixco html template",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass scss/style.scss style.css -w"
+  },
+  "author": "DevItems",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.8.3"
+  },
+  "dependencies": {
+    "live-server": "^1.2.0"
+  }
+}

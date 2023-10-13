@@ -1,0 +1,132 @@
+/*----------------------------------------*/
+/*  07. Pricing CSS
+/*----------------------------------------*/
+/*Pricing Section CSS*/
+.pricing-table{
+    margin-top: -100px;
+}
+/*Pricing Tab CSS*/
+.pricing-tab{
+    text-align: center;
+    margin-top: 55px;
+    //Responsive
+    @media #{$tablet-device}{
+        margin-top: 40px;
+    }
+    @media #{$large-mobile}{
+        margin-top: 35px;
+    }
+    & ul{
+        & li{
+            display: inline-block;
+            //Responsive
+            @media #{$large-mobile}{
+                margin-bottom: 10px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+            & a{
+                display: inline-block;
+                padding: 7px 25px;
+                background-color: transparent;
+                border: 1px solid #b7b7b7;
+                border-radius: 50px;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 24px;
+                color: $heading-color;
+                margin: 0 7px;
+                &.active, &:hover{
+                    background-color: $heading-color;
+                    color: $white;
+                    border-color: $heading-color;
+                }
+            }
+        }
+    }  
+}
+
+/*Pricing Table CSS*/
+.single-pricing-table {
+	text-align: center;
+	background-color: #f0ffea;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+	padding: 30px;
+    transition: all 0.3s ease-in-out;
+    //Responsive
+    @media #{$desktop-device}{
+        padding: 15px;
+    }
+    & .price-head{
+        & h3{
+            margin-bottom: 5px;
+        }
+        & h4{
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 0;
+            line-height: 1;
+        }
+    }
+    & .price-body {
+        margin: 30px 0;
+        & ul{
+            padding: 25px 0;
+            border-top: 1px solid #d5f7c7;
+            border-bottom: 1px solid #d5f7c7;
+            & li{
+                display: block;
+                margin-top: 15px;
+                line-height: 1.6;
+                font-size: 15px;
+                font-weight: 400;
+                color: #4d4d4d;
+                &:first-child{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    & .price-foot{
+        & a{
+            display: inline-block;
+            padding: 7px 25px;
+            background-color: $heading-color;
+            border-radius: 50px;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 24px;
+            color: $white;
+            &:hover{
+                background-color: $theme-color;
+            }
+        }
+    }
+    &:hover{
+        box-shadow: 0 4px 18px 0 rgba(85, 85, 85, 0.2);
+    }
+}
+/*-- Become An Author CSS --*/
+.become-an-author-content{
+    text-align: center;
+    & p{
+        font-size: 20px;
+        line-height: 30px;
+        color: $heading-color;
+        font-weight: 400;
+        max-width: 950px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+    & a{
+        font-size: 24px;
+        line-height: 1;
+        font-weight: 700;
+        color: $heading-color;
+        text-decoration: underline;
+        &:hover{
+            color: $theme-color;
+        }
+    }
+}

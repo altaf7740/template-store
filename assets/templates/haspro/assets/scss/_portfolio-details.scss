@@ -1,0 +1,76 @@
+/*----------------------------------------*/
+/*  + Portfolio Details
+/*----------------------------------------*/
+
+.ht-portfolio-details-one {}
+
+/*-- Image --*/
+.ht-portfolio-details-image-one {
+    & img {
+        margin-bottom: 30px;
+        max-width: 100%;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    & > .row {
+        & > [class*="col-"] {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+/*-- Content --*/
+.ht-portfolio-details-content-one {}
+.ht-portfolio-details-desc-one {
+    & .title {
+        font-size: 24px;
+        font-weight: 500;
+        color: $heading-color-light;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    & p {
+        font-size: 16px;
+        line-height: 28px;
+        font-family: $poppins;
+        color: $body-color-light;
+        margin-bottom: 28px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+/*-- Details Info --*/
+.ht-portfolio-details-info-one {
+    & .title {
+        font-size: 24px;
+        font-weight: 500;
+        color: $heading-color-light;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    & ul {
+        & li {
+            font-size: 16px;
+            line-height: 32px;
+            font-family: $poppins;
+            color: $body-color;
+            font-weight: 300;
+            & span {
+                font-weight: 500;
+                margin-right: 5px;
+            }
+            & a {
+                margin-right: 5px;
+                &:hover {
+                    color: $red;
+                }
+                & i {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

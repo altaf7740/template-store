@@ -1,0 +1,91 @@
+// Blog Style
+.space_bottom {
+    margin-bottom: -50px;
+}
+
+.blog {
+    &__thumb {
+        a {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    &__content {
+        margin-top: 15px;
+        .meta {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li {
+                color: #252525;
+                display: inline-block;
+                font-size: 13px;
+                font-weight: 400;
+                letter-spacing: 0.2px;
+                list-style: outside none none;
+                margin-right: 23px;
+                position: relative;
+                a {
+                    color: #252525;
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+                &::before {
+                    content: "-";
+                    position: absolute;
+                    right: -17px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                &:last-child::before {
+                    content: none;
+                }
+            }
+        }
+        h3 {
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 33px;
+            margin: 0 0 15px;
+            overflow-wrap: break-word;
+            @media #{$sm-layout} {
+                font-size: 18px;
+                margin: 0 0 8px;
+            }
+            a {
+                color: #252525;
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        a {
+            &.blog_btn {
+                color: #191919;
+                display: inline-block;
+                font-size: 15px;
+                font-weight: 500;
+                padding-left: 46px;
+                position: relative;
+                &:hover {
+                    opacity: 0.7;
+                }
+                &::before {
+                    background: #454545 none repeat scroll 0 0;
+                    content: "";
+                    height: 1px;
+                    left: 0;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 30px;
+                }
+            }
+        }
+    }
+}

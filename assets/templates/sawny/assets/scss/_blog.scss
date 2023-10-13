@@ -1,0 +1,155 @@
+/*--
+    14. Blog Css
+------------------------------*/
+.single-latest-blog {
+    & .latest-blog-image {
+        & a {
+            display: block;
+            & img {
+                width: 100%;
+            }
+        }
+    }
+    & .latest-blog-contents {
+        padding: 25px 30px;
+        background: #f1f1ff;
+        border-radius: 0 0 10px 10px;
+        
+        & h4 {
+            font-weight: 600;
+        }
+        & p {
+            margin-bottom: 10px;
+        }
+        & .read-more {
+            color: $theme-color;
+            font-weight: 600;
+        }
+    }
+    
+}
+
+.details-contents-wrap {
+    background: #f1f1ff;
+    padding: 35px 40px;
+    border-radius: 0 0 10px 10px;
+    @media #{$large-mobile}{
+        padding: 15px 30px;
+    }
+    & h3 {
+        font-weight: 600;
+        margin-bottom: 5px;
+        @media #{$small-mobile}{
+            font-size: 20px;
+        }
+    }
+}
+.blog-marketing-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    @media #{$large-mobile}{
+        flex-direction: column;
+    }
+}
+.share-socail {
+    display: flex;
+    @media #{$large-mobile}{
+        margin-top: 15px;
+    }
+    & ul {
+        display: flex;
+        & li {
+            margin-left: 20px;
+        }
+    }
+}
+/*-- 
+     Comment CSS
+-------------------------------*/
+.comment-wrap h3 {
+  font-size: 24px;
+  line-height: 1;
+  margin-bottom: 30px; 
+}
+
+/*-- Comment List --*/
+.comment-list {
+  overflow: hidden; 
+}
+
+.child-comment {
+  margin-left: 80px; 
+}
+@media #{$small-mobile} {
+    .child-comment {
+        margin-left: 0; 
+    }
+}
+
+/*-- Comment --*/
+.comments-area {
+    & > h4 {
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
+}
+.comment {
+  margin-bottom: 40px; 
+}
+.comment .image {
+    width: 90px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.comment .image img {
+  width: 100%; 
+}
+.comment .content {
+overflow: hidden; 
+}
+.comment .content h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.comment .content .time {
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 5px;
+}
+.comment .content .decs {
+  margin-top: 2px;
+}
+.comment .content .decs p {
+    font-size: 14px;
+    line-height: 26px;
+}
+form {
+    & input , textarea {
+        width: 100%;
+        border: 1px solid #d6d6ff;
+        background-color: transparent;
+        line-height: 30px;
+        padding: 7px 20px;
+        border-radius: 25px;
+        color: #666666;
+        font-size: 15px;
+        height: auto;
+    }
+    & textarea {
+        height: 240px;
+        border-radius: 15px;
+    }
+    
+}
+.send-btn {
+    border: $theme-color;
+    background: $theme-color;
+    color: $white;
+    &:hover {
+        color: $white;
+    }
+}

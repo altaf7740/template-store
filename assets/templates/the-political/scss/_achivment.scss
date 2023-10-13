@@ -1,0 +1,27 @@
+/*----------------------------------------*/
+/*  8.  Achivment Area
+/*----------------------------------------*/
+.achivment-area {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-image: url(img/bg/achivment.jpg);
+}
+.achivment-slider{}
+.single-achivment {
+    & img {
+        display: inline-block;
+        vertical-align: top;
+        margin-bottom: 24px;
+    }
+    & h4 {
+        font-size: 20px;
+        font-weight: 600;
+        color: $color-white;
+    }
+    & p {
+        font-weight: 300;
+        color: $color-white;
+    }
+}

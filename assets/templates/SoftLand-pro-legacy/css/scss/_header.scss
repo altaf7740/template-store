@@ -1,0 +1,98 @@
+// main: ../style.scss
+
+/*--------------------------------------------------------------
+# Header Section
+--------------------------------------------------------------*/
+
+.hero-section {
+	background: linear-gradient(to right, rgba(39, 70, 133, 0.8) 0%, rgba(61, 179, 197, 0.8) 100%), url(../img/hero-bg.jpg);
+	position: relative;
+	
+	.wave {
+		width: 100%;
+		overflow: hidden;
+		position: absolute;
+		z-index: 1;
+		bottom: -150px;
+		@media screen and (max-width: 992px) {
+			bottom: -180px;
+		}
+		svg {
+			width: 100%;
+		}
+  }
+  
+	&, & > .container > .row {
+		height: 100vh;
+		min-height: 880px;
+  }
+  
+	&.inner-page {
+		height: 60vh;
+		min-height:0;	
+		.hero-text {
+      transform: translateY(-150px);
+      margin-top: -120px;
+      @media screen and (max-width: 992px) {
+        margin-top: -80px;
+      }
+		}
+	}
+	h1 {
+		font-size: 3.5rem;
+		color: #fff;
+		font-weight: 700;
+		margin-bottom: 30px;
+		@media screen and (max-width: 992px) {
+			font-size: 2.5rem;
+			text-align: center;
+		}
+	}
+	.hero-text-image {
+		@media screen and (max-width: 992px) {
+			margin-top: 4rem;
+		}
+	}
+	p {
+		font-size: 18px;
+		color: #fff;
+	}
+	.iphone-wrap {
+		position: relative;
+		@media screen and (max-width: 992px) {
+			text-align: center;
+		}
+		.phone-2, .phone-1 { 
+			position: absolute;
+			top: -50%;
+			overflow: hidden;
+			left: 0;
+			box-shadow: 0 15px 50px 0 rgba($black, .3);
+			border-radius: 30px;
+			@media screen and (max-width: 992px) {
+				position: relative;
+				top: 0;
+				max-width: 100%;
+			}
+		}
+		.phone-2, .phone-1 {
+			width: 250px;
+		}
+		.phone-1 {
+			@media screen and (max-width: 992px) {
+				margin-left: -150px;
+			}
+		}
+		.phone-2 {
+			margin-top: 50px;
+			margin-left: 100px;
+			width: 250px;
+			@media screen and (max-width: 992px) {
+				width: 250px;
+				position: absolute;
+				margin-top: 0px;
+				margin-left: 100px;
+			}
+		}
+	}
+}

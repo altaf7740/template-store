@@ -1,0 +1,122 @@
+/*----------------------------------------*/
+/*  + About
+/*----------------------------------------*/
+
+/*-- About Image --*/
+.ht-about-me-image {
+    & .image {
+        position: relative;
+        & img {
+            width: 100%;
+        }
+        & .social {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            background-repeat: no-repeat;
+            background-position: center top;
+            padding: 40px 70px 20px;
+            max-width: 344px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            @media #{$small-mobile}{
+                padding: 20px 50px 10px;
+            }
+            & a {
+                display: inline-flex;
+                margin: 0 12px;
+                color: $white;
+                @media #{$small-mobile}{
+                    margin: 0 10px;
+                }
+                &:hover {
+                    opacity: 0.8;
+                }
+                & i {
+                    display: block;
+                    font-size: 16px;
+                    line-height: 25px;
+                    @media #{$small-mobile}{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+/*-- About Content --*/
+.ht-about-me-content {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-left: 55px;
+    @media #{$tablet-device}{
+        padding-left: 15px;
+    }
+    @media #{$large-mobile}{
+        padding-left: 15px;
+    }
+    & .name {
+        width: 100%;
+        color: $dark-grey;
+        font-weight: 700;
+        text-transform: capitalize;
+        line-height: 1;
+        @media #{$small-mobile}{
+            font-size: 24px;
+        }
+    }
+    & .title {
+        width: 100%;
+        font-size: 16px;
+        color: $body-color;
+        margin-bottom: 21px;
+    }
+    & p {
+        font-size: 16px;
+        line-height: 30px;
+        font-family: $poppins;
+        margin-bottom: 30px;
+    }
+}
+/*-- About Skill --*/
+.ht-single-skill-one {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 28px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    & h5 {
+        font-family: $poppins;
+        color: $heading-color;
+        font-size: 14px;
+        text-transform: capitalize;
+        line-height: 1;
+        margin-bottom: 13px;
+    }
+    & .progress {
+        height: 8px;
+        background-color: #e2e2e2;
+        width: 100%;
+        overflow: visible;
+        border-radius: 0px;
+        & .progress-bar {
+            height: 100%;
+            position: relative;
+            background-color: $red;
+            &::before {
+                position: absolute;
+                content: attr(data-percent);
+                right: 0;
+                top: -26px;
+                font-family: $poppins;
+                color: $heading-color;
+                font-size: 14px;
+                line-height: 1;
+            }
+        }
+    }
+}

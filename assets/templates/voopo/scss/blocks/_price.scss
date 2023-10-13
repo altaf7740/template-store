@@ -1,0 +1,110 @@
+/*-----------------------
+	Price Styles
+-------------------------*/
+
+.pricing {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 0 10px rgba(1, 15, 10, 0.1);
+    margin-top: 40px;
+    padding: 58px 0 35px;
+    text-align: center;
+    &.active {
+        .content {
+            span {
+                &::before {
+                    background: linear-gradient(-90deg, #feffff, #e8f6ff);
+                }
+            }
+            ul {
+                li {
+                    &::before {
+                        background-image: linear-gradient(to right, rgba(248, 217, 214, 0), rgba(248, 217, 214, 0.8) 40%, rgba(248, 217, 214, 0.8) 60%, rgba(248, 217, 214, 0));
+                    }
+                }
+            }
+        }
+    }
+    .content {
+        ul {
+            list-style: outside none none;
+            margin: 0 0 17px;
+            padding: 0;
+            li {
+                color: #010f54;
+                font-size: 16px;
+                font-weight: 500;
+                padding: 13px 0;
+                position: relative;
+                &::before {
+                    background-image: linear-gradient(to right, rgba(233, 246, 255, 0), rgba(233, 246, 255, 0.8) 40%, rgba(233, 246, 255, 0.8) 60%, rgba(233, 246, 255, 0));
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: 84% auto;
+                    content: "";
+                    height: 0.125rem;
+                    left: 0;
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                }
+                &:first-child::before {
+                    display: none;
+                }
+            }
+        }
+        span {
+            color: #010f54;
+            font-size: 18px;
+            font-weight: 700;
+            position: relative;
+            z-index: 1;
+            &::before {
+                background: linear-gradient(-90deg, #fbfdff, #e9f6ff);
+                border-radius: 100%;
+                content: "";
+                height: 70px;
+                left: 50%;
+                position: absolute;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                width: 70px;
+                z-index: -1;
+            }
+        }
+        .price {
+            margin-bottom: 42px;
+            margin-top: 44px;
+            p {
+                color: #010f54;
+                font-size: 40px;
+                font-weight: 500;
+                line-height: 47px;
+                sup {
+                    left: 8px;
+                    top: -7px;
+                }
+                sub {
+                    font-size: 16px;
+                    left: -8px;
+                }
+            }
+        }
+    }
+}
+
+// Responsive Css
+@media #{$xx-layout} {}
+
+@media #{$xlg-layout} {}
+
+@media #{$lg-layout} {}
+
+@media #{$md-layout} {}
+
+@media #{$sm-layout} {
+    
+}
+
+@media #{$xs-layout} {}
+
+@media #{$xxs-layout} {}

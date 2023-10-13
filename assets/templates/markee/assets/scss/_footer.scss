@@ -1,0 +1,205 @@
+/*----------------------------------------*/
+/*  17. Footer CSS
+/*----------------------------------------*/
+.footer-section {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+    
+    &::before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background-color: $black;
+        opacity: 0.85;
+        z-index: -1;
+    }
+}
+
+/*-- Footer Widget --*/
+.footer-widget {
+    // Title
+    & .title {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 600;
+        color: $body-color-light;
+        white-space: nowrap;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        //Responsive
+        @media #{$small-mobile}{
+            margin-bottom: 15px;
+        }
+        & .text {
+            margin-right: 10px;
+        }
+        & .shape {
+            height: 5px;
+            display: block;
+            background-color: rgba($white, 0.3);
+            flex: 1 0 auto;
+        }
+    }
+    & img {
+        margin-bottom: 25px;
+    }
+    & p {
+        font-size: 14px;
+        color: $body-color-light;
+        font-weight: 300;
+        max-width: 280px;
+        line-height: 23px;
+        // Responsive
+        @media #{$large-mobile}{
+            width: auto;
+        }
+    }
+    & ul {
+        & li {
+            color: $body-color-light;
+            display: flex;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 300; 
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            
+            & i {
+                margin-right: 15px;
+                line-height: 28px;
+                font-size: 14px;
+            }
+            & span {
+                overflow: hidden;
+            }
+            & a {
+                display: block;
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}
+/*-- Footer Social --*/
+.footer-social {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10px;
+    //Responsive
+    @media #{$large-mobile}{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    & p{
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+        font-family: $heading-font;
+        color: $body-color-light;
+        margin-bottom: 0;
+        margin-right: 25px;
+        //Responsive
+        @media #{$large-mobile}{
+            margin-bottom: 0px;
+        }
+        @media #{$small-mobile}{
+            margin-bottom: 0px;
+            margin-right: 20px;
+        }
+        @media #{$extra-small-mobile}{
+            display: block;
+            width: 100%;
+        }
+    }
+    & a {
+        text-align: center;
+        border-radius: 50px;
+        color: $white;
+        margin-right: 18px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover {
+            color: $theme-color;
+        }
+        & i {
+            display: block;
+            font-size: 22px;
+            line-height: 24px;
+        }
+    }
+}
+/*-- Footer News Letter --*/
+.footer-newsletter {
+    display: flex;
+    flex-wrap: wrap;
+    & input {
+        width: 100%;
+        max-width: 270px;
+        border: 1px solid #8e8e8e;
+        background-color: transparent;
+        color: $body-color-light;
+        line-height: 24px;
+        padding: 7px 15px;
+        font-size: 14px;
+        font-weight: 400;
+        height: 40px;
+        //Responsive
+        @media #{$small-mobile}{
+            max-width: 100%;
+        }
+    }
+    & button {
+        background-color: #c7c7c7;
+        color: $heading-color;
+        margin-top: 25px;
+        
+    }
+}
+
+.call-us{
+    & p{
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+        font-family: $heading-font;
+        color: $body-color-light;
+        margin-bottom: 10px;
+    }
+}
+
+/*-- Footer Bottom --*/
+.footer-bottom {
+    
+}
+/*-- Copyright --*/
+.copyright {
+    padding: 20px 0;
+    border-top: 1px solid #9d9d9d;
+    & p {
+        line-height: 30px;
+        color: $body-color-light;
+        font-size: 14px;
+        //Responsive
+        @media #{$large-mobile}{
+            font-size: 13px;
+        }
+        & a {
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+}

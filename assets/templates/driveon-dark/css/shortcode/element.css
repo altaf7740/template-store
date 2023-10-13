@@ -1,0 +1,112 @@
+/*-------------------------- 
+	Toggles & Accordions Style
+--------------------------*/
+.panel-group{}
+.panel-group .panel {
+  border: medium none;
+  border-radius: 0;
+  box-shadow: none;
+}
+.panel-group .panel + .panel {
+  margin-top: 20px;
+}
+.panel-group .panel-heading {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0;
+}
+.panel-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+}
+.panel-title a {
+  background: rgba(0, 0, 0, 0) url("../../img/shape/collapse/collapse.png") no-repeat scroll left 16px center;
+  color: #333333;
+  display: block;
+  line-height: 30px;
+  padding: 10px 16px 10px 66px;
+}
+.panel-title a[aria-expanded="true"] {
+  background-color: #dec839;
+  background-image: url("../../img/shape/collapse/collapse-active.png");
+  color: #fff;
+}
+.panel-body {
+  border: 1px solid #dec839 !important;
+  padding: 20px 30px 20px 70px;
+}
+.panel-body p {}
+/*-------------------------- 
+	Tabs Style
+--------------------------*/
+.nav-tabs {
+  border: none;
+}
+.nav-tabs > li {
+  margin: 0;
+}
+.nav-tabs > li > a {
+  border: medium none;
+  border-radius: 0;
+}
+.nav-tabs > li > a:hover {
+  background-color: transparent;
+  border-color: #eee #eee #ddd;
+  color: #333;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  background-color: #dec839;
+  border: medium none;
+  color: #fff;
+}
+.nav-var-tabs {
+  float: left;
+}
+.nav-var-tabs > li {
+  display: block;
+  float: none;
+}
+.nav-var-tabs > li > a {
+  margin: 0;
+}
+.tab-content {
+  overflow: hidden;
+}
+.tab-content > .tab-pane {}
+.tab-content > .tab-pane > .tab-body {
+  border: 1px solid #dec839;
+  padding: 10px 15px;
+}
+/*-------------------------- 
+	Progress Bar Style
+--------------------------*/
+.progress-text {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #222;
+}
+.progress-text span{}
+.progress {
+  background-color: #eee;
+  border-radius: 0;
+  box-shadow: none;
+  height: 10px;
+}
+.progress-bar {
+  background-color: #dec839;
+  box-shadow: none;
+}
+.progress-bar.progress-bar-success {
+  background-color: #5cb85c;
+}
+.progress-bar.progress-bar-info {
+  background-color: #5bc0de;
+}
+.progress-bar.progress-bar-warning {
+  background-color: #f0ad4e;
+}
+.progress-bar.progress-bar-danger {
+  background-color: #d9534f;
+}

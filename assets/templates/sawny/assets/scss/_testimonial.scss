@@ -1,0 +1,159 @@
+/*--
+    12. Testimonial Css
+------------------------------*/
+
+.testimonial-bg {
+    background: url("../images/bg/testimonial.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.section-mb-inner {
+    margin-bottom: -50px;
+}
+.single-testimonial {
+    padding: 30px 45px 45px 45px;
+    background: #f1f1ff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-left: 35px;
+    margin-right: 30px;
+    margin-top: 70px;
+    & .image {
+        margin-top: -100px;
+    }
+    @media #{$small-mobile}{
+        padding: 30px 25px 25px 25px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+.single-testimonial-2 {
+    display: flex;
+    padding: 0 15px 0 15px;
+    
+    @media #{$small-mobile}{
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    & .testimonial-author-2 {
+        min-width: 130px;
+    }
+    & .testimonial-wrap {
+        margin-left: 15px;
+        @media #{$small-mobile}{
+            margin-left: 0px;
+            margin-top: 20px;
+        }
+        & .testimonial-dec {
+            margin-top: 0;
+        }
+        & .outhor-info {
+            & h4 {
+                white-space: nowrap;
+                font-weight: 600;
+                margin-bottom: 0px;
+            }
+        }
+        
+    }
+    
+    @media #{$small-mobile}{
+        padding: 30px 25px 25px 25px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+.testimonial-author {
+    display: flex;
+    align-items: self-end;
+    
+    & .outhor-info {
+        margin-left: 20px;
+        margin-bottom: 20px;
+        & h4 {
+            white-space: nowrap;
+            font-weight: 600;
+            margin-bottom: 0px;
+        }
+    }
+    @media #{$tablet-device,$large-mobile}{
+        & .outhor-info {
+            & h4 {
+                font-size: 16px;
+            }
+        }
+    }
+    @media #{$small-mobile}{
+        flex-direction: column;
+        align-items: center;
+        & .outhor-info {
+            margin-left: 0px;
+            margin-bottom: 0px;
+            margin-top: 20px;
+        }
+    }
+    
+}
+.testimonial-dec {
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.testimonial-slider {
+    & .in-sliderarrow-arrow {
+        position: absolute;
+        top: 50%;
+        z-index: 99;
+        border: none;
+        color: $theme-color;
+        background: none;
+        font-size: 28px;
+        &.in-sliderarrow-prev {
+            left: -50px;
+        }
+        &.in-sliderarrow-next {
+            right: -50px;
+        }
+        
+        @media #{$laptop-device,$desktop-device,$tablet-device,$large-mobile}{
+            &.in-sliderarrow-prev {
+                left: -0px;
+            }
+            &.in-sliderarrow-next {
+                right: -0px;
+            }
+        }
+        
+        @media #{$small-mobile}{
+            opacity: 0;
+        }
+    }
+}
+
+/*--
+    13. brand Css
+----------------------------*/
+
+.single-brand {
+    text-align: center;
+}
+.brand-active {
+    & .in-sliderarrow-arrow {
+        position: absolute;
+        top: 50%;
+        z-index: 99;
+        border: none;
+        color: $theme-color;
+        background: none;
+        font-size: 28px;
+        &.in-sliderarrow-prev {
+            left: -50px;
+        }
+        &.in-sliderarrow-next {
+            right: -50px;
+        }
+        
+    }
+}

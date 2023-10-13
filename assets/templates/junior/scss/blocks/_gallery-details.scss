@@ -1,0 +1,123 @@
+@import "../variables";
+@import "../mixins";
+
+
+/*========================
+    Gallery Details
+===========================*/
+
+.gallery__inner h2 {
+    font-size: 36px;
+    margin-bottom: 23px;
+    margin-top: 30px;
+    text-transform: capitalize;
+    font-family: $heading-font;
+}
+.gallery__inner p {
+    color: #666666;
+    line-height: 23px;
+}
+.gallery__new {
+    display: flex;
+    margin-bottom: 31px;
+    margin-top: 38px;
+}
+.gallery__list li a {
+    color: #666666;
+    display: block;
+    padding-right: 11%;
+    position: relative;
+}
+.gallery__list {
+    flex-basis: 45%;
+}
+.gallery__sm__thumb {
+    flex-basis: 55%;
+}
+.gallery__sm__thumb img {
+    width: 100%;
+}
+.gallery__list li {
+    padding-left: 20px;
+    position: relative;
+}
+.gallery__list li + li {
+    padding-top: 13px;
+}
+.gallery__list li::before {
+    background: #646464 none repeat scroll 0 0;
+    content: "";
+    height: 8px;
+    left: 0;
+    position: absolute;
+    top: 53%;
+    transform: rotate(137deg);
+    width: 8px;
+}
+.gallery__details__wrapper p {
+    line-height: 23px;
+}
+
+.gallery__details__wrapper h4 {
+    color: #444444;
+    font-family: $heading-font;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+.gallery__share {
+    align-items: center;
+    display: flex;
+    margin-top: 30px;
+}
+.gallery__share span {
+    color: #959595;
+    display: inline-block;
+    font-size: 16px;
+    padding-right: 19px;
+    text-transform: capitalize;
+}
+
+.gallery__inner img {
+    width: 100%;
+}
+.gallery__details__wrapper.with--rightbar {
+    padding-right: 50px;
+}
+
+
+
+
+
+@media #{$sm-layout}{
+
+    .gallery__new {
+      flex-wrap: wrap;
+    }
+    .gallery__sm__thumb {
+      flex-basis: 100%;
+    }
+    .gallery__list {
+      flex-basis: 100%;
+      margin-bottom: 20px;
+    }
+    .gallery__list li a {
+      padding-right: 4%;
+    }
+
+}
+
+@media #{$xs-layout}{
+
+    .gallery__inner h2 {
+      font-size: 25px;
+    }
+    .gallery__details__wrapper.with--rightbar {
+      padding-right: 0;
+    }
+    .gallery__list li a {
+      padding-right: 0;
+    }
+
+}

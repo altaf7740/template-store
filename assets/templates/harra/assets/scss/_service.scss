@@ -1,0 +1,89 @@
+/*--
+    04. Service Css
+-------------------------------------*/ 
+
+.bg_image--01 {
+    background-image: url(../images/bg/bg-image-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.service-7 {
+    display:  flex;
+    margin-top: 0;
+    position:  relative;
+    z-index: 1;
+    padding: 40px 20px;
+    border-radius: 8px;
+
+    @media #{$large-mobile} {
+        padding: 40px 10px;
+    }
+    .icons {
+        margin-right: 33px;
+        @media #{$large-mobile} {
+            margin-right: 20px;
+        }
+        i {
+            color:  $theme-color;
+            font-size: 40px;
+            transition: 0.4s;
+        }
+    }
+    .content{
+        h4 {
+            color:  #333333;
+            font-size: 20px;
+            font-weight:  600;
+            text-transform:  uppercase;
+            margin-bottom: 8px;
+            transition: 0.4s;
+
+            @media #{$large-mobile} {
+                font-size: 16px;
+            }
+        }
+        p {
+            color:  #333333;
+            font-size:  14px;
+            line-height: 25px;
+            margin: 0;
+            transition: 0.4s;
+        }
+    }
+    &::before {
+        background-image: url(../images/serviece/servicebg.png);
+        position:  absolute;
+        content:  "";
+        width:  100%;
+        height:  100%;
+        background-repeat:  no-repeat;
+        z-index: -1;
+        background-position:  center center;
+        top: 0;
+        left: 0;
+        border-radius: 8px;
+        transition:  0.4s ease-in-out;
+        opacity: 0;
+        background-size: cover;
+    }
+    &:hover::before{
+        opacity: 1;
+    }
+    &:hover .content h4 ,
+    &:hover .content p ,
+    &:hover .icons i {
+        color: #fff;
+    }
+
+
+    &.political-service{
+        .icons {
+            i {
+                color:  $theme-color;
+            }
+        }
+    }
+}
+
+

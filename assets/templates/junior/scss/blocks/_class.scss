@@ -1,0 +1,140 @@
+@import "../variables";
+@import "../mixins";
+
+
+/*========================
+	Classa Area
+===========================*/
+
+
+
+.junior__classes{
+    margin-top: 40px;
+    text-align: center;
+    box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.1);
+    .classes__thumb{
+        a{
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .classes__inner{
+        position: relative;
+        .classes__icon{
+            left: 50%;
+            position: absolute;
+            top: -50px;
+            transform: translateX(-50%);
+            span{
+                color: #000;
+                font-size: 24px;
+                font-weight: 700;
+                left: 50%;
+                position: absolute;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%); 
+            }
+        }
+        .class__details{
+            padding-top: 46px;
+            padding-bottom: 34px;
+            padding-top: 46px;
+            h4{
+                a{
+                    color: #444444;
+                    display: block;
+                    font-size: 24px;
+                    font-weight: 700;
+                    margin-bottom: 25px;
+                    padding-bottom: 10px;
+                    position: relative;
+                    transition: 0.3s; 
+                    font-family: $heading-font;
+                    &::before {
+                        background: #ddd none repeat scroll 0 0;
+                        bottom: 0;
+                        content: "";
+                        height: 1px;
+                        left: 50%;
+                        position: absolute;
+                        transform: translateX(-50%);
+                        width: 100px;
+                    }
+                    &:hover{
+                        color: $theme-color;
+                    }
+
+                }
+            }
+            .class__time{
+                margin-bottom: 24px;
+                li{
+                    color: #666666;
+                    font-size: 16px; 
+                    & + li{
+                        margin-top: 2px;
+                    }
+                }
+            }
+            .class__btn{
+                a{
+                  &.dcare__btn--2{
+                    border: 1px solid #dddddd;
+                    border-radius: 5px;
+                    color: #777777;
+                    display: inline-block;
+                    font-size: 15px;
+                    font-weight: 700;
+                    height: 40px;
+                    line-height: 37px;
+                    padding: 0 30px;
+                    text-transform: capitalize;
+                    transition: all 0.5s ease 0s;
+                    &:hover{
+                        background: #89d700 none repeat scroll 0 0;
+                        border: 1px solid #89d700;
+                        color: #fff;
+                    }
+                  }  
+                }
+            }
+
+        }
+    }  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media #{$sm-layout}{
+
+
+.row.classes__wrap.activation__one{
+  margin-left: 0;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+

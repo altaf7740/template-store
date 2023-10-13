@@ -1,0 +1,101 @@
+/* Large desktop :1920px. */
+@media (min-width: 1920px) {
+    .container{width: 1230px}  
+    .tech-img img, .news-img img{width: 100%}
+    .welcome-area::after {width: 59.5%}
+    .welcome-area::before {right: 38.5%}
+}
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1169px) {
+    .container{width: 970px}
+    .banner-content h1 {font-size: 50px; margin-bottom: 10px}
+    .banner-content p {font-size: 16px; margin-bottom: 10px; padding: 0px 40px}
+    .middle-right ul li:last-child, .single-footer-widget a:nth-child(7), .single-footer-widget a:nth-child(6){display: none}
+    .single-process h3 a {font-size: 16px}
+    .process-icon {margin-right: 10px}
+    .middle-right ul li:nth-child(2) {margin-right: 0}
+    .service-icon img {margin-top: 35px}
+    .repair-area-wrapper::after {right: -66px; top: 120px; transform: rotate(-13.5deg)}
+    .testimonial-text-slider {padding: 0 20px 4px}
+    .single-footer-widget a:nth-child(4){margin-right: 10px}
+    .social-share{display: none}
+    .opening-content {padding: 50px 0 58px}
+    .opening-content, .opening-img, .opening-img img{height: 425px}
+
+}
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container{width:750px} 
+    .middle-right ul li:last-child, .single-footer-widget a:nth-child(7), .single-footer-widget a:nth-child(6), .middle-right, .opening-img{display: none}
+    .middle-right ul li:nth-child(2) {margin-right: 0}
+    .main-menu {display: block; text-align: center}
+    .section-title h2 {font-size: 30px}
+    .welcome-area::before {right: 32%}
+    .service-area .col-md-4:nth-child(5), service-area .col-md-4:nth-child(6){margin-bottom: 50px;}
+    .repair-area-wrapper::after {right: -93px; top: 110px; transform: rotate(-17.4deg)}
+    .single-footer-widget a:nth-child(4){margin-right: 10px}
+    .mean-container .mean-bar {top: -86px}
+    .slider-content p {padding: 0 50px}
+    .single-post-meta{padding-right: 110px}
+    .detail-area .contact-area a{margin-bottom: 50px;}
+    .slick-dots {top: 370px}
+    .two .wel-img-sub {right: 15%}
+    .choose-area.bg-light{padding-bottom: 65px}
+    .news-sidebar-widgets{padding-top: 50px}
+    .opening-content {width: 100%}
+
+}
+ 
+/* small mobile :320px. */
+@media (max-width: 767px) {
+    .container {width:300px}
+    .slider-area {height: 470px;}
+    .single-slide {background-position: 84% center;}
+    .login-toggle-btn > a {float: inherit; display: block}
+    .slider-content p, .welcome-area::after, .welcome-area::before, .single-post-meta-wrapper, .share{display: none}
+    .slider-content h2 {font-size: 30px}
+    .tech-img img, .faq-area::after, .news-img img, .memeber-img img, .sub-left, .sub-right, .sub-right > img, .opening-content, .opening-img {width: 100%}
+    .single-technical, .single-member, .single-pricing{margin-bottom: 30px}
+    .single-news, .single-footer-widget, .choose-img{margin-bottom: 50px}
+    .col-md-4:last-child .single-technical, .col-md-3:last-child .single-member, .col-md-4:last-child .single-news, .col-md-6 .single-footer-widget, .col-md-4:last-child .single-pricing{margin-bottom: 0}
+    .fun-content h1 {font-size: 20px}
+    .opening-content ul li {padding: 0 25px}
+    .fun-content h4 {font-size: 13px}
+    .process-img.mt-50 {margin-top: 0; margin-bottom: 40px}
+    .service-area .col-md-4:nth-child(5), .detail-area .contact-area a{margin-bottom: 50px;}
+    .repair-content h2 {font-size: 22px}
+    .repair-area-wrapper::after {right: -141px; top: 83px; transform: rotate(-41deg); width: 135%}
+    .faq-left{z-index: 9; position: relative; margin-bottom: 50px;}
+    .testimonial-text-slider {padding: 0 0px 4px}
+    .news-content h3 a {font-size: 17px}
+    .section-title h2 {font-size: 25px}
+    .content-wrapper {margin-top: -20px}
+    .author > img {margin-bottom: 20px; width: 100%}
+    .author {float: inherit; margin-right: 0}
+    ul.children_comment {padding-left: 30px;}
+    .one-page-arrow {bottom: 84px}
+    .technical-area.pt-100{padding-top: 0;}
+    .technical-area.service.pt-100{padding-top: 100px}
+    .single-technical.pb-70 {padding-bottom: 20px}
+    .single-checkout > p {padding: 0 10px}
+    .slick-dots {top: 320px}
+    .sin-opacity::after {height: 89px; width: 89px}
+    .welcome-area.two, .welcome-area .section-title {padding-top: 0}
+    .home-gallery-area .single-hg {width: 33.3333%}
+    .news-sidebar-widgets, .sub-right > img{padding-top: 50px}
+    .choose-content h3 {font-size: 16px}
+}
+ 
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {width:450px}
+    .single-footer-widget a:nth-child(7), .single-footer-widget a:nth-child(6){display: none}
+    .single-footer-widget a:nth-child(4){margin-right: 10px}
+    .author {float: left; margin-right: 20px}
+    .sin-opacity::after {left: -11%}
+    .repair-area-wrapper::after {top: 89px; transform: rotate(-26.2deg)}
+    .slick-dots {top: 290px}
+    .choose-content h3 {font-size: 24px}
+}

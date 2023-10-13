@@ -1,0 +1,830 @@
+/* Medium Layout: 1367px. */
+
+@media only screen and (min-width: 1025px) and (max-width: 1367px) {
+    /* Nav Section */
+    .nav-area {
+        padding: 0px;
+    }
+}
+
+/* Tablet Layout: 992px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+    /* Custom Typography */
+    .section-title-area-3 {
+        -webkit-transform: translate(-105px, 100%) rotate(-90deg);
+        -moz-transform: translate(-105px, 100%) rotate(-90deg);
+        -o-transform: translate(-105px, 100%) rotate(-90deg);
+        transform: translate(-105px, 100%) rotate(-90deg);
+    }
+    /* Nav Section */
+    .nav-area {
+        padding: 0px;
+        background-color: rgba(30, 30, 30, 0.94);
+    }
+    .navbar-nav {
+        width: 100%;
+    }
+    .navbar> .container .navbar-brand {
+        padding: 15px;
+    }
+    .navbar-nav > li {
+        width: 100%;
+        border-bottom: 1px solid rgba(30, 30, 30, 0.94);
+    }
+    .navbar-nav > li:last-child {
+        border-bottom: 0px;
+    }
+    .navbar-default .navbar-nav > li > a {
+        padding: 15px;
+    }
+    .navbar-default .navbar-nav >.active > a:after {
+        height: 40px;
+        width: 3px;
+        top: 15px;
+        left: 0px;
+    }
+    .dropdown-menu {
+        background-color: rgba(30, 30, 30, 0.94);
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block!important;
+        border-top: 1px solid #fff;
+        margin-top: 60px;
+    }
+    .navbar-header {
+        width: 100%;
+    }
+    .navbar-right {
+        display: none;
+    }
+    /* Team Section  */
+    .team-member:hover .team-body {
+        background-color: rgba(250, 250, 250, 0.71);
+        -webkit-transform: translateX(5px) rotateY(0deg);
+        -moz-transform: translateX(5px) rotateY(0deg);
+        -o-transform: translateX(5px) rotateY(0deg);
+        transform: translateX(5px) rotateY(0deg);
+    }
+    /* Service Single Page */
+    .project-team-slider .owl-item {
+        padding: 0px 90px;
+    }
+    /* Single Project Section */
+    .details-list li {
+        width: 100%;
+    }
+    /* Portfolio Page */
+    .portfolio-grid {
+        width: 31.71%;
+    }
+}
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 1020px) {
+    /* Utility Clesses */
+    .scroll-top {
+        display: none!important;
+    }
+    .section-title-area-1 {
+        margin: 55px 30px 25px;
+    }
+    .section-title-area-4 {
+        margin-bottom: 40px;
+    }
+    .inner-padding {
+        padding: 40px 0px;
+    }
+    .inner-padding2 {
+        padding: 40px 0px 70px;
+    }
+    .inner-padding3 {
+        padding: 40px 0px 0px;
+    }
+    .inner-padding4 {
+        padding: 0px 0px 40px;
+    }
+    .inner-padding5 {
+        padding: 70px 0px 40px;
+    }
+    .inner-padding6 {
+        padding: 0px 0px 70px;
+    }
+    .inner-padding7 {
+        padding: 70px 0px;
+    }
+    /* Nav Section */
+    .nav-area {
+        padding: 0px;
+        background-color: rgba(30, 30, 30, 0.94);
+    }
+    .navbar-nav {
+        width: 100%;
+    }
+    .navbar> .container .navbar-brand {
+        padding: 15px;
+    }
+    .navbar-nav > li {
+        width: 100%;
+        border-bottom: 1px solid rgba(30, 30, 30, 0.94);
+    }
+    .navbar-nav > li:last-child {
+        border-bottom: 0px;
+    }
+    .navbar-default .navbar-nav > li > a {
+        padding: 15px;
+    }
+    .navbar-default .navbar-nav >.active > a:after {
+        height: 40px;
+        width: 3px;
+        top: 15px;
+        left: 0px;
+    }
+    .dropdown-menu {
+        background-color: rgba(30, 30, 30, 0.94);
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block!important;
+        border-top: 1px solid #fff;
+        margin-top: 60px;
+    }
+    .navbar-header {
+        width: 100%;
+    }
+    /* Hero Section */
+    .hero-slider-inner.owl-carousel .owl-item img {
+        width: auto;
+        height: 100%;
+        -webkit-transform: translateX(-15%);
+        -moz-transform: translateX(-15%);
+        -o-transform: translateX(-15%);
+        transform: translateX(-15%);
+    }
+    /* Service Section */
+    .service-widget {
+        margin-bottom: 30px;
+    }
+    /* About Section */
+    .about-content {
+        padding: 30px;
+    }
+    /* Call To Action Section */
+    .action-caption p {
+        width: 100%;
+    }
+    /* Feature Section */
+    .single-item-tab {
+        margin-bottom: 25px!important;
+    }
+    /* Working Policy Section */
+    .section-title-area-3 {
+        width: 100%;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        margin-bottom: 30px;
+    }
+    .working-policy-inner {
+        padding: 30px;
+    }
+    /* Portfolio Section */
+    .portfolio-filter li {
+        margin: 0px 3px 15px;
+    }
+    .portfolio-item {
+        width: 33.33%;
+    }
+    .portfolio-item:hover .portfolio-caption-content {
+        bottom: 5px;
+        left: 5px;
+    }
+    .portfolio-caption-content h4 a {
+        font-size: 16px;
+        line-height: 16px;
+    }
+    /* Team Section */
+    .team-member {
+        margin-bottom: 30px;
+    }
+    .team-member:hover .team-header {
+        -webkit-transform: translateX(-90px);
+        -moz-transform: translateX(-90px);
+        -o-transform: translateX(-90px);
+        transform: translateX(-90px);
+    }
+    .team-member:hover .team-body {
+        opacity: 1;
+        background-color: rgba(250, 250, 250, 0.71);
+        -webkit-transform: translateX(100px) rotateY(0deg);
+        -moz-transform: translateX(100px) rotateY(0deg);
+        -o-transform: translateX(100px) rotateY(0deg);
+        transform: translateX(100px) rotateY(0deg);
+    }
+    /* Testimonial Section */
+    .client-img {
+        transform: translateY(25%);
+    }
+    /* Blog Section */
+    .post-row {
+        margin-bottom: 30px;
+    }
+    .post-feature {
+        text-align: center;
+    }
+    /* Footer Section */
+    .footer-content ul {
+        margin: 30px 0px;
+    }
+    .instagram-list li {
+        width: 26%;
+    }
+    .address-list li {
+        margin-bottom: 15px;
+    }
+    /* Home 2 Service Section */
+    .service-icon:before {
+        width: 70px;
+        top: 50%;
+        left: 34%;
+    }
+    .service-icon:after {
+        width: 70px;
+        top: 50%;
+        right: 34%;
+    }
+    /* Pricing Section */
+    .pricing-package {
+        margin-top: 70px;
+    }
+    /* Our Mission Section */
+    .skills-right {
+        margin-top: 30px;
+    }
+    /*  Service Page 1 */
+    .provide-area-inner {
+        padding-top: 80px;
+    }
+    /*  Service Page 2 */
+    .service-tab-icon:before {
+        width: 70px;
+        top: 50%;
+        left: 34%;
+    }
+    .service-tab-icon:after {
+        width: 70px;
+        top: 50%;
+        right: 34%;
+    }
+    /* Service Single Page */
+    .project-item {
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+        -webkit-transform: translate(0px) rotate(0deg);
+        -moz-transform: translate(0px) rotate(0deg);
+        -o-transform: translate(0px) rotate(0deg);
+        transform: translate(0px) rotate(0deg);
+    }
+    .project-item-tab {
+        float: none;
+    }
+    .project-team-slider .owl-item {
+        padding: 0px 55px;
+    }
+    /* Single Project Section */
+    .project-feature {
+        margin-bottom: 30px;
+    }
+    .project-all-details {
+        padding-top: 15px;
+    }
+    .project-goal {
+        margin-bottom: 30px;
+    }
+    /* Related Project Section */
+    .related-project:hover .project-caption-content {
+        bottom: 10px;
+        left: 10px;
+    }
+    .related-project:hover .project-action-btn img {
+        -webkit-transform: scale(.6);
+        -moz-transform: scale(.6);
+        -o-transform: scale(.6);
+        transform: scale(.6);
+    }
+    /* Blog Masonry Page */
+    .post-grid {
+        width: 50%;
+        margin-bottom: 0;
+    }
+    .sidebar-right {
+        margin-top: 30px;
+    }
+    /* Post Single Page */
+    .post-share {
+        text-align: left;
+        padding-top: 15px;
+    }
+    /* Portfolio Page */
+    .portfolio-grid {
+        width: 31.2%;
+    }
+    /* Feature Page */
+    .skills-area-inner {
+        padding: 50px 0px 45px;
+    }
+    /* How To Choose A Plan Section */
+    .plan-feature {
+        text-align: center;
+    }
+    .plan-details {
+        margin-top: 30px;
+    }
+    .plan-feature:after {
+        width: 75%;
+        height: 100%;
+        top: 15px;
+        left: 110px;
+    }
+}
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+    /* Utility Classes */
+    .scroll-top {
+        display: none!important;
+    }
+    .page-header {
+        height: 400px;
+    }
+    .header-caption {
+        padding-top: 60px;
+    }
+    .inner-padding {
+        padding: 30px 0px;
+    }
+    .inner-padding2 {
+        padding: 30px 0px 60px;
+    }
+    .inner-padding3 {
+        padding: 30px 0px 0px;
+    }
+    .inner-padding4 {
+        padding: 0px 0px 30px;
+    }
+    .inner-padding5 {
+        padding: 60px 0px 30px;
+    }
+    .inner-padding6 {
+        padding: 0px 0px 60px;
+    }
+    .inner-padding7 {
+        padding: 60px 0px;
+    }
+    /* - Custom Typography */
+    .section-title-area-1 {
+        margin: 20px 0px 0px;
+        padding-left: 15px;
+    }
+    .section-title-area-4 {
+        margin-bottom: 20px;
+    }
+    .section-title {
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+    .section-title-area-3 p,
+    .section-title-area-4 p {
+        width: 100%;
+    }
+    .header-caption-inner h1 {
+        font-size: 35px;
+    }
+    blockquote {
+        padding: 15px;
+    }
+    /* Nav Style */
+    .nav-area {
+        padding-top: 0;
+        background-color: rgba(30, 30, 30, 0.94);
+    }
+    .navbar > .container .navbar-brand {
+        padding: 15px;
+        margin: 0;
+    }
+    .navbar-nav > li {
+        width: 100%;
+        border-bottom: 1px solid rgba(30, 30, 30, 0.94);
+    }
+    .navbar-nav > li:last-child {
+        border-bottom: 0px;
+    }
+    .navbar-default .navbar-nav > li > a {
+        padding: 12px;
+    }
+    .navbar-default .navbar-nav >.active > a:after {
+        height: 40px;
+        width: 3px;
+        top: 15px;
+        left: 0px;
+    }
+    .dropdown li ul.sub-menu {
+        opacity: 1!important;
+        pointer-events: none;
+        transform-origin: right center 0!important;
+        -webkit-transform: rotateY(0deg) translateX(20%)!important;
+        -moz-transform: rotateY(0deg) translateX(20%)!important;
+        -ms-transform: rotateY(0deg) translateX(20%)!important;
+        -o-transform: rotateY(0deg) translateX(20%)!important;
+        transform: rotateY(0deg) translateX(20%)!important;
+    }
+    /* Hero Section */
+    .hero-slider-inner.owl-carousel .owl-item img {
+        max-width: none;
+        width: auto;
+        height: 100%;
+        -webkit-transform: translateX(-20%);
+        -moz-transform: translateX(-20%);
+        -o-transform: translateX(-20%);
+        transform: translateX(-20%);
+    }
+    .hero-caption-inner h3 {
+        font-size: 20px;
+    }
+    .hero-caption-inner h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .hero-caption-inner p {
+        width: 100%;
+    }
+    .owl-dots {
+        bottom: 30px;
+    }
+    /* Service Section */
+    .service-widget {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    /* About Section */
+    .about-content {
+        padding: 0px 15px;
+    }
+    .about-slider:after {
+        height: 101%;
+    }
+    /* Fun Fact Section */
+    .fun-fact-item {
+        margin-bottom: 30px;
+    }
+    /* Call To Action Section */
+    .action-area-inner {
+        padding: 40px 0px;
+    }
+    .action-caption h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .action-caption p {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    /* Feature Section */
+    .tab-item .single-item-tab {
+        margin-bottom: 20px!important;
+    }
+    .item-icon i {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+        line-height: 45px;
+    }
+    /* Working Policy Section */
+    .section-title-area-3 {
+        width: 100%;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        margin-bottom: 30px;
+    }
+    .working-policy-inner {
+        padding: 30px 25px 0px;
+    }
+    .working-policy-list {
+        padding-bottom: 30px;
+    }
+    .policy-icon i {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        line-height: 40px;
+        color: #303030;
+    }
+    .policy-icon .policy-number {
+        left: 18%;
+    }
+    /* Portfolio Section */
+    .portfolio-filter li {
+        margin: 0px 5px 15px;
+    }
+    .portfolio-item {
+        width: 100%;
+    }
+    .portfolio-item img {
+        width: 100%;
+    }
+    .portfolio-item:hover .portfolio-caption-content {
+        bottom: 5px;
+        left: 5px;
+    }
+    .portfolio-action-btn img {
+        width: auto;
+    }
+    /* Team Section */
+    .team-member {
+        margin-bottom: 30px;
+    }
+    .team-member:hover .team-header {
+        -webkit-transform: translateX(-115px);
+        -moz-transform: translateX(-115px);
+        -o-transform: translateX(-115px);
+        transform: translateX(-115px);
+    }
+    .team-member:hover .team-body {
+        opacity: 1;
+        background-color: rgba(250, 250, 250, 0.71);
+        -webkit-transform: translateX(50px) rotateY(0deg);
+        -moz-transform: translateX(50px) rotateY(0deg);
+        -o-transform: translateX(50px) rotateY(0deg);
+        transform: translateX(50px) rotateY(0deg);
+    }
+    /* Testimonial Section */
+    .testimonial-carousel .item {
+        margin-left: 0px;
+        margin-top: 55px;
+    }
+    .client-img {
+        top: -55px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .client-details {
+        padding: 55px 30px 30px;
+    }
+    /* Blog Section */
+    .post-row {
+        margin-bottom: 30px;
+    }
+    .post-caption {
+        padding: 100px 0px 30px;
+    }
+    /* Footer Section */
+    .footer-area {
+        padding: 40px 0px;
+    }
+    .footer-content ul {
+        margin: 20px 0px;
+    }
+    .instagram-list li {
+        width: 26%;
+    }
+    .address-list {
+        margin-top: 30px!important;
+    }
+    /* Home 2 Service Section */
+    .service-icon:before {
+        width: 70px;
+        top: 50%;
+        left: 34%;
+    }
+    .service-icon:after {
+        width: 70px;
+        top: 50%;
+        right: 34%;
+    }
+    .service-item img {
+        top: 25px;
+    }
+    /* Pricing Section */
+    .pricing-package {
+        margin-top: 60px;
+    }
+    /* Our Mission Section */
+    .skills-area-inner {
+        padding: 40px 0px;
+    }
+    .choose-left-title,
+    .skills-right-title {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .skills-right {
+        margin-top: 30px;
+    }
+    .panel-default>.panel-heading+.panel-collapse>.panel-body {
+        padding-right: 15px;
+    }
+    /* Crrative Head Section */
+    .creative-head-info {
+        padding-top: 10px;
+    }
+    .social-link {
+        -webkit-transform: translateY(-60%);
+        -moz-transform: translateY(-60%);
+        -o-transform: translateY(-60%);
+        transform: translateY(-60%);
+    }
+    /*  Service Page 1 Section */
+    .provide-area-inner {
+        padding-top: 30px;
+    }
+    .provide-massage {
+        margin: 20px 0px 40px;
+    }
+    .provide-massage p {
+        margin-bottom: 15px;
+    }
+    .provide-short {
+        margin-top: 20px;
+    }
+    .provide-img {
+        text-align: center;
+    }
+    /*  Service Page 2 Section */
+    .service-tab-icon:before {
+        width: 70px;
+        top: 50%;
+        left: 34%;
+    }
+    .service-tab-icon:after {
+        width: 70px;
+        top: 50%;
+        right: 34%;
+    }
+    .service-sublist-item {
+        margin-top: 25px;
+    }
+    /* Service Single Page */
+    .single-service-content p {
+        margin-left: 15px;
+    }
+    .project-item {
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+        -webkit-transform: translate(0px) rotate(0deg);
+        -moz-transform: translate(0px) rotate(0deg);
+        -o-transform: translate(0px) rotate(0deg);
+        transform: translate(0px) rotate(0deg);
+    }
+    .project-item-tab {
+        float: none;
+        margin-bottom: 15px;
+    }
+    .project-list-item {
+        margin-bottom: 30px;
+    }
+    .project-title {
+        margin-bottom: 5px;
+    }
+    .project-team-slider {
+        padding: 15px 0px;
+    }
+    .project-team-slider .owl-item {
+        padding: 0px 32px;
+    }
+    .project-team-slider .owl-item .team-body {
+        -webkit-transform: translateX(20px) rotateY(0deg);
+        -moz-transform: translateX(20px) rotateY(0deg);
+        -o-transform: translateX(20px) rotateY(0deg);
+        transform: translateX(20px) rotateY(0deg);
+    }
+    .awards-list-item {
+        margin-bottom: 30px;
+    }
+    .awards-title {
+        margin-bottom: 5px;
+    }
+    .project-list-tab .owl-dots {
+        text-align: center;
+    }
+    /* Single Project Section */
+    .project-details-title {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .project-short-description p:last-child,
+    .project-description p:last-child {
+        margin-bottom: 10px;
+    }
+    .project-feature {
+        margin-bottom: 30px;
+    }
+    .project-description {
+        padding: 15px 0px;
+    }
+    .project-idea,
+    .project-goal {
+        margin-bottom: 25px;
+    }
+    .project-all-details {
+        padding-top: 15px;
+    }
+    .details-list li {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    /* Blog Masonry Page */
+    .post-grid {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    /* Contact page */
+    .address-widget {
+        margin-top: 30px;
+    }
+    .form-area-row {
+        margin-top: 30px;
+    }
+    .form-area-title h2 {
+        margin-bottom: 20px;
+    }
+    .contact-form li {
+        margin-bottom: 0px;
+    }
+    /* Blog Page */
+    .sidebar-right {
+        margin-top: 30px;
+    }
+    .post-contant {
+        padding: 100px 0px 3px 0px;
+    }
+    .post-grid2 {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 0;
+    }
+    .pl15 {
+        padding-left: 0px
+    }
+    /* Post Single Page */
+    .single-post-footer {
+        margin-top: 20px;
+    }
+    .post-share {
+        text-align: left;
+        padding-top: 15px;
+    }
+    .comment-area-row {
+        padding: 20px 0px 0px;
+    }
+    .user-comment {
+        padding: 100px 0px 15px 0px;
+    }
+    .leave-area-row {
+        padding: 15px 0px 0px;
+    }
+    /* Portfolio Page */
+    .portfolio-grid {
+        margin: 0px;
+        padding: 5px;
+        width: 100%;
+    }
+    /* How To Choose A Plan Section */
+    .plan-details {
+        margin-top: 30px;
+    }
+    .plan-feature {
+        padding: 15px;
+    }
+    .plan-feature:after {
+        width: 93%;
+        height: 88%;
+        top: 30px;
+        left: 30px;
+    }
+}
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 375px) and (max-width: 414px) {}
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 320px) and (max-width: 374px) {}

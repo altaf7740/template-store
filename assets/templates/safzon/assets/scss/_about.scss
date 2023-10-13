@@ -1,0 +1,89 @@
+/*--
+    05. About Css
+--------------------------*/
+.agency-benefits {
+    & .section-title h2 {
+        padding-bottom: 20px;
+    }
+    & .content {
+        & h2 {
+            font-weight: 600;
+            line-height: 50px;
+            @media #{$large-mobile}{
+                line-height: 34px;
+            }
+        }
+        & p {
+            font-size: 16px;
+            margin-top: 30px;
+        }
+    }
+}
+.agency-thumb .thumb {
+    position: relative;
+    text-align: center;
+    @media #{$tablet-device,$large-mobile}{
+        margin-top: 40px;
+    }
+}
+.agency-thumb .thumb .play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+.agency-thumb .thumb .play-btn a {
+    border: 0 none;
+    background: $theme-color;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    padding: 0;
+    font-size: 28px;
+    color: $white;
+    display: inline-block;
+    line-height: 100px;
+    text-align: center;
+}
+.contact-btn {
+    margin-top: 20px;
+    @media #{$large-mobile,$tablet-device}{
+        margin-top: 10px;
+    }
+}
+
+.choose-resone-inner {
+    & p {
+        max-width: 530px;
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+}
+.counter {
+    & h3 {
+        font-weight:  700;
+        color: $white;
+        margin-top: 10px;
+    }
+    & p {
+        color: $white;
+        font-weight: 500;
+        font-size: 17px;
+        margin: 0;
+        margin-top: 0px;
+        position: relative;
+        margin-top: 9px;
+        display: block;
+        padding-bottom: 10px;
+        &::before {
+            background: #d5d5d5;
+            width: 48px;
+            height: 1px;
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

@@ -1,0 +1,74 @@
+/* -----------------------------------
+Template:  Expu
+
+NOTE: This is Team style file. All Header related style included in this file.
+
+--------------------------------------*/
+.single-member-image img{
+    border-radius: 50%;
+    border: 1px solid #E8E8E8;
+}
+.single-member-image-content{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.team-owl.owl-carousel .owl-item img {
+    width: auto;
+}
+.single-member-image-content h3{
+    font-size: 26px;
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.single-member:hover .single-member-image-content{
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.owl-controls {
+    display: none;
+}
+.single-member-image-content h5{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    color: #fff;
+}
+ul.member-social-icon {
+    list-style: none;
+    margin-top: 65px;
+    padding: 0;
+}
+ul.member-social-icon li{
+    display: inline-block;
+    margin: 0px 3px;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+ul.member-social-icon li:first-child a, ul.member-social-icon li:last-child a {
+    position: relative;
+    top: -8px;
+}
+ul.member-social-icon li a{
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    height: 25px;
+    width: 25px;
+    color: #fff;
+    display: table-cell;
+    vertical-align: middle;
+}
+ul.member-social-icon li:hover a{
+    background: #fff;
+    color: #4FC2C7;
+}

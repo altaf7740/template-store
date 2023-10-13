@@ -1,0 +1,309 @@
+@import "../variables";
+@import "../mixins";
+
+
+/*=====================
+	Shop Single
+========================*/
+
+.shop__single__details{
+	h2{
+		font-family: $heading-font;
+	    font-size: 24px;
+	    font-weight: 700;
+	}
+	.prize{
+		margin-top: 13px;
+		li{
+			color: #444444;
+    		font-size: 16px;
+			&.old-prize{
+				color: #999999;
+			    padding-right: 14px;
+			    text-decoration: line-through;
+
+			}
+		}
+	}
+	.rating{
+		margin-top: 12px;
+		li{
+			i{
+				color: #93c756;
+			}
+		}
+	}
+	p{
+		color: #666666;
+	    line-height: 23px;
+	    margin-bottom: 17px;
+	    margin-top: 11px;
+
+	}
+	
+	.size_choose{
+		margin-top: 25px;
+		span{
+			color: #444444;
+    		font-weight: 700;
+		}
+		.size__selest{
+			background: #fafafa none repeat scroll 0 0;
+		    border: 1px solid #eeeeee;
+		    color: #666666;
+		    height: 38px;
+		    margin-left: 40px;
+		    padding-left: 22px;
+		    width: 192px;
+		}
+	}
+	.product__qun{
+		display: flex;
+    	margin-top: 20px;
+		span{
+			color: #666666;
+    		font-weight: 700;
+		}
+		a{
+			background: #fafafa none repeat scroll 0 0;
+		    display: inline-block;
+		    height: 38px;
+		    line-height: 34px;
+		    margin-left: 10px;
+		    padding: 0 17px;
+		}
+	}
+	.shop__cat{
+		display: flex;
+	    margin-bottom: 22px;
+    	margin-top: 11px;
+	    span{
+	    	color: #666666;
+    		font-weight: 700;
+	    }
+		ul{
+			display: flex;
+			li{
+				a{
+					color: #666666;
+    				transition: all 0.3s ease 0s;
+    				&:hover{
+    					color: $theme-color;
+    				}
+
+				}
+			}
+		}
+	}
+	.color_choose{
+		display: flex;
+		span{
+			font-weight: 700;
+		}
+		.color__var{
+			display: flex;
+			margin-left: 15px;
+			li{
+				a{
+					background: #444444 none repeat scroll 0 0;
+				    color: #fff;
+				    display: inline-block;
+				    height: 36px;
+				    text-indent: -999px;
+				    width: 36px;
+				}
+				& + li{
+					margin-left: 5px;
+				}
+				&.gray{
+					a{
+						background: #94b9e0 none repeat scroll 0 0;
+					}
+				}
+				&.off-white{
+					a{
+						background: #e2e2e2 none repeat scroll 0 0;
+					}
+				}
+				&.org{
+					a{
+						background: #fe5629 none repeat scroll 0 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+.shop__nav.nav.flex-wrap a {
+  padding: 0;
+}
+
+.shop--item.tab-pane:not(.active) {
+    display: none;
+}
+
+.single__des.tab-pane:not(.active) {
+    display: none;
+}
+
+.single-class-content.tab-pane:not(.active) {
+    display: none;
+}
+.single__product__item.tab-pane:not(.active) {
+    display: none;
+}
+
+
+
+
+// Description
+
+.shop__des{
+
+	align-items: center;
+    border: 1px solid #dddddd;
+    height: 40px;
+    margin-bottom: 35px;
+    margin-top: 100px;
+    width: 400px;
+
+	a{
+		color: #666666;
+	    font-weight: 700;
+	    padding: 0 15px;
+	    position: relative;
+	    text-transform: capitalize;
+	    &.active,
+	    &:hover{
+	    	color: #fe5629;
+	    }
+
+	    & + a{
+	    	&::before {
+			    background: #dddddd none repeat scroll 0 0;
+			    content: "";
+			    height: 20px;
+			    left: 0;
+			    position: absolute;
+			    top: 50%;
+			    transform: translateY(-50%);
+			    width: 1px;
+			}
+	    }
+	}
+}
+
+.shop__tab__bottom{
+	margin-left: -7px;
+    margin-right: -7px;
+	a{
+		margin: 0 7px;
+
+	}
+}
+
+
+.product__history.d-flex ul.prize li.old-price {
+    color: #999999;
+    font-size: 16px;
+    padding-right: 16px;
+    text-decoration: line-through;
+}
+.product__history ul.prize {
+    padding-right: 30px;
+}
+
+
+
+
+
+@media #{$lg-layout}{
+
+.shop__tab__bottom a {
+  flex-basis: 29.33%;
+}
+
+	
+}
+
+
+
+@media #{$md-layout}{
+	
+}
+
+
+@media #{$sm-layout}{
+	
+.shop__nav.nav.flex-wrap a {
+  flex-basis: 100%;
+}
+.shop__nav.nav.flex-wrap.shop__tab__bottom a {
+  flex-basis: 30%;
+}
+
+}
+
+
+@media #{$xs-layout}{
+
+.shop__nav {
+  margin-bottom: 30px;
+}
+.shop__nav.nav.flex-wrap a + a {
+  margin-left: 20px;
+  margin-top: 0;
+}
+
+
+}
+
+@media #{$xxs-layout}{
+
+	.shop__single__details .shop__cat ul {
+	  flex-wrap: wrap;
+	}
+	.shop__des {
+	  border: 1px solid transparent;
+	  height: 77px;
+	  width: auto;
+	}
+	.shop__des a + a::before {
+	  display: none;
+	}
+	.shop__des a {
+	  padding: 0 10px;
+	}
+
+	.shop__nav.shop__tab__bottom.nav.flex-wrap a + a {
+	  margin-left: 0;
+	  margin-top: 0;
+	}
+	.shop__nav.nav.flex-wrap a + a {
+	  margin-left: 0;
+	  margin-top: 0;
+	}
+	.shop__nav.nav.flex-wrap a {
+	  flex-basis: 50%;
+	  padding: 0 10px;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

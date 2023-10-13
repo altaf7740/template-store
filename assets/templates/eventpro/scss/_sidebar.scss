@@ -1,0 +1,260 @@
+/*----------------------------------------*/
+/*  22.  Sidebar
+/*----------------------------------------*/
+
+/*-- Single Sidebar --*/
+.single-sidebar {
+    overflow: hidden;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    & .sidebar-title {
+        margin-bottom: 35px;
+        text-transform: uppercase;
+    }
+}
+
+/*-- Sidebar Search --*/
+.sidebar-search {
+    padding: 15px;
+    background-color: $bg-light-gray;
+    & form {
+        position: relative;
+        & input {
+            width: 100%;
+            background-color: $white;
+            border: none;
+            height: 50px;
+            padding: 13px 20px;
+            line-height: 24px;
+            font-size: 12px;
+            font-family: $montserrat;
+            color: $body-color;
+        }
+        & button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 50px;
+            background-color: transparent;
+            border: none;
+            text-align: center;
+            width: 50px;
+            padding: 0;
+            &:hover {
+                color: $blue;
+            }
+            & i {
+                display: block;
+                line-height: 50px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+/*-- Sidebar Event --*/
+.sidebar-event {
+    & .event {
+        overflow: hidden;
+        & + .event {
+            margin-top: 20px;
+        }
+        & .image {
+            width: 100px;
+            margin-right: 20px;
+            & img {
+                width: 100%;
+            }
+        }
+        & .content {
+            & h5 {
+                font-size: 14px;
+                line-height: 24px;
+                margin-bottom: 5px;
+                & a {
+                    &:hover {
+                        color: $blue;
+                    }
+                }
+            }
+            & span {
+                display: block;
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+    }
+}
+
+/*-- Sidebar Product --*/
+.sidebar-product {
+    & .product {
+        overflow: hidden;
+        & + .product {
+            margin-top: 20px;
+        }
+        & .image {
+            width: 80px;
+            margin-right: 20px;
+            & img {
+                width: 100%;
+            }
+        }
+        & .content {
+            & h5 {
+                font-size: 14px;
+                line-height: 24px;
+                margin-bottom: 5px;
+                & a {
+                    &:hover {
+                        color: $blue;
+                    }
+                }
+            }
+            & span {
+                display: block;
+                font-size: 14px;
+                line-height: 18px;
+            }
+            
+            & .add-cart {
+                font-family: $montserrat;
+                text-transform: uppercase;
+                font-weight: 500;
+                font-size: 10px;
+                color: lighten($body-color, 15);
+                &:hover {
+                    color: $blue;
+                }
+            }
+        }
+    }
+}
+
+/*-- Sidebar Banner --*/
+.sidebar-banner {
+    & a {
+        display: block;
+        & img {
+            width: 100%;
+        }
+    }
+}
+
+/*-- Sidebar Schedule Download --*/
+.sidebar-schedule-download {
+    & p {
+        font-family: $montserrat;
+        max-width: 225px;
+    }
+    & .download {
+        background-color: $bg-light-gray;
+        padding: 20px 30px;
+        float: left;
+        width: 100%;
+        text-align: center;
+        @media #{$desktop-device}{
+            padding: 20px 15px;
+        }
+        @media #{$small-mobile}{
+            padding: 20px 15px;
+        }
+        & a {
+            display: inline-block;
+            font-family: $montserrat;
+            line-height: 30px;
+            padding: 0 15px;
+            vertical-align: top;
+            @media #{$small-mobile}{
+                font-size: 12px;
+                padding: 0 5px;
+            }
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+}
+
+/*-- Sidebar Map --*/
+.sidebar-map {
+    & #sidebar-map {
+        width: 100%;
+        height: 320px;
+    }
+}
+
+/*-- Sidebar List --*/
+.sidebar-list {
+    list-style: none;
+    & li {
+        & + li {
+            margin-top: 13px;
+        }
+        & a {
+            display: block;
+            line-height: 24px;
+            font-size: 16px;
+            color: $body-color;
+            position: relative;
+            padding-left: 25px;
+            &:hover {
+                color: $blue;
+            }
+            &::before {
+                content: "\f017";
+                font-family: 'Fontawesome';
+                float: left;
+                position: absolute;
+                left: 1px;
+                line-height: 26px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+/*-- Sidebar Category --*/
+.sidebar-category {
+    & li {
+        & a {
+            &::before {
+                content: "\f115";
+            }
+        }
+    }
+}
+
+/*-- Sidebar Archive --*/
+.sidebar-archive {
+    & li {
+        & a {
+            &::before {
+                content: "\f017";
+            }
+        }
+    }
+}
+
+/*-- Sidebar Tags --*/
+.sidebar-tags {
+    & a {
+        border: 1px solid $body-color;
+        color: $body-color;
+        text-transform: uppercase;
+        display: block;
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        height: 40px;
+        line-height: 24px;
+        padding: 7px 20px;
+        border-radius: 50px;
+        &:hover {
+            background-color: $blue;
+            border-color: $blue;
+            color: $white;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+/*----------------------------------------*/
+/*  08. Testimonial CSS
+/*----------------------------------------*/
+
+/*-- Testimonial --*/
+.testimonial {
+    & .tastimonial-image{
+        text-align: center;
+        margin-bottom: 20px;
+        img{
+            display: inline-block;
+        }
+    }
+    & .testimonial-inner {
+        text-align: center;
+        & p {
+            font-size: 16px;
+            line-height: 25px;
+            color: #3a3a3a;
+            max-width: 370px;
+            margin: auto;
+            margin-bottom: 15px;
+            position: relative;
+            &::before{
+                content: url(../images/icons/qute-1.png);
+                position: absolute;
+                top: -7px;
+                left: -40px;
+                //Responsive
+                @media #{$tablet-device}{
+                    left: -2px;
+                    top: -20px;
+                }
+                @media #{$large-mobile}{
+                    left: -2px;
+                    top: -20px;
+                }
+            }
+            &::after{
+                content: url(../images/icons/qute-2.png);
+                position: absolute;
+                bottom: -20px;
+                right: -30px;
+                //Responsive
+                @media #{$tablet-device}{
+                    right: -2px;
+                    bottom: -2px;
+                }
+                @media #{$large-mobile}{
+                    right: -2px;
+                    bottom: -2px;
+                }
+                
+            }
+        }
+        & h4 {
+            font-size: 18px;
+            color: $heading-color;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        & span {
+            font-size: 14px;
+            display: block;
+            line-height: 1;
+            color: #222222;
+            font-weight: 500;
+        }
+    }
+}

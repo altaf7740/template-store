@@ -1,0 +1,238 @@
+@import "../variables";
+@import "../mixins";
+
+
+/*========================
+	Event List Area
+===========================*/
+
+
+.event__list{
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    @include flexbox();
+	.event__thumb{
+		@include flex-basis(25%);
+		a{
+			display: block;
+			img{
+				width: 100%;
+			}
+		}
+	}
+	.event__content{
+		@include flex-basis(75%);
+		@include align-self(center);
+		padding-left: 40px;
+		.event__pub{
+			display: flex;
+    		padding-bottom: 14px;
+			.event__date{
+				padding-right: 20px;
+    			position: relative;
+    			&::before {
+				    background: #faae08 none repeat scroll 0 0;
+				    content: "";
+				    height: 40px;
+				    position: absolute;
+				    right: 0;
+				    top: 50%;
+				    transform: translateY(-50%);
+				    width: 1px;
+				}
+				span{
+					color: #fe5629;
+				    font-family: $body-font;
+				    font-size: 20px;
+				    font-weight: 700;
+					&.date{
+						font-size: 60px;
+					}
+				}
+			}
+			.event__time{
+				padding-left: 20px;
+				li{
+					i{
+						color: #faae08;
+					    font-size: 18px;
+					    padding-right: 7px;
+
+					}
+				}
+			}
+		}
+		.event__inner{
+			padding: 11px 18% 38px 0;
+    		position: relative;
+    		&::before {
+			    background: #eeeeee none repeat scroll 0 0;
+			    content: "";
+			    height: 1px;
+			    left: 0;
+			    position: absolute;
+			    top: 0;
+			    width: 325px;
+			}
+			h2{
+				a{
+					color: #444444;
+				    display: inline-block;
+				    font-family: $body-font;
+				    font-size: 21px;
+				    font-weight: 700;
+				    line-height: 38px;
+				    margin-bottom: 26px;
+				    padding-right: 18%;
+				    @include transition(0.3s);
+				    
+				    &:hover{
+				    	color: $theme-color;
+				    }
+				}
+			}
+		}
+		.event__btn{
+			@include flexbox();
+			li{
+			    height: 47px;
+			    line-height: 47px;
+			    text-align: center;
+				a{
+					color: #ffffff;
+				    display: block;
+				    font-family: $heading-font;
+				    font-size: 18px;
+				    font-weight: 700;
+				    height: 47px;
+				    padding: 0 48px;
+				    text-transform: capitalize;
+
+				}
+			}
+		}
+	}
+}
+
+
+.event__btn li:first-child {
+    background: #fe5629 none repeat scroll 0 0;
+    @include transition(0.5s);
+}
+.event__btn li:first-child:hover,
+.event__btn li:last-child:hover {
+    background: $theme-color;
+}
+.event__btn li:last-child {
+    background: #faae08 none repeat scroll 0 0;
+    @include transition(0.5s);
+}
+
+.event-grid-page{
+	margin-top: -40px;
+}
+
+
+
+@media #{$lg-layout}{
+
+	.event__list .event__content .event__inner h2 a {
+	  font-size: 18px;
+	  line-height: 32px;
+	  margin-bottom: 11px;
+	  padding-right: 0;
+	}
+	.event__list .event__content .event__inner {
+	  padding: 11px 7% 15px 0;
+	}
+
+	
+}
+
+
+@media #{$md-layout}{
+
+
+	.event__list {
+	  flex-wrap: wrap;
+	}
+
+	.event__list .event__content {
+	  flex-basis: 100%;
+	  padding-bottom: 40px;
+	  padding-left: 40px;
+	  padding-top: 40px;
+	}
+	.event__list .event__thumb {
+	  flex-basis: 100%;
+	}
+	.event__list .event__content .event__inner h2 a {
+	  padding-right: 0;
+	}
+
+	
+}
+
+
+@media #{$sm-layout}{
+	.event__list {
+	  flex-wrap: wrap;
+	}
+
+	.event__list .event__content {
+	  flex-basis: 100%;
+	  padding-bottom: 40px;
+	  padding-left: 40px;
+	  padding-top: 40px;
+	}
+	.event__list .event__thumb {
+	  flex-basis: 100%;
+	}
+	.event__list .event__content .event__inner h2 a {
+	  padding-right: 0;
+	}
+
+}
+
+
+@media #{$xs-layout}{
+	.event__list .event__content {
+	  padding-left: 20px;
+	  padding-right: 20px;
+	}
+	.event__list .event__content .event__inner {
+	  padding: 11px 0 38px;
+	}
+	.event__list .event__content .event__inner h2 a {
+	  font-size: 20px;
+	  line-height: 33px;
+	}
+	.event__list .event__content .event__btn li a {
+	  font-size: 14px;
+	}
+
+
+
+}
+
+
+@media #{$xxs-layout}{
+
+	.event__list .event__content .event__inner h2 a {
+	  font-size: 18px;
+	}
+	.event__list .event__content .event__pub {
+	  flex-wrap: wrap;
+	}
+	.event__list .event__content .event__pub .event__time {
+	  padding-left: 0;
+	  margin-top: 14px;
+	}
+	.event__list .event__content .event__btn li a {
+	  font-size: 14px;
+	  padding: 0 24px;
+	}
+
+
+}
+

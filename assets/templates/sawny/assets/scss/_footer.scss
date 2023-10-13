@@ -1,0 +1,144 @@
+/*--
+    15. Footer Css
+----------------------*/
+.footer-bg {
+    background: url("../images/bg/footer.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.footer-title {
+    & h3 {
+        font-weight: 600;
+        color: $white;
+        margin-bottom: 20px;
+        margin-top: -5px;
+    }
+}
+
+.footer-info {
+    & p {
+        color: $white;
+    }
+    & .newsletter-box {
+        margin-top: 20px;
+        position: relative;
+        & input {
+            width: 100%;
+            padding: 8px 40px 8px 10px;
+            border: 1px solid $white;
+            color: $white;
+            background: transparent;
+            position: relative;
+            border-radius: 10px;
+            &::-moz-placeholder {
+                color: #ffffff;
+            }
+            &::-webkit-input-placeholder {
+                color: #ffffff;
+            }
+            &::-moz-placeholder {
+                color: #ffffff;
+            }
+            &:-ms-input-placeholder {
+               color: #ffffff;
+            }
+        }
+        & button {
+            position: absolute;
+            right: 15px;
+            background: transparent;
+            border: none;
+            color: #fff;
+            padding: 10px;
+            top: 0;
+        }
+    }
+    & .footer-list {
+        & li {
+            margin-bottom: 8px;
+            color: $white;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    & .single-list {
+        margin-bottom: 20px;
+        &:last-child{margin-bottom: 0;}
+        & h4 {
+            color: $white;
+            font-weight: 600;
+            font-size: 16px;
+        }
+    }
+    
+    & .contact-text {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        & i {
+            max-width: 20px;
+            margin-right: 10px;
+            font-size: 16px;
+            color: $white;
+        }
+        & span {
+            display: block;
+        }
+        
+    }
+    &:last-child {
+        & .single-list,.contact-text {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.col-coustom-3 {
+    padding-left: 35px;
+    &:first-child {
+        padding-left: 15px;
+        padding-right: 30px;
+    }
+    &:nth-child(3){
+        padding-left: 60px;
+    }
+    
+    @media #{$desktop-device}{
+        padding-left: 15px;
+        &:nth-child(3){
+            padding-left: 30px;
+        }
+    }
+    
+    @media #{$tablet-device}{
+        padding-left: 15px;
+        &:nth-child(3){
+            padding-left: 15px;
+        }
+    }
+    @media #{$large-mobile}{
+        padding-left: 15px;
+        &:first-child {
+            padding-right: 15px;
+        }
+        &:nth-child(3){
+            padding-left: 15px;
+        }
+    }
+}
+
+
+.footer-bottom {
+    text-align: center;
+    background: #5b5adc;
+    padding: 20px 0;
+    color: #fff;
+}
+.mailchimp-error {
+    color: red;
+}
+.mailchimp-success {
+    color: #fff;
+}

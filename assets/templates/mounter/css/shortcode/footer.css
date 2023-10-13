@@ -1,0 +1,302 @@
+/*-----------------------------------------------------------------------------------
+  Template Name: Mounter  Corporate HTML Template.
+  Template URI: #
+  Description: Mounter is a unique website template designed in HTML with a simple & beautiful look. There is an excellent solution for creating clean, wonderful and trending material design corporate, corporate any other purposes websites.
+  Author: HasTech
+  Author URI: https://themeforest.net/user/hastech/portfolio
+  Version: 1.0
+-------------------------------------------------------------------------------------*/
+/*
+
+  font-family: 'Open Sans', sans-serif;
+
+*/
+/*-----------------------------
+	Footer One
+------------------------------*/
+
+footer.htc__footer {
+}
+.footer__wrap {
+  border-bottom: 1px solid #646568;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 76px;
+  position: relative;
+  z-index: 2;
+}
+.footer__right h4 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+}
+.footer__right {
+  align-items: center;
+  display: flex;
+}
+.footer__bottom {
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+.footer__menu {
+  align-items: center;
+  display: flex;
+  float: right;
+  height: 83px;
+}
+.copyright__inner p {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-size: 14px;
+  height: 83px;
+  text-transform: capitalize;
+}
+.copyright__inner p a {
+  padding: 0 4px;
+  color: #fff;
+  transition: 0.4s;
+}
+.copyright__inner p a:hover{
+  color: #1bb2b7;
+}
+.footer__menu li a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: capitalize;
+  transition: all 0.3s ease 0s;
+}
+.footer__menu li {
+  padding: 0 22px;
+  position: relative;
+}
+.footer__menu li::before {
+  content: "/";
+  position: absolute;
+  right: 0;
+}
+.footer__menu li:last-child::before {
+  content: inherit;
+  position: inherit;
+  display: none;
+}
+.footer__menu li a:hover {
+    color: #00c8d7;
+}
+.footer__menu li:last-child {
+  padding-right: 0;
+}
+
+
+
+/*---------------------
+    Footer Style 2
+---------------------*/
+.footer--two .footer__container{
+  position: relative;
+  z-index: 2;
+}
+
+.footer--two .footer__ilastagram li a:hover::before {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
+.htc__earn {
+    margin-top: 20px;
+}
+.htc__earn li {
+  color: #aaaaaa;
+  font-size: 14px;
+  font-weight: 300;
+}
+.htc__earn li span {
+  color: #ffffff;
+  padding-right: 20px;
+}
+.htc__earn li + li {
+  margin-top: 7px;
+}
+
+
+
+
+/*---------------------
+    Footer Style 3
+---------------------*/
+
+
+.footer--3 .copyright__inner p {;
+  height: 120px;
+}
+.footer--3 .footer__menu {
+  height: 120px;
+}
+
+
+/*---------------------
+    Footer Style 4
+---------------------*/
+
+
+.footer__container {
+  padding: 80px 0;
+}
+.footer__details p {
+  color: #aaaaaa;
+  font-size: 14px;
+  line-height: 24px;
+}
+.footer__details {
+  margin-top: 20px;
+}
+.footer__title {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 74px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.footer__list li a {
+  color: #dddddd;
+  font-size: 16px;
+  transition: 0.4s;
+}
+.footer__list li a:hover {
+  color: #06a9c8;
+}
+.footer__list li + li {
+  padding-top: 20px;
+}
+.footer__ilastagram {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: -7px;
+  margin-right: -7px;
+}
+.footer__list li {
+  line-height: 13px;
+}
+.footer__ilastagram li {
+  padding-bottom: 15px;
+  padding-left: 7px;
+  padding-right: 7px;
+  width: 33.33%;
+}
+.footer__ilastagram li a img {
+  width: 100%;
+}
+.footer__ilastagram li a {
+  display: block;
+}
+.htc__subscribe p {
+  color: #aaaaaa;
+  font-size: 14px;
+  line-height: 24px;
+}
+.footer__ilastagram li a {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+}
+.footer__ilastagram li a::before {
+  background-color: #000;
+  background-image: url("../../images/icons/plus-2.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  bottom: 0;
+  content: "";
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: scale(3);
+  transition: all 0.3s ease 0s;
+}
+.footer__ilastagram li a:hover::before {
+  opacity: 0.6;
+  transform: scale(1);
+}
+
+.footer__input input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: transparent none repeat scroll 0 0;
+  border-color: currentcolor currentcolor #aaaaaa;
+  border-image: none;
+  border-style: none none solid;
+  border-width: 0 0 1px;
+  color: #888888;
+  padding: 0 20px 10px;
+  font-weight: 300;
+}
+.footer__input input::-moz-placeholder {
+  color: #888888 !important;
+}
+.footer__input {
+  margin-bottom: 20px;
+  margin-top: 21px;
+}
+.subscribe__btn--2 .htc__btn {
+  border: 0 none;
+  transition: 0.4s;
+}
+.subscribe__btn--2 .htc__btn:hover{
+  background: #888888;
+}
+.subscribe__btn--2 .htc__btn {
+  font-size: 13px;
+  height: 36px;
+  line-height: 37px;
+  padding: 0 28px;
+}
+
+.footer--four .copyright__inner p,
+.footer--two .copyright__inner p {
+  align-items: center;
+  border-top: 1px solid #5a5a5a;
+  height: 75px;
+  justify-content: center;
+}
+.footer__logo a {
+  display: block;
+}
+
+
+/*------------------------
+  Social Icon
+-------------------------*/
+.social__icon li a i {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 18px;
+  height: 30px;
+  line-height: 27px;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  width: 30px;
+}
+.social__icon {
+  display: flex;
+  margin-left: -7px;
+  margin-right: -7px;
+  margin-top: 25px;
+}
+.social__icon li {
+  margin: 0 7px;
+}
+.social__icon li a:hover i {
+  background: #00bcd4 none repeat scroll 0 0;
+  border: 1px solid #00bcd4;
+  color: #fff;
+}

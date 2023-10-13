@@ -1,0 +1,128 @@
+/* -----------------------------------
+Template Name: Cluster
+Description: This is html5 template
+Author: HasTech
+Version: 1.0
+NOTE: This is Slider style file. All Slider related style included in this file.
+
+--------------------------------------*/
+.slider-area, .slider-two-area, .banner-content,.single-slide, .owl-item, .owl-stage, .slider-wrapper, .owl-stage-outer, .banner-content .container, .banner-content .row, .banner-content .col-lg-10, .banner-content .text-content-wrapper, .banner-content .text-content, .banner-content .display-table, .banner-content .display-table-cell{
+    height: 100%;
+}
+.slider-area {
+    height: 570px;
+    overflow: hidden;
+    position: relative;
+}
+.slider-area .owl-item  .single-slide img {width: auto ;}
+.banner-content .text-content-wrapper {display: table; width: 100%}
+.banner-content .text-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+.banner-btn {clear: both; display: block;}
+.banner-btn .default-btn {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border-color: #ffffff;
+}
+.banner-btn .default-btn:hover {background: #ffffff none repeat scroll 0 0;}
+.slider-area .button-default {display: inline;}
+.banner-content h2 {
+    color: #ffffff;
+    font-style: italic;
+    line-height: 34px;
+    margin-bottom: 42px;
+    text-transform: lowercase;
+    padding-top: 50px
+}
+.banner-content h1 {
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-bottom: 49px;
+    text-transform: uppercase;
+}
+.text-content.text-center p {padding: 0 90px;}
+.slider-area .owl-item.active .banner-content h2, .slider-area .owl-item.active .banner-content h1, .slider-area .owl-item.active .banner-content .banner-btn{
+    -webkit-animation: 1000ms ease-in-out 0s normal both 1 running fadeInUp;
+            animation: 1000ms ease-in-out 0s normal both 1 running fadeInUp;
+}
+.slider-area .owl-item.active .banner-content h2 {-webkit-animation-delay: 600ms;animation-delay: 600ms} 
+.slider-area .owl-item.active .banner-content h1 {-webkit-animation-delay: 1500ms;animation-delay: 1500ms} 
+.slider-area .owl-item.active .banner-content .banner-btn {
+    -webkit-animation-delay: 2100ms;animation-delay: 2100ms
+} 
+.slider-area .owl-nav div {display: none}
+.slider-area .owl-dots {
+    position: absolute;
+    right: 105px;
+    text-align: center;
+    top: 43%;
+    z-index: 9;
+}
+.slider-area .owl-dot {
+    background: #ffffff none repeat scroll 0 0;
+    border: 1px solid #dadbdd;
+    border-radius: 50%;
+    height: 15px;
+    margin: 11px 0;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    width: 15px;
+    z-index: 1;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s
+}
+.slider-area .owl-dot:after, .slider-area .owl-dot:after {
+    background: transparent;
+    border: 4px solid transparent;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: -3px;
+    top: -3px;
+    content: "";
+    border-radius: 50%;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s
+    
+}
+.slider-area .owl-dot.active, .slider-area .owl-dot:hover {background: #649CDE;}
+.slider-area .owl-dot.active:after, .slider-area .owl-dot:hover:after {border-color: #fff;}
+.single-slide {
+    background-position: center center;
+    background-size: cover;
+}
+.owl-item.active .headphone {
+    -webkit-animation: 0.8s ease-in-out 2.3s normal backwards 1 running fadeInLeft;
+            animation: 0.8s ease-in-out 2.3s normal backwards 1 running fadeInLeft;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.owl-item.active .cup {
+    -webkit-animation: 0.8s ease-in-out 3.1s normal backwards 1 running fadeInRight;
+            animation: 0.8s ease-in-out 3.1s normal backwards 1 running fadeInRight;
+    right: 0;
+    position: absolute;
+    bottom: 0;
+}
+.owl-item.active .coffee img {
+    -webkit-animation: 1.5s ease-in-out 3.1s normal backwards 1 running fadeInDown;
+            animation: 1.5s ease-in-out 3.1s normal backwards 1 running fadeInDown;
+    position: absolute;
+    right: 309px;
+    top: 40px;
+    width: 200px;
+}
+.bag, .bag img {height: 350px;}
+.owl-item.active .bag img {
+    -webkit-animation: 0.5s ease-in-out 3.1s normal backwards 1 running fadeInRight;
+            animation: 0.5s ease-in-out 3.1s normal backwards 1 running fadeInRight;
+    right: 0;
+    position: absolute;
+    bottom: 0;
+}

@@ -1,0 +1,45 @@
+/*--
+    12. Service Area Css
+--------------------------------*/
+.single-service {
+    & .service-icon {
+        margin-bottom: 15px;
+    }
+    & .service-content {
+        & > h3 {
+            font-size: 18px;
+            font-weight: 600;
+            position: relative;
+            color: $black;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+            &::after {
+                position: absolute;
+                content: "";
+                bottom: 0;
+                left: 50%;
+                @include transform(translateX(-50%));
+                height: 2px;
+                width: 50px;
+                background: #e4e4e4;
+            }
+        }
+        
+    }
+    
+}
+@media #{$tablet-device}{
+    .our-service-area.pb--70 {
+        padding-bottom: 50px;
+    }
+}
+@media #{$large-mobile}{
+    .our-service-area.pb--70 {
+        padding-bottom: 40px;
+    }
+}
+@media #{$small-mobile}{
+    .our-service-area.pb--70 {
+        padding-bottom: 30px;
+    }
+}

@@ -1,0 +1,285 @@
+/*----------------------------------------*/
+/*  2.  Header Area
+/*----------------------------------------*/
+.header-area {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+    &.stick .header-bottom {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 9999;
+        -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+              animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+        & .navbar-header {
+            padding: 14px 0;
+            & .logo {
+                width: 120px;
+            }
+        }
+        & .main-menu {
+            @media #{$tablet-device}{
+                border: none;
+                float: right;
+                width: auto;
+            }
+            & nav {
+                & ul {
+                    & li {
+                        @media #{$tablet-device}{
+                            margin-right: 20px;
+                        }
+                        & a {
+                            padding: 23px 0;
+                            @media #{$large-mobile}{
+                                padding: 7px 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .header-donation {
+            margin-bottom: 15px;
+            margin-top: 15px;
+            @media #{$tablet-device}{
+                display: none;
+            }
+        }
+    }
+}
+/*-- Animation For Stick Menu --*/
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+/*-- Header Top --*/
+.header-top {
+    background-color: #212121;
+    padding: 18px 0;
+    @media #{$small-mobile}{
+        text-align: center;
+    }
+    @media #{$large-mobile}{
+        
+    }
+}
+/*-- Header Info --*/
+.header-info {
+    @media #{$large-mobile}{
+        text-align: center;
+    }
+    @media #{$small-mobile}{
+        display: none;
+    }
+    & p {
+        display: inline-block;
+        line-height: 20px;
+        color: #dddddd;
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 0;
+        margin-right: 30px;
+        &:last-child {
+            margin-right: 0;
+        }
+        @media #{$large-mobile}{
+            display: inline-block;
+            float: none;
+            margin: 0 10px !important;
+        }
+        & i {
+            font-size: 18px;
+            display: block;
+            float: left;
+            margin-right: 10px;
+            line-height: 20px;
+        }
+    }
+}
+/*-- Header Social --*/
+.header-social {
+    @media #{$large-mobile}{
+        text-align: center;
+    }
+    & a {
+        display: inline-block;
+        color: $color-white;
+        margin-left: 25px;
+        &:first-child {
+            margin-left: 0;
+        }
+        @media #{$large-mobile}{
+            display: inline-block;
+            float: none;
+            vertical-align: middle;
+        }
+        & i {
+            display: block;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+        }
+        &:hover {
+            color: $theme-color;
+        }
+    }
+}
+/*-- Header Bottom --*/
+.header-bottom  {
+  background-color: $color-white;
+}
+/*-- Navbar Header --*/
+.navbar-header {
+    padding: 26px 0;
+    @media #{$large-mobile}{
+        padding: 23px 0;
+    }
+    & .logo {
+        height: auto;
+        padding: 0;
+        z-index: 1;
+        @media #{$large-mobile}{
+            width: 117px;
+        }
+        & img {
+            width: 100%;
+        }
+    }
+}
+/*-- Navbar Toggle --*/
+.navbar-toggle {
+    width: 40px;
+    height: 40px;
+    border: 1px solid $theme-color;
+    color: $theme-color;
+    border-radius: 0;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    & i {
+        display: block;
+        font-size: 26px;
+        line-height: 38px;
+        &.menu-open {
+            display: none;
+        }
+        &.menu-close {}
+    }
+    &.collapsed {
+        & .menu-open {
+            display: block;
+        }
+        & .menu-close {
+            display: none;
+        }
+    }
+}
+/*-- Header Donation Button --*/
+.header-donation {
+    margin: 35px 0 35px 25px;
+    @media #{$tablet-device}{
+    }
+    @media #{$large-mobile}{
+        display: none;
+    }
+    & .btn {
+        height: 40px;
+        padding: 7px 30px;
+        line-height: 24px;
+        background-color: $theme-color;
+        border: 1px solid $theme-color;
+        color: $color-white;
+        text-transform: uppercase;
+        border-radius: 0;
+        font-size: 16px;
+        &:hover {
+            color: $theme-color;
+            background-color: transparent;
+        }
+    }
+}
+/*-- Main Menu --*/
+.main-menu {
+    padding: 0;
+    @media #{$tablet-device}{
+        float: left;
+        width: 100%;
+    }
+    @media #{$large-mobile}{
+        float: left;
+        width: 100%;
+        border-top: none;
+    }
+    & > nav {
+        & > ul {
+            @media #{$large-mobile}{
+                padding: 15px 0;
+                margin: 15px 0;
+            }
+            & > li {
+                display: block;
+                float: left;
+                margin-right: 35px;
+                @media #{$desktop-device}{
+                    margin-right: 20px;
+                }
+                @media #{$large-mobile}{
+                    float: none;
+                    width: 100%;
+                    margin: 0;
+                }
+                & > a {
+                    color: #2d3e50;
+                    display: block;
+                    line-height: 24px;
+                    text-transform: uppercase;
+                    position: relative;
+                    padding: 43px 0;
+                    font-weight: 700;
+                    @media #{$tablet-device}{
+                        padding: 25px 0;
+                    }
+                    @media #{$large-mobile}{
+                        padding: 7px 0;
+                    }
+                }
+                &:hover > a {
+                    color: $theme-color;
+                }
+                &.active > a {
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}

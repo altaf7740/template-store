@@ -1,0 +1,160 @@
+/*--
+    - Header Three
+------------------------------------------*/
+.ht-header-section-three {}
+
+.ht-header-social-three {
+    @media #{$small-mobile}{
+        margin-right: 0;
+    }
+}
+
+/*-- Header Bottom Two --*/
+.ht-header-bottom-three {
+
+    /*---- Header Social ----*/
+    & .ht-header-social {
+        & a {
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+
+    /*---- Header Search ----*/
+    & .ht-header-search {
+        & a {
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+
+    /*---- Header Cart ----*/
+    & .ht-header-cart {
+        & a {
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+
+    /*---- Main Menu ----*/
+    & .ht-main-menu {
+        & nav {
+            & > ul {
+                & > li {
+                    &:hover, &.active {
+                        & > a {
+                            color: $blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    /*---- Sub Menu ----*/
+    & .sub-menu {
+        & li {
+            &.active, &:hover {
+                & > a {
+                    color: $blue;
+                }
+            }
+        }
+    }
+    /*---- Mega Menu ----*/
+    & .mega-menu {
+        & .col {
+            & a:hover {
+                color: $red;
+            }
+            /*-- Menu --*/ 
+            & ul {
+                & li {
+                    &:hover {
+                        & a {
+                            color: $blue;
+                        }
+                    }
+                    &.active {
+                        & a {
+                            color: $blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    /*---- Mobile Menu ----*/
+    & .mean-bar {
+        & .meanmenu-reveal {
+            & span {
+                &.menu-bar {
+                    background-color: $white;
+                    &::before, &::after {
+                        background-color: $white;
+                    }
+                }
+                &.menu-close {
+                    &::before, &::after {
+                        background-color: $white;
+                    }
+                }
+            }
+        }
+        
+        & .mean-nav {
+            & > ul {
+                & li {
+                    & a {
+                        &:hover {
+                            color: $blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    /*---- Header Sticky ----*/
+    &.is-sticky {
+
+        /*---- Main Menu ----*/
+        & .ht-main-menu {
+            & nav {
+                & > ul {
+                    & > li {
+                        &:hover, &.active {
+                            & > a {
+                                color: $blue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        /*---- Mobile Menu ----*/
+        & .mean-bar {
+            & .meanmenu-reveal {
+                & span {
+                    &.menu-bar {
+                        background-color: $body-color;
+                        &::before, &::after {
+                            background-color: $body-color;
+                        }
+                    }
+                    &.menu-close {
+                        &::before, &::after {
+                            background-color: $body-color;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

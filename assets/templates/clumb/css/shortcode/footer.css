@@ -1,0 +1,103 @@
+/* -----------------------------------
+Template Name: Clumb
+Description: This is html5 template
+Author: HasTech
+Version: 1.0
+NOTE: This is Footer style file. All footer related style included in this file.
+
+--------------------------------------*/
+.footer-area {color: #ffffff;}
+.col-lg-4:nth-child(1) .single-footer-widget {padding-right: 32px;}
+.col-lg-3:nth-child(2) .single-footer-widget {padding-left: 9px;}
+.col-lg-2:nth-child(3) .single-footer-widget {padding-left: 32px;}
+.footer-logo {padding: 34px 0 25px;}
+.footer-logo > a {display: inline-block;}
+.single-footer-widget > h4 {
+    line-height: 13px;
+    text-transform: uppercase;
+    margin-bottom: 30px
+}
+.c-icon {
+    border: 1px solid #bdbdbd;
+    color: #fff;
+    display: inline-block;
+    float: left;
+    font-size: 18px;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 20px;
+    margin-top: 6px;
+    text-align: center;
+    width: 32px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s
+}
+.footer-c-info:hover .c-icon {
+    background: #00D8FF none repeat scroll 0 0;
+    border-color: #00D8FF;
+    color: #ffffff;
+}
+.c-text {overflow: hidden;}
+.footer-c-info {margin-bottom: 9px; overflow: hidden;}
+.footer-list a {
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.footer-list a:hover {padding-left: 5px;}
+.footer-post-img {float: left; margin-right: 21px;}
+.footer-post-img > a {display: block; position: relative;}
+.footer-post-img > a:before, .recent-item > a:before {
+    background: #00D8FF none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+    width: 100%;
+}
+.footer-post .footer-post-img > a:hover:before, .recent-item > a:hover:before {
+    opacity: 0.6;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+}
+.footer-post-img > a:after, .recent-item > a:after {
+    color: #ffffff;
+    content: "\f0c1";
+    font-family: "FontAwesome";
+    font-size: 20px;
+    left: 50%;
+    margin: auto;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    z-index: 3
+}
+.footer-post .footer-post-img > a:hover:after, .recent-item > a:hover:after {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+}
+.footer-post:hover .footer-post-img > a:hover:after, .recent-item > a:hover:after  {color: #fff;}
+.footer-post-text {overflow: hidden;}
+.footer-post {margin-bottom: 13px; overflow: hidden;}
+.p-title, .f-post-date {color: #fff; display: block;}
+.p-title {line-height: 24px; margin-bottom: 7px;}
+.f-post-date {line-height: 18px;}
+.single-footer-widget a:hover {color: #00D8FF;}
+.footer-c-info:last-child, .footer-list li:last-child a, .footer-post:last-child {margin: 0;}
+.footer-text-area {border-top: 1px solid #fff;}
+.footer-text > span {display: block; line-height: 19px;}
+.footer-text, .footer-text a {color: #fff;}
+.footer-text a:hover {
+    border-bottom: 1px solid #00D8FF;
+    color: #00D8FF;
+}

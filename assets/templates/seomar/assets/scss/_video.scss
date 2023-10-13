@@ -1,0 +1,48 @@
+/*--
+    08. Video Css
+---------------------------*/
+
+.video-bg {
+    background: url(../images/bg/about-01.png);
+    background-size: cover;
+}
+.video-content-wrap {
+    padding: 80px;
+    background: $white;
+    @media #{$desktop-device}{
+        padding:  40px;
+    }
+    @media #{$tablet-device}{
+        padding:  40px;
+    }
+    @media #{$large-mobile}{
+        padding:  30px;
+    }
+    & h3 {
+        font-size: 36px;
+        font-weight: 600;
+        font-family: $lato;
+        margin-bottom: 20px;
+        @media #{$small-mobile}{
+            font-size: 30px;
+        }
+    }
+}
+.video-icon-wrap {
+    text-align: center;
+    & a {
+        margin-left: 80px;
+        @media #{$desktop-device}{
+            margin-top: 60px;
+            margin-left: 0px;
+        }
+        @media #{$tablet-device}{
+            margin-top: 60px;
+            margin-left: 0px;
+        }
+        @media #{$large-mobile}{
+            margin-top: 60px;
+            margin-left: 0px;
+        }
+    }
+}

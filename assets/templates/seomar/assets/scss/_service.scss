@@ -1,0 +1,122 @@
+/*--
+    07. Service Css
+------------------------------*/
+.single-service {
+    margin-top: 30px;
+    & .service-icon {
+        margin-bottom: 20px;
+        font-size: 48px;
+        color: $theme-color;
+    }
+    & .serviace-info {
+        margin-top: 20px;
+        & h3 {
+            font-size: 18px;
+            font-weight: 700;
+            font-family: $lato;
+        }
+        & p {
+            margin: 13px 0 0 0;
+        }
+    }
+}
+
+
+.feature-two-inner-wrap {
+    & .single-feature {
+        margin-bottom: 20px;
+        display: flex;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        & span {
+            display: inline-block;
+            font-size: 22px;
+            width: 56px;
+            height: 56px;
+            background: $theme-color;
+            border-radius: 50%;
+            color: #fff;
+            line-height: 56px;
+            text-align: center;
+            position: relative;
+        }
+        & .feature-info {
+            margin-left: 20px;
+            & h3 {
+                font-size: 18px;
+                font-weight: 700;
+                font-family: $lato;
+            } 
+        }
+        &:hover {
+            &.feature-info {
+                & h3 {
+                    color: $theme-color;
+                } 
+            }
+        }
+    }
+}
+
+
+// feature-area-inner-four CSS
+.feature-area-inner-four {
+    & .single-feature {
+        padding: 50px 30px;
+        transition: all 0.3s ease-in-out;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        position: relative;
+        @media #{$small-mobile}{
+            padding: 50px 15px;
+        }
+        & .feature-icon {
+            margin-bottom: 20px;
+            & span {
+                display: inline-block;
+                font-size: 28px;
+                width: 60px;
+                height: 60px;
+                background: #02a9c0;
+                border-radius: 50%;
+                color: #fff;
+                line-height: 60px;
+                text-align: center;
+                position: relative;
+            }
+        }
+        & .feature-text {
+            & h3 {
+                font-size: 18px;
+                font-weight: 700;
+                font-family: $lato;
+            }
+            & p {
+                font-size: 15px;
+                margin-top: 15px;
+            }
+        }
+        &:hover {
+            background: $theme-color;
+            & .feature-icon {
+                color: #333;
+                & span {
+                    background: #fff;
+                    color: #333;
+                }
+            }
+            & .feature-text {
+                & h3 {
+                    color: #fff;
+                }
+                & p {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    
+}
+
+

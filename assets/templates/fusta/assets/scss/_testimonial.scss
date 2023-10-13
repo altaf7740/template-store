@@ -1,0 +1,64 @@
+/*--
+    08. Testimonial Area Css
+--------------------------------*/
+.testimonial-bg {
+    background: url(../images/bg/02.jpg);
+}
+.overlay {
+    position: relative;
+    &::before {
+        background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+.testimonial-inner {
+    .test-cont {
+        & > img {
+          margin: auto;
+        }
+        p {
+            font-size: 24px;
+            font-style: italic;
+            line-height: 36px;
+            margin: 35px 0;
+            color: $white;
+            padding: 0 2px;
+            @media #{$desktop-device}{
+                font-size: 20px;
+                margin: 25px 0;
+            }
+            @media #{$tablet-device}{
+                font-size: 20px;
+                margin: 25px 0;
+            }
+            @media #{$large-mobile}{
+                font-size: 20px;
+                margin: 25px 0;
+            }
+            @media #{$small-mobile}{
+                font-size: 16px;
+                margin: 20px 0;
+            }
+        }
+    }
+    & .test-author {
+        h4 {
+            font-size: 20px;
+            font-weight: 500;
+            color: $white;
+            @media #{$small-mobile}{
+                font-size: 18px;
+            }
+        }
+        p {
+            font-family: $opensans;
+            font-weight: 600;
+            color: $white;
+        }
+    }
+}

@@ -1,0 +1,172 @@
+/*---------------------------------
+    Pricing Table Style
+-----------------------------------*/
+
+.space-between {
+    padding: 0 60px;
+
+    @media #{$large-mobile} {
+        padding: 0;
+    }
+}
+
+.pricing-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.pricing-body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pricing-panel-4 {
+    background: #ffffff;
+    padding: 90px 0;
+
+    &.active {
+        position: relative;
+        background-color: #0056ff;
+
+        &::before {
+            content: url(../images/icon/pricing-ribon.png);
+            left: 30px;
+            position: absolute;
+            top: -15px;
+        }
+
+    }
+
+    .pricing-heading {
+        .price {
+            h4 {
+                font-weight: 600;
+                color: #4d4d4d;
+                font-size: 48px;
+                padding-left: 23px;
+                position: relative;
+                display: inline-block;
+                margin: 0;
+
+                sub {
+                    position: absolute;
+                    left: 0;
+                    top: 25px;
+                    font-size: 31px;
+                }
+            }
+        }
+
+        .title {
+            h2 {
+                font-size: 18px;
+                font-weight: 500;
+                color: #000101;
+                padding-bottom: 27px;
+                position: relative;
+                margin-bottom: 28px;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 60px;
+                    height: 2px;
+                    background: #e1e1e1;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+
+    .pricing-body {
+        position: relative;
+        padding-bottom: 23px;
+        margin-top: 36px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            background: #e1e1e1;
+            width: 60px;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        ul {
+            padding: 0 53px;
+
+            li {
+                display: inline-block;
+                font-size: 15px;
+                color: #000000;
+                line-height: 35px;
+                font-family: $heading-font;
+            }
+        }
+    }
+
+    .pricing-footer {
+        margin-top: 32px;
+        height: 0px;
+        overflow: hidden;
+        -webkit-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+
+        a {
+
+            &.price_btn {
+                height: 46px;
+                border: 1px solid #ededed;
+                display: inline-block;
+                line-height: 44px;
+                padding: 0 40px;
+                color: #000000;
+                font-size: 14px;
+                border-radius: 30px;
+                font-family: $heading-font;
+                transition: 0.5s;
+
+                &:hover {
+                    background: #0056ff;
+                    color: #ffffff;
+                    border: 1px solid #0056ff;
+                }
+            }
+        }
+    }
+
+    &:hover .pricing-footer {
+        height: 46px;
+    }
+}
+
+
+
+.pricing-panel-4.active .pricing-footer {
+    height: 46px !important;
+}
+
+.pricing-panel-4.active .pricing-heading .title h2,
+.pricing-panel-4.active .pricing-heading .price h4,
+.pricing-panel-4.active .pricing-body ul li,
+.pricing-panel-4.active .pricing-footer a.price_btn {
+    color: #ffffff;
+}
+
+.pricing-panel-4.active .pricing-footer a.price_btn:hover {
+    background: #fff;
+    border: 1px solid #ffffff;
+    color: #000000;
+}
+
+
+

@@ -1,0 +1,269 @@
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Profe Corporate Business Template.
+  Template URI: #
+  Description: Profe is a unique website template designed in HTML with a simple & beautiful look. There is an excellent solution for creating clean, wonderful and trending material design corporate, corporate any other purposes websites.
+  Version: 1.0
+  
+-----------------------------------------------------------------------------------*/
+/*
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-family: 'Lora', serif;
+
+*/
+
+.slider__bg--1 {
+    background: rgba(0, 0, 0, 0) url("../../images/slider/bg/1.jpg") no-repeat fixed 0 0 / cover ;
+}
+
+.slider__bg--2 {
+    background: rgba(0, 0, 0, 0) url("../../images/slider/bg/2.jpg") no-repeat fixed 0 0 / cover ;
+}
+
+.slider__bg--3 {
+    background: rgba(0, 0, 0, 0) url("../../images/slider/bg/3.jpg") no-repeat fixed 0 0 / cover ;
+}
+
+/*-----------------------------------------
+  Background variation Content
+-------------------------------------------*/
+
+.slider__fixed--height {
+    height: 846px;
+}
+.slide {
+    align-items: center;
+    display: flex;
+}
+.slide__align--center .slider__inner {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+.slider__inner h2 {
+    color: #ffffff;
+    font-size: 80px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.slider__inner h1 {
+    color: #fff;
+    font-size: 110px;
+    font-weight: 900;
+    line-height: 109px;
+    text-transform: uppercase;
+}
+.htc__btn {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    display: inline-block;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 700;
+    height: 54px;
+    letter-spacing: 2px;
+    line-height: 50px;
+    padding: 0 45px;
+}
+.slider__btn {
+    margin-top: 48px;
+}
+.htc__btn:hover {
+    background: #28395e none repeat scroll 0 0;
+    border: 1px solid #28395e;
+    color: #fff;
+    box-shadow: 0px 0px 25px 0 rgba(40, 57, 93, 0.2 );
+}
+.ht__call__btn .htc__btn:hover {
+    background: #6cc47f none repeat scroll 0 0;
+    border: 1px solid #6cc47f;
+}
+.slider__inner {
+    padding-top: 40px;
+}
+
+.slider--2 .slider__inner {
+    padding-top: 76px;
+}
+
+.slider__btn a.htc__btn {
+    border: 2px solid #fff;
+}
+.slider__btn a.htc__btn:hover {
+    border: 2px solid #28395e;
+}
+
+
+/*----------------------
+  Down Btn
+------------------------*/
+.slider__container {
+    overflow: hidden;
+    position: relative;
+}
+.slide-down-btn {
+    bottom: -48px;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    transform: translateX(-50%);
+    z-index: 9;
+}
+
+@keyframes zoomfeecet {
+  0%{
+    line-height: 20px;
+  }
+  50% {
+    line-height: 25px;
+  }
+  100% {
+    line-height: 20px;
+  }
+}
+.slide-down-btn a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.slide-down-btn a img {
+    animation: 2s ease 0s normal none infinite running zoomfeecet;
+    color: #fff;
+    display: block;
+    font-size: 36px;
+    width: 100%;
+}
+
+
+/*----------------------
+  Animation
+-------------------------*/
+.slider__activation__wrap {
+    position: relative;
+}
+.slider__activation__wrap .owl-nav div {
+    left: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider__activation__wrap .owl-nav div.owl-next {
+    left: auto;
+    right: 40px;
+}
+.slider__activation__wrap.owl-theme .owl-nav [class*="owl-"] {
+    background: transparent none repeat scroll 0 0;
+    border-radius: 0;
+    font-size: 50px;
+    margin: 0px;
+    padding: 0;
+    transition: 0.5s;
+}
+.slider__activation__wrap.owl-theme .owl-nav [class*="owl-"]:hover {
+    background: transparent none repeat scroll 0 0;
+    color: #fff;
+}
+.slider--2 .slider__fixed--height {
+    height: 100vh;
+}
+.slider__activation__wrap.owl-theme .owl-nav [class*="owl-"] span {
+    font-size: 14px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-45%);
+    font-weight: 600;
+    opacity: 0;
+    transition: 0.3s;
+    color: #fff;
+}
+.slider__activation__wrap.owl-theme .owl-nav [class*="owl-"] i {
+    font-size: 50px;
+}
+.slider__activation__wrap.owl-theme .owl-nav .owl-next span {
+    left: auto;
+    right: 20px; 
+}
+.slider__activation__wrap.owl-theme .owl-nav [class*="owl-"]:hover span{
+    opacity: 1;
+    left: 25px;
+}
+.slider__activation__wrap.owl-theme .owl-nav .owl-next:hover span {
+    left: auto;
+    right: 25px; 
+}
+.slider__activation__wrap.owl-theme .owl-nav {
+    margin-top: 0;
+}
+
+
+/*--------------------------
+  Animation
+-------------------------------*/
+
+.slider__activation__wrap .slider__inner h2 {
+    animation-delay: 0.4s;
+    animation-duration: 1s;
+}
+.slider__activation__wrap .slider__inner h1 {
+    animation-delay: 1s;
+    animation-duration: 1s;
+}
+
+.slider__activation__wrap .slider__btn .htc__btn {
+    animation-delay: 1.5s;
+    animation-duration: 1s;
+}
+
+.slider__activation__wrap .slider__inner h1,
+.slider__activation__wrap .slider__inner h2,
+.slider__activation__wrap .slider__btn .htc__btn {
+    animation-fill-mode: both;
+    animation-name: fadeOut;
+}
+
+.slider__activation__wrap .owl-item.active .slider__inner h1,
+.slider__activation__wrap .owl-item.active .slider__inner h2,
+.slider__activation__wrap .owl-item.active .slider__btn .htc__btn{
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp
+}
+
+
+
+
+
+
+
+
+
+/*---------------------
+  cd-headline
+------------------------*/
+
+.cd-headline.loading-bar .cd-words-wrapper::after {
+  background: #4c8bf5 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 3px;
+  left: 0;
+  position: absolute;
+  transition: width 0.3s ease -0.1s;
+  width: 0;
+  z-index: 2;
+}
+.cd-headline.loading-bar span {
+  display: inline-block;
+  padding: 0;
+}
+.theme-color span.cd-words-wrapper b{
+ color: #4c8bf5;
+}
+.cd-headline.loading-bar .cd-words-wrapper::after {
+  background: #4c8bf5 none repeat scroll 0 0;
+}

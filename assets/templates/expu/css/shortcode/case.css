@@ -1,0 +1,64 @@
+/* -----------------------------------
+Template:  Expu
+
+NOTE: This is Case Study style file. All Header related style included in this file.
+
+--------------------------------------*/
+.banner-2{
+    background-image: url(../../images/case/1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.case-study-area.study-page .single-case-info {
+    background: #365A73;
+}
+.case-study-area .section-title h2{color: #fff}
+.single-case-info {
+    background: rgba(69, 152, 165, 0.95) none repeat scroll 0 0;
+    padding: 25px 30px 20px;
+}
+.single-case-info h3{
+    margin-bottom: 10px;
+}
+.single-case-info h3 a{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 100;
+    font-size: 22px;
+    color: #fff;
+}
+.single-case-info h3:hover a{
+    color: #42647B;
+}
+.case-study-area.study-page .single-case-info h3:hover a{
+    color: #4FC2C7;
+}
+.single-case-img img, .news-image img{
+    vertical-align: top;
+}
+.single-case-info p{
+    font-size: 13px;
+    color: #eeeeee;
+    font-family: 'Poppins', sans-serif;
+    line-height: 23px;
+}
+.single-case-img{
+    position: relative;
+}
+.single-case-img:after{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(38, 38, 38, 0.95);
+    content: "";
+    -webkit-transition: all 500ms ease 0s;
+    transition: all 500ms ease 0s;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+.single-case:hover .single-case-img:after{
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}

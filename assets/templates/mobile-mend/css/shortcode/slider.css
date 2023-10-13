@@ -1,0 +1,213 @@
+/* -----------------------------------
+Template Name: Mobile Mend - Mobile Repair HTML Template
+Template URI: https://devitems.com/html/mobile-preview/
+Description: This is html5 template
+Author: HasTech
+Author URI: https://devitems.com/
+Version: 1.0
+NOTE: This is Slider style file. All Slider related style included in this file.
+
+--------------------------------------*/
+.slider-area {position: relative; overflow: hidden;}
+.single-slide{position: relative}
+.slider-area img {width: 100%;}
+.slider-area-wrapper, .slider-area, .slider-content,.single-slide, .owl-item, .owl-stage, .slider-wrapper, .owl-stage-outer, .slider-content .container, .slider-content .row, .slider-content .col-lg-10, .slider-content .col-lg-8, .slider-content .text-content-wrapper, .slider-content .text-content, .slider-content .display-table, .slider-content .display-table-cell{
+    height: 100%;
+} 
+.single-slide:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    content: "";
+    z-index: 9;
+} 
+.two .single-slide:after{display: none}
+.two .single-slide:before{display: none}
+.single-slide:before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 50%;
+    background: rgba(0, 0, 0, 0.4);
+    content: "";
+    z-index: 9;
+}
+
+.slider-content{z-index: 99; position: relative}
+.text-content-wrapper, .slider-area img {width: 100%;}
+.slider-content .text-content-wrapper {display: table;}
+.slider-content .text-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+.banner-btn {
+    clear: both;
+    display: block;
+}
+.banner-btn {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 2px solid #f69323;
+  color: #ffffff;
+  display: inline-block;
+  font-family: "Open Sans",sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 40px;
+  overflow: hidden;
+  padding: 0 38px;
+  position: relative;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.two .banner-btn{
+    background: #F69323;
+}
+.two .banner-btn:hover{
+    background: transparent;
+}
+.two .banner-btn:hover span{
+    color: #F69323;
+}
+.two.banner-btn:before, .two.banner-btn:after, .two.banner-btn span:before, .two.banner-btn span:after{
+    display: none;
+}
+.banner-btn:before, .banner-btn:after, .banner-btn span:before, .banner-btn span:after {
+    background-color: rgba(246, 147, 35, 0.5);
+    content: "";
+    height: 80px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    width: 0;
+    z-index: -1;
+}
+.banner-btn:after, .banner-btn span:before {
+    left: auto;
+    right: 0;
+}
+.banner-btn span:before, .banner-btn span:after {
+    -webkit-transition-delay: 0.4s;
+            transition-delay: 0.4s;
+}
+.banner-btn:hover, .banner-btn:focus{
+    color: #fff;
+    z-index: 999;
+    border: 2px solid rgba(246, 147, 35, 0.75);
+}
+.banner-btn:hover span{z-index: 9999; color: #fff}
+.banner-btn:hover:before, .banner-btn:hover:after, .banner-btn:hover span:before, .banner-btn:hover span:after {
+    width: 250px;
+}
+.banner-btn:active {
+    background-color: #d4a762;
+}
+.slider-content h4 {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    letter-spacing: 4px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.slider-content h2 span{
+    color: #F69323;
+}
+.slider-content h2 {
+    color: #fff;
+    font-size: 48px;
+    margin-bottom: 15px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+}
+.slider-content p {
+  color: #ece8e5;
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  margin-bottom: 37px;
+  padding: 0 100px;
+  line-height: 26px;
+}
+.two .slider-content h2{
+    color: #444;
+} 
+.two .slider-content p{
+    color: #444;
+    padding: 0;
+} 
+.slider-area .owl-item.active .slider-content h4, .slider-area .owl-item.active .slider-content h2, .slider-area .owl-item.active .slider-content p, .slider-area .owl-item.active .slider-content .banner-btn{
+    -webkit-animation: 1000ms ease-in-out 0s normal both 1 running fadeInUp;
+            animation: 1000ms ease-in-out 0s normal both 1 running fadeInUp;
+} 
+.slider-area .owl-item.active .slider-content h4 {-webkit-animation-delay: 600ms;animation-delay: 600ms} 
+.slider-area .owl-item.active .slider-content h2 {-webkit-animation-delay: 1000ms;animation-delay: 1000ms} 
+.slider-area .owl-item.active .slider-content p {-webkit-animation-delay: 1400ms;animation-delay: 1400ms}
+.slider-area .owl-item.active .slider-content h3 {-webkit-animation-delay: 1800ms;animation-delay: 1800ms}  
+.slider-area  .owl-item.active .slider-content .banner-btn {-webkit-animation-delay: 1800ms;animation-delay: 1800ms} 
+.owl-nav div {
+    background: rgba(255, 255, 255, 0.15);
+    color: #D4A762;
+    font-size: 30px;
+    border-radius: 3px;
+    height: 40px;
+    left: -0px;
+    line-height: 40px;
+    margin-top: -20px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    width: 40px;
+    z-index: 999;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+.owl-nav .owl-next {left: auto; right: 0px;}
+.slider-area:hover .owl-nav div {opacity: 1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";}
+.owl-nav div:hover{background: rgba(212, 167, 98, 0.25); color: #fff}
+.single-slide{background-position: top center; background-size: cover}
+.one-page-arrow{
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: -24px;
+    left: 50%;
+    bottom: -24px;
+    background: #F69323;
+    z-index: 9;
+    text-align: center;
+}
+.one-page-arrow i {
+  color: #fff;
+  font-size: 28px;
+  margin-top: 15px;
+  text-align: center;
+}
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.slider-area-wrapper{position: relative}

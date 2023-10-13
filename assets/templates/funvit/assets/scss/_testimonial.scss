@@ -1,0 +1,123 @@
+/*--
+    10. Testimonial Css
+-------------------------------------*/
+
+.section-testimonial {
+    background: #eff2f7;
+}
+
+.testimonial-style-7 {
+    .testimonal {
+        text-align: center;
+
+        p {
+            color: #414141;
+            font-size: 30px;
+            font-style: italic;
+            line-height: 45px;
+            margin-top: 26px;
+            margin-bottom: 0;
+            position: relative;
+            z-index: 2;
+            font-weight: 400;
+            padding: 0 20px;
+
+            &::before {
+                position: absolute;
+                content: "";
+                color: #ffebd1;
+                content: "\f10e";
+                font-family: Fontawesome;
+                font-size: 190px;
+                left: 50%;
+                top: 50%;
+                z-index: -1;
+                transform: translateX(-50%) translateY(-50%);
+            }
+            
+            @media #{$tablet-device}{
+                font-size: 26px;
+                line-height: 32px;
+                    &::before {
+                    font-size: 120px;
+                }
+
+            }
+            @media #{$large-mobile}{
+                font-size: 20px;
+                line-height: 29px;
+            }
+        }
+
+        h4 {
+            color: #3e3e3e;
+            font-weight: 600;
+            font-size: 22px;
+            margin-bottom: 9px;
+        }
+
+        .clint-info {
+            margin-top: 29px;
+
+            span {
+                color: #3e3e3e;
+                font-size: 18px;
+            }
+        }
+
+        img {
+            display: inline-block;
+            max-width: 130px;
+            border-radius: 50%;
+            width: 100%;
+        }
+    }
+}
+.testimonial-style-7 .slick-arrow {
+    position: absolute;
+    top: 9%;
+    left: 16%;
+    color: #aeaeae;
+    font-size: 48px;
+    background: transparent;
+    border: 0 none;
+    z-index: 2;
+    transition: 0.5s;
+}
+.testimonial-style-7 .slick-arrow:hover {
+    color: #f6ab4b;
+}
+.testimonial-style-7 button.testimonial-arrow-next.slick-arrow {
+    left: auto;
+    right: 16%;
+}
+.testimonial-style-7.medical-clint .testimonal p::before{
+    color: #FFEBD1;
+}
+.testimonial-style-7.portfolio-testimonila .testimonal p::before{
+    color: #dbdbdb;
+}
+.testimonial-style-7 .slick-arrow {
+    position: absolute;
+    top: 9%;
+    left: 16%;
+    color: #aeaeae;
+    font-size: 45px;
+    background: transparent;
+    border: 0 none;
+    z-index: 2;
+    transition: 0.5s;
+    @media #{$small-mobile}{
+        left: 0%;
+    }
+}
+.testimonial-style-7 .slick-arrow:hover {
+    color: $theme-color;
+}
+.testimonial-style-7 button.testimonial-arrow-next.slick-arrow {
+    left: auto;
+    right: 16%;
+    @media #{$small-mobile}{
+        right: 0%;
+    }
+}

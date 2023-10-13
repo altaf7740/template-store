@@ -1,0 +1,62 @@
+/*--
+    15. Contact Page Css
+------------------------------*/
+#map {
+    height: 400px;
+    @media #{$tablet-device}{
+        height: 300px;
+    }
+    @media #{$large-mobile}{
+        height: 300px;
+    }
+}
+.single-contact-info {
+    & .contact-info-icon {
+        margin-bottom: 10px;
+        & span {
+            font-size: 22px;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            background: $theme-color;
+            display: inline-block;
+            line-height: 60px;
+            color: $white;
+        }
+    }
+    & .contact-info {
+        & a {
+            display: block;
+        }
+    }
+}
+.contact-form-warp {
+    & .input-box {
+        margin-bottom: 30px;
+        & input,
+        & textarea {
+            width: 100%;
+            padding: 10px;
+            color: #555;
+            font-size: 14px;
+            border: 1px solid $theme-color;
+        }
+        & textarea {
+            height: 140px;
+        }
+    }  
+}
+.form-messege {
+    &.error {
+        color: red;
+        font-size: 14px;
+        margin-top: 5px;
+        font-style: italic;
+    }
+    &.success {
+        color: green;
+        font-size: 14px;
+        margin-top: 5px;
+        font-style: italic;
+    }
+}

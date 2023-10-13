@@ -1,0 +1,78 @@
+
+.form-style-7{
+    form{
+        input {
+            background:  #f3f3f3;
+            border:  0  none;
+            height:  55px;
+            padding: 0 20px;
+            margin-bottom: 30px;
+            width: 100%;
+            &:focus{
+                border: 1px solid $theme-color;
+            }
+            &[type="submit"] {
+                width:  auto;
+                margin: 0;
+                padding:  0 58px;
+                background:  #0056ff;
+                color:  #fff;
+                height:  58px;
+                font-weight: 600;
+                line-height: 61px;
+                text-transform: uppercase;
+                transition: 0.5s;
+                margin-top: 10px;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+        }
+        label {
+            font-size:  14px;
+            color:  #000000;
+            font-weight: 300;
+            font-style:  italic;
+        }
+        textarea {
+            background:  #f3f3f3;
+            border:  0 none;
+            margin-bottom:  30px;
+            min-height:  230px;
+            resize:  none;
+            padding:  20px;
+            margin-bottom: 30px;
+            font-family: "Montserrat", sans-serif;
+            &:focus{
+                border: 1px solid $theme-color;
+            }
+        }
+    }
+
+    &.political-form{
+        form{
+            input {
+                
+                &[type="submit"] {
+                    background:  $theme-color;
+                    border-radius: 3px;
+                    &:hover{
+                        opacity: 1;
+                        background:  #043174;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+input, textarea {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+}
+   

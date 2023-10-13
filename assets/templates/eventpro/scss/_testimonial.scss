@@ -1,0 +1,142 @@
+/*----------------------------------------*/
+/*  29.  Testimonial
+/*----------------------------------------*/
+
+/*-- Testimonial Title --*/
+.testimonial-title {
+    & h1 {
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: capitalize;
+        padding-bottom: 30px;
+        color: $white;
+        margin-bottom: 0;
+        position: relative;
+        @media #{$large-mobile}{
+            font-size: 30px;
+        }
+        @media #{$small-mobile}{
+            font-size: 24px;
+        }
+        &::before {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            height: 2px;
+            width: 100px;
+            margin-left: -50px;
+            background-color: $white;
+            content: "";
+        }
+    }
+}
+
+/*-- Testimonial Slider One --*/
+.testimonial-slider-one {}
+
+/*-- Single Testimonial One --*/
+.single-testimonial-one {
+    & p {
+        color: #f5f5f5;
+        font-size: 20px;
+        font-style: italic;
+        line-height: 30px;
+        margin-bottom: 18px;
+    }
+    & h4 {
+        color: #f5f5f5;
+        font-weight: 700;
+        text-transform: capitalize;
+        margin: 6px;
+    }
+    & h5 {
+        color: #f5f5f5;
+        margin-bottom: 0;
+        text-transform: capitalize;
+    }
+}
+
+/*-- Testimonial Two Wrapper --*/
+.testimonial-two-wrapper {
+    background-color: $white;
+    border-radius: 10px;
+    padding: 100px 120px;
+    @media #{$tablet-device}{
+        padding: 80px;
+    }
+    @media #{$large-mobile}{
+        padding: 60px 50px;
+    }
+    @media #{$small-mobile}{
+        padding: 50px 30px;
+    }
+}
+
+/*-- Testimonial Slider Two --*/
+.testimonial-slider-two {
+    
+    & .slick-dots {
+        margin-top: 30px;
+        & li {
+            display: inline-block;
+            margin-right: 5px;
+            &::after {
+                content: "/";
+                color: $body-color;
+            }
+            & button {
+                background-color: transparent;
+                border: none;
+                padding: 0;
+                margin-right: 5px;
+                color: $body-color;
+                font-style: italic;
+                &::before {
+                    content: "0";
+                }
+            }
+            &:last-child {
+                margin-right: 0;
+                &::after {
+                    display: none;
+                }
+                & button {
+                    margin-right: 0;
+                }
+            }
+            &.slick-active {
+                & button {
+                    color: $blue;
+                }
+            }
+        }
+    }
+}
+
+/*-- Single Testimonial Two --*/
+.single-testimonial-two {
+    & img {
+        margin-bottom: 37px;
+        display: inline-block;
+    }
+    & h5 {
+        font-size: 15px;
+        text-transform: uppercase;
+        color: $black;
+        font-weight: 500;
+        line-height: 1;
+        margin-bottom: 7px;
+    }
+    & h6 {
+        font-size: 13px;
+        color: $body-color;
+        line-height: 1;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+    }
+    & p {
+        font-size: 16px;
+        font-style: italic;
+        line-height: 30px;
+    }
+}

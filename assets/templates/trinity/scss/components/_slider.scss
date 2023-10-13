@@ -1,0 +1,228 @@
+/*****************************
+23. Slider CSS
+*****************************/
+
+.homepage-slider{
+	.single-slide{
+		position: relative;
+		&.slide-height{
+			&-1{
+				height: 730px;
+				@include breakpoint(xxalarge){
+					height: 630px;
+				}
+				@include breakpoint(xxclarge){
+					height: 570px;
+				}
+				@include breakpoint(xlarge){
+					height: 530px;
+				}
+				@include breakpoint(xalarge){
+					height: 515px;
+				}
+				@include breakpoint(xblarge){
+					height: 470px;
+				}
+				@include breakpoint(xclarge){
+					height: 440px;
+				}
+				@include breakpoint(large){
+					height: 415px;
+				}
+				@include breakpoint(clarge){
+					height: 355px;
+				}
+				@include breakpoint(medium){
+					height: 285px;
+				}
+				@include breakpoint(small){
+					height: 270px;
+				}
+				@include breakpoint(xsmall){
+					height: 240px;
+				}
+			}
+		}
+		.slider-content{
+			position: absolute;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			@extend %flexbox;
+			&__inner{
+				max-width: 680px;
+			}
+		}
+		.slider-image{
+			&.image-width{
+				&-1{
+					max-width: 925px;
+					@include breakpoint(xxalarge){
+						max-width: 785px;
+					}
+					@include breakpoint(xxclarge){
+						max-width: 700px;
+					}
+					@include breakpoint(xlarge){
+						max-width: 665px;
+					}
+					@include breakpoint(xalarge){
+						max-width: 640px;
+					}
+					@include breakpoint(xblarge){
+						max-width: 580px;
+					}
+					@include breakpoint(xclarge){
+						max-width: 540px;
+					}
+					@include breakpoint(large){
+						max-width: 515px;
+					}
+					@include breakpoint(clarge){
+						max-width: 440px;
+					}
+					@include breakpoint(medium){
+						max-width: 355px;
+					}
+					@include breakpoint(small){
+						max-width: 335px;
+					}
+					@include breakpoint(xsmall){
+						max-width: 200px;
+					}
+					@include breakpoint(xxsmall){
+						max-width: 180px;
+					}
+				}
+				&-2{
+					max-width: 750px;
+					@include breakpoint(xxalarge){
+						max-width: 650px;
+					}
+					@include breakpoint(xxclarge){
+						max-width: 600px;
+					}
+					@include breakpoint(xlarge){
+						max-width: 540px;
+					}
+					@include breakpoint(xalarge){
+						max-width: 520px;
+					}
+					@include breakpoint(xblarge){
+						max-width: 520px;
+					}
+					@include breakpoint(xclarge){
+						max-width: 480px;
+					}
+					@include breakpoint(large){
+						max-width: 415px;
+					}
+					@include breakpoint(clarge){
+						max-width: 340px;
+					}
+					@include breakpoint(medium){
+						max-width: 255px;
+					}
+					@include breakpoint(small){
+						max-width: 235px;
+					}
+					@include breakpoint(xsmall){
+						max-width: 220px;
+					}
+					@include breakpoint(xxsmall){
+						max-width: 190px;
+					}
+				}
+			}
+			&.image-right{
+				&-1{
+					@extend %posabsolute;
+					bottom: 0;
+					right: 25px;
+					@include breakpoint(xsmall){
+						right: 10px;
+					}
+				}
+				&-2{
+					@extend %posabsolute;
+					bottom: 0;
+					right: 0;
+					@include breakpoint(xsmall){
+						right: -30px;
+					}
+				}
+				&-3{
+					margin-left: auto;
+					padding-top: 80px;
+					padding-right: 45px;
+					@include breakpoint(xxclarge){
+						padding-top: 70px;
+					}
+					@include breakpoint(xsmall){
+						position: absolute;
+						padding-top: 0;
+						padding-right: 0;
+						bottom: 10px;
+						right: -35px;
+					}	
+				}
+			}
+		}
+		&.content-v-center{
+			.slider-content{
+				@extend %align-center;
+			}
+			&-2{
+				.slider-content__inner{
+					@include breakpoint(xxsmall){
+						margin-bottom: 75px;
+					}
+				}
+			}
+		}
+		&.content-h-left{
+			.slider-content__inner{
+				margin-left: 12rem;
+				@include breakpoint(xxdlarge){
+					margin-left: 6rem;
+				}
+				@include breakpoint(medium){
+					margin-left: 10rem;
+				}
+				@include breakpoint(small){
+					margin-left: 3rem;
+				}
+				@include breakpoint(xsmall){
+					margin-left: 2rem;
+				}
+			}
+		}
+		.slider-bg{
+			@extend %flexbox;
+			&__left, &__right{
+				max-width: 50%;
+				@include flex-basis(50%);
+				@include breakpoint(xsmall){
+					max-width: 100%;
+					@include flex-basis(100%);
+					height: 300px;
+					img{
+						height: 100%;
+						width: 100%;
+					}
+				}
+			}
+			&__right{
+				@include breakpoint(xsmall){
+					display: none;
+				}
+			}
+		}
+	}
+	.slide-bg-attr{
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-size: 100% 100%;
+	}
+}
+

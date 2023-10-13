@@ -1,0 +1,232 @@
+/*---------------------------
+    Service Styles
+--------------------------*/
+
+.service__wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.service {
+    margin-top: 30px;
+    .icon {
+        display: block;
+        margin-bottom: 18px;
+    }
+    h4 {
+        display: inline-block;
+        margin-bottom: 15px;
+        a {
+            color: #1a1200;
+            font-family: Source Sans Pro;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: 0.5s;
+            &:hover{
+                color: #f7a901;
+            }
+        }
+    }
+    p {
+        line-height: 30px;
+        max-width: 298px;
+    }
+}
+
+/* Process Area*/
+
+.process {
+    margin-top: 30px;
+    text-align: center;
+    .content {
+        h4 {
+            margin: 30px 0 10px;
+            a {
+                color: #001232;
+                font-family: Source Sans Pro;
+                font-size: 18px;
+                text-transform: uppercase;
+                transition: 0.5s;
+                &:hover{
+                    color: #f7a901;
+                }
+            }
+        }
+        p {
+            font-size: 16px;
+            padding: 0 10%;
+        }
+    }
+}
+
+/* Service Style Two*/
+
+.service__inner {
+    p {
+        color: #001436;
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 25px;
+        &:last-child {
+            margin: 0;
+        }
+    }
+}
+
+.padding--hor {
+    padding: 140px 0;
+}
+
+/* Style Two*/
+
+.custom__service__width {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 230px;
+    margin-right: 230px;
+}
+
+.service__2 {
+    display: flex;
+    margin-top: 48px;
+    .icon {
+        padding-right: 26px;
+    }
+    .content {
+        h4 {
+            a {
+                color: #1856b8;
+                font-size: 24px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }
+        p {
+            margin: 0;
+            max-width: 276px;
+        }
+    }
+}
+
+.service__chart .thumb img {
+    width: 100%;
+}
+
+
+.service-space.section-padding--xlg {
+    padding: 130px 0 120px;
+}
+
+/* Responsive Css*/
+
+@media #{$xlg-layout} {
+    .service__wrap {
+        padding: 0 30px;
+    }
+    .service p {
+        max-width: 327px;
+    }
+}
+
+@media #{$lg-layout} {
+    .custom__service__width {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .process .content p {
+        padding: 0;
+    }
+}
+
+@media #{$md-layout} {
+    .custom__service__width {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .service__2 {
+        flex-basis: 50%;
+    }
+    .process .content p {
+        padding: 0;
+    }
+    .service__chart .thumb img {
+        width: auto;
+    }
+}
+
+@media #{$sm-layout} {
+    .custom__service__width {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .service__2 {
+        flex-basis: 50%;
+    }
+    .process .content p {
+        padding: 0;
+    }
+    .service__chart .thumb img {
+        width: auto;
+    }
+    .service__wrap {
+        flex-wrap: wrap;
+    }
+    .service {
+        flex-basis: 50%;
+    }
+    .service p {
+        max-width: 233px;
+    }
+    .service__2 .content h4 {
+        font-size: 19px;
+    }
+    .service__2 .icon {
+        padding-right: 9px;
+    }
+    .service__2 .content h4 a {
+        font-size: 19px;
+    }
+    .service__2 .content h4 {
+        margin-bottom: 7px;
+    }
+    .service-space.section-padding--xlg {
+        padding: 60px 0;
+    }
+    .service__wrap {
+        margin-top: 0;
+    }
+    .padding--hor {
+        padding: 60px 0;
+    }
+    .dg__service__area {
+        padding-bottom: 60px;
+    }
+
+}
+
+@media #{$xs-layout} {
+    .service__chart .thumb img {
+        width: 100%;
+    }
+    .service {
+        flex-basis: 100%;
+    }
+    .service h4 {
+        margin-bottom: 5px;
+    }
+    .service .icon {
+        margin-bottom: 6px;
+    }
+    .service p {
+        max-width: 298px;
+    }
+}
+
+@media #{$xxs-layout} {
+    .service__2 {
+        flex-basis: 100%;
+    }
+}

@@ -1,0 +1,99 @@
+/*---------------------------------------
+    16. Contact CSS
+-----------------------------------------*/
+
+/*-- Map --*/
+.contact-map {
+    height: 400px;
+    width: 100%;
+}
+
+/*-- Contact Information --*/
+.contact-information {
+    & h3 {
+        margin-bottom: 30px;
+    }
+    & ul {
+        & li {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            & .icon {
+                width: 50px;
+                & i {
+                    font-size: 30px;
+                }
+            }
+            & .text {
+                max-width: calc(100% - 50px);
+                & span, & a {
+                    display: block;
+                    line-height: 24px;
+                    max-width: 230px;
+                }
+            }
+        }
+    }
+}
+
+/*-- Contact Form --*/
+.contact-form-wrap {
+    &.margin-0{
+         //Responsive
+        @media #{$tablet-device}{
+            margin-top: 0px;
+        }
+        @media #{$large-mobile}{
+            margin-top: 0px;
+        }  
+    }
+    //Responsive
+    @media #{$tablet-device}{
+        margin-top: 50px;
+    }
+    @media #{$large-mobile}{
+        margin-top: 40px;
+    }
+    & h3 {
+        margin-bottom: 30px;
+    }
+    & input {
+        width: 100%;
+        height: 50px;
+        border: 1px solid #dddddd;
+        padding: 5px 20px;
+        color: $body-color;
+        border-radius: 5px;
+        height: 45px;
+        &:focus{
+            border-color: #777777;
+            color: #111111;
+        }
+    }
+    & textarea {
+        width: 100%;
+        height: 200px;
+        border: 1px solid #eeeeee;
+        padding: 10px 20px;
+        color: $body-color;
+        resize: none;
+        border-radius: 5px;
+        &:focus{
+            border-color: #777777;
+            color: #111111;
+        }
+    }
+    & button{
+        margin-top: 20px;
+    }
+}
+.form-messege.success {
+	color: #1dbc51;
+	font-weight: 700;
+}
+.form-messege.error{
+    color: #ff1313;
+}

@@ -1,0 +1,46 @@
+/*--
+    - Button Style
+------------------------------------------*/
+.btn {
+    background: $theme-color;
+    color: $white;
+    border-radius: 0;
+    font-family: $montserrat;
+    font-weight: 600;
+    font-size: 14px;
+    @include transition(.3s);
+    position: relative;
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    @media #{$small-mobile}{
+        padding: 1px 20px;
+        font-size: 12px;
+    }
+    & span {
+        display: inline-block;
+        line-height: inherit;
+        transition: none;
+    }
+    & i {
+        display: inline-block;
+        line-height: inherit;
+        transition: none;
+    }
+    &.left {
+        & i {
+            margin-right: 10px;
+        }
+    }
+    &.right {
+        & i {
+            margin-left: 10px;
+        }
+    }
+    &:hover , &:active {
+        background: $black;
+        color: $white;
+    }
+    
+}

@@ -1,0 +1,548 @@
+/*-----------------------------------------------------------------------------------
+  Template Name: Mounter  Corporate HTML Template.
+  Template URI: #
+  Description: Mounter is a unique website template designed in HTML with a simple & beautiful look. There is an excellent solution for creating clean, wonderful and trending material design corporate, corporate any other purposes websites.
+  Author: HasTech
+  Author URI: https://themeforest.net/user/hastech/portfolio
+  Version: 1.0
+-----------------------------------------------------------------------------------*/
+/*
+  font-family: 'Open Sans', sans-serif;
+*/
+
+.slider__bg--1 {
+  background: rgba(0, 0, 0, 0) url("../../images/slider/bg/1.jpg") no-repeat scroll 0 0 / cover ;
+}
+
+.slider__bg--2 {
+  background: rgba(0, 0, 0, 0) url("../../images/slider/bg/2.jpg") no-repeat scroll 0 0 / cover ;
+}
+.slider__bg--3 {
+  background: rgba(0, 0, 0, 0) url("../../images/slider/bg/3.jpg") no-repeat scroll 0 0 / cover ;
+}
+.slider__bg--4 {
+  background: rgba(0, 0, 0, 0) url("../../images/slider/bg/4.jpg") no-repeat scroll 0 0 / cover ;
+}
+/*-----------------------------------------
+  Background variation Content
+-------------------------------------------*/
+.slider__full--screen {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+}
+
+.bg-shape-1 {
+  background: rgba(0, 0, 0, 0) url("../../images/slider/shape/1.png") no-repeat scroll center center;
+}
+.bg-shape-2 {
+  background: rgba(0, 0, 0, 0) url("../../images/slider/shape/2.png") no-repeat scroll center center;
+}
+.slider__inner {
+  padding: 200px 0 170px;
+  text-align: center;
+}
+.slider__inner h1 {
+  color: #583d3d;
+  font-family: "OpenSans bold",sans-serif;
+  font-size: 75px;
+  font-weight: 700;
+  letter-spacing: 15px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+.slider__inner h4 {
+  color: #583d3d;
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 53px;
+  text-transform: uppercase;
+}
+/*---------------------------
+  Slider 2
+-----------------------------*/
+
+.slider--2 .slider__inner {
+  padding: 0;
+}
+.slider--2 .slider__inner {
+    position: relative;
+    z-index: 1;
+}
+.slider--2 .slider__inner h1 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    padding: 0;
+}
+.slider--2 .slider__inner h1 span {
+    font-size: 60px;
+}
+.slider--2 .slider__inner h1 span span span {
+    color: #;
+}
+.slider--2 .slider__content {
+  padding: 200px 118px;
+}
+.video__inner a.video__trigger i {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 100%;
+  color: #595355;
+  display: inline-block;
+  font-size: 25px;
+  height: 60px;
+  line-height: 60px;
+  padding-left: 3px;
+  width: 60px;
+  z-index: 0;
+  transition: 0.4s;
+}
+.video__inner a.video__trigger i:hover{
+  background: #00c8d7 none repeat scroll 0 0;
+  color: #fff;
+}
+
+.video__inner {
+  margin-bottom: 30px;
+}
+.cd-headline.clip span {
+  padding: 0;
+}
+
+/*---------------------
+  Slider 3
+-----------------------*/
+
+.slider--3 .slider__inner,
+.slider--4 .slider__inner {
+  position: relative;
+  z-index: 2;
+}
+.slider--3 .slider__inner h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  padding-bottom: 18px;
+}
+.slider--3 .slider__inner p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 0 20%;
+}
+.slider--3 .slider__btn .htc__btn {
+  border-radius: 25px;
+  padding: 0 40px;
+}
+.slider--3 .htc__btn {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.slider--3 .slider__btn {
+  margin-top: 43px;
+}
+.slider--3 .slider__btn .htc__btn:hover::before {
+  background-color: #00bbd5;
+}
+.slider--3 .htc__btn::before {
+  background: #634f4f none repeat scroll 0 0;
+}
+.cd-headline.slide span {
+  padding: 0;
+}
+
+/*---------------------------
+  Slider 4
+-----------------------------*/
+.slider--4 .slider__inner h1 {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0;
+  padding-bottom: 9px;
+}
+.slider--4 .slider__inner h4 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  padding-bottom: 68px;
+  text-transform: none;
+}
+
+
+.slider--4 .slider__btn .htc__btn:hover::before {
+  background-color: #634f4f;
+}
+.slider--4 .htc__btn:hover::before {
+  background-color: #00bbd5;
+}
+.slider--4 .slider__btn .htc__btn {
+  background: #00bbd5 none repeat scroll 0 0;
+  padding: 0 29px;
+}
+.slider--4 .htc__btn {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/*----------------------
+  Animation
+-------------------------*/
+
+
+.slider__activation__wrap.owl-theme .owl-dots, .slider__activation__wrap.owl-theme .owl-nav {
+  text-align: center;
+  display: none;
+}
+
+/*---------------------
+  Button
+------------------------*/
+
+
+.htc__btn::before {
+  background: #00bcd4 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotate3d(0, 0, 1, -45deg) translate3d(0px, -3em, 0px);
+  transform-origin: 0 100% 0;
+  transition: transform 0.3s ease 0s, opacity 0.3s ease 0s, background-color 0.3s ease 0s;
+  width: 150%;
+  z-index: -1;
+}
+
+.slider__btn .htc__btn::before {
+  background: #00bbd5 none repeat scroll 0 0;
+}
+.slider__btn .htc__btn {
+  background: #634f4f none repeat scroll 0 0;
+  padding: 0 34px;
+}
+.htc__btn {
+  overflow: hidden;
+  transition-delay: 0s, 0s;
+  transition-duration: 0.3s, 0.3s;
+  transition-property: border-color, color;
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  backface-visibility: hidden;
+  background: #00c8d8 none repeat scroll 0 0;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 14px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 33px;
+  position: relative;
+  z-index: 5;
+  text-transform: uppercase;
+}
+
+/*------------------------
+      HOVER
+----------------------*/
+
+
+.htc__btn:hover::before {
+  background-color: #634f4f;
+  opacity: 1;
+  transform: rotate3d(0, 0, 1, 0deg);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.slider__btn .htc__btn:hover::before {
+  background-color: #00bbd5;
+}
+.htc__btn:hover {
+  color: #fff;
+}
+
+/* --------------------------------------------
+  Animated Slider Style 
+-----------------------------------------------*/
+.animated__slider{
+  position: relative;
+}
+.animate-layer{
+  position: absolute;
+  animation-delay: 0.8s;
+  animation-fill-mode: both;
+}
+.animate-layer.layer--1{
+  left: 60px;
+  top: 30px;
+}
+.animate-layer.layer--2{
+  right: 0px;
+  top: 0px;
+}
+.animate-layer.layer--3{
+  left: 0px;
+  bottom: 0px;
+}
+.animate-layer.layer--4{
+  right: 200px;
+  bottom: 60px;
+}
+.animate-layer.layer--5{
+  right:280px;
+  top: 160px;
+}
+.animate-layer.layer--6{
+  left:280px;
+  bottom: 70px;
+}
+.animate-layer.layer--7{
+  left:400px;
+  bottom: 90px;
+}
+.animate-layer.layer--8 {
+  bottom: 246px;
+  right: 600px;
+}
+.animate-layer.layer--9 {
+  bottom: 282px;
+  left: 592px;
+}
+.active .animate-layer.layer--1{
+    animation-duration: 2s;
+    animation-name: rotateIn;
+}
+.active .animate-layer.layer--2{
+    animation-duration: 3s;
+    animation-name: fadeInRight;
+}
+.active .animate-layer.layer--3{
+    animation-duration: 4s;
+    animation-name: fadeInLeft;
+}
+.active .animate-layer.layer--4{
+    animation-duration: 5s;
+    animation-name: zoomIn;
+}
+.active .animate-layer.layer--5{
+    animation-duration: 6s;
+    animation-name: bounceInDown;
+}
+.active .animate-layer.layer--6{
+    animation-duration: 7s;
+    animation-name: bounceInUp;
+}
+.active .animate-layer.layer--7{
+    animation-duration: 8s;
+    animation-name: bounceInUp;
+}
+.active .animate-layer.layer--8{
+    animation-duration: 8s;
+    animation-name: flipInY;
+}
+
+
+
+.tilter {
+  position: relative;
+  display: block;
+  flex: none;
+  width: 300px;
+  height: 415px;
+  margin: 1.5em 2.5em;
+  color: #fff;
+  perspective: 1000px;
+}
+
+.tilter * {
+  pointer-events: none;
+}
+
+.tilter:hover,
+.tilter:focus {
+  color: #fff;
+  outline: none;
+}
+
+.tilter__figure,
+.tilter__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.tilter__figure > * {
+  transform: translateZ(0px); /* Force correct stacking order */
+}
+
+.tilter__figure {
+  position: relative;
+}
+
+.tilter__figure::before {
+  content: '';
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  box-shadow: 0 30px 20px rgba(35,32,39,0.5);
+}
+
+.tilter__deco {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.tilter__deco--overlay {
+  background-image: linear-gradient(45deg, rgba(226, 60, 99, 0.4), rgba(145, 58, 252, 0.4), rgba(16, 11, 192, 0.4));
+}
+
+.tilter__deco--shine div {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.25) 50%, transparent 100%);
+}
+
+.tilter__deco--lines {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+.tilter__caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 4em;
+}
+
+.tilter__title {
+  font-family: 'Abril Fatface', serif;
+  font-size: 2.5em;
+  font-weight: normal;
+  line-height: 1;
+  margin: 0;
+}
+
+.tilter__description {
+  font-size: 0.85em;
+  margin: 1em 0 0 0;
+  letter-spacing: 0.15em;
+}
+
+
+
+
+/*-----------------------------------
+  slider area 4
+--------------------------------------*/
+
+.slide-down-btn {
+  bottom: 90px;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  transform: translateX(-50%);
+  z-index: 9;
+}
+
+
+.slider__container.slider--4 {
+    position: relative;
+}
+
+@keyframes zoomfeecet {
+  0%{
+    line-height: 20px;
+  }
+  50% {
+    line-height: 25px;
+  }
+  100% {
+    line-height: 20px;
+  }
+}
+.slide-down-btn a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.slide-down-btn a i {
+  animation: 2s ease 0s normal none infinite running zoomfeecet;
+  color: #fff;
+  display: block;
+  font-size: 36px;
+  width: 100%;
+}
+
+.header__inner{
+  padding:0 150px;
+}
+
+
+.slider__content__border_lb, 
+.slider__content__border_rt {
+    position: relative;
+}
+.slider__content__border_lb::before, 
+.slider__content__border_rt::before,
+.slider__content__border_rt::after,
+.slider__content__border_lb::after {
+    content: "";
+    position: absolute;
+    z-index: 555;
+    transition: 0.7s;
+}
+.slider__content__border_lb::before {
+  background: rgba(255,255,255,0.5) none repeat scroll 0 0;
+  height: 30%;
+  left: -5px;
+  bottom: -5px;
+  width: 5px;
+}
+.slider__content__border_lb::after {
+  background: rgba(255,255,255,0.5) none repeat scroll 0 0;
+  content: "";
+  height: 5px;
+  left: -5px;
+  position: absolute;
+  bottom: -5px;
+  width: 30%;
+}
+
+.slider__content__border_rt::before {
+  background: rgba(255,255,255,0.5) none repeat scroll 0 0;
+  height: 30%;
+  right: -5px;
+  top: -5px;
+  width: 5px;
+}
+.slider__content__border_rt::after {
+  background: rgba(255,255,255,0.5) none repeat scroll 0 0;
+  content: "";
+  height: 5px;
+  right: -5px;
+  position: absolute;
+  top: -5px;
+  width: 30%;
+}
+.slider__conten_boxshado {
+  border: 5px solid rgba(255,255,255,0.1);
+}
+.slider__conten_boxshado:hover .slider__content__border_rt::after,
+.slider__conten_boxshado:hover .slider__content__border_lb::after{
+  width: calc(70% + 5px);
+}
+.slider__conten_boxshado:hover .slider__content__border_lb::before,
+.slider__conten_boxshado:hover .slider__content__border_rt::before{
+  height: calc(70% + 5px);
+}

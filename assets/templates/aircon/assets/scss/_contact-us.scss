@@ -1,0 +1,130 @@
+/*--
+    17. Contact Page Css
+------------------------------*/
+#map {
+    height: 800px;
+    @media #{$laptop-device}{
+        height: 600px;
+    }
+    @media #{$desktop-device}{
+        height: 600px;
+    }
+    @media #{$tablet-device}{
+        height: 600px;
+    }
+    @media #{$large-mobile}{
+        height: 600px;
+    }
+}
+
+.box-contact {
+    border: 1px solid #ddd;
+    background: #fff;
+    max-width: 1410px;
+    width: 100%;
+    z-index: 9;
+    margin: auto;
+    position: relative;
+    @media #{$small-mobile}{
+        border: none;
+    }
+}
+.contact-us-area {
+    margin-top: -250px;
+    padding: 110px 0;
+    background: #fff;
+    @media #{$desktop-device}{
+        padding: 80px 0;
+    }
+    @media #{$tablet-device}{
+        padding: 80px 0;
+    }
+    @media #{$large-mobile}{
+        padding: 70px 0;
+    }
+    @media #{$small-mobile}{
+        padding: 60px 0;
+    }
+}
+
+.contact-us-inner {
+}
+.contact-form-area {
+    & h3 {
+        font-size: 42px;
+        font-weight: 600;
+        margin-bottom: 55px;
+        @media #{$large-mobile}{
+            font-size: 28px;
+            margin-bottom: 25px;
+        }
+    }
+}
+.contact-form-warp {
+    & .input-box {
+        margin-bottom: 30px;
+        & input,
+        & textarea {
+            width: 100%;
+            padding: 15px;
+            color: #555;
+            border: 1px solid #ddd;
+        }
+        & textarea {
+            height: 120px;
+        }
+    }  
+}
+.contact-info-wrap {
+    & .single-contact-info {
+        margin-bottom: 60px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        & h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            @media #{$large-mobile}{
+                margin-bottom: 10px;
+            }
+        }
+        @media #{$desktop-device}{
+            margin-bottom: 40px;
+        }
+    }
+    @media #{$tablet-device}{
+        margin-top: 60px;
+         & .single-contact-info {
+            margin-bottom: 30px;
+        }
+    }
+    @media #{$large-mobile}{
+        margin-top: 60px;
+        & .single-contact-info {
+            margin-bottom: 25px;
+        }
+    }
+    @media #{$small-mobile}{
+        margin-top: 30px;
+    }
+}
+.form-messege {
+    &.error {
+        color: red;
+        font-size: 14px;
+        margin-top: 5px;
+        font-style: italic;
+    }
+    &.success {
+        color: green;
+        font-size: 14px;
+        margin-top: 5px;
+        font-style: italic;
+    }
+}
+.footer-info{
+    & .logo {
+        text-align: left;
+    }
+}

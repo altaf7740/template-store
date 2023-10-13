@@ -1,0 +1,180 @@
+/*----------------------------------------*/
+/*  3.  Hero CSS
+/*----------------------------------------*/
+/*-- Nivo SLider Caption --*/
+.nivo-caption {
+    background-color: rgba($color-black, 0.6);
+    height: 100%;
+    padding: 0;
+    opacity: 1;
+    & .container {
+        display: table;
+        height: 100%;
+        & .row {
+            display: table-cell;
+            height: 100%;
+            vertical-align: middle;
+        }
+    }
+}
+/*-- Hero Style For BG Image & Video --*/
+.hero-image-bg {
+    background-image: url(img/hero/2.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+.hero-video-bg {
+    background-image: url(img/hero/video.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+.hero-caption {
+    padding: 250px 0;
+    @media #{$laptop-device}{
+        padding: 200px 0;
+    }
+    @media #{$desktop-device}{
+        padding: 150px 0;
+    }
+    @media #{$tablet-device}{
+        padding: 100px 0;
+    }
+    @media #{$large-mobile}{
+        padding: 70px 0;
+    }
+    @media #{$small-mobile}{
+        padding: 40px 0;
+    }
+    &.overlay {
+        &::before {
+            background-color: $color-black;
+            opacity: 0.6;
+        }
+    }
+}
+/*-- Hero Content --*/
+.hero-content {
+    padding: 50px 0 0;
+    @media #{$large-mobile}{
+        padding: 30px 0;
+    }
+    & h1 {
+        font-size: 72px;
+        font-weight: 800;
+        color: $color-white;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+        @media #{$desktop-device}{
+            font-size: 50px;
+        }
+        @media #{$tablet-device}{
+            font-size: 40px;
+        }
+        @media #{$large-mobile}{
+            font-size: 24px;
+        }
+        @media #{$small-mobile}{
+            font-size: 18px;
+        }
+    }
+    & p {
+        font-size: 20px;
+        line-height: 32px;
+        color: #eaeaea;
+        max-width: 875px;
+        padding: 0;
+        margin-bottom: 30px;
+        @media #{$desktop-device}{
+            font-size: 16px;
+            line-height: 28px;
+            max-width: 720px;
+        }
+        @media #{$tablet-device}{
+            font-size: 14px;
+            line-height: 24px;
+            max-width: 625px;
+            margin-bottom: 20px;
+        }
+        @media #{$large-mobile}{
+            font-size: 14px;
+            line-height: 24px;
+            height: 45px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+        @media #{$small-mobile}{
+            display: none;
+        }
+    }
+    & .btn {
+        height: 48px;
+        border-radius: 8px;
+        padding: 13px 47px 12px;
+        font-size: 16px;
+        @media #{$desktop-device}{
+            font-size: 14px;
+            padding: 10px 40px;
+            height: 44px;
+        }
+        @media #{$tablet-device}{
+            font-size: 13px;
+            padding: 8px 40px;
+            height: 40px;
+        }
+        @media #{$large-mobile}{
+            font-size: 12px;
+            padding: 6px 30px;
+            border-radius: 5px;
+            height: 36px;
+        }
+        @media #{$small-mobile}{
+            font-size: 10px;
+            padding: 3px 20px;
+            height: 30px;
+        }
+    }
+}
+/*-- Nivo Diraction Nav --*/
+.nivo-directionNav {
+    @media #{$tablet-device}{
+        display: none;
+    }
+    @media #{$large-mobile}{
+        display: none;
+    }
+    & a {
+        background-color: rgba($color-white, 0.2);
+        top: 50%;
+        margin-top: -68px;
+        height: 136px;
+        width: 56px;
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+        color: $color-white;
+        text-align: center;
+        line-height: 52px;
+        overflow: hidden;
+        -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: vertical-lr;
+        writing-mode: vertical-lr;
+        @media #{$desktop-device}{
+            height: 90px;
+            margin-top: -45px;
+            width: 40px;
+            line-height: 40px;
+            font-size: 14px;
+        }
+        &.nivo-prevNav {
+            left: 0;
+        }
+        &.nivo-nextNav {
+            right: 0;
+        }
+    }
+}

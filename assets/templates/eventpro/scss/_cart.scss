@@ -1,0 +1,290 @@
+/*----------------------------------------*/
+/*  27.  Cart
+/*----------------------------------------*/
+
+.table-responsive {}
+
+/*-- Cart Table --*/
+.cart-table {
+    margin-bottom: 0;
+    
+    /*-- Cart Table Head --*/
+    & thead {
+        & tr {
+            & th {
+                background-color: transparent;
+                border-bottom: 1px solid #e0e0e0;
+                border-right: 1px solid #e0e0e0;
+                border-top: 1px solid #e0e0e0 !important;
+                color: $heading-color;
+                font-weight: 500;
+                line-height: 54px;
+                padding: 0;
+                text-align: center;
+                text-transform: uppercase;
+                vertical-align: middle;
+                &:first-child {
+                    border-left: 1px solid #e0e0e0;
+                }
+                &.number {
+                    min-width: 66px;
+                }
+                &.image {
+                    min-width: 140px;
+                    width: 140px;
+                }
+                &.name {
+                    min-width: 250px;
+                }
+                &.qty, &.stock {
+                    min-width: 130px;
+                }
+                &.price {
+                    min-width: 130px;
+                }
+                &.total, &.add-cart {
+                    min-width: 160px;
+                }
+                &.remove {
+                    min-width: 100px;
+                }
+            }
+        }
+    }
+    
+    /*-- Cart Table Body --*/
+    & tbody {
+        & tr {
+            & td {
+                border-bottom: 1px solid #e0e0e0;
+                border-right: 1px solid #e0e0e0;
+                padding: 0;
+                vertical-align: middle;
+                &:first-child {
+                    border-left: 1px solid #e0e0e0;
+                }
+                
+                & .cart-number {
+                    display: block;
+                }
+                & .cart-pro-image {
+                    display: block;
+                    margin: 15px auto;
+                    width: 100px;
+                    & img {
+                        width: 100%;
+                    }
+                }
+                & .cart-pro-title {
+                    font-size: 18px;
+                    color: $heading-color;
+                    &:hover {
+                        color: $blue;
+                    }
+                }
+                & .product-quantity {
+                    display: inline-block;
+                    border: 1px solid #b5b5b5;
+                    border-radius: 4px;
+                    & .qtybtn {
+                        width: 30px;
+                        float: left;
+                        height: 38px;
+                        text-align: center;
+                        color: $body-color;
+                        cursor: pointer;
+                        &:hover {
+                            color: $blue;
+                        }
+                        &.dec {}
+                        &.inc {}
+                        & i {
+                            font-size: 16px;
+                            display: block;
+                            line-height: 38px;
+                        }
+                    }
+                    & input {
+                        float: left;
+                        background-color: transparent;
+                        border: none;
+                        height: 38px;
+                        width: 36px;
+                        color: $body-color;
+                        line-height: 24px;
+                        font-size: 14px;
+                        padding: 7px 5px;
+                        text-align: center;
+                    }
+                }
+                & .stock {
+                    margin-bottom: 0;
+                    text-transform: uppercase;
+                    &.in-stock {
+                        color: #30b878;
+                    }
+                }
+                & .cart-pro-price {}
+                & .cart-price-total {}
+                & .wl-add-cart-btn {
+                    display: inline-block;
+                    height: 40px;
+                    background-color: $heading-color;
+                    color: $white;
+                    text-transform: uppercase;
+                    padding: 8px 25px;
+                    border: none;
+                    font-size: 12px;
+                    font-weight: 700;
+                    border-radius: 50px;
+                    &:hover {
+                        background-color: $blue;
+                    }
+                }
+                & .cart-pro-remove {
+                    background-color: transparent;
+                    border: medium none;
+                    color: $body-color;
+                    padding: 0;
+                    width: 24px;
+                    &:hover {
+                        color: $red;
+                    }
+                    & i {
+                        display: block;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*-- Cart Action --*/
+.cart-action {
+    & .button {
+        display: block;
+        float: left;
+        height: 40px;
+        background-color: $heading-color;
+        color: $white;
+        text-transform: uppercase;
+        padding: 8px 25px;
+        border: none;
+        font-size: 12px;
+        font-weight: 700;
+        border-radius: 50px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+        @media #{$small-mobile}{
+            margin-right: 0;
+            margin-bottom: 0;
+        }
+        &:hover {
+            background-color: $blue;
+        }
+        &:last-child {
+            margin-right: 0;
+            @media #{$small-mobile}{
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+/*-- Cart Cuppon --*/
+.cart-cuppon {
+    & .title {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+    & p {
+        margin-bottom: 15px;
+    }
+    & .cuppon-form {
+        & input {
+            border-color: transparent;
+            height: 40px;
+            margin-bottom: 18px;
+            padding: 9px 15px;
+            width: 100%;
+            color: $body-color;
+        }
+        & .button {
+            display: block;
+            float: left;
+            height: 40px;
+            background-color: $heading-color;
+            color: $white;
+            text-transform: uppercase;
+            padding: 8px 25px;
+            border: none;
+            font-size: 12px;
+            font-weight: 700;
+            border-radius: 50px;
+            &:hover {
+                background-color: $blue;
+            }
+        }
+    }
+}
+
+/*-- Cart Checkout Process --*/
+.cart-checkout-process {
+    & .title {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        margin-top: 0;
+        text-align: right;
+    }
+    & p {
+        margin-bottom: 15px;
+        overflow: hidden;
+        text-transform: uppercase;
+        text-align: right;
+        & span {
+            display: block;
+            float: left;
+            width: 42%;
+            &:last-child {
+                width: 58%;
+            }
+        }
+    }
+    & h5 {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 14px;
+        overflow: hidden;
+        text-transform: uppercase;
+        text-align: right;
+        margin: 0 0 30px;
+        & span {
+            display: block;
+            float: left;
+            width: 42%;
+            &:last-child {
+                width: 58%;
+            }
+        }
+    }
+    & .button {
+        display: block;
+        float: right;
+        height: 40px;
+        background-color: $heading-color;
+        color: $white;
+        text-transform: uppercase;
+        padding: 8px 25px;
+        border: none;
+        font-size: 12px;
+        font-weight: 700;
+        border-radius: 50px;
+        &:hover {
+            background-color: $blue;
+        }
+    }
+}

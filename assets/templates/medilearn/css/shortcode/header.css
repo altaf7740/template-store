@@ -1,0 +1,949 @@
+/*-----------------------------------------------------------------------------------
+  Template Name: Medilearn  Medical HTML Template.
+  Template URI: #
+  Description: Medilearn is a unique website template designed in HTML with a simple & beautiful look. There is an excellent solution for creating clean, wonderful and trending material design corporate, corporate any other purposes websites.
+  Author: HasTech
+  Author URI: https://themeforest.net/user/hastech/portfolio
+  Version: 1.0
+-------------------------------------------------------------------------------------*/
+/*
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+*/
+
+/*Menu basic style*/
+.header-area{
+  z-index: 10;
+  position: relative;
+}
+ul.main-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+.main-menu > li > a {
+  display: block;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  height: 70px;
+  line-height: 70px;
+  padding: 0 10px;
+  position: relative;
+  text-transform: uppercase;
+}
+.main-menu li {
+  position: relative;
+}
+.main-menu > li:hover > a{
+  color: #fff;
+  background: #4c8bf5;
+}
+.main-menu li + li {
+    margin: 0 5px;
+}
+.main-menu li:first-child {
+    margin-right: 5px;
+}
+.main-menu li:last-child {
+  margin-right: 0;
+}
+.main-menu li + li {
+    margin: 0 5px;
+}
+.main-menu li:first-child {
+    margin-right: 5px;
+}
+.main-menu li:last-child {
+    margin-right: 0;
+}
+.main-menu > li > a::before {
+    background: #fff none repeat scroll 0 0;
+    bottom: -4px;
+    content: "";
+    height: 5px;
+    left: -15px;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.3s ease 0s;
+    visibility: hidden;
+    width: 100%;
+}
+.main-menu > li:hover > a::before {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.logo a{
+  display: block;
+}
+/*Menu style One*/
+.head-style-1.transparent-header .header-content {
+  border-bottom: 5px solid #d3d3d3;
+  margin: 0 15px;
+}
+.head-style-1.logo-left .logo {
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+header.transparent-header.head-style-1 {
+    left: 0;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    z-index: 99999;
+}
+/*Sticky Header*/
+.fluid-container.mobile-menu-container {
+  position: relative;
+}
+.mobile-logo {
+  align-items: center;
+  display: flex;
+  height: 52px;
+  left: 0;
+  padding-left: 15px;
+  position: absolute;
+  top: 0;
+  z-index: 2147483647;
+}
+.mobile-logo img {
+  max-height: 25px;
+}
+.ml-header-top.scroll-header,
+.header-style-3 .ml-header-top.scroll-header {
+  animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+  background: rgba(255, 255, 255, 1) none repeat scroll 0 0;
+  box-shadow: 0 1px 3px rgba(50, 50, 50, 0.4);
+  left: 0;
+  margin: 0 auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+}
+.head-style-1.transparent-header .scroll-header .header-content {
+  border-bottom: 0px solid transparent;
+  margin: 0;
+}
+.head-style-1.transparent-header .scroll-header .header-content .main-menu > li > a::before {
+  position: inherit;
+}
+
+
+
+/*-----------------------------
+  Header Style 1
+------------------------------*/
+/*Start Default*/
+.bg-theme{
+  background: #4c8bf5;
+}
+.bg-header {
+  background: rgba(0, 0, 0, 0) url("../../images/others/header-bg.jpg") no-repeat fixed 0 0 / cover ;
+}
+/*End Default*/
+.header-top-title {
+  align-items: center;
+  display: flex;
+  height: 170px;
+  text-align: center;
+}
+.ml-header-line {
+    display: inline-block;
+    font-size: 24px;
+    padding-bottom: 10px;
+    position: relative;
+    text-transform: capitalize;
+}
+.ml-header-line::before {
+    background: #c1c1c1 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.header-top-right {
+    display: flex;
+    float: right;
+}
+.header-social-icon {
+    margin-left: 20px;
+}
+.header-social-icon .social-icon{
+  float: right;
+}
+.header-social-icon p {
+  color: #fff;
+  float: left;
+  font-size: 12px;
+  height: 50px;
+  line-height: 50px;
+  margin-right: 10px;
+  text-transform: capitalize;
+}
+.header-social-icon .social-icon li {
+  display: inline-block;
+}
+.header-social-icon .social-icon li + li {
+    margin-left: 16px;
+}
+.header-social-icon .social-icon li a {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid transparent;
+  font-size: 12px;
+  height: 50px;
+  line-height: 50px;
+  transition: all 0.3s ease 0s;
+  width: auto;
+}
+.header-social-icon .social-icon {
+  margin-top: 0;
+}
+.header-social-icon .social-icon li a i {
+    font-size: 12px;
+    transition: 0.3s;
+}
+.lagguage-form a i {
+    padding-left: 10px;
+}
+.header-social-icon .social-icon li a:hover i {
+    color: #5b5b5b;
+}
+.select-language {
+  margin-right: 10px;
+  position: relative;
+}
+.hotline-address {
+    display: flex;
+}
+.hotline-address li + li {
+    margin-left: 30px;
+}
+.hotline-address li a {
+  display: block;
+  font-size: 13px;
+  height: 50px;
+  line-height: 50px;
+  transition: all 0.3s ease 0s;
+}
+.hotline-address li a i {
+  margin-right: 10px;
+  transition: 0.3s;
+}
+.hotline-address li a:hover i {
+  color: #5b5b5b;
+}
+.language-form a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  transition: all 0.3s ease 0s;
+}
+.select-language .lang-option {
+  background: #ffffff none repeat scroll 0 0;
+  border-top: 3px solid #4c8bf5;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  left: 0;
+  opacity: 0;
+  padding: 5px 15px;
+  position: absolute;
+  top: 100%;
+  transform: scaleY(0);
+  transition: all 0.5s ease-out 0s;
+  width: 140px;
+  z-index: 9999;
+}
+.select-language:hover .lang-option{
+  opacity: 1;
+  transform: scaleY(1);
+}
+.lang-option li a {
+  color: #5b5b5b !important;
+  font-size: 12px;
+}
+.header-bg-theme a{
+  transition: 0.3s;
+}
+.header-bg-theme a:hover {
+  color: #5b5b5b;
+}
+.language-form a i {
+  margin-left: 10px;
+}
+/*Menu-1*/
+.header-style-1 .logo a,
+.header-style-5 .logo a,
+.header-style-6 .logo a,
+.header-style-7 .logo a,
+.header-style-9 .logo a {
+  display: block;
+  height: 100px;
+  line-height: 100px;
+}
+.header-style-1 .main-menu > li > a,
+.header-style-5 .main-menu > li > a,
+.header-style-9 .main-menu > li > a {
+  height: 100px;
+  line-height: 100px;
+}
+.header-style-1 .main-menu > li:hover > a,
+.header-style-3 .main-menu > li:hover > a,
+.header-style-4 .main-menu > li:hover > a,
+.header-style-9 .main-menu > li:hover > a{
+  background: transparent none repeat scroll 0 0;
+  color: #4c8bf5;
+}
+.header-style-1 .main-menu > li > a ,
+.header-style-3 .main-menu > li > a,
+.header-style-4 .main-menu > li > a ,
+.header-style-8 .main-menu > li > a{
+  padding: 0;
+}
+.header-style-1 .main-menu li,
+.header-style-3 .main-menu > li,
+.header-style-4 .main-menu > li,
+.header-style-8 .main-menu > li {
+  padding: 0 10px;
+  transition: 0.3s;
+}
+.header-style-1 .main-menu > li > a::before ,
+.header-style-3 .main-menu > li > a::before,
+.header-style-4 .main-menu > li > a::before{
+  background: #4c8bf5 none repeat scroll 0 0;
+  bottom: 0;
+  height: 3px;
+}
+
+.header-one .main-menu li.drop ul.dropdown,
+.header-style-2 .main-menu li.drop ul.dropdown,
+.header-style-3 .main-menu li.drop ul.dropdown,
+.header-style-4 .main-menu li.drop ul.dropdown,
+.header-style-5 .main-menu li.drop ul.dropdown,
+.header-style-6 .main-menu li.drop ul.dropdown,
+.header-style-7 .main-menu li.drop ul.dropdown,
+.header-style-8 .main-menu li.drop ul.dropdown ,
+.header-style-9 .main-menu li.drop ul.dropdown{
+  top: 100% !important;
+}
+
+
+
+
+
+
+/*-----------------------------
+  Header Style 2
+------------------------------*/
+.header-style-2 .hotline-address li a:hover i,
+.header-style-6 .hotline-address li a:hover i,
+.header-style-2 .header-social-icon .social-icon li a:hover i,
+.header-style-2 .main-menu > li:hover > a,
+.header-style-2 .header-social-icon .social-icon li a:hover i{
+  color: #4c8bf5;
+}
+.header-style-2 .header-social-icon .social-icon li a i ,
+.header-style-4 .header-social-icon .social-icon li a i,
+.header-style-6 .header-social-icon .social-icon li a i{
+  color: #5b5b5b;
+}
+.header-style-2 .logo{
+  text-align: center;  
+}
+.header-style-2 .logo,
+.header-style-3 .logo ,
+.header-style-4 .logo {
+  height: 100px;
+  line-height: 100px;
+}
+.header-style-2 .header-social-icon p,
+.header-style-6 .header-social-icon p,
+.header-style-2 .header-social-icon .social-icon li a,
+.header-style-6 .header-social-icon .social-icon li a,
+.header-style-2 .hotline-address li a,
+.header-style-6 .hotline-address li a,
+.header-style-3 .main-menu > li > a,
+.header-style-4 .main-menu > li > a{
+  color: #5b5b5b;
+  height: 100px;
+  line-height: 100px;
+}
+.header-style-2 .header-social-icon .social-icon li a{
+  border: 1px solid transparent;
+}
+.header-style-2 .main-menu > li > a {
+  height: 70px;
+  line-height: 70px;
+  z-index: 2;
+}
+.header-style-2 .main-menu > li > a::before {
+  bottom: 0;
+  height: 100%;
+  transform: skewX(-25deg);
+  width: 100%;
+  z-index: -1;
+}
+.header-style-2 ul.main-menu {
+  justify-content: center;
+}
+/*-----------------------------
+  Header Style 3
+------------------------------*/
+.header-style-3 .main-menu > li :hover:: a before,
+.header-style-4 .main-menu > li :hover:: a before  {
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+}
+/*-----------------------------
+  Header Style 4
+------------------------------*/
+.header-style-4 .social-icon {
+  margin-top: 0;
+}
+.header-style-4 .social-icon li a,
+.header-style-5 .social-icon li a,
+.header-style-7 .social-icon li a {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid transparent;
+  height: 100px;
+  line-height: 100px;
+  width: auto;
+}
+.header-style-4 .social-icon li a i,
+.header-style-5 .social-icon li a:hover i,
+.header-style-6 .social-icon li a:hover i,
+.header-style-7 .social-icon li a:hover i {
+  color: #4c8bf5;
+}
+.header-style-4 .social-icon li:hover a {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid transparent;
+}
+.header-style-4 .social-icon li a:hover i,
+.header-style-6 button.header-btn a i{
+  color: #5b5b5b; 
+}
+.header-style-4{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*-----------------------------
+  Header Style 5
+------------------------------*/
+.header-style-5 .header-content {
+  box-shadow:0 15px 25px rgba(0, 0, 0, 0.05), 0 10px 10px rgba(0, 0, 0, 0.05) !important;
+
+}
+.header-style-5 .hotline-address li a{
+  height: 100px;
+  line-height: 100px;
+}
+.header-style-5 .social-icon ,
+.header-style-7 .social-icon{
+  margin-top: 0;
+}
+.header-style-5 .social-icon li a i,
+.header-style-7 .social-icon li a i {
+  color: #fff;
+}
+.header-style-5 ul.main-menu {
+  display: flex;
+  justify-content: center;
+}
+.header-style-5 .social-icon,
+.header-style-7 .social-icon {
+  justify-content: flex-end;
+}
+.header-style-5 .social-icon li:hover a,
+.header-style-6 .social-icon li:hover a,
+.header-style-7 .social-icon li:hover a {
+  border: 1px solid transparent;
+}
+.header-style-5 {
+  min-height: 150px;
+}
+.header-style-5 .ml-header {
+  height: auto;
+  left: auto;
+  margin: auto;
+  position: absolute;
+  right: auto;
+  top: 102%;
+  width: 100%;
+}
+.header-style-5 .main-menu > li > a::before,
+.header-style-7 .main-menu > li > a::before {
+  position: inherit;
+}
+/*-----------------------------
+  Header Style 6
+------------------------------*/
+.header-style-6 ul.main-menu {
+  justify-content: left;
+}
+.header-right-inner {
+  display: flex;
+  justify-content: flex-end;
+}
+.header-style-6 .main-menu > li > a {
+  height: 50px;
+  line-height: 50px;
+}
+.header-style-6 input[type="text"],
+.header-style-6 input[type="email"],
+.header-style-6 input[type="password"] {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #fff;
+  color: #5b5b5b;
+  font-size: 10px;
+  height: 20px;
+  padding-left: 10px;
+  padding-right: 25px;
+  width: 130px;
+}
+.header-style-6 .input-box {
+  margin-top: 10px;
+  position: relative;
+  text-align: right;
+}
+.header-style-6 button.header-btn {
+  background: #fff none repeat scroll 0 0;
+  border: 0 none;
+  height: 20px;
+  padding: 0 5px;
+  position: absolute;
+  right: 0;
+  top: 3px;
+}
+.header-style-6 .main-menu > li > a::before {
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  transform: skewX(-25deg);
+  z-index: -1;
+}
+.header-style-6 .main-menu > li > a {
+  height: 50px;
+  line-height: 50px;
+  z-index: 2;
+}
+.header-style-6 .main-menu > li:hover > a {
+  color: #4c8bf5 !important;
+}
+/*-----------------------------
+  Header Style 7
+------------------------------*/
+.header-style-7 .main-menu > li > a:hover {
+  background: transparent none repeat scroll 0 0;
+  color: #4c8bf5;
+  border: 1px solid #fff;
+}
+.header-style-7 ul.main-menu {
+  align-items: center;
+  height: 100px;
+  justify-content: center;
+}
+.header-style-7 .main-menu > li > a {
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+}
+.header-style-7 .main-menu > li > a {
+  padding: 0 9px;
+}
+
+
+
+
+
+
+
+
+
+/*-----------------------------
+  Header Style 8
+------------------------------*/
+.header-style-8 .header-top {
+  height: 25px;
+}
+.header-style-8 .header-top-left {
+  justify-content: center;
+  display: flex;
+}
+.header-style-8 .hotline-address {
+  background: #4c8bf5 none repeat scroll 0 0;
+  border-radius: 0 0 25px 25px;
+  justify-content: center;
+  padding: 0 45px;
+}
+.header-style-8 .main-menu > li > a::before {
+  background: #4c8bf5;
+  bottom: 0;
+  height: 3px;;
+}
+.header-style-8 .main-menu > li > a:hover {
+  background: transparent;
+  color: #4c8bf5;
+}
+.header-style-8 .logo {
+  height: 70px;
+  line-height: 50px;
+}
+.header-style-8 .main-menu > li:hover > a {
+  background: transparent none repeat scroll 0 0;
+  color: #4c8bf5;
+}
+
+
+
+
+
+/*-----------------------------
+  Header Style 9
+------------------------------*/
+.header-style-9 .main-menu > li > a::before {
+  position: inherit;
+}
+.header-style-9 input[type="text"],
+.header-style-9 input[type="email"],
+.header-style-9 input[type="password"] {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: transparent none repeat scroll 0 0;
+  border-color: transparent transparent #fff;
+  border-image: none;
+  border-style: solid;
+  border-width: 2px 2px 1px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 300;
+  height: 29px;
+  padding-left: 0;
+  padding-right: 23px;
+}
+.header-style-9 .input-box {
+  margin-top: 31px;
+  position: relative;
+}
+.header-style-9 button.header-btn {
+  background: rgba(0, 0, 0, 0) none repeat scroll center top;
+  border: 0 none;
+  position: absolute;
+  right: 3px;
+  top: 4px;
+}
+
+/*-----------------------------
+  Header Style 10
+------------------------------*/
+
+.header-style-10 .main-menu li.logo-images {
+  margin: 0 37px;
+}
+.header-style-10 ul.main-menu {
+  height: 100px;
+  align-items: center;
+  justify-content: center;  
+}
+
+.header-style-10 .main-menu > li > a::before {
+  position: inherit;
+}
+.header-style-10 .main-menu > li > a {
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+.header-style-10 .main-menu li.logo-images {
+  margin: 0 37px;
+  border: 1px solid transparent;
+}
+.header-style-10 .main-menu > li > a:hover {
+  border: 1px solid #4c8bf5;
+}
+.header-style-10 .main-menu li.logo-images a:hover{
+   border: 1px solid transparent; 
+}
+.header-style-10 .main-menu li.logo-images a:hover {
+  background: transparent;
+}
+
+/*-----------------------------------------
+        Sticky  For All Header
+-------------------------------------------*/
+.ml-header-top.header-one.scroll-header {
+  background: rgba(255, 255, 255, 1) none repeat scroll 0 0 !important;
+}
+.header-style-4 .ml-header-top.scroll-header,
+.header-style-5 .ml-header-top.scroll-header,
+.header-style-6 .ml-header-top.scroll-header,
+.header-style-7 .ml-header-top.scroll-header,
+.header-style-8 .ml-header-top.scroll-header,
+.header-style-9 .ml-header-top.scroll-header,
+.header-style-10 .ml-header-top.scroll-header {
+  animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+  background: rgba(255, 255, 255, 1) none repeat scroll 0 0;
+  box-shadow: 0 1px 3px rgba(50, 50, 50, 0.4);
+  left: 0;
+  margin: 0 auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+}
+
+
+.header-style-6 .ml-header-top.scroll-header{
+  background: #4c8bf5;
+}
+.header-style-7 .ml-header-top.scroll-header,
+.header-style-9 .ml-header-top.scroll-header{
+  background: #5b5b5b;
+}
+.header-style-9 .ml-header-top.scroll-header hr.separator-1 {
+  margin: 0;
+  border: 1px solid transparent;
+}
+
+
+
+.header-style-3 .ml-header-top.scroll-header,
+.header-style-8 .ml-header-top.scroll-header,
+.header-style-10 .ml-header-top.scroll-header {
+  background: #f1f1f1;
+}
+
+.header-style-10 .ml-header-top.scroll-header ul.main-menu{
+  height: 60px;
+}
+.header-style-10 .ml-header-top.scroll-header .main-menu li.logo-images {
+  height: 52px;
+}
+
+
+.header-style-4 .ml-header-top.scroll-header .header-content {
+  background: #fff none repeat scroll 0 0 !important;
+}
+.header-style-5 .ml-header-top.scroll-header .header-content {
+  box-shadow: inherit !important;
+}
+
+.header-style-1 .ml-header-top.header-one.scroll-header .main-menu > li > a,
+.header-style-1 .ml-header-top.header-one.scroll-header .logo a,
+.header-style-3 .scroll-header .main-menu > li > a,
+.header-style-3 .scroll-header .logo,
+.header-style-4 .ml-header-top.scroll-header .logo,
+.header-style-7 .ml-header-top.scroll-header .logo a,
+.header-style-7 .ml-header-top.scroll-header .logo,
+.header-style-4 .ml-header-top.scroll-header .main-menu > li > a,
+.header-style-4 .ml-header-top.scroll-header .social-icon li a,
+.header-style-7 .ml-header-top.scroll-header .social-icon li a,
+.header-style-5 .ml-header-top.scroll-header .main-menu > li > a,
+.header-style-9 .ml-header-top.scroll-header .logo a,
+.header-style-9 .ml-header-top.scroll-header .main-menu > li > a {
+  height: 70px;
+  line-height: 70px;
+}
+
+.header-style-7 .ml-header-top.scroll-header ul.main-menu {
+  align-items: center;
+  height: 70px;
+  justify-content: center;
+}
+.header-style-8 .ml-header-top.scroll-header .logo {
+  height: 70px;
+  line-height: 63px;
+}
+.header-style-9 .ml-header-top.scroll-header .input-box {
+  margin-top: 14px;
+}
+
+
+
+
+
+/*Header-3*/
+
+.header-style-3 .ml-header,
+.header-style-4 .ml-header,
+.header-style-7 .ml-header,
+.header-style-9 .ml-header{
+  left: 0;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  z-index: 999999999;
+}
+.header-style-5 {
+  min-height: 0;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+.ml-bradcaump-3 .bradcaump-wrap {
+  padding-top: 102px;
+}
+.ml-bradcaump-4 .bradcaump-wrap {
+  padding-top: 140px;
+}
+.ml-bradcaump-6 .bradcaump-wrap,
+.ml-bradcaump-10 .bradcaump-wrap,
+.ml-bradcaump-8 .bradcaump-wrap {
+  padding-top: 0;
+}
+
+
+
+.ml-bradcaump-7 .bradcaump-wrap {
+  padding-top: 100px;
+}
+
+
+.ml-bradcaump-9 .bradcaump-wrap {
+  padding-top: 140px;
+}
+.header-style-9 ul.main-menu {
+  justify-content: center;
+}
+.ml-bradcaump-5 .bradcaump-wrap {
+  padding-top: 200px;
+}
+
+
+
+
+
+
+
+
+
+/*dropdown menu*/
+.main-menu li.drop{
+    position: relative;
+}
+.main-menu li.drop ul.dropdown {
+  background: #ffffff none repeat scroll 0 0;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+  left: 0;
+  margin: 0;
+  opacity: 0;
+  padding: 0;
+  position: absolute;
+  top: 120%;
+  transition: all 0.2s ease-in-out 0s;
+  visibility: hidden;
+  width: 220px;
+  z-index: 999;
+}
+.scroll-header .main-menu li.drop ul.dropdown {
+  top: 120%;
+}
+.scroll-header .main-menu li.drop:hover ul.dropdown {
+  top: 100%;
+}
+.main-menu li.drop:hover ul.dropdown {
+    opacity: 1;
+    visibility: visible;
+    top: 106%;
+}
+.main-menu ul.dropdown li {
+    border-bottom: 1px solid #f4f4f4;
+    display: block;
+}
+
+.main-menu ul.dropdown li a {
+  background: #ffffff none repeat scroll 0 0;
+  color: #999999;
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out 0s;
+  padding: 12px 20px 12px 25px;
+  transition: 0.3s;
+}
+
+.main-menu li.drop ul.dropdown li:hover > a {
+    background: #fafafa none repeat scroll 0 0;
+    color: #222222;
+}
+/*sub menu*/
+.main-menu li.drop ul.dropdown li.drop::after {
+  color: #999;
+  content: "";
+  font-family: "Material-Design-Iconic-Font";
+  font-size: 13px;
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  transition: all 0.2s ease-in-out 0s;
+}
+.main-menu li.drop ul.dropdown li.drop{
+  position: relative;
+}
+.main-menu li.drop ul.dropdown li.drop ul.dropdown.smright {
+  border: medium none;
+  right: 100%;
+  top: 0;
+  transition: all 0.3s ease 0s;
+}
+.main-menu li.drop ul.dropdown li.drop ul.dropdown.level2 {
+  border: medium none;
+  left: 100%;
+  top: 20%;
+  transition: all 0.3s ease 0s;
+}
+.main-menu li.drop ul.dropdown li.drop ul.dropdown.level2 {
+    opacity: 0;
+    visibility: hidden;
+}
+.main-menu li.drop ul.dropdown li.drop:hover ul.dropdown.level2 {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+}
+.main-menu li.drop ul.dropdown li.drop ul.dropdown.smright {
+    opacity: 0;
+    visibility: hidden;
+}
+.main-menu li.drop ul.dropdown li.drop ul.dropdown.smright {
+  background: #ffffff none repeat scroll 0 0;
+  left: -100%;
+  margin: 0;
+  opacity: 0;
+  padding: 0;
+  position: absolute;
+  top: 20%;
+  transition: all 0.3s ease-in-out 0s;
+  visibility: hidden;
+  width: 220px;
+  z-index: 999;
+}
+.main-menu li.drop ul.dropdown li.drop:hover ul.dropdown.smright {
+  left: -100%;
+  opacity: 1;
+  visibility: visible;
+  top: 0;
+}
+.theme-color .cd-words-wrapper {
+  padding: 0px !important;
+}
+
+.main-menu li ul li {
+    margin: 0;
+}
+.main-menu li ul li:first-child {
+    margin: 0;
+}
+

@@ -1,0 +1,36 @@
+// Breadcaump Style
+.bradcaump_area {
+    padding: 100px 0 105px;
+    .bradcaump_inner {
+        .bradcaump-title {
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            line-height: 1;
+            margin: 0 0 16px;
+            text-transform: capitalize;
+            @media #{$small-mobile} {
+                font-size: 26px;
+                margin: 0 0 12px;
+            }
+        }
+        .bradcaump-content {
+            .breadcrumb_item {
+                color: #ffffff;
+                &:hover {
+                    color: #777;
+                }
+                &.active {
+                    color: #ffffff;
+                }
+            }
+            .brd-separetor {
+                padding: 0 5px;
+                color: #ffffff;
+            }
+        }
+    }
+    @media #{$sm-layout} {
+        padding: 65px 0 65px;
+    }
+}

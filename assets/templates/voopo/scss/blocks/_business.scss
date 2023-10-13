@@ -1,0 +1,116 @@
+/*------------------
+    Button Styles 
+---------------------*/
+
+.voopo__business {
+    .content {
+        h2 {
+            color: #010f54;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 40px;
+            margin-bottom: 40px;
+            padding-bottom: 44px;
+            position: relative;
+            &::before {
+                background: linear-gradient(-90deg, #fccec8, #e05941);
+                bottom: 0;
+                content: "";
+                height: 3px;
+                left: 0;
+                position: absolute;
+                width: 150px;
+                transition: 0.5s;
+            }
+            &:hover::before {
+                width: 180px;
+            }
+        }
+        p {
+            color: #035e91;
+            font-size: 16px;
+            line-height: 27px;
+            margin-bottom: 25px;
+            &.first__desc {
+                color: #010f54;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 27px;
+                margin-bottom: 26px;
+            }
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+}
+
+// Responsive Css
+@media #{$xx-layout} {}
+
+@media #{$xlg-layout} {}
+
+@media #{$lg-layout} {
+    .voopo__business .thumb img {
+        width: 100%;
+    }
+}
+
+@media #{$md-layout} {
+    .voopo__business .thumb img {
+        width: 100%;
+    }
+    .voopo__business .content h2 {
+        font-size: 26px;
+        line-height: 36px;
+        margin-bottom: 24px;
+        padding-bottom: 23px;
+    }
+    .voopo__business .content p {
+        font-size: 14px;
+        line-height: 25px;
+        margin-bottom: 13px;
+    }
+}
+
+@media #{$sm-layout} {
+    .voopo__business .thumb img {
+        width: 100%;
+    }
+    .voopo__business .content h2 {
+        color: #010f54;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 41px;
+        margin-bottom: 16px;
+        padding-bottom: 15px;
+        position: relative;
+    }
+    .voopo__business .content h2 {
+        font-size: 30px;
+        line-height: 41px;
+        margin-bottom: 16px;
+        padding-bottom: 15px;
+    }
+}
+
+@media #{$xs-layout} {
+    .voopo__business .content h2 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .area__text::before {
+        display: none;
+    }
+    .voopo__business .content h2 {
+        font-size: 20px;
+        line-height: 31px;
+    }
+}
+
+@media #{$xxs-layout} {
+    .voopo__business .content p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}

@@ -1,0 +1,59 @@
+/*-- 
+    13. Your Opinion Css
+-----------------------------*/
+.opinion-bg {
+    background: url(../images/bg/01.jpg);
+    background-size: cover;
+}
+.your-opinion-wrap {
+    text-align: center;
+    & h2 {
+        font-size: 48px;
+        font-weight: 600;
+        color: $white;
+        margin-bottom: 60px;
+        @media #{$large-mobile}{
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+    }
+}
+.opinion-content-inner {
+    & .form-control {
+        width: 100%;
+        font-size: 16px;
+        margin-bottom: 30px;
+        &:focus {
+            outline: none;
+            box-shadow: none;
+            border-color: $theme-color;
+        }
+    }
+    & input ,
+    & textarea{
+        padding: 20px 30px;
+        height: 60px;
+        
+    }
+    & textarea {
+        height: 120px;
+    }
+    & select.selector-time-date {
+        height: 60px !important;
+        -webkit-user-select: none;
+        -moz-appearance: none;
+        position: relative;
+        &::before {
+            position: absolute;
+            right: 0;
+            top: 0;
+            content: "\\";
+            width: 20px;
+            height: 20px;
+            color: #000;
+        }
+    }
+    & .submit-box {
+        margin-top: 10px;
+    }
+}

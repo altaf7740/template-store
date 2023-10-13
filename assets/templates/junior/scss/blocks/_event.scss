@@ -1,0 +1,397 @@
+@import "../variables";
+@import "../mixins";
+
+
+/*========================
+	Event Area
+===========================*/
+
+
+
+.single__event{
+	background: #f5e581 none repeat scroll 0 0;
+    margin-top: 30px;
+    &.bg__light__green{
+    	background: #90cda2 none repeat scroll 0 0;
+    }
+    &.bg__baby__pink{
+    	background: #f9b0b0 none repeat scroll 0 0;
+    }
+	.event__thumb{
+		position: relative;
+		a{
+			img{
+
+			}
+		}
+		.event__hover__info{
+			height: 100%;
+		    position: absolute;
+		    text-align: center;
+		    top: 0;
+		    width: 100%;
+		    z-index: 2;
+		    &::before {
+			    background: #000 none repeat scroll 0 0;
+			    content: "";
+			    height: 100%;
+			    left: 0;
+			    opacity: 0.8;
+			    position: absolute;
+			    top: 0;
+			    width: 100%;
+			    z-index: -1;
+			}
+			span{
+				color: #ffffff;
+			    font-family: $body-font;
+			    font-size: 24px;
+			    font-weight: 700;
+			    left: 50%;
+			    position: absolute;
+			    text-align: center;
+			    top: 50%;
+			    transform: translateY(-50%) translateX(-50%);
+
+			}
+		}
+	}
+	.event__inner{
+		align-self: center;
+    	padding: 25px 30px;
+		h6{
+			font-size: 19px;
+		    font-weight: 700;
+		    text-transform: capitalize;
+		    font-family: $heading-font;
+			a{
+
+			}
+		}
+		.event__time__location{
+			margin-top: 16px;
+			li{
+				color: #333;
+				i{
+					font-size: 18px;
+	    			padding-right: 8px;
+				}
+			}
+		}
+	}
+}
+
+.event__time__location li + li {
+    padding-top: 3px;
+}
+
+.event__big__thumb{
+	padding-right: 70px;
+	.sin__event__thumb{
+		a{
+			display: block;
+			img{
+
+			}
+		}
+	}
+	.sin__event__time{
+		background: #f5e581 none repeat scroll 0 0;
+	    padding: 30px 0;
+	    text-align: center;
+		p{
+			color: #666666;
+    		font-size: 16px;
+			i{
+				color: #666666;
+    			padding-right: 8px;
+
+			}
+		}
+	}
+}
+.dcare__event__wrapper {
+    padding-right: 50px;
+}
+
+.event__big__thumb{
+	position: relative;
+}
+.event__big__thumb{
+	.owl-nav{
+		div{
+			position: absolute;
+		    top: 50%;
+		    transform: translateY(-50%);
+			&.owl-next{
+				left: auto;
+    			right: 70px;
+			}
+			i{
+				background: #444444 none repeat scroll 0 0;
+				color: #fefefe;
+				display: block;
+				font-size: 30px;
+				height: 52px;
+				line-height: 52px;
+				text-align: center;
+				width: 33px;
+
+			}
+		}
+	}
+}
+
+.event__big__thumb.owl-carousel .owl-item img {
+  width: 100%;
+}
+
+
+
+
+// Event Style Two
+
+.dcare__event{
+	box-shadow: 0 0 35px rgba(42, 42, 42, 0.1);
+    margin-top: 40px;
+	.event__thumb{
+		a{
+			display: block;
+			img{
+				width: 100%;
+			}
+		}
+	}
+	.event__content{
+		.event__pub{
+			display: flex;
+    		padding: 20px;
+			.event__date{
+				padding-right: 20px;
+    			position: relative;
+    			width: 86px;
+    			&::before {
+				    background: #faae08 none repeat scroll 0 0;
+				    content: "";
+				    height: 40px;
+				    position: absolute;
+				    right: 0;
+				    top: 50%;
+				    transform: translateY(-50%);
+				    width: 1px;
+				}
+				span{
+					color: #fe5629;
+				    font-family: $body-font;
+				    font-size: 20px;
+				    font-weight: 700;
+					&.date{
+						font-size: 46px;
+					}
+				}
+			}
+			.event__time{
+				padding-left: 20px;
+				li{
+					i{
+						color: #faae08;
+					    font-size: 18px;
+					    padding-right: 7px;
+
+					}
+				}
+			}
+		}
+		.event__inner{
+			padding: 13px 20px 27px;
+    		position: relative;
+    		&::before {
+			    background: #eeeeee none repeat scroll 0 0;
+			    content: "";
+			    height: 1px;
+			    left: 20px;
+			    position: absolute;
+			    right: 20px;
+			    top: 0;
+			    width: auto;
+			}
+			p{
+				a{
+					color: #444444;
+				    font-family: $heading-font;
+				    font-size: 24px;
+				    font-weight: 700;
+				    line-height: 38px;
+				    @include transition(0.3s);
+				    &:hover{
+				    	color: $theme-color;
+				    }
+				}
+			}
+		}
+		.event__btn{
+			@include flexbox();
+			li{
+				@include flex-basis(50%);
+			    height: 47px;
+			    line-height: 47px;
+			    text-align: center;
+				a{
+					color: #ffffff;
+				    font-family: $body-font;
+				    font-size: 18px;
+				    font-weight: 700;
+				    text-transform: capitalize;
+				    display: block;
+				}
+			}
+		}
+	}
+}
+
+
+.event__btn li:first-child {
+    background: #fe5629 none repeat scroll 0 0;
+}
+.event__btn li:last-child {
+    background: #faae08 none repeat scroll 0 0;
+}
+
+.event-grid-page{
+	margin-top: -40px;
+}
+
+.upcoming__event{
+	h2{
+		font-family: $heading-font;
+	}
+}
+
+
+
+
+// Responsive Css
+
+
+
+
+@media #{$lg-layout}{
+
+		
+	.single__event .event__inner {
+	  padding: 30px 19px;
+	}
+	.single__event .event__inner .event__time__location li {
+	  font-size: 12px;
+	}
+	.event__big__thumb {
+	  padding-right: 30px;
+	}
+	.event__big__thumb .owl-nav div.owl-next {
+	  right: 29px;
+	}
+	.single__event .event__inner h6 {
+	  font-size: 19px;
+	}
+
+}
+
+@media #{$sm-layout}{
+
+	.upcomming__event .event__occur {
+	  left: 6%;
+	}
+
+	.upcomming__event .event__occur {
+	  top: 68%;
+	}
+
+	.dcare__event__wrapper {
+	  padding-right: 0;
+	}
+	.event__big__thumb {
+	  padding-right: 0;
+	}
+	.event__big__thumb .owl-nav div.owl-next {
+	  right: 0;
+	}
+
+
+
+
+}
+
+@media #{$xs-layout}{
+
+	.dcare__event__wrapper {
+	  padding-right: 0;
+	}
+	.single__event .event__inner h6 {
+	  font-size: 21px;
+	}
+	.single__event .event__inner .event__time__location li {
+	  font-size: 11px;
+	}
+	.single__event .event__inner {
+	  padding: 26px 20px;
+	}
+
+	.upcomming__event .event__occur {
+	  top: 90%;
+	}
+	.upcomming__event .event__occur {
+	  left: 22%;
+	}
+
+}
+
+
+
+
+@media #{$xxs-layout}{
+
+	.dcare__event .event__content .event__pub {
+	  display: block;
+	}
+	.dcare__event .event__content .event__pub .event__date::before,
+	.event__big__thumb .owl-nav div {
+	  display: none;
+	}
+	.dcare__event .event__content .event__pub .event__time {
+	  margin-top: 11px;
+	  padding-left: 0;
+	}
+
+	.single__event {
+	  flex-wrap: wrap;
+	}
+	.event__thumb a img {
+	  width: 100%;
+	}
+	.single__event .event__thumb,
+	.single__event .event__inner {
+	  flex-basis: 100%;
+	}
+	.single__event .event__inner .event__time__location li {
+	  font-size: 14px;
+	}
+	.single__event .event__inner h6 {
+	  font-size: 25px;
+	}
+
+	.event__big__thumb {
+	  padding-right: 0;
+	}
+
+	.upcomming__event .event__occur {
+	  display: none;
+	}
+	.upcomming__event {
+	  margin-top: 40px;
+	}
+
+
+
+
+
+}

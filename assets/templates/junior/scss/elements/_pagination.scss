@@ -1,0 +1,68 @@
+@import "../variables";
+@import "../mixins";
+
+
+/*===================
+	Pagination Styles 
+======================*/
+
+
+
+
+.dcare__page__list{
+	li{
+		margin: 0 7px;
+		a{
+			border: 1px solid #e1e1e1;
+		    border-radius: 100%;
+		    display: block;
+		    height: 35px;
+		    line-height: 33px;
+		    text-align: center;
+		    width: 35px;
+		    &.page{
+				border: medium none;
+			    color: #666666;
+			    text-transform: capitalize;
+			    transition: all 0.3s ease 0s;
+			    width: auto;
+			    &:hover{
+			    	color: $theme-color;
+			    }
+		    }
+		}
+	}
+}
+
+.dcare__page__list li:first-child {
+    margin-right: 5px;
+}
+.dcare__page__list li:last-child {
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

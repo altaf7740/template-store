@@ -1,0 +1,93 @@
+/*--
+    09. App Css
+-------------------------*/
+.app-content {
+    & h1 {
+        font-size: 48px;
+        line-height: 56px;
+        font-weight: 700;
+        color: $theme-color;
+        white-space: nowrap;
+        margin-bottom: 25px;
+        @media #{$desktop-device}{
+            font-size: 42px;
+            line-height: 50px;
+        }
+        @media #{$tablet-device}{
+            font-size: 28px;
+            line-height: 34px;
+        }
+        @media #{$large-mobile}{
+            font-size: 26px;
+            line-height: 30px;
+        }
+        @media #{$small-mobile}{
+            font-size: 20px;
+            line-height: 28px;
+        }
+    }
+    & .download-buttons {
+        
+        & a {
+            margin-top: 10px;
+            margin-right: 25px;
+            border: 1px solid #d4d7da;
+            border-radius: 6px;
+            background: linear-gradient(to right, #f0f2f5 0%, #f7f8f9 51%, #ffffff 100%);
+            @media #{$tablet-device,$large-mobile}{
+                margin-right: 10px;
+                &:nth-child(2n){
+                    margin-right: 0;
+                }
+            }
+            & .icon {
+                display: block;
+                background: linear-gradient(to right, #e2e5e8 0%, #f5f5f5 51%, #ffffff 100%);
+                width: 64px;
+                border-right: 1px solid #d4d7da;
+                float: left;
+                border-radius: 6px 0 0 6px;
+                & img {}
+                @media #{$large-mobile}{
+                    width: 58px;
+                }
+                @media #{$tablet-device}{
+                    width: 54px;
+                }
+            }
+            & .text {
+                width: 160px;
+                display: block;
+                float: left;
+                padding-left: 12px;
+                margin-top: 4px;
+                @media #{$large-mobile,$tablet-device}{
+                    width: 130px;
+                }
+                & span {
+                    &.brand {
+                        display: block;
+                        font-size: 17px;
+                        font-weight: 700;
+                        line-height: 0.8;
+                        @media #{$large-mobile,$tablet-device}{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.app-image {
+    margin-bottom: -130px;
+    display: flex;
+    justify-content: flex-end;
+    @media #{$large-mobile,$tablet-device}{
+        justify-content: center;
+        margin-top: 35px;
+    }
+}
+.app-image-2 {
+    margin-top: 40px;
+}

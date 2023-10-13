@@ -1,0 +1,104 @@
+/* -----------------------------------
+Template:  Theme Name
+
+NOTE: This is event about file. All about related style included in this file.
+
+--------------------------------------*/
+.about-area{}
+.single-about{
+	overflow:hidden;
+	position:relative;
+}
+.about-img{}
+.primary{
+	position:relative;
+	width:100%;
+	height:100%;
+	display:block;
+	transition:all .4s;
+}
+.secendary {
+  position: absolute;
+  z-index: 111;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition:all .4s;
+}
+.single-about:hover .secendary{
+	opacity:1;
+	transition:all .4s;
+}
+.about-content {
+  bottom: 38%;
+  display: inline-block;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 999;
+}
+.about-name > h4 {
+  color: #ffffff;
+  font-weight: 500;
+  display:inline-block;
+  text-transform:capitalize;
+}
+.about-icon > a {
+  font-size: 18px;
+  color: #fff;
+  margin:  0 7px;
+}
+.about-name {
+  position: relative;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: -60px;
+  transition:all .3s;
+}
+.about-name > h4::before {
+  background: #ffffff none repeat scroll 0 0;
+  bottom: -1px;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: absolute;
+  text-align: center;
+  width: 100px;
+  left: 31%;
+}
+.about-icon {
+  position: relative;
+  bottom: -70px;
+  transition: all 0.3s ease 0s;
+}
+.single-about:hover .about-content{
+	opacity:1;
+}
+.single-about:hover .about-icon {
+	bottom:-5px;
+}
+.single-about:hover .about-name {
+	top:-5px;
+}
+
+ul.tab-menu {
+    text-align: center;
+}
+ul.tab-menu li {
+    display: inline-block;
+}
+ul.tab-menu li a {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 12px;
+    text-transform: capitalize;
+}
+ul.tab-menu li.active a, ul.tab-menu li:hover a{
+	color:#FF6666;
+}
+

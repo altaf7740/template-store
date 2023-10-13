@@ -1,0 +1,145 @@
+/* =====================================
+	
+	Template: Carspa
+	Css Name: Footer
+	Version: 1
+	Design and Developed by:HasTech
+	NOTE: This is Footer style file. All footer related style included in this file
+
+======================================== */
+
+/* ============= Footer Css ============= */
+.address-area > h4 {
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 38px;
+  padding-bottom: 10px;
+  position: relative;
+}
+.address-area > h4::before {
+  background: #fff none repeat scroll 0 0;
+  bottom: -5px;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  width: 90px;
+}
+.address-area > p {
+  color: #fff;
+  font-size: 13px;
+  margin: 30px 0;
+}
+
+/* Footer Menu */
+.footer-menu ul li{display:block;}
+.footer-menu ul li a {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  overflow: hidden;
+  padding-bottom: 6px;
+}
+.footer-menu ul li:last-child a{padding-bottom:0;}
+.footer-menu ul li a:hover{color: #d42f38;}
+
+/* Footer News */
+.news-img {
+  float: left;
+  margin-right: 12px;
+}
+.footer-news ul li {
+  margin-bottom: 15px;
+}
+.news-cntnt {
+  display: block;
+  overflow: hidden;
+}
+.news-cntnt > h6 {
+  color: #fff;
+  font-size: 14px;
+  margin: 0 0 3px;
+}
+.news-cntnt > p {
+  color: #fff;
+  font-size: 12px;
+  line-height: 20px;
+  margin: 0;
+}
+
+/* Conatct Details */
+.contact-details li {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+.contact-details li:last-child {
+  margin-bottom: 15px;
+}
+.address-area .contact-details ul li i {
+  float: left;
+  font-size: 14px;
+  margin-right: 10px;
+  color:#fff;
+}
+.contact-details p {
+  color: #fff;
+  display: block;
+  font-size: 13px;
+  margin: -5px 0 0;
+  overflow: hidden;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.search-input form input {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #d8d8d8;
+  border-radius: 2px;
+  color: #fff;
+  height: 35px;
+  position: relative;
+}
+.search-input .search-button {
+    background: #fff none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 0;
+    color: #d42f38;
+    font-size: 14px;
+    font-weight: 600;
+    height: 35px;
+    line-height: 35px;
+    position: absolute;
+    right: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 40px;
+    transition: .4s;
+    top: 87%;
+}
+.search-input .search-button:hover{color:#fff;background:#d42f38;}
+/* Footer Bottom */
+.footer-bottom {
+  border-top: 1px solid #fff;
+  padding: 15px 0;
+  text-align: center;
+}
+.footer-bottom > p,.footer-bottom > p a {
+  color: #fff;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+.footer-bottom > p a:hover{color:#d42f38}
+
+
+/* Mail Chimp */
+.mailchimp-alerts {
+  padding: 10px 0;
+  position:absolute;
+}
+.mailchimp-submitting{color:#31708f}
+.mailchimp-success{color:#3c763d;}
+.mailchimp-error{color:#a94442;}

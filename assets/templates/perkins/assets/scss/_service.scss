@@ -1,0 +1,298 @@
+/*--
+    04. Service Css
+-------------------------------------*/ 
+
+.single-doing {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    position: relative;
+    &::after {
+        position: absolute;
+        content: "";
+        background: $theme-color;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        transition: all 0.3s ease-in-out;
+    }
+    & a {
+        display: block;
+        & img {
+            width: 100%;
+        }
+    }
+    & .content {
+        padding: 25px 20px;
+        text-align: center;
+        background: #fff;
+        & h4 {
+            font-weight: 700;
+            font-family: $body-font;
+        }
+        a {
+            font-family: $heading-font;
+            font-weight: 500;
+        }
+    }
+    &:hover {
+        &::after {
+            width: 100%;
+        }
+    }
+    & .read_btn {
+        border: 2px solid $theme-color;
+        display: inline-block;
+        color: $theme-color;
+        padding: 8px 40px;
+        border-radius: 50px;
+        font-family: $body-font;
+    }
+    
+}
+.our-works-active {
+    .slick-arrow {
+        position: absolute;
+        top: -95px;
+        background: #5b5b5b;
+        border: none;
+        height: 50px;
+        width: 45px;
+        font-size: 20px;
+        color: #fff;
+        right: 75px;
+        @media #{$large-mobile}{
+            display: none !important;
+        }
+        &:hover {
+            background: $theme-color;
+        }
+        &.arrow-next {
+            right: 15px;
+            left: auto;
+        }
+    }
+}
+
+
+/*---
+    
+-----------------------*/
+
+.section-service {
+    & .thumb {
+        
+        @media #{$large-mobile} {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.service-2 {
+    background:  #ffffff;
+    padding: 30px;
+    transition: 0.4s ease-in-out;
+    @media #{$large-mobile} {
+        padding: 15px;
+    }
+    &.padding-none{
+        padding: 0;
+    }
+    .thumb{
+        a{
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .content {
+        padding-top: 30px;
+        h4 {
+            color:  #333333;
+            font-size:  22px;
+            line-height: 30px;
+            margin-bottom: 13px;
+            padding: 0 9px;
+            
+            @media #{$large-mobile} {
+                font-size: 20px;
+            }
+        }
+        p {
+            color:  #333333;
+            font-size:  14px;
+            line-height:  24px;
+            margin-bottom: 35px;
+        }
+        a{
+            &.readmore_btn {
+                height:  42px;
+                border:  1px solid #0056ff;
+                display:  inline-block;
+                padding:  0 42px;
+                line-height:  40px;
+                font-size:  14px;
+                border-radius: 30px;
+                color:  #0056ff;
+                font-weight:  600;
+                transition: 0.5s;
+                &:hover {
+                    background:  #0056ff;
+                    color: #fff;
+                }
+                &.btn-transparent{
+                    border: 0 none;
+                    width: inherit;
+                    height: inherit;
+                    color: #3f3f3f;
+                    font-size: 14px;
+                    font-family: $heading-font;
+                    font-weight: 500;
+
+                    &:hover{
+                        color: $theme-color;
+                        background: transparent;
+                    }
+                }
+            }
+        }
+    }
+   
+    &.beauty-service{
+        background:  #ffffff;
+        .content {
+            padding: 40px;
+            h4{
+                padding: 0;
+                font-size: 22px;
+                font-weight: 500;
+            }
+            p{
+                margin-bottom: 13px;
+                color: #333333;
+                line-height: 27px;
+            }
+            a{
+                &.readmore_btn {
+                    border: 1px solid transparent;
+                    padding: 0;
+                    border-radius: inherit;
+                    color: #404040;
+                    height: auto;
+                    line-height: initial;
+                    &:hover {
+                        background:  transparent;
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+        &:hover{
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            .content {
+                a{
+                    &.readmore_btn {
+                        &:hover {
+                        color: #ff759d;
+                            }
+                    }
+                }
+            }
+        }
+    } 
+}
+
+
+/*---  ---*/
+
+.choose-content {
+    & h2 {
+        font-weight: 600;
+    }
+    @media #{$large-mobile}{
+        margin-top: 30px;
+    }
+}
+.choose-us-list {
+    & li {
+        padding-left: 25px;
+        position: relative;
+        margin-bottom: 10px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &::after {
+            position: absolute;
+            left: 0;
+            top: 0;
+            content: "\f00c";
+            font-family: "FontAwesome"; 
+            color: $theme-color;
+        }
+    }
+    @media #{$small-mobile}{
+        margin-top: 10px;
+        
+    }
+}
+
+
+.section-title-2{
+    margin-bottom: 35px;
+    & h2 {
+        font-weight: 600;
+    }
+    & p {
+        max-width: 400px;
+    }
+}
+
+.bg_image-service {
+    background-image: url(../images/bg/serive-bking.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.form-style-1 form {
+    & input , textarea{
+        background: transparent;
+        height: 55px;
+        font-weight: 300;
+        margin-top: 30px;
+        padding: 0 20px;
+        border: 1px solid #c1c1c1;
+        font-size: 13px;
+        color: #a2a2a2;
+        width: 100%;
+    }
+    textarea{ 
+        height: 180px;
+        padding-top: 15px;
+    }
+}
+
+.form-style-1.cln-service-boking form input[type="submit"] {
+    background-color: $theme-color;
+    height: 55px;
+    padding: 0 52px;
+    line-height: 52px;
+}
+.form-style-1 form input[type="submit"] {
+    background-color: #0056ff;
+    border: medium none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    height: 55px;
+    line-height: 55px;
+    padding: 0 29px;
+    text-transform: uppercase;
+    width: auto;
+    transition: 0.5s;
+    &:hover {
+        background: #333;
+    }
+}
+
+
+

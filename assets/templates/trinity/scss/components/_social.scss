@@ -1,0 +1,73 @@
+/*****************************
+36 - Components - Social
+*****************************/
+
+
+.social{
+	&__item{
+		display: inline-block;
+		&:not(:last-child){
+			margin-right: 5px;
+		}
+	}
+	&-round{
+		.social{
+			&__link{
+				@include circleCenter(35);
+				@extend %displayInlineBlock;
+				@extend %fontSize14;
+				color: $color-dove-gray; 
+				background-color: $color-athens-gray;
+				&:hover{
+					@extend %primary-bg-color;
+					@extend %white-color;
+				}
+			}
+		}
+		&.social-big{
+			.social{
+				&__link{
+					@include circleCenter(48);
+					@extend %fontSize16;
+				}
+			}
+		}
+	}
+	&-boxed{
+		.social{
+			&__link{
+				@include textBoxCenter(35, 35);
+				@extend %displayInlineBlock;
+				@extend %fontSize14;
+				@extend %white-color;
+			}
+		}
+	}
+	&-share{
+		.social__link{
+			color: $color-white;
+			&.facebook{
+				background-color: $facebook;
+			}
+			&.twitter{
+				background-color: $twitter;
+			}
+			&.gplus{
+				background-color: $google-plus;
+			}
+			&.linkedin{
+				background-color: $linkedin;
+			}
+		}
+		&:hover{
+			opacity: .8;
+		}
+	}
+	&.space-17{
+		.social__item{
+			&:not(:last-child){
+				margin-right: 17px;
+			}
+		}
+	}
+}

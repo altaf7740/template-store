@@ -1,0 +1,343 @@
+/*----------------------------------------*/
+/*  + Theme default CSS
+/*----------------------------------------*/
+
+/*-- Google Font --*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Open+Sans:300,400,600,700,800|Poppins:300,400,500,600,700,800,900');
+
+/*-- Common Style --*/
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body{
+    background-color: $white;
+    line-height: 24px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    visibility: visible;
+    font-family: $opensans;
+    color: $body-color;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: $heading-color;
+    font-family: $montserrat;
+    font-weight: 400;
+    margin-top: 0;
+}
+h1 {
+    font-size: 36px;
+    line-height: 42px;
+}
+h2 {
+    font-size: 30px;
+    line-height: 36px;
+}
+h3 {
+    font-size: 24px;
+    line-height: 30px;
+}
+h4 {
+    font-size: 18px;
+    line-height: 24px;
+}
+h5 {
+    font-size: 14px;
+    line-height: 18px;
+}
+h6 {
+    font-size: 12px;
+    line-height: 14px;
+}
+p:last-child {
+    margin-bottom: 0;
+}
+a, button {
+    color: inherit;
+    display: inline-block;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+a, button, img, input, span {
+    transition: all 0.3s ease 0s;
+}
+*:focus {
+    outline: none !important;
+}
+a:focus {
+    color: inherit;
+    outline: none;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+    color: $blue;
+}
+button, input[type="submit"] {
+    cursor: pointer;
+}
+ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+/*-- 
+    - Common Classes
+-----------------------------------------*/
+.fix {
+    overflow:hidden
+}
+.hidden {
+    display: none;
+}
+.clear{
+    clear: both;
+}
+.section {
+    float: left;
+    width: 100%;
+}
+@media #{$large-mobile}{
+    .container {
+        width: 450px;
+    }
+}
+@media #{$small-mobile}{
+    .container {
+        width: 320px;
+    }
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+
+.no-gutters > .col, .no-gutters > [class*="col-"] {
+	padding-right: 0;
+	padding-left: 0;
+    margin: 0;
+}
+
+/*-- 
+    - Background color
+-----------------------------------------*/
+.bg-white {
+    background-color: $white;
+}
+.bg-light-grey {
+    background-color: $light-grey;
+}
+.bg-dark {
+    background-color: $dark !important;
+}
+.bg-dark-grey {
+    background-color: $dark-grey;
+}
+
+.bg-blue {
+    background-color: $blue;
+}
+.bg-dark-blue {
+    background-color: $dark-blue;
+}
+.bg-dark-cyan {
+    background-color: $dark-cyan;
+}
+.bg-cyan-blue {
+    background-color: $cyan-blue;
+}
+
+/*-- 
+    - Custom Row
+-----------------------------------------*/
+.row-10 {
+    margin-left: -10px;
+    margin-right: -10px;
+    & > [class*="col"] {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/*-- 
+    - Margin & Padding
+-----------------------------------------*/
+/*-- Margin Top --*/
+@for $i from 1 through 40 {
+    .mt-#{5 * $i}{margin-top: 5px * $i;}
+}
+
+/*-- Margin Bottom --*/
+@for $i from 1 through 40 {
+    .mb-#{5 * $i}{margin-bottom: 5px *$i;}
+}
+
+/*-- Padding Top --*/
+@for $i from 1 through 40 {
+    .pt-#{5 * $i}{padding-top: 5px *$i;}
+}
+
+/*-- Padding Bottom --*/
+@for $i from 1 through 40 {
+    .pb-#{5 * $i}{padding-bottom: 5px *$i;}
+}
+
+/*-- 
+    - Input Placeholder
+-----------------------------------------*/
+input:-moz-placeholder, textarea:-moz-placeholder {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+/*
+
+-- 
+    Scroll Up 
+-----------------------------------------
+#scrollUp {
+    width: 40px;
+    height: 40px;
+    background-color: $blue;
+    color: $white;
+    right: 20px;
+    bottom: 60px;
+    text-align: center;
+    overflow: hidden;
+    @media #{$large-mobile}{
+        display: none !important;
+    }
+    & i {
+        display: block;
+        line-height: 40px;
+        font-size: 24px;
+    }
+    &:hover i {
+        animation-name: fadeInUp;
+        animation-duration:1s;
+        animation-fill-mode:both;
+        animation-iteration-count: infinite;
+    }
+}
+*/
+
+/*-- 
+    - Main Wrapper
+-----------------------------------------*/
+.main-wrapper {
+    &.header-transparent {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
+
+/*-- 
+    - Page Pagination
+-----------------------------------------*/
+.ht-page-pagination-one {
+    display: flex;
+    width: 100%;
+    & ul {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        & li {
+            display: inline-flex;
+            margin: 0 5px;
+            & a {
+                font-family: $opensans;
+                font-weight: 600;
+                font-size: 14px;
+                color: $blue;
+                border: 1px solid $blue;
+                line-height: 36px;
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                &:hover {
+                    background-color: $blue;
+                    color: $white;
+                }
+                & i {
+                    font-size: 20px;
+                    line-height: 32px;
+                    display: block;
+                }
+            }
+            &.active {
+                & a {
+                    background-color: $blue;
+                    color: $white;
+                }
+            }
+        }
+    }
+    
+    &.red {
+        & ul {
+            & li {
+                & a {
+                    color: $heading-color;
+                    border: 1px solid $heading-color;
+                    &:hover {
+                        background-color: $red;
+                        border-color: $red;
+                        color: $white;
+                    }
+                }
+                &.active {
+                    & a {
+                        background-color: $red;
+                        border-color: $red;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*-- 
+    - Blockquote
+-----------------------------------------*/
+.ht-blockquote-one {
+    padding: 30px;
+    border-left: 2px solid $blue;
+    background-color: #f7f7f7;;
+    & p {
+        font-family: $poppins;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 26px;
+        color: $body-color;
+        margin-bottom: 12px !important;
+    }
+    & span {
+        display: block;
+        font-size: 18px;
+        font-family: $montserrat;
+        line-height: 24px;
+        font-weight: 500;
+        color: $heading-color-light;
+    }
+}

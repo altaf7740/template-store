@@ -1,0 +1,57 @@
+/* ==========================
+    Countdown Style 
+=============================*/
+
+
+
+
+
+
+
+.countbox {
+    &.timer-grid {
+        text-align: center;
+
+        span {
+            &.ht-count {
+                display: inline-block;
+                padding: 0 12px;
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 2px;
+                    height: 20px;
+                    background: #dcdcdc;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+
+                &:last-child {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        span {
+            &.count-inner {
+                span {
+                    color: #1b1b1c;
+                    font-size: 24px;
+                    font-weight: 600;
+                }
+                p {
+                    color: #5b77d8;
+                    font-size: 13px;
+                    text-transform: uppercase;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,261 @@
+/*----------------------------------------*/
+/*  1.  RTL CSS
+/*----------------------------------------*/
+/* Bootstrap Css For Rtl */
+.text-left {
+  text-align: right;
+}
+.text-right {
+  text-align: left;
+}
+.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12,
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12,
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12,
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: right;
+}
+@media (min-width:768px){.col-sm-offset-12{margin-left:auto;margin-right:100%}.col-sm-offset-11{margin-left:auto;margin-right:91.66666667%}.col-sm-offset-10{margin-left:auto;margin-right:83.33333333%}.col-sm-offset-9{margin-left:auto;margin-right:75%}.col-sm-offset-8{margin-left:auto;margin-right:66.66666667%}.col-sm-offset-7{margin-left:auto;margin-right:58.33333333%}.col-sm-offset-6{margin-left:auto;margin-right:50%}.col-sm-offset-5{margin-left:auto;margin-right:41.66666667%}.col-sm-offset-4{margin-left:auto;margin-right:33.33333333%}.col-sm-offset-3{margin-left:auto;margin-right:25%}.col-sm-offset-2{margin-left:auto;margin-right:16.66666667%}.col-sm-offset-1{margin-left:auto;margin-right:8.33333333%}.col-sm-offset-0{margin-left:auto;margin-right:0}}@media (min-width:992px){.col-md-offset-12{margin-left:auto;margin-right:100%}.col-md-offset-11{margin-left:auto;margin-right:91.66666667%}.col-md-offset-10{margin-left:auto;margin-right:83.33333333%}.col-md-offset-9{margin-left:auto;margin-right:75%}.col-md-offset-8{margin-left:auto;margin-right:66.66666667%}.col-md-offset-7{margin-left:auto;margin-right:58.33333333%}.col-md-offset-6{margin-left:auto;margin-right:50%}.col-md-offset-5{margin-left:auto;margin-right:41.66666667%}.col-md-offset-4{margin-left:auto;margin-right:33.33333333%}.col-md-offset-3{margin-left:auto;margin-right:25%}.col-md-offset-2{margin-left:auto;margin-right:16.66666667%}.col-md-offset-1{margin-left:auto;margin-right:8.33333333%}.col-md-offset-0{margin-left:auto;margin-right:0}}@media (min-width:1200px){.col-lg-offset-12{margin-left:auto;margin-right:100%}.col-lg-offset-11{margin-left:auto;margin-right:91.66666667%}.col-lg-offset-10{margin-left:auto;margin-right:83.33333333%}.col-lg-offset-9{margin-left:auto;margin-right:75%}.col-lg-offset-8{margin-left:auto;margin-right:66.66666667%}.col-lg-offset-7{margin-left:auto;margin-right:58.33333333%}.col-lg-offset-6{margin-left:auto;margin-right:50%}.col-lg-offset-5{margin-left:auto;margin-right:41.66666667%}.col-lg-offset-4{margin-left:auto;margin-right:33.33333333%}.col-lg-offset-3{margin-left:auto;margin-right:25%}.col-lg-offset-2{margin-left:auto;margin-right:16.66666667%}.col-lg-offset-1{margin-left:auto;margin-right:8.33333333%}.col-lg-offset-0{margin-left:auto;margin-right:0}}
+
+.float-left {
+  float: right;
+}
+.float-right {
+  float: left;
+}
+input, textarea {
+  text-align: right;
+}
+select {
+  background-position: left center !important;
+  text-align: right;
+}
+
+/*-----------------------
+  Header tyle
+-----------------------*/
+.header-left {
+  display: flex;
+  text-align: right;
+  float: right;
+}
+
+.social-icon {
+  float: left;
+}
+
+.f-left {
+  float: right;
+}
+
+.main-menu {
+  display: flex;
+  float: left;
+}
+.slider-content {
+  text-align: right;
+}
+.slider-content p {
+  float: right;
+  padding-right: 0;
+  text-align: right;
+  padding-left: 38%;
+}
+.section-title.text-left::before {
+  right: 0;
+  left: inherit;
+}
+.about-detail .tsf-button {
+  text-align: right;
+}
+.about-detail {
+  text-align: right;
+}
+.amz-icon {
+  margin-left: 20px;
+}
+.single-work-details {
+  display: inherit;
+}
+.amz-details {
+  width: 87%;
+  text-align: right;
+}
+.amz-icon {
+  float: right;
+  margin-left: 20px;
+  text-align: right;
+  width: 13%;
+}
+.amz-details h4 {
+  line-height: 18px;
+}
+.tf-blog-body {
+  padding: 24px 20px 20px 48px;
+  text-align: right;
+}
+.contact-us {
+  display: inherit;
+}
+.contact-us .icon::before {
+  float: right;
+  width: 10%;
+}
+.contact-title {
+  margin-right: 15px;
+  text-align: right;
+  width: 83%;
+}
+.our-contact-inner p.contact-pra {
+  text-align: right;
+}
+.our-contact-inner a {
+  float: right;
+}
+.copy-right-text {
+  text-align: right;
+}
+
+
+/*---------------------
+  Blog page
+------------------------*/
+.tf-cat-title {
+  padding-right: 12px;
+  text-align: right;
+}
+.tf-blog-title {
+  text-align: right;
+}
+.single-post-details {
+  text-align: right;
+  overflow: hidden;
+}
+.single-post {
+  display: inherit;
+}
+.post-img {
+  margin-left: 15px;
+  float: right;
+}
+.comment-img {
+  float: right;
+}
+.comment-text p {
+  text-align: right;
+}
+.author-inf0 {
+  display: inherit;
+  justify-content: inherit;
+}
+.author-inf0 h4 {
+  float: right;
+}
+.comnt-time {
+  overflow: hidden;
+}
+.single-comnt-2 {
+  margin-right: 75px;
+}
+.comment-img {
+  margin-left: 10px;
+  margin-right: 0;
+}
+.tf-blog-info {
+  text-align: right;
+}
+h2.post-title {
+  text-align: right;
+}
+.share-tags li {
+  float: right;
+}
+.share-tags li a {
+  margin-left: 10px;
+  margin-right: 0px;
+}
+.share-tags {
+  display: inherit;
+  float: right;
+  text-align: right;
+}
+h4.contact-input-title {
+  text-align: right;
+}
+button.sub-btn {
+  float: right;
+}
+.contact-logo {
+  margin-bottom: 30px;
+  text-align:  right;
+}
+.con-pra {
+  text-align: right;
+}
+.single-address-area {
+  display: inherit;
+}
+.address-icon {
+  float: right;
+}
+.address-right {
+  overflow: hidden;
+  text-align: right;
+}
+.address-icon i {
+  margin-left: 34px;
+}
+h1.cont-title {
+  text-align: right;
+}
+.tp-small-title {
+  text-align: right;
+}
+.tp-single-pot-content p {
+  text-align: right;
+}
+.tp-pd-devinfo-list {
+  text-align: right;
+}
+.portfolio-des-bottom-single p {
+  text-align: right;
+}
+.tf-button::after {
+  content: "\f2ea";
+}
+/*div {
+  direction: rtl;
+}*/
+.owl-wrapper {
+  float: left;
+}
+.progress-bar {
+  float: right;
+}
+.single-skill .progress .progress-bar span {
+  left: 0;
+  right: auto;
+}
+.fs-skill-container {
+  direction: rtl;
+}
+.mainmenu-container {
+  direction: rtl;
+}
+.main-menu li.drop ul.dropdown li.drop ul.dropdown.level2 {
+  right: 100%;
+}
+.main-menu li.drop ul.dropdown li.drop ul.dropdown.smright {
+  right: -100%;
+}
+.main-menu li.drop ul.dropdown li.drop::after {
+  content: "\f104";
+}
+.main-menu li.drop ul.dropdown {
+  right: 0;
+}
+.footer-top-area {
+  direction: rtl;
+}
+.foo-single-widget.border-left::before {
+  right: -30px;
+}

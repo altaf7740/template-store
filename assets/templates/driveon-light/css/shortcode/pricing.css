@@ -1,0 +1,87 @@
+/*-------------------------- 
+	Pricing Style
+--------------------------*/
+.pricing-area {
+  background: rgba(0, 0, 0, 0) url("../../img/section-bg/pricing.jpg") repeat scroll 0 0;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+/* Single Pricing */
+.single-pricing {
+  background-color: rgba(136, 136, 136, 0.5);
+}
+/* Pricing Head */
+.pricing-head {
+  background-color: #3e3e3e;
+  padding: 13px 15px;
+  margin-bottom: 50px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.single-pricing:hover .pricing-head, .active .pricing-head {
+  background-color: #dec839;
+}
+.pricing-head h4 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  margin: 0;
+  text-transform: uppercase;
+}
+/* Price */
+.pricing-price {
+  background: rgba(0, 0, 0, 0) url("../../img/shape/pricing/price-border.png") no-repeat scroll center center ;
+  -webkit-background-size: cover ;
+  background-size: cover ;
+  display: block;
+  height: 96px;
+  margin: 0 auto 26px;
+  padding: 32px 10px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  width: 96px;
+}
+.single-pricing:hover .pricing-price, .active .pricing-price {
+  background-image: url("../../img/shape/pricing/price-border-color.png");
+}
+.pricing-price h2 {
+  color: #ffffff;
+  display: inline-block;
+  font-size: 30px;
+  line-height: 32px;
+  margin: 0;
+}
+.pricing-price h2 span {
+  float: left;
+  font-size: 18px;
+  line-height: 16px;
+  margin-right: 2px;
+}
+/* Pricing Details */
+.pricing-details {
+  margin-bottom: 40px;
+}
+.pricing-details li {
+  color: #fff;
+  display: block;
+  line-height: 40px;
+  text-transform: capitalize;
+}
+/* Pricing Button */
+.pricing-action {
+  background-color: #3e3e3e;
+  color: #fff;
+  display: block;
+  font-weight: 600;
+  line-height: 24px;
+  padding: 8px 15px;
+  text-transform: uppercase;
+}
+.single-pricing:hover .pricing-action, .active .pricing-action {
+  background-color: #dec839;
+}
+.single-pricing:hover .pricing-action:hover {
+  background-color: #fff;
+  color: #dec839;
+}

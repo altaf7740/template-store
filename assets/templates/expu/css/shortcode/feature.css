@@ -1,0 +1,134 @@
+/* -----------------------------------
+Template:  Expu
+
+NOTE: This is feature style file. All Slider related style included in this file.
+
+--------------------------------------*/
+.feature-area{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.feature-left, .feature-right{
+    box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    height: 562px;
+    overflow: hidden;
+    width: 50%;
+}
+.feature-left a {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 562px;
+    width: 100%;
+}
+.panel-body p {
+    color: #888888;
+    font-family: "Poppins",sans-serif;
+    font-size: 14px;
+    margin-bottom: 35px;
+    padding: 0 0 0 30px;
+}
+.panel {
+    background-color: transparent;
+}
+.panel-body {
+  padding: 0 15px;
+}
+.feature-right h4, .feature-right h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #898989;
+    text-transform: capitalize;
+}
+.feature-right h2{
+    font-size: 30px;
+    color: #6b6b6b;
+    padding-bottom: 35px;
+}
+.checkout-step h5 {
+    background: #4fc2c7 none repeat scroll 0 0;
+    color: #ffffff;
+    font-family: "Montserrat",sans-serif;
+    font-size: 18px;
+}
+.panel-default > .panel-heading {
+    background-color: inherit;
+    border-color: inherit;
+    color: #333333;
+}
+.panel-default {
+    border-color: transparent;
+}
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: transparent;
+}
+.panel {
+    box-shadow: inherit;
+}
+.panel-heading {
+    border-bottom: inherit;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+#accordion{position: relative}
+#accordion:before {
+    border-left: 1px dashed #4fc2c7;
+    content: "";
+    height: 95%;
+    left: 15px;
+    position: absolute;
+    top: 2px;
+}
+.panel-group .panel + .panel {
+  margin-top: 0px;
+}
+.panel-heading {
+  padding-top: 0px;
+}
+.checkout-step span.no:before {
+    background: #ffffff none repeat scroll 0 0;
+    border-radius: 50%;
+    content: "";
+    height: 40px;
+    position: absolute;
+    right: -3px;
+    top: 0;
+    width: 40px;
+    z-index: -1;
+}
+.checkout-step span.no:after {
+    background: #14b1bb none repeat scroll 0 0;
+    border-radius: 50%;
+    bottom: 0;
+    content: "";
+    height: 40px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 40px;
+    z-index: -1;
+}
+.checkout-step span.no {
+    color: #ffffff;
+    display: inline-table;
+    font-family: "Ubuntu",sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    height: 40px;
+    line-height: 38px;
+    position: relative;
+    text-align: center;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    vertical-align: middle;
+    width: 40px;
+    z-index: 9;
+}
+.boxed-layout .feature-right.pull-right.ptb-100.pl-100.pr-100 {
+    padding-right: 50px;
+}

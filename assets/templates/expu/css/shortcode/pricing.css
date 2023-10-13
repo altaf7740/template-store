@@ -1,0 +1,97 @@
+/* -----------------------------------
+Template:  Expu
+
+NOTE: This is Pricing Table style file. All Header related style included in this file.
+
+--------------------------------------*/
+.single-pricing-table{
+    background: #365A73;
+    border-radius: 7px;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.single-pricing-table:hover{
+    box-shadow: 1px 1px 12px 1px #C1C1C1;
+}
+.table-head{
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center bottom;
+    width: 100%;
+    height: 186px;
+    z-index: 9;
+    display: table;
+    position: relative;
+    top: -1px;
+    border-radius: 7px;
+}
+.table-head h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: #fff;
+    display: table-cell;
+    vertical-align: middle;
+}
+.table-head h2 span{
+    font-size: 20px;
+}
+.table-head span.doller {
+    display: inline-block;
+    font-family: "Raleway",sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    top: -14px;
+}
+.table-head span.sub {
+    border-radius: 5px 0 0 5px;
+    color: #ffffff;
+    font-family: "Raleway",sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    left: -10px;
+    padding: 16px 18px;
+    position: absolute;
+    height: 50px;
+    width: 125px;
+    text-transform: uppercase;
+    top: 38px;
+    transform: rotate(-90deg);
+    background: #45758B; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #45758B , #4FC2C7); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #45758B, #4FC2C7); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #45758B, #4FC2C7); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #45758B , #4FC2C7); /* Standard syntax */
+}
+.table-body{
+    padding: 45px 0 40px 0;
+}
+.table-body ul{
+    padding-bottom: 50px;
+}
+.table-body ul li{
+    margin-bottom: 5px;
+    color: #f1f1f1;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #fff;
+    line-height: 26px;
+    font-family: 'montserratlight';
+}
+.table-body > button{
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #4FC2C7;
+    background: transparent;
+    border-radius: 5px;
+    padding: 0px 40px;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.table-body > button:hover{
+    border: 1px solid #4FC2C7;
+    background: #4FC2C7;
+}

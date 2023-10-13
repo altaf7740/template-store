@@ -1,0 +1,59 @@
+/* -----------------------------------
+Template:  Expu
+
+NOTE: This is Contact style file. All Header related style included in this file.
+
+--------------------------------------*/
+.contact-info{}
+.contact-info h3{
+    font-weight: 700;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    color: #646464;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.info-icon{
+    height: 42px;
+    width: 42px;
+    background: #4FC2C7;
+    border-radius: 50%;
+    text-align: center;
+    display: table;
+    margin-right: 20px;
+}
+.info-icon i{
+    font-size: 22px;
+    color: #fff;
+    vertical-align: middle;
+    display: table-cell;
+}
+.info-content p{
+    font-size: 15px;
+    color: #8e8e8e;
+    font-family: 'montserratlight';
+    margin-bottom: 0;
+}
+#contact-form > input, #contact-form > textarea {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    font-size: 14px;
+    width: 47.2%;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #E9E9E9;
+    color: #aaaaaa;
+    float: left;
+}
+#contact-form > textarea {
+    width: 100%;
+    resize: none;
+}
+#contact-form > button {
+    background: #4FC2C7;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 40px;
+}
+#contact-form > button:hover{
+    background: #365A73;
+}
+.google-map-area{margin-right: -100px}

@@ -1,0 +1,63 @@
+/* Large desktop :1920px. */
+@media (min-width: 1920px) {
+    .container{width: 1230px}  
+}
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1169px) {
+    .container{width: 970px}
+    .banner-content h1 {font-size: 50px; margin-bottom: 10px}
+    .banner-content p {font-size: 16px; margin-bottom: 10px; padding: 0px 40px}
+    .welcome-content .section-title p.pb-20, .test-content p.pb-25, .main-menu ul li:nth-child(4), .event-content h4{display: none}
+    .service-left.text-right {padding-left: 0px}
+    .service-right {padding-right: 0px}
+    .service-left .service-icon {right: -55px; top: 5px}
+    .service-right .service-icon{left: -55px; right: auto; top: 5px;}
+    .service-middle::before {width: 400px}    
+    .service-left .service-content {margin-right: 40px}
+    .service-right .service-content {margin-left: 40px}
+    .order-content h3, .order-content h4 {font-size: 30px}
+    .blog-right h3 a {font-size: 20px}
+
+}
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container{width:750px} 
+    .main-menu ul li:nth-child(4), .service-area, .search-btn{display: none}
+    .banner-content h1 {font-size: 50px; margin-bottom: 10px}
+    .banner-content p {font-size: 16px; margin-bottom: 10px; padding: 0px 40px}
+    .welcome-img > img, .event-pic > img {width: 100%}
+    .test-img, .test-content  {margin-right: 0px}
+    .event-pic > img{margin-bottom: 30px}
+    .testimonial-text-slider {padding: 0px}
+}
+ 
+/* small mobile :320px. */
+@media (max-width: 767px) {
+    .container {width:300px}
+    .slider-area {height: 430px;}
+    .service-area, .text-content.text-center > p, .search-btn{display: none}
+    .single-slide {background-position: 84% center;}
+    .banner-content h1 {font-size: 50px; margin-bottom: 10px}
+    .banner-content p {font-size: 16px; margin-bottom: 10px; padding: 0px 40px}
+    .test-img, .test-content  {margin-right: 0px}
+    .section-title h2, .banner-content h3 {font-size: 24px}
+    .section-title h4, .blog-right h3 a {font-size: 18px}
+    .table-body ul li {font-size: 15px}
+    .single-table, .single-blog, .single-footer-widget, .event-pic{margin-bottom: 30px}
+    .col-md-4:last-child .single-table, .col-md-4:last-child .single-blog, .col-md-3:last-child .single-footer-widget{margin-bottom: 0px}
+    .event-area.pt-120.pb-95, .blog-area.pt-120.pb-115 {padding-top: 150px}
+    .sin-opacity::after {content: none}
+    .testimonial-text-slider {padding: 0px}
+    #mc-form > input {width: 260px}
+    .banner-content h1, .order-content h3, .order-content h4 {font-size: 30px}
+    .booking-form form input {margin-bottom: 20px}
+    
+}
+ 
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {width:450px}
+    #mc-form > input {width: 350px}
+}

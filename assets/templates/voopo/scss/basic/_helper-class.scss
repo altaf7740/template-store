@@ -1,0 +1,461 @@
+
+/**--------------------
+Helper Class
+------------------*/
+
+.hidden {
+	display: none;
+}
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	/* 1 */
+	display: table;
+	/* 2 */
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.poss--relative {
+	position: relative;
+}
+
+.poss--absolute {
+	position: absolute;
+}
+
+a {
+	transition: 0.5s;
+}
+
+a#scrollUp {
+	background: $theme-color;
+	color: #fff;
+	bottom: 40px;
+	right: 40px;
+	border-radius: 100px;
+	height: 45px;
+	width: 45px;
+	font-size: 20px;
+	text-align: center;
+	padding: 9px 0;
+	box-shadow: 0 0 15px 0px rgba(50, 50, 50, 0.2);
+	transition: 0.3s;
+	line-height: 25px;
+	&:hover {
+		background: #fff;
+		color: $theme-color;
+	}
+}
+
+input ,
+textarea{
+	outline: none;
+	transition: 0.3s;
+}
+
+
+
+@media #{$xs-layout} {
+	.container {
+		width: 450px;
+	}
+}
+
+
+
+@media #{$xxs-layout} {
+	.container {
+		width: 300px;
+	}
+}
+
+/* Font specialized */
+
+.body--font {
+	font-family: $body-font;
+}
+
+.heading--font {
+	font-family: $heading-font;
+}
+
+/* Height and width */
+
+.fullscreen {
+	min-height: 100vh;
+	width: 100%;
+}
+
+.w--100 {
+	width: 100%;
+}
+
+.w--75 {
+	width: 75%;
+}
+
+.w--50 {
+	width: 50%;
+}
+
+.w--33 {
+	width: 33.33%;
+}
+
+.w--25 {
+	width: 25%;
+}
+
+.w--10 {
+	width: 10%;
+}
+
+.h--100 {
+	height: 100%;
+}
+
+.h--75 {
+	height: 75%;
+}
+
+.h--50 {
+	height: 50%;
+}
+
+.h--25 {
+	height: 25%;
+}
+
+.h--33 {
+	height: 33.33%;
+}
+
+.h--10 {
+	height: 10%;
+}
+
+/* Define Colors */
+
+.theme--color {
+	color: $theme-color;
+}
+
+.color--light {
+	color: #999999;
+}
+
+.color--dark {
+	color: #333333;
+}
+
+.color--black {
+	color: #000000;
+}
+
+.color--white {
+	color: #ffffff;
+}
+
+/* Background Color */
+
+.bg--theme {
+	background: $theme-color;
+}
+
+.bg--light {
+	background: #999999;
+}
+
+.bg--dark {
+	background: #333333;
+}
+
+.bg--black {
+	background: #000000;
+}
+
+.bg--white {
+	background: #ffffff;
+}
+
+.bg--cart-1 {
+	background: #f8fafb;
+}
+
+.bg--cart-2 {
+	background: #00082e;
+}
+
+.bg--cart-3 {
+	background: #000624;
+}
+
+.bg--cart-4 {
+	background: #f8fafb;
+}
+
+.bg--cart-5 {
+	background: #f5f8fa;
+}
+
+.bg--cart-6 {
+	background: #f8f1f4;
+}
+
+.bg--cart-7 {
+	background: #f5f8fa;
+}
+
+.bg--cart-8 {
+	background: #010f54;
+}
+
+.bg--cart-9 {
+	background: #f1f5f8;
+}
+
+.bg--cart-10 {
+	background: #f8fafb;
+}
+
+.bg--cart-11 {
+	background: #f8f9fa;
+}
+
+/* Background Image */
+
+@for $i from 1 through 20 {
+	.bg-image--#{$i} {
+		background-image: url(images/bg/#{$i}.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+	}
+}
+
+@for $i from 2 through 15 {
+	.mt--#{$i * 10} {
+		margin-top: #{$i * 10}px;
+	}
+}
+
+@for $i from 2 through 15 {
+	.pt--#{$i * 10} {
+		padding-top: #{$i * 10}px;
+	}
+}
+
+@for $i from 2 through 25 {
+	.pb--#{$i * 10} {
+		padding-bottom: #{$i * 10}px;
+	}
+}
+
+@for $i from 2 through 15 {
+	.ptb--#{$i * 10} {
+		padding: #{$i * 10}px 0;
+	}
+}
+
+.mb--60 {
+	margin-bottom: 60px;
+}
+
+/* Text specialized */
+
+.text--italic {
+	font-style: italic;
+}
+
+.text--normal {
+	font-style: normal;
+}
+
+.text--underline {
+	font-style: underline;
+}
+
+/* Section padding */
+
+.section-padding--xlg {
+	padding: 150px 0;
+}
+
+.section-padding--lg {
+	padding: 100px 0;
+}
+
+.section-padding--md {
+	padding: 90px 0;
+}
+
+.section-padding--sm {
+	padding: 50px 0;
+}
+
+@media #{$lg-layout} {
+	.lg__mt--40 {
+		margin-top: 40px;
+	}
+}
+
+@media #{$md-layout} {
+	.section-padding--xlg {
+		padding: 120px 0;
+	}
+	.section-padding--lg {
+		padding: 100px 0;
+	}
+	.section-padding--md {
+		padding: 85px 0;
+	}
+	.section-padding--sm {
+		padding: 70px 0;
+	}
+	.md__mt--40 {
+		margin-top: 40px;
+	}
+}
+
+@media #{$sm-layout} {
+	.section-padding--xlg {
+		padding: 90px 0;
+	}
+	.section-padding--lg {
+		padding: 70px 0;
+	}
+	.section-padding--md {
+		padding: 60px 0;
+	}
+	.section-padding--sm {
+		padding: 50px 0;
+	}
+	.section-padding--xs {
+		padding: 50px 0;
+	}
+	.sm-mt-60 {
+		margin-top: 60px;
+	}
+	.sm__mt--40 {
+		margin-top: 40px;
+	}
+}
+
+@media #{$xs-layout} {
+	.xs-mt-60 {
+		margin-top: 60px;
+	}
+	.xs__mt--40 {
+		margin-top: 40px;
+	}
+}
+
+/* Overlay styles */
+
+[data-overlay],
+[data-black-overlay] {
+	position: relative;
+}
+
+[data-overlay]>div,
+[data-overlay]>*,
+[data-black-overlay]>div,
+[data-black-overlay]>* {
+	position: relative;
+	z-index: 2;
+}
+
+[data-overlay]:before,
+[data-black-overlay]:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+
+[data-overlay]:before {
+	background-color: $theme-color;
+}
+
+[data-black-overlay]:before {
+	background-color: #000000;
+}
+
+@for $i from 1 through 10 {
+	[data-overlay="#{$i}"]:before,
+	[data-black-overlay="#{$i}"]:before {
+		opacity: #{$i * 0.10};
+	}
+}
+
+
+
+@media #{$sm-layout} {
+	.ptb--110 {
+		padding: 60px 0;
+	}
+	.ptb--120 {
+		padding: 60px 0;
+	}
+	.pt--120 {
+		padding-top: 60px;
+	}
+	.pt--110 {
+		padding-top: 60px;
+	}
+	.pb--120 {
+		padding-bottom: 60px;
+	}
+	.pb--110 {
+		padding-bottom: 60px;
+	}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

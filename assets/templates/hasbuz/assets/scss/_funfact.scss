@@ -1,0 +1,45 @@
+/*--
+    06. FunFact
+------------------------------------------*/
+.ht-funfact-one {
+    border: 2px solid $white;
+    padding: 30px;
+    @media #{$desktop-device}{
+        padding: 20px 15px;
+    }
+    & .icon {
+        float: left;
+        margin-right: 20px;
+        @media #{$desktop-device}{
+            margin-right: 15px;
+        }
+        & i {
+            font-size: 42px;
+            display: block;
+            color: $white;
+            @media #{$desktop-device}{
+                font-size: 36px;
+            }
+        }
+    }
+    & .content {
+        overflow: hidden;
+        & h2 {
+            font-size: 30px;
+            font-weight: 600;
+            color: $white;
+            line-height: 24px;
+            margin: 0 0 5px;
+        }
+        & p {
+            text-transform: capitalize;
+            font-size: 15px;
+            line-height: 20px;
+            color: $white;
+            margin: 0;
+            @media #{$desktop-device}{
+                font-size: 13px;
+            }
+        }
+    }
+}

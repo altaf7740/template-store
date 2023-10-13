@@ -1,0 +1,272 @@
+/*-------------------------- 
+	Hero Style
+--------------------------*/
+.hero-slider-area {
+  position: relative;
+}
+.hero-static {
+  background: transparent;
+  padding: 300px 0 230px;
+}
+.hero-bg {
+  background: rgba(0, 0, 0, 0) url("../../img/slider/4.jpg") no-repeat scroll center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.video-bg .video-container {
+  z-index: -5 !important;
+}
+/* Nivo Slider */
+#hero-slider {}
+.nivo-caption {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  opacity: 1;
+  padding: 25px 0 0;
+}
+/* Nivo Controles */
+.nivo-controlNav {
+  bottom: 90px;
+  padding: 0;
+  position: absolute;
+  right: 93px;
+  z-index: 99;
+}
+.nivo-controlNav a {
+  background-color: #fff;
+  border-radius: 50%;
+  display: block;
+  float: left;
+  height: 30px;
+  margin: 10px 6px;
+  text-indent: -99999px;
+  width: 3px;
+}
+.nivo-controlNav a.active {
+  height: 50px;
+  margin: 0 6px;
+  background-color: #DEC839;
+}
+.nivo-directionNav {
+  bottom: 85px;
+  left: 85px;
+  position: absolute;
+  z-index: 99;
+}
+.nivo-directionNav::before {
+  color: #fff;
+  content: "/";
+  font-family: Times New Roman;
+  font-size: 40px;
+  left: 50%;
+  position: absolute;
+  top: 8px;
+  transform: translateX(-50%);
+}
+.nivo-directionNav a {
+  color: #fff;
+  display: block;
+  float: left;
+  margin: 0 7px;
+  position: static;
+}
+.nivo-directionNav a i {
+  display: block;
+  font-size: 40px;
+}
+.nivo-directionNav a:hover {
+  color: #DEC839;
+}
+/* Hero Slider Content */
+.hero-slide-content {
+  margin-top: 75px;
+}
+.hero-slide-content h3 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.hero-slide-content h1 {
+  color: #ffffff;
+  font-size: 55px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.hero-slide-content h1 span {
+  color: #dec839;
+}
+.hero-slide-content p {
+  color: #ffffff;
+  padding: 5px 0;
+}
+.hero-slide-content .button-group {
+  margin-top: 42px;
+}
+/* Hero Slider Form */
+.find-course-form {
+  background-color: rgba(113, 113, 113, 0.4);
+  border-radius: 0 0 4px 4px;
+  padding: 0 20px 15px;
+  width: 270px;
+}
+.find-course-form h5 {
+  background-color: #fff;
+  color: #555555;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  margin: 0 -20px 20px;
+  overflow: hidden;
+  padding: 8px 35px;
+  text-transform: uppercase;
+}
+.find-course-form h5 span {
+  display: block;
+  float: left;
+  line-height: 24px;
+}
+.find-course-form h5 i {
+  color: #dec839;
+  float: right;
+  font-size: 16px;
+  line-height: 24px;
+}
+.find-course-form form {
+  margin-left: -3px;
+  margin-right: -3px;
+}
+.find-course-form form > div {
+  display: block;
+  float: left;
+  margin-bottom: 10px;
+  padding: 0 3px;
+  position: relative;
+  width: 100%;
+}
+.find-course-form form > div i {
+  color: #fff;
+  font-size: 12px;
+  height: 30px;
+  left: 3px;
+  line-height: 30px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 30px;
+  z-index: 9;
+}
+.find-course-form form > div input {
+  background-color: rgba(51, 51, 51, 0.3);
+  border: medium none;
+  border-radius: 2px;
+  color: #fff;
+  display: block;
+  font-size: 12px;
+  height: 30px;
+  line-height: 24px;
+  padding: 3px 10px 3px 30px;
+  width: 100%;
+}
+.find-course-form form .course-input{}
+.find-course-form form .course-select {
+  width: 50%;
+}
+.bootstrap-select {
+  width: 100% !important;
+}
+.bootstrap-select .btn {
+  background-color: rgba(51, 51, 51, 0.3);
+  border: medium none;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  height: auto;
+  line-height: 24px;
+  padding: 3px 10px 3px 30px;
+  text-transform: capitalize;
+}
+.bootstrap-select.open .btn, .bootstrap-select.open .btn:hover, .bootstrap-select.open .btn:focus {
+  background-color: rgba(51, 51, 51, 0.3);
+  box-shadow: none;
+  color: #fff;
+}
+.bootstrap-select .btn:focus {
+  outline: none !important;
+}
+.bootstrap-select .filter-option{}
+.bootstrap-select .caret {
+  border: medium none;
+  height: 5px;
+  right: 10px;
+  width: 10px;
+}
+.bootstrap-select .caret::before {
+  content: "\eb73";
+  display: block;
+  font-family: "IcoFont";
+  font-size: 12px;
+  line-height: 5px;
+}
+.bootstrap-select .dropdown-menu {
+  border: medium none;
+  border-radius: 0;
+  margin: 3px 0;
+  padding: 0;
+}
+.bootstrap-select ul.dropdown-menu {
+  background-color: transparent;
+  margin: 0;
+}
+.bootstrap-select ul li{}
+.bootstrap-select ul li a {
+  color: #333;
+  font-size: 12px;
+  line-height: 24px;
+  padding: 3px 15px;
+}
+.bootstrap-select ul li a span {
+  color: #333;
+}
+.bootstrap-select ul li.selected a, .bootstrap-select ul li a:hover,
+.bootstrap-select ul li.selected a span, .bootstrap-select ul li a:hover span {
+  background-color: transparent;
+  color: #DEC839;
+}
+.datepicker-dropdown {
+  padding: 10px;
+}
+
+.find-course-form form .course-submit {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+.find-course-form form .course-submit input {
+  background-color: #dec839;
+  color: #fff;
+  font-size: 13px;
+  height: 35px;
+  line-height: 25px;
+  padding: 5px 30px;
+  text-transform: uppercase;
+}
+.find-course-form form .course-submit input:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+@media (min-width: 1200px) {
+.boxed-layout .nivo-caption, .box-layout .nivo-caption {
+  padding-top: 70px;
+}
+.boxed-layout .nivo-directionNav, .box-layout .nivo-directionNav {
+  bottom: 4px;
+  left: 20px;
+}
+.boxed-layout .nivo-controlNav, .box-layout .nivo-controlNav {
+  bottom: 0;
+  right: 29px;
+}
+
+}

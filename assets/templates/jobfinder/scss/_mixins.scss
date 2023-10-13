@@ -1,0 +1,18 @@
+// Transition
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+      -ms-transition: $transition;
+          transition: $transition;
+}
+// Transform
+@mixin transform($transform) {
+   -webkit-transform: $transform;
+       -ms-transform: $transform;
+           transform: $transform;
+}
+// Transform Origin
+@mixin transform-origin($transform-origin) {
+   -webkit-transform-origin : $transform-origin;
+       -ms-transform-origin : $transform-origin;
+           transform-origin : $transform-origin;
+}

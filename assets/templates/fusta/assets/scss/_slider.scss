@@ -1,0 +1,177 @@
+
+/*--
+    04. Hero Css
+--------------------------------*/
+.hero-slider-one {
+    & .single-slide {
+        align-items: center;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include flex(flex);
+        height: 770px;
+        position: relative;
+        z-index: 1;
+        @media #{$desktop-device}{
+            height: 600px
+        }
+        @media #{$tablet-device}{
+            height: 500px
+        }
+        @media #{$large-mobile}{
+            height: 480px;
+        }
+        @media #{$small-mobile}{
+            height: 420px;
+        }
+    }
+    & .slick-arrow {
+        background-color: rgba(0, 0, 0, 0.2);
+        border: medium none;
+        border-radius: 100px;
+        color: #ffffff;
+        height: 60px;
+        position: absolute;
+        top: 50%;
+        width: 60px;
+        z-index: 999;
+        visibility: hidden;
+        @include opacity(0);
+        @include transition(0.4s);
+        &:hover {
+            background-color: $theme-color;
+        }
+        @media #{$small-mobile} , #{$large-mobile}{
+            height: 40px;
+            width: 40px;
+        }
+    }
+    & .slick-arrow.slick-next {
+      right: 15px;
+    }
+    & .slick-arrow.slick-prev {
+      left: 15px;
+    }
+    &:hover .slick-arrow{
+        visibility: visible;
+        @include opacity(1);
+        @include transform(translateY(-50%));
+    }
+}
+.hero-slider-one {
+    & .slider-text-info {
+        padding-top: 110px;
+        @media #{$desktop-device}{
+            padding-top: 100px;
+        }
+        @media #{$tablet-device}{
+            padding: 0;
+        }
+        @media #{$large-mobile}{
+            padding: 0;
+        }
+        @media #{$small-mobile}{
+            padding: 0;
+        }
+        & h3 {
+            color: $theme-color;
+            font-size: 30px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            @media #{$large-mobile}{
+                font-size: 20px;
+            }
+            @media #{$small-mobile}{
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+        }
+        & h1 {
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            @media #{$desktop-device}{
+                font-size: 44px;
+            }
+            @media #{$tablet-device}{
+                font-size: 40px;
+            }
+            @media #{$large-mobile}{
+                font-size: 30px;
+            }
+            @media #{$small-mobile}{
+                font-size: 28px;
+                margin-bottom: 10px;
+            }
+        }
+        & p{
+            line-height: 24px;
+            margin: 0;
+        }
+        & .slider-btn {
+            font-size: 16px;
+            line-height: 16px;
+            font-weight: 500;
+            padding: 18px 45px;
+            margin-top: 30px;
+            @include transition(0.4s);
+            @media #{$tablet-device}{
+                padding: 15px 35px;
+            }
+            @media #{$large-mobile}{
+                padding: 14px 20px;
+            }
+            @media #{$small-mobile}{
+                padding: 14px 20px;
+                margin-top: 20px;
+            }
+        }
+    }
+    & .slider-inner-image {
+        justify-content: center;
+        @include flex(flex);
+        @include opacity(0);
+    }
+   
+    @media #{$tablet-device}{
+        & .slider-inner-image{
+            display: none;
+        }
+    }
+     @media #{$large-mobile}{
+        & .slider-inner-image{
+            display: none;
+        }
+    }
+    @media #{$small-mobile}{
+        & .slider-inner-image{
+            display: none;
+        }
+    }
+}
+.slick-current {
+    /*-- Hero Content One --*/
+    & .hero-content-one {
+        & h3 {
+            animation-name: fadeInBottom;
+            animation-duration: 0.3s;
+        }
+        & h1 {
+            animation-name: fadeInBottom;
+            animation-duration: 0.5s;
+        }
+        & p {
+            animation-name: fadeInBottom;
+            animation-duration: 0.7s;
+        }
+        & .btn {
+            animation-name: fadeInBottom;
+            animation-duration: 0.8s;
+        }
+        & .slider-inner-image{
+            @include opacity(1);
+            animation-name: fadeInRight;
+            animation-duration: 0.9s;
+        }
+    }
+}
+

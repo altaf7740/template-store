@@ -1,0 +1,292 @@
+@import "../variables";
+@import "../mixins";
+
+
+/*========================
+	Team Area
+===========================*/
+
+
+.team{
+	margin-top: 40px;
+    position: relative;
+    text-align: center;
+    &:hover .team__thumb .team__hover__action{
+    	transform: scaleY(1);
+    }
+	.team__thumb{
+		position: relative;
+		a{
+			display: block;
+    		position: relative;
+			img{
+				width: 100%;
+			}
+		}
+		.team__hover__action{
+			height: 100%;
+		    left: 0;
+		    position: absolute;
+		    text-align: center;
+		    top: 0;
+		    transform: scaleY(0);
+		    transform-origin: center bottom 0;
+		    transition: all 0.5s ease 0s;
+		    width: 100%;
+		    z-index: 2;
+		    &::before {
+			    background: #ff5400 none repeat scroll 0 0;
+			    content: "";
+			    height: 100%;
+			    left: 0;
+			    opacity: 0.8;
+			    position: absolute;
+			    top: 0;
+			    width: 100%;
+			    z-index: -1;
+			}
+			.team__hover__inner{
+				padding: 0 7%;
+			    position: absolute;
+			    top: 50%;
+			    transform: translateY(-50%);
+				p{
+					color: #ffffff;
+				    line-height: 23px;
+				    margin-bottom: 28px;
+				    padding: 0 4px;
+				}
+			}
+		}
+	}
+	.team__details{
+		background: #f6f6f6 none repeat scroll 0 0;
+    	padding: 34px 0;
+		.team__info{
+			h6{
+				font-size: 24px;
+			    font-weight: 700;
+			    line-height: 32px;
+			    text-transform: capitalize;
+			    font-family: $heading-font;
+				a{
+
+				}
+			}
+			span{
+				color: #666666;
+			    line-height: 32px;
+			    text-transform: capitalize;
+			}
+		}
+	}
+}
+
+
+
+
+// Team Style Two
+
+
+
+.team--2{
+	margin-top: 40px;
+    position: relative;
+	.team__hover__action{
+		bottom: 0;
+	    height: 100%;
+	    opacity: 0;
+	    position: absolute;
+	    text-align: center;
+	    transition: all 0.3s ease 0s;
+	    width: 100%;
+	    z-index: 2;
+	    &::before {
+		    background: #000000 none repeat scroll 0 0;
+		    content: "";
+		    height: 100%;
+		    left: 0;
+		    opacity: 0.6;
+		    position: absolute;
+		    top: 0;
+		    width: 100%;
+		    z-index: -1;
+		}
+		.team__hover__inner{
+			bottom: 0;
+		    padding-bottom: 40px;
+		    padding-left: 20px;
+		    padding-right: 20px;
+		    position: absolute;
+			h4{
+				a{
+					color: #ffffff;
+				    font-size: 24px;
+				    line-height: 32px;
+				    text-transform: capitalize;
+				    transition: all 0.4s ease 0s;
+				}
+			}
+			span{
+				color: #ffffff;
+			    display: inline-block;
+			    margin-top: 7px;
+			    text-transform: capitalize;
+			    transition: all 0.5s ease 0s;
+			}
+			p{
+				color: #ffffff;
+			    margin-bottom: 26px;
+			    transition: all 0.6s ease 0s;
+
+			}
+		}
+	}
+}
+
+
+.team__hover__inner p {
+    
+}
+.team--2:hover .team__hover__action {
+    opacity: 1;
+}
+
+
+// Team Style Three
+
+.team__style--3 {
+    position: relative;
+    @include transition(0.5s);
+    overflow: hidden;
+    margin-top: 40px;
+}
+.team__style--3 .team__hover__action {
+    background: #f6f6f6 none repeat scroll 0 0;
+    height: 100%;
+    margin-top: -149px;
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+}
+
+
+.team__style--3 .team__info h6 a {
+    color: #444444;
+    font-size: 24px;
+    @include transition(0.3s);
+    font-family: $heading-font;
+}
+.team__style--3 .team__info span {
+    color: #666666;
+    display: block;
+    margin-top: 8px;
+    @include transition(0.3s);
+}
+.team__style--3 .team__info {
+    padding: 34px 0 26px;
+    @include transition(0.3s);
+}
+
+
+.team__style--3:hover .team__hover__action {
+    background: rgba(255, 84, 0, 0.9) none repeat scroll 0 0;
+    margin-top: 0;
+    top: 0;
+}
+
+
+.team__details{
+	@include transition(0.3s);
+}
+.team__style--3:hover .team__details{
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.team__style--3:hover .team__info h6 a{
+	color: #ffffff;
+    display: block;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 3px;
+    font-family: $heading-font;
+}
+.team__style--3:hover .team__info span{
+	color: #ffffff;
+    text-transform: capitalize;
+}
+
+.team__style--3:hover .team__info{
+	padding: 0;
+}
+
+.team__style--3 .team__info p {
+    color: #ffffff;
+}
+.team__details p {
+    color: #ffffff;
+    line-height: 23px;
+    margin-bottom: 28px;
+    margin-top: 20px;
+    padding: 0 7%;
+}
+
+.team__thumb img{
+	width: 100%;
+}
+
+.team__style--3.hover-color-2:hover .team__hover__action {
+  background: rgba(0, 0, 0, 0.64) none repeat scroll 0 0;
+}
+
+
+
+// Team Style Four
+
+
+.team__style--3.team--4 .team__hover__action {
+  bottom: -100%;
+}
+
+.team__style--3.team--4.hover-color-2:hover .team__hover__action {
+  bottom: 0;
+}
+
+
+
+
+@media #{$sm-layout}{
+
+	.team__hover__action {
+		bottom: -202px;
+	}
+	.hover-color-2 .team__hover__action {
+	  bottom: -142px;
+	}
+
+
+}
+
+@media #{$xs-layout}{
+
+	.team__hover__action {
+	  bottom: -132px;
+	}
+
+
+}
+
+@media #{$xxs-layout}{
+
+	.team__hover__action {
+	  bottom: -168px;
+	}
+	.hover-color-2 .team__hover__action {
+	  bottom: -174px;
+	}
+
+}
+

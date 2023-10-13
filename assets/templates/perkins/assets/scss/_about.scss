@@ -1,0 +1,48 @@
+/*--
+    05. About Css
+--------------------------*/
+
+
+
+
+.welcome-inner {
+    .content {
+        h2 {
+            color: #242424;
+            font-weight: 400;
+            position: relative;
+            font-weight: 600;
+        }
+        h3 {
+            color: #242424;
+            font-size: 30px;
+            color: $theme-color;
+            font-family: $heading-font-2;
+            position: relative;
+        }
+
+        p {
+            color: #666666;
+            font-size: 16px;
+            line-height: 30px;
+            font-family: 'Cabin', sans-serif;
+            margin-top: 20px;
+
+            &.sub-title {
+                color: #242424;
+                font-size: 20px;
+                line-height: 32px;
+                font-family: 'Cabin', sans-serif;
+            }
+        }
+    }
+}
+
+a.buty-btn {
+    color: $theme-color;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    border-bottom: 1px solid #ff759d;
+}
+

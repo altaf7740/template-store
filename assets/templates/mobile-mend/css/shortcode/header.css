@@ -1,0 +1,370 @@
+/* -----------------------------------
+Template Name: Mobile Mend - Mobile Repair HTML Template
+Template URI: https://devitems.com/html/mobile-preview/
+Description: This is html5 template
+Author: HasTech
+Author URI: https://devitems.com/
+Version: 1.0
+NOTE: This is Header style file. All Header related style included in this file.
+
+--------------------------------------*/
+.header-top{
+    background: #343434;
+    border-top: 3px solid #F69323;
+}
+.sticky .header-top, .sticky .header-middle{display: none}
+.header-top-left p, .header-top-right ul li a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    line-height: 50px;
+}
+.header-top-right ul li a{
+    border-right: 1px solid #6F6F6F;
+    padding: 0 15px;
+}
+.header-top-right ul li:last-child a{
+    border-right: none;
+    padding-right: 0;
+}
+.header-top-right, .middle-right, .header-social{float: right}
+.header-top-right ul, .middle-right ul, .header-social ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.main-header{border-top: 1px solid #EEEEEE}
+.header-top-right ul li, .middle-right ul li, .header-social ul li{
+    display: inline-block;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.header-top-right ul li:hover a{
+    color: #F69323;
+}
+.header-social{
+    padding: 10px 0px 12px;
+}
+.header-social ul li a{
+    font-size: 20px;
+    color: #666666;
+    padding: 0 10px;
+}
+.header-social ul li:last-child a{
+    padding-right: 0px;
+}
+.header-social ul li:hover a{
+    color: #F69323;
+}
+.middle-right ul li:last-child{
+    margin-right: 0px;
+}
+.middle-right ul li span{
+    font-size: 16px;
+    color: #737373;
+    font-weight: 400;
+    display: inline-table;
+}
+.middle-right ul li{
+    color: #737373;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-table;
+    margin-right: 40px;
+    line-height: 22px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.info{display: inline-table}
+.middle-right ul li:hover img.secondary{display: block}
+.middle-right ul li:hover img.primary{display: none}
+.middle-right ul li img.secondary{display: none}
+.middle-right ul li img{
+    display: inline-table;
+    float: left;
+    margin-right: 15px;
+    top: 11px;
+    position: relative;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.logo a {display: inline-block}
+.content-wrapper {text-align: left;}
+.main-menu {display: inline-block}
+.main-menu ul li {
+    display: inline-block;
+    position: relative;
+}
+.main-menu ul li a {
+    color: #5e5e5e;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 13px 18px;
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+.main-menu ul li:first-child a{
+    padding-left: 0px;
+}
+.main-menu > nav > ul > li:hover > a {color: #F69323;}
+.main-menu ul li ul {
+    background: #ffffff none repeat scroll 0 0;
+    left: 0;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    padding: 5px 18px;
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    visibility: hidden;
+    width: 160px;
+    z-index: 999;
+}
+.main-menu ul li:hover > ul {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; 
+    visibility: visible;
+}
+.main-menu ul li ul li a {}
+.main-menu ul li ul li {
+    display: block;
+    margin: 0;
+    padding: 7px 0;
+}
+.main-menu ul li ul li a {
+    color: #252525;
+    display: block;
+    font-size: 14px;
+    line-height: 26px;
+    padding: 0;
+    text-transform: capitalize;
+}
+.main-menu ul li ul span {
+    float: right;
+    font-size: 15px;
+    line-height: 20px;
+    margin-right: 22px;
+}
+.main-menu ul li ul li:hover > a {padding-left: 5px;color: #F69323}
+.main-menu ul li ul li a:before {display: none;}
+.main-menu ul li ul li > ul {
+    left: 100%;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    position: absolute;
+    top: 17%;
+    visibility: hidden;
+}
+.main-menu.text-left span {float: right;}
+.mobile-menu-area, .mean-container .mean-bar:after {display: none}
+.mean-container .mean-bar {
+    background: transparent none repeat scroll 0 0;
+    min-height: 0;
+    padding: 0;
+}
+.mean-container a.meanmenu-reveal {
+    border: 1px solid #d4a762;
+    color: #ffffff;
+    padding: 4px 5px;
+    position: absolute;
+}
+.mean-container a.meanmenu-reveal span {background-color: #d4a762}
+.mean-container .mean-nav {margin-top: 0;}
+.sticky .header-social {
+  padding: 25px 0;
+}
+.header-sticky.sticky {
+    -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+            animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+    background: rgba(255, 255, 255, 0.85) none repeat scroll 0 0;
+    left: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+    box-shadow: 0 0 4px 1px #ddd;
+}
+.sticky .main-menu > nav > ul > li {
+  padding: 12px 0 14px;
+}
+.sticky .logo {padding: 11px 0;}
+.header-area .sticky {
+    background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+    box-shadow: 0 1px 3px rgba(50, 50, 50, 0.4)
+}
+.menu-style-toggle nav {
+    margin-right: -30px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    visibility: hidden;
+}
+.menu-style-toggle nav.menu-open {
+    margin-right: 0;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible;
+}
+.menu-style-toggle nav {
+    float: left;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.main-menu.mean-menu.menu-style-toggle.text-right {float: right;}
+.mobile-header {
+    background: #ffffff none repeat scroll 0 0;
+    display: none;
+    left: 0;
+    margin: auto;
+    padding: 15px 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.mobile-logo img {width: 40px;}
+.mean-container .mean-bar {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    min-height: 0;
+    padding: 0;
+}
+.mean-container .mean-nav {
+    margin-top: 0;
+    position: absolute;
+}
+.mean-container .mean-bar {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    min-height: 0;
+    padding: 0;
+}
+.menu-icon {
+    border: 1px solid #464646;
+    box-sizing: content-box;
+    color: #464646;
+    cursor: pointer;
+    font-weight: 700;
+    height: 22px;
+    line-height: 22px;
+    padding: 4px 5px;
+    position: absolute;
+    right: 20px;
+    text-decoration: none;
+    top: 25px;
+    width: 22px;
+}
+.menu-icon span{background-color: #333333;
+    display: block;
+    height: 3px;
+    margin-top: 3px;
+    box-sizing: content-box
+}
+.mobile-menu-area {
+    background-color: #fff;
+    display: block;
+    height: 100%;
+    left: 0;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+}
+.mobile-menu-area .menu-close {
+    background-color: transparent;
+    border: 2px solid #858585;
+    border-radius: 50%;
+    color: #858585;
+    height: 40px;
+    padding: 0;
+    width: 40px;
+	margin-bottom:30px;
+}
+.mobile-menu-area .menu-close:hover {
+    color: #433a8b;
+    border-color: #433a8b;
+}
+.mobile-menu-area .menu-close i {
+    display: block;
+    font-size: 30px;
+    line-height: 30px;
+    padding-right: 2px;
+}
+.sticky .menu-toggle {margin-top: 32px;}
+.search-btn {
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 25px;
+  position: relative;
+  top: 4px;
+}
+.search {
+    background: #ffffff none repeat scroll 0 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    position: absolute;
+    right: 0;
+    top: 39px;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    visibility: hidden;
+    width: 216px;
+    z-index: 9999;
+}
+#search-form > input {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 0 none;
+  color: #252525;
+  height: 40px;
+  border: 2px solid #cacaca;
+}
+#search-form > input::-moz-placeholder {color: #252525;} 
+#search-form > input::-webkit-input-placeholder {color: #252525;}
+#search-form > button {
+  background: #d4a762 none repeat scroll 0 0;
+  border: 2px solid #c5c596;
+  color: #ffffff;
+  font-size: 30px;
+  height: 100%;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 43px;
+}
+#search-form > button:hover{
+    background: #9f7a40;
+    border: 2px solid #939369;
+}
+.search-menu {
+    display: inline-block;
+    height: 30px;
+    text-align: center;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    width: auto;
+    color: #919191;
+    font-size: 20px;
+    position: relative;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.search-menu:hover{color:#D4A762}
+.open .search {
+    display: block;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible;
+    z-index: 2;
+}

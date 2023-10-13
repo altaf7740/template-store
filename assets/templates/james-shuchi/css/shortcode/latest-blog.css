@@ -1,0 +1,205 @@
+/* -----------------------------------
+Template:  Theme Name
+
+NOTE: This is latest-blog about file. All latest-blog related style included in this file.
+
+--------------------------------------*/
+.single-latest-blog{
+	position:relative;
+	overflow:hidden;
+	transition:all .4s;
+}
+.blog-img{}
+.blog-img a{
+	display:block;
+	position:relative;
+}
+.blog-img a img{
+	width:100%;
+}
+.blog-img > a::before {
+  color: #ffffff;
+  content: "\f275";
+  font-family: Material-Design-Iconic-Font;
+  font-size: 50px;
+  font-weight: 700;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 39%;
+  transform: scale(3);
+  transition: all 0.4s ease 0s;
+  display:inline-block;
+}
+.single-latest-blog:hover .blog-img > a:before {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 11;
+}
+.blog-img a:after{
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	content:"";
+	background:#000;
+	opacity:0;
+	transition:all .3s;
+}
+.single-latest-blog:hover .blog-img a:after{
+	opacity:.5;
+}
+.latest-blog-info a > h4 {
+  border-bottom: 1px solid #cccccc;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  transition: all 0.3s ease 0s;
+  text-align: left;
+  margin-left:20px;
+}
+.latest-blog-info a > h4:hover {
+  color: #ff6666;
+}
+.latest-blog-bottom {
+  overflow: hidden;
+  padding: 10px 10px 10px 20px;
+}
+.latest-blog-bottom-img{
+	float:left;
+}
+.latest-blog-bottom-info {
+  float: left;
+  margin-left: 20px;
+  margin-top: 8px;
+}
+.latest-blog-bottom-info > h4 {
+  margin-bottom: 5px;
+}
+.single-latest-blog:hover{
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+/* -------------------
+	blog-detail-page
+  --------------------*/
+.blog-detail-meta {
+  background: #f1f1f1 none repeat scroll 0 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 100px;
+}
+.blog-detail-img > img {
+  padding: 10px;
+  background: #;
+}
+.blog-detail-img {
+  background: #f1f1f1;
+}
+.blog-detail-meta > span {
+  font-weight: 500;
+  margin-right: 25px;
+  display: inline-block;
+}
+.blog-detail-meta > span i {
+  float: left;
+  margin-right: 12px;
+  font-size: 20px;
+  margin-top: 2px;
+}
+.blog-detail-info {
+  padding: 0 90px;
+}
+.blog-detail-info > p {
+  font-weight: 500;
+  margin-bottom:0px;
+  margin-top: 20px;
+}
+.blockquote {
+  background: #f7f7f7 none repeat scroll 0 0;
+  font-style: italic;
+  margin: 40px 0;
+  padding: 30px 45px;
+}
+.blockquote > p {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.tag span {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.tag a {
+  text-transform: capitalize;
+  margin: 0px 2px;
+}
+
+.blog-detail{
+	transition:all .3s;
+}
+.blog-detail:hover{
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease 0s;		
+}
+.single-blog-detail-img {
+  float: left;
+  width: 11%;
+}
+.single-blog-detail-meta {
+  width: 89%;
+  float: left;
+  padding-left: 20px;
+}
+.single-blog-detail {
+  overflow: hidden;
+  padding: 20px;
+  background: #FAFAFA;
+}
+.single-blog-detail-meta h4 {
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.single-blog-detail-meta > span {
+  display: inline-block;
+  margin-right: 20px;
+  font-size:13px;
+}
+.single-blog-detail-meta > span i {
+  float: left;
+  font-size: 20px;
+  margin-right: 10px;
+  margin-top: 1px;
+}
+.pl-100 .single-blog-detail-img {
+  float: left;
+  width: 15%;
+}
+.pl-100 .single-blog-detail-meta{
+	width:85%;
+	float:left;
+}
+.blog-contact .wish-search form input, .blog-contact .wish-search form textarea {
+  border-radius: 0;
+  background:#F1F1F1;
+  border-color:#f1f1f1;
+} 
+.blog-contact .theme-button {
+  border-color: #ff6666 !important;
+  color: #333333;
+  display: inline-block;
+  float: left;
+  font-size: 16px;
+  font-weight: 500;
+  height: 40px;
+  transition: all 0.3s ease 0s;
+  width: 120px;
+  background: #ff6666!important;
+  color: #fff;
+}
+.blog-contact .theme-button:hover{
+	background:#fff!important;
+	color:#ff6666;
+} 
+

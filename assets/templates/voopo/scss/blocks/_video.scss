@@ -1,0 +1,161 @@
+/*-----------------
+    Video Styles
+-----------------*/
+
+.voopo__video {
+    padding-bottom: 200px;
+}
+
+.video__inner {
+    position: relative;
+    z-index: 2;
+    &::before {
+        background: -webkit-gradient(linear, right top, left top, from(#1343a3), to(#011056));
+        background: linear-gradient(to left, #1343a3, #011056);
+        content: "";
+        height: 100%;
+        left: 0;
+        opacity: 0.85;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
+    .video__content {
+        background: #ffffff none repeat scroll 0 0;
+        border-radius: 10px;
+        margin-left: 80px;
+        overflow: hidden;
+        padding: 40px 34px 80px;
+        position: relative;
+        top: 80px;
+        &::before {
+            background-image: url("images/icons/v1.png");
+            background-position: right bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+            bottom: -109px;
+            content: "";
+            height: 199px;
+            position: absolute;
+            right: -94px;
+            transform: rotate(205deg);
+            width: 234px;
+        }
+        p {
+            margin: 0;
+            font-size: 16px;
+            line-height: 27px;
+            &+p {
+                margin-top: 27px;
+            }
+        }
+        h2 {
+            color: #010f54;
+            font-size: 36px;
+            margin-bottom: 33px;
+            padding-bottom: 38px;
+            position: relative;
+            text-align: center;
+            &::before {
+                background: linear-gradient(to right, #e05a42, #fbcdc7);
+                bottom: 0;
+                content: "";
+                height: 3px;
+                left: 50%;
+                position: absolute;
+                transform: translateX(-50%);
+                width: 150px;
+            }
+        }
+    }
+}
+
+.video__trigger {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    a {
+        background: rgba(214, 89, 65, 0.5) none repeat scroll 0 0;
+        border-radius: 100%;
+        display: inline-block;
+        font-size: 40px;
+        height: 100px;
+        line-height: 100px;
+        width: 100px;
+        i {
+            background: #e05941 none repeat scroll 0 0;
+            border-radius: 100%;
+            color: #fff;
+            height: 66px;
+            line-height: 66px;
+            text-align: center;
+            width: 66px;
+            transition: 0.5s;
+        }
+    }
+}
+
+// Responsive Css
+@media #{$xx-layout} {}
+
+@media #{$xlg-layout} {}
+
+@media #{$lg-layout} {
+    .video__inner .video__content {
+        margin-left: 60px;
+    }
+}
+
+@media #{$md-layout} {
+    .video__inner .video__content {
+        margin-left: 29px;
+    }
+}
+
+@media #{$sm-layout} {
+    .video__inner .video__content {
+        margin-left: 0;
+    }
+    .video__trigger {
+        width: auto;
+    }
+    .video__trigger a {
+        height: 80px;
+        line-height: 80px;
+        width: 80px;
+    }
+    .voopo__video {
+        padding-bottom: 154px;
+    }
+}
+
+@media #{$xs-layout} {
+    .video__inner .video__content {
+        margin-left: 20px;
+        margin-right: 20px;
+        top: 20px;
+    }
+    .voopo__video {
+        padding-bottom: 139px;
+    }
+    .video__inner .video__content h2 {
+        font-size: 24px;
+        margin-bottom: 23px;
+        padding-bottom: 27px;
+    }
+    .video__inner .video__content {
+        padding: 40px 29px 80px;
+    }
+
+    
+
+}
+
+@media #{$xxs-layout} {
+
+
+
+}

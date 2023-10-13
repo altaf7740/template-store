@@ -1,0 +1,1130 @@
+/*****************************
+02 - Utilities - Helper
+*****************************/
+ 
+.wrapper{
+	@extend %posrelative;
+}
+.main-content-wrapper, .footer{
+	padding-left: 75px;
+	padding-right: 75px;
+	overflow: hidden;
+	@include breakpoint(small){
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	@include breakpoint(xsmall){
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+.container{
+	@include breakpoint(xlargeonly){
+		max-width: 1200px;		
+	}
+	&-2{
+		@include breakpoint(xlargeonly){
+			max-width: 1280px;		
+		}
+	}
+	&-full-lg{
+		@include breakpoint(large){
+			max-width: 100%;
+		}
+	}
+	&-fluid{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+// Custom Grid
+.custom-grid{
+	& > [class^="column"]{
+		position: relative;
+		width: 100%;
+		min-height: 1px;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+	& > .column-1{
+	    @include flex-basis(44%);
+	    max-width: 44%;
+	    @include breakpoint(xxalarge){
+		    @include flex-basis(40%);
+		    max-width: 40%;
+	    }
+	    @include breakpoint(large){
+		    @include flex-basis(100%);
+		    max-width: 100%;
+	    }
+	}
+	& > .column-2, & > .column-3{
+	    @include flex-basis(28%);
+	    max-width: 28%;
+	    @include breakpoint(xxalarge){
+		    @include flex-basis(30%);
+		    max-width: 30%;
+	    }
+	    @include breakpoint(large){
+		    @include flex-basis(50%);
+		    max-width: 50%;
+	    }
+	    @include breakpoint(small){
+		    @include flex-basis(100%);
+		    max-width: 100%;
+	    }
+	}
+}
+.custom-grid-1{
+	& > [class^="column"]{
+		position: relative;
+		width: 100%;
+		min-height: 1px;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+	& > .column-1{
+	    @include flex-basis(61%);
+	    max-width: 61%;
+	    @include breakpoint(medium){
+		    @include flex-basis(100%);
+		    max-width: 100%;
+	    }
+	}
+	& > .column-2{
+	    @include flex-basis(39%);
+	    max-width: 39%;
+	    @include breakpoint(medium){
+		    @include flex-basis(50%);
+		    max-width: 50%;
+	    }
+	    @include breakpoint(small){
+		    @include flex-basis(100%);
+		    max-width: 100%;
+	    }
+	}
+}
+@for $i from 1 through 12{
+	@include breakpoint(xxlargeonly){
+		.xl-block-grid{
+			&-#{($i*12)/12}{
+				& > [class^="col"]{
+					@include flex-basis(#{percentage(100 / $i) / 100}); 
+					max-width: #{percentage(100 / $i) / 100};
+				}
+			} 
+		}
+	}
+}
+@for $i from 1 through 12 {
+	.col-xxl-#{$i} {
+		@extend %gridcolumn;
+		@include breakpoint(xxlargeonly){
+			flex: 0 0 percentage($i / 12);
+			max-width: percentage($i / 12);
+		}
+	}
+}
+.tty-offset-xl-1{
+	@include breakpoint(xlargeonly){
+		margin-left: 1%;
+	}
+	@include breakpoint(xxblargeonly){
+		margin-left: 2%;
+	}
+	@include breakpoint(xxlupper){
+		margin-left: 8.333333%;
+	}
+}
+.tty-col-xl-2{
+	@include breakpoint(xlargeonly){
+		@include flex(0 0 24%);
+		max-width: 24%;
+	}
+	@include breakpoint(xxblargeonly){
+		@include flex(0 0 23%);
+		max-width: 23%;
+	}
+	@include breakpoint(xxlupper){
+		@include flex(0 0 16.666667%);
+		max-width: 16.666667%;
+	}
+}
+
+.hide-in-default{
+	display: none;
+}
+.hide-in-default-md{
+	@include breakpoint(medium){
+		display: none;
+	}
+}
+.ov-hidden{
+	overflow: hidden;
+}
+.old-price{
+	text-decoration: line-through;
+}
+
+.no-radius{
+	@include border-radius(0);
+}
+.border{
+	&-top,
+	&-bottom, 
+	&-left, 
+	&-right{
+		border-color: $border-color !important;
+	}
+}
+.border-radius{
+	@extend %borderRadius;
+}
+%border{
+	border: 1px solid $border-color;
+}
+%border-left{
+	border-left: 1px solid $border-color;
+}
+%border-right{
+	border-right: 1px solid $border-color;
+}
+%border-top{
+	border-top: 1px solid $border-color;
+}
+%border-bottom{
+	border-bottom: 1px solid $border-color;
+}
+%border-none{
+	border: none;
+}
+.zoom-out-effect{
+	overflow: hidden;
+	img{
+	    @include transform(scale(1.05));
+	    @include transition(transform 0.5s ease-out);
+	}
+	&:hover{
+		img{
+			@include transform(scale(1));
+		}
+	}
+}
+.line-height-1{
+	line-height: 1;
+}
+
+
+/****************
+Bootstrap Dropdown
+****************/
+
+%dropdowncommon{
+	border-radius: 4px;	
+	padding: 0 20px;
+	margin: 0;
+	border: none;
+	@include box-shadow(0 0 50px 0 rgba(0, 0, 0, 0.1));	
+    right: 0 !important;
+    left: auto !important;
+	min-width: 160px;
+	background: $color-dark;
+}
+%imagezommin{
+	@include transform(scale3d(1.05, 1.05, 1.05));
+}
+%posabsolute{
+	position: absolute;
+}
+%pseudo{
+	position: absolute;
+	content: "";
+}
+%posrelative{
+	position: relative;
+}
+%absCenter{
+	@extend %posabsolute;
+	left: 50%;
+	top: 50%;
+	@include transform(translate(-50%, -50%));
+}
+%lefttop{
+	left: 0;
+	top: 0;
+}
+%fullwidth{
+	left: 0;
+	top: 0;
+	@extend %width100;
+	@extend %height100;
+}
+%basetransition{
+	@include transition(all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1));
+}
+%invisible{
+	visibility: hidden;
+	opacity: 0;
+}
+%visible{
+	visibility: visible;
+	opacity: 1;
+}
+
+%fontAwesome{
+	position: absolute;
+	font-family: fontAwesome;
+	line-height: 1;
+}
+%verticalCenter{
+	@extend %posabsolute;
+	top: 50%;
+	@include transform(translateY(-50%));
+	z-index: 2;
+}
+%borderRadius{
+	@include border-radius($border-radius);
+}
+%noborderRadius{
+	@include border-radius(0);
+}
+
+%price{
+	@extend %primary-color;
+	@extend %fontWeight700;
+}
+%oldprice{
+	color: $color-gray;
+	text-decoration: line-through;
+	opacity: .8;
+	@extend %fontWeight700;
+}
+%priceSeparator{
+	@extend %heading-color;
+	padding: 0 5px;
+}
+
+%overflowHidden{
+	overflow: hidden;
+}
+%cursorPointer{
+	cursor: pointer;
+}
+%gridcolumn{
+	position: relative;
+	width: 100%;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+%proLabel{
+	font-size: 24px;
+	@extend %fontWeight700;
+	@extend %displayInlineBlock;
+	@extend %lineheight1;
+	@include breakpoint(xsmall){
+		font-size: 20px;
+	}
+}
+
+/*-- Font --*/
+
+%font{
+	font-family: $body-font;
+}
+%font2{
+	font-family: $font-2;
+}
+%headingFont{
+	font-family: $heading-font;
+}
+%fontSize18{
+	font-size: $font-size-18;
+}
+%fontSize16{
+	font-size: $body-font-size;
+}
+%fontSize14{
+	font-size: $font-size-14;
+}
+%fontWeight900{
+	font-weight: 900;
+}
+%fontWeight800{
+	font-weight: 800;
+}
+%fontWeight700{
+	font-weight: 700;
+}
+%fontWeight600{
+	font-weight: 600;
+}
+%fontWeight500{
+	font-weight: 500;
+}
+%fontWeight400{
+	font-weight: 400;
+}
+%fontWeight300{
+	font-weight: 300;
+}
+
+// Line Height
+
+%lineheight1{
+	line-height: 1;
+}
+
+// Width
+
+%widthAuto{
+	width: auto;
+}
+%heightAuto{
+	height: auto;
+}
+%width100{
+	width: 100%;
+}
+%height100{
+	height: 100%;
+}
+%maxWidth100{
+	max-width: 100%;
+}
+%maxHeight100{
+	max-height: 100%;
+}
+
+// Text Align
+
+%textLeft{
+	text-align: left;
+}
+%textRight{
+	text-align: right;
+}
+%textCenter{
+	text-align: center;
+}
+
+// Text Transform
+
+%textUpper{
+	text-transform: uppercase;
+}
+%textCap{
+	text-transform: capitalize;
+}
+
+// Display
+
+%displayBlock{
+	display: block;
+}
+%displayInline{
+	display: inline;
+}
+%displayInlineBlock{
+	display: inline-block;
+}
+
+
+// Flexbox Extend
+
+%flexbox{
+	@include flexbox;
+}
+%justify-center{
+	@include justify-content(center);
+}
+%justify-around{
+	@include justify-content(space-around);
+}
+%justify-between{
+	@include justify-content(space-between);
+}
+%justify-start{
+	@include justify-content(flex-start);
+}
+%justify-end{
+	@include justify-content(flex-end);
+}
+%align-start{
+	@include align-items(flex-start);
+}
+%align-end{
+	@include align-items(flex-end);
+}
+%align-center{
+	@include align-items(center);
+}
+%align-stretch{
+	@include align-items(stretch);
+}
+%align-baseline{
+	@include align-items(baseline);
+}
+%flex-wrap{
+	@include flex-wrap(wrap);
+}
+%flex-nowrap{
+	@include flex-wrap(nowrap);
+}
+
+%flex-column{
+	@include flex-direction(column);
+}
+%flex-column-reverse{
+	@include flex-direction(column-reverse);
+}
+
+%flex-row{
+	@include flex-direction(row);
+}
+%flex-row-reverse{
+	@include flex-direction(row-reverse);
+}
+
+%absFlexCenter{
+	@include flexbox;
+	@include justify-content(center);
+	@include align-items(center);
+}
+%horizontalFlexCenter{
+	@include flexbox;
+	@include justify-content(center);
+}
+%verticalFlexCenter{
+	@include flexbox;
+	@include align-items(center);
+}
+
+
+
+
+/*-- Background Styles --*/
+
+.bg-image{
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center;
+	background-size: cover;
+}
+.bg-cover{
+	background-size: cover;
+}
+.bg-100{
+	background-size: 100% 100%;
+} 
+.bg-contain{
+	background-size: contain;
+}
+.bg-no-repeat{
+	background-repeat: no-repeat;
+}
+.bg-repeat{
+	background-repeat: repeat;
+}
+.bg-scroll{
+	background-attachment: scroll;
+}
+.bg-fixed{
+	background-attachment: fixed;
+}
+.bg-center{
+	background-position: center;
+}
+.bg-center-top{
+	background-position: center top;
+}
+.bg-center-bottom{
+	background-position: center bottom;
+}
+.bg-left-top{
+	background-position: left top;
+}
+.bg-left-bottom{
+	background-position: left bottom;
+}
+.bg-right-top{
+	background-position: right top;
+}
+.bg-right-bottom{
+	background-position: right bottom;
+}
+
+.bg-cover-md{
+	@include breakpoint(medium){
+		background-size: cover;
+	}
+}
+.opacity-bg{
+	@extend %posrelative;
+	&:after{
+		@extend %pseudo;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    opacity: .4;
+	    z-index: 1;
+	    @extend %black-bg-color;
+	}
+	&-60{
+		&:after{
+			opacity: .6;
+		}
+	}
+	* {
+		z-index: 2;
+	}
+}
+.bg-padding-sm{
+	@include breakpoint(small){
+		padding-top: 50%;
+	}
+}
+
+
+
+// List
+
+.two-column-list{
+	@extend %flexbox;
+	@extend %flex-wrap;
+	& > * {
+		@include flex-basis(50%);
+		max-width: 50%;
+	}
+}
+.sm-one-column{
+	& > * {
+		@include breakpoint(small){
+			@include flex-basis(100%);
+			max-width: 100%;
+		}
+	}
+}
+
+
+// Grid
+
+@for $i from 1 through 20{
+	.gutter-#{$i * 5}{
+		margin-left: -#{(($i * 5))/2}px;
+		margin-right: -#{(($i * 5))/2}px;
+		& > [class^="col"],
+		& > *{
+			padding-left: #{(($i * 5))/2}px;
+			padding-right: #{(($i * 5))/2}px;
+		}
+	}
+}
+
+// Max Width
+ 
+.max-w-60{
+	max-width: 60%;
+}
+.max-w-lg-75{
+	@include breakpoint(large){
+		max-width: 75%;
+	}
+}
+.max-w-md-85{
+	@include breakpoint(large){
+		max-width: 85%;
+	}
+}
+
+.max-width--1200{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+
+// Padding top and bottom
+.ptb--20{
+	padding-top: 20px;
+	padding-bottom: 20px
+}
+.ptb--25{
+	padding-top: 25px;
+	padding-bottom: 25px
+}
+.ptb--30{
+	padding-top: 30px;
+	padding-bottom: 30px
+}
+
+// Padding top
+
+.pt--20{
+	padding-top: 20px;
+}
+
+
+
+// Margin top
+.mt--5{
+	margin-top: 5px;
+}
+.mt--20{
+	margin-top: 20px;
+}
+.mt--25{
+	margin-top: 25px;
+}
+.mt--30{
+	margin-top: 30px;
+}
+
+// Margin Bottom
+.mb--5{
+	margin-bottom: 5px;
+}
+.mb--10{
+	margin-bottom: 10px;
+}
+.mb--15{
+	margin-bottom: 15px;
+}
+.mb--20{
+	margin-bottom: 20px;
+}
+.mb--25{
+	margin-bottom: 25px;
+}
+.mb--30{
+	margin-bottom: 30px;
+}
+.mb--35{
+	margin-bottom: 35px;
+}
+.mb--40{
+	margin-bottom: 40px;
+}
+.mb--45{
+	margin-bottom: 45px;
+}
+.mb--50{
+	margin-bottom: 50px;
+}
+@include breakpoint(large){
+	.mb-lg--30{
+		margin-bottom: 30px;
+	}
+}
+@include breakpoint(medium){
+	.mb-md--10{
+		margin-bottom: 10px;
+	}
+	.mb-md--15{
+		margin-bottom: 15px;
+	}
+	.mb-md--20{
+		margin-bottom: 20px;
+	}
+	.mb-md--30{
+		margin-bottom: 30px;
+	}
+}
+@include breakpoint(small){
+	.mb-sm--10{
+		margin-bottom: 10px;
+	}
+	.mb-sm--15{
+		margin-bottom: 15px;
+	}
+	.mb-sm--20{
+		margin-bottom: 20px;
+	}
+	.mb-sm--30{
+		margin-bottom: 30px;
+	}
+}
+
+@include breakpoint(xsmall){
+	.mb-xs--10{
+		margin-bottom: 10px;
+	}
+	.mb-xs--15{
+		margin-bottom: 15px;
+	}
+	.mb-xs--20{
+		margin-bottom: 20px;
+	}
+	.mb-xs--30{
+		margin-bottom: 30px;
+	}
+}
+
+
+// Margin Left
+.ml--20{
+	margin-left: 20px;
+}
+.ml--40{
+	margin-left: 40px;
+}
+.ml--45{
+	margin-left: 45px;
+}
+
+// Margin Left For Large Device
+
+.ml-lg--20{
+	@include breakpoint(large){
+		margin-left: 20px;
+	}
+}
+
+// Margin Right
+
+.mr--20{
+	margin-right: 20px;
+}
+.mr--5r{
+	margin-right: 5rem;
+}
+@include breakpoint(xsmall){
+	.mr-xs--0{
+		margin-right: 0;
+	}
+}
+
+
+// Padding Left - Right
+
+.plr--20{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.plr--25{
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.pl--15{
+	padding-left: 15px;
+}
+.pl--20{
+	padding-left: 20px;
+}
+.pl--45{
+	padding-left: 45px;
+}
+.pl--55{
+	padding-left: 55px;
+}
+.pr--15{
+	padding-right: 15px;
+}
+.pr--20{
+	padding-right: 20px;
+}
+.pb--10{
+	padding-bottom: 10px;
+}
+.pb--15{
+	padding-bottom: 15px;
+}
+.pb--20{
+	padding-bottom: 20px;
+}
+@include breakpoint(medium){
+	.pl-md--25{
+		padding-left: 25px;
+	}
+}
+@include breakpoint(small){
+	.pl-sm--35{
+		padding-left: 35px;
+	}
+	.pr-sm--75{
+		padding-right: 75px;
+	}
+}
+@include breakpoint(small){
+	.pr-xs--15{
+		padding-right: 15px;
+	}
+}
+
+
+// Padding Left
+
+.pl--5r{
+	padding-left: 5rem;
+}
+.pl--6r{
+	padding-left: 6rem;
+}
+.pl--18r{
+	padding-left: 18rem;
+}
+.pl--30r{
+	padding-left: 30rem;
+}
+
+@include breakpoint(medium){
+	.pl-md--0{
+		padding-left: 0;
+	}
+	.pr-md--0{
+		padding-right: 0;
+	}
+}
+
+@include breakpoint(small){
+	.pl-sm--0{
+		padding-left: 0;
+	}
+	.pr-sm--0{
+		padding-right: 0;
+	}
+}
+
+@include breakpoint(large){
+	.pl-lg--5r{
+		padding-left: 5rem;
+	}
+	.pl-lg--12r{
+		padding-left: 12rem;
+	}
+	.pl-lg--20r{
+		padding-left: 20rem;
+	}
+}
+@include breakpoint(medium){
+	.pl-md--5r{
+		padding-left: 5rem;
+	}
+	.pl-md--20r{
+		padding-left: 20rem;
+	}
+}
+
+// Section Spacing
+
+// Padding Top and Bottom
+.ptb--8r{
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+}
+
+// Padding Top
+.pt--4r{
+	padding-top: 4rem; 
+}
+.pt--4r5{
+	padding-top: 4.5rem; 
+}
+.pt--5r{
+	padding-top: 5rem; 
+}
+.pt--7r{
+	padding-top: 7rem; 
+}
+.pt--7r5{
+	padding-top: 7.5rem; 
+}
+.pt--8r{
+	padding-top: 8rem; 
+}
+.pt--8r5{
+	padding-top: 8.5rem; 
+}
+.pt--10r{
+	padding-top: 10rem; 
+}
+@include breakpoint(medium){
+	.pt-md--5r{
+		padding-top: 5rem; 
+	}
+}
+
+
+// Padding Bottom
+.pb--4r{
+	padding-bottom: 4rem; 
+}
+.pb--4r5{
+	padding-bottom: 4.5rem; 
+}
+.pb--5r{
+	padding-bottom: 5rem; 
+}
+.pb--7r{
+	padding-bottom: 7rem; 
+}
+.pb--7r5{
+	padding-bottom: 7.5rem; 
+}
+.pb--8r{
+	padding-bottom: 8rem; 
+}
+.pb--9r{
+	padding-bottom: 9rem; 
+}
+
+
+// Padding right
+.pr--5r{
+	padding-right: 5rem !important; 
+}
+
+.pr--12r{
+	padding-right: 12rem !important; 
+}
+
+
+// Margin Top
+.mt--8r{
+	margin-top: 8rem; 
+}
+.mt--7r5{
+	margin-top: 7.5rem; 
+}
+.mt--7r{
+	margin-top: 7rem; 
+}
+
+// Margin Bottom
+.mb--8r{
+	margin-bottom: 8rem; 
+}
+.mb--7r5{
+	margin-bottom: 7.5rem; 
+}
+.mb--7r{
+	margin-bottom: 7rem; 
+}
+.mb--3r5{
+	margin-bottom: 3.5rem; 
+}
+.mb--4r{
+	margin-bottom: 4rem; 
+}
+.mb--4r5{
+	margin-bottom: 4.5rem; 
+}
+.mb--5r{
+	margin-bottom: 5rem; 
+}
+.mb--2r5{
+	margin-bottom: 2.5rem; 
+}
+@include breakpoint(xlarge){
+	.mb-xl--4r5{
+		margin-bottom: 4.5rem;
+	}
+	.mb-xl--5r{
+		margin-bottom: 5rem;
+	}
+}
+@include breakpoint(large){
+	.mb-lg--3r5{
+		margin-bottom: 3.5rem;
+	}
+	.mb-lg--4r5{
+		margin-bottom: 4.5rem;
+	}
+	.mb-lg--5r{
+		margin-bottom: 5rem;
+	}
+}
+@include breakpoint(medium){
+	.mb-md--3r5{
+		margin-bottom: 3.5rem;
+	}
+	.mb-md--4r{
+		margin-bottom: 4rem;
+	}
+	.mb-md--4r5{
+		margin-bottom: 4.5rem;
+	}
+	.mb-md--5r{
+		margin-bottom: 5rem;
+	}
+	.mb-md--6r{
+		margin-bottom: 6rem;
+	}
+}
+@include breakpoint(small){
+	.mb-sm--3r{
+		margin-bottom: 3rem;
+	}
+	.mb-sm--4r5{
+		margin-bottom: 4.5rem;
+	}
+	.mb-sm--5r{
+		margin-bottom: 5rem;
+	}
+}
+@include breakpoint(xsmall){
+	.mb-xs--1r5{
+		margin-bottom: 1.5rem;
+	}
+	.mb-xs--4r5{
+		margin-bottom: 4.5rem;
+	}
+	.mb-xs--5r{
+		margin-bottom: 5rem;
+	}
+}
+
+// Margin Left
+.ml--4r{
+	margin-left: 4rem;
+}
+.ml--4r5{
+	margin-left: 4.5rem;
+}
+.ml--5r{
+	margin-left: 5rem;
+}
+@include breakpoint(xlarge){
+	.ml-xl--3r5{
+		margin-left: 3.5rem;
+	}
+	.ml-xl--3r{
+		margin-left: 3rem;
+	}
+}
+
+@include breakpoint(large){
+	.ml-lg--3r{
+		margin-left: 3rem;
+	}
+}
+@include breakpoint(small){
+	.ml-sm--0{
+		margin-left: 0;
+	}
+}
+
+// padding left - right
+.plr--2r5{
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+}
+.plr--8r{
+	padding-left: 8rem;
+	padding-right: 8rem;
+}
+
+@include breakpoint(medium){
+	.plr-md--0{
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+@include breakpoint(small){
+	.plr-sm--4r{
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+}

@@ -1,0 +1,45 @@
+/*--
+    14. Testimonial
+--------------------*/
+.single-testimonial {
+    background: $white;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+        box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.1);
+    }
+}
+.content-testimonial {
+    padding: 40px 35px 40px 30px;
+    border-bottom: 1px solid #e1e1e1;
+    position: relative;
+    &::after {
+        position: absolute;
+        content: '';
+        background: url(../image/icon/testimonial-01.png);
+        height: 175px;
+        width: 33px;
+        top: 30px;
+        left: 0;
+        background-repeat: no-repeat;
+    }
+}
+.testimonial-info {
+    padding: 30px 30px;
+    position: relative;
+    &::after {
+            position: absolute;
+            content: '';
+            background: url(../image/icon/testimonial-02.png);
+            background-repeat: repeat;
+            height: 120px;
+            width: 131px;
+            top: 0;
+            left: 0;
+            background-repeat: no-repeat;
+        }
+    
+    & h5 {
+        font-weight: 600;
+    }
+}

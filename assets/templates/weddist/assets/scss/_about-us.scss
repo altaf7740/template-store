@@ -1,0 +1,122 @@
+/*--
+    19. About US css
+------------------------*/
+.single-about {
+    & .contents {
+        max-width: 400px;
+        margin: auto;
+        margin-top: 25px;
+        & h4 {
+            font-weight: 600;
+        }
+    }
+}
+
+.about-skilled {
+    & h3 {
+        font-family: $Charmonman;
+        font-weight: 600;
+    }
+    & h2 {
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 70px;
+        margin-bottom: 20px;
+        
+    }
+    @media #{$desktop-device}{
+        & h2 {
+            font-size: 40px;
+            line-height: 48px;
+        }
+    }
+    @media #{$tablet-device}{
+        margin-bottom: 30px;
+        & h2 {
+            font-size: 40px;
+            line-height: 48px;
+        }
+    }
+    @media #{$large-mobile}{
+        margin-bottom: 30px;
+        & h3 {
+            font-size: 24px;
+        }
+        & h2 {
+            font-size: 28px;
+            line-height: 32px;
+        }
+    }
+}
+
+
+.our-skilled-area {
+   background: #fafafa; 
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.progress {
+    margin-bottom: 25px;
+    height: 10px;
+    background-color: #ffff;
+    border: 1px solid #dcdcdc;
+}
+.progress-bar {
+    background-color: #ffa8a8;
+    border-radius: 5px;
+}
+.sinle-progress {
+    
+    &:last-child {
+        & .progress {
+            margin-bottom: 0;
+        }
+    }
+}
+.contact-map {
+    height: 500px;
+}
+.contact-info-wrapper {
+    & .contact-info-list{
+        & li {
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+.contact-form-warp {
+    margin-top: 30px;
+    & input,textarea {
+        border-bottom: 2px solid #e3e3e2;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        padding: 10px 0;
+        width: 100%;
+        margin-bottom: 20px;
+        background: transparent;
+    }
+    & .textarea {
+        height: 200px;
+    }
+    .submit-btn {
+        background: $theme-color;
+        border: 1px solid $theme-color;
+        color: #fff;
+        &:hover{
+            border: 1px solid #3A3A3A;
+        }
+    }
+}
+.contact-info-wrapper {
+    @media #{$large-mobile,$tablet-device}{
+        margin-bottom: 60px;
+    }
+}

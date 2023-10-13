@@ -1,0 +1,127 @@
+// main: ../style.scss
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+/* Custom Navmenu */
+
+.custom-navmenu {
+	background: $secondary-dark;
+	.custom-menu {
+		&, li {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+
+		li {
+			margin-bottom: 0;
+			font-size: 20px;
+			a {
+				color: #fff;
+				padding: 10px 0!important;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+			&.active {
+				a {
+					text-decoration: underline;
+				}
+			}
+		}
+
+	}
+	h3 {
+		font-size: 20px;
+		color: #fff;
+	}
+
+	p {
+		color: rgba(#fff, .6);
+	}
+	a {
+		color: rgba(#fff, .7);
+		&:hover {
+			color: #fff;
+		}
+	}
+
+}
+
+/* Custom Navbar */
+
+.custom-navbar {
+	padding-top: 50px;
+	width: 100%;
+	> .container {
+		@media (max-width: 780px) {
+			padding-right: 0;
+			padding-left: 0;
+		}
+  }
+  
+  .navbar-brand {
+    font-size: 1.7rem;
+  }
+}
+
+/* Burger */
+.burger {
+	width: 28px;
+	height: 32px;
+	cursor: pointer;
+	position: relative;
+}
+.burger:before, .burger span, .burger:after {
+	width: 100%;
+	height: 2px;
+	display: block;
+	background: #000;
+	border-radius: 2px;
+	position: absolute;
+	opacity: 1;
+}
+.burger:before, .burger:after {
+    transition: top .35s cubic-bezier(.23,1,.32,1),transform .35s cubic-bezier(.23,1,.32,1),opacity .35s cubic-bezier(.23,1,.32,1),background-color 1.15s cubic-bezier(.86,0,.07,1);
+	-webkit-transition: top .35s cubic-bezier(.23,1,.32,1),-webkit-transform .35s cubic-bezier(.23,1,.32,1),opacity .35s cubic-bezier(.23,1,.32,1),background-color 1.15s cubic-bezier(.86,0,.07,1);
+	content: "";
+}
+.burger:before {
+	top: 4px;
+}
+.burger span {
+	top: 15px;
+}
+.burger:after {
+	top: 26px;
+}
+/* Hover */
+.burger:hover:before {
+	top: 7px;
+}
+.burger:hover:after {
+	top: 23px;
+}
+
+/* Click */
+.burger.active span {
+	opacity: 0;
+}
+.burger.active:before, .burger.active:after {
+	top: 40%;
+}
+.burger.active:before {
+	-webkit-transform: rotate(45deg); 
+    -moz-transform: rotate(45deg);  
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); /*for IE*/
+}
+.burger.active:after {
+	-webkit-transform: rotate(-45deg); 
+    -moz-transform: rotate(-45deg);  
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=-5); /*for IE*/
+}
+.burger:focus {
+	outline: none;
+}

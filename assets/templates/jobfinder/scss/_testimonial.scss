@@ -1,0 +1,52 @@
+/*----------------------------------------*/
+/*  7.  Testimonial CSS
+/*----------------------------------------*/
+/*-- Testimonial Area --*/
+.testimonial-area {
+    background-image: url(img/bg/testimonial.jpg);
+    &::before {
+        opacity: 0.75;
+    }
+}
+.testimonial-slider {}
+/*-- Single Testimonial --*/
+.single-testimonial {
+    /*-- Content --*/
+    & .content {
+        background-color: rgba($color-black, 0.15);
+        border-radius: 5px;
+        padding: 40px 29px 65px;
+        & p {
+            font-size: 15px;
+            line-height: 26px;
+            color: $color-white;
+        }
+    }
+    /*-- Testimonial Author --*/
+    & .author {
+        & img {
+            display: block;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: 2px solid rgba($color-white, 0.2);
+            margin: -45px auto 0;
+        }
+        & h4 {
+            font-size: 22px;
+            font-family: $poppins;
+            font-weight: 600;
+            color: $color-white;
+            line-height: 20px;
+            margin: 12px 0 7px;
+        }
+        & span {
+            display: block;
+            font-weight: 500;
+            font-size: 14px;
+            color: $color-white;
+            line-height: 11px;
+            text-transform: uppercase;
+        }
+    }
+}

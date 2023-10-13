@@ -1,0 +1,242 @@
+@import "../variables";
+@import "../mixins";
+
+
+/*========================
+	Section Title Styles
+===========================*/
+
+.section__title{
+    h2{
+        &.title__line{
+            color: #444444;
+            font-size: 44px;
+            line-height: 33px;
+            margin-bottom: 23px;
+            padding-bottom: 45px;
+            position: relative;
+            font-family: $heading-font;
+            font-weight: 700;
+            &::before{
+                background: rgba(0, 0, 0, 0) url("images/icons/title.png") no-repeat scroll 0 0;
+                bottom: 0;
+                content: "";
+                height: 14px;
+                left: 50%;
+                position: absolute;
+                transform: translateX(-50%);
+                width: 290px; 
+            }
+             &.title__line--4{
+                &::before{
+                    background: rgba(0, 0, 0, 0) url("images/icons/title-4.png") no-repeat scroll 0 0;
+                }  
+            }
+            &.white__line{
+                &::before{
+                    background: rgba(0, 0, 0, 0) url("images/icons/title-2.png") no-repeat scroll 0 0;
+                }
+            }
+        }
+    }
+    p{
+        color: #777777;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25px;
+        padding: 0 22%;
+    }
+    &.white--title{
+        h2{
+            &.title__line{
+                color: #fff;
+            }
+
+        }
+        p{
+            color: #fff;
+        }
+    }
+
+}
+
+.container-fluid .section__title p {
+  padding: 0 34%;
+}
+
+
+.title__line--3 {
+    font-size: 24px;
+    margin-bottom: 43px;
+    text-transform: capitalize;
+    font-family: $heading-font;
+}
+
+
+// Section Title 02
+
+
+.section__title--2{
+    h2{
+        &.title__line{
+            color: #444444;
+            font-size: 48px;
+            line-height: 37px;
+            padding-top: 30px;
+            position: relative;
+            font-family: $heading-font;
+            z-index: 2; 
+            &::before {
+              background-image: url("images/icons/line-4.png");
+              background-repeat: no-repeat;
+              content: "";
+              height: 30px;
+              position: absolute;
+              top: 0;
+              width: 110px;
+            }
+            &::after {
+              bottom: -35px;
+              color: #e8eaeb;
+              content: attr(data-shadow);
+              left: 0;
+              opacity: 0.5;
+              position: absolute;
+              right: 0;
+              transform: scaleY(-1);
+              z-index: -1;
+            }
+            &.white--title{
+                color: #fff;
+                &::after {
+                    bottom: -35px;
+                    color: #1d5832;
+                    content: attr(data-shadow);
+                    left: 0;
+                    opacity: 1;
+                    position: absolute;
+                    right: 0;
+                    transform: scaleY(-1);
+                    z-index: -1;
+                }
+            }
+        }
+        span{
+            &.theme-color-2{
+                color: #faae08;
+            }
+        }
+    }
+}
+
+
+
+.shop__title {
+  font-family: $heading-font;
+  font-size: 24px;
+  line-height: 81px;
+}
+
+
+
+.section__title--2.line--white h2.title__line::before {
+  background-image: url("images/icons/line-6.png");
+  background-repeat: no-repeat;
+  content: "";
+  height: 30px;
+  position: absolute;
+  top: 0;
+  width: 110px;
+}
+
+
+
+// Responsive Css
+
+
+
+@media #{$lg-layout}{
+
+  
+
+    
+}
+
+@media #{$md-layout}{
+
+.container-fluid .section__title p {
+  padding: 0 10%;
+}
+
+
+
+
+    
+}
+
+@media #{$sm-layout}{
+
+.section__title p {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0 5%;
+}
+.section__title h2.title__line {
+    font-size: 28px;
+    padding-bottom: 24px;
+}
+.container-fluid .section__title p {
+  padding: 0;
+}
+
+
+
+
+
+    
+}
+
+@media #{$xs-layout}{
+
+.section__title--2 h2.title__line {
+  font-size: 41px;
+} 
+
+
+
+
+}
+@media #{$xxs-layout}{
+.section__title--2 h2.title__line {
+  font-size: 31px;
+}
+.welcome__juniro__three .welcome-tab .nav-item {
+  padding: 0 13px;
+}
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

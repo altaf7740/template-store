@@ -1,0 +1,388 @@
+/*--
+    12 .Latest Blog Css
+-----------------------------------*/
+.single-letest-blog {
+    @include transition (.4s);
+    & .blog-image {
+        & a {
+            display: block;
+            & img {
+                width: 100%;
+            }
+        }
+    }
+    & .blog-content {
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+        padding: 30px;
+        @include transition (.4s);
+        & .post-mata {
+            margin-bottom: 5px;
+            & ul {
+                & li {
+                    display: inline-block;
+                    font-size: 14px;
+                }
+            }
+            }
+            & h3 {
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+            & p {
+                font-size: 14px;
+            }
+    }
+    &:hover {
+        & .blog-content {
+            box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+.latest-blog-active {
+    & .slick-arrow {
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: auto;
+        background: #ddd;
+        border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        z-index: 5;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+        &:hover {
+            background: $theme-color;
+            color: $white;
+        }
+        &.slick-next {
+            right: 0;
+            left: auto;
+        }
+    } 
+    &:hover .slick-arrow {
+        transform: translateY(-50%);
+        visibility: visible;
+        opacity: 1;
+    }
+}
+/*--
+    - Blog Details Css
+----------------------------*/
+
+.single-blog-area {
+    margin-bottom: 30px;
+}
+.blog-contend {
+    margin-top: 20px;
+    & h3 {
+        font-weight: 600;
+    }
+    & .blog-btn {
+        display: inline-block;
+        padding: 5px 15px;
+    }
+}
+.blog-date-categori {
+    margin-bottom: 10px;
+    & ul {
+        & li {
+            display: inline-block;
+            & a {
+                font-size: 14px;
+                margin-right: 10px;
+                font-weight: 500;
+                & i {
+                    font-size: 14px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+.search-post {
+    position: relative;
+    margin-top: 20px;
+    & input {
+        border: 1px solid #dddddd;
+        font-size: 14px;
+        height: 40px;
+        padding: 10px 50px 10px 10px;
+        position: relative;
+        width: 100%;
+    }
+    & .btn-search {
+        border: medium none;
+        font-size: 16px;
+        padding: 7px 15px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: #ddd;
+        &:hover {
+            background: $theme-color;
+            color: $white;
+        }
+    }
+}
+.social-icons {
+    float: right;
+    margin-top: 5px;
+    & li {
+        display: inline-block;
+        margin-left: 10px;
+    }
+}
+.blog-image-slider {
+    & .slick-arrow {
+        background: #dddddd none repeat scroll 0 0;
+        border: 1px solid #dddddd;
+        font-size: 16px;
+        height: 40px;
+        position: absolute;
+        top: 50%;
+        width: 40px;
+        z-index: 9;
+        @include transform (translateY(-50%));
+        &:hover {
+            background: $theme-color;
+            color: $white;
+            border-color: $theme-color;
+        }
+    }
+    & .slick-next {
+        right: 0;
+    }
+}
+.post-info {
+    margin-top: 30px;
+    & .blockquote-inner {
+        border-left: 5px solid $theme-color;
+        background: #fafafa;
+        font-size: 16px;
+        font-style: italic;
+        margin: 30px 0;
+        padding:  20px 10px;
+    }
+    & .post-commet {
+        border-bottom: 1px solid #e7e4dd;
+        border-top: 1px solid #e7e4dd;
+        font-size: 14px;
+        margin: 60px 0 30px;
+        padding: 15px 0;
+        text-align: left;
+        text-transform: uppercase;
+        & .social-icons {
+            margin-top: 1px;
+            font-size: 16px;
+        }
+    }
+}
+.comment-form-comment {
+    & .comment-notes {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        height: 140px;
+        font-size: 14px;
+        color: #666;
+    }
+    & label {
+        display: block;
+        span {
+            color: $theme-color;
+        }
+    }
+}
+.comment-form-author, .comment-form-email, .comment-form-url {
+    float: left;
+    padding: 0 10px;
+    width: 33.3333%;
+    @media #{$small-mobile} {
+        width: 100%;
+    }
+    @media #{$large-mobile} {
+        width: 100%;
+    }
+}
+.comment-input {
+    margin: 0 -10px;
+    overflow: hidden;
+    & label {
+        display: block;
+    }
+    & input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        height: 40px;
+        font-size: 14px;
+        color: #666;
+    }
+}
+.comment-form-submit {
+    & .comment-submit {
+        background: $theme-color;
+        color: $white;
+        border: none;
+        padding: 8px 15px;
+        margin-top: 20px;
+        &:hover {
+            background: $black;
+        }
+    }
+}
+.blog-wrap-col-3 {
+    & .blog-contend {
+        & h3 {
+            font-size: 18px;
+        } 
+        .blog-date-categori {
+            margin-bottom: 10px;
+            & ul {
+                & li {
+                    display: inline-block;
+                    & a {
+                        font-size: 14px;
+                        margin-right: 10px;
+                        font-weight: 400;
+                        & i {
+                            font-size: 14px;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+    & .blog-btn {
+        display: inline-block;
+        padding: 5px 15px;
+    }
+}
+.pro_review {
+    display: flex;
+    &.ans {
+        margin-bottom: 50px;
+        margin-left: 50px;
+        margin-top: 50px;
+        @media #{$small-mobile}{
+          margin-bottom: 30px;
+          margin-left: 20px;
+          margin-top: 30px;
+        }
+    }
+}
+.review_thumb {
+    margin-right: 20px;
+    min-width: 8%;
+    @media #{$large-mobile}{
+        min-width:25%;
+    }
+}
+.review_info {
+    & h4 {
+        font-weight: 500;
+    }
+}
+.rating_send {
+    & a {
+        font-size: 14px;
+        border: 1px solid #dddddd;
+        display: block;
+        float: right;
+        font-size: 20px;
+        margin-top: -30px;
+        padding: 2px 13px;
+    }
+}
+
+.review_date {
+    margin-top: 5px;
+}
+.review_details {
+    & p {
+        margin-top: 5px;
+    }
+}
+
+.blog-sidebar-wrap {
+    @media #{$tablet-device}{
+        padding-top: 80px;
+    }
+    @media #{$large-mobile}{
+        padding-top: 70px;
+    }
+    @media #{$small-mobile}{
+        padding-top: 60px;
+    }
+}
+.blog-sidebar {
+    & .title {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    & ul {
+        & li {
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            display: block;
+            &:last-child {
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+                border-bottom: none;
+            }
+            & a {
+                font-size: 14px;
+                display: block;
+                & span {
+                    float: right;
+                }
+            }
+        }
+    }
+}
+.sidbar-blog-inner {
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 20px;
+    & .sidbar-blog-image {
+        & img {
+            width: 150px;
+        }
+        padding-right: 15px;
+    }
+    & .sidbar-blog-content {
+        position: relative;
+        width: 100%;
+        & h3 {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 23px;
+        }
+    }
+}
+.sidebar-tag {
+   & > a {
+        border: 1px solid #000000;
+        color: #000000;
+        font-size: 14px;
+        font-weight: 500;
+        margin: 10px 10px 0 0;
+        padding: 4px 15px;
+        &:hover {
+            background: $theme-color;
+            color: #ffffff;
+            border: 1px solid $theme-color;
+        }  
+    }
+}

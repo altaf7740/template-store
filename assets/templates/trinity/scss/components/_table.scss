@@ -1,0 +1,250 @@
+/*****************************
+30 - Components - Table
+*****************************/
+
+.table{
+	margin-bottom: 0;
+	thead th, th{
+		text-transform: uppercase;
+		padding: 9px 12px;
+		letter-spacing: 1px;
+		font-weight: 400;
+		border-bottom-width: 0;
+		vertical-align: middle;
+		background-color: $primary-color;
+		color: $color-white;
+		font-weight: 700;
+		text-transform: capitalize;
+		&:not(:last-child){
+			border-right: 1px solid rgba(51, 51, 51, 0.1);
+		}
+	}
+	td{
+		vertical-align: middle;
+		border: 0px solid $border-color;
+	}
+	th, td{
+		min-width: 100px;
+		&.wide-column{
+			min-width: 240px;
+		}
+	}
+	tbody{
+		td{
+			padding: 15px 0;
+
+			&.product{
+				&-remove{
+					i{
+					    font-size: 30px;
+					    font-weight: 700;
+						color: $heading-color;
+					}
+				}
+				&-thumbnail{
+					background-color: transparent;;
+					width: auto;
+					img{
+						width: 32px;
+						height: auto;
+					}
+				}
+				&-name{
+					h3{
+						font-size: 16px;
+						line-height: 20px;
+					}
+				}
+				&-total-price{
+					@extend %price;
+				}
+				&-quantity{
+					display: table-cell;
+					.quantity{
+						margin-left: auto;
+						margin-right: auto;
+					}
+				}
+			}
+		}
+	}
+	&.shop_attributes{
+		max-width: 820px;
+		margin: 0 auto;
+		th,td{
+			padding: 4px 0;
+			text-transform: none;
+			line-height: 22px;
+			@extend %fontWeight700;
+			a{
+				@extend %body-color;
+				&:hover{
+					@extend %primary-color;
+				}
+			}
+		}
+		td{
+			@extend %fontSize16;
+		}
+		th{
+			@extend %heading-color;
+			min-width: 140px;
+		    background: transparent;
+		    border: transparent;
+			@extend %fontSize18;
+		}
+	}
+	&.order-table{
+		th{
+			background-color: transparent;
+			@extend %heading-color;
+			border: none !important;
+			strong{
+				font-size: 12px;
+			}
+		}
+		th, td{
+			padding-left: 0;
+		}
+		td{
+			@extend %fontSize14;
+			@extend %fontWeight700;
+		}
+	}
+	&.product-table{
+		thead{
+			th{
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+		.product{
+			&-remove{
+				min-width: 40px;
+			}
+			&-thumbnail{
+				img{
+					width: 70px;
+				}
+			}
+		}
+	}
+	&.compare-table{
+		tbody{
+			tr{
+				&:last-child{
+					th{
+						border-bottom: 1px solid $border-color;
+					}
+				}
+			}
+			th, td{
+				border-width: 1px;
+				padding: 10px;
+			}
+			th{
+			    min-width: 200px;
+			    background-color: $color-sand;
+			    vertical-align: middle;
+			    border-color: $border-color;
+			    border-left: 1px solid $border-color;
+			    padding-left: 20px;
+			    @extend %heading-color;
+			    @extend %fontWeight700;
+			    @extend %textUpper;
+			    @extend %fontSize16;
+			    letter-spacing: 0;
+			}
+			td{
+			    min-width: 250px;
+			    border-color: $border-color;
+			    @extend %textCenter;
+			    font-family: $font-2;
+			    vertical-align: middle;
+			    line-height: 1.4;
+			}
+			.remove{
+				a{ 
+					i{
+						font-size: 30px;
+					}
+				}
+			}
+			.product-name{
+			    font-size: 14px;
+			    margin: 20px 0;
+			}
+		}
+	}
+	&.wishlist-table{
+		tbody{
+			td{
+				border-bottom: 1px solid $border-color;
+			}
+		}
+	}
+}
+.group-product-table{
+	tr{
+	    width: 100%;
+	}
+	td{
+		border-width: 1px; 
+		&:first-child{
+		    width: 18%;
+		}
+	}
+	tbody{
+		td{
+			padding: 10px; 
+			&.product{
+				&-quantity{
+					display: table-cell;
+					margin: 0;
+					.quantity{
+						width: 140px;
+						.qtybutton {
+							width: 40px;
+						}
+					}
+				}
+				&-name{
+					min-width: 200px;
+					h3{
+						@extend %fontSize14;
+						@extend %heading-color;
+						@extend %fontWeight700;
+					}
+				}
+				&-price{
+					.product-price-wrapper{
+						margin-bottom: 0;
+						& > span{
+							@extend %fontSize16;
+							&.product-price{
+								&-old{
+									@extend %heading-color;
+									@extend %displayBlock;
+									margin-bottom: 5px;	
+									span{
+										@extend %fontSize16;
+									}
+								}
+								&-new{
+									text-decoration: underline;
+									span{
+										@extend %fontSize16;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+
+
+

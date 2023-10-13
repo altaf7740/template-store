@@ -1,0 +1,252 @@
+/*--
+    08. Blog Css
+---------------------------*/
+
+
+.post-carousel-4 {
+    .post-carousel-flex {
+        display: flex;
+        align-items: center;
+        @media #{$large-mobile} {
+            flex-wrap: wrap;
+        }
+        @media #{$tablet-device} {
+            flex-wrap: wrap;
+        }
+        .thumb{
+            a{
+                img{
+                    width: 100%;
+                }
+            }
+
+            @media #{$large-mobile} {
+                flex-basis: 100%;
+            }
+            @media #{$tablet-device} {
+                flex-basis: 100%;
+            }
+        }
+        .ptc-content {
+            flex-basis: 58%;
+            position: relative;
+            margin-left: -113px;
+            background: #fff;
+            padding: 30px 24px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+            @media #{$desktop-device} {
+                flex-basis: 82%;
+                margin-left: -113px;
+                padding: 12px 21px;
+            }
+
+            @media #{$large-mobile} {
+                flex-basis: 100%;
+                margin-left: 0;
+                padding: 31px 12px;
+                box-shadow: initial;
+            }
+
+            @media #{$tablet-device} {
+                flex-basis: 100%;
+                margin-left: 0;
+                padding: 31px 12px;
+                box-shadow: initial;
+            }
+
+        }
+    }
+
+    .ptc-content {
+        .content {
+
+            ul {
+                justify-content: flex-start;
+
+                &.post-category {
+                    margin: 0 -5px;
+
+                    li {
+                        margin: 0 5px;
+
+                        a {}
+                    }
+                }
+
+                &.meta {
+                    margin: 0 -14px;
+                    margin-bottom: 10px;
+
+                    li {
+                        color: #8c8c8c;
+                        font-size: 14px;
+                        font-family: $heading-font;
+                        font-weight: 500;
+                        margin: 0 14px;
+
+                        i {
+                            font-size: 16px;
+                            padding-right: 10px;
+                        }
+
+                        a {
+                            color: #8c8c8c;
+                        }
+
+                    }
+                }
+            }
+
+            h2 {
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 19px;
+
+                a {
+                    color: #464646;
+                    transition: 0.4s ease-in-out;
+
+                    &:hover {
+                        color: #0056ff;
+                    }
+                }
+            }
+
+            p {
+                color: #818181;
+                font-size: 14px;
+                line-height: 24px;
+                font-weight: 300;
+                font-family: $heading-font;
+            }
+
+            .post-btn {
+                a {
+                    &.readmore-btn {
+                        display: inline-block;
+                        border-bottom: 1px solid #464646;
+                        font-size: 14px;
+                        color: #464646;
+                        transition: 0.4s ease-in-out;
+                        font-family: $heading-font;
+                        font-weight: 500;
+
+                        &:hover {
+                            color: #0056ff;
+                            border-bottom: 1px solid #0056ff;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+
+
+.post-carousel-active-4 {
+    position: relative;
+    .slick-dots {
+        margin-top: 40px;
+        text-align: center;
+        height: 12px;
+
+        li {
+            position: relative;
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            padding: 0;
+            cursor: pointer;
+
+            button {
+                width: 10px;
+                height: 10px;
+                padding: 5px;
+                background: #333;
+                border-radius: 100%;
+                border: none;
+                text-indent: -9999px;
+
+                &::before {
+                    display: none;
+                }
+            }
+            
+            &.slick-active {
+                button {
+                    background: $theme-color;
+                }
+            }
+            
+            
+        }
+    }
+    
+    & .slick-arrow {
+        position: absolute;
+        bottom: -8px;
+        left: 50%;
+        margin-left: -65px;
+        border: 0 none;
+        color: $theme-color;
+        font-size: 30px;
+        z-index: 2;
+        background: none;
+    }
+    .post-next {
+        left: auto;
+        right: 50%;
+        margin-right: -65px;
+    }
+
+}
+
+
+
+
+
+
+/* Blog Gradening */
+
+
+
+
+.post-carousel-active-4.gardeninig-blog button.slick-arrow{
+    color: $theme-color;
+}
+
+.post-carousel-active-4.gardeninig-blog .slick-dots li.slick-active button {
+    background: $theme-color;
+}
+
+.gardeninig-blog .post-carousel-4 .ptc-content .content h2 a:hover {
+    color: $theme-color;
+}
+.gardeninig-blog .post-carousel-4 .ptc-content .content .post-btn a.readmore-btn:hover {
+    color: $theme-color;
+    border-bottom: 1px solid $theme-color;
+}
+
+/* Blog Portfolio */
+
+.post-carousel-active-4.portfolio-blog button.slick-arrow{
+    color: $theme-color;
+}
+
+.post-carousel-active-4.portfolio-blog .slick-dots li.slick-active button {
+    background: $theme-color;
+}
+
+.portfolio-blog .post-carousel-4 .ptc-content .content h2 a:hover {
+    color: $theme-color;
+}
+.portfolio-blog .post-carousel-4 .ptc-content .content .post-btn a.readmore-btn:hover {
+    color: $theme-color;
+    border-bottom: 1px solid $theme-color;
+}
+
+

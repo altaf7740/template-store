@@ -1,0 +1,219 @@
+/*----------------------------------------*/
+/*  + Sidebar
+/*----------------------------------------*/
+
+/*-- Sidebar Two Wrap --*/
+.ht-sidebar-two-wrap {}
+
+/*-- Sidebar Two --*/
+.ht-sidebar-two {
+    margin-bottom: 30px;
+    padding: 40px;
+    background-color: $white;
+    box-shadow: 0 2px 15px rgba($black, 0.06);
+    float: left;
+    width: 100%;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    & .sidebar-title {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 14px;
+        margin-bottom: 40px;
+        color: $heading-color-light;
+    }
+}
+
+/*-- Sidebar Two Search --*/
+.ht-sidebar-two-search {
+    & form {
+        position: relative;
+        & input {
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            line-height: 24px;
+            font-size: 13px;
+            font-family: $poppins;
+            padding: 13px 24px;
+            background-color: #f6f6f6;
+            color: $body-color-light;
+        }
+        & button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-color: transparent;
+            padding: 13px 20px;
+            border: none;
+            color: $body-color-light;
+            &:hover {
+                color: $red;
+            }
+            & i {
+                font-size: 14px;
+                line-height: 24px;
+                display: block;
+            }
+        }
+    }
+}
+
+/*-- Sidebar Two Link --*/
+.ht-sidebar-two-link {
+    & li {
+        border-bottom: 1px solid #eaeaea;
+        margin-bottom: 6px;
+        padding-bottom: 6px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        & a {
+            display: block;
+            position: relative;
+            font-family: $montserrat;
+            line-height: 30px;
+            font-weight: 400;
+            padding-left: 16px;
+            &::before {
+                position: absolute;
+                left: 0;
+                content: "\f105";
+                font-family: 'Fontawesome';
+                font-size: 16px;
+                top: 0;
+                line-height: 28px;
+                display: block;
+            }
+            & span {
+                float: right;
+                display: block;
+            }
+            &:hover {
+                color: $red;
+            }
+        }
+    }
+}
+
+/*-- Sidebar One Blog --*/
+.ht-sidebar-two-blog {
+    margin-bottom: 25px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    & .image {
+        width: 67px;
+        margin-right: 13px;
+        float: left;
+        & img {
+            width: 100%;
+        }
+    }
+    & .content {
+        & .title {
+            font-weight: 500;
+            font-size: 14px;
+            & a {
+                &:hover {
+                    color: $red;
+                }
+            }
+        }
+        & span {
+            font-family: $poppins;
+            font-size: 12px;
+            line-height: 14px;
+            color: $body-color-light;
+        }
+    }
+}
+
+/*-- Sidebar One Instagram --*/
+.ht-sidebar-two-instagram {
+    float: left;
+    margin: 0 -2px;
+    & li {
+        float: left;
+        display: flex;
+        width: 25%;
+        padding: 0 2px 4px;
+        @media #{$small-mobile}{
+            width: 33.33%;
+        }
+        & a {
+            position: relative;
+            overflow: hidden;
+            &::before {
+                position: absolute;
+                left: 0;
+                width: 100%;
+                top: 0;
+                height: 100%;
+                content: "";
+                background-color: $red;
+                opacity: 0;
+                z-index: 2;
+                transition: all 0.3s ease 0s;
+            }
+            &::after {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                margin-left: -15px;
+                margin-top: -15px;
+                content: "\f16d";
+                font-family: 'Fontawesome';
+                color: $white;
+                display: block;
+                font-size: 16px;
+                z-index: 3;
+                opacity: 0;
+                transition: all 0.3s ease 0s;
+            }
+            & img {
+                width: 100%;
+                transition: all 0.3s ease 0s;
+            }
+            &:hover {
+                &::before {
+                    opacity: 0.6;
+                }
+                &::after {
+                    opacity: 1;
+                }
+                & img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+/*-- Sidebar One Tags --*/
+.ht-sidebar-two-tags {
+    display: flex;
+    flex-wrap: wrap;
+    & a {
+        background-color: transparent;
+        font-size: 14px;
+        font-family: $montserrat;
+        color: $body-color;
+        font-weight: 400;
+        line-height: 16px;
+        padding: 7px 15px;
+        margin-bottom: 6px;
+        margin-right: 6px;
+        border-radius: 5px;
+        &:hover, &.active {
+            background-color: $red;
+            color: $white;
+        }
+    }
+}

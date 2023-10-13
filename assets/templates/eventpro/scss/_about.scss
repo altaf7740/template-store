@@ -1,0 +1,448 @@
+/*----------------------------------------*/
+/*  6.  About
+/*----------------------------------------*/
+
+/*-- About Image One --*/
+.about-image-one {
+    & img {
+        max-width: 100%;
+    }
+}
+
+/*-- About Content One --*/
+.about-content-one {
+    margin-top: 50px;
+    @media #{$desktop-device}{
+       margin-top: 0;
+    }
+    @media #{$tablet-device}{
+       margin-bottom: 120px;
+    }
+    @media #{$large-mobile}{
+       margin-bottom: 120px;
+    }
+    & h1 {
+        color: $blue;
+        margin-bottom: 11px;
+    }
+    & h4 {
+        color: $heading-color-light;;
+        & span {
+            color: $blue;
+        }
+    }
+    & .strong {
+        font-weight: 700;
+        margin-top: 28px;
+        @media #{$desktop-device}{
+           margin-top: 15px;
+        }
+    }
+    & h5 {
+        margin-bottom: 18px;
+        padding-bottom: 21px;
+        position: relative;
+        &::before {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 1px;
+            width: 50px;
+            background-color: $blue;
+            content: "";
+        }
+    }
+    & p {}
+}
+
+/*-- About Countdown --*/
+.about-countdown {
+    float: left;
+    width: 100%;
+    margin-top: 34px;
+    @media #{$desktop-device}{
+       margin-top: 15px;
+    }
+    @media #{$small-mobile}{
+       margin-top: 15px;
+    }
+    & .cdown {
+        display: block;
+        float: left;
+        text-align: center;
+        margin-right: 40px;
+        @media #{$small-mobile}{
+            margin-right: 0;
+            margin-top: 20px;
+            width: 130px;
+            text-align: left;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        & .time-count {
+            display: block;
+            line-height: 1;
+            font-size: 48px;
+            color: $blue;
+            font-weight: 500;
+            font-family: $montserrat;
+        }
+        & p {
+            display: block;
+            margin-bottom: 0;
+            font-size: 16px;
+            text-transform: capitalize;
+        }
+    }
+}
+
+/*-- About Video Slider --*/
+.about-video-slider {
+    & .item {
+        display: flex;
+    }
+    
+    & .slick-dots {
+        left: -33px;
+        margin-top: -15px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        @media #{$desktop-device}{
+            left: -15px;
+        }
+        @media #{$tablet-device}{
+            display: none !important;
+        }
+        @media #{$large-mobile}{
+            display: none !important;
+        }
+        & li {
+            & button {
+                background-color: transparent;
+                border: none;
+                padding: 0;
+                color: $light-blue;
+                &::before {
+                    content: "0";
+                }
+            }
+            &.slick-active {
+                & button {
+                    color: $blue;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+/*-- About Image Two --*/
+.about-image-two {
+    & .about-image-two-wrapper {
+        position: relative;
+        & img {
+            width: 100%;
+        }
+        & .video-popup {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 60px;
+            height: 60px;
+            border: 2px solid $white;
+            color: $white;
+            border-radius: 50%;
+            text-align: center;
+            margin-left: -30px;
+            margin-top: -30px;
+            & i {
+                display: block;
+                line-height: 56px;
+                font-size: 30px;
+                padding-left: 5px;
+            }
+            &:hover {
+                background-color: $white;
+                color: $blue;
+            }
+        }
+        
+    }
+}
+
+/*-- About Content Two --*/
+.about-content-two {
+    align-self: center;
+    padding-left: 65px;
+    @media #{$tablet-device}{
+        padding-left: 15px;
+    }
+    @media #{$large-mobile}{
+        padding-left: 15px;
+    }
+    & h3 {
+        color: $blue;
+        margin-bottom: 15px;
+        @media #{$large-mobile}{
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+    & h1 {
+        color: $blue;
+        font-weight: 500;
+        position: relative;
+        line-height: 46px;
+        padding-bottom: 29px;
+        margin-bottom: 15px;
+        @media #{$large-mobile}{
+            font-size: 24px;
+            line-height: 30px;
+        }
+        &::before {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100px;
+            height: 2px;
+            background-color: $blue;
+            content: "";
+        }
+    }
+    & p {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 25px;
+    }
+    & .info {
+        & h5 {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        & h6 {
+            color: $body-color;
+            margin-bottom: 0;
+        }
+    }
+}
+
+/*-- About Image Three --*/
+.about-image-three {
+    & img {
+        max-width: 100%;
+    }
+}
+
+/*-- About Content Three --*/
+.about-content-three {
+    margin-top: 70px;
+    @media #{$desktop-device}{
+        margin-top: 20px;
+    }
+    @media #{$tablet-device}{
+        margin-top: 0;
+    }
+    @media #{$large-mobile}{
+        margin-top: 0;
+    }
+    & h1 {
+        font-weight: 300;
+        color: $blue;
+        text-transform: capitalize;
+        margin-bottom: 24px;
+        span {
+            font-weight: 600;
+        }
+        @media #{$large-mobile}{
+            font-size: 30px;
+            line-height: 36px;
+        }
+        @media #{$small-mobile}{
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+    & h4 {
+        font-weight: 500;
+        margin-bottom: 32px;
+        @media #{$small-mobile}{
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+    & p {
+        line-height: 25px;
+    }
+    
+    /*-- About Counter --*/
+    & .about-counter {
+        margin-top: 20px;
+        float: left;
+        width: 100%;
+        & .single-counter {
+            float: left;
+            margin-right: 35px;
+            margin-top: 30px;
+            min-width: 160px;
+            @media #{$desktop-device}{
+                margin-right: 30px;
+                min-width: 130px;
+            }
+            @media #{$large-mobile}{
+                margin-right: 30px;
+                min-width: 110px;
+            }
+            @media #{$small-mobile}{
+                margin-right: 20px;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            & .counter {
+                display: block;
+                font-family: $montserrat;
+                margin-bottom: 2px;
+                font-size: 50px;
+                font-weight: 100;
+                line-height: 1;
+                color: $body-color;
+                display: block;
+                &::after {
+                    content: "+";
+                }
+                @media #{$desktop-device}{
+                    font-size: 40px;
+                }
+                @media #{$large-mobile}{
+                    font-size: 30px;
+                }
+            }
+            & h4 {
+                margin-bottom: 0;
+                font-weight: 600;
+                @media #{$desktop-device}{
+                    font-size: 16px;
+                }
+                @media #{$large-mobile}{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+/*-- About Image Four --*/
+.about-image-four {
+    padding-right: 75px;
+    @media #{$tablet-device}{
+        padding-right: 15px;
+    }
+    @media #{$large-mobile}{
+        padding-right: 15px;
+    }
+    & img {
+        max-width: 100%;
+        box-shadow: 0 9px 16px 0.7px rgba(0,0,0,0.15);
+    }
+}
+
+/*-- About Content Four --*/
+.about-content-four {
+    & h2 {
+        line-height: 40px;
+        font-weight: 500;
+        max-width: 480px;
+        margin-bottom: 21px;
+        @media #{$large-mobile}{
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+    & p {
+        margin-bottom: 24px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+/*-- About Image Five --*/
+.about-image-five {
+    & .image {
+        box-shadow: 0 9px 16px 0.7px rgba(0,0,0,0.15);
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            content: "";
+            background-color: $blue;
+            opacity: 0.4;
+        }
+        & img {
+            width: 100%;
+        }
+        & .video-popup {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 80px;
+            height: 80px;
+            background-color: rgba($white, 0.7);
+            color: $white;
+            border-radius: 50%;
+            text-align: center;
+            margin-left: -40px;
+            margin-top: -40px;
+            padding: 10px;
+            & i {
+                display: block;
+                line-height: 60px;
+                font-size: 30px;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                background-color: $blue;
+                padding-left: 5px;
+            }
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+/*-- About Content Five --*/
+.about-content-five {
+    padding-left: 85px;
+    @media #{$desktop-device}{
+        padding-left: 30px;
+    }
+    @media #{$tablet-device}{
+        padding-left: 15px;
+    }
+    @media #{$large-mobile}{
+        padding-left: 15px;
+    }
+    & h2 {
+        color: $white;
+        line-height: 40px;
+        font-weight: 500;
+        margin-bottom: 37px;
+        @media #{$large-mobile}{
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+    & p {
+        color: $white;
+        font-size: 16px;
+        line-height: 30px;
+    }
+}

@@ -1,0 +1,388 @@
+/*--
+    05. Hero Css
+--------------------------------*/
+.hero-slider {
+    overflow: hidden;
+    & .slider-inner-imge-1 {
+        animation-name: fadeInRight;
+        animation-duration: 0.8s;
+        position: relative;
+        z-index: 9;
+    }
+    & .hero-content-one {
+        overflow: hidden;
+    }
+    & h1 {
+        font-size: 45px;
+        font-weight: 800 !important;
+        color: $white;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        font-weight: 400;
+        line-height: 55px;
+        animation-name: fadeInLeft;
+        animation-duration: 0.6s;
+        @media #{$desktop-device}{
+           font-size: 38px;
+           line-height: 48px;
+        }
+        @media #{$tablet-device}{
+            font-size: 32px;
+            line-height: 40px;
+        }
+        @media #{$large-mobile}{
+            font-size: 30px;
+            line-height: 36px;
+        }
+        @media #{$small-mobile}{
+            font-size: 25px;
+            line-height: 28px; 
+            margin-bottom: 5px;
+        }
+    }
+    & p {
+        line-height: 24px;
+        font-size: 16px;
+        margin: 10px 0 30px 0;
+        color: $white;
+        animation-name: fadeInLeft;
+        animation-duration: 0.8s;
+        @media #{$large-mobile}{
+            margin: 15px 0 15px 0;
+        } 
+    }
+    & .slider-button {
+        & .slider-btn {
+            background: transparent;
+            color: #fff;
+            font-size: 15px;
+            line-height: 40px;
+            padding: 5px 25px;
+            text-transform: uppercase;
+            border: 2px solid #fff;
+            border-radius: 30px;
+            font-weight: 400;
+            animation-name: fadeInBottom;
+            animation-duration: 0.9s;
+            & i{font-size: 12px;margin-right: 5px;}
+            @include transition(0.4s);
+            margin-right: 10px;
+            & i {
+                margin-right: 10px;
+                font-size: 18px;
+            }
+            &:hover {
+                background: $white;
+                color: $theme-color;
+            }
+            @media #{$tablet-device}{
+                padding: 2px 22px;
+            }
+            @media #{$large-mobile}{
+                padding: 0px 10px;
+                margin: 0 5px 0 0;
+                font-size: 14px;
+                & i {
+                    font-size: 15px;
+                }
+            } 
+        }
+    }
+    & .slider-text-info {
+        margin-top: 200px;
+        @media #{$tablet-device}{
+            margin-top: 120px;
+        }
+        @media #{$large-mobile}{
+            margin-top: 140px;
+        }
+        @media #{$small-mobile}{
+            & i {
+                margin-right: 5px;
+                font-size: 15px;
+            }
+        }
+    }
+}
+.hero-slider {
+    & .single-slide {
+        align-items: center;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include flex(flex);
+        height: 900px;
+        position: relative;
+        z-index: 1;
+        @media #{$desktop-device}{
+            height: 750px
+        }
+        @media #{$tablet-device}{
+            height: 600px
+        }
+        @media #{$large-mobile}{
+            height: 940px;
+            background-position: 50% 0;
+        }
+    }
+    & .slick-arrow {
+        background-color: rgba(0, 0, 0, 0.0);
+        border: medium none;
+        color: #ffffff;
+        font-size: 24px;
+        height: 40px;
+        position: absolute;
+        top: 50%;
+        width: 40px;
+        border-radius: 50%;
+        z-index: 999;
+        visibility: hidden;
+        @include opacity(0);
+        @include transition(0.4s);
+        &:hover {
+            background-color: $theme-color;
+        }
+        @media #{$small-mobile} , #{$large-mobile}{
+            height: 40px;
+            width: 40px;
+        }
+    }
+    & .slick-arrow.slick-next {
+      right: 15px;
+    }
+    & .slick-arrow.slick-prev {
+      left: 15px;
+    }
+    &:hover .slick-arrow{
+        visibility: visible;
+        @include opacity(1);
+        @include transform(translateY(-50%));
+    }
+    &.hero-slider-active {
+        & .slick-current {
+            /*-- Hero Content One --*/
+            & .hero-content-one{
+                & .slider-text-info {
+                    & h1 {
+                        animation-name: fadeInTop;
+                        animation-duration: 0.9s;
+                    }
+                    & p {
+                        animation-name: fadeInBottom;
+                        animation-duration: 0.9s;
+                    }
+                    & .slider-button {
+                        animation-name: fadeInBottom;
+                        animation-duration: 0.9s;
+                    }
+                    & .slider-inner-imge-1 {
+                        animation-name: fadeInBottom;
+                        animation-duration: 0.8s;
+                    }
+                }
+            }
+        }
+    }
+    &.hero-slider-bg-2 {
+        & .single-slide {
+            height: 900px;
+            position: relative;
+            z-index: 1;
+            @media #{$desktop-device}{
+                height: 750px
+            }
+            @media #{$tablet-device}{
+                height: 600px;
+                & .slider-inner-imge-2 {
+                    margin-top: 40px
+                }
+                & .hero-slider-mobile {
+                    width: calc(100% - 26px);
+                    top: 50px;
+                    left: 13px;
+                }
+            }
+            @media #{$large-mobile}{
+                height: 940px;
+                & .slider-inner-imge-2 {
+                    margin-top: 40px
+                }
+            }
+        }
+        & .slider-text-info {
+            margin-top: 120px;
+            @media #{$tablet-device}{
+                margin-top: 120px;
+            }
+            @media #{$large-mobile}{
+                margin-top: 50px;
+            }
+            @media #{$small-mobile}{
+                & i {
+                    margin-right: 5px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    
+}
+/*--
+    - Hero Slider Mobile Css
+-------------*/
+.slider-inner-imge-2 {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+.hero-slider-mobile {
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+    width: calc(100% - 31px);
+    height: 100%;
+    top: 59px;
+    left: 16px;
+}
+.single-mobile-slider {
+    overflow: hidden;
+}
+// slider overlay css
+.overlay-left-01,
+.overlay-left-right-02,
+.overlay-grad-bg {
+    position: relative;
+}
+.overlay-left-01::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    border-top: 200px solid transparent;
+    border-bottom: 0 solid transparent;
+    border-right: 100vw solid #F6F6F6;
+    @media #{$desktop-device}{
+        border-top: 100px solid transparent;
+    }
+    @media #{$tablet-device}{
+        border-top: 80px solid transparent;
+    }
+    @media #{$large-mobile}{
+        border-top: 50px solid transparent;
+    }
+}
+// overlay left css
+.overlay-left-right-02::before {
+    border-right: 50vw solid #F6F6F6;
+    border-top: 160px solid transparent;
+    bottom: 0;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: 0;
+    width: 0;
+    z-index: 2;
+    @media #{$desktop-device}{
+        border-top: 100px solid transparent;
+    }
+    @media #{$tablet-device}{
+        border-top: 80px solid transparent;
+    }
+    @media #{$large-mobile}{
+        border-top: 50px solid transparent;
+    }
+}
+.overlay-left-right-02::after {
+    border-left: 50vw solid #F6F6F6;
+    border-top: 160px solid transparent;
+    bottom: 0;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    z-index: 2;
+    @media #{$desktop-device}{
+        border-top: 100px solid transparent;
+    }
+    @media #{$tablet-device}{
+        border-top: 80px solid transparent;
+    }
+    @media #{$large-mobile}{
+        border-top: 50px solid transparent;
+    }
+}
+// gradent css
+
+.overlay-grad-bg::before  {
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #863F4B 0%, #4D3543 100%) repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.85;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+.bg-overlay {
+    position: relative;
+    &::before{
+        background: rgba(0, 0, 0, 0.8);
+        content: "";
+        height: 100%;
+        left: 0;
+        opacity: 0.85;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+    }
+}
+.youtube-bg {
+    background: url(../images/bg/youtube-bg.png) 100% 100% no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+@-webkit-keyframes float-bob {
+	0% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+	50% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+	100% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+}
+
+@keyframes float-bob {
+	0% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+	50% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+	100% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+}
+
+.banner-right {
+    animation-name: float-bob;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+

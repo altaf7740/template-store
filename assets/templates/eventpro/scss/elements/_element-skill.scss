@@ -1,0 +1,25 @@
+/*-- Single Skill --*/
+.single-skill {
+    & + .single-skill {
+        margin-top: 14px;
+    }
+    & .title {
+        float: left;
+        margin-bottom: 6px;
+    }
+    & .percent {
+        float: right;
+        margin-bottom: 6px;
+    }
+    & .progress {
+        float: left;
+        width: 100%;
+        clear: both;
+        background-color: #e3e3e3;
+        border-radius: 0px;
+        & .bar {
+            height: 5px;
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,404 @@
+/*----------------------------------------*/
+/*  28.  Checkout
+/*----------------------------------------*/
+
+#checkout-accordion {}
+
+/*-- Panel Group --*/
+.panel-group {
+    margin: 0;
+    & .single-accordion {
+        background-color: transparent;
+        border: medium none;
+        border-radius: 0;
+        box-shadow: none;
+        margin-bottom: 10px;
+        margin-top: 0 !important;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+/*-- Accordion Head --*/
+.accordion-head {
+    background-color: $blue;
+    color: $white;
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 12px 0 28px;
+    position: relative;
+    text-align: left;
+    text-transform: uppercase;
+    width: 100%;
+    &:focus, &:hover {
+        color: $white;
+    }
+    &.collapsed {
+        background-color: #f1f2f3;
+        color: $heading-color;
+        &:focus {
+            color: $heading-color;
+        }
+        &:hover {
+            color: $blue;
+        }
+    }
+}
+
+/*-- Accordion Body --*/
+.accordion-body {
+    
+}
+
+/*-- Checkout Method --*/
+.checkout-method {}
+.checkout-method-list {
+    float: left;
+    margin-bottom: 15px;
+    width: 100%;
+    & li {
+        display: block;
+        text-transform: capitalize;
+        cursor: pointer;
+        float: left;
+        margin-right: 30px;
+        &::before {
+            content: "\f192";
+            font-family: 'Fontawesome';
+            float: left;
+            line-height: 24px;
+            padding-left: 1px;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+        &.active {
+            &::before {
+                color: $blue;
+            }
+        }
+    }
+}
+
+/*-- Shipping Method --*/
+.shipping-method {
+    & h5 {
+        font-size: 16px;
+        text-transform: capitalize;
+        margin-bottom: 15px;
+    }
+    & p {
+        & span {
+            font-weight: 700;
+            color: $heading-color;
+            text-transform: capitalize;
+            margin-right: 10px;
+        }
+    }
+}
+
+/*-- Payment Method List --*/
+.payment-method-list {
+    float: left;
+    margin-bottom: 15px;
+    width: 100%;
+    & li {
+        display: block;
+        text-transform: capitalize;
+        cursor: pointer;
+        float: left;
+        margin-right: 30px;
+        &::before {
+            content: "\f192";
+            font-family: 'Fontawesome';
+            float: left;
+            line-height: 24px;
+            padding-left: 1px;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+        &.active {
+            &::before {
+                color: $blue;
+            }
+        }
+    }
+}
+
+/*-- Shipping Form Toggle --*/
+.shipping-form-toggle {
+    display: inline-block;
+    text-transform: capitalize;
+    cursor: pointer;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 20px;
+    &::before {
+        content: "\f192";
+        font-family: 'Fontawesome';
+        float: left;
+        line-height: 24px;
+        padding-left: 1px;
+        margin-right: 10px;
+        font-size: 16px;
+    }
+    &.active {
+        &::before {
+            color: $blue;
+        }
+    }
+}
+
+/*-- Checkout Login Form --*/
+.checkout-login-form {
+    float: left;
+    width: 100%;
+    & .input-box {
+        & input {
+            width: 100%;
+            border: 1px solid #ededed;
+            background-color: $white;
+            height: 40px;
+            line-height: 24px;
+            padding: 7px 15px;
+            color: $body-color;
+            font-size: 12px;
+            float: left;
+            &[type="submit"] {
+                width: 120px;
+                margin-right: 0;
+                background-color: $blue;
+                padding: 8px 15px;
+                border: none;
+                color: $white;
+                text-transform: uppercase;
+                font-weight: 700;
+                margin-bottom: 0;
+                border-radius: 50px;
+                &:hover {
+                    background-color: darken($blue, 5);
+                }
+            }
+        }
+    }
+}
+
+/*-- Checkout Register Form --*/
+.checkout-register-form {
+    display: none;
+    float: left;
+    width: 100%;
+    & .input-box {
+        & input {
+            width: 100%;
+            border: 1px solid #ededed;
+            background-color: $white;
+            height: 40px;
+            line-height: 24px;
+            padding: 7px 15px;
+            color: $body-color;
+            font-size: 12px;
+            float: left;
+            &[type="submit"] {
+                width: 120px;
+                margin-right: 0;
+                background-color: $blue;
+                padding: 8px 15px;
+                border: none;
+                color: $white;
+                text-transform: uppercase;
+                font-weight: 700;
+                margin-bottom: 0;
+                border-radius: 50px;
+                &:hover {
+                    background-color: darken($blue, 5);
+                }
+            }
+        }
+    }
+}
+
+/*-- Checkout Billing & Shipping Form --*/
+.checkout-form {
+    float: left;
+    width: 100%;
+    &.billing-form {}
+    &.shipping-form {
+        display: none;
+    }
+    & input {
+        width: 100%;
+        border: 1px solid #ededed;
+        background-color: $white;
+        height: 40px;
+        line-height: 24px;
+        padding: 7px 15px;
+        color: $body-color;
+        font-size: 12px;
+        float: left;
+    }
+    & select {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background: rgba(0, 0, 0, 0) url("img/icons/select-arrow-down-2.png") no-repeat scroll right 5px center;
+        width: 100%;
+        border: 1px solid #ededed;
+        background-color: $white;
+        height: 40px;
+        line-height: 24px;
+        padding: 7px 15px;
+        color: $body-color;
+        font-size: 12px;
+        float: left;
+        & option {
+            padding: 5px 15px;
+        }
+    }
+    & textarea {
+        width: 100%;
+        border: 1px solid #ededed;
+        background-color: $white;
+        height: 120px;
+        line-height: 24px;
+        padding: 7px 15px;
+        color: $body-color;
+        font-size: 12px;
+        float: left;
+    }
+}
+
+/*-- Checkout Payment Form --*/
+.payment-form {
+    float: left;
+    width: 100%;
+    display: none;
+    & label {
+        display: block;
+        font-size: 12px;
+    }
+    & input {
+        width: 100%;
+        border: 1px solid #ededed;
+        background-color: $white;
+        height: 40px;
+        line-height: 24px;
+        padding: 7px 15px;
+        color: $body-color;
+        font-size: 12px;
+        float: left;
+    }
+    & select {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background: rgba(0, 0, 0, 0) url("img/icons/select-arrow-down-2.png") no-repeat scroll right 5px center;
+        width: 100%;
+        border: 1px solid #ededed;
+        background-color: $white;
+        height: 40px;
+        line-height: 24px;
+        padding: 7px 15px;
+        color: $body-color;
+        font-size: 12px;
+        float: left;
+        & option {
+            padding: 5px 15px;
+        }
+    }
+    & a {
+        color: $blue;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+}
+
+/*-- Oder Details Wrapper --*/
+.order-details-wrapper{
+    & h2 {
+        background: $blue;
+        color: $white;
+        display: block;
+        font-size: 14px;
+        font-weight: 700;
+        height: 42px;
+        line-height: 44px;
+        padding: 0 12px 0 28px;
+        text-transform: uppercase;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/*--Order Details --*/
+.order-details {
+    background-color: #f1f2f3;
+    padding: 10px 0;
+    text-align: left;
+    float: left;
+    width: 100%;
+    & ul {
+        & li {
+            border-bottom: 1px solid #eeeeee;
+            display: block;
+            float: left;
+            padding: 16px 28px;
+            text-align: left;
+            width: 100%;
+            &:last-child {
+                border-bottom: 0 solid transparent;
+            }
+            & p {
+                color: #606060;
+                display: block;
+                margin: 0;
+                width: 60%;
+                float: left;
+                &:last-child {
+                    width: 40%;
+                }
+                &.strong {
+                    color: #303030;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+                & input {
+                    display: block;
+                    float: left;
+                    margin-right: 10px;
+                    margin-top: 3px;
+                }
+                & label {
+                    color: #606060;
+                    display: block;
+                    float: left;
+                    font-weight: 300;
+                    margin: 0;
+                    overflow: hidden;
+                    line-height: 20px;
+                }
+            }
+            & .button {
+                border: none;
+                display: block;
+                height: 40px;
+                line-height: 24px;
+                padding: 8px 15px;
+                font-size: 12px;
+                width: 150px;
+                background-color: $blue;
+                color: $white;
+                text-transform: uppercase;
+                font-weight: 700;
+                border-radius: 50px;
+                &:hover {
+                    background-color: darken($blue, 5);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+// main: style.scss
+
+/*--------------------------------------------------------------
+# F.A.Q Section
+--------------------------------------------------------------*/
+
+#faq {
+  padding: 60px 0;
+
+  #faq-list {
+    padding: 0;
+    list-style: none;
+
+    li {
+      border-bottom: 1px solid #ddd;
+    }
+
+    a {
+      padding: 18px 0;
+      display: block;
+      position: relative;
+      font-family: $accent-font;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 600;
+      padding-right: 20px;
+    }
+
+    i {
+      font-size: 24px;
+      position: absolute;
+      right: 0;
+      top: 16px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+      a {
+        font-size: 18px;
+      }
+
+      i {
+        top: 13px;
+      }
+    }
+
+    a.collapse {
+      color: $accent-color;
+    }
+
+    a.collapsed {
+      color: #000;
+      i::before {
+        content: "\f055" !important;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,35 @@
+/* -----------------------------------
+Template:  Theme Name
+
+NOTE: This is attend style file. All attend lated style included in this file.
+
+--------------------------------------*/
+.attending-area{}
+.attending {
+  padding: 40px 0;
+}
+.attending > span {
+  font-size: 18px;
+}
+.attending-area .wish-search form input, .attending-area .wish-search form textarea {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+.attending-area .wish-search .attend-btn {
+  background: #ff6666 none repeat scroll 0 0;
+  border: 1px solid #ff6666;
+  color: #ffffff;
+  font-size: 18px;
+  width: 120px;
+  transition:all .3s;
+}
+.attending-area .wish-search .attend-btn:hover{
+	background:#fff;
+	color:#ff6666;
+} 
+.bg-img-1{
+	transition:all .4s;
+}
+.bg-img-1:hover{
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+	transition:all .4s;
+}

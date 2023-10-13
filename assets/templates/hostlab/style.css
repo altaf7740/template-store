@@ -1,0 +1,1106 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: HostLab 
+    Template URI: https://devitems.com/
+    Description: This is html5 template
+    Author: devitems
+    Author URI: https://devitems.com/
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+	
+    1. Theme Default CSS (body, link color, section etc)
+	2. Home Version One CSS
+	3. Header Area
+	4. Search Domain Area
+	5. About Us Area
+	6. Discount Area
+	7. Package Area
+	8. Features Area
+	9. Newsletter Subcribe Area
+	10. Clinet Area
+	11. Footer Top Area
+	12. Footer Bottom Area
+	13.  Home version Two
+	14.  Home version Three
+	15.  Home version Four
+	
+	
+
+-----------------------------------------------------------------------------------*/
+
+/*----------------------------------------*/
+/*  1.  Theme default CSS
+/*----------------------------------------*/
+html, body {height: 100%;font-family: 'Open Sans', sans-serif;}
+.floatleft {float:left}
+.floatright {float:right}
+.alignleft {float:left;margin-right:15px;margin-bottom: 15px}
+.alignright {float:right;margin-left:15px;margin-bottom: 15px}
+.aligncenter {display:block;margin:0 auto 15px}
+a:focus {outline:0px solid}
+img {max-width:100%;height:auto}
+.fix {overflow:hidden}
+p {margin:0 0 15px;color:#4e4e4e;font-size:16px;}
+h3, h4, h5, h6 {
+  margin: 0 0 10px;
+}
+h1{font-family: 'aero_matics_displaybold';color:#0E89B4;}
+.hm-3 h1{color:#888C14;}
+h2{font-family: 'aero_matics_displaybold';font-size:48px;color:#0E89B4;}
+.hm-3 h2{color:#888C14;}
+a {transition: all 0.3s ease 0s;text-decoration:none;}
+a:hover {
+  color: #ec4445;
+  text-decoration: none;
+}
+a:active, a:hover {
+  outline: 0 none;
+}
+ul{
+list-style: outside none none;
+margin: 0;
+padding: 0
+}
+.clear{clear:both}
+body {}
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+/* Extra Font */
+@font-face {
+    font-family: 'aero_matics_displaybold';
+    src: url('fonts/aero_matics_display_bold-webfont.eot');
+    src: url('fonts/aero_matics_display_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/aero_matics_display_bold-webfont.woff2') format('woff2'),
+         url('fonts/aero_matics_display_bold-webfont.woff') format('woff'),
+         url('fonts/aero_matics_display_bold-webfont.ttf') format('truetype'),
+         url('fonts/aero_matics_display_bold-webfont.svg#aero_matics_displaybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*----------------------------------------*/
+/*  2. Home Version One CSS
+/*----------------------------------------*/
+
+/* ----------------- 3. Header Area -------------------*/
+.header-area {
+    background: rgba(0, 0, 0, 0) url("img/home-1/header-bg.jpg") no-repeat scroll center center;
+    height: 100vh;
+    padding: 100px 0 225px;
+    background-size: cover;
+}
+.logo-area{}
+.logo-area img{}
+.live-chat .button {
+  background-color: #1093c1;
+  border: medium none;
+  color: white;
+  display: inline-block;
+  float: right;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+}
+.live-chat a i {
+  margin-right: 10px;
+}
+.header-service {
+  margin-top: 260px;
+}
+.header-service .content h1 {
+  font-size: 72px;
+}
+.header-service .content h5 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+}
+.header-service .content p {
+  color: #fff;
+  font-size: 16px;
+  margin: 0 0 60px;
+}
+.header-service .content a.button {
+  background-color: #0c6d8f;
+  border: 1px solid #0e85af;
+  color: white;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.4s ease 0s;
+}
+.header-service .content a.button:hover {
+  background: transparent none repeat scroll 0 0;
+  border-color: #fff;
+}
+.button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+/* ----------------- 4. Search Domain Area -------------------*/
+.search-domain-area {
+  background: rgba(0, 0, 0, 0) url("img/home-1/domain-bg.jpg") no-repeat scroll center center;
+  padding: 80px 0 90px;
+}
+.search-type {
+  text-align: center;
+}
+.search-type h2 {
+  color: #fff;
+  margin: 0 0 35px;
+}
+.search-box input {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  -moz-border-top-colors: none;
+  background: transparent none repeat scroll 0 0;
+  border-color: #ddd -moz-use-text-color #ddd #ddd;
+  border-image: none;
+  border-style: solid none solid solid;
+  border-width: 1px 0 1px 1px;
+  padding: 10px;
+  width: 735px;
+}
+.search-box input[type=text], .newsletter-subcribe input[type=text]{
+  color:#fff;
+}
+.search-box select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: #fff url("img/home-1/search-icon.png") no-repeat scroll 71px 18px;
+  border: 1px solid #ddd;
+  color: #0c6d8f;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: -4px;
+  padding: 6px 37px 9px 12px;
+}
+.search-box select::-ms-expand {
+    display: none;
+}
+@supports (-webkit-appearance:none) {
+.search-box select {
+  padding: 8px 37px 10px 12px;
+}
+} 
+.search-box .button {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  color: #1093c1;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: -4px;
+  padding: 7px 32px 10px;
+  text-align: center;
+  text-decoration: none;
+}
+@supports (-webkit-appearance:none) {
+.search-box .button {
+  padding: 8px 32px 10px;
+  border-left:0;
+}
+}
+/* ----------------- 5. About Us Area -------------------*/
+.aboutus-area {
+  padding: 80px 0;
+}
+.aboutus-area .icon {
+  margin-bottom: 66px;
+  text-align: center;
+}
+.icon .des h4 {
+  color: #1093c1;
+  font-size: 24px;
+  margin: 20px 0 10px;
+  font-weight:600;
+}
+.icon .des > p {
+  padding: 0 4px;
+}
+.ab-left > img {
+  border: 1px solid #f5f5f5;
+}
+.aboutus-area .col-md-6 > h2 {
+  margin: 0px 0 28px;
+}
+/* ----------------- 6. Discount Area -------------------*/
+.discount-area {
+  background: rgba(0, 0, 0, 0) url("img/home-1/discount-bg.jpg") no-repeat scroll center center;
+  padding: 90px 0 80px;
+}
+.offer-content {
+  color: #fff;
+  margin-top: 15px;
+  padding-left: 30px;
+}
+.offer-content h3 {
+  font-size: 40px;
+  margin: 0 0 12px;
+}
+.offer-content > h2 {
+  color: #fff;
+  font-size: 60px;
+  margin: 0;
+}
+.offer-button {
+  margin-top: 30%;
+}
+.offer-button .button {
+  background-color: #fff;
+  border:1px solid #fff;
+  color: #147a9e;
+  font-size: 18px;
+}
+.offer-button .button:hover{
+  background:transparent;
+  border-color:#fff;
+  color:#fff;
+}
+/* ----------------- 7. Package Area -------------------*/
+.package-area {
+  padding: 50px 0 80px;
+}
+.pakge-titel {
+  text-align: center;
+}
+.pakge-titel p {
+  margin-bottom: 48px;
+}
+.pakge-rating {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("img/home-1/pk-rate.png");
+  background-origin: padding-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 53px 0;
+}
+.package-information {
+  background: #ebebeb none repeat scroll 0 0;
+  border: 1px solid #bfbfbf;
+}
+.pack-mode-btn {
+  left: 0;
+  margin: -24px auto 0;
+  right: 0;
+  text-align: center;
+}
+.pack-mode-btn .button {
+  background-color: #147ca1;
+  border: medium none;
+  color: white;
+  display: inline-block;
+  font-family: aero_matics_displaybold;
+  font-size: 24px;
+  padding: 5px 50px;
+  text-align: center;
+  text-decoration: none;
+}
+.pakge-rating > h3 {
+  color: #fff;
+  font-family: aero_matics_displaybold;
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+}
+.pakge-titel ul {
+  margin-bottom: 35px;
+  margin-top: 40px;
+}
+.pakge-titel ul li {
+  font-size: 15px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+.pakge-titel ul li:last-child {
+  padding-bottom: 0;
+}
+.package-information .pakge-titel > .button {
+  background-color: #147ca1;
+  display: inline-block;
+  font-family: open sans;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding: 8px 50px;
+  transition:.4s;
+}
+.package-information .pakge-titel > .button:hover {
+  background: #252525 none repeat scroll 0 0;
+  color: #fff;
+}
+/* ----------------- 8. Features Area -------------------*/
+.features-area {
+  background: #1093c1 none repeat scroll 0 0;
+  padding: 55px 0 60px;
+  text-align: center;
+}
+.service-single > img {
+  margin-bottom: 2%;
+}
+.service-single {
+  margin-bottom: 35px;
+}
+.service-single:nth-child(2) {
+  margin-bottom: 0;
+}
+.service-content > h3 {
+  font-weight: 600;
+}
+.features-area .col-md-12.service-header > h1, .service-content > h3 {
+  color: #fff;
+}
+.features-area .col-md-12.service-header > p {
+  margin: 0 0 32px;
+  padding: 0 18%;
+  color: #ddd;
+}
+.service-content > p {
+  color: #ddd;
+}
+/* ----------------- 9. Newsletter Subcribe Area -------------------*/
+.newsletter-area {
+  padding: 50px 0;
+}
+.newsletter-titel > p {
+  padding-right: 30%;
+}
+.newsletter-subcribe {
+  background: #1093c1 none repeat scroll 0 0;
+  margin-top: 30px;
+  padding: 30px 95px;
+}
+.newsletter-subcribe input {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 790px;
+}
+.newsletter-subcribe .news {
+  background-color: #fff;
+  color: #147a9e;
+  font-size: 16px;
+  font-weight: 600;
+  margin: -4px;
+  padding: 7px 0 11px;
+  transition: all 0.4s ease 0s;
+  width: 160px;
+}
+.newsletter-subcribe .news:hover {
+  background: #252525 none repeat scroll 0 0;
+  color: #fff;
+  border-left-color:#fff;
+}
+/* ----------------- 10. Clinet Area -------------------*/
+.client-area {
+  margin-bottom: 75px;
+}
+.client-says-area{
+  padding-top:52px ;
+}
+.client-says-area .owl-theme .owl-controls .owl-buttons div {
+  border-radius: 0;
+}
+.client-says-area .client-titel {
+  text-align: left;
+}
+.client-says-area .client-titel > p {
+  margin-bottom: 45px;
+  padding: 0px 30% 0px 0;
+}
+.client-titel {
+  text-align: right;
+}
+.client-titel > p {
+  margin-bottom: 45px;
+  padding-left: 30%;
+}
+.client-details {
+  margin-top: 25px;
+}
+.client-details > h3, .client-details span {
+  font-weight: 600;
+}
+.single-item {
+  text-align: center;
+}
+.client-details > img {
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  float: left;
+  width: 170px;
+}
+.client-says-area .slider.slider-nav {
+  margin-bottom: 0;
+  margin-top: 13%;
+}
+.client-says-area .slider.slider-nav img {
+  border: 3px solid #ddd;
+  border-radius: 50%;
+  width: 100px;
+  transition:.3s;
+}
+.client-says-area .slider.slider-nav img:hover{opacity:.5;}
+.client-says-area .cl-content {
+  overflow: hidden;
+  padding-left: 30px;
+}
+.client-says-area .cl-content > h3 {
+  font-family: open sans;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+.client-says-area .client-details > h3, .client-details span {
+  font-size: 18px;
+  font-weight: 400;
+}
+.client-says-area .cl-content > p {
+  margin: 10px 0 0;
+}
+.client-says-area .slick-prev {
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  padding-right: 25%;
+  right: 0;
+  text-align: center;
+}
+.client-says-area .slick-next {
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  right: 0;
+  text-align: center;
+}
+.client-says-area .slick-prev::before, .slick-next::before {
+  color: #1093C1;
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.75;
+}
+.client-says-area .slick-prev, .slick-next {
+  top: 120%;
+}
+/* ----------------- 11. Footer Top Area -------------------*/
+.footer-top-area {
+  background: #1093c1 none repeat scroll 0 0;
+  padding: 65px 0 40px;
+}
+.footer-left > p {
+  color: #1d1919;
+  font-size: 13px;
+  margin: 20px 0 0;
+}
+.footer-left, .footer-right {
+  margin-top: 8%;
+}
+.footer-middle {
+  text-align: center;
+}
+.footer-right > p {
+  font-size: 13px;
+  margin: 0 0 3px;
+  color: #1d1919;
+}
+.footer-right > h3 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+}
+.footer-right a {
+  color: #1d1919;
+}
+.footer-right a:hover {
+  color: #fff;
+}
+/* ----------------- 12. Footer Bottom Area -------------------*/
+.footer-bottom-area {
+  background: #252525 none repeat scroll 0 0;
+}
+.footer-bottom-area p {
+  color: #fff;
+  font-size: 13px;
+  line-height: 65px;
+  margin-bottom: 0;
+}
+.footer-bottom-area p a {
+  font-weight: 700;
+  color:#fff;
+}
+.footer-bottom-area p a:hover{color:#1093C1;}
+.footer-bottom-area img {
+  float: right;
+  padding-top: 15px;
+}
+/*----------------------------------------*/
+/*  13.  Home version Two
+/*----------------------------------------*/
+.hm-2 .header-area {
+  background: rgba(0, 0, 0, 0) url("img/home-2/hedaer-bg.jpg") no-repeat scroll center center;
+  background-size: cover;
+}
+.hm-2 .live-chat .button {
+  background-color: #f6bf4f;
+}
+.hm-2 .content > h3{
+  color: #f6bf4f;
+  font-family: aero_matics_displaybold;
+  font-size: 50px;
+  margin: 0;
+}
+.hm-2 .header-service .content h1{
+  color: #f6bf4f;
+  margin: 0;
+}
+.hm-2 .header-service .content h5 {
+  color: #f6bf4f;
+}
+.hm-2 .header-service .content a.button {
+  background-color: #fdb902;
+  border: 1px solid #fdb902;
+  transition: all 0.4s ease 0s;
+}
+.hm-2 .header-service .content a.button:hover {
+  background: transparent none repeat scroll 0 0;
+  border-color: #fff;
+}
+.hm-2 .header-service .content p {
+  padding-right: 10%;
+}
+.hm-2 .aboutus-area {
+  padding: 80px 0;
+  background: #FDB902;
+}
+.hm-2 .aboutus-area .col-md-6 > h2 {
+  color:#fff;
+}
+.hm-2 .search-domain-area {
+  background: none;
+  padding: 70px 0 90px;
+}
+.hm-2 .search-type h2 {
+  color: #fdb902;
+}
+.hm-2 .search-box .button {
+  background-color: #fdb902;
+  color: #fff;
+}
+.hm-2 .search-box select {
+  background: #fdb902 url("img/home-2/search-icon.png") no-repeat scroll 71px 18px;
+  color: #fff;
+}
+.hm-2 .search-box input {
+  border: 1px solid #FDB902;
+}
+.hm-2 .search-box input[type="text"]{
+  color: #FDB902;
+}
+.icon-hm2 {
+  padding: 52px 0;
+}
+.icon-hm2 .icon {
+  text-align: center;
+}
+.icon-hm2 .des h4 {
+  color: #FDB902;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 20px 0 10px;
+}
+.hm-2 .pakge-titel > h2, .hm-2 .pakge-rating > h3 {
+  color: #FDB902;
+}
+.hm-2 .pack-mode-btn .button {
+  background-color: #fdb902;
+}
+.hm-2 .package-information .pakge-titel > .button{background-color: #fdb902;}
+.hm-2 .package-information .pakge-titel > .button:hover{background: #252525 none repeat scroll 0 0;color: #fff;}
+.hm-2 .discount-area {
+  background: #FDB902;
+  padding: 80px 0 90px;
+}
+.hm-2 .offer-button {
+  margin-top: 7%;
+  padding-left: 30px;
+}
+.hm-2 .features-area {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  padding: 74px 0 60px;
+}
+.hm-2 .features-area .col-md-12.service-header > p {
+  margin: 0 0 52px;
+  padding: 0 6%;
+  color:#4e4e4e;
+}
+.hm-2 .features-area .col-md-12.service-header > h1, .hm-2 .service-content > h3, .hm-2 .newsletter-titel > h2, .hm-2 .client-titel > h2, .frs-ct > h3 {
+  color: #fdb902;
+}
+.hm-2-features > h3 {
+  color: #fdb902;
+  font-weight: 600;
+}
+.hm-2-features > img {
+  margin-bottom: 20px;
+}
+.hm-2-features > p {
+  padding: 0 38%;
+}
+.features-right {
+  overflow: hidden;
+}
+.frs-ct {
+  float: left;
+  text-align: right;
+  width: 250px;
+}
+.frs-ct-right {
+  overflow: hidden;
+  text-align: left;
+  width: 250px;
+  color: #FDB902;
+}
+.features-left > img {
+  float: left;
+  padding-right: 20px;
+}
+.mr-fes-1 {
+  margin-bottom: 52px;
+}
+.mr-fes-3{margin-top: 30px;}
+.features-right, .features-left.mr-fes-2 {
+  margin-bottom: 60px;
+}
+.hm-2 .client-says-area {
+  background: #fdb902 none repeat scroll 0 0;
+  margin: 0;
+  padding: 42px 0 52px;
+}
+.hm-2 .client-header {
+  text-align: center;
+}
+.hm-2 .client-header > h1 {
+  color: #fff;
+}
+.hm-2 .client-header > p {
+  padding: 0 16%;
+}
+.client-content-area {
+  text-align: center;
+}
+.client-content-area > h3 {
+  color: #fff;
+  font-weight: 600;
+}
+.client-content-area h3 > span {
+  color: #1e1e1e;
+  font-size: 20px;
+  font-weight: 400;
+  padding-left: 10px;
+}
+.client-content-area > img {
+  border: 5px solid #ddd;
+  border-radius: 50%;
+  margin-bottom: 38px;
+  margin-top: 27px;
+  width: 90px;
+}
+.client-content-area > p {
+  padding: 0 17%;
+}
+.hm-2 .owl-theme .owl-controls {
+  left: 0;
+  margin-top: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 16%;
+}
+.hm-2 .owl-theme .owl-controls .owl-buttons div {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border-radius: 30px;
+  color: #fff;
+  display: inline-block;
+  font-size: 30px;
+  margin-left: 6.5%;
+  margin-right: 6.5%;
+  opacity: 0.9;
+  padding: 3px 10px;
+}
+.hm-2 .newsletter-area {
+  padding: 52px 0 15px;
+}
+.hm-2 .newsletter-subcribe {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  margin-top: 8px;
+}
+.hm-2 .newsletter-subcribe input {
+  border: 1px solid #fdb902;
+}
+.hm-2 .newsletter-subcribe .news {
+  background-color: #fdb902;
+  color: #fff;
+  padding: 7px 0 10px;
+}
+.hm-2 .newsletter-subcribe .news:hover {
+  background: #252525 none repeat scroll 0 0;
+  color: #fff;
+  border-left-color:#fdb902;
+}
+.hm-2 .newsletter-subcribe input[type="text"]{color: #fdb902;}
+.hm-2 .newsletter-titel {
+  text-align: center;
+}
+.hm-2 .newsletter-titel > p {
+  padding: 0 15%;
+  color: #111;
+}
+.hm-2 .client-titel {
+  text-align: center;
+}
+.hm-2 .client-titel > p {
+  margin-bottom: 45px;
+  padding: 0 16%;
+}
+.hm-2 .footer-top-area {
+  background: #FDB902 none repeat scroll 0 0;
+}
+.hm-2 .footer-bottom-area p a {
+  color:#fff;
+}
+.hm-2 .footer-bottom-area p a:hover {
+  color:#FDB902;
+}
+.hm-2 .offer-button .button {
+  color:#FDB902;
+}
+.hm-2 .offer-button .button:hover{
+  color:#fff;
+}
+/*----------------------------------------*/
+/*  14.  Home version Three
+/*----------------------------------------*/
+.hm-3 .search-domain-area {
+  padding: 80px 0 0;
+}
+.hm-3 .package-area {
+  padding: 50px 0 80px;
+}
+.hm-3 .features-area {
+  padding: 74px 0 0;
+}
+.hm-3 .client-area {
+  margin-bottom: 52px;
+}
+.hm-3 .newsletter-area {
+  padding: 82px 0 15px;
+}
+.hm-3 .header-area {
+  background: rgba(0, 0, 0, 0) url("img/home-3/header-bg.jpg") no-repeat scroll center center;
+  background-size: cover;
+}
+.hm-3 .live-chat .button {
+  background-color: #888C14;
+}
+.hm-3 .content > h3, .hm-3 .header-service .content h1, .hm-3 .header-service .content h5, .hm-3 .icon-hm2 .des h4, .hm-3 .search-type h2, .hm-3 .search-box input[type="text"], .hm-3 .pakge-titel > h2, .hm-3 .offer-button .button, .hm-3 .features-area .col-md-12.service-header > h1, .hm-3 .hm-2-features > h3, .hm-3 .service-content > h3, .hm-3 .newsletter-titel > h2, .hm-3 .client-titel > h2, .hm-3 .frs-ct > h3, .hm-3 .frs-ct-right, .hm-3 .client-header > h1, .hm-3 .client-content-area > h3, .hm-3 .owl-theme .owl-controls .owl-buttons div , .hm-3 .newsletter-subcribe input[type="text"], .hm-3 .footer-right > h3 {
+  color: #888C14;
+}
+.hm-3 .footer-bottom-area p a {
+  color: #fff;
+}
+.hm-3 .footer-bottom-area p a:hover {
+  color: #888C14;
+}
+.hm-3 .pakge-rating > h3{color:#fff;}
+.hm-3 .header-service .content p {
+  padding: 0 21%;
+}
+.hm-3 .header-service .content a.button {
+  background-color: #888C14;
+  border:1px solid #888C14;
+  transition:.4s;
+}
+.hm-3 .header-service .content a.button:hover{
+  background: transparent none repeat scroll 0 0;
+  border-color: #fff;
+}
+.hm-3 .offer-button .button:hover{
+  color:#fff;
+}
+.hm-3 .icon-hm2 {
+  background: rgba(0, 0, 0, 0) url("img/home-3/a-bg-2.png") no-repeat scroll 0 0;
+  padding: 98px 0 210px;
+}
+.hm-3 .search-box input {
+  border: 1px solid #888C14;
+  padding: 9px;
+}
+.hm-3 .newsletter-subcribe input[type="text"] {
+  color: #888C14;
+}
+.hm-3 .search-box .button, .hm-3 .pack-mode-btn .button, .hm-3 .package-information .pakge-titel > .button, .hm-3 .newsletter-subcribe .news {
+  background-color: #888c14;
+}
+.hm-3 .newsletter-subcribe .news:hover {
+  border-left-color:#888c14;
+}
+.hm-3 .newsletter-subcribe a.button {
+  background-color: #888c14;
+}
+.hm-3 .aboutus-area {
+  background: rgba(0, 0, 0, 0) url("img/home-3/about-bg.png") no-repeat scroll 0 0;
+  padding: 268px 0 225px;
+}
+.hm-3 .discount-area {
+  background: #888c14 none repeat scroll 0 0;
+}
+.hm3-features-left {
+  margin-left: 19px;
+  overflow: hidden;
+}
+.hm3-features-left > img {
+  padding-left: 20px;
+}
+.hm3-features-right {
+  margin-left: -8px;
+}
+.hm3-features-right > img {
+  float: left;
+  padding-right: 22px;
+}
+.hm3-fr-mr-90{margin-bottom:90px;}
+.hm-3 .client-says-area {
+  background: rgba(0, 0, 0, 0) url("img/home-3/client-bg.png") no-repeat scroll center center;
+  padding: 13% 0 12%;
+}
+.hm-3 .search-box select {
+  background: #888c14 url("img/home-3/search-icon.png") no-repeat scroll 71px 18px;
+  color: #fff;
+}
+.hm-3 .newsletter-subcribe input {
+  border: 1px solid #888c14;
+}
+.hm-3 .footer-top-area {
+  background: rgba(0, 0, 0, 0) url("img/home-3/footer-bg.png") no-repeat scroll center center;
+  padding: 300px 0 100px;
+}
+/*----------------------------------------*/
+/*  15.  Home version Four
+/*----------------------------------------*/
+.hm-4 .header-area {
+  background: rgba(0, 0, 0, 0) url("img/home-3/header-bg.jpg") no-repeat scroll center center;
+  background-size: cover;
+}
+.hm-4 .live-chat .button {
+  background-color: #6E5399;
+}
+.hm-4 .search-domain-area {
+  padding: 70px 0 80px;
+}
+.hm-4 .features-area {
+  padding: 50px 0;
+}
+.hm-4 .client-says-area {
+  padding: 40px 0 80px;
+}
+.hm-4 .client-area {
+  padding: 52px 0 75px;
+  margin:0;
+}
+.hm-4 .content > h3, .hm-4 .header-service .content h1, .hm-4 .header-service .content h5, .hm-4 .search-type h2, .hm-4 .search-box input[type="text"], .hm-4 .pakge-titel > h2, .hm-4 .offer-button .button, .hm-4 .features-area .col-md-12.service-header > h1, .hm-4 .hm-2-features > h3, .hm-4 .service-content > h3, .hm-4 .client-titel > h2, .hm-4 .frs-ct > h3, .hm-4 .frs-ct-right, .hm-4 .client-header > h1, .hm-4 .client-content-area > h3, .hm-4 .owl-theme .owl-controls .owl-buttons div {
+  color: #6E5399;
+}
+.hm-4 .footer-bottom-area p a {
+  color: #fff;
+}
+.hm-4 .footer-bottom-area p a:hover {
+  color: #6E5399;
+}
+.hm-4 .icon-hm2 .des h4, .hm-4 .newsletter-titel > h2, .hm-4 .newsletter-subcribe input[type="text"], .hm-4 .footer-right > h3{color:#fff;}
+.hm-4 .header-service .content a.button {
+  background-color: #6E5399;
+  border:1px solid #6E5399;
+}
+.hm-4 .search-box input {
+  border: 1px solid #6E5399;
+}
+.hm-4 .search-box select {
+  background: #6E5399 url("img/home-4/search-icon.png") no-repeat scroll 71px 18px;
+}
+.hm-4 .search-box .button, .hm-4 .pack-mode-btn .button, .hm-4 .package-information .pakge-titel > .button{
+  background-color: #6E5399;
+}
+.hm-4 .newsletter-subcribe .news{background-color: #fff;color:#6E5399;padding: 7px 0 10px;}
+.hm-4 .newsletter-subcribe .news:hover {
+  border-left-color:#fff;
+}
+.hm-4 .newsletter-subcribe input {
+  border: 1px solid #fff;
+}
+.hm-4 .client-says-area {
+  background: none;
+}
+.hm-4 .icon-hm2 {
+  background: none;
+  padding: 0;
+}
+.hm4-left-area {
+  float: left;
+  width: 50%;
+  background: #6E5399;
+}
+.hm-4 .icon-hm2 .icon {
+  float: left;
+  margin: 75px 0;
+  text-align: center;
+  width: 50%;
+}
+.hm4-right-area p i {
+  color: #6e5399;
+}
+.hm4-left-area .des > p {
+  padding: 0 17px;
+  color: #111;
+}
+.hm-4 .client-ct {
+  background: #6e5399 none repeat scroll 0 0;
+  border-radius: 20px;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto 0 28%;
+  padding: 15px;
+  position: relative;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 270px;
+}
+.client-ct::before {
+  background: rgba(0, 0, 0, 0) url("img/home-4/icon-c.png") no-repeat scroll 0 0;
+  bottom: -100%;
+  content: "";
+  height: 100%;
+  position: absolute;
+  right: -40%;
+  width: 100%;
+}
+.hm-4 .client-content-area > img {
+  margin-bottom: 45px;
+  margin-top: 10px;
+}
+.hm-4 .client-ct > h3 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+.hm-4 .client-ct span {
+  font-size: 14px;
+  color: #1d1919;
+}
+.hm-4 .client-ct > p {
+  color:#1d1919;
+  margin:0;
+}
+.hm-4 .client-content-area {
+  margin-top: 30px;
+}
+.hm-4  .owl-theme .owl-controls {
+  top: 85%;
+}
+.hm-4 .owl-theme .owl-controls .owl-buttons div {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.hm4-right-area {
+  display: block;
+  overflow: hidden;
+  padding-left: 70px;
+  padding-right: 90px;
+  text-align: justify;
+}
+.hm4-icon {
+  left: 0;
+  margin: 0 auto;
+  text-align: center;
+  top: 0;
+  width: 50%;
+  margin-bottom: 75px;
+  overflow:hidden;
+}
+.hm-4 .discount-area {
+  background: #6E5399 none repeat scroll 0 0;
+}
+.hm-4 .hm3-features-left img {
+  float: left;
+  padding-left: 0;
+  padding-right: 20px;
+}
+.hm-4 .frs-ct {
+  overflow: hidden;
+  text-align: left;
+}
+.hm-4 .hm4-right-area h2 {
+  color: #6E5399;
+}
+.hm-4 .newsletter-area {
+  background: #6e5399 none repeat scroll 0 0;
+  padding: 62px 0;
+}
+.hm-4 .hm3-fr-mr-90{margin-bottom:25px;}
+.hm-4 .footer-top-area {
+  background: #6e5399 none repeat scroll 0 0;
+  padding: 65px 0 40px;
+}
+/*=========================== 
+	18. ScrollUp
+============================= */
+#scrollUp{
+  background-color: #252525;
+  border: 1px solid transparent;
+  bottom: 20px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 25px;
+  height: 45px;
+  line-height: 40px;
+  text-align: center;
+  transition: all 0.4s ease 0s;
+  width: 45px;
+  right:0;
+}
+#scrollUp:hover {
+  background-color:#090404;
+  color: #fff;
+}

@@ -1,0 +1,46 @@
+/*----------------------------------------*/
+/*  6.  Company CSS
+/*----------------------------------------*/
+.company-area {
+    background-image: url(img/bg/company.jpg);
+    &::before {
+        background-color: #262626;
+        opacity: 0.9;
+    }
+}
+/*-- Feature Company --*/
+.fc-image {
+    & img {
+        @media #{$large-mobile}{
+            width: 100%;
+        }
+    }
+}
+/*-- Sidebar Feature Company Area --*/
+.feature-company-wrapper {
+    border-left: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    margin-right: 45px;
+    overflow: hidden;
+    @media #{$desktop-device}{
+        margin-right: 0;
+    }
+    @media #{$tablet-device}{
+        margin-right: 0;
+    }
+    @media #{$large-mobile}{
+        margin-right: 0;
+    }
+    & .single-company {
+        width: 50%;
+        float: left;
+        border-top: 1px solid #eeeeee;
+        border-right: 1px solid #eeeeee;
+        @media #{$tablet-device}{
+            width: 33.3333%;
+        }
+        & img {
+            width: 100%;
+        }
+    }
+}

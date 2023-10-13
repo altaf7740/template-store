@@ -1,0 +1,60 @@
+/*----------------------------------------*/
+/*  10.  Video Newsletter Area
+/*----------------------------------------*/
+.video-area {}
+/*Video Wrapper*/
+.video-wrapper {
+    background-image: url(img/bg/video.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    padding: 110px 0;
+    position: relative;
+    z-index: 2;
+    &::before {
+        background-color: $color-black;
+        bottom: 0;
+        content: "";
+        left: 0;
+        opacity: 0.5;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+    & h1 {
+        color: $color-white;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+        margin-bottom: 32px;
+        @media #{$large-mobile}{
+            font-size: 32px;
+            line-height: 32px;
+        }
+        @media #{$small-mobile}{
+            font-size: 24px;
+            line-height: 18px;
+            margin-bottom: 20px;
+        }
+    }
+    & .video-popup {
+        color: $color-white;
+        display: inline-block;
+        margin-bottom: 23px;
+        vertical-align: middle;
+        &:hover {
+            color: $theme-color;
+        }
+        & i {
+            display: block;
+            font-size: 60px;
+            line-height: 51px;
+        }
+    }
+    & p {
+        color: $color-white;
+        max-width: 570px;
+        margin: 0 auto;
+    }
+}

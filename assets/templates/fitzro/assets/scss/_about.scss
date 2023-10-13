@@ -1,0 +1,132 @@
+/*--
+    05. About Css
+--------------------------*/
+
+.bd-welcome-inner{
+    .content{
+        ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            margin: 0 -10px;
+            margin-bottom: 10px;
+            li {
+                margin: 0 10px;
+                color: #fb5b21;
+                font-size: 18px;
+            }
+        }
+        h2 {
+            color: #464646;
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            span {
+                color: $theme-color;
+            }
+        }
+        p {
+            color: #666666;
+            line-height: 27px;
+            font-size: 16px;
+            margin-bottom: 33px;
+        }
+        .wel-btn{
+            margin: 0 -10px;
+            a{
+                height: 47px;
+                padding: 0 35px;
+                background: #464646;
+                display: inline-block;
+                color: #ffffff;
+                line-height: 47px;
+                border-radius: 24px;
+                margin: 0 10px;
+                transition: 0.4s ease-in-out;
+                &:hover{
+                    background: $theme-color;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+
+.bg_image--103 {
+    background-image: url(../images/bg/bg-image-103.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.funfact{
+    &.counter-style--5{
+        text-align: center;
+        .fact-icon{
+            i{
+                font-size: 36px;
+                color: #ed552d;
+            }
+        }
+        .content{
+            span{
+                color: $theme-color;
+                font-size: 36px;
+                font-weight: 700;
+                margin-top: 20px;
+                display: inline-block;
+                font-family: 'Lobster Two', cursive;
+
+                &.color-1{
+                    color: #b1c642;
+                }
+
+                &.color-2{
+                    color: #ff5020;
+                }
+
+                &.color-3{
+                    color: #ffc10d;
+                }
+
+                &.color-4{
+                    color: #68b9d8;
+                }
+            }
+            h2{
+                color: #444444;
+                font-weight: 400;
+                font-size: 24px;
+                margin: 0;
+                margin-top: 9px;
+                display: block;
+                padding-bottom: 15px;
+                font-family: 'Lobster Two', cursive;
+            }
+        }
+        &.body-counter{
+            .content{
+                span{
+                    color: #ffffff;
+                    font-size: 48px;
+                    font-weight: 600;
+                    margin-top: 0;
+                    display: inline-block;
+                    font-family: $heading-font;
+                }
+                h2{
+                    color: #ffffff;
+                    font-weight: 400;
+                    font-size: 18px;
+                    margin-top: 9px;
+                    padding-bottom: 0;
+                    font-family: $heading-font;
+                    margin-bottom: 0;
+                    line-height: 16px;
+                }
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,226 @@
+/*--
+    04. Service Css
+-------------------------------------*/ 
+
+.service-1{
+    .icon{
+        margin-bottom: 30px;
+        i{
+            color:  #ed552d;
+            font-size:  50px;
+        }
+    }
+    .thumb{
+        margin-bottom: 25px;
+    }
+    .content{
+        h4{
+            color:  #333333;
+            font-size:  18px;
+            font-weight:  600;
+        }
+        p{
+            color: #333;
+            font-size: 15px;
+            line-height: 25px;
+            margin: 0;
+            padding: 0 12px;
+            position: relative;
+            padding-bottom: 35px;
+            &::before{
+                position:  absolute;
+                content: "";
+                background:  #969696;
+                width:  20px;
+                height: 1px;
+                bottom:  0;
+                left:  50%;
+                transform: translateX(-50%);
+            }
+            &::after{
+                position:  absolute;
+                content:  "";
+                background:  #969696;
+                height:  1px;
+                width:  30px;
+                bottom: 5px;
+                left:  50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+
+    
+    &.agency-service{
+        .icon{
+            i{
+                color:  $theme-color;
+            }
+        }
+    }
+    
+    &.portfolio-service{
+        .icon{
+            i{
+                color:  $theme-color;
+            }
+        }
+    }
+
+    &.gr-service{
+        .icon{
+            i{
+                color: $theme-color;
+            }
+        }
+        .content{
+            h4{
+                color:  #404040;
+            }
+            p{
+                color: #5b5b5b;
+                font-size: 16px;
+                line-height: 28px;
+                font-family: $body-font;
+                padding: 0 12px;
+                padding-bottom: 35px;
+            }
+        }
+        &.fter-shape-none{
+            .content{
+                p{
+                    &::before ,
+                    &::after{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+.service-2 {
+    background:  #ffffff;
+    padding: 30px;
+    transition: 0.4s ease-in-out;
+    @media #{$large-mobile} {
+        padding: 15px;
+    }
+    &.padding-none{
+        padding: 0;
+    }
+    .thumb{
+        a{
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    &.cleaning-service{
+        .content{
+            padding: 30px 20px;
+            @media #{$desktop-device} {
+                padding: 30px 24px;
+
+            }
+            @media #{$tablet-device} {
+                padding: 16px 9px;
+            }
+
+            p{
+                margin-bottom: 8px;
+            }
+        }
+    }
+    .content {
+        padding-top: 30px;
+        h4 {
+            color:  #333333;
+            font-size:  22px;
+            line-height: 30px;
+            margin-bottom: 13px;
+            padding: 0 9px;
+            
+            @media #{$large-mobile} {
+                font-size: 20px;
+            }
+        }
+        p {
+            color:  #333333;
+            font-size:  14px;
+            line-height:  24px;
+            margin-bottom: 35px;
+        }
+        a{
+            &.readmore_btn {
+                height:  42px;
+                border:  1px solid #0056ff;
+                display:  inline-block;
+                padding:  0 42px;
+                line-height:  40px;
+                font-size:  14px;
+                border-radius: 30px;
+                color:  #0056ff;
+                font-weight:  600;
+                transition: 0.5s;
+                &:hover {
+                    background:  #0056ff;
+                    color: #fff;
+                }
+                &.btn-transparent{
+                    border: 0 none;
+                    width: inherit;
+                    height: inherit;
+                    color: #3f3f3f;
+                    font-size: 14px;
+                    font-family: $heading-font;
+                    font-weight: 500;
+
+                    &:hover{
+                        color: $theme-color;
+                        background: transparent;
+                    }
+                }
+            }
+        }
+    }
+    &.agency-service{
+        background:  #f4f4f4;
+        .content {
+            padding-top: 30px;
+            a{
+                &.readmore_btn {
+                    border:  1px solid $theme-color;
+                    color:  $theme-color;
+                    &:hover {
+                        background:  $theme-color;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        &:hover{
+            background:  #ffffff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    }
+
+    
+
+
+    
+
+}
+
+
+

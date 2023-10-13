@@ -1,0 +1,85 @@
+/*--
+    - Section Title
+------------------------------------------*/
+
+/*-- Section Title Two --*/
+.ht-section-title-two {
+    & h2 {
+        font-weight: 900;
+        text-transform: capitalize;
+        font-size: 34px;
+        line-height: 1;
+        margin-bottom: 0;
+        @media #{$large-mobile}{
+            font-size: 24px;
+        }
+    }
+    & p {
+        max-width: 750px;
+        margin: 18px auto 0;
+        line-height: 22px;
+        font-family: $poppins;
+    }
+    
+    &.text-left {
+        & p {
+            margin-left: 0;
+            margin-right: auto;
+        }
+    }
+    &.text-right {
+        & p {
+            margin-left: auto;
+            margin-right: 0;
+        }
+    }
+}
+
+/*-- Section Title Three --*/
+.ht-section-title-three {
+    & h4 {
+        font-family: $poppins;
+        font-size: 18px;
+        font-weight: 300;
+        color: $blue;
+        line-height: 1;
+        margin-top: 0;
+        margin-bottom: 12px;
+        @media #{$large-mobile}{
+            font-size: 14px;
+        }
+    }
+    & h2 {
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 30px;
+        line-height: 1;
+        margin-bottom: 0;
+        @media #{$large-mobile}{
+            font-size: 24px;
+        }
+        @media #{$small-mobile}{
+            font-size: 20px;
+        }
+    }
+    & p {
+        max-width: 750px;
+        margin: 18px auto 0;
+        line-height: 26px;
+        font-size: 15px;
+        font-family: $poppins;
+    }
+    
+    &.text-left {
+        & p {
+            margin-left: 0;
+            margin-right: auto;
+        }
+    }
+    &.text-right {
+        & p {
+            margin-left: auto;
+            margin-right: 0;
+        }
+    }
+}

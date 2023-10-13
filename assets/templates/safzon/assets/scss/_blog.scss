@@ -1,0 +1,74 @@
+/*--
+    08. Blog Css
+---------------------------*/
+.post-carousel {
+    & .thumb {
+        & a {
+            display: block;
+            & img {
+                width: 100%;
+            }
+        }
+    }
+    & .ptc-content {
+        padding: 20px 0px 0;
+        & h4 {
+            font-weight: 600;
+            margin-bottom: 4px;
+            @media #{$desktop-device,$tablet-device}{
+                font-size: 22px;
+            }
+        }
+        & .meta {
+            margin-bottom: 10px;
+            & li {
+                margin-right: 15px;
+                & i {
+                    margin-right: 3px;
+                    color: $theme-color;
+                }
+            }
+        }
+        & p {
+            font-size: 16px;
+        }
+    }
+   
+}
+.post-carousel-active-5 {
+    overflow: hidden;
+    & button {
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        color: #f4f4f4;
+        border: 0 none;
+        font-size: 30px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        background: #000000;
+        transform: translateY(-50%);
+        z-index: 2;
+        border-radius: 100%;
+        transition: 0.4s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+      
+        &:hover{
+            color: #ffffff;
+            background: $theme-color;
+        }
+        &.post-next{
+            left: auto;
+            right: 0px;
+          
+        }
+    }
+    &:hover{
+        & button {
+        opacity: 1;
+        visibility: visible;
+        }
+    }
+}

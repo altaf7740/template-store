@@ -1,0 +1,85 @@
+/*-- Tooltip --*/
+.tooltip {
+    z-index: 999999;
+    & .arrow {}
+    & .tooltip-inner {
+        background-color: $blue;
+        border-radius: 3px;
+        font-size: 13px;
+        line-height: 24px;
+        padding: 3px 20px 6px;
+        color: $white;
+    }
+    & .arrow, & .tooltip-inner {
+        transition: all 0.5s ease 0s;
+    }
+    
+    /*-- Tooltip Top --*/
+    &.bs-tooltip-top {
+        & .arrow {
+            &::before {
+                border-top-color: $blue;
+            }
+        }
+        & .arrow, & .tooltip-inner {
+            transform: translateY(-30px);
+        }
+        &.show {
+            & .arrow, & .tooltip-inner {
+                transform: translateY(-10px);
+            }
+        }
+    }
+    
+    /*-- Tooltip Right --*/
+    &.bs-tooltip-right {
+        & .arrow {
+            &::before {
+                border-right-color: $blue;
+            }
+        }
+        & .arrow, & .tooltip-inner {
+            transform: translateX(30px);
+        }
+        &.show {
+            & .arrow, & .tooltip-inner {
+                transform: translateX(10px);
+            }
+        }
+    }
+    
+    /*-- Tooltip Bottom --*/
+    &.bs-tooltip-bottom {
+        & .arrow {
+            &::before {
+                border-bottom-color: $blue;
+            }
+        }
+        & .arrow, & .tooltip-inner {
+            transform: translateY(30px);
+        }
+        &.show {
+            & .arrow, & .tooltip-inner {
+                transform: translateY(10px);
+            }
+        }
+    }
+    
+    /*-- Tooltip Left --*/
+    &.bs-tooltip-left {
+        & .arrow {
+            &::before {
+                border-left-color: $blue;
+            }
+        }
+        & .arrow, & .tooltip-inner {
+            transform: translateX(-30px);
+        }
+        &.show {
+            & .arrow, & .tooltip-inner {
+                transform: translateX(-10px);
+            }
+        }
+    }
+    
+}

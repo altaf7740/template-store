@@ -1,0 +1,76 @@
+
+// Newsletter Style
+
+
+.newsletter_area {
+    .content {
+        text-align: center;
+        padding: 55px 0;
+        h3 {
+            font-size: 27px;
+            font-weight: 500;
+            line-height: 34px;
+            margin: 0;
+        }
+        h2 {
+            margin-bottom: 9px;
+        }
+        p {
+            padding: 0 20%;
+            margin-bottom: 20px;
+        }
+        .input_box {
+            position: relative;
+            width: 520px;
+            margin: auto;
+            input {
+                border-radius: 30px;
+                border: 1px solid #707070;
+                height: 50px;
+                line-height: 50px;
+                color: #3a3a3a;
+                padding-right: 129px;
+            }
+            button {
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 100%;
+                border-radius: 30px;
+                background: $theme-color;
+                color: #fff;
+                padding: 0 29px;
+                font-weight: 500;
+                border: 1px solid $theme-color;
+                line-height: 50px;
+                transition: 0.5s;
+                font-size: 18px;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

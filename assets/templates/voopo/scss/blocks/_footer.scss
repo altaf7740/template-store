@@ -1,0 +1,152 @@
+/*-----------------
+    Footer Styles
+--------------------*/
+
+.footer__top {
+    padding: 100px 0 90px;
+}
+
+.single__wedget {
+    .content {
+        p {
+            color: #eef3f6;
+            font-size: 16px;
+            line-height: 27px;
+            margin-bottom: 0;
+            margin-top: 33px;
+        }
+    }
+    .ft__title {
+        color: #eef3f6;
+        font-size: 24px;
+        line-height: 40px;
+        margin-bottom: 10px;
+        padding-bottom: 12px;
+        position: relative;
+        &::before {
+            background: #65788c none repeat scroll 0 0;
+            bottom: 0;
+            content: "";
+            height: 1px;
+            left: 0;
+            position: absolute;
+            width: 170px;
+        }
+    }
+    .ft__contact__link {
+        list-style: outside none none;
+        margin: 0;
+        padding: 0;
+        li {
+            a {
+                color: #eef3f6;
+                font-size: 14px;
+                line-height: 42px;
+                transition: 0.3s;
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+.copyright {
+    padding: 28px 0;
+    .copyright__inner {
+        p {
+            color: #62b1de;
+            margin: 0;
+        }
+    }
+}
+
+.social-icon {
+    display: flex;
+    justify-content: flex-end;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    li {
+        a {
+            background: #02335b none repeat scroll 0 0;
+            border-radius: 100%;
+            display: block;
+            font-size: 22px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            width: 40px;
+            transition: 0.3s;
+            &:hover {
+                background: $hover-color;
+            }
+            i {
+                background: -webkit-linear-gradient(#f9c3bc, #e46b56);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        &+li {
+            margin-left: 30px;
+        }
+    }
+}
+
+.footer--2 .single__wedget .ft__title {
+    color: #010f54;
+}
+
+.footer--2 .single__wedget .content p,
+.footer--2 .single__wedget .ft__contact__link li a {
+    color: #035f91;
+}
+
+.footer--2 .single__wedget .ft__contact__link li a:hover {
+    color: $theme-color;
+}
+
+.footer--2 .single__wedget .ft__title::before {
+    background: #c7d8de none repeat scroll 0 0;
+}
+
+// Responsive Css
+@media #{$xx-layout} {}
+
+@media #{$xlg-layout} {}
+
+@media #{$lg-layout} {
+    .single__wedget .ft__title::before {
+        width: 140px;
+    }
+}
+
+@media #{$md-layout} {}
+
+@media #{$sm-layout} {}
+
+@media #{$xs-layout} {
+    .copyright .copyright__inner p {
+        text-align: center;
+    }
+    .social-icon {
+        display: flex;
+        justify-content: center;
+    }
+    .ft__social__link {
+        padding-top: 15px;
+    }
+    a#scrollUp {
+        right: 14px;
+    }
+
+
+
+
+
+
+}
+
+@media #{$xxs-layout} {
+    
+}

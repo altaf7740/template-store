@@ -1,0 +1,295 @@
+
+
+@import "../variables";
+@import "../mixins";
+
+
+/*===================
+	Slide Activation
+======================*/
+
+
+.blog__thumb__active,
+.shop-active,
+.slide--active{
+	position: relative;
+	.dcare-arrow{
+		background: #000 none repeat scroll 0 0;
+	    border: medium none;
+	    color: #bcbcbc;
+	    display: inline-block;
+	    font-size: 30px;
+	    height: 40px;
+	    margin-top: -17px;
+	    opacity: 0;
+	    outline: medium none;
+	    position: absolute;
+	    top: 50%;
+	    transition: all 0.3s ease-in-out 0s;
+	    visibility: hidden;
+	    width: 40px;
+	    z-index: 2;
+		&:hover{
+			background: $theme-color;
+			color: #fff;
+		}
+		i{
+			line-height: 35px;
+		}
+		&:active, &:focus{
+			outline: none;
+		}
+
+		&.dacre-prev{
+			left: 0;
+		}
+
+		&.dcare-next{
+			right: 0;
+		}
+	}
+	&:hover{
+		.dcare-arrow{
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+
+
+
+
+
+.activation__one [class*="col-"] {
+  max-width: 100%;
+}
+
+
+.activation__one{
+	position: relative;
+	.junior__classes{
+		margin-bottom: 18px;
+
+	}
+	.owl-nav{
+		div{
+			position: absolute;
+			left: -76px;
+			top: 50%;
+		}
+
+	}
+}
+
+.activation__one .owl-nav div.owl-next{
+	left: auto;
+	right: -76px;
+}
+.activation__one.owl-theme .owl-nav [class*="owl-"] {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  color: #dddddd;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 30px;
+  height: 45px;
+  line-height: 37px;
+  margin: 0;
+  padding: 0;
+  width: 45px;
+}
+
+.activation__one.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: #89d700 none repeat scroll 0 0;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #89d700;
+}
+
+.owl-theme .owl-nav {
+  margin-top: 0;
+}
+
+.testimonial__slide--3.owl-theme .owl-nav [class*="owl-"] {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 100%;
+  color: #666666;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 37px;
+  margin: 0;
+  padding: 0;
+  width: 40px;
+}
+
+.testimonial__slide--3 {
+    position: relative;
+}
+.testimonial__slide--3 .owl-nav div {
+    border-radius: 100%;
+    height: 40px;
+    left: -43px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    transition: 0.4s;
+}
+.testimonial__slide--3 .owl-nav div.owl-next {
+    left: auto;
+    right: -43px;
+}
+.testimonial__slide--3.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: #fe5629 none repeat scroll 0 0;
+  color: #fff;
+}
+
+
+.arrival__product__activation.owl-theme .owl-dots .owl-dot span {
+  backface-visibility: visible;
+  background: transparent none repeat scroll 0 0;
+  border: 2px solid #444444;
+  border-radius: 30px;
+  display: block;
+  height: 10px;
+  margin: 0 3px;
+  transition:0.6s ease 0s;
+  width: 10px;
+  opacity: 1;
+}
+.arrival__product__activation.owl-theme .owl-dots .owl-dot.active span,
+.arrival__product__activation.owl-theme .owl-dots .owl-dot:hover span {
+  background: #000 none repeat scroll 0 0;
+  border: 2px solid transparent;
+  height: 16px;
+  width: 16px;
+}
+.arrival__product__activation{
+	position:relative;
+}
+.arrival__product__activation.owl-theme .owl-dots {
+  bottom: 44px;
+  left: 50%;
+  position: absolute;
+}
+
+.testimonial__slide--4{
+	position: relative;
+}
+
+.testimonial__slide--4 .owl-nav div {
+	bottom: -59px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.testimonial__slide--4.owl-theme .owl-nav [class*="owl-"] {
+  background: #ffffff none repeat scroll 0 0;
+  border-radius: 100%;
+  color: #858585;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+  transition: all 0.5s ease 0s;
+  width: 30px;
+}
+.testimonial__slide--4.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: #cccaca none repeat scroll 0 0;
+  color: #fff;
+}
+
+.testimonial__slide--4 .owl-nav div.owl-next {
+    left: calc(50% + 37px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// Responsive Css
+
+
+@media #{$lg-layout}{
+
+.testimonial__slide--3 .owl-nav div {
+    left: -20px;
+}
+.testimonial__slide--3 .owl-nav div.owl-next {
+    right: -20px;
+}
+.arrival__product__activation.owl-theme .owl-dots {
+  bottom: 11px;
+}
+
+
+
+
+}
+
+@media #{$md-layout}{
+
+	.activation__one .owl-nav div {
+	  left: -11px;
+	}
+	.activation__one .owl-nav div.owl-next {
+	  right: -11px;
+	}
+	.testimonial__slide--3 .owl-nav div {
+	    left: -20px;
+	}
+	.testimonial__slide--3 .owl-nav div.owl-next {
+	    right: -20px;
+	}
+
+	
+
+
+
+}
+
+@media #{$sm-layout}{
+
+	.activation__one .owl-nav div {
+	  left: 0px;
+	}
+	.activation__one .owl-nav div.owl-next {
+	  right: 0px;
+	}
+
+	
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

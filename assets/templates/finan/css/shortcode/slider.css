@@ -1,0 +1,339 @@
+/*-----------------------------------------------------------------------------------
+  Template Name: Finan Finance & Business HTML Template.
+  Template URI: #
+  Description: Finan is a unique website template designed in HTML with a simple & beautiful look. There is an excellent solution for creating clean, wonderful and trending material design corporate, corporate any other purposes websites.
+  Author: HasTech
+  Author URI: https://themeforest.net/user/hastech/portfolio
+  Version: 1.0
+-----------------------------------------------------------------------------------*/
+/*
+
+    font-family: 'Open Sans', sans-serif;
+
+    font-family: 'Lato', sans-serif;
+
+*/
+
+/*---------------------
+Slider images
+-----------------------*/
+.slider__bg--1,
+.slider__bg--2 ,
+.slider__bg--3,
+.slider__bg--4 {
+  background-attachment: fixed;
+  background-clip: initial;
+  background-color: rgba(0, 0, 0, 0);
+  background-origin: initial;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+.slider__bg--1 {
+  background: rgba(0, 0, 0, 0) url("../../images/slider/bg/1.jpg") no-repeat scroll 0 0 / cover ;
+}
+.slider__bg--2 {
+  background: rgba(0, 0, 0, 0) url("../../images/slider/bg/2.jpg") no-repeat scroll 0 0 / cover ;
+}
+.slider__bg--3 {
+  background: rgba(0, 0, 0, 0) url("../../images/slider/bg/3.jpg") no-repeat scroll 0 0 / cover ;
+}
+.slider__bg--4 {
+  background: rgba(0, 0, 0, 0) url("../../images/slider/bg/4.jpg") no-repeat scroll 0 0 / cover ;
+}
+
+/**----------------------------------
+! 8. Background variation 
+-------------------------------------------**/
+.slider__full--screen {
+  height: 100vh;
+  display: block;
+}
+
+.slider__fixed_height {
+  height: 780px;
+}
+
+@media (min-width: 992px) and (max-width: 1169px) {
+  .slider__fixed_height {
+    height: 720px;
+  }
+}
+
+.slider__fixed_height .slide, 
+.slider__fixed_height .slide .container, 
+.slider__fixed_height .slide .container .row, 
+.slider__fixed_height .slide .container .row div[class*="col-"]{
+  height: 100%;
+}
+
+
+@media ( max-width: 991px ) {
+  .slider__fixed_height {
+    height: auto;
+  }
+}
+
+
+.slider__container .col-lg-8.custom-width{
+  width: 64.6667%;
+}
+.slider__container .col-lg-4.custom-width{
+  width: 35.3333%;
+}
+
+
+.slider__position--relative {
+    position: relative;
+}
+.slider__activatio__wrap, 
+.slider__activatio__wrap .owl-stage-outer, 
+.slider__activatio__wrap .owl-item, 
+.slider__activatio__wrap .slide, 
+.slider__activatio__wrap .owl-stage {
+  height: 100%;
+}
+
+/*-------------------------------------------
+  Slider Owl Activation
+--------------------------------------------*/
+
+.slider-activetion-wrap .owl-wrapper-outer .owl-wrapper,
+.slider-activetion-wrap .owl-wrapper-outer {
+    height: 100%;
+}
+
+.slider-activetion-wrap,
+.slider-activetion-wrap .owl-stage-outer,
+.slider-activetion-wrap .owl-item,
+.slider-activetion-wrap .slide,
+.slider-activetion-wrap .owl-stage {
+  height: 100%;
+}
+.slide {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+
+/*------------------------------------------
+      Slider Inner
+---------------------------------------*/
+
+.slider__inner h1 {
+  font-size: 44px;
+}
+.slider__inner {
+  padding-top: 80px;
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+.slider__inner p {
+  color: #fff;
+  font-size: 19px;
+  line-height: 32px;
+  margin-top: 37px;
+  padding: 0 19%;
+}
+
+.slider--2 .slider__inner h1,
+.slider--3 .slider__inner h1 {
+  text-transform: capitalize;
+}
+.text__align--left .slider__inner p {
+  padding: 0 9% 0 0;
+}
+.text__align--right .slider__inner p {
+  padding: 0 0 0 9%;
+}
+
+
+/*--------------------Left Align----------------*/
+
+.text__align--left .slider__inner {
+  text-align: left;
+}
+.text__align--right .slider__inner {
+  text-align: right;
+}
+
+.slider__display--center {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+}
+.slider__fixed_height  .slider__display--center {
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+.slider__fornt__inner {
+  align-items: flex-end;
+  display: flex;
+  height: 100vh;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 2;
+}
+
+.slider__fixed_height .slider__fornt__inner {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: flex-end;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 2;
+  height: 100% !important;
+}
+
+.slider--3 .slider__fornt__inner {
+  justify-content: flex-start;
+}
+
+
+/*---------------------------------
+    Button Style
+-----------------------------------*/
+
+.slider__btn {
+  margin-top: 32px;
+}
+.htc__btn {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #fff;
+  color: #4c4c4c;
+  display: inline-block;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 600;
+  height: 55px;
+  line-height: 52px;
+  overflow: hidden;
+  padding: 0 35px;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.btn--transparent {
+    background: transparent none repeat scroll 0 0;
+    color: #fff;
+}
+.btn--gray {
+  background: #4c4c4c none repeat scroll 0 0;
+  border: 1px solid #4c4c4c;
+  color: #fff;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 55px;
+}
+
+
+/*-------------------------
+  Btn Hover
+-------------------------*/
+.htc__btn::after {
+  background: #fff none repeat scroll 0 0;
+  height: 0;
+  left: 50%;
+  opacity: 0;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  width: 100%;
+  content: "";
+  position: absolute;
+  transition: all 0.5s ease 0s;
+  z-index: -1;
+}
+.btn--gray::after {
+  background: #fff none repeat scroll 0 0;
+}
+
+.htc__btn:hover::after {
+  height: 310%;
+  opacity: 1;
+}
+.btn--gray:hover::after {
+  height: 462%;
+}
+.btn--gray:hover {
+  color: #666666;
+}
+
+
+/*---------------------------------------------------
+   with slider animation
+------------------------------------------------------*/
+
+
+/*----------------------
+  Animation
+-------------------------*/
+
+.slider__container .text__align--center .slider__inner .slider__btn,
+.slider__container .text__align--center .slider__inner p,
+.slider__container .text__align--center .slider__inner h1,
+
+.slider__container .text__align--left .slider__inner .slider__btn,
+.slider__container .text__align--left .slider__inner p,
+.slider__container .text__align--left .slider__inner h1,
+
+.slider__container .text__align--right .slider__inner .slider__btn,
+.slider__container .text__align--right .slider__inner p,
+.slider__container .text__align--right .slider__inner h1 {
+
+  opacity: 0;
+  transform: translateY(40%);
+}
+
+.slider__container .control__style--center .owl-stage-outer .owl-item.active .slider__btn,
+.slider__container .control__style--center .owl-stage-outer .owl-item.active .slider__inner p,
+.slider__container .control__style--center .owl-stage-outer .owl-item.active .slider__inner h1 {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+
+.slider__container.slider--2 .slider__fornt__inner {
+  opacity: 0;
+  transform: translateX(40%);
+}
+
+.slider__container.slider--3 .slider__fornt__inner {
+  opacity: 0;
+  transform: translateX(-40%);
+}
+
+.slider__container.slider--2 .control__style--center .owl-stage-outer .owl-item.active .slider__fornt__inner,
+.slider__container.slider--3 .control__style--center .owl-stage-outer .owl-item.active .slider__fornt__inner {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+
+
+/*-------------- Slider Transition --------------*/
+
+.slider__container .slider__inner h1 {
+  transition: all 1s ease-in-out 1s;
+}
+.slider__container .slider__inner p {
+  transition: all 1s ease-in-out 1.2s;
+}
+.slider__container .slider__inner .slider__btn {
+  transition: all 1s ease-in-out 1.4s;
+}
+
+.slider__container .slider__fornt__inner {
+  transition: all 1s ease-in-out 1.5s;
+}
+
+

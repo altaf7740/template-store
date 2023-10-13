@@ -1,0 +1,128 @@
+/*--
+    24. Footer Css
+-------------------------*/
+.footer-top {
+    .col-lg-3 {
+        &:first-child {
+            .widget-footer {
+                padding-left: 0px;
+            }
+        }
+        .widget-footer {
+            padding-left: 100px;
+            @media #{$laptop-device}{
+                padding-left: 20px;
+            }
+            @media #{$desktop-device}{
+                padding-left: 0px;
+            }
+            @media #{$tablet-device}{
+                padding-left: 0px;
+            }
+            @media #{$large-mobile}{
+                padding-left: 0px;
+            }
+            &:hover {
+                & .footer-title{
+                    &::after {
+                        width: 70px;
+                    }  
+                }
+            }
+        }
+        
+    }
+}
+.footer-title {
+    position: relative;
+    & h4 {
+        font-weight: 600;
+        color: $white;
+        margin-bottom: 0px;
+        padding-bottom: 15px;
+    }
+    &::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        width: 50px;
+        height: 1px;
+        background: $theme-color;
+        transition: all 0.3s ease-in-out;
+    }
+    
+}
+.footer-contents {
+    margin-top: 50px;
+    @media #{$tablet-device,$desktop-device}{
+        margin-top: 30px;
+    }
+    @media #{$large-mobile}{
+        margin-top: 20px;
+    }
+}
+
+.newsletter-box {
+    position: relative;
+    & input {
+        background: #272727;
+        width: 100%;
+        border: none;
+        padding: 8px 50px 8px 10px;
+        color: $white;
+        position: relative;
+    }
+    & button {
+        background: #fff;
+        background: transparent;
+        color: #fff;
+        position: absolute;
+        right: 0px;
+        border: none;
+        font-size: 20px;
+        padding: 10px;
+        top: 0;
+        &:hover {
+            color: $theme-color;
+        }
+    }
+}
+.footer-contents {
+    & ul {
+        & > li {
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            & a {
+                position: relative;
+                &::before {
+                    height: 1px;
+                    width: 0px;
+                    background: $theme-color;
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                &:hover {
+                    padding-left: 15px;
+                    color: $theme-color;
+                    &::before {
+                        width: 12px;
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+.footer-bottom-area {
+    background: #333;
+    padding: 15px 0;
+}

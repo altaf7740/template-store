@@ -1,0 +1,299 @@
+/*---------------------------------
+    Pricing Table Style
+-----------------------------------*/
+.single-switch.tab-pane:not(.active) {
+    display: none;
+}
+
+.ht-switcher-btn {
+    text-align: center;
+}
+
+.ht-switcher-nav{
+    display: inline-block;
+    background: #eeeeee;
+    border-radius: 30px;
+    overflow: hidden;
+    a{
+        display: inline-block;
+        color: #444444;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 18px 32px;
+        z-index: 1;
+        position: relative;
+        font-family: $heading-font;
+
+        @media #{$small-mobile} {
+            display: block;
+        }
+        
+        &::before{
+            height: 100%;
+            top: 0;
+            z-index: 0;
+            content: '';
+            width: 0;
+            position: absolute;
+            left: 0;
+            transition: all 300ms ease-out;
+            z-index: -1;
+        }
+        &.active{
+            color: #ffffff;
+            &::before{
+                width: 100%;
+                background-color: #ed552d;
+            }
+        }
+    }
+    &.event-switcher{
+        a{
+            &.active{
+                &::before{
+                    background: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+
+
+/*==========================
+    Switcher Style 2
+===========================*/ 
+
+.ht-switcher-nav-2 {
+    display: inline-block;
+    background: #ffffff;
+    border-radius: 23px;
+    overflow: hidden;
+    a{
+        display: inline-block;
+        color: #18012c;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 11px 27px;
+        z-index: 1;
+        position: relative;
+        font-family: $heading-font;
+        background: #f1f1f1;
+        &::before{
+            height: 100%;
+            top: 0;
+            z-index: 0;
+            content: '';
+            width: 0;
+            position: absolute;
+            left: 0;
+            transition: all 300ms ease-out;
+            z-index: -1;
+        }
+        &.active{
+            color: #ffffff;
+            &::before{
+                width: 100%;
+                background-color: #4ebcc2;
+            }
+        }
+    }
+}
+
+.space-between {
+    padding: 0 60px;
+
+    @media #{$desktop-device} {
+        padding: 0 20px;
+    }
+    @media #{$large-mobile,$tablet-device} {
+        padding: 0 0;
+    }
+}
+
+.pricing-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.pricing-body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+
+.pricing-panel-6 {
+    background: #fff;
+    box-shadow: 0 0 20px 1px rgba(35, 31, 32, 0.2);
+    padding-bottom: 30px;
+
+    &.space-left {
+        margin-left: 40px;
+        margin-right: 3px;
+
+        @media #{$tablet-device} {
+            margin-left: 0;
+        }
+
+        @media #{$large-mobile} {
+            margin-left: 0;
+        }
+    }
+
+    &.space-right {
+        margin-right: 40px;
+        margin-left: 3px;
+
+        @media #{$tablet-device} {
+            margin-right: 0;
+        }
+
+        @media #{$large-mobile} {
+            margin-right: 0;
+        }
+
+    }
+
+    &.space-left-right {
+        margin-right: 20px;
+        margin-left: 20px;
+
+        @media #{$large-mobile} {
+            margin-right: 0;
+            margin-left: 0;
+        
+        }
+    }
+
+    &.active {
+        .pricing-heading {
+            background: #2d3e50;
+            padding: 30px 0;
+
+            .title {
+                h2 {
+                    font-size: 26px;
+                }
+            }
+
+            .price {
+                h4 {
+                    font-size: 70px;
+
+                    span {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+        .pricing-body {
+            padding: 55px 0;
+
+            @media #{$large-mobile} {
+                padding: 32px 0;
+
+            }
+
+            ul {
+                li {
+                    padding: 7px 0;
+                }
+            }
+        }
+    }
+
+    .pricing-heading {
+        background: #2d3e50;
+        padding: 30px 0;
+
+        .title {
+            h2 {
+                color: #ffffff;
+                font-size: 22px;
+                font-weight: 700;
+                font-family: 'Raleway', sans-serif;
+            }
+        }
+
+        .price {
+            h4 {
+                font-size: 60px;
+                color: #ffffff;
+                margin: 0;
+                font-family: 'Raleway', sans-serif;
+
+                span {
+                    color: #ecebeb;
+                    font-size: 18px;
+
+                    &.separator {
+                        margin-left: -7px;
+                        margin-right: -10px;
+                    }
+                }
+
+                sub {
+                    font-size: 18px;
+                    position: relative;
+                    top: -20px;
+                    left: 11px;
+                }
+            }
+        }
+    }
+
+    .pricing-body {
+        padding: 50px 0;
+
+        ul {
+            li {
+                color: #2d3e50;
+                font-size: 18px;
+                font-weight: 500;
+                padding: 5px 0;
+                font-family: 'Raleway', sans-serif;
+            }
+        }
+    }
+
+    .pricing-footer {
+        a {
+            &.price_btn {
+                display: inline-block;
+                background: #2d3e50;
+                padding: 0 40px;
+                height: 40px;
+                line-height: 41px;
+                font-weight: 700;
+                border-radius: 15px;
+                font-size: 15px;
+                color: #ffffff;
+                font-family: 'Raleway', sans-serif;
+                transition: 0.5s;
+
+                &:hover {
+                    transform: translateY(-5px)
+                }
+            }
+        }
+    }
+}
+
+
+.bg_image--02 {
+    background: url(../images/bg/bg-image-02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}

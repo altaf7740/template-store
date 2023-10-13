@@ -1,0 +1,191 @@
+/*-----------------------
+	Header Styles
+-------------------------*/
+
+.header-area {
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: auto;
+    z-index: 99;
+    transition: 0.3s;
+}
+
+.mainmenu {
+    display: flex;
+    justify-content: center;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    li {
+        margin: 0 22px;
+        a {
+            color: #fefefe;
+            display: block;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 59px;
+            transition: all 0.3s ease 0s;
+            &:hover {
+                color: $hover-color;
+            }
+        }
+    }
+}
+
+.header__btn {
+    text-align: right;
+}
+
+.header--2 {
+    .mainmenu {
+        li {
+            a {
+                color: #010f54;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 59px;
+                transition: 0.5s;
+                &:hover{
+                    color: #e15f48 !important;
+                }
+            }
+        }
+    }
+}
+
+// Dropdown Menu
+@media only screen and (min-width: 992px) {
+    .mainmenu {
+        >li {
+            &.drop {
+                position: relative;
+                >ul {
+                    &.dropdown__menu {
+                        background: #fff none repeat scroll 0 0;
+                        border-top: 3px solid $theme-color;
+                        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+                        left: 0;
+                        margin: 0;
+                        opacity: 0;
+                        padding: 20px 30px;
+                        position: absolute;
+                        top: 120%;
+                        transition: all 0.5s ease 0s;
+                        visibility: hidden;
+                        width: 230px;
+                        z-index: 99;
+                        li {
+                            margin: 0;
+                            a {
+                                color: #444;
+                                display: block;
+                                font-size: 15px;
+                                font-weight: 400;
+                                line-height: 21px;
+                                padding: 4px 0;
+                                text-transform: capitalize;
+                                transition: all 0.5s ease 0s;
+                                &:hover {
+                                    color: $hover-color;
+                                    font-weight: 600;
+                                    padding-left: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mainmenu li.drop:hover ul.dropdown__menu {
+        opacity: 1;
+        top: 100%;
+        visibility: visible;
+    }
+}
+
+// Mobile MEnu css
+.mobile-menu .header__btn {
+    color: #fff;
+    font-size: 27px;
+    position: absolute;
+    right: 57px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9991;
+}
+
+.mobile-menu .logo {
+    align-items: center;
+    display: flex;
+    height: 100px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9991;
+}
+
+.mean-container .mean-nav ul {
+    display: block;
+}
+
+.mean-container .mean-nav ul li {
+    margin: 0;
+}
+
+.mean-container .mean-nav ul li a {
+    line-height: inherit;
+}
+
+.mean-container .mean-nav {
+    max-height: 255px;
+    overflow-y: auto;
+}
+
+// Responsive Css
+@media #{$xx-layout} {}
+
+@media #{$xlg-layout} {}
+
+@media #{$lg-layout} {
+    .mainmenu li {
+        margin: 0 14px;
+    }
+}
+
+@media #{$md-layout} {}
+
+@media #{$sm-layout} {}
+
+@media #{$xs-layout} {
+    .mobile-menu .logo a img {
+        width: 156px;
+    }
+    .header__btn a.voopo__btn {
+        padding: 0 29px;
+    }
+    .mobile-menu .header__btn {
+        right: 47px;
+    }
+    .header-area {
+        top: 30px;
+    }
+}
+
+@media #{$xxs-layout} {
+    .mobile-menu .logo a img {
+        width: 109px;
+    }
+    .mobile-menu .header__btn {
+        right: 45px;
+    }
+    .header__btn a.voopo__btn {
+        font-size: 14px;
+        height: 38px;
+        line-height: 36px;
+        padding: 0 20px;
+    }
+}

@@ -1,0 +1,516 @@
+/*-----------------------------------------------------------------------------------
+  Template Name: T-Srt HTML Template.
+  Template URI: #
+  Description: T-Srt is a unique website template designed in HTML with a simple & beautiful look. There is an excellent solution for creating clean, wonderful and trending material design corporate, corporate any other purposes websites.
+  Author: HasTech
+  Author URI: https://themeforest.net/user/hastech/portfolio
+  Version: 1.0
+
+-----------------------------------------------------------------------------------*/
+
+/* Large screen desktop */
+@media (min-width: 1366px){
+
+.container {
+  width: 1200px;
+}
+}
+/* Large screen desktop */
+@media (min-width: 1366px) and (max-width: 1500px){
+
+}
+@media (min-width: 1170px) and (max-width: 1365px){
+
+}
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1169px) {
+.input-box input + input {
+  margin-left: 25px;
+}
+.footer-logo {
+  margin-bottom: 15px;
+}
+.bradcaump-area {
+  padding-top: 129px;
+}
+.our-order-btn-wrap .order-single-btn + .order-single-btn {
+  margin-left: 20px;
+}
+.our-order-wrap p {
+  font-size: 15px;
+}
+.introduction-product-wrap.intro-product-leftside .single-intro-product::before {
+  left: 134%;
+}
+.introduction-product-wrap.intro-product-rightside .single-intro-product::before {
+  right: 59%;
+}
+.our-brand-menu li a {
+  width: 190px;
+}
+.recent-post-dtl p {
+  font-size: 12px;
+  line-height: 24px;
+}
+.tag-menu li a {
+  padding: 0 34px;
+}
+.single-checkout-box input[type="text"], .single-checkout-box input[type="email"], .single-checkout-box input[type="password"] {
+  width: 47%;
+}
+.single-checkout-box select {
+  width: 47%;
+}
+.radio, .checkbox {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.puick-contact-area {
+  padding: 40px 10px;
+  width: auto;
+}
+.puick-contact-area h2 {
+  font-size: 24px;
+}
+.single-checkout-box.select-option {
+  margin-top: 40px;
+}
+.payment-form-inner .single-checkout-box.select-option {
+  margin-top: 0px;
+}
+.contact-box input[type="text"], .contact-box input[type="email"], .contact-box input[type="password"] {
+  width: 46%;
+}
+.main-menu > li > a {
+  padding: 0 14px;
+}
+.test-info p::before {
+  left: 3px;
+}
+
+
+
+}
+ 
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+.header-top .col-sm-6:nth-child(-n+2) {
+  margin-bottom: 40px;
+}
+.bradcaump-area {
+  padding-top: 190px;
+}
+.bradcaump-wrap {
+  height: 300px;
+}
+.our-blog-wrap.our-blog-grid .col-md-4:nth-child(n+3) {
+  margin-top: 30px;
+}
+.slider-inner p {
+  padding-right: 10%;
+}
+.slider-inner h1 {
+  font-size: 32px;
+}
+.best-product-content {
+  margin-bottom: 30px;
+}
+.tsrt-tab-menu {
+  position: relative;
+  top: -21px;
+}
+.our-order-cintainer {
+  display: inherit;
+}
+.our-order-wrap {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.introduction-product-wrap.intro-product-rightside .single-intro-product::before ,
+.introduction-product-wrap.intro-product-leftside .single-intro-product::before{
+  position: inherit;
+}
+.single-intro-product + .single-intro-product {
+  margin-top: 25px;
+}
+.single-intro-product h2 {
+  margin-bottom: 4px;
+}
+.introduction-product-wrap {
+  margin-top: 0;
+}
+.custom-slick-btn.slick-prev {
+  left: -6px;
+}
+.slick-arrow.custom-slick-btn {
+  height: 30px;
+  width: 30px;
+}
+.custom-slick-btn.slick-next {
+  right: -6px;
+}
+.our-brand-menu li a {
+  width: auto;
+  padding: 0 14px;
+}
+.blog-details-left-sidebar{
+  margin-bottom: 30px;
+}
+.our-blog-tag {
+  margin-top: 40px;
+}
+.single-checkout-box select {
+  width: 47%;
+}
+.payment-form-inner .single-checkout-box.select-option {
+  margin-top: 0px;
+}
+.checkout-right-sidebar {
+  margin-top: 40px;
+}
+.contact-form-wrap {
+  margin-top: 40px;
+}
+.our-header-wrap {
+  height: 170px;
+}
+.main-menu > li > a {
+  padding: 0 14px;
+}
+.logo {
+  width: 100%;
+  justify-content: center;
+}
+.res-mb-30 {
+  margin-bottom: 30px;
+}
+.logo a {
+  margin-top: 39px;
+}
+
+.our-footer-widget {
+    margin-top: 40px;
+}
+.footer-top {
+    margin-top: -40px;
+}
+.our-product-area .about-testiImage {
+  padding: 42px 0;
+}
+.logo {
+  height: 31px;
+}
+.test-info p::after {
+  right: -22px;
+}
+.custom-slick-btn.slick-prev {
+  left: -15px;
+}
+.custom-slick-btn.slick-next {
+  right: -12px;
+}
+
+}
+ 
+/* small mobile :320px. */
+@media (max-width: 767px) {
+  
+.container {width:300px}
+.our-blog-wrap .col-xs-12 + .col-xs-12 {
+  margin-top: 30px;
+}
+.header-top .col-xs-12 + .col-xs-12{
+  margin-top: 40px;
+}
+input[type="text"], input[type="email"], input[type="password"] {
+  width: 100%;
+}
+.input-box input + input {
+  margin-left: 0;
+  margin-top: 20px;
+}
+.rfb-single-input {
+  width: 100%;
+}
+.section-title p {
+  padding: 0 3%;
+}
+.single-blog-inner h2 a {
+  font-size: 16px;
+}
+.single-blog-inner h2 {
+  line-height: 24px;
+  margin-bottom: 11px;
+}
+.bradcaump-area {
+  padding-top: 0;
+}
+.slider--fullscreen.slider-area .container .row {
+  flex-wrap: wrap;
+}
+.our-header {
+  position: inherit;
+  top: 0;
+}
+.slider--fullscreen.slider-area {
+  height: auto;
+}
+.slider-inner h3 {
+  font-size: 25px;
+  margin-top: 30px;
+}
+.slider-inner h1 {
+  font-size: 32px;
+  margin-bottom: 19px;
+}
+.slider-fornt-wrap {
+  padding: 30px 0;
+}
+.best-product-content {
+  margin-bottom: 30px;
+}
+.tsrt-tab-menu {
+  position: relative;
+  top: -21px;
+}
+.best-product-offer .single-best-offer {
+  float: none;
+  width: 100%;
+}
+.our-order-cintainer {
+  display: inherit;
+}
+.our-order-wrap {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.our-order-btn-wrap {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.our-order-btn-wrap .order-single-btn + .order-single-btn {
+  margin-left: 0;
+  margin-top: 20px;
+}
+.our-order-inner {
+  height: 389px;
+}
+.introduction-product-wrap.intro-product-rightside .single-intro-product::before ,
+.introduction-product-wrap.intro-product-leftside .single-intro-product::before{
+  position: inherit;
+}
+.single-intro-product h2 {
+  margin-bottom: 4px;
+}
+.introduction-product-wrap {
+  margin-top: 0;
+}
+.introduction-product-wrap.intro-product-leftside {
+  margin-bottom: 30px;
+  text-align: left;
+}
+.introduction-product-wrap.intro-product-rightside {
+  margin-top: 30px;
+}
+.res-mb-30 {
+  margin-bottom: 30px;
+}
+.single-intro-product + .single-intro-product {
+  margin-top: 30px;
+}
+.slick-arrow.custom-slick-btn {
+  display: none;
+}
+.our-product-area .about-image-slider {
+  padding-bottom: 5px;
+}
+.our-brand-menu {
+  flex-wrap: wrap;
+}
+.our-brand-menu li + li {
+  margin-top: 30px;
+}
+.our-brand-menu li + li a {
+  border-left: 1px solid #dcd9d9;
+}
+.blog-details-left-sidebar{
+  margin-bottom: 30px;
+}
+.blog-details-top h2 a {
+  font-size: 16px;
+  line-height: 27px;
+  margin-top: 23px;
+}
+blockquote {
+  padding: 36px 18px 34px 20px;
+}
+blockquote::before {
+  left: -3px;
+  top: 28px;
+}
+.single-blog-comment.comment-reply {
+  margin-left: 0;
+}
+.reply-form-box input[type="text"],
+.reply-form-box input[type="email"],
+.reply-form-box input[type="password"] {
+  width: 100%;
+}
+.reply-form-box input + input {
+  margin-left: 0;
+}
+.comment-title-date {
+  flex-wrap: wrap;
+}
+.comment-title-date h2 a {
+  margin-top: 0;
+}
+.our-blog-tag {
+  margin-top: 40px;
+}
+.tag-menu li a {
+  padding: 0 27px;
+}
+.single-checkout-box input[type="text"], .single-checkout-box input[type="email"], .single-checkout-box input[type="password"] {
+  width: 100%;
+}
+.single-checkout-box input + input {
+  margin-left: 0;
+}
+.single-checkout-box select {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.section-title-3 {
+  font-size: 28px;
+}
+.payment-form-inner .single-checkout-box.select-option {
+  margin-top: 0px;
+}
+.checkout-right-sidebar {
+  margin-top: 40px;
+}
+.puick-contact-area {
+  padding: 40px 10px;
+  width: auto;
+}
+.puick-contact-area h2 {
+  font-size: 24px;
+}
+.contact-address-inner {
+  flex-flow: column nowrap;
+}
+.contact-form-wrap {
+  margin-top: 40px;
+}
+.contact-box input[type="text"], .contact-box input[type="email"], .contact-box input[type="password"] {
+  width: 100%;
+}
+.contact-box input + input {
+  margin-left: 0;
+}
+.about-us-area .container .row {
+  flex-flow: column-reverse nowrap;
+}
+.about-thumb {
+  margin-bottom: 50px;
+}
+.slick-arrow.custom-slick-btn {
+  z-index: 2147483647;
+}
+.our-order-area {
+  padding: 50px 0;
+}
+
+.contact-address-inner .single-contant-address + .single-contant-address {
+  margin-top: 50px;
+}
+
+.buttons-cart input, .coupon input[type="submit"], .buttons-cart a, .coupon-info p.form-row input[type="submit"] {
+  margin-right: 0;
+  margin-top: 15px;
+  padding: 0 15px;
+  text-align: center;
+  width: 100%;
+}
+.coupon input[type="text"] {
+  margin: 0 10px 20px 0;
+  padding: 0 0 0 15px;
+  width: 100%;
+}
+.input-box {
+  flex-wrap: wrap;
+}
+.input-box input {
+  width: 100%;
+}
+.our-footer-widget {
+    margin-top: 40px;
+}
+.footer-top {
+    margin-top: -40px;
+}
+.test-info p::after {
+  right: -16px;
+}
+
+
+.best-product-offer .single-best-offer {
+  margin-top: 50px;
+}
+.best-product-offer .single-best-offer {
+  float: none;
+  width: 100%;
+}
+.best-pro-details-wrap {
+  margin: 0;
+  padding: 50px 0 30px;
+  text-align: center;
+  width: 100%;
+}
+.offer-icon {
+  left: 0;
+  margin: auto;
+  right: 0;
+  top: 0;
+  transform: translateY(-50%);
+}
+.best-product-inner {
+  text-align: center;
+}
+
+
+.introduction-product-wrap {
+    text-align: center;
+}
+.intro-product {
+    text-align: center;
+}
+.introduction-product-wrap.intro-product-leftside {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+}
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {width:450px}
+.our-order-btn-wrap {
+  display: inherit;
+  text-align: center;
+}
+.dec.qtybutton {
+  right: 151px;
+}
+.inc.qtybutton {
+  right: 173px;
+}
+.test-info p::after {
+  right: 11px;
+}
+.test-info p::before {
+  left: -10px;
+}
+
+}

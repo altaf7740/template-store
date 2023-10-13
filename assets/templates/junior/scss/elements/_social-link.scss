@@ -1,0 +1,282 @@
+@import "../variables";
+@import "../mixins";
+
+
+/*========================
+    Social Icon
+===========================*/
+
+.dacre__social__link{
+    margin-left: -4px;
+    margin-right: -4px;
+    li{
+        margin: 0 4px;
+        &.twitter{
+            a{
+                background: $twitter;
+            }
+        }
+          
+        &.vimeo{
+            a{
+                background: $vimeo;
+            }
+        }
+          
+        &.pinterest{
+            a{
+                background: $pinterest;
+            }
+        }
+        a{
+            background: #3c5998;
+            border-radius: 100%;
+            display: block;
+            height: 40px;
+            line-height: 43px;
+            text-align: center;
+            width: 40px; 
+            i{
+                color: #fff;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+/*========================
+    Social Icon 02
+===========================*/
+
+.dacre__social__link--2{
+    margin-left: -4px;
+    margin-right: -4px;
+    li{
+        margin: 0 4px;
+        &.twitter{
+            a{
+                color: $twitter;
+                &:hover{
+                    background: $twitter;
+                    color: #fff;
+                }
+            }
+        }
+          
+        &.vimeo{
+            a{
+                color: $vimeo;
+                &:hover{
+                    background: $vimeo;
+                    color: #fff;
+                }
+            }
+        }
+          
+        &.pinterest{
+            a{
+                color: $pinterest;
+                &:hover{
+                    background: $pinterest;
+                    color: #fff;
+                }
+            }
+        }
+        &.facebook{
+            a{
+                color: $facebook;
+                &:hover{
+                    background: $facebook;
+                    color: #fff;
+                }
+            }
+        }
+        &.linkedin{
+            a{
+                color: $linkedin;
+                &:hover{
+                    background: $linkedin;
+                    color: #fff;
+                }
+            }
+        }
+        &.tumblr{
+            a{
+                color: $tumblr;
+                &:hover{
+                    background: $tumblr;
+                    color: #fff;
+                }
+            }
+        }
+
+
+
+        
+        a{
+            background: #fff;
+            border-radius: 100%;
+            display: block;
+            height: 40px;
+            line-height: 44px;
+            text-align: center;
+            width: 40px; 
+            i{
+                font-size: 18px;
+            }
+        }
+    }
+    &.bg--2{
+        li{
+            a{
+                background: #f6f6f6;
+            }
+        }
+        &.with__border{
+            li{
+                a{
+                    border: 1px solid #e1e1e1;
+                    &:hover{
+                        border: 1px solid transparent;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*========================
+	Social Icon 03
+===========================*/
+
+.dacre__social__link--3{
+    margin-left: -4px;
+    margin-right: -4px;
+    li{
+        margin: 0 4px;
+        &.twitter{
+            a{
+                color: $twitter;
+                &:hover{
+                    background: $twitter;
+                    color: #fff;
+                }
+            }
+        }
+          
+        &.vimeo{
+            a{
+                color: $vimeo;
+                &:hover{
+                    background: $vimeo;
+                    color: #fff;
+                }
+            }
+        }
+          
+        &.pinterest{
+            a{
+                color: $pinterest;
+                &:hover{
+                    background: $pinterest;
+                    color: #fff;
+                }
+            }
+        }
+        &.facebook{
+            a{
+                color: $facebook;
+                &:hover{
+                    background: $facebook;
+                    color: #fff;
+                }
+            }
+        }
+        a{
+            background: #f6f6f6;
+            border-radius: 100%;
+            display: block;
+            height: 40px;
+            line-height: 44px;
+            text-align: center;
+            width: 40px; 
+            i{
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+/*========================
+    Social Icon 02
+===========================*/
+
+// .dacre__social__link--4{
+//     margin-left: -4px;
+//     margin-right: -4px;
+//     li{
+//         margin: 0 4px;
+//         &.twitter{
+//             a{
+//                 color: $twitter;
+//                 &:hover{
+//                     background: $twitter;
+//                     color: #fff;
+//                 }
+//             }
+//         }
+          
+//         &.vimeo{
+//             a{
+//                 color: $vimeo;
+//                 &:hover{
+//                     background: $vimeo;
+//                     color: #fff;
+//                 }
+//             }
+//         }
+          
+//         &.pinterest{
+//             a{
+//                 color: $pinterest;
+//                 &:hover{
+//                     background: $pinterest;
+//                     color: #fff;
+//                 }
+//             }
+//         }
+//         &.facebook{
+//             a{
+//                 color: $facebook;
+//                 &:hover{
+//                     background: $facebook;
+//                     color: #fff;
+//                 }
+//             }
+//         }
+//         a{
+//             background: #f6f6f6;
+//             border-radius: 100%;
+//             display: block;
+//             height: 40px;
+//             line-height: 44px;
+//             text-align: center;
+//             width: 40px; 
+//             i{
+//                 font-size: 18px;
+//             }
+//         }
+//     }
+// }
+
+
+
+
+
+

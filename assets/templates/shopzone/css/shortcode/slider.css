@@ -1,0 +1,451 @@
+/* ====================================
+	
+	Template: Shopzone
+	Css Name: Slider
+	Version: 1
+	Design and Developed by: Shopzone Theme
+	NOTE: This is Footer style file. All footer related style included in this file.
+
+======================================== */
+
+/* The Nivo Slider styles */
+.nivoSlider {
+    position:fixed;
+    top:-16px;
+    left:0px;
+}
+.nivoSlider img {position:absolute;
+    top:0px;
+    left:0px;
+}
+.nivoSlider {
+	position:relative;
+	width:100%;
+	height:auto;
+	overflow: hidden;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	max-width: none;
+}
+.nivo-main-image {
+	display: block !important;
+	position: relative !important; 
+	width: 100% !important;
+}
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+	background:white; 
+	filter:alpha(opacity=0); 
+	opacity:0;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+	top:0;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+	overflow:hidden;
+}
+.nivo-box img { display:block; }
+
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	color:#fff;
+	width:100%;
+	z-index:8;
+	padding: 5px 10px;
+	overflow: hidden;
+	display: none;
+	-moz-opacity: 0.8;
+	filter:alpha(opacity=8);
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-prevNav {
+	left:0px;
+}
+.nivo-nextNav {
+	right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+	text-align:center;
+	padding: 15px 0;
+}
+.nivo-controlNav a {
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}
+
+/* -------------- Default Theme  ---------------- */
+.slider-direction {
+	position: absolute;
+	left:0; 
+	top:0;  
+	width: 100%;
+	background: none;
+	color: #fff;
+	font-size: 16px;
+	z-index: 999;
+	display: none;
+}
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    border:0;
+    padding:0;
+    margin:0;
+    z-index:6;
+    display:none;
+    background:white; 
+    filter:alpha(opacity=0); 
+    opacity:0;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+    display:block;
+    position:absolute;
+    z-index:5;
+    height:100%;
+    top:0;
+}
+.nivo-box {
+    display:block;
+    position:absolute;
+    z-index:5;
+    overflow:hidden;
+}
+.nivo-box img { display:block; }
+.nivo-caption {
+  color: #fff;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  z-index: 8;
+}
+.nivo-main-image {
+    display: block !important;
+    position: relative !important; 
+    width: 100% !important;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+    display:block;
+    position:absolute;
+    z-index:5;
+    height:100%;
+    top:0;
+}
+.nivo-box {
+    display:block;
+    position:absolute;
+    z-index:5;
+    overflow:hidden;
+}
+@-webkit-keyframes myfirst {
+  from {width: 0;}
+  to {width: 100%;}
+ }
+ @keyframes myfirst {
+  from {width: 0;}
+  to {width: 100%;}
+ }
+ .slider-progress.pos_hover{
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+ }
+
+/* -------------- Custom Slider Css  ---------------- */
+.slider-progress{
+	position:absolute;
+	top:0;
+	left:0;
+	background-color: rgba(255, 255, 255, .7);
+	height:5px;
+	-webkit-animation: myfirst 5000ms ease-in-out;
+	-moz-animation: myfirst 5000ms ease-in-out;
+	-ms-animation: myfirst 5000ms ease-in-out;
+	animation: myfirst 5000ms ease-in-out;
+}
+.s-tb{
+	display: table;
+	height: 100%;
+	width: 100%;
+	float: left;
+}
+.s-tb-c{
+	display: table-cell;
+    vertical-align: middle;
+}
+
+/* -------------- Slider Text Css  ---------------- */
+.slider-1 h1 {
+  color: #ffffff;
+  font-family: Lobster Two;
+  font-size: 100px;
+  font-weight: 700;
+  margin: 35px 0 70px;
+}
+.slider-1 h2 {
+  color: #ffffff;
+  display: block;
+  font-family: Lobster;
+  font-size: 30px;
+}
+.slider-1 h2 span.icon-left {
+  font-size: 50px;
+  margin-left: -105px;
+  margin-top: -10px;
+  overflow: hidden;
+  position: absolute;
+  transform: rotate(185deg);
+}
+.slider-1 h2 span.icon-right {
+  display: inline-block;
+  font-size: 50px;
+  margin-left: 55px;
+  margin-top: -5px;
+  overflow: hidden;
+  position: absolute;
+}
+.slider-btn a {
+  background: #8bc34a none repeat scroll 0 0;
+  color: #fff;
+  font-weight: 600;
+  padding: 15px 80px 15px 70px;
+  transition:.3s;
+}
+.slider-btn a:hover{background:#444444;}
+.slider-btn a span {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 15px;
+  margin-left: 10px;
+  margin-top: 0;
+  position: absolute;
+  transition:.3s;
+}
+.slider-btn a:hover span{margin-left:5px;}
+.slider-2 h1 {
+    left: 20%;
+    position: relative;
+    font-size: 60px;
+    font-weight: 700;
+}
+.slider-2 h3{
+	left: 20%;
+	position: relative;
+	font-size: 30px;
+	font-weight: 700;
+}
+.social-icon-left {
+  left: 0;
+  margin-left: 100px;
+  position: absolute;
+  top: 29%;
+  width: 20px;
+}
+.social-icon-left li,.social-icon-right li {
+  display: block;
+  padding: 0 0 22px;
+}
+.social-icon-left ul li a,.social-icon-right ul li a {
+  color: #fff;
+  font-size: 18px;
+  transition:.3s;
+}
+.social-icon-left ul li a:hover,.social-icon-right ul li a:hover{color:#000;}
+.social-icon-right {
+  right: 0;
+  margin-right: 100px;
+  position: absolute;
+  top: 29%;
+  width: 20px;
+}
+.social-icon-right::after {
+  background: #8bc34a none repeat scroll 0 0;
+  bottom: -62%;
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 1px;
+}
+.social-icon-right::before {
+  background: #8bc34a none repeat scroll 0 0;
+  content: "";
+  height: 100px;
+  position: absolute;
+  top: -85%;
+  width: 1px;
+}
+/* -------------- Slider Animation  ---------------- */
+.slider-1 h1{
+	-webkit-animation: bounceInUp 1000ms ease-in-out;
+	-moz-animation: bounceInUp 1000ms ease-in-out;
+	-ms-animation: bounceInUp 1000ms ease-in-out;
+	animation: bounceInUp 1000ms ease-in-out;
+}
+.slider-1 h2{
+	-webkit-animation: fadeInRight 1500ms ease-in-out;
+	-moz-animation: fadeInRight 1500ms ease-in-out;
+	-ms-animation: fadeInRight 1500ms ease-in-out;
+	animation: fadeInRight 1500ms ease-in-out;
+}
+.slider-2 h1{
+	-webkit-animation: fadeInLeft 500ms ease-in-out;
+	-moz-animation: fadeInLeft 500ms ease-in-out;
+	-ms-animation: fadeInLeft 500ms ease-in-out;
+	animation: fadeInLeft 500ms ease-in-out;
+}
+.slider-2 h3{
+	-webkit-animation: fadeInLeft 1500ms ease-in-out;
+	-moz-animation: fadeInLeft 1500ms ease-in-out;
+	-ms-animation: fadeInLeft 1500ms ease-in-out;
+	animation: fadeInLeft 1500ms ease-in-out;
+}
+.slider-btn{
+	-webkit-animation: fadeInDown 1500ms ease-in-out;
+	-moz-animation: fadeInDown 1500ms ease-in-out;
+	-ms-animation: fadeInDown 1500ms ease-in-out;
+	animation: fadeInDown 1500ms ease-in-out;
+}
+/* -------------- Slider Preview Css  ---------------- */
+.preview .nivoSlider .nivo-directionNav a.nivo-prevNav {
+  font-size: 0;
+  left: 325px;
+}
+.preview .nivoSlider .nivo-directionNav a.nivo-nextNav {
+  right: 325px;
+  font-size: 0;
+}
+.preview .nivo-directionNav a.nivo-prevNav::before {
+  background: transparent none repeat scroll 0 0;
+  border: 4px solid #fff;
+  border-radius: 100%;
+  color: #fff;
+  content: "";
+  cursor: pointer;
+  font: 400 42px/40px FontAwesome;
+  height: 50px;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  top: 45%;
+  transition: all 300ms ease-in 0s;
+  width: 50px;
+  z-index: 9;
+}
+.preview .nivo-directionNav a.nivo-prevNav:hover::before,.preview .nivo-directionNav a.nivo-nextNav:hover::before{background:#8bc34a;border: 4px solid #8bc34a;} 
+.preview .nivo-directionNav a.nivo-nextNav::before{
+  background: transparent none repeat scroll 0 0;
+  border: 4px solid #fff;
+  border-radius: 100%;
+  color: #fff;
+  content: "\f105 ";
+  cursor: pointer;
+  font: 400 42px/40px FontAwesome;
+  height: 50px;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  top: 45%;
+  transition: all 300ms ease-in 0s;
+  width: 50px;
+  z-index: 9;
+}
+.preview .nivo-controlNav {
+  bottom: 0;
+  left: 50%;
+  margin-left: -28px;
+  position: absolute;
+  z-index: 99999;
+}
+.preview .nivo-controlNav a {
+	border:5px solid #fff;
+	display: inline-block;
+	height:18px;
+	margin: 0 5px;
+	text-indent: -9999px;
+	width:18px;
+	line-height: 8px;
+	background: #3c3c3c;
+	cursor: pointer;
+	position: relative;
+	z-index: 9;
+	border-radius: 100%;
+	opacity: 0;
+	z-index: -999;
+}
+.preview:hover .nivo-controlNav a{
+  opacity: 1;
+  z-index: 999999;
+}
+.preview .nivo-controlNav a:hover, .preview-2 .nivo-controlNav a.active {
+    background: #000;
+    cursor: pointer;
+}
+.nivo-directionNav {
+  transition:.4s;
+  opacity:0;
+  visibility:hidden;
+}
+.slider-area:hover .nivo-directionNav{
+  opacity:1;
+  visibility:visible;
+}
+.cd-words-wrapper {
+  color:#fff;
+}
+.home-animate .nivo-directionNav {
+  display: none;
+}

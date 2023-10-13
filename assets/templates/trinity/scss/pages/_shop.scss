@@ -1,0 +1,64 @@
+/*****************************
+43 - Pages - Shop
+*****************************/
+
+.shop-toolbar{
+	.product{
+		&-view-mode{
+			a{
+				&:not(:last-child){
+					margin-right: 15px;
+				}
+			}
+		}
+		&-pages{
+			@extend %fontSize18;
+		}
+		&-ordering, &-categories{
+			&__select{
+				&.nice-select{
+					&:after{
+						line-height: 40px;
+					}
+				}
+			}
+		}
+	}
+	.nice-select{
+		background-color: #f5f5f5;
+		width: 220px;
+		height: 40px;
+		border: none;
+		@include border-radius(0);
+		padding-right: 0;
+	}
+}
+
+.shop-products{
+	.trinity-product{
+		display: block;
+	}
+	.trinity-product-list{
+		display: none;
+	}
+	&.grid{
+		.trinity-product{
+			display: block;
+		}
+		.trinity-product-list{
+			display: none;
+		}
+	}
+	&.list{
+		.trinity-product{
+			display: none;
+		}
+		.trinity-product-list{
+			display: block;
+		}	
+		.row > [class^="col"]{
+			@include flex-basis(100%);
+			max-width: 100%;
+		}
+	}
+}

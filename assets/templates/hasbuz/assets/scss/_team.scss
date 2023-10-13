@@ -1,0 +1,87 @@
+/*----------------------------------------*/
+/*  09. Team
+/*----------------------------------------*/
+.ht-team-one {
+    text-align: center;
+    & .image {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        margin: 0 auto 20px;
+        border: 1px solid #e7e7e7;
+        &::before {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            content: "";
+            background-color: $blue;
+            opacity: 0;
+            transition: all 0.3s ease 0s;
+            transform: scale(0.9);
+            border-radius: 50%;
+        }
+        & img {
+            width: 100%;
+        }
+        & .social {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 0 30px;
+            display: flex;
+            justify-content: center;
+            opacity: 0;
+            transition: all 0.3s ease 0s;
+            & a {
+                color: $white;
+                display: block;
+                margin: 0 10px;
+                & i {
+                    display: block;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    & .content {
+        & h4 {
+            font-size: 20px;
+            font-family: $poppins;
+            font-weight: 600;
+            color: $dark;
+            text-transform: capitalize;
+            margin-bottom: 2px;
+        }
+        & h5 {
+            font-size: 14px;
+            font-family: $poppins;
+            text-transform: capitalize;
+            color: $body-color;
+            margin-bottom: 11px;
+        }
+        & p {
+            font-size: 14px;
+            line-height: 24px;
+            margin: 0;
+        }
+    }
+    
+    &:hover {
+        & .image {
+            &::before {
+                opacity: 0.8;
+                transform: scale(1);
+            }
+            & .social {
+                bottom: 40px;
+                opacity: 1;
+            }
+        }
+    }
+    
+}

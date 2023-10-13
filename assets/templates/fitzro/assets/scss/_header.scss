@@ -1,0 +1,236 @@
+/*--
+    02. Header
+--------------------------------------*/
+.header-bottom-area {
+    & p {
+        color: $white;
+        margin-left: 90px;
+        & i {
+            margin-right: 10px;
+        }
+    }
+    @media #{$large-mobile}{
+        & p {
+           text-align: center;
+        }
+    }
+}
+.header-transparant {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  left: auto;
+  background: transparent;
+  padding: 20px 0;
+}
+@media #{$large-mobile}{
+    .header-transparant {
+        position: inherit;
+        background: #333;
+        padding: 0px 0;
+    }
+}
+.logo {
+    @media #{$large-mobile , $tablet-device}{
+        margin: 15px 0;
+    }
+}
+/*--
+    02. 1 Menu Css
+---------------------*/
+.main-menu {
+    & > ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        & > li {
+            position: relative;
+            display: inline-block;
+            margin: 0 15px;
+            &:first-child{
+                margin-left: 0;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+            & > a {
+                display: block;
+                color: #333;
+                
+                padding: 20px 0;
+                font-weight: 500;
+                
+                
+                &::after {
+                    height: 2px;
+                    width: 0;
+                    background: $theme-color;
+                    position: absolute;
+                    content: "";
+                    top: 0;
+                    left: 0;
+                    transition: all 0.3s ease-in-out;
+                }
+                &:hover {
+                    &::after {
+                        width: 100%;
+                    }
+                }
+            }
+            &.current {
+                & > a {
+                    &::after {
+                        width: 100%;
+                    }
+                }
+            }
+            
+            &:hover {
+                & > a {/*
+                    color: $theme-color;*/
+                }
+                & > .sub-menu {
+                    opacity: 1;
+                    visibility: visible;
+                    margin-top: 0;
+                    z-index: 999;
+                }
+            }
+        }
+        
+        @media #{$laptop-device}{
+            & li {
+                margin: 0 15px;
+            }
+        }
+        @media #{$desktop-device}{
+            & li {
+                margin: 0 8px;
+            }
+        }
+        
+    }
+    &.menu-color-black {
+        & > ul {
+            & > li {
+                & > a {
+                    display: block;
+                    color: #222;
+                    &:hover {
+                        color: $theme-color;
+                    }
+                }
+
+                &:hover {
+                    & > a {
+                        color: $theme-color;
+                    }
+                    & > .sub-menu {
+                        opacity: 1;
+                        visibility: visible;
+                        margin-top: 0;
+                        z-index: 999;
+                    }
+                }
+                @media #{$laptop-device}{
+                    & li {
+                        margin: 0 15px;
+                    }
+                }
+                @media #{$desktop-device}{
+                    & li {
+                        margin: 0 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*--
+    02. 2 Mobile Menu Css
+----------------------*/
+
+.slinky-theme-default {
+    background: transparent;
+    min-height: 310px;
+}
+.clickable-mainmenu {
+    background: #fff;
+    color: #353535;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 40px 10px 40px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    -webkit-transform: translateX(-110%);
+    -ms-transform: translateX(-110%);
+    transform: translateX(-110%);
+    -webkit-transition: -webkit-transform 0.5s ease-in-out 0s;
+    transition: -webkit-transform 0.5s ease-in-out 0s;
+    -o-transition: transform 0.5s ease-in-out 0s;
+    transition: transform 0.5s ease-in-out 0s;
+    transition: transform 0.5s ease-in-out 0s, -webkit-transform 0.5s ease-in-out 0s;
+    width: 300px;
+    z-index: 9999;
+}
+.clickable-mainmenu.inside {
+    -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
+    z-index: 9999;
+}
+.clickable-menu.clickable-mainmenu-active a {
+    float: right;
+    font-size: 20px;
+    color: #333;
+}
+.clickable-menu.clickable-mainmenu-active.bg-white-icon a {
+    color: #333;
+}
+.clickable-mainmenu-close {
+    background: transparent;
+    text-align: right;
+    border: none;
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-left: 8px;
+}
+.header-top-info-area {
+    padding: 15px 0 5px;
+}
+.wlc-text {
+    color: #fff;
+    margin-bottom: 10px;
+}
+.social-share {
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: center;
+    & .social-info {
+        & li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+    }
+}
+.header-phone {
+    text-align: right;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.header-top-area.white-bg {
+    & .listing-btn {
+        & .btn-2 {
+            color: #222;
+            &:hover {
+                color: #fff;
+            }
+        }
+    } 
+}
+.slinky-theme-default a:not(.back) {
+    padding: 0.6em;
+}

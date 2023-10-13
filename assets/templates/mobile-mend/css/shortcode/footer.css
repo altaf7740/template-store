@@ -1,0 +1,182 @@
+/* -----------------------------------
+Template Name: Mobile Mend - Mobile Repair HTML Template
+Template URI: https://devitems.com/html/mobile-preview/
+Description: This is html5 template
+Author: HasTech
+Author URI: https://devitems.com/
+Version: 1.0
+NOTE: This is Footer style file. All footer related style included in this file.
+
+--------------------------------------*/
+.single-footer-widget > h3 {
+    color: #505050;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 14px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+.single-footer-widget > p {
+    color: #555555;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 0;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.footer-social ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 15px;
+}
+.footer-social ul li{
+    display: inline-block;
+    padding: 0 8px;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.footer-social ul li i{
+    font-size: 20px;
+    color: #666666;
+}
+.footer-area.about{
+    margin-top: 95px;
+}
+.mc-news {
+    left: -5000px;
+    position: absolute;
+}
+.footer-social ul li:hover i{
+    color: #F69323;
+}
+#mc-embedded-subscribe-form{
+    position: relative;
+    margin: auto;
+}
+.single-footer-widget a {
+    display: inline-block;
+    cursor: pointer;
+}
+.single-footer-widget a{
+    position: relative;
+}
+.single-footer-widget a:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    content: "";
+    opacity: 0;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.single-footer-widget a:hover::after{
+    opacity: 1;
+}
+.single-footer-widget .footer-social a:hover::after{
+    opacity: 0;
+}
+#mc-embedded-subscribe-form input {
+    color: #999;
+    font-size: 13px;
+    height: 40px;
+    padding: 0 15px;
+    border: none;
+    background: #fff;
+    text-transform: capitalize;
+}
+#mc-embedded-subscribe-form input::-moz-placeholder {color: #999;} 
+#mc-embedded-subscribe-form input[type="email"]::-webkit-input-placeholder {color: #999;}
+#mc-embedded-subscribe-form .default-btn {
+    background: #F69323 none repeat scroll 0 0;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    height: 40px;
+    line-height: 34px;
+    padding: 0 28px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border:1px solid #F69323;
+}
+#mc-embedded-subscribe-form .default-btn i{
+    font-size: 20px;
+    top: 2px;
+    position: relative;
+}
+.footer-social {
+  margin-top: 30px;
+}
+#mc-embedded-subscribe-form .default-btn:hover, #mc-embedded-subscribe-form .default-btn:focus{border:1px solid #F69323; color: #F69323; background: transparent  }
+#mc-embedded-subscribe-form .default-btn:before {background: #fff none repeat scroll 0 0;z-index: -1}
+.social-figure {
+    display: inline-block;
+    position: relative;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    overflow: hidden;
+}
+.main, .social-hover{display: inline-block;}
+.main a{
+    background: transparent;
+    color: #989898;
+    font-size: 11px;
+    height: 30px;
+    line-height: 28px;
+    margin: 0 3px;
+    text-align: center;
+    width: 30px;
+    border: 1px solid #898989;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    display: block;
+    box-sizing: border-box;
+    top:0; 
+    left: 0;
+}
+.social-hover a {
+    background: #D4A762 none repeat scroll 0 0;
+    border: 1px solid #D4A762;
+    color: #614a3d;
+    height: 30px;
+    font-size: 11px;
+    left: 0;
+    margin: 0 3px;
+    line-height: 28px;
+    position: absolute;
+    display: block;
+    top: -200px;
+    transition: all 0.3s ease 0s;
+    width: 30px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.social-figure:hover .social-hover a {
+    top: 0;
+}
+.social-figure:hover .main a {
+    top: 200px;
+}
+.main-menu.footer{display: inherit}
+.footer-links > a:first-child {margin-left: 0;}
+.footer-links {padding-top: 24px;}
+.mailchimp-alerts {padding-top: 15px;}
+.footer-text > span {
+  color: #f5f5f5;
+  display: block;
+  font-size: 13px;
+  line-height: 21px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+.footer-text, .footer-text a {color: #fff}
+.footer-text a:hover {border-bottom: 1px solid #fff}
+.footer-text-area {
+  background: #F69323 none repeat scroll 0 0;
+}

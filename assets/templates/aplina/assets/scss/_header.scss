@@ -1,0 +1,95 @@
+/*--
+    03. Header Css
+--------------------------------------*/
+.inner-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+// Logo Css
+.logo {
+    margin-top: 25px;
+}
+.is-sticky .inner-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: $theme-color;
+    z-index: 999;
+    position: fixed;
+}
+.is-sticky {
+    & .logo {
+        margin-top:  12px;
+        @media #{$large-mobile}{
+            margin-top:  2px;
+        }
+    }
+    & .main-menu {
+        & ul {
+            & li {
+                padding: 25px 0;
+            }
+        }
+    }
+}
+/*--
+   - Main Menu Css
+-----------------------*/
+.main-menu {
+    display: flex;
+    justify-content: flex-end;
+    & ul {
+        & li {
+            margin-right: 25px;
+            padding: 40px 0;
+            display: inline-block;
+            @media #{$desktop-device}{
+                margin-right: 18px;
+            }
+            & a {
+                padding: 0px 0px;
+                color: $white;
+                font-size: 14px;
+                font-weight: 500;
+                font-family: $raleway;
+                text-transform: uppercase;
+                position: relative;
+                @include transition(.4s);
+                &::before {
+                    content: "";
+                    background: $white;
+                    width: 0%;
+                    height: 1px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    @include opacity(0);
+                    @include transition(.4s);
+                }
+                
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            &:hover {
+                & > a {
+                    &::before{
+                       visibility: visible;
+                       @include opacity(1);
+                       width: 100%;
+                    }
+                }
+            }
+            &.active  a {
+                &::before{
+                   visibility: visible;
+                   @include opacity(1);
+                   width: 100%;
+                }
+            }
+            
+        }
+    }
+}

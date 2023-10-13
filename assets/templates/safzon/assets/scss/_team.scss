@@ -1,0 +1,112 @@
+/*--
+    07. Team Style Css
+----------------------------*/
+.team {
+    ul {
+        &.social-network {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .thumb {
+        position: relative;
+        overflow: hidden;
+        & a {
+            display: block;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+.team {
+    overflow: hidden;
+    .thumb{
+        a{
+            img{
+                transition: 0.5s;
+            }
+        }
+    }
+    &:hover .thumb a img{
+        transform: scale(1.2) rotate(5deg);
+    }
+    .team-info {
+        background: #fff;
+        text-align:  center;
+        transition: all 0.3s ease-in-out;
+        .content {
+            padding: 20px 18px;
+            h4 {
+                font-size:  16px;
+                font-weight: 600;
+                margin-bottom: 0px;
+                a {
+                    color: #343434;
+                }
+            }
+            span {
+                color:  #343434;
+                font-size:  14px;
+                font-weight:  400;
+            }
+        }
+        .social-network{
+            padding: 14px 0;
+            border-top: 2px solid #f4f4f4;
+        }
+    }
+    &:hover {
+        & .team-info {
+            background: $theme-color;
+            
+            h4 {
+                & a {
+                    color: $white;
+                }
+            }
+            span {
+                color: $white;
+            }
+            
+            .social-net-2 {
+                li {
+                    a {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+.social-net-2 {
+    margin-bottom: 8px;
+    li {
+        margin: 0 10px;
+        a {
+            color: #18012c;
+            font-size: 14px;
+            display: block;
+            background: transparent;
+            &.facebook:hover {
+                background: transparent;
+            }
+            &.twitter:hover {
+                background: transparent;
+            }
+            &.google-plus:hover {
+                background: transparent;
+            }
+            &.vimeo:hover {
+                background: transparent;
+            }
+            &.dribbble:hover {
+                background: transparent;
+            }
+        }
+    }
+}

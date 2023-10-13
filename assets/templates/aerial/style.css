@@ -1,0 +1,359 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: aerial
+    Description: This is html5 template
+    Author: HasTech
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+	
+    1. About Area
+    2. Photography Area
+    3. Gallery Area
+    4. Homepage Two
+        4.1 Service Area
+    5. Homepage Three
+        5.1 Pricing Area
+        5.2 Team Area
+        5.3 Video About Area
+    6. Contact Page
+
+-----------------------------------------------------------------------------------*/
+
+/*----------------------------------------*/
+/*  1. About Area
+/*----------------------------------------*/
+.abt-text > h1 {
+    font-size: 36px;
+    line-height: 52px;
+    margin-bottom: 19px;
+}
+.abt-text > p {font-size: 18px; line-height: 32px;}
+.abt-text {padding-top: 45px;}
+/*----------------------------------------*/
+/*  2. Photography Area
+/*----------------------------------------*/
+.single-photography {overflow: hidden; position: relative;}
+.container-fluid.custom {padding-left: 30px; padding-right: 30px;}
+.single-photography {margin-bottom: 30px;}
+.photography-hover {
+    background: rgba(0, 0, 0, 0) linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)) repeat scroll 0 0;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.2s ease-in-out 0s;
+    width: 100%;
+}
+.single-photography:hover .photography-hover {opacity: 1}
+.single-photography img, .single-carousel a img {
+    transform: scale(1);
+    transition: all 0.5s cubic-bezier(0.15, 0.35, 0.36, 0.99) 0s;
+}
+.single-photography:hover img, .single-carousel:hover a img {
+    transform: scale(1.05) translateZ(0px);
+}
+.single-photography > a {display: block;}
+.gallery-icon {
+    bottom: 0;
+    color: #ffffff;
+    font-size: 50px;
+    height: 40px;
+    left: 0;
+    line-height: 32px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: -25px;
+    transition: all 0.5s ease 0s;
+    width: 43px;
+}
+.gallery-icon i {line-height: 42px;}
+.single-photography:hover .gallery-icon {top: 0}
+.single-photography .gallery-icon:hover {
+    transform: scale(1.2);
+    color: #fff
+}
+.photo-btn {padding-top: 30px;}
+/*----------------------------------------*/
+/*  3. Gallery Area
+/*----------------------------------------*/
+.gallery-area .section-title {margin: 0 0 37px;}
+.single-carousel a {display: block; position: relative; overflow: hidden}
+.single-carousel a:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    content: "";
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+    font-family: "Material-Design-Iconic-Font";
+}
+.single-carousel:hover a:after {opacity: 1}
+.single-carousel span {
+    color: #ffffff;
+    display: block;
+    font-size: 32px;
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease 0s;
+    z-index: 2;
+}
+.single-carousel {overflow: hidden; position: relative;}
+.single-carousel:hover span {opacity: 1; top: 50%;}
+.single-carousel span i {transform: rotate(-45deg);}
+/*----------------------------------------*/
+/*  4. Homepage Two
+/*----------------------------------------*/
+.row-custom {margin-left: -6px; margin-right: -6px;}
+.row-custom .col-md-4 {padding-left: 6px; padding-right: 6px;}
+.photography-two-area .single-photography, .photography-three-area .single-photography {
+    margin-bottom: 12px;
+}
+.custom .photo-btn {padding-top: 48px}
+/*----------------------------------------*/
+/*  4.1 Service Area
+/*----------------------------------------*/
+.single-service {margin-bottom: 56px;}
+.single-service > span {
+    display: block;
+    font-size: 36px;
+    margin-bottom: 17px;
+}
+.single-service h3 {font-family: 'Dosis', sans-serif; font-weight: 400; margin-bottom: 16px;}
+/*----------------------------------------*/
+/*  5. Homepage Three
+/*----------------------------------------*/
+.team-two-area .section-title {margin-bottom: 51px;}
+/*----------------------------------------*/
+/*  5.1 Pricing Area
+/*----------------------------------------*/
+.single-table {background: #ffffff none repeat scroll 0 0;}
+.table-title {
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.18);
+    padding: 34px 0 39px;
+    position: relative;
+}
+.table-title::after {
+    background: #fff none repeat scroll 0 0;
+    bottom: -1px;
+    content: "";
+    height: 20px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.table-title > h2 {font-weight: 600; margin-bottom: 21px;}
+.table-title > h3 {font-weight: 600}
+.table-title h3 span {font-size: 18px;}
+.table-text {
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+    padding: 28px 0 40px;
+}
+.text-list {padding: 0 0 31px;}
+.text-list > span {display: block; line-height: 35px;}
+.table-btn .default-btn {padding: 7px 22px;}
+.single-table:hover .table-btn .default-btn {
+    background: #535353 none repeat scroll 0 0;
+    color: #fff;
+}
+/*----------------------------------------*/
+/*  5.2 Team Area
+/*----------------------------------------*/
+.single-team {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+.team-border {
+    border: 1px solid #c1c1c1;
+    transition: all 0.4s ease 0s;
+}
+.single-team:after {
+    background: rgba(0, 0, 0, 0.73) none repeat scroll 0 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transition: all 0.4s ease 0s;
+    width: 100%;
+    opacity: 0;
+    height: 100%;
+    content: "";
+    transform: scale(.95)
+}
+.single-team:hover:after {
+    opacity: 1;
+    transform: scale(1)
+}
+.team-image > img {max-width: 100%;}
+.team-hover > h3 {color: #ffffff; margin-bottom: 5px;}
+.team-hover > h3 a:hover {color: #adadad;}
+.team-hover span {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.team-links a {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border-radius: 3px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 22px;
+    height: 32px;
+    margin: 0;
+    width: 32px;
+}
+.team-links > a:hover {
+    background: #ffffff none repeat scroll 0 0;
+    color: #535353;
+}
+.team-hover {
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease 0s;
+    width: 100%;
+    z-index: 2;
+}
+.single-team:hover .team-hover {opacity: 1}
+/*----------------------------------------*/
+/*  5.3 Video About Area
+/*----------------------------------------*/
+.video-about-area .section-title > h1 {
+    padding-bottom: 16px;
+    position: relative;
+}
+.video-about-area .section-title > h1::before, .video-about-area .section-title > h1::after {
+    background: #535353 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    width: 100px;
+}
+.video-about-area .section-title > h1::after {
+    bottom: -2px;
+    height: 6px;
+    width: 6px;
+}
+.video-wrapper {
+    background: rgba(0, 0, 0, 0) url("img/banner/2.jpg") repeat scroll center top / cover ;
+    float: left;
+    height: 100%;
+    position: relative;
+    width: 50%;
+}
+.video-text {
+    float: left;
+    padding: 98px 0 47px 47px;
+    width: 50%;
+}
+.video-wrapper::after {
+    background: rgba(0, 0, 0, 0.65) none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.video-text > h1 {font-size: 48px; margin-bottom: 23px;}
+.video-text > p {font-size: 18px; line-height: 32px;}
+.video-popup {
+    bottom: 0;
+    color: #fff;
+    font-size: 72px;
+    height: 60px;
+    left: 0;
+    line-height: 60px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 60px;
+    z-index: 3;
+}
+.video-text-container {height: 465px;}
+.video-popup i {line-height: 60px;}
+.video-popup:focus {
+    border: medium none transparent;
+    color: #aaa;
+    outline: 0 none;
+}
+.video-popup:hover {color: #aaa;}
+.video-about-area .section-title {margin-bottom: 91px;}
+/*----------------------------------------*/
+/*  6. Contact Page
+/*----------------------------------------*/
+#contact-form input, #contact-form textarea {
+    border-color: currentcolor currentcolor #4c4c4c;
+    border-style: none none solid;
+    border-width: 0 0 1px;
+    color: #464646;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    height: 51px;
+    line-height: 51px;
+    margin-bottom: 20px;
+    padding: 0;
+}
+#contact-form textarea {
+    height: 110px;
+    margin-bottom: 60px;
+}
+#contact-form .default-btn {
+    border-radius: 0;
+    padding: 7px 20px;
+}
+.single-contact-adrs {
+    float: left;
+    padding: 40px 0 32px;
+    width: 33.3333%;
+}
+.contact-address-info {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.15);
+    margin-top: 74px;
+    overflow: hidden;
+    padding: 0 130px;
+}
+.c-address-icon {
+    border: 1px solid #4c4c4c;
+    border-radius: 50%;
+    color: #4c4c4c;
+    display: inline-block;
+    font-size: 24px;
+    height: 47px;
+    line-height: 46px;
+    margin-bottom: 12px;
+    transition: all 0.3s ease 0s;
+    width: 47px;
+}
+.adrs-text > span {
+    color: #666666;
+    font-size: 16px;
+    line-height: 27px;
+}
+.adrs-text {overflow: hidden;}
+.single-contact-adrs:hover .c-address-icon {
+    background: #666666 none repeat scroll 0 0;
+    border-color: #666666;
+    color: #fff;
+}

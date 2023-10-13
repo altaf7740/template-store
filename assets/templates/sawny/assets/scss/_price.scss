@@ -1,0 +1,88 @@
+/*-
+    18. Price table Css
+----------------------*/
+.single-table-wrap {
+    & .table-header {
+        text-align: center;
+        background: $theme-color;
+        border-radius: 10px 10px 0 0;
+        padding: 25px 0 40px;
+        position: relative;
+        & h3 {
+            color: $white;
+            margin-bottom: 5px;
+            font-size: 32px;
+            font-weight: 600;
+        }
+        & h5 {
+            color: $white;
+            margin-bottom: 5px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+    & .table-body {
+        background: $theme-color-3;
+        text-align: center;
+        border-radius: 0 0 10px 10px;
+        padding: 30px 30px 25px;
+
+        & span {
+            position: absolute;
+            background: $theme-color-2;
+            color: $white;
+            font-size: 24px;
+            font-weight: 600;
+            padding: 10px 40px;
+            border-radius: 25px;
+            margin-top: -55px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        & ul {
+            & li {
+                border-bottom: 1px solid #ddd;
+                padding-bottom: 12px;
+                margin-top: 12px;
+                &:last-child {border: none;}
+            }
+        }
+        & .table-btn {
+            border: 1px solid $theme-color;
+            color: $theme-color;
+            // Before & After Selector
+            &:hover {
+                color: $white;
+
+            }
+        }
+
+    }
+    
+    &.active {
+        & .table-header {
+            background: $theme-color-2;
+        }
+        
+        & .table-body {
+            & span {
+                background: $theme-color;
+            }
+            & .table-btn {
+                border: 1px solid $theme-color;
+                color: $theme-color;
+                background: $theme-color;
+                color: $white;
+                // Before & After Selector
+                &:hover {
+                    color: $white;
+
+                }
+            }
+
+        }
+        
+    }
+    
+}

@@ -1,0 +1,151 @@
+/*--
+    07. Team Style Css
+----------------------------*/
+
+.team {
+    ul {
+        &.social-network {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .thumb {
+        position: relative;
+        overflow: hidden;
+        & a {
+            display: block;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.team-7{
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    .thumb{
+        a{
+            img{
+                transition: 0.5s;
+                width: 100%;
+            }
+        }
+    }
+    .team-hover-action {
+        position:  absolute;
+        bottom:  30px;
+        width:  100%;
+        text-align:  center;
+        .hover-action {
+            padding: 0 45px;
+            .social-network{
+                -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                li{
+                    a{
+                        -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                        -webkit-transform: scale(0.1);
+                        transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                        transform: scale(0.1);
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &:hover .team-hover-action .hover-action .social-network li a{
+        opacity: 1;
+        transform: scale(1);
+        -webkit-transition-delay: .1s;
+        transition-delay: .1s;
+    }
+    &:hover .team-hover-action .hover-action .social-network li a.facebook{
+        -webkit-transition-delay: .1s;
+        transition-delay: .1s;
+    }
+    &:hover .team-hover-action .hover-action .social-network li a.twitter{
+        -webkit-transition-delay: .2s;
+        transition-delay: .2s;
+    }
+
+    &:hover .team-hover-action .hover-action .social-network li a.google-plus{
+        -webkit-transition-delay: .3s;
+        transition-delay: .3s;
+    }
+
+    &:hover .team-hover-action .hover-action .social-network li a.vimeo{
+        -webkit-transition-delay: .4s;
+        transition-delay: .4s;
+    }
+
+    .content {
+        background: #fff;
+        text-align:  center;
+        padding: 20px 10px;
+        h4{
+            font-size:  16px;
+            font-weight: 600;
+            margin-bottom: 3px;
+            a{
+                color: #343434;
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+        span{
+            color:  #343434;
+            font-size:  14px;
+            margin:  0;
+            font-weight: 400;
+        }
+    }
+    &:hover .thumb a img{
+        transform: scale(1.2) rotate(10deg);
+    }
+}
+
+.social-net-3 {
+    margin-bottom: 8px;
+    li {
+        margin: 0 10px;
+        a {
+            color: #404040;
+            font-size: 14px;
+            display: block;
+            background: #fff;
+            height: 28px;
+            width: 28px;
+            text-align: center;
+            line-height: 28px;
+            border-radius: 100%;
+            &.facebook:hover {
+                color: #fff;
+                background: #3B5997;
+            }
+            &.twitter:hover {
+                color: #fff;
+                background: #1DA1F2;
+            }
+            &.google-plus:hover {
+                color: #fff;
+                background: #D11718;
+            }
+            &.vimeo:hover {
+                color: #fff;
+                background: #00ADEF;
+            }
+            &.dribbble:hover {
+                color: #ffffff;
+                background: #E84C88;
+            }
+        }
+    }
+}
+
+

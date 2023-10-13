@@ -1,0 +1,82 @@
+// Animation Css
+.slick-dots li button::before {
+    display: none;
+}
+
+.slide_active {
+    .slick-dots {
+        bottom: inherit;
+        display: inline-block;
+        width: auto;
+        text-align: right;
+        top: 50%;
+        right: 86px;
+        left: auto;
+        transform: translateY(-50%);
+        @media #{$large-mobile} {
+            bottom: inherit;
+            display: inline-block;
+            width: auto;
+            text-align: right;
+            top: auto;
+            right: auto;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 15px;
+        }
+    }
+}
+
+.slide_active {
+    .slick-dots li {
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin: 20px 0;
+        padding: 0;
+        @media #{$large-mobile} {
+            display: inline-block;
+        }
+    }
+}
+
+.slick-dots li button {
+    font-size: 21px;
+    display: block;
+    color: #fff;
+}
+
+.slick-active {
+    .animation__style01 {
+        .slide_text {
+            h3 {
+                animation: 0.7s ease-in-out 0s normal none 1 running fadeInUp;
+            }
+            h1 {
+                animation: 0.9s ease-in-out 0s normal none 1 running fadeInUp;
+            }
+            a {
+                animation: 1.5s ease-in-out 0s normal none 1 running fadeInUp;
+            }
+        }
+        .rotate_titlE {
+            h2 {
+                animation: 1000ms ease-in-out 0s normal none 1 running fadeInRight;
+            }
+        }
+    }
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+
+.slide_active .slick-dots li.slick-active button {
+    text-decoration: underline;
+}
+
+
+
+
+
+

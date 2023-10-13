@@ -1,0 +1,76 @@
+/*--
+    19. Login And Register Page Css
+----------------------------------*/
+.login-register-tab-list {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    & a {
+        position: relative;
+        &::before {
+            background-color: #454545;
+            bottom: 5px;
+            content: "";
+            height: 18px;
+            margin: 0 auto;
+            position: absolute;
+            right: -2px;
+            top: 3px;
+            transition: all 0.4s ease 0s;
+            width: 1px;
+        }
+        &:last-child:before {
+            display: none
+        }
+        &.active h4,
+        &:hover h4 {
+            color: $theme-color;
+        }
+        & h4 {
+            font-size: 25px;
+            font-weight: 700;
+            margin: 0 20px;
+            text-transform: capitalize;
+            transition: all 0.3s ease 0s;
+        }
+    }
+}
+.login-input-box {
+    & input {
+        border: 1px solid #999999;
+        color: #666666;
+        margin-bottom: 20px;
+        padding: 8px 12px;
+        width: 100%;
+        font-size: 14px;
+    } 
+}
+.login-toggle-btn {
+    & a {
+        float: right;
+        color: red;
+        font-size: 14px;
+        @media #{$small-mobile}{
+            float: inherit;
+        }
+    }
+    & input {
+        margin-right: 5px;
+    }
+}
+.login-form-container {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    padding: 60px;
+    text-align: left;
+    @media #{$small-mobile}{
+        padding: 30px;
+    }
+    & .login-btn,
+    & .register-btn {
+        margin-top: 20px;
+        padding: 8px 30px;
+    }
+    
+}

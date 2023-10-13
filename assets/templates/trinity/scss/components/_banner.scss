@@ -1,0 +1,941 @@
+/*****************************
+21 - Components - Banner
+*****************************/
+
+
+.banner-box{
+	.banner{
+		&-inner{
+			@extend %posrelative;
+			overflow: hidden;
+			&:before, &:after{
+				@extend %pseudo;
+				@extend %pseudo;
+				z-index: 4;
+				@extend %basetransition;
+			}
+			&:before{
+				top: 7%;
+				right: 3%;
+				bottom: 7%;
+				left: 3%;
+			    border-top: 1px solid #fff;
+			    border-bottom: 1px solid #fff;
+			    @include transform(scale(0,1));
+			    @include transform-origin(0 0);
+			}
+			&:after{
+				top: 3%;
+				right: 5%;
+				bottom: 3%;
+				left: 5%;
+			    border-right: 1px solid #fff;
+			    border-left: 1px solid #fff;
+			    @include transform(scale(1,0));
+			    @include transform-origin(100% 0);
+			}
+			&:hover{
+				&:before{
+				    opacity: 1;
+				    @include transform(scale(1));
+				}
+				&:after{
+					opacity: 1;
+					@include transform(scale(1));
+				}
+				.banner-bg{
+					&:before{
+						@extend %visible;
+					}
+				}
+
+				.banner-link{
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+		&-bg{
+			@extend %width100;
+			@extend %posrelative;
+			@extend %basetransition;
+			@extend %flexbox;
+			@extend %align-end;
+			&.banner-image{
+				&-left{
+					&-1{
+						@include breakpoint(large){
+							padding-left: 115px;
+						}
+						@include breakpoint(medium){
+							padding-left: 50px;
+						}
+						@include breakpoint(small){
+							padding-left: 0;
+						}
+					}
+					&-2{
+						@include breakpoint(medium){
+							padding-left: 50px;
+						}
+						@include breakpoint(small){
+							padding-left: 0;
+						}
+					}
+					&-3{
+						padding-left: 55px;
+						@include breakpoint(medium){
+							padding-left: 130px;
+						}
+						@include breakpoint(small){
+							padding-left: 45px;
+						}
+						@include breakpoint(xsmall){
+							padding-left: 35px;
+						}
+					}
+					&-4{
+						padding-left: 45px;
+						@include breakpoint(xblarge){
+							padding-left: 35px;
+						}
+						@include breakpoint(medium){
+							padding-left: 25px;
+						}
+						@include breakpoint(small){
+							padding-left: 115px;
+						}
+						@include breakpoint(xasmall){
+							padding-left: 70px;
+						}
+						@include breakpoint(xxsmall){
+							padding-left: 25px;
+						}
+					}
+					&-5{
+						@include breakpoint(large){
+							padding-left: 115px;
+						}
+						@include breakpoint(blarge){
+							padding-left: 100px;
+						}
+						@include breakpoint(medium){
+							padding-left: 35px;
+						}
+						@include breakpoint(bsmall){
+							padding-left: 25px;
+						}
+					}
+					&-6{
+						img{
+							margin-left: -20px;	
+							@include breakpoint(small){
+								margin-left: 15%;
+							}
+							@include breakpoint(xsmall){
+								margin-left: 10%;
+							}
+							@include breakpoint(xxsmall){
+								margin-left: 0;
+							}
+						}
+					}
+					&-7{
+						@include breakpoint(small){
+							padding-left: 10%;
+						}
+						@include breakpoint(xxsmall){
+							padding-left: 15px;
+						}
+					}
+				}
+				&-right{
+					@extend %justify-end;
+					&-1{
+						@extend %justify-end;
+						padding-right: 15px;
+						padding-bottom: 20px;
+						@include breakpoint(small){
+							padding-right: 95px;
+							padding-bottom: 5px;
+						}
+						@include breakpoint(xasmall){
+							padding-right: 75px;
+						}
+						@include breakpoint(xxsmall){
+							padding-right: 25px;
+						}
+					}
+					&-2{
+						@extend %justify-end;
+						img{
+							margin-right: -93px;
+							@include breakpoint(xxalarge){
+								margin-right: -80px;
+							}
+							@include breakpoint(xxalarge){
+								margin-right: -82px;
+							}
+							@include breakpoint(xlarge){
+								margin-right: -70px;
+							}
+							@include breakpoint(xblarge){
+								margin-right: -61px;
+							}
+							@include breakpoint(large){
+								margin-right: -50px;
+							}
+							@include breakpoint(clarge){
+								margin-right: -43px;
+							}
+							@include breakpoint(bsmall){
+								margin-right: -38px;
+							}
+							@include breakpoint(small){
+								margin-right: 15%;
+							}
+							@include breakpoint(xsmall){
+								margin-right: 10%;
+							}
+							@include breakpoint(xxsmall){
+								margin-right: 0;
+							}
+						}
+					}
+					&-3{
+						img{
+							@include breakpoint(small){
+								margin-left: auto;
+								margin-right: 30px;
+							}
+						}
+					}
+					&-4{
+						@extend %justify-end;
+						padding-right: 15px;
+						@include breakpoint(small){
+							padding-right: 65px;
+						}
+						@include breakpoint(xsmall){
+							padding-right: 25px;
+						}
+						@include breakpoint(xxsmall){
+							padding-right: 10px;
+						}
+					}
+					&-5{
+						@extend %justify-end;
+						img{
+							margin-right: -65px;
+							@include breakpoint(xclarge){
+								margin-right: -50px;
+							}
+							@include breakpoint(small){
+								margin-right: 50px;
+							}
+							@include breakpoint(xsmall){
+								margin-right: 0;
+							}
+							@include breakpoint(xxsmall){
+								margin-right: -50px;
+							}
+						}
+					}
+				}
+				&-v-center{
+					@extend %align-center;
+				}
+			}
+			&:before{
+				@extend %pseudo;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(137, 125, 75, .3);
+				@extend %basetransition;
+				@extend %invisible;
+				z-index: 3;
+			}
+		}
+		&-image{
+			&.image-width{
+				&-1{
+					max-width: 455px;
+					@include breakpoint(xxalarge){
+						max-width: 400px;
+					}
+					@include breakpoint(xlarge){
+						max-width: 320px;
+					}
+					@include breakpoint(xclarge){
+						max-width: 300px;
+					}
+				}
+				&-2{
+					@include breakpoint(xxalarge){
+						max-width: 187px;
+					}
+					@include breakpoint(xlarge){
+						max-width: 170px;
+					}
+					@include breakpoint(xclarge){
+						max-width: 158px;
+					}
+					&-1{
+						@include breakpoint(xxalarge){
+							max-width: 265px;
+						}
+						@include breakpoint(xlarge){
+							max-width: 237px;
+						}
+						@include breakpoint(xclarge){
+							max-width: 220px;
+						}
+					}
+				}
+				&-3{
+					@include breakpoint(xxalarge){
+						max-width: 170px;
+					}
+					@include breakpoint(xlarge){
+						max-width: 150px;
+					}
+					@include breakpoint(xblarge){
+						max-width: 130px;
+					}
+					@include breakpoint(xclarge){
+						max-width: 120px;
+					}
+					@include breakpoint(large){
+						max-width: 160px;
+					}
+					@include breakpoint(medium){
+						max-width: 150px;
+					}
+					@include breakpoint(small){
+						max-width: 165px;
+					}
+					@include breakpoint(xsmall){
+						max-width: 140px;
+					}
+				}
+				&-4{
+					@include breakpoint(xxalarge){
+						max-width: 240px;
+					}
+					@include breakpoint(xxclarge){
+						max-width: 225px;
+					}
+					@include breakpoint(xlarge){
+						max-width: 200px;
+					}
+					@include breakpoint(xblarge){
+						max-width: 195px;
+					}
+					@include breakpoint(large){
+						max-width: 200px;
+					}
+					@include breakpoint(medium){
+						max-width: 180px;
+					}
+					@include breakpoint(small){
+						max-width: 200px;
+					}
+					@include breakpoint(xsmall){
+						max-width: 190px;
+					}
+				}
+				&-5{
+					max-width: 478px;
+					@include breakpoint(xxalarge){
+						max-width: 415px;
+					}
+					@include breakpoint(xxclarge){
+						max-width: 400px;
+					}
+					@include breakpoint(xlarge){
+						max-width: 330px;
+					}
+					@include breakpoint(xblarge){
+						max-width: 290px;
+					}
+					@include breakpoint(xclarge){
+						max-width: 260px;
+					}
+					@include breakpoint(large){
+						max-width: 250px;
+					}
+					@include breakpoint(clarge){
+						max-width: 205px;
+					}
+				}
+				&-6{
+					@include breakpoint(xxalarge){
+						max-width: 289px;
+					}
+					@include breakpoint(xxclarge){
+						max-width: 275px;
+					}
+					@include breakpoint(xlarge){
+						max-width: 249px;
+					}
+					@include breakpoint(xblarge){
+						max-width: 217px;
+					}
+					@include breakpoint(xclarge){
+						max-width: 197px;
+					}
+					@include breakpoint(large){
+						max-width: 177px;
+					}
+					@include breakpoint(clarge){
+						max-width: 154px;
+					}
+					@include breakpoint(bsmall){
+						max-width: 138px;
+					}
+					&-1{
+						@include breakpoint(xxalarge){
+							max-width: 390px;
+						}
+						@include breakpoint(xxclarge){
+							max-width: 372px;
+						}
+						@include breakpoint(xlarge){
+							max-width: 336px;
+						}
+						@include breakpoint(xblarge){
+							max-width: 292px;
+						}
+						@include breakpoint(xclarge){
+							max-width: 266px;
+						}
+						@include breakpoint(large){
+							max-width: 240px;
+						}
+						@include breakpoint(clarge){
+							max-width: 210px;
+						}
+						@include breakpoint(bsmall){
+							max-width: 185px;
+						}
+					}
+				}
+				&-7{
+					@include breakpoint(xxclarge){
+						max-width: 650px;
+					}
+					@include breakpoint(xlarge){
+						max-width: 570px;
+					}
+					@include breakpoint(xblarge){
+						max-width: 520px;
+					}
+					@include breakpoint(xclarge){
+						max-width: 500px;
+					}
+					@include breakpoint(large){
+						max-width: 480px;
+					}
+					@include breakpoint(clarge){
+						max-width: 390px;
+					}
+				}				
+				&-9{
+					max-width: 490px;
+					@include breakpoint(xxalarge){
+						max-width: 420px;
+					}
+					@include breakpoint(xxclarge){
+						max-width: 400px;
+					}
+					@include breakpoint(xlarge){
+						max-width: 340px;
+					}
+					@include breakpoint(xblarge){
+						max-width: 300px;
+					}
+					@include breakpoint(large){
+						max-width: 400px;
+					}
+					@include breakpoint(small){
+						max-width: 350px;
+					}
+				}
+				&-10{
+					max-width: 180px;
+					@include breakpoint(xxalarge){
+						max-width: 160px;
+					}
+					@include breakpoint(xxclarge){
+						max-width: 150px;
+					}
+					@include breakpoint(xlarge){
+						max-width: 130px;
+					}
+					@include breakpoint(xblarge){
+						
+					}
+				}
+			}
+			&-right{
+				@extend %justify-end;
+			}
+		}
+		&-height{
+			&-1{
+				height: 320px;
+				@include breakpoint(xxalarge){
+					height: 290px;
+				}
+				@include breakpoint(xlarge){
+					height: 260px;
+				}
+				@include breakpoint(xclarge){
+					height: 240px;
+				}
+			}
+			&-2{
+				height: 241px;
+				@include breakpoint(xxclarge){
+					height: 225px;
+				}
+				@include breakpoint(xlarge){
+					height: 217px;
+				}
+				@include breakpoint(xblarge){
+					height: 196px;
+				}
+				@include breakpoint(medium){
+					height: 180px;
+				}
+			}
+			&-3{
+				height: 512px;
+				@include breakpoint(xxclarge){
+					height: 480px;
+				}
+				@include breakpoint(xlarge){
+					height: 464px;
+				}
+				@include breakpoint(xblarge){
+					height: 422px;
+				}
+				@include breakpoint(medium){
+					height: 390px;
+				}
+			}
+			&-4{
+				height: 500px;
+				@include breakpoint(xxalarge){
+					height: 440px;
+				}
+				@include breakpoint(xxclarge){
+					height: 420px;
+				}
+				@include breakpoint(xlarge){
+					height: 380px;
+				}
+				@include breakpoint(xblarge){
+					height: 330px;
+				}
+				@include breakpoint(xclarge){
+					height: 300px;
+				}
+				@include breakpoint(large){
+					height: 270px;
+				}
+				@include breakpoint(clarge){
+					height: 235px;
+				}
+				@include breakpoint(bsmall){
+					height: 210px;
+				}
+			}
+		}
+		&-btn{
+			@extend %fontSize18;
+			@extend %white-color;
+			@extend %fontWeight700;
+			@extend %textUpper;
+			@extend %black-bg-color;
+			@extend %displayInlineBlock;
+		  	line-height: 1.5;
+		    padding: 0 5px;
+		    letter-spacing: 7px; 
+		    @include breakpoint(xxclarge){
+		    	letter-spacing: 5px;
+		    }
+		    @include breakpoint(xlarge){
+		    	letter-spacing: 4px;
+		    }
+		    @include breakpoint(xblarge){
+		    	letter-spacing: 3px;
+		    }
+		    &--2{
+		    	letter-spacing: 2px;
+		    }
+		    @include breakpoint(medium){
+		    	font-size: 16px;
+		    }
+		} 
+		&-info{
+			@extend %posabsolute;
+			@extend %fullwidth;
+			&--text{
+				@extend %posabsolute;
+				top: 50%;
+				@include transform(translateY(-50%));
+				z-index: 11;
+			}
+
+		}
+		&-info-image{
+			padding-right: 20px;
+			@include breakpoint(xblarge){
+				padding-right: 10px;
+			}
+			@include breakpoint(bsmall){
+				padding-right: 0;
+			}
+			&.image-width-8{
+				@include breakpoint(xxalarge){
+					max-width: 175px;
+				}
+				@include breakpoint(xxclarge){
+					max-width: 160px;
+				}
+				@include breakpoint(xlarge){
+					max-width: 140px;
+				}
+				@include breakpoint(xblarge){
+					max-width: 125px;
+				}
+				@include breakpoint(xclarge){
+					max-width: 100px;
+				}
+				@include breakpoint(large){
+					max-width: 185px;
+				}
+				@include breakpoint(bsmall){
+				    max-width: 90px;
+				}
+			}
+		}
+		&-info-right{  
+			.banner{
+				&-info{
+					@extend %justify-end;
+					&--text{
+						right: 12%;
+						@include breakpoint(xxclarge){
+							right: 6%;
+						}
+						@include breakpoint(large){
+							right: 20%;
+						}
+						@include breakpoint(medium){
+							right: 6%;
+						}
+						@include breakpoint(small){
+							right: 20%;
+						}
+						@include breakpoint(xsmall){
+							right: 7%;
+						}
+					}
+				}
+			}
+			&--1{
+				.banner{
+					&-info{
+						&--text{
+							@include breakpoint(xxclarge){
+								right: 8%;
+							}
+							@include breakpoint(large){
+								right: 23%;
+							}
+							@include breakpoint(medium){
+								right: 12%;
+							}
+							@include breakpoint(small){
+								right: 7%;
+							}
+							@include breakpoint(xsmall){
+								right: auto;
+								left: 10%;
+								top: 10%;
+								transform: translateY(0);
+							}
+						}
+					}
+				}
+			}
+			&-1{
+				.banner{
+					&-info{
+						@extend %justify-end;
+						&--text{
+							right: 12%;
+							@include breakpoint(large){
+								right: 6%;
+							}
+							@include breakpoint(medium){
+								right: 15%;
+							}
+							@include breakpoint(small){
+								right: 10%;
+							}
+						}
+					}
+				}
+			}
+		}
+		&-info-left{ 
+			.banner{
+				&-info{
+					&--text{
+						left: 10%;
+						@include breakpoint(xsmall){
+							left: 20%;
+						}
+					}
+				}
+			}
+			&-1{
+				.banner{
+					&-info{
+						&--text{
+							left: 10%;
+							@include breakpoint(large){
+								left: 20%;
+							}
+							@include breakpoint(medium){
+								left: 15%;
+							}
+						}
+					}
+				}
+			}
+			&-2{
+				.banner{
+					&-info{
+						&--text{
+							left: 10%;
+							@include breakpoint(small){
+								left: 20%;
+							}
+						}
+					}
+				}
+			}
+			&-3{
+				.banner{
+					&-info{
+						&--text{
+							left: 20%;
+							@include breakpoint(xblarge){
+								left: 25%;
+							}
+							@include breakpoint(small){
+								left: 10%;
+							}
+							@include breakpoint(xsmall){
+								left: 20%;
+							}
+						}
+					}
+				}
+			}
+			&-4{
+				.banner{
+					&-info{
+						&--text{
+							left: 10%;
+							@include breakpoint(small){
+								left: 20%;
+							}
+							@include breakpoint(xasmall){
+								left: 15%;
+							}
+							@include breakpoint(xxsmall){
+								left: 7%;
+							}
+						}
+					}
+				}
+			}
+		}
+		&-info-center-right{ 
+			.banner{
+				&-info{
+					&--text{
+						right: 13%;
+						@include breakpoint(large){
+							right: 25%;
+						}
+						@include breakpoint(blarge){
+							right: 15%;
+						}
+						@include breakpoint(medium){
+							right: 10%;
+						}
+						@include breakpoint(bsmall){
+							right: 7%;
+						}
+						@include breakpoint(small){
+							right: 8%;
+						}
+					}
+				}
+			}
+			&-2{
+				.banner{
+					&-info{
+						&--text{
+							right: 13%;
+							@include breakpoint(xxalarge){
+								right: 7%;
+							}
+							@include breakpoint(large){
+								right: 7%;
+							}
+							@include breakpoint(small){
+								right: 17%;
+							}
+						}
+					}
+				}
+			}
+		}
+		&-info-top{
+			.banner-info{
+				&--text{
+					top: 35%;
+				}
+			}
+			&-1{
+				.banner-info{
+					&--text{
+						top: 35%;
+						@include breakpoint(medium){
+							top: 30%;
+						}
+						@include breakpoint(small){
+							top: 40%;
+						}
+					}
+				}
+			}
+			&-2{
+				.banner-info{
+					&--text{
+						padding-top: 7rem;
+						top: 0;
+						@include transform(translateY(0));
+						@include breakpoint(small){
+							padding-top: 0;
+							top: 50%;
+							@include transform(translateY(-50%));
+						}
+					}
+				}
+			}
+			&-3{
+				.banner-info{
+					&--text{
+						@include breakpoint(small){
+							top: 50%;
+							@include transform(translateY(-50%));
+						}
+						@include breakpoint(xsmall){
+							top: 10%;
+							@include transform(translateY(0));
+						}
+					}
+				}
+			}
+			&-4{
+				.banner-info{
+					&--text{
+						padding-top: 7rem;
+						@include breakpoint(small){
+							top: 50%;
+							padding-top: 0;
+						}
+					}
+				}
+			}
+		}
+		&-info--box{
+			@extend %flexbox;
+			@extend %align-center;
+			@extend %height100;
+			@include breakpoint(xblarge){
+				padding-left: 10px;
+			}
+			@include breakpoint(large){
+				@include justify-content(center);
+			}	
+			.banner-info--text{
+				position: relative;
+				top: 0;
+				right: 0;
+				@include transform(translateY(0));
+			}
+		}
+		&-sticker-wrap{
+			@extend %posabsolute;
+		    width: 122px;
+		    height: 26px;
+			&.sticker-left{
+				left: -47px;
+				top: 48px;
+			}
+			&.sticker-left-top{
+				left: -12px;
+				top: 48px;
+				&-2{
+					@include breakpoint(small){
+						left: -47px;
+						top: 50%;
+						@include transform(translateY(-50%));
+					}
+				}
+			}
+			&.sticker-v-center{
+				top: 50%;
+				@include transform(translateY(-50%));
+			}
+		}
+		&-sticker{
+			@extend %fontSize16;
+			@extend %white-color;
+			@extend %fontWeight700;
+			@extend %textUpper;
+			@extend %black-bg-color;
+			@extend %posabsolute;
+		    width: 122px;
+		    height: 26px;
+		    line-height: 25px;
+		    padding-left: 10px;
+		    letter-spacing: 3px;
+			@include transform(rotate(90deg));
+			& > span{
+				@extend %displayInlineBlock;
+				@extend %lineheight1;
+				@include transform(rotate(-90deg));
+			} 
+		}
+		&-link{
+			@extend %posabsolute;
+			left: 0;
+			top: 0;
+			z-index: 5; 
+			width: 0;
+			height: 0;
+		}
+	}
+}

@@ -1,0 +1,139 @@
+/*----------------------------------------*/
+/*  10.  Footer CSS
+/*----------------------------------------*/
+/*-- Footer Top Area --*/
+.footer-top-area {
+    @media #{$tablet-device}{
+        & [class*="col-"]:nth-child(2n+1) {
+            clear: both;
+        }
+    }
+}
+/*-- Footer Widget --*/
+.footer-widget {
+    &.pl {
+        padding-left: 50px;
+        @media #{$desktop-device}{
+            padding: 0;
+        }
+        @media #{$tablet-device}{
+            padding: 0;
+        }
+        @media #{$large-mobile}{
+            padding: 0;
+        }
+    }
+    & h3 {
+        color: $color-white;
+        font-size: 24px;
+        text-transform: capitalize;
+        line-height: 19px;
+        font-weight: 400;
+        margin-bottom: 22px;
+    }
+    & p {
+        color: #dddddd;
+        font-weight: 300;
+        padding-right: 20px;
+        margin-bottom: 26px;
+    }
+    & ul {
+        & li {
+            & a {
+                display: block;
+                line-height: 28px;
+                color: #dddddd;
+                font-family: $poppins;
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+    & .read-more {
+        height: 36px;
+        padding: 6px 33px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+}
+/*-- Footer Newsletter --*/
+.newsletter-form {
+    margin-top: 35px;
+    overflow: hidden;
+    float: left;
+    width: 100%;
+    & form {
+        overflow: hidden;
+        margin-bottom: 15px;
+        position: relative;
+        & input {
+            height: 44px;
+            width: 100%;
+            background-color: #3c3c3c;
+            margin-right: 1px;
+            padding: 10px 20px;
+            color: #9c9c9c;
+            font-weight: 300;
+            border: none;
+            float: left;
+        }
+        & button {
+            height: 44px;
+            width: 50px;
+            background-color: #3c3c3c;
+            padding: 10px;
+            color: $color-white;
+            border: none;
+            border-left: 1px solid #2c2c2c;
+            float: left;
+            position: absolute;
+            right: 0;
+            top: 0;
+            &:hover {
+                background-color: $theme-color;
+            }
+            & i {
+                font-size: 18px;
+                line-height: 26px;
+                display: block;
+            }
+        }
+    }
+}
+/*-- MailChimp Newsletter Alerts --*/
+.mailchimp-alerts {
+    & > div {
+        font-size: 12px;
+    }
+    & .mailchimp-success {
+        color: #008000;
+    }
+    & .mailchimp-error {
+        color: #ff0000;
+    }
+}
+/*-- Footer Bottom Area --*/
+.footer-bottom-area {
+    background-color: #1a1a1a;
+    padding: 15px 0;
+}
+/*-- Copyright --*/
+.copyright {
+    & p {
+        font-weight: 300;
+        font-family: $montserrat;
+        line-height: 25px;
+        font-size: 12px;
+        color: $color-white;
+        letter-spacing: 0.5px;
+        & span {
+            font-weight: 600;
+        }
+        & a {
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+}

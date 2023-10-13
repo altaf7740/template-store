@@ -1,0 +1,143 @@
+/******************************
+
+INDEX:
+
+    00 - Base - Global
+    01 - Base - Typography
+
+    02 - Utilities - Helper
+    03 - Utilities - Common
+
+    10 - Layout - Header
+    11 - Layout - Footer
+
+    20 - Components - Animation
+    21 - Components - Banner
+    22 - Components - Blog
+        22.00 - Blog
+        22.01 - Single Blog
+        22.02 - Post Navigation
+
+    23 - Components - Button
+        23.00 - Global Button
+        23.01 - Action Button
+
+    24 - Components - Carousel
+        24.00 - Carousel Helper 
+        24.01 - Carousel Gutter
+        24.02 - Slick Dot Margin Bottom 
+        24.03 - Carousel Nav
+
+    25 - Components - Comment
+    26 - Components - Form
+        26.00 - Global Form
+        26.01 - Search Form
+        26.02 - Newsletter Form
+        26.03 - Nice Select
+        26.04 - Cart Form
+        26.05 - Shipping Calculator Form
+
+    27 - Components - Modal
+        27.00 - Quick View Modal
+
+    28 - Components - Navigation
+        28.00 - Main Navigation
+        28.01 - Off Canvas Menu
+        28.02 - User Info Menu
+
+    29 - Components - Product
+        29.00 - Global Proudct
+        29.01 - Proudct List Style
+        29.02 - Countdown Proudct
+        29.03 - Proudct Summary
+        29.04 - Proudct Gallery
+        29.05 - Proudct Summary Row
+
+    30 - Components - Table
+    31 - Components - Tabs
+        31.00 - Tab Content
+        31.01 - Tab Style 01
+        31.02 - Tab Style 02
+        31.04 - User Dashboard tab
+
+    32 - Components - Widget
+        32.00 - Footer Widget
+        32.01 - Sidebar Widget
+        32.02 - Widget List
+        32.03 - Tagcloud
+        32.04 - Recent Post
+        32.05 - Widget Color
+        32.06 - Contact Info Widget
+
+    41 - Pages - Cart
+    42 - Pages - Checkout
+    43 - Pages - Shop
+
+    63 - Utilities - Color
+
+
+
+
+******************************/
+
+
+/*
+    Defult Primary Color:       #014c8c
+    Default Border Color:       #eeeeee
+    Default Text Color:         #444444
+    Default Heading Color:      #222222
+    Default Body Font:          'Roboto', sans-serif;
+
+*/
+
+
+
+// Fonts
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400,600,700,800');
+
+
+// Base 
+
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/typography';
+
+// Utilities
+@import 'utilities/helper';
+@import 'utilities/common';
+
+// Layout 
+
+@import 'layout/header';
+@import 'layout/footer';
+
+// Components
+@import 'components/animation';
+@import 'components/banner';
+@import 'components/blog';
+@import 'components/button';
+@import 'components/carousel';
+@import 'components/comment';
+@import 'components/form';
+@import 'components/mini-cart';
+@import 'components/modal';
+@import 'components/navigation';
+@import 'components/product';
+@import 'components/review';
+@import 'components/slider';
+@import 'components/social';
+@import 'components/table';
+@import 'components/tabs';
+@import 'components/widget';
+  
+ 
+// Pages 
+
+@import 'pages/cart'; 
+@import 'pages/checkout'; 
+@import 'pages/shop'; 
+
+
+// Color
+@import 'utilities/color'; 

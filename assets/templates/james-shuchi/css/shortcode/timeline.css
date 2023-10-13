@@ -1,0 +1,113 @@
+/* -----------------------------------
+Template:  Theme Name
+
+NOTE: This is timeline style file. All timeline related style included in this file.
+
+--------------------------------------*/
+.single-timeline{
+	position:relative;
+	overflow:hidden;
+}
+.timeline-img a img{
+	cursor:pointer;
+}
+.timeline-img a {
+  display: block;
+  position: relative;
+}
+.timeline-content {
+  bottom: 21px;
+  padding: 20px 20px 0;
+  position: absolute;
+  z-index: 1;
+}
+.timeline-content::before {
+  background: #000000 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  width: 100%;
+  z-index:-1;
+}
+.timeline-text {
+  display: inline-block;
+  padding-left: 80px;
+  margin-top: 20px;
+}
+.timeline-date > h3 {
+  margin-bottom: 0;
+  font-size:40px;
+  color:#fff;
+}
+.timeline-text a h4 {
+  line-height: 24px;
+}
+.timeline-date {
+  background: #ff6666 none repeat scroll 0 0;
+  border-radius: 4px;
+  color: #ffffff;
+  height: 70px;
+  position: absolute;
+  text-align: center;
+  width: 70px;
+  margin-top: 25px;
+}
+.timeline-meta span {
+  margin: 0 4px;
+}
+.timeline-img > a::before {
+  color: #ffffff;
+  content: "\f275";
+  font-family: Material-Design-Iconic-Font;
+  font-size: 50px;
+  font-weight: 700;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 42%;
+  transform: scale(3);
+  transition: all 0.4s ease 0s;
+  display:inline-block;
+}
+.single-timeline:hover .timeline-img > a:before {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 11;
+}
+.timeline-img::after {
+    background: #000000 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+	top:0;
+	 transition:all.4s;
+}
+.single-timeline:hover .timeline-img::after {
+    opacity: 0.3;
+}
+.dotted-style-2 .owl-carousel .owl-controls .owl-dots {
+  text-align: center;
+  margin-top: 30px;
+}
+.dotted-style-2 .owl-carousel .owl-controls .owl-dots .owl-dot {
+  background: #ffffff none repeat scroll 0 0;
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.8);
+  display: inline-block;
+  height: 10px;
+  margin: 0 9px;
+  width: 10px;
+}
+.dotted-style-2 .owl-carousel .owl-controls .owl-dots .owl-dot.active{
+	background:#ff6666;
+}
+.owl-carousel .owl-item img {
+  display: inline-block;
+}

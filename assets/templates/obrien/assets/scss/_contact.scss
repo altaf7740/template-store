@@ -1,0 +1,107 @@
+/*---
+   06. Contact Css 
+----------------------------------------*/
+
+.bg_image--04 {
+    background-image: url(../images/bg/bg-image-04.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.form-style-1 {
+    form{
+        input {
+            height: 55px;
+            font-weight: 300;
+            margin-top: 30px;
+            padding: 0 20px;
+            border: 1px solid #c1c1c1;
+            font-family: $heading-font;
+            font-size: 13px;
+            width: 100%;
+            color: #a2a2a2;
+            &:focus{
+                border: 1px solid $theme-color;
+            }
+
+            &[type="submit"] {
+                background-color: $theme-color;
+                border: medium none;
+                color: #ffffff;
+                font-size: 14px;
+                font-weight: 500;
+                height: 55px;
+                line-height: 55px;
+                padding: 0 29px;
+                text-transform: uppercase;
+                width: auto;
+                transition: 0.5s;
+                font-family: $heading-font;
+
+                &:hover {
+                    background-color: $theme-color;
+                }
+            }
+        }
+
+        textarea {
+            width: 100%;
+            border: 1px solid #c1c1c1;
+            min-height: 175px;
+            margin-top: 30px;
+            padding: 20px;
+            color: #a2a2a2;
+            resize: none;
+            font-family: $heading-font;
+            font-size: 13px;
+            &:focus{
+                border: 1px solid $theme-color;
+            }
+        }
+    }
+}
+
+.form-style-1 form input::-webkit-input-placeholder {
+    color: #a2a2a2;
+}
+
+.form-style-1 form input::-moz-placeholder {
+    color: #a2a2a2;
+}
+
+.form-style-1 form input:-ms-input-placeholder {
+    color: #a2a2a2;
+}
+
+.form-style-1 form input:-moz-placeholder {
+    color: #a2a2a2;
+}
+
+.form-style-1 form textarea::-webkit-input-placeholder {
+    color: #a2a2a2;
+}
+
+.form-style-1 form textarea::-moz-placeholder {
+    color: #a2a2a2;
+}
+
+.form-style-1 form textarea:-ms-input-placeholder {
+    color: #a2a2a2;
+}
+
+.form-style-1 form textarea:-moz-placeholder {
+    color: #a2a2a2;
+}
+
+.form-messege{
+    margin-top: 10px;
+    &.success {
+        color: green;
+    }
+    &.error {
+        color: red;
+    }
+}
+

@@ -1,0 +1,433 @@
+/*---------------------------------------
+    14. Sidebar CSS
+-----------------------------------------*/
+
+/*-- Sidebar --*/
+.sidebar {
+    margin-bottom: 30px;
+    background-color: #f0ffea;
+    padding: 30px;
+    &.sidebar-two {
+        padding: 10px 30px;
+        background-color: #f0ffea;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+/*-- Sidebar Title --*/
+.sidebar-title {
+    margin-bottom: 30px;
+    margin-top: -4px;
+}
+/*-- Sidebar Search --*/
+.sidebar-search {
+    & form {
+        display: flex;
+        border: 1px solid #cccccc;
+        & input {
+            flex: 1 0 calc(100% - 40px);
+            max-width: calc(100% - 40px);
+            height: 40px;
+            border: none;
+            background-color: transparent;
+            padding: 0 15px;
+            color: $body-color;
+        }
+        & button {
+            max-width: 40px;
+            flex: 1 0 40px;
+            height: 40px;
+            line-height: 40px;
+            border: none;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            & i {
+                font-size: 20px;
+            }
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+}
+/*-- Sidebar Author --*/
+.author-sidebar {
+    text-align: center;
+    & h3{
+        font-size: 18px;
+        line-height: 1;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    & span{
+        display: inline-block;
+        padding: 7px 35px;
+        border: 1px solid #cccccc;
+        margin: 0 5px;
+        border-radius: 50px;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 24px;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 18px;
+            transform: translateY(-50%);
+            width: 10px;
+            height: 10px;
+            background-color: #4efe00;
+            border-radius: 100%;
+        }
+    }
+}
+/*-- Sidebar Price --*/
+.price-sidebar{
+    & ul{
+        & li{
+            margin-bottom: 15px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            & input{
+                border: 1px solid #cccccc;
+                width: auto;
+                height: auto;
+            }
+            & .price-content{
+                margin-left: 8px;
+                font-size: 14px;
+                line-height: 1;
+                font-weight: 600;
+                font-family: $heading-font;
+            }
+            & .price{
+                float: right;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 1;
+                font-family: $heading-font;
+            }
+        }
+    }
+    & .help-list{
+        list-style: disc;
+        padding-left: 15px;
+        margin-top: 30px;
+        & li{
+           font-size: 12px;
+            line-height: 1;
+            font-family: $heading-font;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+    }
+}
+/*-- Sale Sidebar --*/
+.sale-sidebar{
+    & h4{
+        font-size: 14px;
+        line-height: 1;
+        font-weight: 500;
+        margin-bottom: 0;
+        & span{
+            float: right;
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+}
+/*Product Info Sidebar*/
+.product-info-sidebar{
+    & ul{
+        & > li{
+            overflow: hidden;
+            margin-bottom: 20px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            & > span{
+                float: left;
+                width: 50%;
+                font-size: 14px;
+                line-height: 1;
+                font-weight: 500;
+                color: $heading-color;
+                font-family: $heading-font;
+            }
+            & > .right-content{
+                font-weight: 600;
+                text-align: right;
+                & .all-browser{
+                    display: flex;
+                    flex-wrap: wrap;
+                    & > span{
+                        margin-left: 9px;
+                        margin-bottom: 15px;
+                        &:nth-child(n+4){
+                            margin-bottom: 0;
+                            //Responsive
+                            @media #{$desktop-device}{
+                                margin-bottom: 15px;
+                            }
+                        }
+                        & .b-name{
+                            margin-left: 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*-- Sidebar List --*/
+.sidebar-list {
+    & li {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #e5e6e7;
+        &:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: 0px solid transparent;
+        }
+        & a {
+            font-size: 14px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            & img {
+                width: 25px;
+                margin-right: 15px;
+            }
+            & i {
+                margin-right: 15px;
+                font-size: 24px;
+            }
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+}
+/*-- Sidebar Blog --*/
+.sidebar-blog {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e5e6e7;
+    &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: 0;
+    }
+    & .image {
+        max-width: 80px;
+        flex: 1 0 80px;
+        & img {
+            width: 100%;
+        }
+    }
+    & .content {
+        flex: 1 0 calc(100% - 80px);
+        padding-left: 15px;
+        & h5 {
+            font-size: 16px;
+            line-height: 1.5;
+            //Responsive
+            @media #{$desktop-device}{
+                font-size: 14px;
+            }
+            @media #{$large-mobile}{
+                font-size: 14px;
+            }
+            & a {}
+        }
+        & span {
+            font-size: 13px;
+            display: block;
+            line-height: 18px;
+        }
+    }
+}
+/*-- Sidebar Product --*/
+.sidebar-product {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e5e6e7;
+    &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: 0;
+    }
+    & .image {
+        max-width: 80px;
+        flex: 1 0 80px;
+        & img {
+            width: 100%;
+        }
+    }
+    & .content {
+        flex: 1 0 calc(100% - 80px);
+        padding-left: 15px;
+        & .title {
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 5px;
+            //Responsive
+            @media #{$large-mobile}{
+                font-size: 12px;
+            }
+            & a {}
+        }
+        & .price {
+            & span {
+                &.new {}
+                &.old {
+                    margin-left: 10px;
+                    color: $body-color;
+                    text-decoration: line-through;
+                }
+            }
+        }
+        & .ratting {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 5px;
+            & i {
+                font-size: 12px;
+                line-height: 18px;
+                margin-right: 5px;
+                color: #FFC828;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+/*-- Sidebar Tags --*/
+.tag-sidebar {
+    max-width: 255px;
+    //Responsive
+    @media #{$tablet-device}{
+        max-width: 100%;
+    }
+    & h3{
+        font-size: 14px;
+        line-height: 1;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    & a{
+        font-size: 14px;
+        color: $heading-color;
+        font-family: $heading-font;
+        font-weight: 500;
+        &:hover{
+            color: $theme-color;
+        }
+    }
+}
+
+/*-- Author Profile --*/
+.author-profile{
+    text-align: center;
+    & .author-image{
+        margin-bottom: 30px;
+        & img{
+            max-width: 100%;
+        }
+    }
+    & .author-info{
+        & h3{
+            font-size: 18px;
+            line-height: 1;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        & span{
+            display: inline-block;
+            padding: 7px 35px;
+            border: 1px solid #cccccc;
+            margin: 0 5px;
+            border-radius: 50px;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 24px;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 18px;
+                transform: translateY(-50%);
+                width: 10px;
+                height: 10px;
+                background-color: #4efe00;
+                border-radius: 100%;
+            }
+        }
+    }
+}
+/*-- Author Badge --*/
+.author-badge{
+    & ul{
+        & li{
+            display: inline-block;
+            margin-right: 25px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}
+/*-- Portfolio View --*/
+.author-portfolio-view, .author-message{
+    & h4{
+        font-size: 16px;
+        font-weight: 600;
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+/*-- Author Social --*/
+.author-social{
+    & ul{
+        & li{
+            display: inline-block;
+            margin-right: 20px;
+            &:last-child{
+                margin-right: 0;
+            }
+            & a{
+                font-size: 24px;
+                display: block;
+                margin-top: 5px;
+                &.facebook{
+                    color: $facebook;
+                }
+                &.twitter{
+                    color: $twitter;
+                }
+                &.google-plus{
+                    color: $google-plus;
+                }
+                &.linkedin{
+                    color: $linkedin;
+                }
+                &.pinterest{
+                    color: $pinterest;
+                }
+            }
+        }
+    }
+}

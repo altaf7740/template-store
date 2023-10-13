@@ -1,0 +1,138 @@
+/*--
+    03. Hero
+-----------------------------------------*/
+.hero-section {
+    position: relative;
+}
+
+/*-- Hero Slider --*/
+.hero-slider-one {
+    
+    /*-- Arrow --*/
+    & .slick-arrow {
+        display: none !important;
+    }
+    /*-- Dots --*/
+    & .slick-dots {
+        display: none !important;
+    }
+}
+
+/*-- Hero Content --*/
+.hero-content {
+    // All Element Selector
+    & > * {
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-name: fadeOutUp;
+    }
+    @media #{$large-mobile}{
+        margin-top: 0px;
+    }
+    
+    & h4 {
+        color: $theme-color;
+        font-family: $heading-font-2;
+        font-size: 40px;
+        margin-bottom: 20px;
+        @media #{$large-mobile}{
+            font-size: 18px;
+        }
+    }
+    & h1 {
+        font-size: 60px;
+        font-weight: 800;
+        margin-bottom: 10px;
+        color: #333;
+        font-family: $heading-font;
+        
+        // Responsive
+        @media #{$laptop-device}{
+            font-size: 50px;
+        }
+        @media #{$desktop-device}{
+            font-size: 54px;
+        }
+        @media #{$tablet-device}{
+            font-size: 45px;
+        }
+        @media #{$large-mobile}{
+            font-size: 26px;
+            line-height: 40px;
+            & br {
+                display: none;
+            }
+        }
+    }
+    & p {
+        max-width: 530px;
+        color: #333;
+        margin: 15px 0;
+        font-size: 16px;
+        letter-spacing: 1px;
+        @media #{$small-mobile}{
+            font-size: 14px;
+            letter-spacing: 0px;
+        }
+    }
+    
+    & a {
+        background-color: $theme-color;
+        color: $white;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 300;
+        margin-top: 20px;
+        padding: 12px 45px;
+        letter-spacing: 1px;
+        
+        &:hover {
+            background-color: $heading-color;
+            border-color:$heading-color;
+            color: $white;
+        }
+        
+        // Responsive
+        @media #{$large-mobile}{
+        margin-top: 10px;
+        }
+        @media #{$small-mobile}{
+        }
+    }
+}
+
+
+/*-- Slide Content In Animation --*/
+.slick-active {
+    /*-- Hero Content --*/
+    & .hero-content {
+
+        // All Element Selector
+        & > * {
+            animation-name: zoomInUp;
+            
+            // Child Selector
+            &:nth-child(1) {
+                animation-delay: 0.5s;
+            }
+            &:nth-child(2) {
+                animation-delay: 1s;
+            }
+            &:nth-child(3) {
+                animation-delay: 1.5s;
+            }
+            &:nth-child(4) {
+                animation-delay: 2s;
+            }
+            &:nth-child(5) {
+                animation-delay: 2.5s;
+            }
+            &:nth-child(6) {
+                animation-delay: 3s;
+            }
+            
+        }
+    }
+    
+}

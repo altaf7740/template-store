@@ -1,0 +1,323 @@
+/*----------------------------------------*/
+/*  14. Blog Details
+/*----------------------------------------*/
+.ht-blog-three-details {
+    
+    /*-- Image --*/
+    & .image {
+        display: block;
+        overflow: hidden;
+        margin-bottom: 30px;
+        & img {
+            width: 100%;
+            transition: all 0.4s ease 0s;
+        }
+    }
+    
+    /*-- Content --*/
+    & .content {
+        
+        /*-- Meta --*/
+        & .meta {
+            & .meta-item {
+                font-size: 12px;
+                font-family: $montserrat;
+                color: $body-color-light;
+                line-height: 24px;
+                padding-right: 12px;
+                margin-right: 11px;
+                position: relative;
+                &::before {
+                    position: absolute;
+                    height: 9px;
+                    right: 0;
+                    content: "";
+                    background-color: $body-color-light;
+                    width: 1px;
+                    top: 50%;
+                    margin-top: -5px;
+                }
+                &:last-child {
+                    margin-right: 0;
+                    padding-right: 0;
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+            & a {
+                &:hover {
+                    color: $blue;
+                }
+            }
+        }
+        
+        /*-- Title --*/
+        & .title {
+            font-family: $poppins;
+            font-size: 24px;
+            margin-bottom: 0;
+            border-bottom: 1px solid #e3e3e3;
+            color: $heading-color-light;
+            padding: 5px 0 15px;
+            @media #{$small-mobile}{
+                font-size: 18px;
+            }
+        }
+        
+        /*-- Description --*/
+        & .desc {
+            margin-top: 13px;
+            & p {
+                font-family: $poppins;
+                font-weight: 300;
+                color: $body-color;
+                font-size: 16px;
+                line-height: 28px;
+            }
+            & img {
+                max-width: 100%;
+            }
+        }
+        
+        /*-- Button --*/
+        & .btn {
+            margin-top: 22px;
+        }
+    }
+}
+
+
+/*-- Author --*/
+.ht-blog-author-three {
+    background-color: $cyan-blue;
+    padding: 40px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    & .image {
+        width: 95px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 30px;
+        float: left;
+        @media #{$large-mobile}{
+            float: none;
+            margin-right: 0;
+            margin-bottom: 20px;
+
+        }
+        & img {
+            width: 100%;
+        }
+    }
+    & .content {
+        & h5 {
+            font-weight: 700;
+            color: $white;
+            font-family: $poppins;
+            text-transform: capitalize;
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 1px;
+            & a {
+                &:hover {
+                    color: $blue;
+                }
+            }
+        }
+        & span {
+            display: block;
+            font-size: 14px;
+            color: $white;
+            margin-bottom: 5px;
+        }
+        & p {
+            margin-bottom: 0;
+            line-height: 26px;
+            font-family: $poppins;
+            font-weight: 300;
+            color: #dedede;
+        }
+    }
+}
+
+/*-- Comment List Wrap --*/
+.ht-comment-list-one-wrap {
+    margin-bottom: 30px;
+    overflow: hidden;
+    & h5 {
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: $heading-color-light;
+        line-height: 1;
+        margin-bottom: 50px;
+    }
+}
+/*-- Comment List --*/
+.ht-comment-list-three {
+    & li {
+        & ul {
+            margin-left: 135px;
+            @media #{$large-mobile}{
+                margin-left: 0;;
+
+            }
+        }
+    }
+}
+
+/*-- Comment --*/
+.ht-blog-comment-three {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eeeeee;
+    & .image {
+        width: 95px;
+        border-radius: 50%;
+        border: 1px solid #e0e0e0;
+        overflow: hidden;
+        margin-right: 30px;
+        float: left;
+        @media #{$large-mobile}{
+            float: none;
+            margin-right: 0;
+            margin-bottom: 20px;
+
+        }
+        & img {
+            width: 100%;
+        }
+    }
+    & .content {
+        & h4 {
+            font-weight: 500;
+            color: $heading-color-light;
+            text-transform: capitalize;
+            font-size: 18px;
+            line-height: 1;
+            margin-bottom: 0;
+        }
+        & .time {
+            margin-bottom: 0;
+            font-family: $montserrat;
+            font-weight: 300;
+            color: $body-color-light;
+            font-size: 12px;
+            line-height: 14px;
+            display: block;
+            float: left;
+            margin-top: 7px;
+        }
+        & .reply {
+            float: right;
+            margin-bottom: 0;
+            background-color: $cyan-blue;
+            font-family: $poppins;
+            color: $white;
+            font-size: 12px;
+            text-transform: capitalize;
+            line-height: 14px;
+            padding: 6px 19px;
+            &:hover {
+                background-color: $blue;
+            }
+        }
+        & p {
+            margin-bottom: 0;
+            font-family: $poppins;
+            font-weight: 300;
+            color: $body-color-light;
+            margin-top: 12px;
+        }
+    }
+}
+
+/*-- Comment Form Wrap --*/
+.ht-comment-form-one-wrap {
+    & h5 {
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: $heading-color-light;
+        line-height: 1;
+        margin-bottom: 50px;
+    }
+}
+
+/*-- Comment Form --*/
+.ht-comment-form-one {
+    & input {
+        border-width: 0 0 1px;
+        border-style: solid;
+        border-color: #eaeaea;
+        height: 36px;
+        padding: 0;
+        width: 100%;
+        color: $body-color-light;
+        font-size: 13px;
+        font-weight: 300;
+        font-family: $montserrat;
+        margin-bottom: 40px;
+        &:focus {
+            border-color: $blue;
+            & + label {
+                margin-top: -15px;
+                font-size: 11px;
+            }
+        }
+        &[type="submit"] {
+            height: 41px;
+            border: 2px solid $blue;
+            color: $blue;
+            line-height: 30px;
+            padding: 3px 50px;
+            border-radius: 50px;
+            font-family: $montserrat;
+            font-weight: 600;
+            font-size: 13px;
+            transition: all 0.3s ease 0s;
+            width: auto;
+            margin-bottom: 0;
+            text-transform: uppercase;
+            background-color: transparent;
+            &:hover {
+                background-color: $blue;
+                color: $white;
+                box-shadow: 0 10px 35px -7px rgba($blue, 0.8);
+                transform: translateY(-3px);
+            }
+        }
+    }
+    & textarea {
+        border-width: 0 0 1px;
+        border-style: solid;
+        border-color: #eaeaea;
+        height: 80px;
+        resize: none;
+        padding: 0;
+        width: 100%;
+        color: $body-color-light;
+        font-size: 13px;
+        font-weight: 300;
+        font-family: $montserrat;
+        margin-bottom: 40px;
+        &:focus {
+            border-color: $blue;
+            & + label {
+                margin-top: -20px;
+                font-size: 11px;
+            }
+        }
+    }
+    & label {
+        position: absolute;
+        color: $body-color-light;
+        font-size: 13px;
+        font-weight: 300;
+        font-family: $montserrat;
+        left: 15px;
+        transition: all 0.2s ease 0s;
+        top: 0;
+    }
+}

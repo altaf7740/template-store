@@ -1,0 +1,463 @@
+@media (min-width: 1200px) and (max-width: 1400px) {
+.nivo-controlNav {
+  bottom: 20px;
+}
+.nivo-directionNav {
+  bottom: 25px;
+}
+
+
+}
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1169px) {
+.header-full-width .container {
+  width: 970px;
+}
+.header-absolute {
+  background-color: #222;
+  position: static;
+}
+.main-menu nav > ul > li + li {
+  margin-left: 25px;
+}
+.menu-style-6 nav > ul > li + li, .menu-style-7 nav > ul > li + li {
+  margin-left: 5px;
+}
+/* Hero Slider */
+.hero-static {
+  padding: 150px 0 130px;
+}
+.nivo-caption {
+  padding-top: 0;
+}
+.hero-slide-content {
+  margin-top: 50px;
+}
+.hero-slide-content h3 {
+  font-size: 20px;
+}
+.hero-slide-content h1 {
+  font-size: 44px;
+}
+.nivo-controlNav {
+  bottom: 0;
+  right: 50px;
+}
+.nivo-directionNav {
+  bottom: 5px;
+  left: 40px;
+}
+/* Page Banner */
+.page-banner-area {
+  padding: 120px 0;
+}
+/* Feature */
+.single-feature .text h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.single-feature .text p {
+  height: 46px;
+  overflow: hidden;
+}
+.single-feature:nth-child(1) {
+  padding: 8px 0 9px;
+}
+.single-feature:nth-child(2) {
+  padding: 26px 0;
+}
+.single-feature:nth-child(3) {
+  padding: 9px 0;
+}
+/* Course */
+.course-item {
+  padding: 25px 15px 30px;
+}
+.course-item i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.course-item h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+.course-item p {
+  height: 70px;
+  overflow: hidden;
+}
+/* Instructor */
+.instructor-tab-list {
+  margin-top: -65px;
+}
+.instructor-tab-list li {
+  width: 85px;
+}
+/* Footer */
+.widget-blog .content p {
+  height: 46px;
+  overflow: hidden;
+}
+
+
+
+
+}
+
+ 
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+.header-absolute {
+  background-color: #222;
+  position: static;
+}
+.header-full-width {
+  padding: 0;
+}
+.container, .header-full-width .container {
+  width: 750px;
+}
+.header-logo {
+  position: absolute;
+}
+.main-menu nav ul li + li {
+  margin-left: 15px;
+}
+.menu-style-8 nav {
+  display: none !important;
+}
+.navbar-header.text-center {
+  text-align: left;
+}
+/* Page Banner */
+.page-banner-area {
+  padding: 120px 0;
+}
+/* Hero Slider */
+.hero-static {
+  padding: 150px 0 130px;
+}
+.nivo-caption {
+  padding-top: 0;
+}
+.hero-slide-content {
+  margin-top: 0;
+}
+.hero-slide-content h3 {
+  font-size: 18px;
+}
+.hero-slide-content h1 {
+  font-size: 36px;
+}
+.hero-slide-content p {
+  padding: 0;
+}
+.hero-slide-content .button-group {
+  margin-top: 20px;
+}
+.nivo-controlNav {
+  bottom: 0;
+  right: 50px;
+}
+.nivo-directionNav {
+  bottom: 5px;
+  left: 40px;
+}
+
+.find-course-form {
+  display: none;
+}
+/* Feature */
+.single-feature {
+  margin: 0 auto !important;
+  max-width: 500px;
+  padding: 30px !important;
+}
+.single-feature::before {
+  display: none;
+}
+.feature-image {
+  margin: 30px 0;
+}
+/* Course */
+.course-item {
+  padding: 70px 60px;
+}
+.ts-arrows {
+  display: none;
+}
+/* Instructor */
+.instructor-image {
+  margin-top: 30px;
+}
+.instructor-tab-list {
+  float: right;
+  margin-top: -284px;
+  width: 290px;
+}
+.instructor-tab-list li {
+  margin: 15px 15px 0;
+}
+/* Footer */
+.footer-widget:nth-child(2n+1) {
+  clear: both;
+}
+/* Blog */
+.sidebar {
+  margin-top: 50px;
+}
+
+
+}
+
+ 
+/* small mobile :320px. */
+@media (max-width: 767px) {
+.container, .header-full-width .container {
+  width: 300px;
+}
+.wrapper {
+  position: relative;
+}
+.panel-body {
+  padding: 20px 30px;
+}
+/* Button */
+.btn {
+  font-size: 12px;
+  height: 30px;
+  line-height: 28px;
+  padding: 0 15px;
+}
+.section-title h3 {
+  font-size: 18px;
+}
+/* Header */
+.header-absolute {
+  background-color: #222;
+  position: static;
+}
+.header-full-width {
+  padding: 0;
+}
+.header-logo {
+  position: absolute;
+}
+.main-menu nav ul li {
+  margin-left: 0 !important;
+  padding: 10px 0;
+  width: 100%;
+}
+.main-menu nav ul li a::before, .main-menu nav ul li a::after {
+  display: none;
+}
+.navbar-collapse nav {
+  padding-bottom: 30px;
+}
+.menu-style-8 nav {
+  display: none !important;
+}
+.navbar-header.text-center {
+  text-align: left;
+}
+/* Page Banner */
+.page-banner-area {
+  padding: 80px 0;
+}
+.page-banner {
+  text-align: center;;
+}
+.page-banner h1 {
+  font-size: 24px;
+}
+.page-banner.text-right h1, .page-banner.text-left h1, .page-banner.text-right ul, .page-banner.text-left ul {
+  float: none;
+}
+/* Hero Slider */
+.hero-static {
+  padding: 50px 0;
+}
+.slide-table {
+  display: block;
+}
+.table-cell {
+  display: block;
+}
+.hero-slide-content {
+  margin-top: 0;
+}
+.hero-slide-content h3 {
+  font-size: 14px;
+}
+.hero-slide-content h1 {
+  font-size: 18px;
+}
+.hero-slide-content p {
+  display: none;
+}
+.hero-slide-content .button-group {
+  margin-top: 0;
+}
+.nivo-directionNav, .nivo-controlNav, .find-course-form {
+  display: none;
+}
+/* Feature */
+.single-feature {
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+.single-feature + .single-feature {
+  margin-top: 30px !important;
+}
+.single-feature:hover {
+  background-color: transparent;
+}
+.single-feature::before {
+  display: none;
+}
+.feature-image {
+  margin: 30px 0;
+}
+/* Course */
+.course-item {
+  padding: 35px 25px;
+}
+.course-item:hover {
+  transform: rotate(0deg);
+}
+/* Video */
+.video-area {
+  padding: 100px 0;
+}
+.video-content h3 {
+  font-size: 18px;
+}
+/* Gallery */
+.gallery-filter {
+  margin-bottom: 34px;
+}
+.gallery-filter button {
+  margin-bottom: 10px;
+}
+/* Testmonial */
+.ts-arrows {
+  display: none;
+}
+.ti-slider::before {
+  left: 0;
+  margin-left: 0;
+}
+/* Instructor */
+.instructor-image {
+  margin-top: 30px;
+}
+.instructor-tab-list {
+  margin-top: 0;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.instructor-tab-list li {
+  margin-right: 0;
+  margin-top: 14px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 50%;
+}
+/* Contact */
+#contact-map {
+  height: 400px;
+}
+.contact-info {
+  margin-bottom: 30px;
+}
+.form .input-2 .input, .form .input-3 .input, .form .input-4 .input {
+  width: 100%;
+}
+/* Call To Action */
+.call-to-action h3 {
+  font-size: 20px;
+  line-height: 24px;
+}
+.call-to-action a {
+  float: left;
+  margin-top: 15px;
+}
+/* Blog Details */
+.blog-meta p {
+  display: block;
+  float: none;
+}
+.blog-description blockquote {
+  margin-left: 0;
+}
+.blog-share {
+  float: left;
+  margin-top: 10px;
+}
+.comments-list li ul {
+  margin-left: 0;
+}
+.sidebar {
+  margin-top: 50px;
+}
+/* Footer */
+.copyright, .footer-3-social {
+  text-align: center;
+}
+
+
+ 
+}
+ 
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container, .header-full-width .container {
+  width:450px
+}
+.header-full-width {
+  padding: 0;
+}
+/* Button */
+.btn {
+  font-size: 13px;
+  height: 32px;
+  line-height: 30px;
+  padding: 0 18px;
+}
+/* Hero Slider */
+.hero-static {
+  padding: 80px 0;
+}
+.nivo-caption {
+  padding-top: 35px;
+}
+.hero-slide-content h3 {
+  font-size: 20px;
+}
+.hero-slide-content h1 {
+  font-size: 28px;
+}
+.hero-slide-content .button-group {
+  margin-top: 20px;
+}
+/* Funfact */
+.single-facts {
+  width: 50%;
+}
+/* Course */
+.course-item {
+  margin: 0 auto;
+  max-width: 300px;
+  padding: 45px 35px;
+}
+/* Instructor */
+.instructor-tab-list li {
+  width: 25%;
+}
+
+
+
+ 
+}
+ 

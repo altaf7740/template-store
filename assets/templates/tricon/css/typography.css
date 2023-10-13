@@ -1,0 +1,321 @@
+/* 
+Table Of Contents
+=========================
+- Default Typography
+- Custom Typography
+=========================
+*/
+
+@font-face {
+    font-family: Montserrat-Light;
+    src: url("../fonts/Montserrat-Light.woff");
+}
+
+/* 
+--------------------------
+- Default Typography
+--------------------------
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #303030;
+    letter-spacing: 0px;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    font-weight: inherit;
+    font-family: 'Raleway', sans-serif;
+}
+h1 {
+    font-size: 70px;
+    line-height: 70px;
+    letter-spacing: 0px;
+}
+h2 {
+    font-size: 28px;
+    line-height: 40px;
+}
+h3 {
+    font-size: 23px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+h4 {
+    font-size: 16px;
+    line-height: 27px;
+}
+h5 {
+    font-size: 14px;
+    line-height: 24px;
+}
+h6 {
+    font-size: 12px;
+    line-height: 24px;
+}
+p {
+    margin: 0 0 20px;
+    font-family: 'Montserrat-Light', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #606060;
+    letter-spacing: 0px;
+    line-height: 24px;
+}
+p img {
+    margin: 0;
+}
+span {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0px;
+}
+
+/* em and strong */
+
+em {
+    font: 15px/30px;
+}
+strong,
+b {
+    font: 15px/30px;
+}
+small {
+    font-family: 'Montserrat-Light', sans-serif;
+    font-weight: 300;
+    color: #606060;
+    font-size: 12px;
+    line-height: inherit;
+    letter-spacing: 0px;
+}
+
+/*  blockquotes */
+
+blockquote {
+    width: 100%;
+    height: auto;
+    background-color: #fafafa;
+    padding: 30px 50px 40px;
+    position: relative;
+    margin-bottom: 25px;
+    border: 0px;
+}
+blockquote p:after {
+    font-family: FontAwesome;
+    content: "\f10e";
+    color: #dddddd;
+    font-size: 22px;
+    line-height: 24px;
+    margin: 0;
+    position: relative;
+    ;
+    top: 15px;
+    right: -40px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+blockquote p {
+    font-family: 'Montserrat-Light', sans-serif!important;
+    font-size: 14px!important;
+    font-weight: 300!important;
+    font-style: italic;
+    line-height: 29px!important;
+    letter-spacing: 0;
+    color: #606060!important;
+    padding: 0;
+    position: relative;
+}
+blockquote cite {
+    display: block;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 18px;
+}
+blockquote cite:before {
+    content: "\2014 \0020";
+}
+blockquote cite a,
+blockquote cite a:visited {
+    color: #0b0b0b;
+    border: none
+}
+
+/* abbreviations */
+
+abbr {
+    color: #606060;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-variant: small-caps;
+    text-transform: lowercase;
+    letter-spacing: .6px;
+}
+abbr:hover {
+    cursor: help;
+}
+a,
+a:visited {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    color: #07aca7;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    outline: 0;
+}
+a:hover,
+a:active,
+a:focus {
+    color: #07aca7!important;
+    text-decoration: none;
+    outline: 0;
+}
+p a,
+p a:visited {
+    line-height: inherit;
+    outline: 0;
+}
+
+/* list */
+
+ul,
+ol {
+    margin-bottom: 24px;
+    margin-top: 12px;
+}
+ul {
+    list-style: none outside;
+}
+ol {
+    list-style: decimal;
+}
+ol,
+ul.square,
+ul.circle,
+ul.disc {
+    margin-left: 30px;
+}
+ul.square {
+    list-style: square outside;
+}
+ul.circle {
+    list-style: circle outside;
+}
+ul.disc {
+    list-style: disc outside;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+    margin: 6px 0 6px 30px;
+}
+ul ul li,
+ul ol li,
+ol ol li,
+ol ul li {
+    margin-bottom: 6px;
+}
+li {
+    line-height: 18px;
+    margin-bottom: 12px;
+    letter-spacing: 0px;
+}
+ul.large li {}
+li p {}
+
+/* definition list */
+
+dl {
+    margin: 12px 0;
+}
+dt {
+    margin: 0;
+    color: #11ABB0;
+}
+dd {
+    margin: 0 0 0 20px;
+}
+
+/* 
+--------------------------
+- Custom Typography
+--------------------------
+*/
+
+.text-bold {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #606060;
+}
+.section-title-area-1 {
+    width: 100%;
+    height: auto;
+    margin: 55px 0px 25px;
+}
+.section-title-area-2 {
+    width: 100%;
+    height: auto;
+    margin: 17px 0px 50px;
+}
+.section-title-area-3 {
+    width: 335px;
+    height: 100%;
+    text-align: center;
+    -webkit-transform: translate(-105px, 65%) rotate(-90deg);
+    -moz-transform: translate(-105px, 65%) rotate(-90deg);
+    -o-transform: translate(-105px, 65%) rotate(-90deg);
+    transform: translate(-105px, 65%) rotate(-90deg);
+}
+.section-title-area-3 p {
+    width: 330px;
+    height: auto;
+    margin: auto;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #606060;
+}
+.section-title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0;
+    color: #303030;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.section-title-area-4 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 57px;
+}
+.section-title-area-4 p {
+    width: 700px;
+    height: auto;
+    margin: auto;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #606060;
+}

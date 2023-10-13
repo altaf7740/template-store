@@ -1,0 +1,236 @@
+/*---------------------------------------
+    + Hero
+-----------------------------------------*/
+
+.ht-hero-section-two {
+    background-repeat: no-repeat;
+    background-position: right top;
+    position: relative;
+    background-size: contain;
+    &::before {
+        position: absolute;
+        left: -17px;
+        top: 65px;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background-color: $red;
+        content: "";
+        display: block;
+    }
+    
+    &.overlay {
+        position: relative;
+        z-index: 1;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        &::before {
+            background-color: $dark-blue;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            content: "";
+            border-radius: 0px;
+            opacity: 0.8;
+        }
+    }
+}
+
+/*-- Hero Content Two --*/
+.ht-hero-content-two {
+    padding: 310px 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    @media #{$tablet-device}{
+        padding: 200px 0;
+    }
+    @media #{$large-mobile}{
+        padding: 150px 0;
+        background-size: contain;
+    }
+    & .ht-hero-title {
+        position: relative;
+        z-index: 1;
+        &::before {
+            position: absolute;
+            width: 290px;
+            height: 290px;
+            content: "";
+            background-color: $red;
+            left: -65px;
+            top: -30px;
+            border-radius: 50%;
+            @media #{$large-mobile}{
+                width: 200px;
+                height: 200px;
+            }
+            @media #{$small-mobile}{
+                width: 150px;
+                height: 150px;
+            }
+        }
+        & h1 {
+            font-size: 64px;
+            font-weight: 800;
+            color: $dark-grey;
+            text-transform: capitalize;
+            line-height: 70px;
+            margin: 0;
+            z-index: 1;
+            position: relative;
+            @media #{$desktop-device}{
+                font-size: 50px;
+                line-height: 60px;
+            }
+            @media #{$large-mobile}{
+                font-size: 36px;
+                line-height: 44px;
+            }
+            @media #{$small-mobile}{
+                font-size: 30px;
+                line-height: 36px;
+            }
+            & span {
+                color: $red;
+            }
+        }
+    }
+    & .ht-hero-desc {
+        padding-left: 55px;
+        z-index: 1;
+        @media #{$tablet-device}{
+            padding-left: 15px;
+            margin-top: 20px;
+        }
+        @media #{$large-mobile}{
+            padding-left: 15px;
+            margin-top: 10px;
+        }
+        & p {
+            line-height: $poppins;
+            font-size: 16px;
+            line-height: 30px;
+            margin: 0;
+            @media #{$desktop-device}{
+                font-size: 14px;
+                line-height: 24px;
+            }
+            @media #{$tablet-device}{
+                color: $dark-grey;
+            }
+            @media #{$large-mobile}{
+                color: $dark-grey;
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+/*-- Hero Content Three --*/
+.ht-hero-content-three {
+    padding: 240px 15px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    @media #{$tablet-device}{
+        padding: 130px 15px;
+    }
+    @media #{$large-mobile}{
+        padding: 80px 15px;
+        background-size: contain;
+    }
+    & .tilter  {
+        display: inline-block;
+        & .tilter__figure {
+            padding: 70px 0;
+        }
+    }
+    & img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -212px;
+        margin-top: -212px;
+        z-index: -1;
+        animation: spin 15s linear infinite;
+        @media #{$large-mobile}{
+            max-width: 350px;
+            margin-left: -175px;
+            margin-top: -175px;
+        }
+        @media #{$small-mobile}{
+            max-width: 300px;
+            margin-left: -150px;
+            margin-top: -150px;
+        }
+    }
+    & h1 {
+        font-size: 76px;
+        font-weight: 900;
+        color: $white;
+        text-transform: capitalize;
+        line-height: 86px;
+        margin: 0;
+        z-index: 1;
+        position: relative;
+        @media #{$tablet-device}{
+            font-size: 66px;
+            line-height: 72px;
+        }
+        @media #{$large-mobile}{
+            font-size: 40px;
+            line-height: 50px;
+        }
+        @media #{$small-mobile}{
+            font-size: 24px;
+            line-height: 36px;
+        }
+        & span {
+            color: $red;
+        }
+    }
+    
+    & p {
+        line-height: $poppins;
+        font-size: 16px;
+        line-height: 30px;
+        color: $white;
+        margin: 33px auto 0;
+        max-width: 770px;
+        @media #{$large-mobile}{
+            font-size: 14px;
+            line-height: 24px;
+            margin-top: 20px;
+        }
+    }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*-- Tilt Effect Css --*/
+.tilter {
+	position: relative;
+	perspective: 500px;
+}
+.tilter__figure > * {
+	transform: translateZ(0px);
+}
+.tilter .tilter__figure,
+.tilter .tilter__deco--overlay,
+.tilter .tilter__deco--lines,
+.tilter .tilter__deco--shine div,
+.tilter .tilter__caption {
+	transition: transform 0.2s ease-out;
+}

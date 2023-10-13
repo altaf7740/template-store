@@ -1,0 +1,40 @@
+/* -----------------------------------
+Template:  Expu
+
+NOTE: This is Service style file. All Header related style included in this file.
+
+--------------------------------------*/
+.service-icon{margin-bottom: 15px}
+.service-content{padding: 0 25px}
+.service-content h3{
+    font-family: 'Ubuntu', sans-serif;
+    color: #666666;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.service-content p{
+    font-family: 'Poppins', sans-serif;
+    color: #888888;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.best-services-area{
+    background: #365A73;
+    color: #fff;
+}
+.best-services-area.services-page{background: transparent}
+.best-services-area.services-page .section-title h2{color: #595959}
+.best-services-area.services-page .service-content h3 a{color: #4FC2C7}
+.best-services-area.services-page .service-content h3:hover a{color: #595959}
+.best-services-area.services-page .service-content p{color: #595959}
+.best-services-area .section-title h2, .best-services-area h3, .best-services-area p{
+    color: #fff;
+}
+.service-content a h3:hover{
+    color: #4FC2C7;
+}

@@ -1,0 +1,101 @@
+﻿/*-----------------------------------------------------------------------------------
+
+  Template Name: Bagani Gardening and Landscaping Bootstrap4 Template..
+  Template URI: #
+  Description: Bagani is a unique website template designed in HTML with a simple & beautiful look. There is an excellent solution for creating clean, wonderful and trending material design corporate, corporate any other purposes websites.
+  
+-----------------------------------------------------------------------------------*/
+
+.slider__bg--1 {
+  background: rgba(0, 0, 0, 0) url("../../images/slider/bg/1.jpeg") no-repeat scroll 0 0 / cover ;
+}
+.slider__bg--2 {
+  background: rgba(0, 0, 0, 0) url("../../images/slider/bg/2.jpeg") no-repeat scroll 0 0 / cover ;
+}
+.slider__bg--3 {
+  background: rgba(0, 0, 0, 0) url("../../images/slider/bg/3.jpg") no-repeat scroll 0 0 / cover ;
+}
+.slider__fixed--height{
+  min-height: 80vh;
+}
+.slide {
+    align-items: center;
+    display: flex;
+}
+.slider__inner {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+.slider__inner h1 {
+    color: #fff;
+    font-family: Open Sans;
+    font-size: 64px;
+    font-weight: 700;
+    margin-top: 9px;
+    text-transform: capitalize;
+}
+.slider__inner > p {
+  color: #fff;
+  font-size: 16px;
+  margin-top: 20px;
+  max-width: 600px;
+}
+.slider__inner h4 {
+  color: #fff;
+  font-family: open sans;
+  font-size: 36px;
+  font-weight: 600;
+}
+.slider__btn {
+    margin-top: 38px;
+}
+.slider__btn a.btn {
+    border-radius: 23px;
+    font-size: 18px;
+    height: 45px;
+    line-height: 42px;
+    padding: 0 34px;
+}
+.slider__btn a.btn:hover {
+    border: 1px solid #fff;
+    color: #fff;
+}
+.slide__align--left .slider__inner {
+  margin-top: 60px;
+  text-align: left;
+}
+/*----------------------
+  Animation
+-------------------------*/
+
+.slider__activation__wrap.owl-carousel .owl-item img {
+  display: inline-block;
+  width: auto;
+}
+
+/*---------------------
+  cd-headline
+------------------------*/
+
+.cd-headline.loading-bar .cd-words-wrapper::after {
+  background: #49a010 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 3px;
+  left: 0;
+  position: absolute;
+  transition: width 0.3s ease -0.1s;
+  width: 0;
+  z-index: 2;
+}
+.cd-headline.loading-bar span {
+  display: inline-block;
+  padding: 0;
+}
+.theme-color span.cd-words-wrapper b{
+ color: #49a010;
+}
+.cd-headline.loading-bar .cd-words-wrapper::after {
+  background: #49a010 none repeat scroll 0 0;
+}

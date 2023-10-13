@@ -1,0 +1,203 @@
+/*-----------------------------------------------------------------------------------
+
+  Template Name: T-Srt HTML Template.
+  Template URI: #
+  Description: T-Srt is a unique website template designed in HTML with a simple & beautiful look. There is an excellent solution for creating clean, wonderful and trending material design corporate, corporate any other purposes websites.
+  Author: HasTech
+  Author URI: https://themeforest.net/user/hastech/portfolio
+  Version: 1.0
+-----------------------------------------------------------------------------------*/
+/*
+
+    font-family: 'Poppins', sans-serif;
+
+    font-family: 'Montserrat', sans-serif;
+
+*/
+
+.slider-area {
+  background: -webkit- rgba(0, 0, 0, 0) linear-gradient(122deg, #95afe9 0%, #95e9cf 100%) repeat scroll 0 0;
+  background: -o- rgba(0, 0, 0, 0) linear-gradient(122deg, #95afe9 0%, #95e9cf 100%) repeat scroll 0 0;
+  background: -ms- rgba(0, 0, 0, 0) linear-gradient(122deg, #95afe9 0%, #95e9cf 100%) repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0) linear-gradient(122deg, #95afe9 0%, #95e9cf 100%) repeat scroll 0 0;
+
+}
+
+
+
+
+.slider--fullscreen.slider-area {
+    height: 100vh;
+}
+.slider--fullscreen.slider-area .container {
+    height: 100%;
+}
+.slider--fullscreen.slider-area .container .row {
+    align-items: center;
+    display: flex;
+}
+.slider--fullscreen.slider-area .container .row {
+    align-items: center;
+    bottom: 0;
+    height: calc(100% - -130px);
+}
+.slider-area > img {
+  width: 100%;
+}
+.slider-inner h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 11px;
+  text-transform: capitalize;
+  color: #fff;
+}
+.slider-inner h1 {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 28px;
+    text-transform: capitalize;
+}
+.slider-inner p {
+  color: #fff;
+  margin-bottom: 22px;
+  padding-right: 23%;
+}
+
+
+/**! 8. Background variation **/
+.full-screen .single-slide{
+	height: 100vh;
+	display: block;
+}
+
+
+
+/*Animation */
+.home-1 .slider-feature-img img {
+  opacity: 0;
+  transition: all 2s ease-in-out 0.5s;
+  visibility: hidden;
+  right: -50px;
+  position: relative;
+}
+.home-1 .single-slide.slick-active .slider-feature-img img {
+  opacity: 1;
+  visibility: visible;
+  right: 0;
+}
+
+.home-1 .slider-content-inner h3,
+.home-1 .slider-content-inner .slider-buttons,
+.home-1 .slider-content-inner p,
+.home-1 .slider-content-inner h1 {
+  opacity: 0;
+  transform: translateX(20%);
+}
+.home-1 .single-slide.slick-active .slider-content-inner h3,
+.home-1 .single-slide.slick-active .slider-buttons,
+.home-1 .single-slide.slick-active .slider-content-inner p,
+.home-1 .single-slide.slick-active .slider-content-inner h1 {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.home-1 .slider-content-inner h3 {
+  transition: all 1s ease-in-out 1s;
+}
+.home-1 .slider-content-inner h1 {
+  transition: all 1s ease-in-out 1.2s;
+}
+.home-1 .slider-content-inner p {
+  transition: all 1s ease-in-out 1.4s;
+}
+.home-1 .slider-content-inner .slider-buttons {
+  transition: all 1s ease-in-out 2s;
+}
+
+
+
+
+
+
+.slider-nav-style-1 .slick-dots li button::before {
+  display: none;
+}
+.slider-nav-style-1 .slick-dots li button {
+  background: #fff none repeat scroll 0 0;
+  border: 0 none;
+  border-radius: 2px;
+  color: transparent;
+  cursor: pointer;
+  display: block;
+  font-size: 0;
+  height: 8px;
+  line-height: 0;
+  outline: medium none;
+  padding: 0;
+  width: 35px;
+  transition: 0.3s;
+}
+.slider-nav-style-1 .slick-dots li.slick-active button,
+.slider-nav-style-1 .slick-dots li button:hover.slider-nav-style-1  {
+  background: #4c8bf5 none repeat scroll 0 0;
+}
+.slider-nav-style-1 .slick-dots li {
+  cursor: pointer;
+  display: inline-block;
+  height: 8px;
+  margin: 0 7px;
+  padding: 0;
+  position: relative;
+  width: 35px;
+}
+.slider-nav-style-1 .slick-dots li:first-child {
+  margin-left: 0 !important;
+}
+.slider-nav-style-1 .slick-dots li:last-child {
+  margin-right: 0 !important;
+}
+.slider-nav-style-1 .slick-dots {
+  bottom: 80px;
+  display: block;
+  left: 0;
+  list-style: outside none none;
+  margin: auto;
+  padding: 0 15px;
+  position: absolute;
+  right: 0;
+  text-align: left;
+  width: 1170px;
+}
+
+
+
+s
+
+
+.cd-headline.loading-bar .cd-words-wrapper::after {
+  background: #4c8bf5 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 3px;
+  left: 0;
+  position: absolute;
+  transition: width 0.3s ease -0.1s;
+  width: 0;
+  z-index: 2;
+}
+.cd-headline.loading-bar span {
+  display: inline-block;
+  padding: 0;
+}
+.theme-color span.cd-words-wrapper b{
+ color: #4c8bf5;
+}
+.cd-headline.loading-bar .cd-words-wrapper::after {
+  background: #4c8bf5 none repeat scroll 0 0;
+}
+
+
+
+
+
+
+

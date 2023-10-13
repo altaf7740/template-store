@@ -1,0 +1,358 @@
+/*------------------
+    Cart Styles 
+---------------------*/
+
+.cart-title-area {
+    padding-top: 30px;
+}
+
+.car-header-title h2 {
+    font-size: 20px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.table-content table {
+    background: #fff none repeat scroll 0 0;
+    border-color: #c1c1c1;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 1px 0 0 1px;
+    margin: 0 0 50px;
+    text-align: center;
+    width: 100%;
+}
+
+.table-content table th {
+    border-top: medium none;
+    color: #1344a5;
+    font-weight: 700;
+    padding: 20px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.table-content table th,
+.table-content table td {
+    border-bottom: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+
+.table-content table td {
+    border-top: medium none;
+    padding: 20px 10px;
+    vertical-align: middle;
+    font-size: 13px;
+}
+
+.table-content table td input {
+    background: #e5e5e5 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 3px;
+    color: #035e91;
+    font-size: 15px;
+    font-weight: normal;
+    height: 40px;
+    padding: 0 5px 0 10px;
+    width: 60px;
+}
+
+.table-content table td.product-subtotal {
+    font-size: 14px;
+    font-weight: bold;
+    width: 120px;
+    color: #035e91;
+    text-align: center;
+}
+
+.table-content table td.product-name a {
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 10px;
+    color: #035e91;
+}
+
+.table-content table td.product-name {
+    width: 270px;
+    text-align: center;
+}
+
+.table-content table td.product-thumbnail {
+    width: 130px;
+    text-align: center;
+}
+
+.table-content table td.product-remove i {
+    color: #919191;
+    display: inline-block;
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 40px;
+    text-align: center;
+}
+
+.table-content table .product-price .amount {
+    font-size: 15px;
+    font-weight: 700;
+    color: #035e91;
+}
+
+.table-content table td.product-remove i:hover {
+    color: #010f54
+}
+
+.table-content table td.product-quantity {
+    width: 180px;
+    position: relative;
+    text-align: center;
+}
+
+.table-content table td.product-quantity .qtybutton {
+    position: absolute;
+    line-height: 50px;
+    height: 50px;
+    top: 50%;
+    width: 20px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.table-content table td.product-quantity .inc.qtybutton {
+    left: 54%;
+    right: auto;
+}
+
+.table-content table td.product-quantity .dec.qtybutton {
+    right: 54%;
+    left: auto;
+}
+
+.table-content table td.product-quantity input {
+    text-align: center;
+}
+
+.table-content table td.product-quantity input[type=number]::-webkit-inner-spin-button,
+.table-content table td.product-quantity input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.table-content table td.product-remove {
+    width: 150px;
+    text-align: center;
+}
+
+.table-content table td.product-price {
+    width: 130px;
+    text-align: center;
+}
+
+.table-content table td.product-name a:hover,
+.buttons-cart a:hover {
+    color: $hover-color
+}
+
+.buttons-cart {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.buttons-cart input,
+.buttons-cart button,
+.buttons-cart a {
+    margin-top: 20px;
+}
+
+.buttons-cart input,
+.coupon input[type="submit"],
+.buttons-cart a,
+.coupon-info p.form-row input[type="submit"] {
+    background: #010f54 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 30px;
+    box-shadow: none;
+    color: #fff;
+    display: inline-block;
+    float: left;
+    font-size: 12px;
+    font-weight: 700;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 15px;
+    padding: 0 15px;
+    text-shadow: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    white-space: nowrap;
+}
+
+.buttons-cart input:hover,
+.coupon input[type=submit]:hover,
+.buttons-cart a:hover {
+    background: $hover-color;
+    color: #fff !important;
+}
+
+.buttons-cart a {
+    color: #fff;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+
+.coupon {
+    margin-bottom: 40px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.coupon h3 {
+    margin: 0 0 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.coupon input[type=text] {
+    border: 1px solid #c1c1c1;
+    float: left;
+    height: 40px;
+    margin: 0 6px 20px 0;
+    max-width: 100%;
+    padding: 0 0 0 10px;
+    width: 170px;
+}
+
+.cart_totals {
+    float: left;
+    text-align: right;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.cart_totals h2 {
+    border-bottom: 2px solid #c1c1c1;
+    display: inline-block;
+    font-size: 30px;
+    margin: 0 0 35px;
+    text-transform: uppercase;
+}
+
+.cart_totals table {
+    border: medium none;
+    float: right;
+    margin: 0;
+    text-align: right;
+}
+
+.cart_totals table th {
+    border: medium none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 20px 12px 0;
+    text-align: right;
+    text-transform: uppercase;
+    vertical-align: top;
+}
+
+.cart_totals table td {
+    border: medium none;
+    padding: 0 0 12px;
+    vertical-align: top;
+}
+
+.cart_totals table td .amount {
+    color: #010f54;
+    float: right;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 5px;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.cart_totals table td ul#shipping_method {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+.cart_totals table td ul#shipping_method li {
+    float: left;
+    margin: 0 0 10px;
+    padding: 0;
+    text-indent: 0;
+    width: 100%;
+}
+
+.cart_totals table td ul#shipping_method li input {
+    margin: 0;
+    position: relative;
+    top: 2px;
+}
+
+a.shipping-calculator-button {
+    font-weight: bold;
+    color: #035e91;
+}
+
+a.shipping-calculator-button:hover {
+    color: $hover-color
+}
+
+.cart_totals table tr.order-total th,
+.cart_totals table tr.order-total .amount {
+    font-size: 20px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.wc-proceed-to-checkout a {
+    background: #010f54 none repeat scroll 0 0;
+    border-radius: 30px;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 20px;
+    padding: 0 30px;
+    text-transform: uppercase;
+}
+
+.wc-proceed-to-checkout a:hover {
+    background: $hover-color;
+    color: #fff !important;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    background: #ffffff none repeat scroll 0 0;
+    border: 1px solid #c1c1c1;
+    border-radius: 100%;
+    display: block;
+    height: 13px;
+    margin: 3px;
+    width: 13px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+    border: 2px solid #c1c1c1;
+}
+
+.slider-area.slider-v4 {
+    margin: 30px 0 35px 0;
+}
+
+.coupon p {
+    margin-bottom: 12px;
+}

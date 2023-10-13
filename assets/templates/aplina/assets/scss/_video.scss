@@ -1,0 +1,132 @@
+/*--
+    08. Video Area Css
+-----------------------------*/
+.video-area {
+    position: relative;
+    height: 500px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    & .video-title {
+        font-size: 30px;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+    @media #{$tablet-device}{
+        height: 400px;
+    }
+    @media #{$large-mobile}{
+        height: 400px;
+    }
+    @media #{$small-mobile}{
+        height: 400px;
+    }
+}
+.video-bg {
+    background: url(../images/bg/video-banner.png) 50% 100% no-repeat;
+}
+@media #{$large-mobile}{
+    .video-bg {
+        & img {
+            width: 65px;
+        }
+    }
+}
+@media #{$tablet-device}{
+    .video-bg {
+        & img {
+            width: 80px;
+        }
+    }
+}
+.video-info {
+    margin-bottom: 85px; 
+    & .video-title {
+        font-weight: 500;
+        font-size: 30px;
+    }
+}
+// Project Count-area Css
+
+.project-count-area {
+    margin-top: -90px;
+    & .project-count-inner {
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px 0 50px;
+        z-index: 9;
+        & .counter {
+            margin-top: 30px;
+            color: #fff;
+            position: relative;
+            &::after {
+                position: absolute;
+                content: "";
+                right: 0;
+                width: 1px;
+                height: 40px;
+                top: 50%;
+                transform: translateY(-50%);
+                background: #fff;
+                @media #{$small-mobile}{
+                    display: none;
+                }
+            }
+        }
+        & .col-lg-3 {
+            &:last-child {
+                & .counter {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+            @media #{$tablet-device, $large-mobile}{
+                &:nth-child(2){
+                    & .counter {
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        & i {
+            font-size: 30px;
+        }
+        & h3 {
+            font-size: 26px;
+            color: #fff;
+            font-weight: 600;
+            margin: 10px 0;
+            
+        }
+        & p {
+            font-weight: 500;
+            font-size: 16px;
+        }
+        &.text-black-bg{
+            background: #fff;
+            & .counter {
+                & h3 {
+                    color: #333;
+                }
+                & p {
+                    color: #333;
+                }
+                &::after {
+                    background: #ddd;
+                }
+            }
+        }
+    }
+    
+}
+.project-bg {
+    background: url(../images/bg/project-bg.png) repeat;
+}
+
+
+

@@ -1,0 +1,251 @@
+/* -----------------------------------
+	Template Name: Drubo
+    Template URI: https://devitems.com/html/drubo-preview/
+    Description: This is html5 template
+    Author: HasTech
+    Author URI: https://devitems.com/
+    Version: 1.0 
+
+	Note: This is Short code style file. All Short code related style included in this file. 
+
+--------------------------------------*/
+
+/*----------------------------------------*/
+/*   slider
+/*----------------------------------------*/
+.pos_description .title1 .txt {
+  animation: 1000ms linear 0s normal none 1 running fadeInLeft;
+  color: #fff;
+  display: inline-block;
+  font-family: raleway;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+.pos_description .title2 .txt {
+  animation: 1500ms linear 0s normal none 1 running flipInX;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-family: raleway;
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 78px;
+  text-transform: uppercase;
+}
+.pos_description .title3 .txt{
+  display: inline-block;
+  font-family: "Khula",sans-serif;
+  color: #000;
+  font-size: 67px;
+  font-weight: 700;
+  line-height: 13px;
+  margin-bottom: 35px;
+  margin-top: 5px;
+  padding: 25px 10px 10px;
+  margin-top: 5px;
+  -moz-animation: flipInX 1500ms linear;
+  -o-animation: flipInX 1500ms linear;
+  -webkit-animation: flipInX 1500ms linear;
+  animation: flipInX 1500ms linear;
+  text-transform: uppercase;
+}
+.pos_description .title2 .txt b {
+  color: #14b1bb;
+}
+.pos_description .pos-slideshow-readmore a {
+  animation: 2000ms linear 0s normal none 1 running flipInX;
+  background: #fff none repeat scroll 0 0;
+  border-radius: 5px;
+  color: #757575;
+  font-family: raleway;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 30px;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  transition:.3s;
+}
+.pos-slideshow-readmore {
+  margin-top: 45px;
+}
+.pos_description .pos-slideshow-readmore a:hover{
+  background: #14b1bb;
+  color:#fff;
+}
+.slider-area .nivo-caption {
+  background: transparent none repeat scroll 0 0;
+  box-sizing: border-box;
+  color: #fff;
+  display: none;
+  left: 0;
+  opacity: 1;
+  overflow: hidden;
+  position: absolute;
+  top: 42%;
+  width: 100%;
+  z-index: 8;
+}
+.slider-area .nivo-directionNav a {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  display: block;
+  float: left;
+  font-size: 48px;
+  height: 65px;
+  left: 0;
+  line-height: 65px;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  top: 55%;
+  transition: all 0.4s ease 0s;
+  width: 65px;
+}
+.slider-area .nivo-directionNav a:hover {
+  background-color: #14b1bb;
+  color: #fff;
+}
+.slider-area .nivo-directionNav a.nivo-nextNav {
+  left: auto;
+  right: 0;
+}
+.slider-area:hover .nivo-directionNav a {
+  opacity: 1;
+}
+.slider-area {
+  position: relative;
+}
+.slider-area .nivo-controlNav {
+  bottom: 20px;
+  left: 0;
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  z-index: 9;
+}
+.nivo-controlNav::after {
+  background: transparent url("../img/icon/dot_bg.png") no-repeat scroll right center;
+  content: "";
+  display: inline-block;
+  height: 15px;
+  padding-left: 5px;
+  width: 45px;
+}
+.nivo-controlNav::before {
+  background: transparent url("../img/icon/dot_bg.png") no-repeat scroll left center;
+  content: "";
+  display: inline-block;
+  height: 15px;
+  padding-right: 5px;
+  width: 45px;
+}
+.nivo-controlNav a.active::after {
+  color: #14b1bb;
+}
+.nivo-controlNav a::after {
+  color: #fff;
+  content: "\f192";
+  cursor: pointer;
+  font-family: "FontAwesome";
+  font-size: 20px;
+  padding: 0 5px;
+}
+.nivo-controlNav a {
+  font-size: 0;
+}
+.nivo-controlNav a.active::after {
+  color: #14b1bb;
+}
+/*----------------------------------------*/
+/*  Slider Home -2 
+/*----------------------------------------*/
+.slider-2 .nivo-caption {
+  color: #fff;
+  opacity: 1;
+  text-align: center;
+  top: 32%;
+}
+.slider-2 .pos_description .title2 .txt {
+  color: #383838;
+}
+.slider-2 .pos_description .title1 .txt {
+  display: inline-block;
+  padding-bottom: 0;
+  padding-top: 15px;
+  color: #606060;
+  font-size: 24px;
+  font-weight: 600;
+}
+.slider-2 .pos-slideshow-readmore {
+  margin-top: 30px;
+}
+.slider-2 .pos_description .pos-slideshow-readmore a {
+  background: #14b1bb none repeat scroll 0 0;
+  color: #fff;
+}
+.slider-2 .pos_description .pos-slideshow-readmore a:hover{background:#45C0C8}
+.slider-2 .slider-area .nivo-directionNav a {
+  display: none;
+  opacity:0;
+}
+.slider-2 .nivo-directionNav a {
+  display: none;
+  opacity: 0;
+}
+/*----------------------------------------*/
+/*  Text Animation Slider css 
+/*----------------------------------------*/
+.animate-slider {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.slide-text {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 100%;
+}
+.cd-words-wrapper {
+  color:#14b1bb;
+}
+.slide-text p {
+  font-family: raleway;
+  font-size: 18px;
+  letter-spacing: 3px;
+  margin: 4px 0 30px;
+  text-transform: uppercase;
+}
+.button-box a.btn-one {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 5px;
+  color: #757575;
+  font-family: raleway;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 30px;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+}
+.button-box a.btn-one:hover{background:#14b1bb;color:#fff;}
+.two .slide-text {
+  top: 32%;
+}
+.two .slide-text p {
+  color: #000;
+  margin: 25px 0 30px;
+}
+.two .button-box a.btn-one{background:#14b1bb;color:#fff}
+.two .button-box a.btn-one:hover{background:#45c0c8;}
+.three .slide-text {
+  left: 10%;
+  top: 42%;
+  width: 55%;
+}

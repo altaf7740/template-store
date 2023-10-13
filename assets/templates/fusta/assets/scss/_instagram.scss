@@ -1,0 +1,123 @@
+/*--
+    09. Instagram Css
+------------------------------*/
+.instaram-title {
+    & h3 {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 40px;
+        margin-top: -5px;
+        & > a {
+            font-weight: 600;
+        }
+        @media #{$large-mobile}{
+            font-size: 20px;
+        }
+        @media #{$small-mobile}{
+            font-size: 20px;
+        }
+    }
+}
+.single-instagram {
+    & a {
+        position: relative;
+        display: block;
+        &::after {
+            content: "\e609";
+            color: $theme-color;
+            font-family: simple-line-icons;
+            font-size: 25px;
+            left: 0;
+            position: absolute;
+            right: 0;
+            text-align: center;
+            top: 50%;
+            @include transform (translateY(-50%));
+            @include opacity(0);
+            @include transition (.3s);
+                
+        }
+        &::before {
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            @include opacity(0);
+            @include transition (.3s);
+        }
+        & img {
+            width: 100%;
+        }
+    }
+    &:hover ::after , &:hover ::before{
+        opacity: 1;
+    }
+}
+.subscribe-area {
+    padding-top: 50px;
+    @media #{$desktop-device}{
+        padding-top: 20px;
+    }
+}
+.subsctibe-title {
+    h3 {
+        font-size: 30px;
+        font-weight: 500;
+    }
+}
+.subscribe-content {
+  margin-top: 30px;
+}
+.input-field {
+    width: 100%;
+    border: 2px solid #e0e0e0;
+    text-align: center;
+    height: 60px;
+    color: #333;
+    padding: 15px;
+    font-size: 15px;
+    @media #{$desktop-device}{
+        height: 50px;
+    }
+}
+.subscribe-btn {
+    font-weight: 500;
+    padding: 15px 40px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    @media #{$desktop-device}{
+        padding: 12px 35px;
+    }
+}
+
+
+@media #{$desktop-device}{
+    .home-2 .subscribe-area {
+        padding-bottom: 50px;
+        padding-top: 0;
+    }
+}
+@media #{$tablet-device}{
+    .home-2 .subscribe-area {
+        padding-bottom: 50px;
+        padding-top: 0;
+    }
+}
+@media #{$large-mobile}{
+    .home-2 .subscribe-area {
+        padding-bottom: 50px;
+        padding-top: 0;
+    }
+}
+@media #{$small-mobile}{
+    .home-2 .subscribe-area {
+        padding-bottom: 50px;
+        padding-top: 0;
+    }
+}
+
+
+

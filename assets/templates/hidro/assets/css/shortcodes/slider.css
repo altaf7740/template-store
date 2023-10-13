@@ -1,0 +1,131 @@
+.slider-area {
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+.slider-text {
+    display: block;
+    position: relative;
+    z-index: 9;
+}
+.slider-text h2 {
+    color: #222;
+    font-size: 95px;
+    font-weight: normal;
+    line-height: 1;
+    text-transform: capitalize;
+}
+.slider-text > h3 {
+    margin: 20px 0 60px;
+    text-transform: capitalize;
+}
+.shop-img {
+    position: relative;
+}
+.slider-text > a {
+    background-color: #222;
+    border: 1px solid #333;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    padding: 14px 20px 13px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+.slider-text > a:hover {
+    background-color: transparent;
+    color: #333;
+}
+.slider-opacity {
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+}
+.slider-opacity::before {
+    background-color: #fff;
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+/*------------- home 2 -----------*/
+
+.slider-text.style-2 {
+    background-color: #fff;
+    display: inline-block;
+    padding: 40px 120px 50px;
+}
+.slider-text.style-2 h2 {
+    color: #222;
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 1.3;
+    text-transform: capitalize;
+}
+.slider-text.style-2 > h3 {
+    font-size: 16px;
+    margin: 20px 0 35px;
+    text-transform: capitalize;
+}
+/*------------- home 3 -----------*/
+
+.slider-active.owl-theme .owl-controls .owl-nav div {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #333;
+    border-radius: inherit;
+    color: #333;
+    font-size: 30px;
+    font-weight: 900;
+    height: 50px;
+    line-height: 48px;
+    opacity: 0;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.8s ease 0s;
+    width: 50px;
+}
+.slider-active.owl-theme .owl-controls .owl-nav div.owl-prev {
+    left: 10px;
+    right: auto;
+}
+.slider-active:hover .owl-controls .owl-nav div {
+    opacity: 1;
+}
+.owl-theme .owl-controls .owl-nav div:hover {
+    background: #333 none repeat scroll 0 0;
+    border: 1px solid #333;
+    color: #fff;
+}
+.slider-area.slider-style-6 {
+    padding-top: 116px;
+}
+.slider-area.style-1 {
+    padding: 214px 0 160px;
+}
+
+.slider-style-5 .slider-text.style-2 {
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
