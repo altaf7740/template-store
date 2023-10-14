@@ -1,19 +1,61 @@
 "use strict;"
-let templates = null;
-let page_size = 9;
-let current_page = 0;
-const mainDiv = document.getElementById("divlist")
+const pageNumbers = document.querySelector(".pageNumbers");
+// const listItems = paginationList.querySelectorAll("li");
+const mainDiv = document.getElementById("divlist");
+const prevButton = document.getElementById("prev");
+const nextButton = document.getElementById("next");
 
+let products = null;
 fetch('./records.json').then(response => {
     return response.json()
 }).then(data => {
-    templates = data;
-    console.log(templates)
-})
+    products = data;
+    console.log(products);
+});
 
+const itemsPerPage = 12;
+// const pageCount = Math.ceil(products.length / itemsPerPage);
+let currentPage = 1;
+
+
+const pages = [];
+function getpageno(pageno){
+	let ans = [];
+  if( 2 >= pageno){
+  	for(let i=1; i<=5; i++){
+    	ans.push(i);
+    }
+    return  ans;
+  }
+  
+  /* else if(pageno){} */
+  else{
+  	for(let i=pageno-2; i<= pageno+2; i++){
+    	ans.push(i);
+    }
+    return ans;
+  }
+}
+// console.log(fun(1));
+
+
+function getIndex(pageno){
+	let totalpage =12;
+
+  let start = totalpage * (pageno -1)+1;
+  let end = (pageno * 12)+1;
+  return [start, end];
+};
+
+
+// console.log(getIndex(3));
+
+// ---------------------------------------------------------
 function renderTemplateList() {
     let divString = "";
-    templates.slice(0, 12).forEach(element => {
+    let point = getIndex(2);
+
+    products.slice(point[0], point[1]).forEach(element => {
         divString += `
         <div class="card mb-3 shadow mx-2" style="max-width: 400px;">
             <div class="row g-0">
@@ -26,12 +68,23 @@ function renderTemplateList() {
                 </div>
             </div>
         </div>
+        `
+    });
+    mainDiv.innerHTML = divString;
+
+    let pno  = getpageno(1);
+    let divpagi = "";
+    
+    pno.forEach(ele =>{
+        divpagi += `<div class="m-1 pt-3">
+                        <p  style" height: 23px, width: 30px" class="fs-5 bg-info btn " ><span class="text-color-danger">${ele}</span></p>
+                    </div>
     `
     });
-    mainDiv.innerHTML = divString
+    
+    pageNumbers.innerHTML = divpagi;
 }
 
 setTimeout(() => {
     renderTemplateList()
-    
 }, 100);
